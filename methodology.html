@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology · PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc;
+    --rule: #d4c9b4; --gold: #b8892a; --gray: #6b6459;
+    --red: #c0392b; --green: #1a6b3c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; }
+
+  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; line-height: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; line-height: 21.5px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 12px; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 40px; }
+  .page-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 44px); font-weight: 900; line-height: 1.1; margin-bottom: 8px; }
+  .page-deck { font-family: 'Playfair Display', serif; font-style: italic; font-size: 17px; color: var(--gray); margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--rule); }
+
+  .draft-banner { background: var(--cream); border: 1px solid var(--rule); border-left: 4px solid var(--gold); padding: 16px 20px; margin-bottom: 40px; font-size: 13px; line-height: 1.6; color: var(--gray); }
+  .draft-banner strong { color: var(--ink); font-weight: 500; }
+
+  h2 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  h3 { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-top: 28px; margin-bottom: 8px; }
+  p { font-size: 14px; color: var(--ink); margin-bottom: 14px; }
+
+  .rubric-table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 13px; }
+  .rubric-table th { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); padding: 8px 12px; text-align: left; border-bottom: 2px solid var(--ink); background: var(--cream); }
+  .rubric-table td { padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  .rubric-table tr:last-child td { border-bottom: none; }
+  .rubric-table .score { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 16px; color: var(--gold); }
+
+  .formula-box { background: var(--cream); border: 1px solid var(--rule); padding: 20px 24px; margin: 20px 0; font-family: 'DM Mono', monospace; font-size: 13px; line-height: 2; }
+  .formula-box .formula { font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+  .formula-box .note { font-size: 11px; color: var(--gray); }
+
+  .flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+  .flag-item { padding: 12px 14px; border: 1px solid var(--rule); background: var(--cream); }
+  .flag-name { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
+  .flag-desc { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+  .grade-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  .grade-table td { padding: 10px 14px; border-bottom: 1px solid var(--rule); }
+  .grade-letter { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; }
+
+  .sources-list { margin: 12px 0 24px; padding: 0; list-style: none; }
+  .sources-list li { font-size: 13px; color: var(--gray); padding: 6px 0; border-bottom: 1px solid var(--rule); line-height: 1.5; }
+  .sources-list li::before { content: '— '; }
+  .sources-list li:last-child { border-bottom: none; }
+
+  .limitations-box { background: var(--cream); border: 1px solid var(--rule); border-left: 4px solid var(--red); padding: 20px 24px; margin: 20px 0; font-size: 13px; line-height: 1.7; color: var(--gray); }
+  .limitations-box strong { color: var(--ink); display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; }
+
+  .contact-box { background: var(--cream); border: 1px solid var(--rule); padding: 24px; margin-top: 48px; text-align: center; }
+  .contact-box p { font-size: 13px; color: var(--gray); margin-bottom: 16px; }
+
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 60px; }
+  footer a { color: var(--gray); }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 32px 20px; }
+    .flag-grid { grid-template-columns: 1fr; }
+  }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">How we score promises</div>
+  <div class="masthead-rule"><span></span><em>Draft Scorecards · Under Review</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html" class="active">Methodology</a>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <div class="page-title">How We Score</div>
+  <div class="page-deck">A plain-language guide to the PolicyLogic methodology — what we measure, how we score it, and what our grades mean.</div>
+
+  <div class="draft-banner">
+    <strong>All scorecards are draft documents.</strong> Scores are generated using AI-assisted research from public web sources and reflect conditions as of the research date. They are pending human review and verification. Grades should not be cited as definitive assessments.
+  </div>
+
+  <h2>What We Measure</h2>
+  <p>PolicyLogic tracks whether elected officials — governors, mayors, members of Congress, and others — follow through on commitments made during their campaigns and in office. We focus on three questions for each promise:</p>
+  <p><strong>Did they start?</strong> Did the official take concrete action to advance this commitment, or did it remain a talking point?</p>
+  <p><strong>Did it happen?</strong> Was the policy enacted, the program launched, the goal reached?</p>
+  <p><strong>Did it work?</strong> To the extent outcomes can be measured, did reality match the promise?</p>
+
+  <h2>The Scoring Pipeline</h2>
+  <p>Each promise moves through three independent scoring stages using standardized rubrics.</p>
+
+  <h3>Stage 1 — Specificity of Promise</h3>
+  <table class="rubric-table">
+    <tr><th>Score</th><th>Specificity Level</th><th>Example</th></tr>
+    <tr><td class="score">0</td><td>Values statement only</td><td>"I believe in stronger communities."</td></tr>
+    <tr><td class="score">1</td><td>Directional goal, no specifics</td><td>"We will improve public safety."</td></tr>
+    <tr><td class="score">2</td><td>Specific policy named</td><td>"I will pass a tenant protection bill."</td></tr>
+    <tr><td class="score">3</td><td>Specific + measurable target</td><td>"Reduce violent crime 20% by 2026."</td></tr>
+  </table>
+
+  <h3>Stage 2 — Actions Taken</h3>
+  <table class="rubric-table">
+    <tr><th>Score</th><th>Description</th></tr>
+    <tr><td class="score">0</td><td>No action taken</td></tr>
+    <tr><td class="score">1</td><td>Public statements only, no formal action</td></tr>
+    <tr><td class="score">2</td><td>Proposal introduced, bill filed, or program announced</td></tr>
+    <tr><td class="score">3</td><td>Passed, signed, or formally launched</td></tr>
+    <tr><td class="score">4</td><td>Fully operational and implemented</td></tr>
+  </table>
+
+  <h3>Stage 3 — Outcome & Results</h3>
+  <table class="rubric-table">
+    <tr><th>Score</th><th>Description</th></tr>
+    <tr><td class="score">0</td><td>Failed, reversed, or abandoned</td></tr>
+    <tr><td class="score">1</td><td>Under 10% of stated goal achieved</td></tr>
+    <tr><td class="score">2</td><td>10–40% of goal achieved</td></tr>
+    <tr><td class="score">3</td><td>40–70% of goal achieved</td></tr>
+    <tr><td class="score">4</td><td>70–90% of goal achieved</td></tr>
+    <tr><td class="score">5</td><td>90%+ of goal achieved</td></tr>
+  </table>
+
+  <h2>Modifiers</h2>
+
+  <h3>Their Role (0.0 – 1.0)</h3>
+  <p>Outcomes are rarely caused by one person alone. The "Their Role" modifier scales the outcome score based on how directly the official caused the result — from 1.0 (sole cause) to 0.0 (no causal connection). This prevents officials from claiming credit for conditions they didn't create, and protects them from blame for outcomes beyond their control.</p>
+
+  <h3>Difficulty Multiplier (1.0 – 2.5)</h3>
+  <p>Not all promises are equally hard to keep. A promise that requires only executive action is scored at 1.0x. One requiring multi-government coordination scores up to 2.5x. This rewards officials who attempt harder reforms.</p>
+
+  <div class="formula-box">
+    <div class="formula">Promise Score = (Specificity + Actions Taken + (Outcome × Their Role)) × Difficulty</div>
+    <div class="note">Each promise receives an individual policy score. The overall grade reflects aggregate delivery across all tracked promises, weighted by ambition and adjusted for promise volume.</div>
+  </div>
+
+  <h2>Behavioral Flags</h2>
+  <div class="flag-grid">
+    <div class="flag-item"><div class="flag-name">↩ Reversed</div><div class="flag-desc">Official actively undid a commitment they previously made.</div></div>
+    <div class="flag-item"><div class="flag-name">≠ Redefined</div><div class="flag-desc">Goalposts moved — the promise was recharacterized after the fact.</div></div>
+    <div class="flag-item"><div class="flag-name">■ Externally Blocked</div><div class="flag-desc">Genuine external obstacle prevented delivery.</div></div>
+    <div class="flag-item"><div class="flag-name">◷ Deadline Shifted</div><div class="flag-desc">Timeline extended without explanation after original deadline passed.</div></div>
+    <div class="flag-item"><div class="flag-name">▽ Scope Reduced</div><div class="flag-desc">Promise delivered in significantly diminished form.</div></div>
+    <div class="flag-item"><div class="flag-name">★ Credit Overclaimed</div><div class="flag-desc">Official claimed credit for outcomes not attributable to their actions.</div></div>
+  </div>
+
+  <h2>Letter Grades</h2>
+  <table class="grade-table">
+    <tr><td><span class="grade-letter" style="color:#1a6b3c">A</span></td><td><strong>Exceptional.</strong> Strong delivery across most promises, including difficult ones.</td></tr>
+    <tr><td><span class="grade-letter" style="color:#2d7a4f">B</span></td><td><strong>Strong.</strong> Solid execution on core commitments with some gaps.</td></tr>
+    <tr><td><span class="grade-letter" style="color:#b8892a">C</span></td><td><strong>Mixed.</strong> Meaningful action on some promises, significant shortfalls on others.</td></tr>
+    <tr><td><span class="grade-letter" style="color:#c0612b">D</span></td><td><strong>Weak.</strong> Most promises not delivered or substantially diminished.</td></tr>
+    <tr><td><span class="grade-letter" style="color:#c0392b">F</span></td><td><strong>Poor.</strong> Systematic non-delivery, reversals, or pattern of broken commitments.</td></tr>
+  </table>
+
+
+  <h2>International Commitments — Why No Grade</h2>
+  <p>The International Commitments tracker operates on a different logic than the official scorecards. International commitments — treaty obligations, multilateral funding pledges, emissions targets, assessed contributions to international organizations — are institutional. They are made by administrations, inherited by successors, honored or abandoned across decades.</p>
+  <p>Assigning a letter grade to a commitment that has passed through multiple administrations would collapse decades of contested political history into a single letter. Instead, each commitment displays a <strong>delivery ratio</strong> — the percentage of the pledge delivered as of the research date — alongside a full timeline of events. Administration color bands make clear which events happened under whose watch.</p>
+
+  <h2>Presidential Foreign Policy — Why No Grade</h2>
+  <p>The Presidential Foreign Policy tracker scores individual promises, not the president as a whole. Each commitment carries a status — Kept, Broken, Partial, In Progress, Reversed, Contested — based on the available record. There is no aggregate presidential grade.</p>
+  <p><strong>Selection effects.</strong> Trackable foreign policy promises are not a representative sample of presidential performance. An aggregate grade would reflect political communication as much as governance.</p>
+  <p><strong>Causal complexity.</strong> Foreign policy outcomes are rarely attributable to a single decision. The Their Role modifier partially addresses this, but causal chains in foreign policy are longer and more contested.</p>
+  <p><strong>Cross-administration comparability.</strong> The tracker intentionally shows commitments across administrations to surface reversals and patterns. A grade attached to one president would invite comparisons the underlying data may not support.</p>
+
+  <h2>Data Sources</h2>
+  <ul class="sources-list">
+    <li><strong>Tier 1 — Primary:</strong> Official government websites, signed legislation, executive orders, budget documents</li>
+    <li><strong>Tier 2 — Verified reporting:</strong> Major newspapers, Ballotpedia, PolitiFact, government data portals</li>
+    <li><strong>Tier 3 — Secondary:</strong> Think tank analyses and advocacy reports (used with disclosure)</li>
+    <li><strong>Tier 4 — Not used:</strong> Social media, opinion pieces, anonymous sources, partisan campaign materials</li>
+  </ul>
+
+  <div class="limitations-box">
+    <strong>Known Limitations</strong>
+    AI-assisted research may miss recent developments, misattribute outcomes, or lack access to local government records. Outcome data for state and local policy is often incomplete or lagged. Scorecards for officials with limited media coverage carry lower confidence ratings. We flag these in each scorecard's Data Gaps section.
+  </div>
+
+  <h2>Research Process</h2>
+  <p>Each scorecard is generated in two stages. First, an AI research assistant searches the web for campaign materials, news coverage, legislative records, and outcome data. Second, a scoring model applies the PolicyLogic rubric to produce a structured draft scorecard. All scorecards are marked pending human review until verified by a researcher.</p>
+  <p>PolicyLogic is a nonpartisan project. Scores are determined by the methodology above, not by political affiliation. Officials of both parties are evaluated on the same rubric.</p>
+
+  <div class="contact-box">
+    <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:10px;">Found an Error?</h3>
+    <p>If you find a factual error, a missing promise, or a score you believe is wrong, please tell us. Every submission is reviewed.</p>
+    <a href="/scorecards.html" style="display:inline-block;background:var(--ink);color:var(--paper);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:10px 20px;text-decoration:none;margin-top:8px;">Open a Scorecard to Report an Error &rarr;</a>
+  </div>
+
+</div>
+
+<footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);">
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
+</footer>
+
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>

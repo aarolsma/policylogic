@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Actually Influence Policy — PolicyLogic.io</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4; --gold: #b8892a; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459; --blue: #1a3a6b; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
+    .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+    .learn-nav { border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--cream); position: sticky; top: 0; z-index: 100; overflow-x: auto; }
+    .learn-nav-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-right: 8px; white-space: nowrap; }
+    .learn-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 4px 12px; border: 1px solid transparent; white-space: nowrap; transition: all 0.15s; }
+    .learn-nav a:hover { border-color: var(--rule); color: var(--ink); }
+    .learn-nav a.active { border-color: var(--ink); color: var(--ink); background: var(--paper); }
+    .hero { max-width: 780px; margin: 64px auto 0; padding: 0 40px; }
+    .hero-track { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 64px); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px; }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-deck { font-size: 18px; line-height: 1.7; color: var(--gray); font-weight: 300; border-left: 3px solid var(--gold); padding-left: 20px; margin-bottom: 40px; }
+    .hero-meta { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); padding-bottom: 32px; border-bottom: 1px solid var(--rule); }
+    .article { max-width: 780px; margin: 0 auto; padding: 0 40px 80px; }
+    .section { margin-top: 56px; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.5vw, 36px); font-weight: 700; line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.01em; }
+    p { font-size: 17px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+    p strong { font-weight: 500; }
+    .spectrum-item { display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid var(--rule); }
+    .spectrum-item:last-child { border-bottom: none; }
+    .spectrum-score { min-width: 52px; }
+    .spectrum-bar-wrap { height: 6px; background: var(--rule); margin-bottom: 4px; border-radius: 1px; }
+    .spectrum-bar { height: 6px; border-radius: 1px; }
+    .spectrum-score-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; }
+    .bar-high { background: var(--green); width: 92%; }
+    .bar-medium { background: var(--gold); width: 58%; }
+    .bar-low { background: var(--red); width: 22%; }
+    .label-high { color: var(--green); }
+    .label-medium { color: var(--gold); }
+    .label-low { color: var(--red); }
+    .spectrum-name { font-size: 16px; font-weight: 500; margin-bottom: 4px; }
+    .spectrum-desc { font-size: 14px; color: var(--gray); line-height: 1.6; }
+    .myth-grid { margin: 32px 0; display: flex; flex-direction: column; gap: 20px; }
+    .myth-card { border: 1px solid var(--rule); overflow: hidden; }
+    .myth-row { display: grid; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 560px) { .myth-row { grid-template-columns: 1fr; } }
+    .myth-col { padding: 20px 24px; }
+    .myth-col:first-child { border-right: 1px solid var(--rule); background: rgba(192,57,43,0.04); }
+    @media (max-width: 560px) { .myth-col:first-child { border-right: none; border-bottom: 1px solid var(--rule); } }
+    .myth-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; }
+    .myth-label.myth { color: var(--red); }
+    .myth-label.reality { color: var(--green); }
+    .myth-text { font-size: 14px; line-height: 1.65; color: var(--ink); }
+    .tier { margin: 36px 0; }
+    .tier-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .tier-number { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 900; color: var(--gold); line-height: 1; }
+    .tier-name { font-size: 20px; font-weight: 500; margin-bottom: 2px; }
+    .tier-desc { font-size: 13px; color: var(--gray); }
+    .tier-actions { display: flex; flex-direction: column; gap: 12px; }
+    .tier-action { padding: 16px 20px; border: 1px solid var(--rule); background: var(--cream); }
+    .tier-action-name { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+    .tier-action-desc { font-size: 13px; color: var(--gray); line-height: 1.6; }
+    .tier-action-tip { font-size: 12px; color: var(--green); font-style: italic; margin-top: 6px; }
+    .callout { margin: 32px 0; border-left: 4px solid var(--blue); padding: 20px 24px; background: rgba(26,58,107,0.04); }
+    .callout-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+    .callout p { font-size: 15px; line-height: 1.7; color: var(--ink); margin-bottom: 0; }
+    .pull-quote { margin: 48px 0; border-top: 3px double var(--ink); border-bottom: 3px double var(--ink); padding: 32px 0; text-align: center; }
+    .pull-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(20px, 2.5vw, 26px); line-height: 1.45; color: var(--ink); max-width: 580px; margin: 0 auto; }
+    .takeaway { background: var(--cream); border: 1px solid var(--rule); padding: 24px; margin: 24px 0; }
+    .takeaway-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .takeaway p { font-size: 15px; line-height: 1.7; margin-bottom: 0; }
+    .next-up { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 32px; }
+    @media (max-width: 600px) { .next-up { grid-template-columns: 1fr; } }
+    .next-card { display: block; border: 1px solid var(--rule); padding: 24px; text-decoration: none; color: var(--ink); transition: border-color 0.2s, background 0.2s; }
+    .next-card:hover { border-color: var(--ink); background: var(--cream); }
+    .next-card-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .next-card h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+    .next-card p { font-size: 13px; line-height: 1.6; color: var(--gray); margin-bottom: 0; }
+    .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Education &amp; Context</div>
+  <div class="masthead-rule"><span></span><em>Take Action</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger active">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</header>
+<nav class="learn-nav">
+  <span class="learn-nav-label">Learn —</span>
+  <a href="/learn-cognitive-biases.html">Think Clearly</a>
+  <a href="/learn-how-policy-works.html">How Policy Works</a>
+  <a href="/learn-how-to-influence.html" class="active">Take Action</a>
+  <a href="/learn-govt-101.html">Govt 101</a>
+  <a href="/learn-glossary.html">Glossary</a>
+</nav>
+<div class="hero">
+  <div class="hero-track">Take Action · Module 3 of 4</div>
+  <h1 class="hero-title">How to <em>Actually</em><br>Influence Policy</h1>
+  <p class="hero-deck">Most of what people do to influence politics has little measurable effect. A small number of actions — most of them unglamorous — actually move things. Here's what the research shows.</p>
+  <div class="hero-meta">8-minute read · Evidence-based</div>
+</div>
+<article class="article">
+  <div class="section">
+    <div class="section-label">The uncomfortable truth</div>
+    <h2>Most political activity doesn't change much</h2>
+    <p>There's a large ecosystem of political activity — rallies, petition drives, cable news, social media campaigns, yard signs, hashtags, celebrity endorsements. Most of it has either no measurable effect on policy outcomes or an effect so small it's lost in the noise.</p>
+    <p>That's not cynicism. It's what political scientists have found when they've tried to measure the actual downstream effects of different forms of participation. The good news is that the things that <em>do</em> work are available to almost anyone. They're just less exciting.</p>
+  </div>
+  <div class="section">
+    <div class="section-label">Effectiveness by tactic</div>
+    <h2>What the evidence actually shows</h2>
+    <p>These assessments are based on political science research on direct policy influence — not on whether an activity is morally meaningful or personally satisfying.</p>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-high"></div></div><div class="spectrum-score-label label-high">High</div></div>
+      <div><div class="spectrum-name">Direct constituent contact with local officials</div><div class="spectrum-desc">In-person meetings, phone calls, and letters to city council members, state legislators, and school boards — especially from constituents who are known in the district. Local officials often have small staffs and a handful of phone calls constitutes real pressure.</div></div>
+    </div>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-high"></div></div><div class="spectrum-score-label label-high">High</div></div>
+      <div><div class="spectrum-name">Voting in primaries</div><div class="spectrum-desc">Primary elections set the range of options in general elections. Turnout in primaries is often under 15% — making each individual vote relatively powerful. Most people who vote in general elections skip primaries entirely.</div></div>
+    </div>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-high"></div></div><div class="spectrum-score-label label-high">High</div></div>
+      <div><div class="spectrum-name">Running for or working on local office campaigns</div><div class="spectrum-desc">School board, city council, county commission — these offices are undercontested, often decided by margins of dozens of votes, and have genuine policy authority over schools, land use, local policing, and more.</div></div>
+    </div>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-medium"></div></div><div class="spectrum-score-label label-medium">Medium</div></div>
+      <div><div class="spectrum-name">Sustained organized advocacy</div><div class="spectrum-desc">Consistent, organized pressure on specific issues over months and years — through advocacy organizations and coordinated constituent outreach — can move policy on narrow issues. Single events rarely do. Legislators' offices track constituent contact by volume and persistence.</div></div>
+    </div>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-medium"></div></div><div class="spectrum-score-label label-medium">Medium</div></div>
+      <div><div class="spectrum-name">Targeted donations to competitive races</div><div class="spectrum-desc">Small donations matter most in competitive primary elections and down-ballot races. A $50 donation to a state legislative race in a swing district can have more measurable impact than the same amount in a presidential primary.</div></div>
+    </div>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-low"></div></div><div class="spectrum-score-label label-low">Low</div></div>
+      <div><div class="spectrum-name">Mass email campaigns and online petitions</div><div class="spectrum-desc">Congressional offices track volume of form emails, but they're weighted very differently than personal constituent calls. Most online petition platforms have no mechanism for translating signatures into political action.</div></div>
+    </div>
+    <div class="spectrum-item">
+      <div class="spectrum-score"><div class="spectrum-bar-wrap"><div class="spectrum-bar bar-low"></div></div><div class="spectrum-score-label label-low">Low</div></div>
+      <div><div class="spectrum-name">Political social media posting</div><div class="spectrum-desc">Research on whether political social media convinces anyone who doesn't already agree is not encouraging. Mostly, political posting reaches people who share your views. Peer effects within social networks are real but small.</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-label">Common misconceptions</div>
+    <h2>Myths vs. what actually happens</h2>
+    <div class="myth-grid">
+      <div class="myth-card">
+        <div class="myth-row">
+          <div class="myth-col"><div class="myth-label myth">The myth</div><div class="myth-text">Calling your senator's office doesn't matter. They don't listen to regular people anyway.</div></div>
+          <div class="myth-col"><div class="myth-label reality">The reality</div><div class="myth-text">Senate offices track constituent contact by volume and issue. During the 2017 ACA repeal debate, staffers publicly described being moved by constituent call volumes. Local and state offices are even more responsive. The call matters most when the vote is close.</div></div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-row">
+          <div class="myth-col"><div class="myth-label myth">The myth</div><div class="myth-text">Big protests force politicians to change course.</div></div>
+          <div class="myth-col"><div class="myth-label reality">The reality</div><div class="myth-text">The historical record is mixed. Protests are most effective when combined with electoral organizing, concrete demands, and ongoing constituent pressure. Protests without those elements tend to raise visibility without producing legislative change. The civil rights movement's victories required sustained lobbying and coalition-building alongside demonstrations.</div></div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-row">
+          <div class="myth-col"><div class="myth-label myth">The myth</div><div class="myth-text">Policy change has to happen at the federal level to matter.</div></div>
+          <div class="myth-col"><div class="myth-label reality">The reality</div><div class="myth-text">Most policies affecting daily life — school curricula, zoning, policing, library budgets, local regulation — are made at state and local levels. The federal government is often gridlocked; state and local governments are often not. State-level decisions on healthcare, education, and energy directly affect more people than most federal legislation.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="pull-quote">
+      <p>"The most consistently underused form of political power in America is showing up to vote in a low-turnout local election where 200 votes determines the outcome."</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-label">Practical tiers</div>
+    <h2>What you can do, organized by time and effort</h2>
+    <div class="tier">
+      <div class="tier-header">
+        <div class="tier-number">1</div>
+        <div><div class="tier-name">Low effort — high leverage</div><div class="tier-desc">Things most people don't do that take under an hour</div></div>
+      </div>
+      <div class="tier-actions">
+        <div class="tier-action">
+          <div class="tier-action-name">Register and vote in every election — including primaries and local races</div>
+          <div class="tier-action-desc">Primary turnout is often under 15%. Local elections are decided by hundreds of votes. Your vote in these elections is worth twenty to forty times your vote in a presidential general election — mathematically.</div>
+          <div class="tier-action-tip">Tip: Set a calendar reminder two weeks before every election in your jurisdiction, not just federal ones.</div>
+        </div>
+        <div class="tier-action">
+          <div class="tier-action-name">Know who represents you at every level</div>
+          <div class="tier-action-desc">Most people can name their two U.S. senators but not their state representative, city council member, or school board member. All of those people make decisions that affect daily life.</div>
+          <div class="tier-action-tip">Tip: Your state legislature's website will show your district and representatives by address.</div>
+        </div>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="tier-header">
+        <div class="tier-number">2</div>
+        <div><div class="tier-name">Moderate effort — targeted leverage</div><div class="tier-desc">A few hours per month</div></div>
+      </div>
+      <div class="tier-actions">
+        <div class="tier-action">
+          <div class="tier-action-name">Attend a local government meeting</div>
+          <div class="tier-action-desc">City council, school board, planning commission — these are public meetings where public comment is taken. Showing up and speaking, even briefly, puts you on record and signals that residents are watching specific issues.</div>
+          <div class="tier-action-tip">Tip: Written comments submitted before a meeting often carry more weight than off-the-cuff oral comment. Prepare something specific.</div>
+        </div>
+        <div class="tier-action">
+          <div class="tier-action-name">Donate strategically to down-ballot races</div>
+          <div class="tier-action-desc">Look for state legislative races in competitive districts. The return on investment per dollar in these races is orders of magnitude higher than in statewide or federal races.</div>
+        </div>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="tier-header">
+        <div class="tier-number">3</div>
+        <div><div class="tier-name">High effort — maximum leverage</div><div class="tier-desc">For people who want to be genuinely effective</div></div>
+      </div>
+      <div class="tier-actions">
+        <div class="tier-action">
+          <div class="tier-action-name">Run for local office</div>
+          <div class="tier-action-desc">School board. City council. Water district. These offices are often uncontested or decided by small margins. They have real authority over budgets, curricula, land use, and local hiring. Most incumbents run unopposed.</div>
+          <div class="tier-action-tip">Tip: Many states require only 25–100 valid signatures to appear on a local ballot.</div>
+        </div>
+        <div class="tier-action">
+          <div class="tier-action-name">Develop genuine expertise in a specific policy area</div>
+          <div class="tier-action-desc">People with deep, credible knowledge on a specific issue — education finance, water rights, housing policy, broadband access — have disproportionate access and influence relative to their resources. Expertise is leverage that doesn't require money or connections.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="callout">
+      <div class="callout-label">What you can do with PolicyLogic data</div>
+      <p>Share a scorecard with your city council member before a vote. Bring data to a constituent meeting. Reference specific promises and outcomes when writing a letter to the editor. Accountability tools are only as powerful as the people who use them.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="takeaway">
+      <div class="takeaway-label">The core principle</div>
+      <p>Political influence concentrates where attention doesn't. Presidential races get 90% of media coverage and 90% of the activism — and have among the lowest per-voter leverage of any election. The school board, the state legislature, the city council: less coverage, less competition, more impact per person engaged.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="next-up">
+      <a href="/learn-how-policy-works.html" class="next-card">
+        <div class="next-card-label">Previous — How Policy Works</div>
+        <h3>From Promise to Law</h3>
+        <p>Understand the system that makes delivery hard — before you evaluate who's delivering.</p>
+      </a>
+      <a href="/learn-govt-101.html" class="next-card">
+        <div class="next-card-label">Next — Govt 101</div>
+        <h3>Terms, Elections &amp; How Long They Serve</h3>
+        <p>The essential reference for reading any scorecard — terms, cycles, and what each office can actually do.</p>
+      </a>
+    </div>
+  </div>
+</article>
+<script>
+  var sections = document.querySelectorAll('.section');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  sections.forEach(function(s) { observer.observe(s); });
+</script>
+<footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);">
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
+</footer>
+
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>

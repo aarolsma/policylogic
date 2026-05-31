@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Commitments · PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gray: #6b6459; --red: #c0392b; --green: #1a6b3c; --blue: #1a3a6b;
+    /* Administration colors — neutral, not party-coded */
+    --adm-reagan:   #7a6a5a;
+    --adm-bush41:   #8a7a6a;
+    --adm-clinton:  #6a7a8a;
+    --adm-bush43:   #7a6a5a;
+    --adm-obama:    #5a7a6a;
+    --adm-trump1:   #8a6a5a;
+    --adm-biden:    #5a6a7a;
+    --adm-trump2:   #8a6a5a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; line-height: normal; }
+
+  /* MASTHEAD */
+  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+
+  /* FILTER BAR */
+  .filter-bar { border-bottom: 1px solid var(--rule); padding: 10px 40px; background: var(--cream); display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .filter-btn { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); background: none; border: 1px solid transparent; padding: 4px 12px; cursor: pointer; transition: all 0.15s; }
+  .filter-btn:hover { color: var(--ink); border-color: var(--rule); }
+  .filter-btn.active { color: var(--ink); border-color: var(--ink); font-weight: 500; }
+  .filter-sep { width: 1px; height: 14px; background: var(--rule); }
+
+  /* MAIN */
+  .main { max-width: 1100px; margin: 0 auto; padding: 48px 40px 80px; }
+  .page-intro { max-width: 640px; margin: 0 auto 48px; text-align: center; }
+  .page-intro-title { font-family: 'Playfair Display', serif; font-size: clamp(20px, 3vw, 28px); font-weight: 700; margin-bottom: 12px; }
+  .page-intro-body { font-size: 14px; line-height: 1.8; color: var(--gray); }
+
+  /* COMMITMENT CARD */
+  .commitment { border: 1px solid var(--rule); margin-bottom: 2px; background: var(--paper); }
+  .commitment-header { padding: 24px 28px 20px; cursor: pointer; display: flex; align-items: flex-start; gap: 20px; }
+  .commitment-header:hover { background: var(--cream); }
+  .commitment-domain { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+  .commitment-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1.25; margin-bottom: 8px; flex: 1; }
+  .commitment-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .commitment-forum { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); }
+  .commitment-status { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 8px; border: 1px solid; }
+  .status-on-track   { color: var(--green); border-color: var(--green); }
+  .status-behind     { color: var(--gold);  border-color: var(--gold); }
+  .status-fulfilled  { color: var(--blue);  border-color: var(--blue); }
+  .status-reversed   { color: var(--red);   border-color: var(--red); }
+  .status-contested  { color: var(--gray);  border-color: var(--gray); }
+  .commitment-ratio  { margin-left: auto; text-align: right; flex-shrink: 0; }
+  .ratio-value { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; line-height: 1; }
+  .ratio-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 2px; }
+  .ratio-bar { width: 80px; height: 3px; background: var(--rule); margin-top: 6px; margin-left: auto; }
+  .ratio-fill { height: 100%; background: var(--ink); }
+
+  /* TIMELINE */
+  .commitment-body { display: none; border-top: 1px solid var(--rule); padding: 32px 28px 28px; }
+  .commitment.open .commitment-body { display: block; }
+  .commitment-pledge { font-size: 14px; line-height: 1.75; color: var(--gray); margin-bottom: 28px; padding: 16px 20px; background: var(--cream); border-left: 3px solid var(--ink); font-style: italic; }
+  .commitment-pledge strong { color: var(--ink); font-style: normal; font-weight: 500; }
+
+  /* ADMIN LEGEND */
+  .adm-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+  .adm-chip { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; color: var(--paper); }
+
+  /* TIMELINE TRACK */
+  .timeline { position: relative; padding-left: 0; }
+  .timeline-track { position: relative; height: 8px; border-radius: 0; margin-bottom: 32px; display: flex; overflow: hidden; border: 1px solid var(--rule); }
+  .adm-segment { height: 100%; position: relative; }
+  .adm-segment-label { position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%); font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gray); white-space: nowrap; }
+
+  /* EVENTS */
+  .events { display: flex; flex-direction: column; gap: 1px; }
+  .event { display: flex; align-items: flex-start; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--cream); }
+  .event:last-child { border-bottom: none; }
+  .event-date { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.05em; color: var(--gray); white-space: nowrap; flex-shrink: 0; width: 68px; padding-top: 2px; }
+  .event-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+  .dot-pledge        { background: var(--ink); }
+  .dot-recommitment  { background: var(--blue); }
+  .dot-reversal      { background: var(--red); }
+  .dot-milestone     { background: var(--rule); border: 1px solid var(--gray); }
+  .dot-delivery      { background: var(--green); }
+  .dot-shortfall     { background: var(--gold); }
+  .dot-impact        { background: var(--green); border: 2px solid var(--ink); }
+  .dot-dispute       { background: var(--paper); border: 2px solid var(--red); }
+  .event-content { flex: 1; }
+  .event-type { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-bottom: 3px; }
+  .event-label { font-size: 14px; font-weight: 400; line-height: 1.4; margin-bottom: 2px; }
+  .event-detail { font-size: 12px; color: var(--gray); line-height: 1.5; }
+  .event-adm { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--paper); padding: 1px 6px; margin-left: 8px; vertical-align: middle; display: inline-block; }
+
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 40px; }
+  footer a { color: var(--gray); }
+
+  @media (max-width: 640px) {
+    .masthead, .main, .filter-bar { padding-left: 20px; padding-right: 20px; }
+    .commitment-header { flex-wrap: wrap; }
+    .commitment-ratio { margin-left: 0; }
+  }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 &middot; Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">International Commitments</div>
+  <div class="masthead-rule"><span></span><em>U.S. Pledges &middot; Tracked Over Time</em><span></span></div>
+      <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html" class="active">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-domain="all">All</button>
+  <div class="filter-sep"></div>
+  <button class="filter-btn" data-domain="climate">Climate &amp; Environment</button>
+  <button class="filter-btn" data-domain="health">Global Health</button>
+  <button class="filter-btn" data-domain="defense">Defense &amp; Security</button>
+  <button class="filter-btn" data-domain="aid">Development &amp; Aid</button>
+  <button class="filter-btn" data-domain="multilateral">Multilateral Institutions</button>
+</div>
+
+<div class="main">
+  <div class="page-intro">
+    <div class="page-intro-title">Commitments, Not Officials</div>
+    <p class="page-intro-body">The United States makes hundreds of formal commitments to international organizations, treaties, and multilateral forums — funding pledges, emissions targets, defense spending thresholds, humanitarian contributions. Unlike domestic promises tied to a single official, these commitments outlive administrations. This tracker follows each one as a continuous record: what was pledged, what was delivered, and what changed when power did.</p>
+  </div>
+
+  <div id="commitments"></div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All entries are AI-assisted drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+<script>
+var ADM_COLORS = {
+  'Reagan':     '#7a6a5a',
+  'Bush 41':    '#8a7a6a',
+  'Clinton':    '#6a7a8a',
+  'Bush 43':    '#7a6a5a',
+  'Obama':      '#5a7a6a',
+  'Trump 1':    '#8a6a5a',
+  'Biden':      '#5a6a7a',
+  'Trump 2':    '#7a5a4a',
+};
+
+var ADM_ORDER = ['Reagan','Bush 41','Clinton','Bush 43','Obama','Trump 1','Biden','Trump 2'];
+
+var COMMITMENTS = [
+  {
+    id: 'green-climate-fund',
+    domain: 'climate',
+    domain_label: 'Climate & Environment',
+    title: 'Green Climate Fund Contribution',
+    forum: 'UNFCCC · Paris Agreement',
+    binding: false,
+    pledge_text: 'The Obama administration pledged <strong>$3 billion</strong> to the UN Green Climate Fund in 2014, with $1B paid before the end of the term. The Biden administration recommitted and pledged an additional <strong>$3 billion</strong> through 2024.',
+    status: 'behind',
+    delivery_ratio: 47,
+    administrations: [
+      { name: 'Obama',   start: 2014, end: 2017, pct: 25 },
+      { name: 'Trump 1', start: 2017, end: 2021, pct: 20 },
+      { name: 'Biden',   start: 2021, end: 2025, pct: 40 },
+      { name: 'Trump 2', start: 2025, end: 2026, pct: 15 },
+    ],
+    events: [
+      { date: 'Nov 2014', adm: 'Obama',   type: 'pledge',        label: 'U.S. pledges $3B to the Green Climate Fund', detail: 'Announced at G20 Brisbane. First major U.S. multilateral climate finance commitment.' },
+      { date: 'Mar 2016', adm: 'Obama',   type: 'delivery',      label: '$500M first tranche paid', detail: 'First installment of Obama commitment disbursed to GCF.' },
+      { date: 'Jan 2017', adm: 'Obama',   type: 'delivery',      label: '$500M second tranche paid', detail: 'Second installment paid in final days of administration. $2B of $3B pledge remains.' },
+      { date: 'Jun 2017', adm: 'Trump 1', type: 'reversal',      label: 'U.S. withdraws from Paris Agreement', detail: 'Trump announces withdrawal. No further GCF payments made. $2B pledge effectively suspended.' },
+      { date: 'Feb 2021', adm: 'Biden',   type: 'recommitment',  label: 'U.S. rejoins Paris Agreement', detail: 'Biden signs executive order on first day in office. GCF commitment resumed.' },
+      { date: 'Jun 2021', adm: 'Biden',   type: 'pledge',        label: 'Biden pledges additional $3B by 2024', detail: 'Announced at G7 Cornwall. Covers both remaining Obama pledge and new commitment.' },
+      { date: 'Sep 2022', adm: 'Biden',   type: 'delivery',      label: '$1B delivered to GCF', detail: 'First Biden-era payment. IRA passage seen as enabling further disbursements.' },
+      { date: 'Nov 2022', adm: 'Biden',   type: 'impact',        label: 'GCF funds 243 projects in 129 countries', detail: 'U.S. contributions part of $10B+ in GCF-funded mitigation and adaptation projects globally.' },
+      { date: 'Jan 2025', adm: 'Trump 2', type: 'reversal',      label: 'U.S. withdraws from Paris Agreement again', detail: 'Second withdrawal announced on inauguration day. Remaining $2B Biden pledge suspended.' },
+    ]
+  },
+  {
+    id: 'nato-defense-spending',
+    domain: 'defense',
+    domain_label: 'Defense & Security',
+    title: 'NATO 2% GDP Defense Spending Pledge',
+    forum: 'NATO · Wales Summit Communiqué',
+    binding: false,
+    pledge_text: 'At the 2014 Wales Summit, all NATO members committed to spend <strong>2% of GDP on defense</strong> within a decade. The U.S. has consistently exceeded this threshold but has pressed allies to comply — while also threatening to conditionally honor Article 5 commitments.',
+    status: 'contested',
+    delivery_ratio: 100,
+    administrations: [
+      { name: 'Obama',   start: 2014, end: 2017, pct: 25 },
+      { name: 'Trump 1', start: 2017, end: 2021, pct: 25 },
+      { name: 'Biden',   start: 2021, end: 2025, pct: 35 },
+      { name: 'Trump 2', start: 2025, end: 2026, pct: 15 },
+    ],
+    events: [
+      { date: 'Sep 2014', adm: 'Obama',   type: 'pledge',       label: 'NATO Wales Summit: all members commit to 2% GDP', detail: 'U.S. at ~3.5% GDP. Commitment primarily directed at European allies below threshold.' },
+      { date: 'Feb 2017', adm: 'Trump 1', type: 'milestone',    label: 'Trump demands allies meet 2% — or face consequences', detail: 'Trump suggests U.S. may not defend NATO members not meeting spending target, raising Article 5 questions.' },
+      { date: 'Jul 2018', adm: 'Trump 1', type: 'dispute',      label: 'Trump threatens to pull U.S. out of NATO at Brussels summit', detail: 'Demanded members raise target to 4%. Disputed by allies. NATO Secretary General called meeting "difficult."' },
+      { date: 'Jun 2021', adm: 'Biden',   type: 'recommitment', label: 'Biden reaffirms unconditional Article 5 commitment', detail: 'Explicit reversal of Trump conditionality. 10 of 30 NATO members now meeting 2% threshold, up from 3 in 2014.' },
+      { date: 'Feb 2022', adm: 'Biden',   type: 'impact',       label: 'Russian invasion of Ukraine accelerates NATO spending', detail: 'Members pledge to exceed 2%. 18 of 32 members meet threshold by 2023.' },
+      { date: 'Jan 2025', adm: 'Trump 2', type: 'dispute',      label: 'Trump floats 5% GDP NATO spending target', detail: 'Demands allies more than double commitment. Conditionality on Article 5 defense reinstated in public statements.' },
+    ]
+  },
+  {
+    id: 'pepfar',
+    domain: 'health',
+    domain_label: 'Global Health',
+    title: 'PEPFAR — President\'s Emergency Plan for AIDS Relief',
+    forum: 'Bilateral · UNAIDS',
+    binding: false,
+    pledge_text: 'PEPFAR was created in 2003 with an initial <strong>$15B commitment over 5 years</strong>. Reauthorized in 2008 ($48B), 2013, and 2018. The U.S. has disbursed over <strong>$110B</strong> since inception — the largest commitment by any nation to combat a single disease.',
+    status: 'contested',
+    delivery_ratio: 91,
+    administrations: [
+      { name: 'Bush 43', start: 2003, end: 2009, pct: 20 },
+      { name: 'Obama',   start: 2009, end: 2017, pct: 28 },
+      { name: 'Trump 1', start: 2017, end: 2021, pct: 18 },
+      { name: 'Biden',   start: 2021, end: 2025, pct: 25 },
+      { name: 'Trump 2', start: 2025, end: 2026, pct: 9 },
+    ],
+    events: [
+      { date: 'Jan 2003', adm: 'Bush 43', type: 'pledge',       label: 'Bush announces PEPFAR: $15B over 5 years', detail: 'Announced in State of the Union. Targets 15 focus countries in sub-Saharan Africa and Caribbean.' },
+      { date: 'Jul 2008', adm: 'Bush 43', type: 'recommitment', label: 'PEPFAR reauthorized at $48B over 5 years', detail: 'Bipartisan reauthorization. Program expanded to 30+ countries.' },
+      { date: 'Dec 2011', adm: 'Obama',   type: 'impact',       label: '4 million people on antiretroviral treatment', detail: 'PEPFAR-supported programs reach milestone. AIDS-related deaths in focus countries down 30%.' },
+      { date: 'Sep 2018', adm: 'Trump 1', type: 'recommitment', label: 'PEPFAR reauthorized for 5 years', detail: 'Bipartisan reauthorization signed. Continued at ~$7B/year appropriations.' },
+      { date: 'Jun 2021', adm: 'Biden',   type: 'impact',       label: '20 million lives saved since 2003 — UNAIDS estimate', detail: 'PEPFAR-supported countries see 58% reduction in new HIV infections since program peak.' },
+      { date: 'Jan 2025', adm: 'Trump 2', type: 'reversal',     label: 'PEPFAR stop-work orders issued under USAID freeze', detail: 'DOGE-directed USAID funding freeze halts PEPFAR disbursements in multiple countries. Estimated 500,000 at immediate risk of treatment interruption.' },
+      { date: 'Feb 2025', adm: 'Trump 2', type: 'dispute',      label: 'Federal courts partially restore PEPFAR funding', detail: 'Judge blocks full implementation of stop-work orders. Partial funding restored pending litigation.' },
+    ]
+  },
+  {
+    id: 'un-regular-budget',
+    domain: 'multilateral',
+    domain_label: 'Multilateral Institutions',
+    title: 'UN Regular Budget Assessed Contributions',
+    forum: 'United Nations · GA Fifth Committee',
+    binding: true,
+    pledge_text: 'As a UN member, the U.S. is legally obligated to pay its <strong>assessed contribution</strong> to the UN regular budget — currently ~22% of the total (~$640M/year). The U.S. has accumulated and carried arrears in multiple periods.',
+    status: 'behind',
+    delivery_ratio: 78,
+    administrations: [
+      { name: 'Reagan',  start: 1985, end: 1989, pct: 10 },
+      { name: 'Bush 41', start: 1989, end: 1993, pct: 8 },
+      { name: 'Clinton', start: 1993, end: 2001, pct: 15 },
+      { name: 'Bush 43', start: 2001, end: 2009, pct: 18 },
+      { name: 'Obama',   start: 2009, end: 2017, pct: 18 },
+      { name: 'Trump 1', start: 2017, end: 2021, pct: 14 },
+      { name: 'Biden',   start: 2021, end: 2025, pct: 12 },
+      { name: 'Trump 2', start: 2025, end: 2026, pct: 5 },
+    ],
+    events: [
+      { date: '1985',     adm: 'Reagan',  type: 'reversal',     label: 'Kassebaum-Solomon Amendment: U.S. withholds 20% of UN budget', detail: 'Congress mandates withholding pending UN voting reform. Start of chronic U.S. arrears cycle.' },
+      { date: '1999',     adm: 'Clinton', type: 'delivery',     label: 'Helms-Biden deal: U.S. pays $926M in back arrears', detail: 'Conditional on UN reforms including reduced U.S. assessment rate from 25% to 22%.' },
+      { date: 'Sep 2001', adm: 'Bush 43', type: 'delivery',     label: 'Full UN dues paid for first time since 1985', detail: 'Post-9/11 diplomatic context. U.S. current on assessed contributions for first time in 16 years.' },
+      { date: '2017',     adm: 'Trump 1', type: 'shortfall',    label: 'U.S. withholds $285M from UN regular budget', detail: 'Haley announces cuts following UN Jerusalem vote. Arrears begin accumulating again.' },
+      { date: '2019',     adm: 'Trump 1', type: 'reversal',     label: 'U.S. withdraws from UN Human Rights Council', detail: 'First member state to voluntarily withdraw. Annual dues for HRC activities withheld.' },
+      { date: '2021',     adm: 'Biden',   type: 'recommitment', label: 'Biden rejoins UN Human Rights Council', detail: 'Arrears repayment schedule negotiated. U.S. resumes partial payments.' },
+      { date: '2025',     adm: 'Trump 2', type: 'reversal',     label: 'U.S. withdraws from UN Human Rights Council again', detail: 'Second voluntary withdrawal. Additional withholdings under review per executive order on international organizations.' },
+    ]
+  },
+  {
+    id: 'paris-ndc',
+    domain: 'climate',
+    domain_label: 'Climate & Environment',
+    title: 'Paris Agreement — U.S. NDC Emissions Targets',
+    forum: 'UNFCCC · Paris Agreement',
+    binding: false,
+    pledge_text: 'The U.S. NDC under Paris committed to <strong>26–28% reduction in GHG emissions below 2005 levels by 2025</strong>. The Biden NDC raised this to <strong>50–52% by 2030</strong>. As of 2024, the U.S. is projected to reach ~40% reduction by 2030 under current policy.',
+    status: 'behind',
+    delivery_ratio: 38,
+    administrations: [
+      { name: 'Obama',   start: 2015, end: 2017, pct: 15 },
+      { name: 'Trump 1', start: 2017, end: 2021, pct: 25 },
+      { name: 'Biden',   start: 2021, end: 2025, pct: 45 },
+      { name: 'Trump 2', start: 2025, end: 2026, pct: 15 },
+    ],
+    events: [
+      { date: 'Dec 2015', adm: 'Obama',   type: 'pledge',        label: 'U.S. submits NDC: 26–28% reduction by 2025 below 2005', detail: 'Paris Agreement signed. First U.S. nationally determined contribution under the Agreement.' },
+      { date: 'Jun 2017', adm: 'Trump 1', type: 'reversal',      label: 'Trump announces U.S. withdrawal from Paris Agreement', detail: 'Formal notification submitted Nov 2019. Earliest effective withdrawal date: Nov 4, 2020 — day after election.' },
+      { date: '2019',     adm: 'Trump 1', type: 'shortfall',     label: 'U.S. on track to miss 2025 NDC target by ~10 points', detail: 'Rollback of Clean Power Plan and vehicle emissions standards increases projected emissions gap.' },
+      { date: 'Feb 2021', adm: 'Biden',   type: 'recommitment',  label: 'U.S. rejoins Paris Agreement', detail: 'Effective immediately upon notification. Previous NDC reinstated.' },
+      { date: 'Apr 2021', adm: 'Biden',   type: 'pledge',        label: 'Biden submits new NDC: 50–52% by 2030', detail: 'Announced at Leaders Summit on Climate. Doubles ambition of Obama NDC.' },
+      { date: 'Aug 2022', adm: 'Biden',   type: 'delivery',      label: 'Inflation Reduction Act: $369B in climate investment', detail: 'Largest climate legislation in U.S. history. Projected to deliver 40% reduction by 2030 — below NDC target but significant.' },
+      { date: 'Nov 2024', adm: 'Biden',   type: 'impact',        label: 'U.S. renewable capacity surpasses coal for first time', detail: 'Wind + solar generation exceeds coal generation for calendar year. Structural shift in energy mix.' },
+      { date: 'Jan 2025', adm: 'Trump 2', type: 'reversal',      label: 'U.S. withdraws from Paris Agreement — second time', detail: 'Immediate withdrawal on inauguration day. NDC obligations suspended. IRA rollback initiated.' },
+    ]
+  }
+];
+
+var activeFilter = 'all';
+
+function statusClass(s) {
+  return 'status-' + s.replace('_', '-');
+}
+function statusLabel(s) {
+  return {
+    'on_track': 'On Track', 'behind': 'Behind', 'fulfilled': 'Fulfilled',
+    'reversed': 'Reversed', 'contested': 'Contested'
+  }[s] || s;
+}
+function eventDotClass(type) {
+  return 'dot-' + type;
+}
+function eventTypeLabel(type) {
+  return {
+    'pledge': 'Pledge', 'recommitment': 'Recommitment', 'reversal': 'Reversal',
+    'milestone': 'Milestone', 'delivery': 'Delivery', 'shortfall': 'Shortfall',
+    'impact': 'Impact', 'dispute': 'Disputed'
+  }[type] || type;
+}
+
+function renderCommitment(c) {
+  var div = document.createElement('div');
+  div.className = 'commitment';
+  div.dataset.domain = c.domain;
+
+  // Build admin segments for track
+  var totalPct = c.administrations.reduce(function(s, a) { return s + a.pct; }, 0);
+  var trackSegs = c.administrations.map(function(a) {
+    var pct = (a.pct / totalPct * 100).toFixed(1);
+    var col = ADM_COLORS[a.name] || '#999';
+    return '<div class="adm-segment" style="width:' + pct + '%;background:' + col + ';" title="' + a.name + ' (' + a.start + '–' + a.end + ')"></div>';
+  }).join('');
+
+  // Admin legend
+  var legendItems = c.administrations.map(function(a) {
+    return '<span class="adm-chip" style="background:' + (ADM_COLORS[a.name] || '#999') + ';">' + a.name + '</span>';
+  }).join('');
+
+  // Events
+  var eventsHTML = c.events.map(function(e) {
+    var admCol = ADM_COLORS[e.adm] || '#999';
+    return '<div class="event">' +
+      '<div class="event-date">' + e.date + '</div>' +
+      '<div class="event-dot ' + eventDotClass(e.type) + '"></div>' +
+      '<div class="event-content">' +
+        '<div class="event-type">' + eventTypeLabel(e.type) +
+          '<span class="event-adm" style="background:' + admCol + ';">' + e.adm + '</span>' +
+        '</div>' +
+        '<div class="event-label">' + e.label + '</div>' +
+        (e.detail ? '<div class="event-detail">' + e.detail + '</div>' : '') +
+      '</div>' +
+    '</div>';
+  }).join('');
+
+  var ratioColor = c.delivery_ratio >= 80 ? 'var(--green)' : c.delivery_ratio >= 50 ? 'var(--gold)' : 'var(--red)';
+  var ratioDisplay = (c.status === 'reversed') ? '—' : c.delivery_ratio + '%';
+
+  div.innerHTML =
+    '<div class="commitment-header" onclick="toggleCommitment(this)">' +
+      '<div style="flex:1;">' +
+        '<div class="commitment-domain">' + c.domain_label + '</div>' +
+        '<div class="commitment-title">' + c.title + '</div>' +
+        '<div class="commitment-meta">' +
+          '<span class="commitment-forum">' + c.forum + '</span>' +
+          '<span class="commitment-status ' + statusClass(c.status) + '">' + statusLabel(c.status) + '</span>' +
+          (c.binding ? '<span class="commitment-forum" style="color:var(--red);">Treaty-Bound</span>' : '') +
+        '</div>' +
+      '</div>' +
+      '<div class="commitment-ratio">' +
+        '<div class="ratio-value" style="color:' + ratioColor + ';">' + ratioDisplay + '</div>' +
+        '<div class="ratio-label">Delivered</div>' +
+        '<div class="ratio-bar"><div class="ratio-fill" style="width:' + Math.min(c.delivery_ratio, 100) + '%;background:' + ratioColor + ';"></div></div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="commitment-body">' +
+      '<div class="commitment-pledge">' + c.pledge_text + '</div>' +
+      '<div class="adm-legend">' + legendItems + '</div>' +
+      '<div class="timeline-track">' + trackSegs + '</div>' +
+      '<div class="events" style="margin-top:28px;">' + eventsHTML + '</div>' +
+    '</div>';
+
+  return div;
+}
+
+function toggleCommitment(header) {
+  var card = header.parentElement;
+  card.classList.toggle('open');
+}
+
+function renderAll() {
+  var container = document.getElementById('commitments');
+  container.innerHTML = '';
+  COMMITMENTS.forEach(function(c) {
+    if (activeFilter === 'all' || c.domain === activeFilter) {
+      container.appendChild(renderCommitment(c));
+    }
+  });
+}
+
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    activeFilter = btn.dataset.domain;
+    renderAll();
+  });
+});
+
+renderAll();
+</script>
+
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>

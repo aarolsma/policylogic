@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Smart People Believe Wrong Things — PolicyLogic.io</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1714;
+      --paper: #f5f0e8;
+      --cream: #ede8dc;
+      --rule: #d4c9b4;
+      --gold: #b8892a;
+      --gold-light: #d4a843;
+      --red: #c0392b;
+      --green: #1a6b3c;
+      --gray: #6b6459;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+    }
+
+    /* MASTHEAD */
+    .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+
+    /* LEARN NAV */
+    .learn-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--cream);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      overflow-x: auto;
+    }
+    .learn-nav-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+    .learn-nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+      text-decoration: none;
+      padding: 4px 12px;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .learn-nav a:hover { border-color: var(--rule); color: var(--ink); }
+    .learn-nav a.active { border-color: var(--ink); color: var(--ink); background: var(--paper); }
+
+    /* HERO */
+    .hero {
+      max-width: 780px;
+      margin: 64px auto 0;
+      padding: 0 40px;
+    }
+    .hero-track {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-deck {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--gray);
+      font-weight: 300;
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+      margin-bottom: 40px;
+    }
+    .hero-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gray);
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ARTICLE BODY */
+    .article {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+    }
+
+    .section {
+      margin-top: 56px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+
+    p strong {
+      font-weight: 500;
+    }
+
+    /* BIAS CARD */
+    .bias-card {
+      border: 1px solid var(--rule);
+      background: var(--cream);
+      margin: 32px 0;
+      overflow: hidden;
+    }
+
+    .bias-card-header {
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .bias-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--rule);
+      line-height: 1;
+      min-width: 48px;
+    }
+
+    .bias-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .bias-tagline {
+      font-size: 13px;
+      color: var(--gray);
+      font-style: italic;
+    }
+
+    .bias-body {
+      padding: 20px 24px;
+    }
+
+    .bias-body p {
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    /* EXAMPLE BLOCK */
+    .example-block {
+      margin-top: 20px;
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+    }
+
+    .example-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 12px;
+    }
+
+    .example-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .example-tab {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: var(--gray);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: all 0.15s;
+    }
+
+    .example-tab.active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    .example-content {
+      display: none;
+      padding: 16px 0 4px;
+    }
+    .example-content.active { display: block; }
+
+    .example-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink);
+      padding: 12px 16px;
+      background: var(--paper);
+      border-left: 3px solid var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .example-annotation {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--gray);
+    }
+
+    .example-annotation strong {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* PULL QUOTE */
+    .pull-quote {
+      margin: 40px 0;
+      padding: 32px 40px;
+      border-top: 3px double var(--ink);
+      border-bottom: 3px double var(--ink);
+      text-align: center;
+    }
+
+    .pull-quote p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(18px, 2.5vw, 26px);
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* GLOSSARY TERM */
+    .glossary-term {
+      border-bottom: 1px dashed var(--gold);
+      cursor: help;
+      position: relative;
+    }
+    .glossary-term:hover::after {
+      content: attr(data-def);
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: var(--paper);
+      font-size: 12px;
+      line-height: 1.5;
+      padding: 8px 12px;
+      width: 240px;
+      z-index: 10;
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      pointer-events: none;
+    }
+
+    /* TAKEAWAY BOX */
+    .takeaway {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+    .takeaway-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .takeaway h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .takeaway p {
+      color: rgba(245,240,232,0.8);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* NEXT UP */
+    .next-up {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 3px double var(--ink);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .next-card {
+      border: 1px solid var(--rule);
+      padding: 24px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.15s, background 0.15s;
+      display: block;
+    }
+    .next-card:hover {
+      border-color: var(--ink);
+      background: var(--cream);
+    }
+    .next-card-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .next-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .next-card p {
+      font-size: 13px;
+      color: var(--gray);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 640px) {
+      .hero, .article { padding: 0 20px; }
+      .next-up { grid-template-columns: 1fr; }
+      .bias-card-header { flex-direction: column; gap: 8px; }
+      .bias-number { font-size: 32px; }
+    }
+    .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Education &amp; Context</div>
+  <div class="masthead-rule"><span></span><em>Civic Education</em><span></span></div>
+    <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger active">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<nav class="learn-nav">
+  <span class="learn-nav-label">Learn —</span>
+  <a href="/learn-cognitive-biases.html" class="active">Think Clearly</a>
+  <a href="/learn-how-policy-works.html">How Policy Works</a>
+  <a href="/learn-how-to-influence.html">Take Action</a>
+  <a href="/learn-govt-101.html">Govt 101</a>
+  <a href="/learn-glossary.html">Glossary</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-track">Think Clearly · Module 1 of 4</div>
+  <h1 class="hero-title">Why Smart People<br>Believe <em>Wrong Things</em><br>About Politics</h1>
+  <p class="hero-deck">
+    It's not stupidity. It's not bad values. Your brain has shortcuts built in — and political messaging is designed to exploit every one of them. Here's how to see it happening in real time.
+  </p>
+  <div class="hero-meta">5 minute read</div>
+</div>
+
+<article class="article">
+
+  <div class="section">
+    <p>
+      You've probably had this experience: you hear a political claim, it immediately feels true, and no amount of evidence to the contrary seems to change your mind. Or the opposite — someone you disagree with says something reasonable, and you can't bring yourself to agree even when part of you knows they have a point.
+    </p>
+    <p>
+      This isn't a character flaw. It's how human brains work. We evolved to make fast decisions, trust our group, and avoid being wrong in public. None of those instincts serve us well when we're trying to evaluate a healthcare bill or figure out whether our senator kept their promises.
+    </p>
+    <p>
+      The good news: once you know the names of these shortcuts, you start noticing them everywhere — in news coverage, in campaign ads, in your own reactions. That noticing is the first step toward thinking more clearly about politics.
+    </p>
+    <p>
+      Here are the six that show up most often, with illustrative examples from across the political spectrum.
+    </p>
+  </div>
+
+  <!-- BIAS 1: CONFIRMATION BIAS -->
+  <div class="section">
+    <div class="bias-card">
+      <div class="bias-card-header">
+        <div class="bias-number">1</div>
+        <div>
+          <div class="bias-name">Confirmation Bias</div>
+          <div class="bias-tagline">We seek out information that agrees with us — and ignore what doesn't</div>
+        </div>
+      </div>
+      <div class="bias-body">
+        <p>
+          If you already believe that government spending is wasteful, you'll notice every story about a failed government program. If you believe corporations are corrupt, you'll notice every story about corporate malfeasance. Both things happen constantly — you're just keeping score selectively.
+        </p>
+        <p>
+          This is confirmation bias: the tendency to search for, favor, and remember information that confirms what we already believe. It's not that we're lying to ourselves — our brains genuinely process confirming information more easily and dismissing evidence that challenges our beliefs takes real mental effort.
+        </p>
+        <p>
+          Politicians and media outlets know this. They're not trying to change your mind — they're trying to confirm it, because that's what keeps you engaged.
+        </p>
+
+        <div class="example-block">
+          <div class="example-label">Real Examples</div>
+          <div class="example-tabs">
+            <button class="example-tab active" onclick="switchTab(this, 'cb-1')">Example A</button>
+            <button class="example-tab" onclick="switchTab(this, 'cb-2')">Example B</button>
+          </div>
+          <div class="example-content active" id="cb-1">
+            <div class="example-quote">
+              "The border is completely open. Crime is out of control. Our communities are being destroyed."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> This framing selects real incidents of border crossings and crimes committed by undocumented immigrants while omitting data showing overall crime rates, the complexity of immigration enforcement, or any positive economic effects. It confirms the belief that immigration is purely harmful — for people who already hold that belief, it feels like evidence. For those who don't, it feels like a distortion.
+            </div>
+          </div>
+          <div class="example-content" id="cb-2">
+            <div class="example-quote">
+              "Republican tax cuts only benefit billionaires. Working families got nothing."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> The 2017 tax cuts did disproportionately benefit higher earners — that's documented. But the claim that working families got "nothing" ignores the data showing most households saw at least a modest reduction. Selectively omitting that confirms the belief that Republicans never help ordinary people — regardless of what the full picture shows.
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway" style="margin-top:20px;margin-bottom:0;">
+          <div class="takeaway-label">How to counter it</div>
+          <p>Before sharing a political claim, ask: what would the other side say about this? Find one credible source that disagrees with you and actually read it. You don't have to change your mind — but you'll understand the full picture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIAS 2: ATTRIBUTION ERROR -->
+  <div class="section">
+    <div class="bias-card">
+      <div class="bias-card-header">
+        <div class="bias-number">2</div>
+        <div>
+          <div class="bias-name">Attribution Error</div>
+          <div class="bias-tagline">We judge our side by their intentions — and the other side by their outcomes</div>
+        </div>
+      </div>
+      <div class="bias-body">
+        <p>
+          When a policy you support fails, you explain it as bad luck, underfunding, obstruction, or forces outside anyone's control. When a policy your opponents supported fails, it's proof they were incompetent or corrupt.
+        </p>
+        <p>
+          This is the <span class="glossary-term" data-def="The tendency to attribute others' actions to their character, while attributing our own actions to circumstances.">fundamental attribution error</span> applied to politics. It's why the same set of economic statistics can look like success to one side and failure to the other — we're not just disagreeing about the facts, we're disagreeing about whose fault the facts are.
+        </p>
+        <p>
+          This is directly relevant to how PolicyLogic scores promises. Our <strong>Their Role</strong> score is specifically designed to account for this — a senator who couldn't pass a bill because they were in the minority party shouldn't get the same score as one who had every advantage and still failed. Attribution matters.
+        </p>
+
+        <div class="example-block">
+          <div class="example-label">Real Examples</div>
+          <div class="example-tabs">
+            <button class="example-tab active" onclick="switchTab(this, 'ae-1')">Example A</button>
+            <button class="example-tab" onclick="switchTab(this, 'ae-2')">Example B</button>
+          </div>
+          <div class="example-content active" id="ae-1">
+            <div class="example-quote">
+              "Inflation happened under Biden. He did that."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> Global inflation hit nearly every country in 2021–2022, driven by supply chain disruptions from COVID and energy price spikes from the Russia-Ukraine war. U.S. inflation was real and painful — but attributing it entirely to one president ignores that the same pattern occurred under conservative governments in the UK, Germany, and Canada simultaneously. That's not an excuse, but it matters for accountability.
+            </div>
+          </div>
+          <div class="example-content" id="ae-2">
+            <div class="example-quote">
+              "Trump caused the COVID deaths. The blood is on his hands."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> The federal pandemic response had documented failures — delayed testing, PPE shortages, mixed messaging. Those are fair to criticize. But attributing all 1.2 million U.S. COVID deaths to one person's decisions erases the role of state governments (of both parties), healthcare system infrastructure built over decades, and a genuinely novel pathogen that overwhelmed systems worldwide.
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway" style="margin-top:20px;margin-bottom:0;">
+          <div class="takeaway-label">How to counter it</div>
+          <p>When evaluating a political outcome, ask: would this have happened anyway? What else was going on? What did similar governments in other places experience? The answers won't always exonerate — but they'll tell you how much credit or blame actually belongs to this person.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="pull-quote">
+      <p>"The goal isn't to have no opinions. It's to make sure your opinions are based on what's actually true — not just what feels true."</p>
+    </div>
+  </div>
+
+  <!-- BIAS 3: IN-GROUP BIAS -->
+  <div class="section">
+    <div class="bias-card">
+      <div class="bias-card-header">
+        <div class="bias-number">3</div>
+        <div>
+          <div class="bias-name">In-Group Bias</div>
+          <div class="bias-tagline">We trust our team — and distrust the other team — regardless of what they actually do</div>
+        </div>
+      </div>
+      <div class="bias-body">
+        <p>
+          Humans are tribal by nature. For most of history, your group was your survival. Trusting your group and being suspicious of outsiders was rational. That instinct doesn't go away just because we're talking about tax policy.
+        </p>
+        <p>
+          In-group bias explains why the same policy can be popular or unpopular depending on who proposes it. Studies have repeatedly found that people change their position on an issue when they're told the other party supports it — not because the policy changed, but because their team loyalty kicked in.
+        </p>
+
+        <div class="example-block">
+          <div class="example-label">Real Example</div>
+          <div class="example-tabs">
+            <button class="example-tab active" onclick="switchTab(this, 'ig-1')">The Mandate Flip</button>
+          </div>
+          <div class="example-content active" id="ig-1">
+            <div class="example-quote">
+              The individual health insurance mandate — the requirement that people buy health insurance or pay a penalty — was originally a conservative idea, proposed by the Heritage Foundation in 1989 and implemented by Mitt Romney in Massachusetts in 2006. When Barack Obama included it in the Affordable Care Act in 2010, it became one of the most hated provisions in modern political history — opposed by most of the same conservatives who had championed it.
+            </div>
+            <div class="example-annotation">
+              <strong>What happened:</strong> The policy didn't change. The team proposing it did. In-group bias did the rest. This isn't a story about Republican hypocrisy — Democrats have done the same thing with other policies. It's a story about how loyalty to a party can override consistency of principle.
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway" style="margin-top:20px;margin-bottom:0;">
+          <div class="takeaway-label">How to counter it</div>
+          <p>Test yourself: if the exact same policy were proposed by the other party, would you still support or oppose it? If your answer changes, that's worth examining. The policy is the policy — who proposes it shouldn't change whether it works.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIAS 4: AVAILABILITY HEURISTIC -->
+  <div class="section">
+    <div class="bias-card">
+      <div class="bias-card-header">
+        <div class="bias-number">4</div>
+        <div>
+          <div class="bias-name">Availability Heuristic</div>
+          <div class="bias-tagline">If we can easily think of an example, we assume it's common</div>
+        </div>
+      </div>
+      <div class="bias-body">
+        <p>
+          We judge how likely or common something is based on how easily an example comes to mind. If you can vividly picture it, your brain tells you it must be frequent. This is why dramatic, emotional news stories have such an outsized effect on how we understand policy problems.
+        </p>
+        <p>
+          After a high-profile crime, people consistently overestimate crime rates. After a dramatic plane crash, flying feels more dangerous than driving — even though the statistics are the reverse. The same thing happens with policy: a single vivid example of welfare fraud, a single story of a violent crime committed by an immigrant, a single story of corporate executives getting massive bonuses after a bailout — these stories shape how we think about entire systems, even when they're statistically rare.
+        </p>
+
+        <div class="example-block">
+          <div class="example-label">Real Examples</div>
+          <div class="example-tabs">
+            <button class="example-tab active" onclick="switchTab(this, 'av-1')">Example A</button>
+            <button class="example-tab" onclick="switchTab(this, 'av-2')">Example B</button>
+          </div>
+          <div class="example-content active" id="av-1">
+            <div class="example-quote">
+              "I personally know someone who gamed the welfare system for years. That money is being stolen."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> Fraud in federal benefit programs is real — and worth addressing. But federal audits consistently put the fraud rate at 1–3% across most programs. One vivid personal story makes that 1–3% feel like the norm. Policy built around edge cases usually ends up hurting the 97–99% who are using the system as intended.
+            </div>
+          </div>
+          <div class="example-content" id="av-2">
+            <div class="example-quote">
+              "Police are out of control. They're killing people every day."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> High-profile cases of police killings — particularly those caught on video — are genuinely disturbing and warrant serious policy response. But intense media coverage makes them feel more frequent than the data shows. This doesn't mean the problem isn't real or serious — it means the policy response needs to be based on accurate prevalence, not on how vivid the examples are.
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway" style="margin-top:20px;margin-bottom:0;">
+          <div class="takeaway-label">How to counter it</div>
+          <p>When a vivid story is shaping your view of a policy, ask: how common is this, actually? Look for base rates, not just examples. One real story is not a trend — and policy designed around outliers often fails the majority.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIAS 5: MOTIVATED REASONING -->
+  <div class="section">
+    <div class="bias-card">
+      <div class="bias-card-header">
+        <div class="bias-number">5</div>
+        <div>
+          <div class="bias-name">Motivated Reasoning</div>
+          <div class="bias-tagline">We work backwards from our conclusion — then find evidence to support it</div>
+        </div>
+      </div>
+      <div class="bias-body">
+        <p>
+          Most of us think we form opinions by gathering evidence and drawing conclusions. In reality, we usually decide what we want to believe first — then we look for evidence that supports it, and we scrutinize any evidence against it much more harshly than evidence for it.
+        </p>
+        <p>
+          This is <span class="glossary-term" data-def="The tendency to process information in a way that supports conclusions we want to reach, regardless of the actual evidence.">motivated reasoning</span> — and it's not limited to uninformed people. Research has shown that smarter, more educated people are often better at motivated reasoning, because they have more sophisticated tools for rationalizing what they already believe.
+        </p>
+        <p>
+          In politics, motivated reasoning shows up whenever someone dismisses an inconvenient fact as "biased," "from a liberal/conservative source," or "just statistics." The dismissal happens before the evaluation.
+        </p>
+
+        <div class="example-block">
+          <div class="example-label">Real Example</div>
+          <div class="example-tabs">
+            <button class="example-tab active" onclick="switchTab(this, 'mr-1')">The Economy</button>
+          </div>
+          <div class="example-content active" id="mr-1">
+            <div class="example-quote">
+              In 2019, Republican voters rated the economy as excellent; Democratic voters rated it as poor. In 2021, with the same economic metrics, those ratings largely flipped. Unemployment, GDP growth, and stock market performance were broadly similar in both periods.
+            </div>
+            <div class="example-annotation">
+              <strong>What happened:</strong> Neither group was responding to the economy. They were responding to who was president. The same data was being processed through the filter of "my team is in charge" or "the other team is in charge." This is motivated reasoning at a population scale — and it means economic policy debates are often not really about economics.
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway" style="margin-top:20px;margin-bottom:0;">
+          <div class="takeaway-label">How to counter it</div>
+          <p>When you find yourself dismissing a source or a fact, ask: am I doing this because it's actually unreliable — or because I don't like what it's saying? Those are different things. Apply the same standard of scrutiny to evidence that confirms your beliefs as to evidence that challenges them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIAS 6: FALSE DICHOTOMY -->
+  <div class="section">
+    <div class="bias-card">
+      <div class="bias-card-header">
+        <div class="bias-number">6</div>
+        <div>
+          <div class="bias-name">False Dichotomy</div>
+          <div class="bias-tagline">Most political choices aren't actually either/or — but they're presented that way</div>
+        </div>
+      </div>
+      <div class="bias-body">
+        <p>
+          "You're either with us or against us." "If you support gun rights, you don't care about dead children." "If you support stricter immigration enforcement, you're racist." "If you oppose the policy, you want people to suffer."
+        </p>
+        <p>
+          These are <span class="glossary-term" data-def="A rhetorical move that presents only two options when more actually exist, forcing a choice between extremes.">false dichotomies</span> — and they're one of the most common rhetorical tools in political messaging, because they force you to pick a side and make it feel like the stakes are absolute.
+        </p>
+        <p>
+          Real policy almost never works this way. Most serious policy questions involve tradeoffs, competing values, and multiple possible approaches — none of which are perfect. The false dichotomy collapses that complexity into a loyalty test.
+        </p>
+
+        <div class="example-block">
+          <div class="example-label">Real Examples</div>
+          <div class="example-tabs">
+            <button class="example-tab active" onclick="switchTab(this, 'fd-1')">Example A</button>
+            <button class="example-tab" onclick="switchTab(this, 'fd-2')">Example B</button>
+          </div>
+          <div class="example-content active" id="fd-1">
+            <div class="example-quote">
+              "You can either have a strong economy or a clean environment. You can't have both."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> This presents environmental regulation and economic growth as mutually exclusive. In practice, countries and states have achieved both — and some environmental regulations create economic activity (clean energy jobs, health cost reductions). The real debate is about how to balance tradeoffs, not whether to pick one or the other entirely.
+            </div>
+          </div>
+          <div class="example-content" id="fd-2">
+            <div class="example-quote">
+              "We either defund the police or accept that Black Americans will keep being killed."
+            </div>
+            <div class="example-annotation">
+              <strong>What's happening:</strong> This collapses a complex set of policy options — training reforms, accountability measures, mental health co-response programs, community investment — into a binary between abolition and the status quo. Most people who want policing to change don't hold either extreme position, but this framing makes the middle ground invisible.
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway" style="margin-top:20px;margin-bottom:0;">
+          <div class="takeaway-label">How to counter it</div>
+          <p>When you're presented with a choice between two extreme options, ask: are those really the only two? Almost always, there's a spectrum of approaches between them. The person forcing the binary usually benefits from it — they want you choosing their option, not thinking about what else might be possible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="pull-quote">
+      <p>"Knowing about these biases doesn't make you immune to them. It just gives you a better chance of catching yourself."</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Putting it together</div>
+    <h2>So what do you do with all this?</h2>
+    <p>
+      The point isn't to become a political skeptic who trusts nothing. It's to become a more <strong>deliberate</strong> thinker — someone who can tell the difference between a claim that's persuasive because it's true and a claim that's persuasive because it's exploiting a shortcut in your brain.
+    </p>
+    <p>
+      A few practical habits that help:
+    </p>
+    <p>
+      <strong>Slow down the feeling of certainty.</strong> When something immediately feels obviously true, that's often a signal to look closer — not to dismiss it, but to verify it. The most effective misinformation is the kind that feels like something you already knew.
+    </p>
+    <p>
+      <strong>Ask who benefits from you believing this.</strong> Every piece of political communication is trying to get you to do or believe something. That doesn't make it wrong — but it's worth knowing whose interests are being served.
+    </p>
+    <p>
+      <strong>Read the original source.</strong> Most political outrage travels through several layers of interpretation before it reaches you. A "study that found X" rarely says exactly what the headline claims. Find the study.
+    </p>
+    <p>
+      <strong>Disagree with your own side sometimes.</strong> If you never find fault with the people you vote for, that's a sign your evaluation is based on loyalty rather than performance. The scorecards on this site are designed to give you that honest picture — for officials you like and dislike equally.
+    </p>
+  </div>
+
+  <!-- NEXT UP -->
+  <div class="section">
+    <div class="next-up">
+      <a href="/learn-glossary.html" class="next-card">
+        <div class="next-card-label">Previous — Glossary</div>
+        <h3>Terms &amp; Definitions</h3>
+        <p>The language of political accountability — defined clearly so you can read any scorecard with confidence.</p>
+      </a>
+      <a href="/learn-how-policy-works.html" class="next-card">
+        <div class="next-card-label">Next — How Policy Works</div>
+        <h3>From Promise to Law: How Policy Actually Gets Made</h3>
+        <p>Most people know what their officials promise. Almost nobody knows what it actually takes to deliver — or why so many promises die on the way.</p>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<script>
+  // Tab switching for examples
+  function switchTab(btn, contentId) {
+    var card = btn.closest('.bias-card');
+    card.querySelectorAll('.example-tab').forEach(function(t) { t.classList.remove('active'); });
+    card.querySelectorAll('.example-content').forEach(function(c) { c.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById(contentId).classList.add('active');
+  }
+
+  // Scroll reveal
+  var sections = document.querySelectorAll('.section');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.08 });
+  sections.forEach(function(s) { observer.observe(s); });
+</script>
+
+<footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);">
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
+</footer>
+
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>

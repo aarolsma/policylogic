@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PolicyLogic — Promises Made. Promises Kept.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gold-light: #d4a843; --gray: #6b6459; --red: #c0392b; --green: #1a6b3c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
+
+  /* MASTHEAD */
+  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+
+  /* TOP NAV */
+  .top-nav { display: flex; justify-content: center; gap: 24px; padding-top: 16px; border-top: 1px solid var(--rule); flex-wrap: wrap; }
+  .top-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; }
+  .top-nav a:hover { color: var(--ink); }
+  .top-nav a.active { color: var(--ink); font-weight: 500; }
+  .top-nav a.muted { opacity: 0.45; }
+
+  /* HERO */
+  .hero { max-width: 760px; margin: 64px auto 0; padding: 0 40px; text-align: center; }
+  .hero-lede { font-family: 'Playfair Display', serif; font-size: clamp(18px, 3vw, 26px); line-height: 1.5; color: var(--ink); margin-bottom: 16px; }
+  .hero-lede em { font-style: italic; color: var(--gray); }
+  .hero-body { font-size: 15px; line-height: 1.8; color: var(--gray); max-width: 580px; margin: 0 auto 48px; }
+
+  /* SECTION GRID */
+  .sections { max-width: 1100px; margin: 0 auto; padding: 0 40px 80px; }
+  .sections-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); text-align: center; margin-bottom: 32px; }
+
+  .section-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+
+  .section-card { background: var(--paper); padding: 28px 28px 24px; text-decoration: none; color: var(--ink); display: block; transition: background 0.15s; position: relative; }
+  .section-card:hover { background: var(--cream); }
+  .section-card.coming-soon { cursor: default; }
+  .section-card.coming-soon:hover { background: var(--paper); }
+
+  .section-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .section-card-eyebrow.muted { color: var(--gray); }
+  .section-card-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; line-height: 1.2; margin-bottom: 10px; }
+  .section-card-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
+  .section-card-cta { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-top: 16px; display: block; }
+  .section-card-soon { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-top: 16px; display: block; opacity: 0.6; }
+
+  /* MISSION STRIP */
+  .mission { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--cream); padding: 48px 40px; margin: 0 0 64px; text-align: center; }
+  .mission-title { font-family: 'Playfair Display', serif; font-size: clamp(20px, 3vw, 28px); font-weight: 700; margin-bottom: 16px; }
+  .mission-body { font-size: 14px; line-height: 1.8; color: var(--gray); max-width: 640px; margin: 0 auto; }
+
+  /* FOOTER */
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); }
+  footer a { color: var(--gray); }
+
+  @media (max-width: 600px) {
+    .masthead { padding: 24px 20px 16px; }
+    .hero { padding: 0 20px; margin-top: 40px; }
+    .sections { padding: 0 20px 60px; }
+    .section-grid { grid-template-columns: 1fr; }
+    .top-nav { gap: 16px; }
+    .mission { padding: 36px 20px; }
+  }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 &middot; Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Promises made. Promises kept.</div>
+  <div class="masthead-rule"><span></span><em>Independent &middot; Evidence-Based</em><span></span></div>
+      <nav class="masthead-nav">
+    <a href="/" class="active">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p class="hero-lede">Every politician makes promises.<br><em>We track whether they keep them.</em></p>
+  <p class="hero-body">PolicyLogic scores elected officials on the commitments they make to voters — using public records, legislative history, and a consistent methodology applied equally across parties. No spin. No editorial slant. Just the record.</p>
+</div>
+
+<div class="mission">
+  <div class="mission-title">Why This Exists</div>
+  <p class="mission-body">Political accountability shouldn't require a research team. We built PolicyLogic so any American can open a scorecard, see what their representative promised, and judge for themselves whether it happened. All scorecards are AI-assisted drafts under human review — we flag what we don't know as clearly as what we do.</p>
+</div>
+
+<div class="sections">
+  <div class="sections-eyebrow">What's Here</div>
+  <div class="section-grid">
+
+    <a href="/scorecards.html" class="section-card">
+      <div class="section-card-eyebrow">Officials &amp; Institutions</div>
+      <div class="section-card-title">Scorecards</div>
+      <div class="section-card-desc">State &amp; Local officials, Congress, Presidential Foreign Policy, Departments &amp; Agencies, and Nonprofits &amp; NGOs — scored against their own commitments.</div>
+      <span class="section-card-cta">Browse Scorecards &rarr;</span>
+    </a>
+
+    <a href="/international.html" class="section-card">
+      <div class="section-card-eyebrow">Commitments</div>
+      <div class="section-card-title">International</div>
+      <div class="section-card-desc">U.S. pledges to treaties, international organizations, and multilateral forums — tracked as continuous timelines across administrations. No grades. The record speaks for itself.</div>
+      <span class="section-card-cta">View Commitments &rarr;</span>
+    </a>
+
+    <a href="/learn.html" class="section-card">
+      <div class="section-card-eyebrow">Education</div>
+      <div class="section-card-title">Learn</div>
+      <div class="section-card-desc">Short modules on how to read a scorecard, how policy actually gets made, how to spot cognitive bias in political coverage, and how to take action.</div>
+      <span class="section-card-cta">Start Learning &rarr;</span>
+    </a>
+
+    <a href="/methodology.html" class="section-card">
+      <div class="section-card-eyebrow">Transparency</div>
+      <div class="section-card-title">Methodology</div>
+      <div class="section-card-desc">How we score promises, why some sections use delivery ratios instead of grades, and what every flag on a scorecard means.</div>
+      <span class="section-card-cta">Read the Methodology &rarr;</span>
+    </a>
+
+  </div>
+</div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scorecards · PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gray: #6b6459; --red: #c0392b; --green: #1a6b3c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; line-height: normal; }
+
+  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+
+  .main { max-width: 1000px; margin: 0 auto; padding: 64px 40px 80px; }
+
+  .hub-intro { max-width: 580px; margin: 0 auto 56px; text-align: center; }
+  .hub-intro-title { font-family: 'Playfair Display', serif; font-size: clamp(22px, 3vw, 32px); font-weight: 700; margin-bottom: 14px; }
+  .hub-intro-body { font-size: 14px; line-height: 1.8; color: var(--gray); }
+
+  .scorecard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .scorecard-card { background: var(--paper); padding: 32px 28px 28px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: background 0.15s; position: relative; }
+  .scorecard-card:hover { background: var(--cream); }
+  .scorecard-card.coming-soon { cursor: default; }
+  .scorecard-card.coming-soon:hover { background: var(--paper); }
+  .scorecard-card.full-width { grid-column: 1 / -1; }
+
+  .card-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .card-eyebrow.muted { color: var(--gray); }
+  .card-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; line-height: 1.2; margin-bottom: 12px; }
+  .card-desc { font-size: 13px; color: var(--gray); line-height: 1.7; flex: 1; }
+  .card-cta { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-top: 20px; display: block; }
+  .card-soon { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-top: 20px; display: block; opacity: 0.6; }
+  .card-rule { width: 100%; height: 1px; background: var(--rule); margin: 28px 0 24px; }
+
+  /* Presidential card gets a subtle accent */
+  .scorecard-card.presidential { border-left: 3px solid var(--ink); }
+
+  .section-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 20px; }
+
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); }
+  footer a { color: var(--gray); }
+
+  @media (max-width: 640px) {
+    .masthead, .main { padding-left: 20px; padding-right: 20px; }
+    .scorecard-grid { grid-template-columns: 1fr; }
+    .scorecard-card.full-width { grid-column: auto; }
+  }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 &middot; Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Scorecards</div>
+  <div class="masthead-rule"><span></span><em>Draft Scorecards &middot; Under Review</em><span></span></div>
+    <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger active">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<div class="main">
+
+  <div class="hub-intro">
+    <div class="hub-intro-title">Who made the promise.<br>What happened.</div>
+    <p class="hub-intro-body">Every scorecard tracks a specific official or institution against their own stated commitments — using public records, legislative history, and a consistent methodology applied equally across parties.</p>
+  </div>
+
+    <div class="section-label">Elected Officials</div>
+  <div class="scorecard-grid">
+
+    <a href="/state-local.html" class="scorecard-card">
+      <div class="card-eyebrow">Live</div>
+      <div class="card-title">State &amp; Local</div>
+      <div class="card-desc">Governors and mayors scored on campaign promises and in-office commitments. Delivery rates, promise-by-promise breakdowns, and grade rationales.</div>
+      <span class="card-cta">View Scorecards &rarr;</span>
+    </a>
+
+    <a href="/national.html" class="scorecard-card">
+      <div class="card-eyebrow">Live</div>
+      <div class="card-title">Congress</div>
+      <div class="card-desc">U.S. Senators and Representatives tracked across the 119th Congress. Includes minority-party attribution adjustments and legislative difficulty scoring.</div>
+      <span class="card-cta">View Scorecards &rarr;</span>
+    </a>
+
+    <a href="/presidential.html" class="scorecard-card" style="grid-column: 1 / -1;">
+      <div class="card-eyebrow">Live</div>
+      <div class="card-title">Presidential Foreign Policy</div>
+      <div class="card-desc">A promise-by-promise tracker of U.S. presidential foreign policy commitments — from campaign pledges to executive orders. Current and prior administration.</div>
+      <span class="card-cta">View Tracker &rarr;</span>
+    </a>
+
+  </div>
+
+  
+
+  <div class="section-label" style="margin-top:32px;">Institutions</div>
+  <div class="scorecard-grid">
+
+    <a href="/departments.html" class="scorecard-card coming-soon">
+      <div class="card-eyebrow muted">In Development</div>
+      <div class="card-title">Depts &amp; Agencies</div>
+      <div class="card-desc">Federal departments scored against statutory mandates, inspector general findings, and stated programmatic targets.</div>
+      <span class="card-soon">Coming Soon</span>
+    </a>
+
+    <a href="/nonprofits.html" class="scorecard-card coming-soon">
+      <div class="card-eyebrow muted">In Development</div>
+      <div class="card-title">Nonprofits &amp; NGOs</div>
+      <div class="card-desc">Foundations, advocacy organizations, and international NGOs held to the same promise-tracking standard as elected officials.</div>
+      <span class="card-soon">Coming Soon</span>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>

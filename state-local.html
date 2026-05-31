@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State &amp; Local — PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gold-light: #d4a843; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459;
+    --grade-a: #1a6b3c; --grade-b: #2d7a4f; --grade-c: #b8892a; --grade-d: #c0612b; --grade-f: #c0392b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
+
+  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; background: var(--paper); position: relative; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 12px; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+
+  .nav-bar { border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--cream); position: sticky; top: 0; z-index: 100; flex-wrap: wrap; }
+  .nav-filter { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); cursor: pointer; padding: 4px 10px; border: 1px solid transparent; transition: all 0.15s; background: none; white-space: nowrap; }
+  .nav-filter:hover { border-color: var(--rule); color: var(--ink); }
+  .nav-filter.active { border-color: var(--ink); color: var(--ink); background: var(--paper); }
+  .nav-divider { width: 1px; height: 18px; background: var(--rule); margin: 0 4px; flex-shrink: 0; }
+  .nav-search { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+  .nav-search input { background: var(--paper); border: 1px solid var(--rule); padding: 5px 12px; font-size: 12px; font-family: 'DM Sans', sans-serif; color: var(--ink); outline: none; width: 200px; transition: border-color 0.15s; }
+  .nav-search input:focus { border-color: var(--ink); }
+  .nav-search input::placeholder { color: var(--gray); }
+
+  /* DOMAIN FILTER ROW */
+  .topic-bar { border-bottom: 1px solid var(--rule); padding: 8px 40px; background: var(--paper); display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .topic-bar-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); white-space: nowrap; flex-shrink: 0; }
+  .topic-select { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); background: var(--paper); border: 1px solid var(--rule); padding: 4px 28px 4px 10px; cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6459'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; transition: border-color 0.15s; }
+  .topic-select:focus { border-color: var(--ink); }
+  .topic-select.filtered { border-color: var(--gold); color: var(--gold); }
+
+  .main { max-width: 1200px; margin: 0 auto; padding: 32px 40px; }
+  .section-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; }
+  .section-count { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gray); letter-spacing: 0.1em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-bottom: 48px; }
+
+  .card { background: var(--paper); padding: 24px; cursor: pointer; transition: background 0.15s; position: relative; overflow: hidden; }
+  .card:hover { background: var(--cream); }
+  .card-pending { opacity: 0.5; cursor: default; }
+  .card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 14px; gap: 12px; }
+
+  /* TERM RING on card */
+
+
+  .card-meta { flex: 1; min-width: 0; }
+  .card-role { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
+  .card-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; line-height: 1.2; margin-bottom: 3px; }
+  .card-jurisdiction { font-size: 12px; color: var(--gray); }
+
+  /* small term bar under name */
+  .card-term-bar { margin-top: 6px; display: flex; align-items: center; gap: 6px; }
+  .card-term-track { flex: 1; height: 2px; background: var(--rule); }
+  .card-term-fill { height: 2px; background: var(--gold); transition: width 0.4s ease; }
+  .card-term-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--gray); letter-spacing: 0.05em; white-space: nowrap; }
+
+  .card-narrative { font-size: 12px; line-height: 1.6; color: var(--gray); margin-bottom: 14px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--rule); }
+  .card-stat { text-align: center; }
+  .card-stat-val { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1; }
+  .card-stat-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 2px; }
+  .card-party { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 8px; border: 1px solid var(--rule); color: var(--gray); }
+  .card-draft { position: absolute; top: 10px; right: -20px; background: var(--gold); color: white; font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.15em; padding: 2px 28px; transform: rotate(45deg); transform-origin: center; }
+
+  /* MODAL */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(26,23,20,0.7); z-index: 200; overflow-y: auto; padding: 40px 20px; }
+  .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+  .modal { background: var(--paper); max-width: 760px; width: 100%; border: 1px solid var(--rule); position: relative; animation: slideUp 0.2s ease; }
+  @keyframes slideUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+  .modal-header { padding: 32px 36px 24px; border-bottom: 3px double var(--ink); }
+  .modal-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .modal-name { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 900; line-height: 1.1; margin-bottom: 6px; }
+  .modal-meta { font-size: 13px; color: var(--gray); margin-bottom: 12px; }
+
+  /* MODAL TERM PROGRESS */
+  .modal-term-block { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; padding: 16px 18px; background: var(--cream); border: 1px solid var(--rule); }
+  .modal-term-ring { flex-shrink: 0; position: relative; width: 72px; height: 72px; }
+  .modal-term-ring svg { width: 72px; height: 72px; transform: rotate(-90deg); }
+
+  .modal-term-info { flex: 1; }
+  .modal-term-pct { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+  .modal-term-detail { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); line-height: 1.6; }
+  .modal-grade-row { display: flex; align-items: center; gap: 20px; }
+  .modal-grade { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 900; line-height: 1; border: 3px solid currentColor; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .modal-grade-detail { flex: 1; }
+  .modal-grade-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 4px; }
+  .modal-grade-rationale { font-size: 13px; line-height: 1.6; color: var(--gray); }
+  .modal-body { padding: 28px 36px; }
+  .modal-narrative { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px; line-height: 1.7; color: var(--gray); border-left: 3px solid var(--gold); padding-left: 18px; margin-bottom: 28px; }
+  .modal-section-title { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 14px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+  .promise-item { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .promise-item:last-child { border-bottom: none; }
+  .promise-top { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 10px; }
+  .promise-text { font-size: 14px; font-weight: 500; line-height: 1.4; flex: 1; }
+  .promise-domain { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); padding: 1px 7px; border: 1px solid var(--rule); flex-shrink: 0; }
+  .promise-bars { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-top: 10px; }
+  .bar-item {}
+  .bar-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
+  .bar-track { height: 3px; background: var(--rule); }
+  .bar-fill { height: 100%; background: var(--ink); transition: width 0.4s ease; }
+  .bar-val { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--ink); margin-top: 3px; }
+  .promise-flags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .flag-chip { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--red); color: var(--red); }
+  .flag-chip.blocked { border-color: var(--gray); color: var(--gray); }
+  .confidence-badge { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--rule); color: var(--gray); }
+  .modal-gaps { margin-top: 24px; padding: 16px 18px; background: var(--cream); border: 1px solid var(--rule); }
+  .gap-item { font-size: 12px; color: var(--gray); line-height: 1.6; padding: 3px 0; }
+  .gap-item::before { content: '— '; }
+  .modal-footer { padding: 16px 36px; border-top: 1px solid var(--rule); background: var(--cream); display: flex; align-items: center; justify-content: space-between; }
+  .modal-footnote { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gray); letter-spacing: 0.06em; }
+  .modal-close { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; background: none; border: 1px solid var(--ink); padding: 6px 16px; cursor: pointer; color: var(--ink); transition: all 0.15s; }
+  .modal-close:hover { background: var(--ink); color: var(--paper); }
+  .loading { text-align: center; padding: 80px 40px; font-family: 'Playfair Display', serif; font-style: italic; color: var(--gray); font-size: 18px; }
+  .empty { text-align: center; padding: 60px 40px; color: var(--gray); font-style: italic; font-family: 'Playfair Display', serif; }
+  @media (max-width: 600px) {
+    .masthead, .nav-bar, .main, .topic-bar { padding-left: 20px; padding-right: 20px; }
+    .modal-header, .modal-body, .modal-footer { padding-left: 20px; padding-right: 20px; }
+    .grid { grid-template-columns: 1fr; }
+    .nav-bar { flex-wrap: wrap; gap: 6px; }
+    .nav-search { margin-left: 0; width: 100%; }
+    .nav-search input { width: 100%; }
+  }
+
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">State &amp; Local Scorecard</div>
+  <div class="masthead-rule"><span></span><em>Draft Scorecards · Under Review</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger active">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <a href="/international.html">International</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<nav class="nav-bar">
+  <button class="nav-filter active" data-filter="all">All</button>
+  <button class="nav-filter" data-filter="Governor">Governors</button>
+  <button class="nav-filter" data-filter="Mayor">Mayors</button>
+  <button class="nav-filter" data-filter="Archived">Archived</button>
+  <div class="nav-divider"></div>
+  <button class="nav-filter" data-filter="A">Grade A</button>
+  <button class="nav-filter" data-filter="B">Grade B</button>
+  <button class="nav-filter" data-filter="C">Grade C</button>
+  <button class="nav-filter" data-filter="D">Grade D/F</button>
+</nav>
+
+<div class="topic-bar">
+  <span class="topic-bar-label">Topic:</span>
+  <select class="topic-select" id="topic-select">
+    <option value="all">All Topics</option>
+  </select>
+  <input type="text" id="search-input" placeholder="Search officials..." style="background:var(--paper);border:1px solid var(--rule);padding:5px 12px;font-size:12px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;width:220px;transition:border-color 0.15s;" />
+</div>
+
+<main class="main">
+  <div id="loading" class="loading">Loading scorecards...</div>
+  <div id="governors-section" style="display:none">
+    <div class="section-header">
+      <div class="section-title" id="gov-title">Governors</div>
+      <div class="section-count" id="gov-count"></div>
+    </div>
+    <div class="grid" id="governors-grid"></div>
+  </div>
+  <div id="mayors-section" style="display:none">
+    <div class="section-header">
+      <div class="section-title" id="mayor-title">Mayors</div>
+      <div class="section-count" id="mayor-count"></div>
+    </div>
+    <div class="grid" id="mayors-grid"></div>
+  </div>
+  <div id="empty" class="empty" style="display:none">No officials match your search.</div>
+</main>
+
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal-content"></div>
+</div>
+
+<script>
+var allData = [];
+var currentFilter = 'all';
+var currentSearch = '';
+var currentDomain = 'all';
+var allData = [];
+var archivedData = [];
+
+var GRADE_COLORS = { A:'var(--grade-a)', B:'var(--grade-b)', C:'var(--grade-c)', D:'var(--grade-d)', F:'var(--grade-f)' };
+
+function gradeColor(g) {
+  if (!g) return 'var(--gray)';
+  return GRADE_COLORS[g.charAt(0)] || 'var(--gray)';
+}
+function gradeClass(g) {
+  if (!g) return 'grade-null';
+  return 'grade-' + g.replace('+','plus').replace('-','minus');
+}
+function pct(val, max) { return Math.round((val / max) * 100) + '%'; }
+
+// ── TERM PROGRESS ──────────────────────────────────────────────
+function termProgress(official) {
+  var start = official.term_start ? new Date(official.term_start + 'T12:00:00') : null;
+  var end   = official.term_end   ? new Date(official.term_end   + 'T12:00:00') : null;
+  var now   = new Date();
+  if (!start || !end || end <= start) return null;
+  var total = end - start;
+  var elapsed = Math.max(0, Math.min(now - start, total));
+  var fraction = elapsed / total;
+  var isFormer = now > end;
+  return {
+    fraction: isFormer ? 1 : fraction,
+    pct: Math.round((isFormer ? 1 : fraction) * 100),
+    isFormer: isFormer,
+    start: start,
+    end: end,
+    label: isFormer ? 'Term complete' : Math.round(fraction * 100) + '% through term'
+  };
+}
+
+// Small SVG ring for card (r=20, circumference≈125.6)
+
+
+// Large SVG ring for modal (r=30, circumference≈188.5)
+
+function fmtDate(d) {
+  if (!d) return '';
+  try { return new Date(d + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' }); }
+  catch(e) { return d; }
+}
+
+// ── DOMAIN CATEGORY MAP ───────────────────────────────────────────
+var DOMAIN_CATEGORIES = {
+  'Economy & Fiscal': ['economy','economic','fiscal','tax','budget','finance','financial','business','labor','jobs','employment','trade','revenue','spending','debt'],
+  'Health & Social': ['health','healthcare','housing','homelessness','welfare','social','poverty','mental','addiction','food','family','children','senior','disability','insurance'],
+  'Education': ['education','school','university','college','student','teacher','curriculum','workforce','training','literacy'],
+  'Environment & Infrastructure': ['environment','climate','energy','infrastructure','transportation','transit','roads','water','utility','utilities','technology','tech','broadband','internet','land','conservation'],
+  'Safety & Governance': ['crime','criminal','safety','police','law','justice','immigration','civil','rights','voting','election','government','governance','transparency','accountability','foreign','defense','political','regulatory','regulation']
+};
+function getDomainCategory(label) {
+  if (!label) return null;
+  var l = label.toLowerCase();
+  for (var cat in DOMAIN_CATEGORIES) {
+    var keywords = DOMAIN_CATEGORIES[cat];
+    for (var i = 0; i < keywords.length; i++) {
+      if (l.indexOf(keywords[i]) !== -1) return cat;
+    }
+  }
+  return 'Other';
+}
+
+// ── BUILD DOMAIN PILLS ────────────────────────────────────────────
+function buildTopicDropdown(data) {
+  var cats = {};
+  data.forEach(function(d) {
+    (d.promises || []).forEach(function(p) {
+      var lbl = p.domain_label || p.domain;
+      var cat = getDomainCategory(lbl);
+      if (cat) cats[cat] = (cats[cat] || 0) + 1;
+    });
+  });
+  var sel = document.getElementById('topic-select');
+  while (sel.options.length > 1) sel.remove(1);
+  var order = ['Economy & Fiscal','Health & Social','Education','Environment & Infrastructure','Safety & Governance','Other'];
+  order.forEach(function(cat) {
+    if (cats[cat]) {
+      var opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat + ' (' + cats[cat] + ')';
+      sel.appendChild(opt);
+    }
+  });
+}
+
+
+
+// ── CARD ───────────────────────────────────────────────────────
+function officialMatchesDomain(d) {
+  if (currentDomain === 'all') return true;
+  return (d.promises || []).some(function(p) {
+    return getDomainCategory(p.domain_label || p.domain) === currentDomain;
+  });
+}
+
+function makeCard(d) {
+  var o = d.official || {}, s = d.summary || {};
+  var grade = s.overall_grade || s.preliminary_grade;
+  var color = gradeColor(grade);
+  var isPending = !grade;
+  var tp = termProgress(o);
+
+  var card = document.createElement('div');
+  card.className = 'card' + (isPending ? ' card-pending' : '');
+  card.dataset.role = o.role || '';
+  card.dataset.grade = grade ? grade.charAt(0) : '';
+  card.dataset.name = (o.name || '').toLowerCase();
+  card.dataset.jurisdiction = (o.jurisdiction || '').toLowerCase();
+  if (!isPending) card.onclick = function() { openModal(d); };
+
+  var deliveryPct = (function() {
+    var ps = d.promises || [];
+    // New schema: use summary.kept / summary.total
+    if (s.kept !== undefined && s.total) {
+      return Math.round((s.kept / s.total) * 100) + '%';
+    }
+    // Legacy schema: calculate from outcome_score on each promise
+    if (ps.length) {
+      var hasScores = ps.some(function(p) { return p.outcome_score !== undefined; });
+      if (hasScores) {
+        var tot = ps.reduce(function(sum, p) { return sum + (p.outcome_score || 0); }, 0);
+        return Math.round((tot / (ps.length * 5)) * 100) + '%';
+      }
+    }
+    return '—';
+  })();
+
+  // Term bar under jurisdiction
+  var termBarHTML = '';
+  if (tp) {
+    var termFillW = Math.round(tp.fraction * 100) + '%';
+    var termLbl = tp.isFormer ? 'Former' : tp.pct + '% of term';
+    termBarHTML = '<div class="card-term-bar">' +
+      '<div class="card-term-track"><div class="card-term-fill" style="width:' + termFillW + '"></div></div>' +
+      '<div class="card-term-label">' + termLbl + '</div>' +
+    '</div>';
+  }
+
+  // Ring replaces old grade-badge
+  var gradeBadge = isPending
+    ? '<div style="flex-shrink:0;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-family:\'DM Mono\',monospace;font-size:11px;border:2px dashed var(--rule);color:var(--gray);">?</div>'
+    : '<div style="flex-shrink:0;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-family:\'Playfair Display\',serif;font-size:26px;font-weight:900;border:2px solid ' + color + ';color:' + color + ';">' + (grade||'?') + '</div>';
+
+  card.innerHTML =
+    '<div class="card-draft">DRAFT</div>' +
+    '<div class="card-top">' +
+      '<div class="card-meta">' +
+        '<div class="card-role">' + (o.role || '') + '</div>' +
+        '<div class="card-name">' + (o.name || '') + '</div>' +
+        '<div class="card-jurisdiction">' + (o.jurisdiction || '') + '</div>' +
+        termBarHTML +
+      '</div>' +
+      gradeBadge +
+    '</div>' +
+    '<div class="card-narrative">' + (s.narrative || 'Scorecard pending review.') + '</div>' +
+    '<div class="card-footer">' +
+      '<div class="card-stat"><div class="card-stat-val">' + (s.total_promises || s.total || '—') + '</div><div class="card-stat-label">Promises</div></div>' +
+      '<div class="card-stat"><div class="card-stat-val">' + deliveryPct + '</div><div class="card-stat-label">Delivery</div></div>' +
+      '<div class="card-stat"><div class="card-stat-val" style="text-transform:capitalize;word-break:break-word;font-size:13px;line-height:1.2">' + (s.ambition_level || '—') + '</div><div class="card-stat-label">Ambition</div></div>' +
+      '<div class="card-party">' + (o.party || '') + '</div>' +
+    '</div>';
+
+  return card;
+}
+
+// ── MODAL ──────────────────────────────────────────────────────
+function openModal(d) {
+  var o = d.official || {}, s = d.summary || {};
+  var promises = d.promises || [], _meta = d._meta || {};
+  var grade = s.overall_grade || s.preliminary_grade;
+  var color = gradeColor(grade);
+  var tp = termProgress(o);
+
+  var deliveryPct = (function() {
+    var ps = d.promises || [];
+    // New schema: use summary.kept / summary.total
+    if (s.kept !== undefined && s.total) {
+      return Math.round((s.kept / s.total) * 100) + '%';
+    }
+    // Legacy schema: calculate from outcome_score on each promise
+    if (ps.length) {
+      var hasScores = ps.some(function(p) { return p.outcome_score !== undefined; });
+      if (hasScores) {
+        var tot = ps.reduce(function(sum, p) { return sum + (p.outcome_score || 0); }, 0);
+        return Math.round((tot / (ps.length * 5)) * 100) + '%';
+      }
+    }
+    return '—';
+  })();
+
+  // Term progress block for modal
+  var termBlockHTML = '';
+  if (tp) {
+    var daysLeft = tp.isFormer ? 0 : Math.round((tp.end - new Date()) / 86400000);
+    termBlockHTML =
+      '<div class="modal-term-block">' +
+        '<div class="modal-term-pct" style="color:' + color + '">' + tp.pct + '% through term</div>' +
+        '<div class="modal-term-bar-track"><div class="modal-term-bar-fill" style="width:' + tp.pct + '%;background:' + color + ';"></div></div>' +
+        '<div class="modal-term-detail">' +
+          fmtDate(o.term_start) + ' → ' + fmtDate(o.term_end) + '  ·  ' +
+          (tp.isFormer ? 'Term complete' : daysLeft + ' days remaining') +
+        '</div>' +
+      '</div>';
+  }
+
+  var promisesHTML = promises.map(function(p) {
+    var activeFlags = [];
+    if (p.flags) {
+      if (p.flags.reversed) activeFlags.push('<span class="flag-chip">Reversed</span>');
+      if (p.flags.redefined) activeFlags.push('<span class="flag-chip">Redefined</span>');
+      if (p.flags.externally_blocked) activeFlags.push('<span class="flag-chip blocked">Blocked</span>');
+    }
+    // Detect schema: new schema has status/grade/evidence, legacy has outcome_score
+    var hasScores = p.clarity_score !== undefined || p.outcome_score !== undefined;
+    var statusColors = { kept:'var(--green)', broken:'var(--red)', in_progress:'var(--gold)', stalled:'var(--gray)' };
+    var statusColor = statusColors[p.status] || 'var(--gray)';
+    var barsHTML = hasScores
+      ? '<div class="promise-bars">' +
+          '<div class="bar-item"><div class="bar-label">Specificity of Promise</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.clarity_score||0,3) + '"></div></div><div class="bar-val">' + (p.clarity_score||0) + '/3</div></div>' +
+          '<div class="bar-item"><div class="bar-label">Actions Taken</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.initiation_score||0,4) + '"></div></div><div class="bar-val">' + (p.initiation_score||0) + '/4</div></div>' +
+          '<div class="bar-item"><div class="bar-label">Outcome &amp; Results</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.outcome_score||0,5) + '"></div></div><div class="bar-val">' + (p.outcome_score||0) + '/5</div></div>' +
+          '<div class="bar-item"><div class="bar-label">Their Role</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.attribution_modifier||0,1) + '"></div></div><div class="bar-val">' + (p.attribution_modifier||0) + 'x</div></div>' +
+        '</div>'
+      : '<div class="promise-bars">' +
+          '<div class="bar-item"><div class="bar-label">Status</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:' + statusColor + ';"></div></div><div class="bar-val" style="color:' + statusColor + ';text-transform:capitalize;">' + (p.status||'—') + '</div></div>' +
+          (p.grade ? '<div class="bar-item"><div class="bar-label">Promise Grade</div><div class="bar-track"><div class="bar-fill" style="width:100%;opacity:0;"></div></div><div class="bar-val" style="font-family:\'Playfair Display\',serif;font-weight:900;color:' + gradeColor(p.grade) + ';">' + p.grade + '</div></div>' : '') +
+        '</div>' +
+        (p.evidence ? '<div style="font-size:12px;color:var(--gray);line-height:1.6;margin-top:8px;padding:8px 10px;background:var(--cream);border-left:2px solid var(--rule);">' + p.evidence + '</div>' : '');
+    return '<div class="promise-item">' +
+      '<div class="promise-top">' +
+        '<div class="promise-text">' + (p.normalized || p.text || '') + '</div>' +
+        '<div class="promise-domain">' + (p.domain_label || p.domain || '') + '</div>' +
+      '</div>' +
+      barsHTML +
+      (activeFlags.length ? '<div class="promise-flags">' + activeFlags.join('') + '</div>' : '') +
+      '<div style="margin-top:6px"><span class="confidence-badge">Confidence: ' + (p.confidence||'—') + '</span></div>' +
+    '</div>';
+  }).join('');
+
+  var gapsHTML = (d.data_gaps || []).map(function(g) { return '<div class="gap-item">' + g + '</div>'; }).join('');
+  var genDate = _meta.generated_at ? new Date(_meta.generated_at).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'}) : '';
+
+  window._currentOfficial = o;
+  document.getElementById('modal-content').innerHTML =
+    '<div class="modal-header">' +
+      '<div class="modal-eyebrow">' + (o.role||'') + ' · ' + (o.jurisdiction||'') + ' · ' + (o.party||'') + '</div>' +
+      '<div class="modal-name">' + (o.name||'') + '</div>' +
+      '<div class="modal-meta">' +
+        (o.election_date ? 'Elected ' + fmtDate(o.election_date) : '') +
+        (o.election_date && o.next_election ? '  ·  ' : '') +
+        (o.next_election ? 'Next election ' + fmtDate(o.next_election) : '') +
+      '</div>' +
+      termBlockHTML +
+      '<div class="modal-grade-row">' +
+        '<div class="modal-grade ' + gradeClass(grade) + '" style="color:' + color + '">' + (grade||'?') + '</div>' +
+        '<div class="modal-grade-detail">' +
+          '<div class="modal-grade-label" style="color:' + color + '">' + (s.ambition_level||'') + ' · ' + deliveryPct + ' delivery</div>' +
+          '<div class="modal-grade-rationale">' + (s.grade_rationale||'') + '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="modal-body">' +
+      '<div class="modal-narrative">' + (s.narrative||'') + '</div>' +
+      ((o.office_phone || o.office_address || o.office_website) ?
+        '<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;padding:14px 16px;background:var(--cream);border:1px solid var(--rule);">' +
+          '<div style="font-family:\'DM Mono\',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);width:100%;margin-bottom:4px;">Office Contact</div>' +
+          (o.office_phone ? '<div style="font-size:12px;color:var(--ink);">📞 ' + o.office_phone + '</div>' : '') +
+          (o.office_address ? '<div style="font-size:12px;color:var(--ink);">📍 ' + o.office_address + '</div>' : '') +
+          (o.office_website ? '<div style="font-size:12px;"><a href="' + (o.office_website.indexOf('http')===0 ? o.office_website : 'https://'+o.office_website) + '" target="_blank" style="color:var(--gold);text-decoration:none;">Official Website &rarr;</a></div>' : '') +
+        '</div>' : '') +
+      '<div class="modal-section-title">Promise Scorecard — ' + promises.length + ' tracked</div>' +
+      promisesHTML +
+      (gapsHTML ? '<div class="modal-gaps"><div class="modal-section-title" style="border:none;margin-bottom:8px">Data Gaps</div>' + gapsHTML + '</div>' : '') +
+    '</div>' +
+    ((_meta.sources && _meta.sources.length) ?
+      '<div style="margin:0;padding:14px 20px 12px;border-top:1px solid var(--rule);background:rgba(0,0,0,0.02);">' +
+        '<div style="font-family:\'DM Mono\',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);margin-bottom:10px;">Sources Consulted</div>' +
+        _meta.sources.map(function(src) {
+          return '<div style="margin-bottom:6px;">' +
+            '<a href="' + src.url + '" target="_blank" rel="noopener" style="display:block;color:var(--gold);text-decoration:none;font-size:12px;line-height:1.3;">' + src.title + '</a>' +
+            '<div style="font-size:10px;color:var(--gray);margin-top:1px;">' + src.url.replace(/^https?:\/\//,'').split('/')[0] + '</div>' +
+          '</div>';
+        }).join('') +
+      '</div>' : '') +
+    '<div class="modal-footer">' +
+      '<div style="display:flex;flex-direction:column;gap:4px;">' +
+        '<div class="modal-footnote">Generated ' + genDate + ' · AI draft · Pending human review</div>' +
+        '<button onclick="openReport()" style="background:none;border:none;padding:0;font-size:9px;letter-spacing:0.08em;color:var(--gold);cursor:pointer;text-align:left;">Report an error &rarr;</button>' +
+      '</div>' +
+      '<button class="modal-close" onclick="closeModal()">Close</button>' +
+    '</div>';
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+  if (e && e.target !== document.getElementById('modal-overlay')) return;
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ── RENDER ─────────────────────────────────────────────────────
+function render() {
+  var govGrid = document.getElementById('governors-grid');
+  var mayorGrid = document.getElementById('mayors-grid');
+  govGrid.innerHTML = '';
+  mayorGrid.innerHTML = '';
+  var govCount = 0, mayorCount = 0, hasResults = false;
+
+  var dataSet = (currentFilter === 'Archived') ? archivedData : allData;
+
+  dataSet.forEach(function(d) {
+    var o = d.official || {}, s = d.summary || {};
+    var role = o.role || '';
+    var grade = (s.overall_grade || s.preliminary_grade || '').charAt(0);
+    var name = (o.name || '').toLowerCase();
+    var juris = (o.jurisdiction || '').toLowerCase();
+
+    if (currentFilter === 'Governor' && role !== 'Governor') return;
+    if (currentFilter === 'Mayor' && role !== 'Mayor') return;
+    if (currentFilter === 'A' && grade !== 'A') return;
+    if (currentFilter === 'B' && grade !== 'B') return;
+    if (currentFilter === 'C' && grade !== 'C') return;
+    if (currentFilter === 'D' && grade !== 'D' && grade !== 'F') return;
+    if (currentSearch && !name.includes(currentSearch) && !juris.includes(currentSearch)) return;
+    if (currentFilter !== 'Archived' && !officialMatchesDomain(d)) return;
+
+    var card = makeCard(d);
+    if (role === 'Governor') { govGrid.appendChild(card); govCount++; }
+    else { mayorGrid.appendChild(card); mayorCount++; }
+    hasResults = true;
+  });
+
+  document.getElementById('gov-count').textContent = govCount + ' officials';
+  document.getElementById('mayor-count').textContent = mayorCount + ' officials';
+  document.getElementById('gov-title').textContent = (currentFilter === 'Archived') ? 'Former Governors' : 'Governors';
+  document.getElementById('mayor-title').textContent = (currentFilter === 'Archived') ? 'Former Mayors' : 'Mayors';
+  var showGov = govCount > 0 && currentFilter !== 'Mayor';
+  var showMayor = mayorCount > 0 && currentFilter !== 'Governor';
+  document.getElementById('governors-section').style.display = showGov ? '' : 'none';
+  document.getElementById('mayors-section').style.display = showMayor ? '' : 'none';
+  document.getElementById('empty').style.display = hasResults ? 'none' : '';
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch('/data/manifest.json');
+    if (!resp.ok) throw new Error('No manifest');
+    const manifest = await resp.json();
+    const results = await Promise.allSettled(
+      manifest.map(function(slug) { return fetch('/data/scorecards/' + slug + '.json').then(function(r) { return r.json(); }); })
+    );
+    var allLoaded = results.filter(function(r) { return r.status === 'fulfilled'; }).map(function(r) { return r.value; })
+      .sort(function(a, b) { return ((a.official&&a.official.name)||'').localeCompare((b.official&&b.official.name)||''); });
+    allData = allLoaded.filter(function(d) { return !(d._meta && d._meta.archived); });
+    archivedData = allLoaded.filter(function(d) { return d._meta && d._meta.archived; });
+    document.getElementById('loading').style.display = 'none';
+    buildTopicDropdown(allData);
+    render();
+  } catch(e) {
+    document.getElementById('loading').textContent = 'Error loading data: ' + e.message;
+  }
+}
+
+document.querySelectorAll('.nav-filter').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.nav-filter').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    render();
+  });
+});
+
+document.getElementById('search-input').addEventListener('input', function(e) {
+  currentSearch = e.target.value.toLowerCase().trim();
+  render();
+});
+
+document.getElementById('topic-select').addEventListener('change', function() {
+  currentDomain = this.value;
+  this.classList.toggle('filtered', this.value !== 'all');
+  render();
+});
+
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+loadData();
+</script>
+
+<footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);margin-top:40px;">
+  Civic Accountability Index &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
+</footer>
+
+<!-- REPORT MODAL -->
+<div class="modal-overlay" id="report-overlay" onclick="closeReport(event)">
+  <div class="modal" style="max-width:520px;" id="report-modal">
+    <div class="modal-header" style="padding:24px 28px 20px;">
+      <div class="modal-eyebrow">Civic Accountability Index</div>
+      <div class="modal-name" style="font-size:24px;">Report an Error</div>
+      <div class="modal-meta" id="report-official-name"></div>
+    </div>
+    <div class="modal-body" style="padding:24px 28px;">
+      <div style="margin-bottom:16px;">
+        <label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">What is incorrect? *</label>
+        <textarea id="report-wrong" rows="3" placeholder="Describe the error..." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea>
+      </div>
+      <div style="margin-bottom:16px;">
+        <label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Correct information / source</label>
+        <textarea id="report-correct" rows="2" placeholder="What should it say? Include a source URL if possible." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea>
+      </div>
+      <div style="margin-bottom:20px;">
+        <label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your email (optional)</label>
+        <input id="report-email" type="email" placeholder="If you'd like a response" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" />
+      </div>
+      <div id="report-status" style="display:none;font-size:12px;padding:10px 12px;margin-bottom:12px;"></div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;">
+        <button onclick="closeReport()" style="background:none;border:1px solid var(--rule);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--gray);">Cancel</button>
+        <button onclick="submitReport()" id="report-submit" style="background:var(--ink);border:1px solid var(--ink);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--paper);">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var reportOfficial = {};
+function openReport() {
+  var o = window._currentOfficial || {};
+  reportOfficial = { name: o.name||'', role: o.role||'', jurisdiction: o.jurisdiction||'' };
+  document.getElementById('report-official-name').textContent = reportOfficial.name + ' · ' + reportOfficial.role + ' of ' + reportOfficial.jurisdiction;
+  document.getElementById('report-wrong').value = '';
+  document.getElementById('report-correct').value = '';
+  document.getElementById('report-email').value = '';
+  document.getElementById('report-status').style.display = 'none';
+  document.getElementById('report-submit').disabled = false;
+  document.getElementById('report-submit').textContent = 'Submit';
+  document.getElementById('report-overlay').classList.add('open');
+}
+function closeReport(e) {
+  if (e && e.target !== document.getElementById('report-overlay')) return;
+  document.getElementById('report-overlay').classList.remove('open');
+}
+async function submitReport() {
+  var wrong = document.getElementById('report-wrong').value.trim();
+  if (!wrong) { showReportStatus('Please describe what is incorrect.', 'error'); return; }
+  var btn = document.getElementById('report-submit');
+  btn.disabled = true; btn.textContent = 'Sending...';
+  try {
+    var r = await fetch('/api/report', { method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ official: reportOfficial.name, role: reportOfficial.role, jurisdiction: reportOfficial.jurisdiction,
+        what_is_wrong: wrong, correct_info: document.getElementById('report-correct').value.trim(),
+        submitter_email: document.getElementById('report-email').value.trim() }) });
+    var j = await r.json();
+    if (j.ok) { showReportStatus('Thank you — your report has been submitted.', 'ok'); btn.textContent = 'Sent'; }
+    else throw new Error(j.error || 'Unknown error');
+  } catch(e) { showReportStatus('Error: ' + e.message, 'error'); btn.disabled=false; btn.textContent='Submit'; }
+}
+function showReportStatus(msg, type) {
+  var el = document.getElementById('report-status');
+  el.textContent = msg; el.style.display = '';
+  el.style.background = type==='ok' ? '#f0faf4' : '#fdf0f0';
+  el.style.border = '1px solid ' + (type==='ok' ? '#1a6b3c' : '#c0392b');
+  el.style.color = type==='ok' ? '#1a6b3c' : '#c0392b';
+}
+</script>
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>
+
