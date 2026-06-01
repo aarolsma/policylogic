@@ -1,0 +1,112 @@
+{
+  "official": {
+    "name": "Malik Evans",
+    "role": "Mayor",
+    "jurisdiction": "Rochester, NY",
+    "party": "Democratic",
+    "term_start": "2020",
+    "term_end": "2029"
+  },
+  "summary": {
+    "narrative": "Evans campaigned on transparency, economic development for youth, gun violence reduction, housing investment, and bridge-building. Re-elected 2025 on platform emphasizing public safety gains, affordable housing, and economic empowerment.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Demonstrated measurable progress on public safety (shooting/crime reductions) and economic development (Constellation Brands, Inner Loop investment). Housing and youth employment outcomes less clearly documented. Transparency gains unclear.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Reduce gun violence through enforcement against illegal firearms",
+      "domain": "Public Safety",
+      "domain_label": "Crime & Violence",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 22.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Create economic development & job opportunities for youth",
+      "domain": "Economic Development",
+      "domain_label": "Jobs & Youth Employment",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2,
+      "policy_score": 14,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Develop and increase affordable housing inventory",
+      "domain": "Housing",
+      "domain_label": "Affordable Housing",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 11.25,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Restore transparency and build bridges in city government",
+      "domain": "Governance",
+      "domain_label": "Transparency & Accountability",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 3.6,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific quantitative youth employment outcomes and program metrics",
+    "Detailed breakdown of affordable housing units created vs. promised",
+    "Transparency initiatives documentation and measurable improvements",
+    "Attribution clarity on Constellation Brands move to local policy vs. external factors",
+    "Inner Loop investment specifics and completion status",
+    "Gun violence emergency order effectiveness data and timeline",
+    "First term accomplishments relative to initial campaign promises",
+    "Engagement data on bridge-building governance initiatives"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:15:35.548Z",
+    "slug": "malik-evans-rochester-ny",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

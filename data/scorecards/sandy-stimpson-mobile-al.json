@@ -1,0 +1,112 @@
+{
+  "official": {
+    "name": "William S. 'Sandy' Stimpson",
+    "role": "Mayor",
+    "jurisdiction": "Mobile, Alabama",
+    "party": "Unknown",
+    "term_start": "2013-08-27",
+    "term_end": "2025-12-31"
+  },
+  "summary": {
+    "narrative": "Stimpson campaigned on 'One Mobile' platform emphasizing safety, business-friendly policies, and family-oriented development. Served 12 years across three terms, achieving fiscal improvements and infrastructure upgrades while opposing environmental protections despite pollution concerns.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Delivered on fiscal/infrastructure goals but limited environmental action despite pledges; some initiatives achieved, others incomplete or blocked.",
+    "overall_grade": "C+"
+  },
+  "promises": [
+    {
+      "normalized": "Improve city financial strength and reduce debt",
+      "domain": "Fiscal Management",
+      "domain_label": "Finance",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 18.45,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand city infrastructure and parks improvements",
+      "domain": "Infrastructure",
+      "domain_label": "Infrastructure",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2,
+      "policy_score": 15.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Increase municipal employee compensation",
+      "domain": "Labor",
+      "domain_label": "Personnel",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 17.1,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Address environmental protection and pollution concerns",
+      "domain": "Environment",
+      "domain_label": "Environment",
+      "clarity_score": 1,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 2.5,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": true,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific campaign platform details and written promises from 2013, 2017, 2021 elections",
+    "Quantified metrics for downtown development and job creation claims",
+    "Details on Map for Mobile initiative scope and outcomes",
+    "Supplier diversity program specifics and measurable results",
+    "Environmental opposition reasoning and supporting documentation",
+    "Credit rating increase details and timeline",
+    "Annexation impact analysis and resident growth attribution",
+    "Police and fire compensation increase percentages and dates"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:14:33.496Z",
+    "slug": "sandy-stimpson-mobile-al",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

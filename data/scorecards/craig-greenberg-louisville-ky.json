@@ -1,0 +1,112 @@
+{
+  "official": {
+    "name": "Craig Greenberg",
+    "role": "Mayor",
+    "jurisdiction": "Louisville, Kentucky",
+    "party": "Nonpartisan (as of 2024)",
+    "term_start": "2023-01",
+    "term_end": "2027-01"
+  },
+  "summary": {
+    "narrative": "Greenberg campaigned on public safety, affordable housing, universal pre-K, gun control, and city infrastructure. Early term shows mixed results with documented wins in affordable housing (4,800+ units) and police reform (consent decree), but significant public dissatisfaction regarding public safety outcomes and overall promise fulfillment.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.45,
+    "ambition_level": "High",
+    "grade_rationale": "Moderate accomplishments in housing and police reform offset by persistent public safety concerns, budget management success, but missed/incomplete major platforms like universal pre-K and illegal gun crackdown specifics.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Increase public safety and reduce violent crime",
+      "domain": "public_safety",
+      "domain_label": "Public Safety",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 8.4,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Create affordable housing units and homeownership access",
+      "domain": "housing",
+      "domain_label": "Affordable Housing",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 16.8,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Implement universal pre-K for all children",
+      "domain": "education",
+      "domain_label": "Early Education",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 2.4,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Crack down on illegal guns and gun violence",
+      "domain": "public_safety",
+      "domain_label": "Gun Control",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 5,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific universal pre-K enrollment numbers and implementation timeline",
+    "Detailed illegal gun seizure/prosecution metrics and enforcement strategy",
+    "Public safety outcome attribution (homicide decrease causation analysis)",
+    "Crime rate statistics for 2024-2025 comparison to campaign baseline",
+    "Economic development job creation verification and sector breakdown",
+    "Downtown revitalization Diamond District project completion status",
+    "Police consent decree enforcement progress and measurable reforms",
+    "Affordable housing breakdown by unit type and income qualification"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:11:26.577Z",
+    "slug": "craig-greenberg-louisville-ky",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

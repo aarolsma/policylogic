@@ -1,0 +1,112 @@
+{
+  "official": {
+    "name": "Leonardo Williams",
+    "role": "Mayor",
+    "jurisdiction": "Durham, NC",
+    "party": "Nonpartisan",
+    "term_start": "2023-12-04",
+    "term_end": "2025-12-03"
+  },
+  "summary": {
+    "narrative": "Leonardo Williams, educator and entrepreneur, elected Durham Mayor Nov 2023. Early tenure focused on downtown revitalization, public safety, and affordable housing. Achieved unanimous 2024-25 budget passage via consensus-building approach.",
+    "total_promises": 3,
+    "delivery_rate_estimate": 0.33,
+    "ambition_level": "High",
+    "grade_rationale": "Early-stage tenure with identified priorities but limited documented delivery on ambitious promises. Budget passage shows competence but housing, safety, downtown outcomes remain preliminary.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Revitalize downtown Durham",
+      "domain": "Economic Development",
+      "domain_label": "Downtown/Economic",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 3.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Improve public safety outcomes",
+      "domain": "Public Safety",
+      "domain_label": "Police/Crime",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 2.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Procure more affordable housing units",
+      "domain": "Housing",
+      "domain_label": "Affordable Housing",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 2.5,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Pass annual municipal budgets without major opposition",
+      "domain": "Government Operations",
+      "domain_label": "Budget/Governance",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.2,
+      "policy_score": 12.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific measurable targets for downtown revitalization not documented",
+    "Public safety improvement metrics and timelines unclear",
+    "Affordable housing procurement goals and funding mechanisms not specified",
+    "Executive orders issued by Mayor Williams not publicly listed or detailed",
+    "Progress reports on 2023 campaign promises not available through sources",
+    "Council voting records and policy outcomes beyond budget pass rate unavailable",
+    "Details on educator/entrepreneur background and prior policy experience limited",
+    "Term end date: sources reference 2025 reelection but two-year term standard unclear"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:13:32.939Z",
+    "slug": "leonardo-williams-durham-nc",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

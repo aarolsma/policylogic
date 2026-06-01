@@ -1,0 +1,112 @@
+{
+  "official": {
+    "name": "Freddie O'Connell",
+    "role": "Mayor",
+    "jurisdiction": "Nashville and Davidson County, Tennessee",
+    "party": "Democratic",
+    "term_start": "2023",
+    "term_end": "2027"
+  },
+  "summary": {
+    "narrative": "Progressive mayor elected 2023, campaigned on affordability, transit, education investment, and quality of life. Early term focused on operational efficiency and addressing growth impacts. High public approval with alignment on issues but divergent solution preferences.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.5,
+    "ambition_level": "Moderate-High",
+    "grade_rationale": "Early implementation shows progress on transit and affordability goals; education priority identified but outcomes pending. Strong approval ratings suggest effective communication; limited concrete legislation details available.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Restore fundamental Nashville services and improve operational efficiency",
+      "domain": "Government Operations",
+      "domain_label": "Operations",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 7.2,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Advance workable public transit plan",
+      "domain": "Transportation",
+      "domain_label": "Transit",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2,
+      "policy_score": 10.8,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Invest in education and improve public school quality",
+      "domain": "Education",
+      "domain_label": "Education",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 5.25,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Increase affordable housing and address housing affordability crisis",
+      "domain": "Housing",
+      "domain_label": "Housing",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 6.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific affordable housing unit targets and timelines",
+    "Detailed transit plan parameters and funding mechanisms",
+    "Education budget allocation and measurable improvement metrics",
+    "Complete executive order text and implementation status",
+    "Legislative proposals filed or passed by Metro Council",
+    "Quantified outcomes from 2024 accomplishments referenced",
+    "School quality improvement implementation plans",
+    "Anti-displacement or tenant protection policy details"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:11:58.327Z",
+    "slug": "freddie-oconnell-nashville-tn",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

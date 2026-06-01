@@ -1,0 +1,111 @@
+{
+  "official": {
+    "name": "Dave Bronson",
+    "role": "Mayor",
+    "jurisdiction": "Anchorage, Alaska",
+    "party": "Republican",
+    "term_start": "2021-07-01",
+    "term_end": "2024-07-01"
+  },
+  "summary": {
+    "narrative": "Conservative mayor focused on homelessness via faith-based orgs, shelter alternatives, and economic growth. Mixed delivery on signature homeless policy shift.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.55,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Closed Sullivan Arena shelter as promised but homelessness outcomes unclear; other priorities vague or not tracked in available sources.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Close Sullivan Arena homeless shelter and restore as community venue",
+      "domain": "homelessness",
+      "domain_label": "Homelessness & Social Services",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 12.6,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand shelter capacity through faith-based and decentralized alternatives",
+      "domain": "homelessness",
+      "domain_label": "Homelessness & Social Services",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 3.6,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Promote economic growth and infrastructure investment statewide",
+      "domain": "economic_development",
+      "domain_label": "Economic Development",
+      "clarity_score": 1,
+      "initiation_score": 1,
+      "outcome_score": 0,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 1.25,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Protect Permanent Fund Dividend from reduction",
+      "domain": "fiscal_policy",
+      "domain_label": "Fiscal Policy",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 0,
+      "attribution_modifier": 0.3,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 1.32,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific metrics on homelessness reduction post-Sullivan closure",
+    "Details on faith-based shelter partnerships established",
+    "Municipal ordinances or executive orders enacted beyond Second Amendment sanctuary",
+    "Funding amounts for alternative shelter programs",
+    "Measurable outcomes for housing affordability initiatives",
+    "Public records on Assembly conflicts and policy delays",
+    "Post-mayoralty audit of campaign promise delivery"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:15:04.587Z",
+    "slug": "dave-bronson-anchorage-ak",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

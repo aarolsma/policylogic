@@ -1,0 +1,153 @@
+{
+  "official": {
+    "name": "Kim Reynolds",
+    "role": "Governor",
+    "jurisdiction": "Iowa",
+    "party": "Republican",
+    "term_start": "2018",
+    "term_end": "2026",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": null,
+    "office_phone": null,
+    "office_address": "State Capitol, Des Moines, IA 50319",
+    "office_website": "https://governor.iowa.gov/"
+  },
+  "summary": {
+    "narrative": "Reynolds advanced conservative agenda including tax cuts, school choice, transgender restrictions, and government reorganization. Notable backtrack on IPERS protection promise. High legislative success rate with Republican majorities.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.67,
+    "ambition_level": "High",
+    "grade_rationale": "Strong execution on ideological priorities (transgender restrictions, school choice) and tax cuts, but walked back IPERS protection promise. Mixed results on implementation timelines and measurable outcomes.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Cut income taxes significantly",
+      "domain": "fiscal_policy",
+      "domain_label": "Tax Policy",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 10.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Protect IPERS pension system",
+      "domain": "fiscal_policy",
+      "domain_label": "Pensions",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 2.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": true,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Ban transgender girls from female sports",
+      "domain": "social_policy",
+      "domain_label": "Education/LGBTQ",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 11.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand school choice with $7,600 per-student funding",
+      "domain": "education",
+      "domain_label": "Education",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2,
+      "policy_score": 10.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific measurable outcomes for school choice program enrollment and student performance",
+    "Timeline and budget for state government reorganization from 37 to 16 agencies",
+    "E-Verify implementation status and compliance metrics",
+    "Cancer funding initiative details and expenditure tracking",
+    "Vaping reduction campaign effectiveness metrics",
+    "Electoral margin for 2022 gubernatorial election",
+    "Full list of executive orders and their implementation status",
+    "Public approval ratings over term",
+    "COVID policy implementation details and reversals"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:46:02.680Z",
+    "slug": "kim-reynolds-iowa",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Welcome to the Governor of the State of Iowa | Governor Kim Reynolds",
+        "url": "https://governor.iowa.gov/"
+      },
+      {
+        "title": "Kim Reynolds - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kim_Reynolds"
+      },
+      {
+        "title": "Kim Reynolds Walks Back Campaign Promise to ‘Protect IPERS’ - Iowa Democratic Party",
+        "url": "https://iowademocrats.org/2025/08/11/kim-reynolds-walks-back-campaign-promise-to-protect-ipers/"
+      },
+      {
+        "title": "Iowa Gov. Kim Reynolds' timeline of events, accomplishments",
+        "url": "https://www.kcci.com/article/kim-reynolds-iowa-governor-bio-timeline-accomplishments/64461234"
+      },
+      {
+        "title": "Kim Reynolds - Ballotpedia",
+        "url": "https://ballotpedia.org/Kim_Reynolds"
+      },
+      {
+        "title": "Executive Orders | Governor Kim Reynolds",
+        "url": "https://governor.iowa.gov/meet-governor-kim-reynolds/executive-orders"
+      },
+      {
+        "title": "Gov. Reynolds issues executive order protecting Iowa citizens, assets from Chinese government threats | Governor Kim Reynolds",
+        "url": "https://governor.iowa.gov/press-release/2026-02-10/gov-reynolds-issues-executive-order-protecting-iowa-citizens-assets-chinese-government-threats"
+      },
+      {
+        "title": "Gov. Reynolds introduces bill to condemn antisemitism in Iowa schools, colleges and universities | Governor Kim Reynolds",
+        "url": "https://governor.iowa.gov/press-release/2026-01-27/gov-reynolds-introduces-bill-condemn-antisemitism-iowa-schools-colleges-and-universities"
+      }
+    ]
+  }
+}

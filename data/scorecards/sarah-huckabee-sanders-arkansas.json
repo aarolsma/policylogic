@@ -1,0 +1,153 @@
+{
+  "official": {
+    "name": "Sarah Huckabee Sanders",
+    "role": "Governor",
+    "jurisdiction": "Arkansas",
+    "party": "Republican",
+    "term_start": "2023-01-01",
+    "term_end": "2027-01-01",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": null,
+    "office_website": "governor.arkansas.gov"
+  },
+  "summary": {
+    "narrative": "Governor Sanders focused on education reform (Arkansas LEARNS), tax cuts (3 reductions in top rate from 4.9% to 3.9%), workforce development (Arkansas LAUNCH), criminal justice measures, and economic development. Implemented several campaign priorities in first two years.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.75,
+    "ambition_level": "High",
+    "grade_rationale": "Strong delivery on tax cuts and education overhaul; significant progress on workforce platform; some controversy on education implementation; limited federal/legislative barriers overcome relative to executive authority.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Education overhaul through Arkansas LEARNS program",
+      "domain": "Education",
+      "domain_label": "K-12 & Higher Ed",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 19.44,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Income tax reduction from 4.9% to 3.9% top rate",
+      "domain": "Fiscal Policy",
+      "domain_label": "Taxation & Budget",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 22.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Workforce development platform Arkansas LAUNCH",
+      "domain": "Economic Development",
+      "domain_label": "Jobs & Skills",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 11.52,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Criminal justice expansion and death penalty methods",
+      "domain": "Criminal Justice",
+      "domain_label": "Public Safety",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2,
+      "policy_score": 20.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific election margin from 2022 governor race",
+    "Detailed breakdown of Arkansas LEARNS implementation outcomes and metrics",
+    "Arkansas LAUNCH user adoption and job placement statistics",
+    "Public approval ratings and satisfaction metrics",
+    "Details on executive orders issued and their impacts",
+    "Complete list of bill signings and legislative agenda prioritization",
+    "Budget allocations and spending outcomes for major initiatives",
+    "Comparative analysis of tax cut economic effects",
+    "Teacher and education stakeholder response assessment"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:40:22.086Z",
+    "slug": "sarah-huckabee-sanders-arkansas",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Sarah Huckabee Sanders - Ballotpedia",
+        "url": "https://ballotpedia.org/Sarah_Huckabee_Sanders"
+      },
+      {
+        "title": "Sarah Huckabee Sanders for Arkansas Governor",
+        "url": "https://www.sarahforgovernor.com/"
+      },
+      {
+        "title": "News - Sarah Huckabee Sanders for Arkansas Governor",
+        "url": "https://www.sarahforgovernor.com/category/news/"
+      },
+      {
+        "title": "Sarah Huckabee Sanders - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sarah_Huckabee_Sanders"
+      },
+      {
+        "title": "ARKANSAS GOV. SARAH HUCKABEE SANDERS & STATE INCOME TAX CUTS – Arkansas Policy Foundation",
+        "url": "https://arkansaspolicyfoundation.org/arkansas-gov-sarah-huckabee-sanders-state-income-tax-cuts/"
+      },
+      {
+        "title": "Sanders Signs Executive Order to Speed Permitting for Economic Development Projects - Arkansas Governor - Sarah Huckabee Sanders",
+        "url": "https://governor.arkansas.gov/news_post/sanders-signs-executive-order-to-speed-permitting-for-economic-development-projects/"
+      },
+      {
+        "title": "List: The first 17 executive orders signed by Arkansas Gov. Sarah Sanders",
+        "url": "https://www.5newsonline.com/article/news/politics/full-list-executive-orders-governor-sarah-huckabee-sanders/527-d3ea04fd-d509-447b-b667-496d1c5e29b6"
+      },
+      {
+        "title": "Arkansas Gov. Sarah Huckabee Sanders signs executive order opposing Biden administration Title IX changes | KARK",
+        "url": "https://www.kark.com/news/politics/gov-sarah-huckabee-sanders-to-sign-new-arkansas-executive-order/"
+      }
+    ]
+  }
+}

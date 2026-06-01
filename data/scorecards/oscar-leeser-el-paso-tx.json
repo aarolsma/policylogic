@@ -1,0 +1,71 @@
+{
+  "official": {
+    "name": "Oscar Leeser",
+    "role": "Mayor",
+    "jurisdiction": "El Paso, Texas",
+    "party": "Democratic Party",
+    "term_start": "2021-01-05",
+    "term_end": "2025-01-07"
+  },
+  "summary": {
+    "narrative": "Two-term mayor focused on economic development and migrant services. Criticized for vague platforms early in career; later demonstrated action on border/asylum issues and business recruitment.",
+    "total_promises": 2,
+    "delivery_rate_estimate": 0.6,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Documented accomplishments in business recruitment and migrant facility coordination; limited specificity on campaign promises; veto record suggests fiscal conservatism but mixed priorities.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Attract new companies and business investment to El Paso",
+      "domain": "Economic Development",
+      "domain_label": "Economic Development",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 13.5,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Expand services and infrastructure for asylum seekers and migrant processing",
+      "domain": "Immigration/Social Services",
+      "domain_label": "Social Services",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 15.75,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific campaign platform documents from 2020/2021 election unavailable",
+    "Detailed outcome metrics for business recruitment initiatives lacking",
+    "Complete veto record and rationale for 2021-2025 term incomplete",
+    "Quantified accomplishments on migrant services and housing absent",
+    "No primary sources on 2013-2017 mayoral performance for comparison"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:10:23.222Z",
+    "slug": "oscar-leeser-el-paso-tx",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

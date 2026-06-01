@@ -1,0 +1,111 @@
+{
+  "official": {
+    "name": "Mattie Parker",
+    "role": "Mayor",
+    "jurisdiction": "Fort Worth, Texas",
+    "party": "Republican (affiliated, nonpartisan election)",
+    "term_start": "2021",
+    "term_end": "2025"
+  },
+  "summary": {
+    "narrative": "Parker won 2021 mayoral race as endorsed successor to Betsy Price, re-elected 2023 (70%+) and 2025. Focused on public safety, infrastructure, economic development, green spaces, and transportation innovation. Strong electoral performance suggests constituent satisfaction.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.75,
+    "ambition_level": "Moderate-High",
+    "grade_rationale": "Clear accomplishments in public safety (182 new positions), green space (1,000+ acres conserved), and infrastructure investments. Limited legislative detail available. High re-election margins indicate public support. Cryptocurrency/tech innovation claims lack specificity.",
+    "overall_grade": "B+"
+  },
+  "promises": [
+    {
+      "normalized": "Expand public safety staffing and law enforcement capacity",
+      "domain": "Public_Safety",
+      "domain_label": "Public Safety & Law Enforcement",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 28.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Invest in green space preservation and park expansion",
+      "domain": "Environment_Planning",
+      "domain_label": "Environment & Urban Planning",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 28.05,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Improve essential city services and infrastructure quality",
+      "domain": "Infrastructure",
+      "domain_label": "Infrastructure & Services",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 16.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Promote innovative transportation and tech solutions including cryptocurrency",
+      "domain": "Economic_Development",
+      "domain_label": "Economic Development & Innovation",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 8.75,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific legislation signed or pending details absent",
+    "Economic development metrics and outcomes unavailable",
+    "Cryptocurrency initiative specifics and status unclear",
+    "Transportation/mobility solutions lack concrete deliverables",
+    "Budget allocations and fiscal impact not documented",
+    "Timeline for promised initiatives not specified",
+    "Detailed comparison against predecessor accomplishments missing"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:10:54.577Z",
+    "slug": "mattie-parker-fort-worth-tx",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

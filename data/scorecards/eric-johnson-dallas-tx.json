@@ -1,0 +1,111 @@
+{
+  "official": {
+    "name": "Eric Johnson",
+    "role": "Mayor",
+    "jurisdiction": "Dallas, TX",
+    "party": "Republican (switched from Democratic Sept 2023)",
+    "term_start": "2019-06-17",
+    "term_end": "2027-06-16"
+  },
+  "summary": {
+    "narrative": "Johnson entered office on unity platform, achieved high approval (77%) and re-election (98.7% in 2023). Party switch to Republican in Sept 2023 cited law-and-order priorities diverging from Democratic platform. Limited specific policy details available; sources emphasize public safety stance and housing affordability advocacy.",
+    "total_promises": 2,
+    "delivery_rate_estimate": 0.75,
+    "ambition_level": "Moderate",
+    "grade_rationale": "High voter approval and re-election suggest delivery on implicit promises, but vague campaign language and party switch without clear policy accomplishments limit assessment. Housing advocacy recent but undocumented.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Move beyond divisions at City Hall and unite on shared solutions",
+      "domain": "Governance",
+      "domain_label": "Government Operations",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 3,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 4.41,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Create strong, safe neighborhoods where families thrive and children succeed",
+      "domain": "Public Safety & Community Development",
+      "domain_label": "Safety & Opportunity",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 2.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Prioritize police support and public safety enforcement",
+      "domain": "Public Safety",
+      "domain_label": "Law Enforcement",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 5.28,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Address housing affordability and remove regulatory roadblocks",
+      "domain": "Housing",
+      "domain_label": "Housing Policy",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 1.98,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific public safety metrics or police department initiatives documented",
+    "Housing policy details, regulatory changes proposed or implemented",
+    "Budget allocations or departmental restructuring since 2019",
+    "Neighborhood improvement programs or crime reduction data",
+    "Details on City Hall governance reforms or departmental collaboration improvements",
+    "Post-party-switch policy changes or executive orders issued",
+    "Council relationship dynamics and legislative passage rates"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:09:22.892Z",
+    "slug": "eric-johnson-dallas-tx",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "official": {
+    "name": "Vi Alexander Lyles",
+    "role": "Mayor",
+    "jurisdiction": "Charlotte, North Carolina",
+    "party": "Democrat",
+    "term_start": "2017-12",
+    "term_end": "2026-12"
+  },
+  "summary": {
+    "narrative": "Vi Lyles has served as Charlotte mayor since 2017, winning four consecutive elections with landslide margins. Key focus areas include racial equity, public safety, affordable housing, and transportation infrastructure. Mixed results on signature initiatives.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.5,
+    "ambition_level": "Moderate-High",
+    "grade_rationale": "Strong electoral mandate and relationship-building with state legislature. Racial Equity Initiative well-funded ($250M). However, affordable housing crisis remains unresolved despite longstanding promises. Public safety improvements show only incremental progress.",
+    "overall_grade": "C+"
+  },
+  "promises": [
+    {
+      "normalized": "Implement comprehensive racial equity initiative and reduce systemic barriers",
+      "domain": "equity",
+      "domain_label": "Racial & Economic Justice",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 24,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Address affordable housing crisis through expanded development programs",
+      "domain": "housing",
+      "domain_label": "Housing & Development",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 10.5,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Improve public safety through SAFE Charlotte plan and accountability measures",
+      "domain": "public_safety",
+      "domain_label": "Public Safety",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 2,
+      "policy_score": 13.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Establish 1% sales tax referendum to fund transportation infrastructure plan",
+      "domain": "transportation",
+      "domain_label": "Transportation & Infrastructure",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 24,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific measurable outcomes for Racial Equity Initiative beyond $250M allocation",
+    "Quantified affordable housing units created/targeted vs. promised",
+    "SAFE Charlotte plan implementation metrics and effectiveness data",
+    "Transportation referendum outcome and timeline for infrastructure delivery",
+    "Repeat offender prosecution rates and mental health service capacity improvements",
+    "Community feedback on six corridors of opportunity investment results"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:12:29.430Z",
+    "slug": "vi-lyles-charlotte-nc",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

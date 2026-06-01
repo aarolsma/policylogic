@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Mike Braun",
+    "role": "Governor",
+    "jurisdiction": "Indiana",
+    "party": "Republican",
+    "term_start": "2025-01-13",
+    "term_end": "2029-01-13",
+    "election_date": "2024-11-05",
+    "election_margin": 13.3,
+    "next_election": "2028-11-05",
+    "office_phone": null,
+    "office_address": "200 W Washington St, Indianapolis, IN 46204",
+    "office_website": "https://www.in.gov/gov/"
+  },
+  "summary": {
+    "narrative": "Gov. Braun won Indiana's open gubernatorial seat by record margin, campaigning on 'Freedom and Opportunity' platform. Early focus includes property tax relief, healthcare affordability, education reform, drug trafficking enforcement, and immigration restriction. Signed executive orders on health initiatives within first 100 days and advanced balanced budget protecting AAA credit rating.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.35,
+    "ambition_level": "High",
+    "grade_rationale": "Strong early execution on budget/fiscal management and executive actions. Limited legislative achievements documented yet. Property tax relief and school choice require sustained legislative effort. Healthcare and redistricting initiatives in progress but outcomes uncertain.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Historic property tax relief through caps, deductions, transparency, and referendum reform",
+      "domain": "Fiscal Policy",
+      "domain_label": "Taxes & Budget",
+      "clarity_score": 3,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 2,
+      "policy_score": 8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Make healthcare more obtainable and affordable for Indiana residents",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare Access",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 7.35,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement universal school choice and education reform programs",
+      "domain": "Education",
+      "domain_label": "Education Policy",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 4.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Strengthen drug trafficking enforcement and unauthorized immigration restrictions",
+      "domain": "Public Safety",
+      "domain_label": "Law Enforcement",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 4.05,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific quantified targets for property tax relief absent",
+    "Healthcare affordability mechanisms not detailed publicly",
+    "School choice implementation timeline unclear",
+    "Executive order details on health initiatives incomplete",
+    "100-day accomplishments narrative lacks specific metrics",
+    "Redistricting commitment timeline and specific actions undocumented",
+    "Drug enforcement penalty proposals not specified",
+    "Qualified immunity protection mechanism unclear"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:45:34.401Z",
+    "slug": "mike-braun-indiana",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Mike Braun - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mike_Braun"
+      },
+      {
+        "title": "Gov.-elect Braun puts forth first-term agenda • Indiana Capital Chronicle",
+        "url": "https://indianacapitalchronicle.com/2024/12/04/gov-elect-braun-puts-forth-first-term-agenda/"
+      },
+      {
+        "title": "Mike Braun reiterates support for Indiana redistricting after Donald Trump call",
+        "url": "https://thehill.com/homenews/campaign/5609599-braun-trump-indiana-redistricting/"
+      },
+      {
+        "title": "Freedom and Opportunity 1 FREEDOM OPPORTUNITY For Every Hoosier. -AND-",
+        "url": "https://www.brauntransition.com/wp-content/uploads/2024/12/Braun-Policy-Agenda12324.pdf"
+      },
+      {
+        "title": "RELEASE: Governor Braun Reflects on 100 Days of Freedom and Opportunity - State of Indiana",
+        "url": "https://events.in.gov/event/release-governor-braun-reflects-on-100-days-of-freedom-and-opportunity"
+      },
+      {
+        "title": "Governor Braun: Executive Orders and Reports",
+        "url": "https://www.in.gov/gov/newsroom/executive-orders/"
+      },
+      {
+        "title": "RELEASE: Governor Braun Signs Landmark Package of Executive Orders to ‘Make Indiana Healthy Again’ - State of Indiana",
+        "url": "https://events.in.gov/event/-make-indiana-healthy-again"
+      },
+      {
+        "title": "Gov. Mike Braun Signs Executive Orders to Invest in a Healthier Indiana - State of Indiana",
+        "url": "https://events.in.gov/event/gov-mike-braun-signs-executive-orders-to-invest-in-a-healthier-indiana"
+      }
+    ]
+  }
+}

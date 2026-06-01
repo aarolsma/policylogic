@@ -1,0 +1,149 @@
+{
+  "official": {
+    "name": "J.B. Pritzker",
+    "role": "Governor",
+    "jurisdiction": "Illinois",
+    "party": "Democratic",
+    "term_start": "2019-01-14",
+    "term_end": "2027-01-09",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "207 State House, Springfield, IL 62706",
+    "office_website": "https://www.jbpritzker.com"
+  },
+  "summary": {
+    "narrative": "Gov. Pritzker campaigned on job creation, budget balancing, and freedom protection. Second-term accomplishments include doubling private investments ($6.3B to $12.5B, 2023-2024), assault weapons ban (2023), nuclear energy policy shifts, infrastructure via Rebuild Illinois ($9.6B invested), healthcare expansion, and K-12 funding increases. Recent executive orders address autism rights and accountability. Mixed record: strong economic metrics versus complex policy reversals on nuclear development.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.68,
+    "ambition_level": "High",
+    "grade_rationale": "Delivered measurable economic growth and signature legislation on gun safety; healthcare/education investment occurred. However, nuclear policy shifts suggest initial platform ambiguity. Limited transparency on specific 2018 campaign commitments versus recent achievements.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Double private sector investments in Illinois",
+      "domain": "Economic Development",
+      "domain_label": "Jobs & Economy",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 12.6,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Ban assault weapons and high-capacity magazines",
+      "domain": "Public Safety",
+      "domain_label": "Gun Control",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 18.05,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand healthcare access for vulnerable populations",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 11.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Increase K-12 school funding to record levels",
+      "domain": "Education",
+      "domain_label": "Education",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.9,
+      "policy_score": 12.92,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Original 2018 campaign platform specifics unavailable; analysis based on 2023-2025 accomplishments",
+    "Election margin data for 2022 gubernatorial race not provided in sources",
+    "Quantified metrics for healthcare expansion and K-12 funding increases lacking",
+    "Details on 'protecting freedoms' campaign messaging remain vague",
+    "Nuclear policy evolution rationale unclear; appears to reverse earlier support"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:45:04.912Z",
+    "slug": "jb-pritzker-illinois",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "JB for Governor - Official Campaign Website of Illinois Governor JB Pritzker",
+        "url": "https://jbpritzker.com/"
+      },
+      {
+        "title": "JB Pritzker - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/JB_Pritzker"
+      },
+      {
+        "title": "Stratton aims to bring Pritzker administration policies to national stage | Capitol News Illinois",
+        "url": "https://capitolnewsillinois.com/news/stratton-aims-to-bring-pritzker-administration-policies-to-national-stage/"
+      },
+      {
+        "title": "Gov. Pritzker Announces Illinois Doubled Private Sector Investments in One Year - Illinois Economic Development Corporation",
+        "url": "https://www.illinoisedc.org/news/gov-pritzker-announces-illinois-doubled-private-sector-investments-in-one-year/"
+      },
+      {
+        "title": "Gov. Pritzker Announces Illinois Doubled Private Sector ...",
+        "url": "https://gov.illinois.gov/news/press-release.30820.html"
+      },
+      {
+        "title": "What does Gov. JB Pritzker’s nuclear energy executive order do? | Capitol News Illinois",
+        "url": "https://capitolnewsillinois.com/news/what-does-gov-jb-pritzkers-nuclear-energy-executive-order-do/"
+      },
+      {
+        "title": "Gov. Pritzker Issues Executive Order to Safeguard Rights of Autistic Illinoisans",
+        "url": "https://gov-pritzker-newsroom.prezly.com/gov-pritzker-issues-executive-order-to-safeguard-rights-of-autistic-illinoisans"
+      },
+      {
+        "title": "What does Gov. JB Pritzker’s nuclear energy executive order do? - Illinois Times, the capital city's weekly source of news, politics, arts, entertainment, culture",
+        "url": "https://www.illinoistimes.com/news/what-does-gov-jb-pritzkers-nuclear-energy-executive-order-do/"
+      }
+    ]
+  }
+}

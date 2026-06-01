@@ -1,0 +1,150 @@
+{
+  "official": {
+    "name": "Laura Kelly",
+    "role": "Governor",
+    "jurisdiction": "Kansas",
+    "party": "Democratic",
+    "term_start": "2019-01-14",
+    "term_end": "2027-01-13",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "State Capitol Building, Topeka, KS 66612",
+    "office_website": "https://www.governor.ks.gov"
+  },
+  "summary": {
+    "narrative": "Gov. Kelly campaigned on bipartisan cooperation, school funding, budget balance, and tax cuts. She has delivered consistent education funding increases and higher ed investment while vetoing multiple tax cut bills deemed too generous to wealthy taxpayers. Major tension between campaign tax cut promises and fiscal vetoes.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.55,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Partial delivery on education/budget promises; significant divergence between campaign tax cut rhetoric and actual veto record creates credibility gap",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Fully fund K-12 schools",
+      "domain": "Education",
+      "domain_label": "Education",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 18.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Balance the state budget",
+      "domain": "Fiscal Policy",
+      "domain_label": "Budget & Finance",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 16,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement broad tax cuts for all Kansans",
+      "domain": "Taxation",
+      "domain_label": "Tax Policy",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 3.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": true,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand healthcare access in rural areas",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 11.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific election margin percentage for 2022 race",
+    "Office phone number for Governor's office",
+    "Detailed breakdown of tax cut proposals and why vetoed",
+    "Timeline of education funding increases year-by-year",
+    "Rural healthcare expansion metrics and outcomes",
+    "Bipartisan cooperation metrics and specific bills"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:46:31.470Z",
+    "slug": "laura-kelly-kansas",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Laura Kelly for Kansas",
+        "url": "https://www.laurakellyforkansas.com/"
+      },
+      {
+        "title": "Laura Kelly - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Laura_Kelly"
+      },
+      {
+        "title": "2022 Kansas gubernatorial election - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2022_Kansas_gubernatorial_election"
+      },
+      {
+        "title": "Year in Review: Kelly Administration Delivers a Successful 2024 for Kansas | Press Releases | Kansas Office of the Governor",
+        "url": "https://www.governor.ks.gov/Home/Components/News/News/464/56"
+      },
+      {
+        "title": "Laura Kelly (Kansas) - Ballotpedia",
+        "url": "https://ballotpedia.org/Laura_Kelly_(Kansas)"
+      },
+      {
+        "title": "Kansas Gov. Laura Kelly issues 15-day disaster declaration",
+        "url": "https://www.kmbc.com/article/kansas-governor-laura-kelly-issues-15-day-disaster-declaration/38687738"
+      },
+      {
+        "title": "Kansas Gov. Laura Kelly extends executive orders to help with healthcare staffing",
+        "url": "https://www.kshb.com/news/coronavirus/kansas-gov-laura-kelly-extends-executive-orders-to-help-with-healthcare-staffing"
+      },
+      {
+        "title": "Kansas Gov. Laura Kelly creates child advocate office through executive order, circumventing divided Senate",
+        "url": "https://www.usatoday.com/story/news/politics/government/2021/10/04/kansas-gov-laura-kelly-establishes-child-advocate-via-executive-order/5996244001/"
+      }
+    ]
+  }
+}

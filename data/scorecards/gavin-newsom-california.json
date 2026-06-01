@@ -1,0 +1,150 @@
+{
+  "official": {
+    "name": "Gavin Christopher Newsom",
+    "role": "Governor",
+    "jurisdiction": "California",
+    "party": "Democratic",
+    "term_start": "2019-01-07",
+    "term_end": "2027-01-02",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": null,
+    "office_phone": "(916) 445-2841",
+    "office_address": "State Capitol Building, Sacramento, CA 95814",
+    "office_website": "https://www.gov.ca.gov"
+  },
+  "summary": {
+    "narrative": "Newsom campaigned on signature pledges including single-payer healthcare and homelessness solutions. As governor, major campaign commitments were abandoned or reduced in scope. Recent accomplishments include clean energy legislation, healthcare expansions, and AI guardrails. Record shows pattern of vetoing transparency measures and campaign promise divergence from executive action.",
+    "total_promises": 3,
+    "delivery_rate_estimate": 0.35,
+    "ambition_level": "High",
+    "grade_rationale": "Significant gap between campaign rhetoric and policy delivery. Abandoned flagship single-payer healthcare promise. Positive environmental and healthcare access achievements partially offset by vetoes of transparency measures and limited homelessness crisis resolution despite repeated emphasis.",
+    "overall_grade": "D"
+  },
+  "promises": [
+    {
+      "normalized": "Establish single-payer public healthcare system in California",
+      "domain": "healthcare",
+      "domain_label": "Healthcare",
+      "clarity_score": 3,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 6.75,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": true,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Tackle California homelessness crisis with emergency action",
+      "domain": "housing",
+      "domain_label": "Housing & Homelessness",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 6.62,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Advance clean energy and establish AI guardrails",
+      "domain": "environment",
+      "domain_label": "Environment & Technology",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 11.04,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand low-income healthcare access regardless of immigration status",
+      "domain": "healthcare",
+      "domain_label": "Healthcare Access",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.7,
+      "policy_score": 20.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific homelessness metrics and outcomes 2023-2025",
+    "Budget allocation vs. promised single-payer healthcare investment",
+    "Electoral margin 2022 gubernatorial race",
+    "Complete list of vetoes by category 2023-2025",
+    "Comparative regulatory environment analysis claims",
+    "Details on failed legislation and attribution responsibility"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:40:54.956Z",
+    "slug": "gavin-newsom-california",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Gavin Newsom’s likely presidential bid is built on broken promises | Gil Durán | The Guardian",
+        "url": "https://www.theguardian.com/commentisfree/2026/feb/10/gavin-newsom-presidential-candidate-democrats"
+      },
+      {
+        "title": "Priorities | Governor of California",
+        "url": "https://www.gov.ca.gov/priorities-and-progress/priorities/"
+      },
+      {
+        "title": "California Gov Newsom viral SAT comment sparks GOP chairwoman backlash | Fox News",
+        "url": "https://www.foxnews.com/politics/newsom-blasted-ca-gop-chair-over-viral-clip-labeled-racist-critics-he-should-embarrassed"
+      },
+      {
+        "title": "Gavin Newsom - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gavin_Newsom"
+      },
+      {
+        "title": "Here’s everything (so far) Governor Newsom got done in the year that would not end | Governor of California",
+        "url": "https://www.gov.ca.gov/2025/12/29/heres-everything-so-far-governor-newsom-got-done-in-the-year-that-would-not-end/"
+      },
+      {
+        "title": "Gavin Newsom | 2025 California Environmental Scorecard",
+        "url": "https://envirovoters.org/scorecard/representative/gavin-newsom/"
+      },
+      {
+        "title": "Newsom Roasted After Admitting on Kimmel That California Is ‘Overregulated’",
+        "url": "https://pjmedia.com/michaelcantrell/2026/03/04/newsom-roasted-after-admitting-on-kimmel-that-california-is-overregulated-n4950251"
+      },
+      {
+        "title": "Gavin Newsom Is Playing the Long Game | The New Yorker",
+        "url": "https://www.newyorker.com/magazine/2026/02/09/gavin-newsom-profile"
+      }
+    ]
+  }
+}

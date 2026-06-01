@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Jeff Landry",
+    "role": "Governor",
+    "jurisdiction": "Louisiana",
+    "party": "Republican",
+    "term_start": "2024-01-08",
+    "term_end": "2028-01-13",
+    "election_date": "2023-10-14",
+    "election_margin": "52%",
+    "next_election": "2027-11-02",
+    "office_phone": null,
+    "office_address": "Office of Governor, Baton Rouge, LA",
+    "office_website": "gov.louisiana.gov"
+  },
+  "summary": {
+    "narrative": "Landry took office Jan 2024 with explicit agenda on law enforcement, education, taxes, economic growth. Moved quickly via special sessions to pass conservative legislation on school vouchers, criminal justice, tax reform, Ten Commandments posting. Self-described pragmatic MAGA approach; pursued high-profile national conservative positions (nitrogen execution, Gulf of America naming).",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.75,
+    "ambition_level": "High",
+    "grade_rationale": "Strong execution on legislative agenda within first 2 years; delivered on core promises (vouchers, tax reform, law enforcement, education mandates). Economic ranking improved 31st→18th. Some promises lack measurable outcomes or remain partial. National controversy suggests mixed stakeholder results.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Expand school choice and voucher program",
+      "domain": "Education",
+      "domain_label": "K-12 Education",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 21.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Reform tax system, reduce income tax reliance",
+      "domain": "Economy",
+      "domain_label": "Economic Policy",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 18.7,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Support law enforcement, increase incarceration",
+      "domain": "Criminal Justice",
+      "domain_label": "Law & Order",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 22.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Mandate Ten Commandments posting in public schools",
+      "domain": "Education",
+      "domain_label": "Cultural/Religious",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.88,
+      "difficulty_multiplier": 2,
+      "policy_score": 21.1,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific metrics on job creation outcomes vs. baseline",
+    "Quantified results from healthcare cost/access initiatives",
+    "Election security implementation details and audit results",
+    "Parent rights in education—specific legislation passed",
+    "School voucher uptake rates and fiscal impact",
+    "Income tax reduction amounts and revenue replacement sources",
+    "Details on coach compensation metrics for LSU football",
+    "Execution methodology implementation timeline and challenges"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:47:30.786Z",
+    "slug": "jeff-landry-louisiana",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Home - Landry for Louisiana",
+        "url": "https://jefflandry.com/"
+      },
+      {
+        "title": "Jeff Landry - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jeff_Landry"
+      },
+      {
+        "title": "Jeff Landry - Ballotpedia",
+        "url": "https://ballotpedia.org/Jeff_Landry"
+      },
+      {
+        "title": "Two years as Louisiana governor: Jeff Landry’s big conservative wins, flashes of controversy",
+        "url": "https://www.nola.com/news/politics/louisiana-governor-jeff-landry-two-years/article_faf49026-136a-480e-bff3-d88fc55aa585.html"
+      },
+      {
+        "title": "Office of Governor Jeff Landry",
+        "url": "https://gov.louisiana.gov/index.cfm/search?q=executive+orders&pn=1"
+      },
+      {
+        "title": "Louisiana Gov. Jeff Landry signs order for ‘Gulf of America’ change to all state laws, documents • Louisiana Illuminator",
+        "url": "https://lailluminator.com/2025/03/13/landry-gulf-america/"
+      },
+      {
+        "title": "Louisiana Gov. Jeff Landry signs executive order on college campus free speech • Louisiana Illuminator",
+        "url": "https://lailluminator.com/2024/10/01/louisiana-gov-jeff-landry-signs-executive-order-on-college-campus-free-speech/"
+      },
+      {
+        "title": "Promises Made, Promises Kept: Justice Coming for Crime Victims | Office of Governor Jeff Landry",
+        "url": "https://gov.louisiana.gov/news/4762"
+      }
+    ]
+  }
+}

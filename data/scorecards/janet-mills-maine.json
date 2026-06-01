@@ -1,0 +1,150 @@
+{
+  "official": {
+    "name": "Janet Trafton Mills",
+    "role": "Governor",
+    "jurisdiction": "Maine",
+    "party": "Democratic",
+    "term_start": "2019-01-02",
+    "term_end": "2027-01-01",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-06-09",
+    "office_phone": null,
+    "office_address": "Office of Governor, Augusta, Maine",
+    "office_website": "https://www.maine.gov/governor/mills/"
+  },
+  "summary": {
+    "narrative": "Governor Mills completed first term and launched 2026 Senate campaign. Major accomplishments include Medicaid expansion, gun safety legislation post-Lewiston shooting, infrastructure resilience planning, abortion rights protection, and free community college initiatives. Mixed record on labor protections with scaled-back farmworker wage legislation.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "Moderate-High",
+    "grade_rationale": "Delivered on healthcare expansion and crisis response legislation; partial delivery on labor protections; infrastructure planning initiated but long-term outcomes pending. Union opposition suggests labor constituency concerns.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Expand background checks and mental health funding for gun violence prevention",
+      "domain": "Public Safety",
+      "domain_label": "Gun Violence Prevention",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 16.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Make free community college permanent",
+      "domain": "Education",
+      "domain_label": "Higher Education Access",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 2,
+      "policy_score": 10,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Establish statewide minimum wage for farmworkers",
+      "domain": "Labor",
+      "domain_label": "Worker Protections",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 7.56,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Protect abortion rights and providers through executive action",
+      "domain": "Healthcare",
+      "domain_label": "Reproductive Rights",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 16.9,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific 2026 Senate campaign platform details beyond 'fighter in Washington' messaging",
+    "Quantified outcomes for free community college initiative participation rates",
+    "Timeline and funding details for Infrastructure Resilience Plan implementation",
+    "Specific mental health funding amounts allocated post-2023 legislation",
+    "Election margin from 2022 gubernatorial reelection",
+    "Official campaign contact information and detailed policy positions"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:48:00.456Z",
+    "slug": "janet-mills-maine",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Janet Mills for Maine",
+        "url": "https://janetmills.com/"
+      },
+      {
+        "title": "Janet Mills - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Janet_Mills"
+      },
+      {
+        "title": "Home | Office of Governor Janet T. Mills",
+        "url": "https://www.maine.gov/governor/mills/"
+      },
+      {
+        "title": "Janet T. Mills - Ballotpedia",
+        "url": "https://ballotpedia.org/Janet_T._Mills"
+      },
+      {
+        "title": "Maine Gov. Janet Mills explains executive order protecting abortion rights",
+        "url": "https://www.wmtw.com/article/maine-gov-janet-mills-explains-executive-order-protecting-abortion-rights/40534592"
+      },
+      {
+        "title": "Unions privately urge Chuck Schumer and Democratic leaders to stay out of Maine's Senate primary",
+        "url": "https://www.nbcnews.com/politics/2026-election/unions-chuck-schumer-democratic-leaders-maine-senate-primary-rcna260797"
+      },
+      {
+        "title": "Governor Mills Signs Executive Order to Pursue Minimum Wage for Farm Workers | Office of Governor Janet T. Mills",
+        "url": "https://www.maine.gov/governor/mills/news/governor-mills-signs-executive-order-pursue-minimum-wage-farm-workers-2023-07-25"
+      },
+      {
+        "title": "EPSTEIN FILES: Maine Gov Janet Mills Accused of Child Abuse Cover-up, Cocaine Trafficking in Newly Released SDNY Documents - The Maine Wire",
+        "url": "https://www.themainewire.com/2026/02/epstein-files-maine-gov-janet-mills-accused-of-child-abuse-cover-up-cocaine-trafficking-in-newly-released-sdny-documents/"
+      }
+    ]
+  }
+}

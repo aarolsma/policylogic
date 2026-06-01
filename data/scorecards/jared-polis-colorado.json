@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Jared Polis",
+    "role": "Governor",
+    "jurisdiction": "Colorado",
+    "party": "Democratic",
+    "term_start": "2019-01-08",
+    "term_end": "2027-01-08",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "136 State Capitol, Denver, CO 80203",
+    "office_website": "https://www.colorado.gov/governor"
+  },
+  "summary": {
+    "narrative": "Governor Polis entered office in 2019 with focus on education, healthcare, climate, housing, and public safety. Early term achievements include healthcare expansion (abortion/gender-affirming care access), education funding increases ($500M+ in 2024), climate progress (87.5% toward 2030 GHG targets), and cost-of-living initiatives. Mixed record includes vetoing water pipeline for rural communities and blocking federal research facility, raising accountability questions.",
+    "total_promises": 8,
+    "delivery_rate_estimate": 0.62,
+    "ambition_level": "High",
+    "grade_rationale": "Strong delivery on healthcare and education priorities with measurable outcomes; climate progress documented. Deductions for apparent contradictions (cost-of-living promises vs. vetoing rural infrastructure) and limited transparency on housing metrics. Clemency consideration for election denier suggests selective application of principles.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Increase K-12 education funding and eliminate Budget Stabilization Factor",
+      "domain": "education",
+      "domain_label": "Education & Student Support",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 2,
+      "policy_score": 38.25,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Enshrine access to abortion and gender-affirming healthcare in law",
+      "domain": "healthcare",
+      "domain_label": "Healthcare Access",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2,
+      "policy_score": 36.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Reduce cost of living and improve housing affordability",
+      "domain": "economy",
+      "domain_label": "Economic Development",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 14.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Achieve climate goals with 2030 GHG emissions reduction targets",
+      "domain": "environment",
+      "domain_label": "Climate & Environment",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2,
+      "policy_score": 32.45,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific measurable outcomes for housing affordability initiatives",
+    "Public safety improvement metrics and program details",
+    "Teacher loan relief program implementation and participation data",
+    "Student mental health investment allocation and results",
+    "Water pipeline decision rationale and rural impact assessment",
+    "Federal atmospheric research center closure justification",
+    "Cost-of-living savings quantification by household type",
+    "Detailed election margin and approval rating trends"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:41:28.031Z",
+    "slug": "jared-polis-colorado",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Opinion | Colorado Gov. Jared Polis shouldn’t free Tina Peters",
+        "url": "https://www.ms.now/opinion/colorado-jared-polis-tina-peters-clemency-flaw"
+      },
+      {
+        "title": "Jared Polis - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jared_Polis"
+      },
+      {
+        "title": "Colorado Governor Signals He’ll Commute Sentence of Election Denier - The New York Times",
+        "url": "https://www.nytimes.com/2026/03/04/us/politics/jared-polis-tina-peters.html"
+      },
+      {
+        "title": "Jared Polis - Ballotpedia",
+        "url": "https://ballotpedia.org/Jared_Polis"
+      },
+      {
+        "title": "Governor Polis and Lt. Governor Primavera Reflect on 2023 & Look Ahead to Bold Action in 2024 | Colorado Governor Jared Polis",
+        "url": "https://www.colorado.gov/governor/news/governor-polis-and-lt-governor-primavera-reflect-2023-look-ahead-bold-action-2024"
+      },
+      {
+        "title": "A Colorado Dem Just Got Busted for Peddling a Massive Campaign Lie",
+        "url": "https://townhall.com/tipsheet/mattvespa/2026/03/07/a-colorado-dem-just-got-busted-for-peddling-a-massive-campaign-lie-n2672438"
+      },
+      {
+        "title": "Most-Controversial Colorado Stories of 2025: A Recap",
+        "url": "https://www.westword.com/opinion/controversial-colorado-stories-of-2025-recap-40819951/"
+      },
+      {
+        "title": "Gov. Jared Polis' scorecard: What promises the governor kept — and where he fell short",
+        "url": "https://www.axios.com/local/denver/2022/11/04/polis-promises-2018-campaign-kept-broken"
+      }
+    ]
+  }
+}

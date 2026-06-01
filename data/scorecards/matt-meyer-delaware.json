@@ -1,0 +1,151 @@
+{
+  "official": {
+    "name": "Matt Meyer",
+    "role": "Governor",
+    "jurisdiction": "Delaware",
+    "party": "Democratic",
+    "term_start": "2025-01-01",
+    "term_end": "2029-01-01",
+    "election_date": "2024-11-05",
+    "election_margin": null,
+    "next_election": "2028-11-05",
+    "office_phone": null,
+    "office_address": "Tatnall Building, Dover, DE 19901",
+    "office_website": "governor.delaware.gov"
+  },
+  "summary": {
+    "narrative": "Matt Meyer, 76th Governor of Delaware, is a former public school math teacher and small business owner who served as New Castle County Executive (2017-2025). His campaign platform emphasized universal pre-K, universal free school meals, medical debt cancellation, police accountability, and abortion rights constitutional amendment. Early tenure focused on affordable housing and permitting streamlining.",
+    "total_promises": 5,
+    "delivery_rate_estimate": 0.2,
+    "ambition_level": "High",
+    "grade_rationale": "Early action on affordable housing via executive order demonstrates commitment; limited time in office to assess major legislative achievements; medical debt, pre-K, school meals require legislative passage or budget allocation not yet confirmed",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Establish universal free school meals for all students",
+      "domain": "Education",
+      "domain_label": "Education & Child Development",
+      "clarity_score": 3,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 2.52,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement universal pre-K access statewide",
+      "domain": "Education",
+      "domain_label": "Education & Child Development",
+      "clarity_score": 3,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 2.16,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Cancel medical debt and establish debt relief programs",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare & Debt Relief",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 1.875,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Enshrine abortion rights in state constitution via amendment",
+      "domain": "Civil Rights",
+      "domain_label": "Healthcare & Civil Rights",
+      "clarity_score": 3,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 8.8,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific budget allocations for campaign promises not disclosed",
+    "Legislative timelines and co-sponsor commitments unknown",
+    "Detailed metrics for police accountability reforms undefined",
+    "County-level accomplishments as NCC Executive not fully itemized",
+    "Performance data on first 100 days initiatives incomplete",
+    "Medical debt cancellation mechanism and scope unclear",
+    "Election margin percentage not publicly available"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:42:30.187Z",
+    "slug": "matt-meyer-delaware",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Matt Meyer - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Matt_Meyer"
+      },
+      {
+        "title": "Governor-elect Matt Meyer Launches Transition Website to Engage Delawareans in Moving the State Forward - State of Delaware News",
+        "url": "https://news.delaware.gov/2024/11/07/governor-elect-matthew-meyer-launches-transition-website-to-engage-delawareans-in-moving-the-state-forward/"
+      },
+      {
+        "title": "Matt Meyer - Ballotpedia",
+        "url": "https://ballotpedia.org/Matt_Meyer"
+      },
+      {
+        "title": "Governor Matt Meyer - State of Delaware",
+        "url": "https://governor.delaware.gov/"
+      },
+      {
+        "title": "About the Governor - Governor Matt Meyer - State of Delaware",
+        "url": "https://governor.delaware.gov/governor-bio/"
+      },
+      {
+        "title": "Governor Matt Meyer Signs Executive Order Streamlining State Permitting Regulations - State of Delaware News",
+        "url": "https://news.delaware.gov/2026/02/26/governor-matt-meyer-signs-executive-order-streamlining-state-permitting-regulations/"
+      },
+      {
+        "title": "Governor Matt Meyer Issues Statement on the Unanimous Upholding of Senate Bill 21 by the Delaware Supreme Court - State of Delaware News",
+        "url": "https://news.delaware.gov/2026/02/27/governor-matt-meyer-issues-statement-on-the-unanimous-upholding-of-senate-bill-21-by-the-delaware-supreme-court/"
+      },
+      {
+        "title": "EXECUTIVE ORDER #18 - Governor Matt Meyer - State of Delaware",
+        "url": "https://governor.delaware.gov/executive-orders/executive-order-18/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "official": {
+    "name": "Steven L. Reed",
+    "role": "Mayor",
+    "jurisdiction": "Montgomery, Alabama",
+    "party": "Democratic",
+    "term_start": "2019-11-01",
+    "term_end": "2027-11-01"
+  },
+  "summary": {
+    "narrative": "First Black mayor of Montgomery elected 2019 with 67% vote; re-elected 2023. Platform emphasizes education funding, public safety, small business support, and equitable community development.",
+    "total_promises": 5,
+    "delivery_rate_estimate": 0.72,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Demonstrated tangible school funding increases (first in 30 years), employee compensation improvements, and equity initiatives (fines waiver). Accomplishments documented but specific metrics on promised outcomes unclear.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Increase funding for Montgomery public schools",
+      "domain": "Education",
+      "domain_label": "K-12 Education",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 22.95,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Improve public safety and safer neighborhoods",
+      "domain": "Public Safety",
+      "domain_label": "Law Enforcement & Safety",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 14.85,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Support small and minority-owned businesses",
+      "domain": "Economic Development",
+      "domain_label": "Business & Entrepreneurship",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 8,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Expand pre-K education access",
+      "domain": "Education",
+      "domain_label": "Early Childhood Education",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.1,
+      "policy_score": 7.28,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific dollar amounts for school funding increases and baseline comparison",
+    "Metrics for public safety improvements (crime rate, arrests, community satisfaction)",
+    "Minority-owned business growth statistics and support programs implemented",
+    "Pre-K expansion enrollment numbers and program details",
+    "Timeline commitments and explicit delivery deadlines for most promises",
+    "Detailed budget allocation documentation for campaign initiatives"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:16:36.701Z",
+    "slug": "steven-reed-montgomery-al",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

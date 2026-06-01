@@ -1,0 +1,150 @@
+{
+  "official": {
+    "name": "Wes Moore",
+    "role": "Governor",
+    "jurisdiction": "Maryland",
+    "party": "Democratic",
+    "term_start": "2023-01-18",
+    "term_end": "2027-01-18",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "State House, 100 State Circle, Annapolis, MD 21401",
+    "office_website": "https://governor.maryland.gov/"
+  },
+  "summary": {
+    "narrative": "Gov. Moore campaigns on equity, economic opportunity, and bipartisan governance. Early accomplishments include marijuana conviction pardons (175k), minimum wage acceleration, climate planning, and 'Just Communities' designation for historically disadvantaged areas. Faces budget pressures ($3B deficit) and scrutiny over personal claims.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "High",
+    "grade_rationale": "Strong early execution on marquee promises (pardons, wage policy, climate framework) but implementation gaps on education/healthcare specifics and emerging fiscal constraints limit sustained delivery.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Pardon marijuana convictions and decriminalize possession",
+      "domain": "Criminal Justice",
+      "domain_label": "Public Safety & Justice",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.2,
+      "policy_score": 17.1,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand pathways to work, wages, and wealth through minimum wage and EITC",
+      "domain": "Economic Development",
+      "domain_label": "Jobs & Wages",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 13.26,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement comprehensive climate pollution reduction plan",
+      "domain": "Environment",
+      "domain_label": "Climate & Energy",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 12.8,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Designate 'Just Communities' for historically disadvantaged areas with grant priority",
+      "domain": "Equity & Community Development",
+      "domain_label": "Social Justice",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 8.1,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific education/healthcare policy details and measurable targets absent",
+    "Budget deficit response ($3B) may constrain promise delivery timeline",
+    "Developmental Disabilities Administration cuts impact unclear",
+    "Election margin and 2026 reelection polling data unavailable",
+    "Public safety/crime reduction metrics and initiatives not documented",
+    "Bipartisan legislation passage rates and Republican support levels unknown"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:48:29.844Z",
+    "slug": "wes-moore-maryland",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Wes Moore for Maryland",
+        "url": "https://wesmoore.com/"
+      },
+      {
+        "title": "Governorship of Wes Moore - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Governorship_of_Wes_Moore"
+      },
+      {
+        "title": "Governor Moore Launches 2026 Re-Election Campaign",
+        "url": "https://wesmoore.com/governor-wes-moore-launches-2026-reelection-campaign-pledging-to-keep-building-a-state-where-we-leave-no-one-behind/"
+      },
+      {
+        "title": "Wes Moore - Ballotpedia",
+        "url": "https://ballotpedia.org/Wes_Moore"
+      },
+      {
+        "title": "Governor Wes Moore 2023-2025 EXECUTIVE SUMMARY",
+        "url": "https://www.mdlcv.org/wp-content/uploads/2025/08/2025-Gov-Report-Card-8-12-25-C.pdf"
+      },
+      {
+        "title": "Governor Moore Signs Executive Order to Lower Energy Costs, Protect Maryland Families, and Deliver Affordable Energy Solutions - Press Releases - News - Office of Governor Wes Moore",
+        "url": "https://governor.maryland.gov/news/press/pages/Governor-Moore-Signs-Executive-Order-to-Lower-Energy-Costs,-Protect-Maryland-Families,-and-Deliver-Affordable-Energy-Soluti.aspx"
+      },
+      {
+        "title": "Executive Orders - News - Office of Governor Wes Moore",
+        "url": "https://governor.maryland.gov/news/pages/executive-orders.aspx"
+      },
+      {
+        "title": "Moore signs energy executive order, aiming to attract power developers to Maryland - Maryland Matters",
+        "url": "https://marylandmatters.org/2025/12/19/moore-energy-executive-order-power-developers/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "official": {
+    "name": "Brad Little",
+    "role": "Governor",
+    "jurisdiction": "Idaho",
+    "party": "Republican",
+    "term_start": "2019-01-07",
+    "term_end": "2027-01-04",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "Office of the Governor, Boise, Idaho",
+    "office_website": "gov.idaho.gov"
+  },
+  "summary": {
+    "narrative": "Gov. Little emphasizes fiscal discipline, tax relief, education investment, workforce development, and government efficiency. Second-term accomplishments include $4.6B tax cuts, largest school funding increase in state history, $2B facility funding, and red tape reduction initiatives. Currently implementing 'Enduring Idaho' and 'Keeping Promises' plans for 2026 re-election bid.",
+    "total_promises": 5,
+    "delivery_rate_estimate": 0.72,
+    "ambition_level": "High",
+    "grade_rationale": "Strong delivery on education and tax relief commitments with measurable outcomes; demonstrated legislative effectiveness; limited transparency on school choice standards and long-term outcome tracking reduces grade from A range.",
+    "overall_grade": "B+"
+  },
+  "promises": [
+    {
+      "normalized": "Deliver $4.6 billion in tax cuts over six years",
+      "domain": "fiscal_policy",
+      "domain_label": "Tax Relief & Fiscal Policy",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 27.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Secure single largest school funding increase in state history",
+      "domain": "education",
+      "domain_label": "K-12 Education",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2,
+      "policy_score": 32.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Allocate $2 billion over 10 years for school facility projects",
+      "domain": "education",
+      "domain_label": "Education Infrastructure",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 28.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Implement fair, responsible school choice prioritizing families in need",
+      "domain": "education",
+      "domain_label": "School Choice Policy",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.65,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 10.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific workforce development program outcomes and metrics",
+    "Details on red tape reduction quantification and impact assessment",
+    "School choice proposal status and implementation timeline",
+    "Long-term economic growth data supporting 'Enduring Idaho' plan",
+    "Teacher pay increase specifics and salary benchmarking",
+    "Literacy investment program results and assessment data",
+    "2022 election margin percentage",
+    "Current unemployment and wage growth rates in Idaho",
+    "Federal grant matching or contribution to education initiatives",
+    "Impact of firing squad legislation on capital punishment outcomes"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:44:35.729Z",
+    "slug": "brad-little-idaho",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Governor Brad Little to run for 3rd term - LocalNews8.com - KIFI",
+        "url": "https://localnews8.com/news/2026/02/24/governor-brad-little-to-run-for-3rd-term/"
+      },
+      {
+        "title": "Brad Little - Ballotpedia",
+        "url": "https://ballotpedia.org/Brad_Little"
+      },
+      {
+        "title": "Home - Brad Little for Idaho",
+        "url": "https://www.bradlittleforidaho.com/"
+      },
+      {
+        "title": "Leading Idaho | Office of the Governor",
+        "url": "https://gov.idaho.gov/leading-idaho/"
+      },
+      {
+        "title": "About Governor Brad Little | Office of the Governor",
+        "url": "https://gov.idaho.gov/our-governor/"
+      },
+      {
+        "title": "Gov. Little signs executive order to further streamline government, support public schools | Office of the Governor",
+        "url": "https://gov.idaho.gov/pressrelease/gov-little-signs-executive-order-to-further-streamline-government-support-public-schools/"
+      },
+      {
+        "title": "Governor Little signs two new executive orders reducing regulatory burdens on Idahoans | Office of the Governor",
+        "url": "https://gov.idaho.gov/pressrelease/governor-little-signs-two-new-executive-orders-reducing-regulatory-burdens-on-idahoans/"
+      },
+      {
+        "title": "Governor Little signs two executive orders further cutting government red tape | Office of the Governor",
+        "url": "https://gov.idaho.gov/pressrelease/governor-little-signs-two-executive-orders-further-cutting-government-red-tape/"
+      }
+    ]
+  }
+}

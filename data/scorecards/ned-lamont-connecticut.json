@@ -1,0 +1,153 @@
+{
+  "official": {
+    "name": "Ned Lamont",
+    "role": "Governor",
+    "jurisdiction": "Connecticut",
+    "party": "Democratic",
+    "term_start": "2019-01-09",
+    "term_end": "2027-01-09",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "Hartford, CT",
+    "office_website": "https://portal.ct.gov/Office-of-the-Governor/"
+  },
+  "summary": {
+    "narrative": "Governor Lamont campaigned on affordability across housing, electricity, healthcare, and education. Key 2018 promises included tax restraint and property tax credits. Notable accomplishments include largest state income tax cut, minimum wage increase to $15, recreational marijuana legalization, and COVID-19 emergency management. Current focus emphasizes job creation, cost reduction, and economic growth with projected budget surplus.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.67,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Lamont delivered on key economic promises (income tax cut, minimum wage increase, marijuana legalization) but property tax credit expansion incomplete. Strong performance on pandemic response and budget management. Ongoing affordability focus demonstrates commitment but limited evidence of major structural cost reductions yet.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Reduce electricity costs for households and businesses",
+      "domain": "energy_utilities",
+      "domain_label": "Energy & Utilities",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2,
+      "policy_score": 4.76,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement largest income tax cut in Connecticut history",
+      "domain": "taxation",
+      "domain_label": "Taxation & Budget",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 18,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Increase minimum wage to $15 per hour",
+      "domain": "labor",
+      "domain_label": "Labor & Employment",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 19.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Restore and expand property tax credit to $300 for all property owners",
+      "domain": "taxation",
+      "domain_label": "Taxation & Budget",
+      "clarity_score": 3,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 9.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific measurable outcomes for affordability initiatives",
+    "Detailed progress metrics on healthcare cost reduction goals",
+    "Property tax credit implementation timeline and actual expansion amount",
+    "Election margin and vote totals from 2022 gubernatorial election",
+    "Office contact phone number and detailed address",
+    "Housing cost reduction initiatives and outcomes",
+    "Job creation and training program enrollment numbers",
+    "Recreational marijuana implementation status and revenue",
+    "Higher education affordability program details and participation"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:41:59.672Z",
+    "slug": "ned-lamont-connecticut",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Ned Lamont for Governor",
+        "url": "https://www.nedlamont.com/"
+      },
+      {
+        "title": "Lamont talks affordability as he kicks off reelection bid – NBC Connecticut",
+        "url": "https://www.nbcconnecticut.com/news/politics/lamont-talks-affordability-as-he-kicks-off-reelection-bid/3664763/"
+      },
+      {
+        "title": "Lamont Report Card: Was Lamont able to keep his 2018 campaign promises?",
+        "url": "https://www.wtnh.com/news/politics/lamont-report-card-was-lamont-able-to-keep-his-2018-campaign-promises/"
+      },
+      {
+        "title": "Connecticut Governor Ned Lamont | CT.gov",
+        "url": "https://portal.ct.gov/governor"
+      },
+      {
+        "title": "Ned Lamont - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ned_Lamont"
+      },
+      {
+        "title": "Governor Lamont Signs Largest Income Tax Cut in Connecticut History",
+        "url": "https://portal.ct.gov/governor/news/press-releases/2023/06-2023/governor-lamont-signs-largest-income-tax-cut-in-connecticut-history"
+      },
+      {
+        "title": "Lawmakers to meet with Lamont on future of his COVID orders | AP News",
+        "url": "https://apnews.com/article/connecticut-ned-lamont-hartford-coronavirus-pandemic-5e7be84683f8e41578a09534c6621847"
+      },
+      {
+        "title": "COVID-19 Update from Governor Lamont | Connecticut House Democrats",
+        "url": "https://www.housedems.ct.gov/godfrey/article/covid-19-update-governor-lamont"
+      }
+    ]
+  }
+}

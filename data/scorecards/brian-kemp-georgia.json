@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Brian P. Kemp",
+    "role": "Governor",
+    "jurisdiction": "Georgia",
+    "party": "Republican",
+    "term_start": "2019-01-14",
+    "term_end": "2027-01-09",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "Office of the Governor, Atlanta, Georgia",
+    "office_website": "gov.georgia.gov"
+  },
+  "summary": {
+    "narrative": "Kemp campaigned on putting Georgians first, prioritizing economic growth, election security reform, public safety, education, and tax relief. Second term accomplishments include significant job creation (18,300+ jobs, $12.5B investment), tax cuts/rebates, anti-abortion legislation, gun rights expansion, and election law overhauls. Faced controversy over 2020 election decisions and voting law characterizations.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.75,
+    "ambition_level": "High",
+    "grade_rationale": "Strong economic delivery with measurable job/investment outcomes; tax relief implemented; core conservative priorities advanced. Deductions for election law controversy and limited detail on education/rural investment specifics.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Deliver economic growth and job creation, especially in rural Georgia",
+      "domain": "Economic Development",
+      "domain_label": "Jobs & Economy",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 28.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Implement tax cuts and provide tax relief to Georgia families",
+      "domain": "Fiscal Policy",
+      "domain_label": "Taxes",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 22.32,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Reform election rules and strengthen election security",
+      "domain": "Election Administration",
+      "domain_label": "Elections",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 17.25,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Strengthen public safety and improve K-12 education quality",
+      "domain": "Education & Public Safety",
+      "domain_label": "Public Safety & Education",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.1,
+      "policy_score": 11.34,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific education improvement metrics and legislation passed",
+    "Public safety outcomes and crime reduction data",
+    "Detailed breakdown of rural investment allocation",
+    "Tax cut implementation timeline and household benefit amounts",
+    "Election law litigation outcomes and legal challenges",
+    "Inflation/cost-of-living impact assessment on families",
+    "Executive order details and effectiveness measures",
+    "Comparison of promises vs. 2018 first-term delivery"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:43:35.137Z",
+    "slug": "brian-kemp-georgia",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Brian Kemp - Ballotpedia",
+        "url": "https://ballotpedia.org/Brian_Kemp"
+      },
+      {
+        "title": "Brian Kemp - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Brian_Kemp"
+      },
+      {
+        "title": "Governor Brian P. Kemp's 2022 State of the State Address | Governor Brian P. Kemp Office of the Governor",
+        "url": "https://gov.georgia.gov/press-releases/2022-01-13/governor-brian-p-kemps-2022-state-state-address"
+      },
+      {
+        "title": "Gov Kemp: Georgia Job Creation Remains Strong | Georgia.org",
+        "url": "https://georgia.org/press-release/gov-kemp-georgia-job-creation-remains-strong"
+      },
+      {
+        "title": "2020 Signed Legislation | Governor Brian P. Kemp Office of the Governor",
+        "url": "https://gov.georgia.gov/executive-action/legislation/signed-legislation/2020-signed-legislation?instance_overrides_key=egGgr2UcgA9-O6Zp5xBguTnDs0J-gwkgvmIi8PclNKk&page=2"
+      },
+      {
+        "title": "Georgia Gas Tax Suspension Extended: Kemp signs executive order cutting costs at the pump into July",
+        "url": "https://www.wjcl.com/amp/article/georgia-gas-tax-suspension-extended/40118639"
+      },
+      {
+        "title": "Kemp’s Medicaid Experiment Failures in Full View Across Georgia - georgiademocrat.org",
+        "url": "https://georgiademocrat.org/kemps-medicaid-experiment-failures-in-full-view-across-georgia/"
+      },
+      {
+        "title": "In Bloomberg: “Brian Kemp Has Failed Georgia Voters” - georgiademocrat.org",
+        "url": "https://georgiademocrat.org/in-bloomberg-brian-kemp-has-failed-georgia-voters/"
+      }
+    ]
+  }
+}

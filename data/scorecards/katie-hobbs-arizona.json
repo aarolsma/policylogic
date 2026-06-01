@@ -1,0 +1,189 @@
+{
+  "official": {
+    "name": "Katie Hobbs",
+    "role": "Governor",
+    "jurisdiction": "Arizona",
+    "party": "Democratic",
+    "term_start": "2023-01-09",
+    "term_end": "2027-01-09",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": null,
+    "office_website": "https://azgovernor.gov/"
+  },
+  "summary": {
+    "narrative": "Katie Hobbs, Arizona's 30th Governor (Democrat, inaugurated January 2023), has focused on healthcare access, water security, education funding, and border management in her first term. Her signature accomplishments include brokering a historic 2023 Colorado River water conservation agreement, announcing $30 million in medical debt forgiveness (March 2024), pausing capital punishment, and issuing 63 vetoes of Republican-led legislation in her first legislative session. She has also launched a reelection campaign emphasizing 'real results' and announced proposals to expand the Arizona Promise Scholarship Program to undocumented students and cut middle-class taxes through executive order.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.68,
+    "ambition_level": "Moderate-to-High",
+    "grade_rationale": "Hobbs has achieved significant outcomes on water security and medical debt forgiveness, demonstrating executive capacity and cross-state negotiation. However, many policy commitments remain in early stages or contingent on legislative action in a Republican-controlled chamber, limiting implementation reach. Education and tax cut initiatives show mixed progress.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Broker Colorado River water conservation agreement",
+      "domain": "Environment/Water",
+      "domain_label": "Environment & Natural Resources",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 14.4,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Forgive $30M in Arizona medical debt",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare & Public Health",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 11,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand Arizona Promise Scholarship to undocumented students",
+      "domain": "Education",
+      "domain_label": "Education",
+      "clarity_score": 3,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 5.98,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Pause capital punishment in Arizona",
+      "domain": "Criminal Justice",
+      "domain_label": "Criminal Justice & Public Safety",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 12,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Extend Prop 123 education funding",
+      "domain": "Education",
+      "domain_label": "Education",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 3.51,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Cut middle-class taxes via executive action",
+      "domain": "Taxation",
+      "domain_label": "Economic Policy & Taxation",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1,
+      "policy_score": 5.6,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Election margin from 2022 governor race",
+    "Specific dollar amounts or timelines for education funding extension (Prop 123)",
+    "Details on middle-class tax cuts (target income thresholds, estimated savings)",
+    "Status and completion date for school facility safety executive orders",
+    "Measurable outcomes from National Guard border deployment (December 2023)",
+    "Campaign platform positions on healthcare, housing, and economic development beyond scattered mentions",
+    "Comprehensive list of bills vetoed and legislative priorities for 2024-2025 sessions"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:52:52.127Z",
+    "slug": "katie-hobbs-arizona",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Katie Hobbs for Governor | A Champion for Every Arizonan",
+        "url": "https://katiehobbs.org/"
+      },
+      {
+        "title": "Katie Hobbs - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Katie_Hobbs"
+      },
+      {
+        "title": "Hobbs launches reelection bid promising 'real results' for Arizona | Arizona Mirror",
+        "url": "https://azmirror.com/briefs/hobbs-launches-reelection-bid-promising-real-results-for-arizona/"
+      },
+      {
+        "title": "Katie Hobbs - Ballotpedia",
+        "url": "https://ballotpedia.org/Katie_Hobbs"
+      },
+      {
+        "title": "Governor Hobbs’ Key Accomplishments | Office of the Arizona Governor",
+        "url": "https://azgovernor.gov/accomplishments"
+      },
+      {
+        "title": "Governor Katie Hobbs Signs Executive Order Taking Steps to Cut Taxes for Middle Class Arizonans | Office of the Arizona Governor",
+        "url": "https://azgovernor.gov/office-arizona-governor/news/2025/11/governor-katie-hobbs-signs-executive-order-taking-steps-cut"
+      },
+      {
+        "title": "Governor Katie Hobbs Signs Executive Orders Addressing Safety and Security of School Facilities | Office of the Arizona Governor",
+        "url": "https://azgovernor.gov/office-arizona-governor/news/2023/06/governor-katie-hobbs-signs-executive-orders-addressing-safety"
+      },
+      {
+        "title": "Governor Katie Hobbs Acts to Cut Red Tape, Unleash Arizona Energy, and Lower Energy Costs | Office of the Arizona Governor",
+        "url": "https://azgovernor.gov/office-arizona-governor/news/2025/09/governor-katie-hobbs-acts-cut-red-tape-unleash-arizona-energy"
+      }
+    ]
+  }
+}

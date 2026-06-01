@@ -1,0 +1,151 @@
+{
+  "official": {
+    "name": "Andy Beshear",
+    "role": "Governor",
+    "jurisdiction": "Kentucky",
+    "party": "Democratic",
+    "term_start": "2019-12-10",
+    "term_end": "2027-12-09",
+    "election_date": "2023-11-07",
+    "election_margin": 5,
+    "next_election": "2027-11-02",
+    "office_phone": null,
+    "office_address": "Capitol Building, Frankfort, KY 40601",
+    "office_website": "governor.ky.gov"
+  },
+  "summary": {
+    "narrative": "Gov. Beshear's second term focused on economic growth, healthcare expansion, and criminal justice reform. Delivered measurable wins on Medicaid expansion, medical cannabis legalization, sports betting, opioid epidemic response, and EV infrastructure. Maintained strong fiscal position with $4B rainy day fund. Positioned for potential 2028 presidential campaign while emphasizing rural engagement.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 85,
+    "ambition_level": "High",
+    "grade_rationale": "Strong execution on healthcare, economic development, and criminal justice initiatives. Tangible legislative wins and fiscal management. Gaps in comprehensive climate strategy beyond EV focus and limited details on full opioid epidemic resolution metrics.",
+    "overall_grade": "B+"
+  },
+  "promises": [
+    {
+      "normalized": "Combat Kentucky opioid epidemic through legislation and enforcement coordination",
+      "domain": "Public Health",
+      "domain_label": "Healthcare & Substance Abuse",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2,
+      "policy_score": 22.95,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand Medicaid access and improve healthcare coverage for vulnerable residents",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare & Social Services",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 25.56,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Legalize medical cannabis and sports betting for economic growth",
+      "domain": "Economy & Regulation",
+      "domain_label": "Economic Development",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 23.25,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Build electric vehicle charging infrastructure across Kentucky parkways and interstates",
+      "domain": "Infrastructure & Environment",
+      "domain_label": "Transportation & Energy",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 13.68,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific metrics on opioid overdose death reduction percentage",
+    "Timeline and completion status for 50 EV charging stations",
+    "Details on law enforcement relationship improvements beyond statement level",
+    "Medical cannabis licensing timeline and implementation status",
+    "Measurable outcomes on voting rights restoration impact post-executive order",
+    "Job creation numbers from economic growth initiatives",
+    "Specific Medicaid enrollment increase targets and achievement rates"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:47:01.069Z",
+    "slug": "andy-beshear-kentucky",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Gov. Andy Beshear wins re-election in Kentucky governor's race",
+        "url": "https://www.wlky.com/article/kentucky-governor-election-results-2023-beshear-cameron-1699409007/45771731"
+      },
+      {
+        "title": "Kentucky AG Russell Coleman fires back at Gov. Beshear over ICE cooperation | Fox News",
+        "url": "https://www.foxnews.com/politics/dem-governor-deep-red-state-calls-ice-pullout-triggering-clash-enforcement-authority"
+      },
+      {
+        "title": "Opinion | Andy Beshear: How Democrats can change rural red to blue - The Washington Post",
+        "url": "https://www.washingtonpost.com/opinions/2025/11/24/andy-beshear-democrats-politics-rural-voters/"
+      },
+      {
+        "title": "Andy Beshear - Ballotpedia",
+        "url": "https://ballotpedia.org/Andy_Beshear"
+      },
+      {
+        "title": "Gov. Beshear Secures Another Record-Breaking Year for Economic Growth",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2364"
+      },
+      {
+        "title": "Andy Beshear - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Andy_Beshear"
+      },
+      {
+        "title": "Gov. Beshear Restores Voting Rights to More Than 140,000 Kentuckians",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=4"
+      },
+      {
+        "title": "Beshear signs executive order designed to limit conversion therapy in Kentucky",
+        "url": "https://www.lpm.org/news/2024-09-18/beshear-signs-executive-order-designed-to-limit-conversion-therapy-in-kentucky"
+      }
+    ]
+  }
+}

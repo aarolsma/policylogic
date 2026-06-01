@@ -1,0 +1,93 @@
+{
+  "official": {
+    "name": "Nancy B. Vaughan",
+    "role": "Mayor",
+    "jurisdiction": "Greensboro, North Carolina",
+    "party": "Unknown",
+    "term_start": "2013-12-03",
+    "term_end": "2025-12-02"
+  },
+  "summary": {
+    "narrative": "Vaughan served as Greensboro's 49th mayor for 12 years, focusing on economic development and workforce opportunities. Major achievements include attracting Jet Zero aerospace project, Toyota battery factory, IQE semiconductor investment ($305M, 100+ jobs), and Syngenta expansion ($140M). Recognized for downtown revitalization and regional leadership.",
+    "total_promises": 3,
+    "delivery_rate_estimate": 0.85,
+    "ambition_level": "High",
+    "grade_rationale": "Strong economic development outcomes with measurable job creation and major corporate investments. Limited data on specific campaign promises and social agenda items. Incomplete candidate survey response limits promise verification.",
+    "overall_grade": "B+"
+  },
+  "promises": [
+    {
+      "normalized": "Attract major aerospace and advanced manufacturing projects to Greensboro",
+      "domain": "economic_development",
+      "domain_label": "Economic Development",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 28.2,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Support economic development and job creation initiatives for residents",
+      "domain": "jobs_workforce",
+      "domain_label": "Jobs & Workforce",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 25.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Advance downtown revitalization and community partnerships",
+      "domain": "community_development",
+      "domain_label": "Community Development",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 16.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific campaign platform documents from 2013, 2017, 2021 election cycles unavailable",
+    "Ballotpedia 2022 Candidate Connection survey not completed",
+    "Detailed breakdown of job creation attribution vs. external factors unclear",
+    "Social policy agenda (housing, education, public safety) not documented in sources",
+    "City council voting record and legislative initiatives not specified",
+    "Public sentiment and criticism regarding equity and affordability outcomes missing",
+    "Term-end accomplishments and legacy assessment limited",
+    "Political party affiliation not stated in available sources"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:14:03.745Z",
+    "slug": "nancy-vaughan-greensboro-nc",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "official": {
+    "name": "Kirk Watson",
+    "role": "Mayor",
+    "jurisdiction": "Austin, Texas",
+    "party": "Democratic",
+    "term_start": "2023",
+    "term_end": "2027"
+  },
+  "summary": {
+    "narrative": "Watson prioritizes housing affordability, transportation infrastructure, public safety, and homelessness. Secured HOME Phase 1&2 land use reforms (2023-2024) to increase housing supply. Background: 13 yrs Texas Senate, 30 yrs public policy experience.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.55,
+    "ambition_level": "High",
+    "grade_rationale": "Strong initiation on housing reform (HOME Phase 1&2 passed); transportation/police staffing underway. Limited evidence on homelessness outcomes, land preservation funding status unclear. Implementation phase ongoing.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Reform land use code and increase housing supply via HOME initiative",
+      "domain": "Housing",
+      "domain_label": "Affordable Housing & Supply",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 2,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2,
+      "policy_score": 21.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Raise $300 million for transportation improvements",
+      "domain": "Transportation",
+      "domain_label": "Infrastructure Investment",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 6.3,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Fill empty Austin Police Department positions and improve public safety",
+      "domain": "Public Safety",
+      "domain_label": "Law Enforcement Staffing",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 11.52,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Address homelessness and launch Austin Infrastructure Academy",
+      "domain": "Social Services",
+      "domain_label": "Homelessness & Workforce",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 5.28,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Status of $78M land preservation funding campaign",
+    "Measurable homelessness reduction metrics and timelines",
+    "Transportation funding sources and bond measure details",
+    "Police hiring completion rate and recruitment timeline",
+    "HOME Phase 2 implementation outcomes and unit projections",
+    "Child care facility exemption policy specifics and impact",
+    "Austin Infrastructure Academy enrollment and placement data"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:09:54.602Z",
+    "slug": "kirk-watson-austin-tx",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

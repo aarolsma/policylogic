@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Ron DeSantis",
+    "role": "Governor",
+    "jurisdiction": "Florida",
+    "party": "Republican",
+    "term_start": "2019-01-08",
+    "term_end": "2027-01-10",
+    "election_date": "2022-11-08",
+    "election_margin": "19.2%",
+    "next_election": null,
+    "office_phone": null,
+    "office_address": "The Capitol, 400 S Monroe St, Tallahassee, FL 32399",
+    "office_website": "flgov.com"
+  },
+  "summary": {
+    "narrative": "DeSantis emphasizes delivering on campaign commitments through legislative collaboration. Major accomplishments include $3.5B Everglades restoration, $5.3B debt paydown, education ranking improvements, and pro-business policies. Initiatives span environmental protection, fiscal responsibility, education, immigration enforcement, and gun rights.",
+    "total_promises": 7,
+    "delivery_rate_estimate": 0.71,
+    "ambition_level": "High",
+    "grade_rationale": "Demonstrable progress on major fiscal and environmental promises with measurable outcomes; incomplete data on education rankings and some policy objectives; strong execution capability shown but some promises remain in progress or redefined.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Invest $3.5 billion in Everglades restoration and water resource protection",
+      "domain": "environment",
+      "domain_label": "Environmental Protection",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2,
+      "policy_score": 32.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Achieve top-3 ranking in NAEP and K-12 education achievement rankings",
+      "domain": "education",
+      "domain_label": "Education Quality",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 18.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Pay down $5.3 billion in state debt and improve fiscal responsibility",
+      "domain": "fiscal",
+      "domain_label": "Fiscal Management",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 36.21,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Enforce E-Verify mandate for businesses and restrict sanctuary city protections",
+      "domain": "immigration",
+      "domain_label": "Immigration Enforcement",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 14.4,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific NAEP ranking outcomes and timeline for education goal achievement",
+    "Status of open carry gun legislation implementation",
+    "Business rent tax elimination progress and completion date",
+    "Flood mitigation and sustainable growth metrics with local governments",
+    "Department of Commerce and Government Efficiency measurable results",
+    "E-Verify enforcement rates and sanctuary city protections status",
+    "Details on 3.7M new business formation attribution to policy",
+    "Complete budget allocation tracking for environmental initiatives"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:43:02.660Z",
+    "slug": "ron-desantis-florida",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "DeSant-O-Meter : Tracking the promises of Florida Gov. Ron DeSantis | PolitiFact",
+        "url": "https://www.politifact.com/florida/promises/desant-o-meter/"
+      },
+      {
+        "title": "Ron DeSantis - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ron_DeSantis"
+      },
+      {
+        "title": "DeSantis presidential campaign retools its message in an effort to catch up to Trump : NPR",
+        "url": "https://www.npr.org/2023/10/19/1207028433/desantis-presidential-campaign-retools-its-message-in-an-effort-to-catch-up-to-t"
+      },
+      {
+        "title": "Governor Ron DeSantis Signs Fiscal Year 2024-2025 “Focus on Florida’s Future” Budget | Executive Office of the Governor",
+        "url": "https://www.flgov.com/eog/news/press/2024/governor-ron-desantis-signs-fiscal-year-2024-2025-focus-floridas-future-budget"
+      },
+      {
+        "title": "Governor Highlights Achievements of 2024 Legislative Session – Florida Department of Veterans' Affairs",
+        "url": "https://floridavets.org/governor-highlights-achievements-of-2024-legislative-session/"
+      },
+      {
+        "title": "Executive Orders",
+        "url": "https://protectingfloridatogether.gov/state-action/executive-order"
+      },
+      {
+        "title": "Governor DeSantis Signs Executive Order to Achieve Even More Now for Florida’s Environment | South Florida Water Management District",
+        "url": "https://www.sfwmd.gov/news-events/news/governor-desantis-signs-executive-order-achieve-even-more-now-floridas-environment"
+      },
+      {
+        "title": "Executive Orders | Executive Office of the Governor",
+        "url": "https://www.flgov.com/eog/news/executive-orders"
+      }
+    ]
+  }
+}

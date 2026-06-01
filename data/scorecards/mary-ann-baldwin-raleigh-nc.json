@@ -1,0 +1,111 @@
+{
+  "official": {
+    "name": "Mary-Ann Baldwin",
+    "role": "Mayor",
+    "jurisdiction": "Raleigh, NC",
+    "party": "Nonpartisan",
+    "term_start": "2019",
+    "term_end": "2024"
+  },
+  "summary": {
+    "narrative": "Baldwin campaigned on inclusive governance, affordable housing, transit, jobs, and parks. Secured $39M for BRT transit; reformed community engagement (CAC system). Did not seek re-election in 2024. Limited public documentation of progress on affordable housing or job creation targets. Potential conflict of interest noted with TIG policy and developer contributions.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.5,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Transit initiative delivered with substantial funding; governance reform completed. Housing and jobs promises lack measurable outcomes or public documentation. Ethical concern flagged. Incomplete term prevents full assessment.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Secure efficient, sustainable public transportation system",
+      "domain": "Transportation",
+      "domain_label": "Transit & Mobility",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 26.3,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Provide affordable housing for all residents",
+      "domain": "Housing",
+      "domain_label": "Affordable Housing",
+      "clarity_score": 1,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 1.3,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Reform antiquated CAC community engagement system",
+      "domain": "Governance",
+      "domain_label": "Democratic Participation",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.2,
+      "policy_score": 12.96,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Create good jobs and expand economic opportunity",
+      "domain": "Economic Development",
+      "domain_label": "Jobs & Economy",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.4,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 1.76,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "No quantified metrics for housing units created or affordability targets",
+    "Job creation numbers and economic development outcomes undocumented",
+    "Parks and greenways expansion progress not detailed in sources",
+    "Campaign finance and TIG conflict-of-interest resolution unclear",
+    "Post-2021 policy accomplishments sparse in public record",
+    "Specifics on CAC reform implementation and community feedback absent",
+    "Departure timing (April 2024) lacks stated rationale or performance assessment"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:13:00.639Z",
+    "slug": "mary-ann-baldwin-raleigh-nc",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

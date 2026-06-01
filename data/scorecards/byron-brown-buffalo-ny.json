@@ -1,0 +1,110 @@
+{
+  "official": {
+    "name": "Byron William Brown II",
+    "role": "Mayor",
+    "jurisdiction": "Buffalo, New York",
+    "party": "Democratic",
+    "term_start": "2006",
+    "term_end": "2024-10-15"
+  },
+  "summary": {
+    "narrative": "First African-American and longest-serving Buffalo mayor. 2021 write-in victory against progressive challenger. Focus on neighborhood development, affordable housing, diversity, and gun violence reduction. Resigned October 2024.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Demonstrated measurable crime reductions (28-58% gun violence decline 2022-2023) and business diversity initiatives. Limited transparency on platform specificity; incomplete survey responses. Long tenure but mixed legacy on housing affordability expansion.",
+    "overall_grade": "C+"
+  },
+  "promises": [
+    {
+      "normalized": "Reduce gun violence and shooting incidents",
+      "domain": "Public Safety",
+      "domain_label": "Crime & Safety",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2,
+      "policy_score": 19.6,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Increase neighborhood development across all areas",
+      "domain": "Economic Development",
+      "domain_label": "Development & Investment",
+      "clarity_score": 1,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 10.8,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Expand affordable housing opportunities",
+      "domain": "Housing",
+      "domain_label": "Housing & Affordability",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 7.5,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Support minority and women-owned business enterprises",
+      "domain": "Economic Development",
+      "domain_label": "Business & Diversity",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 14.4,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Campaign platform details unavailable; Ballotpedia survey not completed",
+    "Specific metrics for neighborhood development and affordable housing targets missing",
+    "Buffalo Opportunity Agenda Phase Two outcomes and implementation timeline unclear",
+    "Executive order details on gun violence office structure and budget not specified",
+    "State funding advocacy results and impact quantification absent",
+    "Housing affordability metrics and units created/preserved not documented in sources"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:16:06.547Z",
+    "slug": "byron-brown-buffalo-ny",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

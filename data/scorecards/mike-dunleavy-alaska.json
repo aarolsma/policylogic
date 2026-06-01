@@ -1,0 +1,192 @@
+{
+  "official": {
+    "name": "Mike Dunleavy",
+    "role": "Governor",
+    "jurisdiction": "Alaska",
+    "party": "Republican",
+    "term_start": "2019-12-03",
+    "term_end": "2027-12-03",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "P.O. Box 110001, Juneau, AK 99811-0001",
+    "office_website": "gov.alaska.gov"
+  },
+  "summary": {
+    "narrative": "Governor Dunleavy campaigned on five core priorities: repealing Senate Bill 91 (criminal justice reform), fighting for a full Permanent Fund Dividend (PFD), reducing state spending, developing natural resources (particularly Alaska LNG), and improving education outcomes. He achieved significant crime reduction (31% overall, 15.9% violent crime 2019–2023) and successfully repealed SB91. He signed executive orders on government efficiency and regulatory reform. Progress on Alaska LNG accelerated in 2025, and he signed wage exemption repeal legislation. Implementation varies across priorities; criminal justice and regulatory reform show concrete results, while fiscal sustainability and education outcomes remain contested. Bipartisan coalitions in legislature have constrained some executive initiatives.",
+    "total_promises": 5,
+    "delivery_rate_estimate": 0.58,
+    "ambition_level": "High",
+    "grade_rationale": "Strong delivery on criminal justice reform (SB91 repeal, crime reduction) and regulatory efficiency; meaningful progress on energy development. Limited evidence of sustained improvement in education outcomes or achievement of structural fiscal plan. PFD policy delivery unclear from sources. Bipartisan legislature constraints and competing priorities reduced implementation scope relative to campaign ambitions.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Repeal Senate Bill 91 (criminal justice reform)",
+      "domain": "Public Safety",
+      "domain_label": "Criminal Justice & Law Enforcement",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 14.82,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Reduce crime rates through public safety initiatives",
+      "domain": "Public Safety",
+      "domain_label": "Criminal Justice & Law Enforcement",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 11.52,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Develop Alaska LNG project for energy exports",
+      "domain": "Economic Development",
+      "domain_label": "Energy & Natural Resources",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.4,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 7.5,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement government efficiency review and reform",
+      "domain": "Governance",
+      "domain_label": "Government Operations",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 2,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 8,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Grow Alaska economy and open state for business",
+      "domain": "Economic Development",
+      "domain_label": "Economic Growth & Business",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.4,
+      "difficulty_multiplier": 2,
+      "policy_score": 3.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Improve school outcomes and education results",
+      "domain": "Education",
+      "domain_label": "K-12 Education",
+      "clarity_score": 1,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 3.84,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific details on PFD policy delivery and amount changes achieved",
+    "Education outcome metrics and improvement targets (test scores, graduation rates)",
+    "Fiscal sustainability plan details and implementation timeline",
+    "State spending reduction targets and actual budget cuts realized",
+    "Alaska LNG project timeline, funding status, and partnership agreements",
+    "Natural resource development licensing and permitting metrics",
+    "Legislative effectiveness data and bills passed by session",
+    "Public approval ratings and favorability trends",
+    "Economic growth metrics (GDP, job creation, unemployment rate)",
+    "Detailed state trooper hiring numbers and public safety staffing"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:52:20.034Z",
+    "slug": "mike-dunleavy-alaska",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Mike Dunleavy (politician) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mike_Dunleavy_(politician)"
+      },
+      {
+        "title": "Mike Dunleavy - Ballotpedia",
+        "url": "https://ballotpedia.org/Mike_Dunleavy"
+      },
+      {
+        "title": "Governor Dunleavy Applauds Department of Interior Actions Delivering on Promises to Alaska ﻿ - Mike Dunleavy",
+        "url": "https://gov.alaska.gov/governor-dunleavy-applauds-department-of-interior-actions-delivering-on-promises-to-alaska/"
+      },
+      {
+        "title": "Governor Dunleavy Delivers 7th State of the State Address - Mike Dunleavy",
+        "url": "https://gov.alaska.gov/governor-dunleavy-delivers-7th-state-of-the-state-address/"
+      },
+      {
+        "title": "Governor Dunleavy Home - Mike Dunleavy",
+        "url": "https://gov.alaska.gov/"
+      },
+      {
+        "title": "Governor Dunleavy Issues Two Administrative Orders to Improve Government Efficiency and Regulatory Reform - Mike Dunleavy",
+        "url": "https://gov.alaska.gov/governor-dunleavy-issues-two-administrative-orders-to-improve-government-efficiency-and-regulatory-reform/"
+      },
+      {
+        "title": "Administrative Orders - Mike Dunleavy",
+        "url": "https://gov.alaska.gov/administrative-orders/"
+      },
+      {
+        "title": "Governor Dunleavy Will Issue Executive Order to Bolster Food Security by Establishing Alaska Department of Agriculture - Mike Dunleavy",
+        "url": "https://gov.alaska.gov/governor-dunleavy-will-issue-executive-order-to-bolster-food-security-by-establishing-alaska-department-of-agriculture/"
+      }
+    ]
+  }
+}
