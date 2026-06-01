@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Michelle Lujan Grisham",
+    "role": "Governor",
+    "jurisdiction": "New Mexico",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2019-01-01",
+    "term_end": "2027-01-01"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 5,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Governor Lujan Grisham has delivered on several key campaign promises, particularly in education funding, renewable energy development, and healthcare access. Her administration has made significant progress on public safety reforms and election access, though some economic diversification goals remain ongoing."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make New Mexico a leader in renewable energy and clean energy jobs",
+      "domain_label": "Energy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In June 2025, announced agreement between XGS Energy and Meta to develop 150 megawatts of advanced geothermal energy in New Mexico, continuing significant clean energy investments.",
+      "source_url": "https://www.governor.state.nm.us/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Address crime and improve public safety across New Mexico",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Signed legislation addressing crime and behavioral health in February 2025, and pushed legislature to pass a slate of public safety bills.",
+      "source_url": "https://ballotpedia.org/Michelle_Lujan_Grisham",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Expand access to behavioral health services",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Signed comprehensive legislation addressing behavioral health in February 2025 as part of broader public safety and healthcare reform efforts.",
+      "source_url": "https://ballotpedia.org/Michelle_Lujan_Grisham",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Transform New Mexico's public education system with evidence-based policies",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Implemented series of evidence-based education policies and significantly increased education funding, making New Mexico a leader in early childhood education investment.",
+      "source_url": "https://www.governor.state.nm.us/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Expand voter access and reduce partisan polarization",
+      "domain_label": "Elections",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Supported and signed election reforms expanding access for independent voters (approximately 23% of electorate as of 2025), aimed at increasing voter participation.",
+      "source_url": "https://en.wikipedia.org/wiki/Michelle_Lujan_Grisham",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Diversify New Mexico's economy beyond oil and gas dependence",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Has attracted tech and renewable energy investments including Meta geothermal project, but state budget remains heavily dependent on oil and gas revenues.",
+      "source_url": "https://www.governor.state.nm.us/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Preserve New Mexico's air, land and water resources",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Administration has implemented environmental protection policies, but ongoing challenges with oil and gas industry impacts and water scarcity continue.",
+      "source_url": "https://www.governor.state.nm.us/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Significantly reduce violent crime rates in Albuquerque and statewide",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Despite legislative efforts on public safety, New Mexico continues to have among the highest violent crime rates in the nation, with limited measurable improvement.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

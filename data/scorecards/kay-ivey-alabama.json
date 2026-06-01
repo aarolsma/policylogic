@@ -1,0 +1,189 @@
+{
+  "official": {
+    "name": "Kay Ivey",
+    "role": "Governor",
+    "jurisdiction": "Alabama",
+    "party": "Republican",
+    "term_start": "2017-01-09",
+    "term_end": "2025-01-14",
+    "election_date": "2022-05-24",
+    "election_margin": null,
+    "next_election": null,
+    "office_phone": null,
+    "office_address": "State Capitol, Montgomery, AL",
+    "office_website": "governor.alabama.gov"
+  },
+  "summary": {
+    "narrative": "Governor Kay Ivey, Alabama's 54th governor, campaigned on traditional conservative themes emphasizing job creation, education improvement, and fiscal responsibility. Her administration pursued rural economic development, broadband expansion, and education initiatives including third-grade reading proficiency goals and school choice expansion. Ivey has prioritized healthcare access through Medicaid care-management programs while opposing Medicaid expansion. Her tenure saw documented implementation of several infrastructure and economic development commitments.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Ivey demonstrated concrete follow-through on broadband access, rural economic investment, and education initiatives, with measurable outcomes (broadband ranking improvement, $1.7B rural investment). However, vague framing of several commitments and limited documentation on third-grade reading initiative outcomes prevent higher grades. Healthcare expansion promise remained unfulfilled by design (opposed Medicaid expansion).",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Improve broadband access across Alabama to top 25 nationally",
+      "domain": "Infrastructure",
+      "domain_label": "Infrastructure & Broadband",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 9.1,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Achieve $1.7B+ rural investment and 1,700+ jobs annually",
+      "domain": "Economic Development",
+      "domain_label": "Rural Economic Growth",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 8.64,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Get every Alabama student reading at grade level by 3rd grade",
+      "domain": "Education",
+      "domain_label": "Education Quality",
+      "clarity_score": 3,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 3.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Expand school choice through education tax credits",
+      "domain": "Education",
+      "domain_label": "School Choice",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 10,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Protect IVF access through legal liability protections",
+      "domain": "Healthcare & Governance",
+      "domain_label": "Reproductive Healthcare",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 10.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Enhance Medicaid long-term care management system",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare Access",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 6.24,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Measurable outcomes for third-grade reading initiative not documented",
+    "2nd Amendment policy specifics and implementation details absent",
+    "Details on 'good paying jobs' commitment metrics or targets unclear",
+    "School choice program enrollment numbers and utilization rates not provided",
+    "Specific timeline and completion status for education infrastructure projects undefined",
+    "Rural broadband access metrics by county not granularly available",
+    "Implementation status of AI election integrity bill not assessed"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:54:28.639Z",
+    "slug": "kay-ivey-alabama",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Kay Ivey - Ballotpedia",
+        "url": "https://ballotpedia.org/Kay_Ivey"
+      },
+      {
+        "title": "Gov. Kay Ivey promises brighter future for Alabama in inaugural address - al.com",
+        "url": "https://www.al.com/news/2019/01/gov-kay-ivey-promises-brighter-future-for-alabama-in-inaugural-address.html"
+      },
+      {
+        "title": "Kay Ivey - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kay_Ivey"
+      },
+      {
+        "title": "Gov. Ivey: Rural Alabama making ‘exciting progress’ as growth builds - Made in Alabama",
+        "url": "https://www.madeinalabama.com/2024/11/gov-ivey-rural-alabama-making-exciting-progress-as-growth-builds/"
+      },
+      {
+        "title": "Governor Ivey Signs Executive Order Confirming Alabama’s Participation in Federal Education Freedom Tax Credit Program -",
+        "url": "https://governor.alabama.gov/newsroom/2026/01/governor-ivey-signs-executive-order-confirming-alabamas-participation-in-federal-education-freedom-tax-credit-program/"
+      },
+      {
+        "title": "Governor Ivey Issues Executive Order to Promote Transparency in State Government -",
+        "url": "https://governor.alabama.gov/newsroom/2023/01/governor-ivey-issues-executive-order-to-promote-transparency-in-state-government/"
+      },
+      {
+        "title": "Governor Ivey Issues Executive Order Triad Following Promise for a More Efficient, Accountable and Transparent Government During Inaugural Address -",
+        "url": "https://governor.alabama.gov/newsroom/2023/01/governor-ivey-issues-executive-order-triad-following-promise-for-a-more-efficient-accountable-and-transparent-government-during-inaugural-address/"
+      },
+      {
+        "title": "Alabama Governor Kay Ivey Signs App Store Accountability Act Into Law - Digital Childhood Alliance",
+        "url": "https://www.digitalchildhoodalliance.org/alabama-governor-kay-ivey-signs-app-store-accountability-act-into-law/"
+      }
+    ]
+  }
+}

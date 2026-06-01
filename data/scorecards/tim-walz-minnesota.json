@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Tim Walz",
+    "role": "Governor",
+    "jurisdiction": "Minnesota",
+    "party": "Democratic-Farmer-Labor",
+    "term_start": "2019-01-01",
+    "term_end": "2027-01-01",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "130 State Capitol, St. Paul, MN 55155",
+    "office_website": "https://mn.gov/governor/"
+  },
+  "summary": {
+    "narrative": "Governor Walz campaigned on education/transportation investment, healthcare expansion, and clean energy. Second term shows substantial delivery on climate initiatives (40+ laws in 2023), cannabis legalization (May 2023), clean electricity standard (100% by 2040), gun violence executive orders, abortion access protection, and infrastructure investment ($395M+ plan 2025).",
+    "total_promises": 5,
+    "delivery_rate_estimate": 0.72,
+    "ambition_level": "High",
+    "grade_rationale": "Strong delivery on climate, cannabis, healthcare expansion, and gun violence initiatives. Grade reflects significant legislative accomplishments and executive action, though fraud handling controversy and incomplete implementation tracking limit higher marks.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Invest in education and transportation infrastructure",
+      "domain": "Education, Transportation, Infrastructure",
+      "domain_label": "Public Services & Infrastructure",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 16.83,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Expand health care access to uninsured Minnesotans",
+      "domain": "Healthcare",
+      "domain_label": "Healthcare & Benefits",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2.2,
+      "policy_score": 19.36,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement clean energy transition with 100% carbon-free electricity by 2040",
+      "domain": "Environment & Energy",
+      "domain_label": "Climate & Energy",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 40.5,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Reduce gun violence through executive action and statewide safety initiatives",
+      "domain": "Public Safety",
+      "domain_label": "Public Safety & Crime",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.75,
+      "difficulty_multiplier": 2.1,
+      "policy_score": 13.65,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific education funding amounts and outcomes",
+    "Transportation project completion rates",
+    "Health care expansion enrollment numbers",
+    "Gun violence reduction metrics and effectiveness data",
+    "Clean energy standard implementation progress by utility",
+    "Fraud program operational details and outcomes",
+    "Detailed budget allocation and spending verification",
+    "Comparative state performance benchmarks"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:49:58.170Z",
+    "slug": "tim-walz-minnesota",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Tim Walz - Ballotpedia",
+        "url": "https://ballotpedia.org/Tim_Walz"
+      },
+      {
+        "title": "Jim Jordan confronts Tim Walz over Minnesota fraud payment explanations | Fox News",
+        "url": "https://www.foxnews.com/politics/walz-accused-jordan-trying-hide-behind-court-order-feeding-our-future-payments"
+      },
+      {
+        "title": "Tim Walz for Governor",
+        "url": "https://walzforgovernor.org/"
+      },
+      {
+        "title": "Signature Accomplishments / Office of Governor Tim Walz and Lt. Governor Peggy Flanagan",
+        "url": "https://mn.gov/governor/accomplishments/accomplishments.jsp"
+      },
+      {
+        "title": "Tim Walz - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tim_Walz"
+      },
+      {
+        "title": "2025 Infrastructure Plan / Office of Governor Tim Walz and Lt. Governor Peggy Flanagan",
+        "url": "https://mn.gov/governor/accomplishments/2024-infrastructure.jsp"
+      },
+      {
+        "title": "Gov. Walz signs 2 executive orders to address gun violence in Minnesota | FOX 9 Minneapolis-St. Paul",
+        "url": "https://www.fox9.com/news/walz-gun-violence-minnesota"
+      },
+      {
+        "title": "Governor Walz Becomes First Minnesota Governor to Take Executive Action on Gun Violence",
+        "url": "https://mn.gov/governor/newsroom/press-releases/?id=1055-716493"
+      }
+    ]
+  }
+}

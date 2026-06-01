@@ -1,0 +1,84 @@
+{
+  "official": {
+    "name": "Kelly Armstrong",
+    "role": "Governor",
+    "jurisdiction": "North Dakota",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2024-12-15",
+    "term_end": "2028-12-15"
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 1,
+    "broken": 0,
+    "in_progress": 5,
+    "stalled": 0,
+    "total": 6,
+    "narrative": "Governor Kelly Armstrong is early in his first term, having taken office in December 2024. He has signed legislation related to recovery and reentry practices, but most of his campaign promises are still in progress. Insufficient time has passed to fully evaluate his promise-keeping record."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Improve addiction recovery and reentry programs for those leaving incarceration",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In April 2025, Armstrong signed bills aimed at improving recovery and reentry practices in North Dakota.",
+      "source_url": "https://www.kfyrtv.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Pursue conservative fiscal policies and limited government to create jobs",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Armstrong campaigned on conservative economic leadership to create jobs and unleash citizen potential. Early budget priorities are being developed but full economic impact is not yet measurable.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Expand energy production and support North Dakota's oil and gas industry",
+      "domain_label": "Energy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Armstrong has consistently supported energy independence and North Dakota's fossil fuel sector. Specific legislative actions on energy expansion are ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reduce state regulations to empower businesses and citizens",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Campaign rhetoric emphasized letting North Dakotans 'be in charge of their own destiny' through reduced government interference. Regulatory reform efforts are underway but not fully implemented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Support law enforcement and public safety initiatives",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Armstrong ran on a pro-law enforcement platform. Early administration actions suggest continued support, but comprehensive public safety legislation is still pending.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Protect North Dakota values and keep the state a great place to raise a family",
+      "domain_label": "Social Policy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Armstrong frequently stated North Dakota is 'the best place in the world to live, work, and raise a family.' This broad promise encompasses multiple policy areas still being addressed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

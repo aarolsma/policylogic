@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Eric Adams",
+    "role": "Mayor",
+    "jurisdiction": "New York City, NY",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-01-01",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Adams has made measurable progress on housing initiatives, exceeding his 2024 affordable housing goal and advancing ambitious long-term housing plans. However, his accelerated supportive housing timeline appears unmet, and several major promises remain works in progress. His administration has followed through on education and budget-related commitments with mixed results."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Advance 24 affordable housing projects on public land in 2024",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Adams administration announced it surpassed this commitment, advancing 26 affordable housing projects on public land in 2024, exceeding the goal by two projects.",
+      "source_url": "https://www.cityandstateny.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Create 500,000 units of housing by 2032",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The administration has released ambitious plans including the Manhattan Plan targeting 100,000 new homes over a decade. Progress is being made but the 2032 deadline is still years away.",
+      "source_url": "https://www.nyc.gov/mayor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Complete 15,000 units of supportive housing in 10 years (by 2025) instead of 15 years",
+      "domain_label": "Housing",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Adams promised to accelerate de Blasio's 15/15 Supportive Housing Initiative to completion by 2025. There is no evidence this accelerated timeline was met.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Bring back the gifted and talented school program",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Adams reversed the previous administration's plan to phase out the Gifted and Talented program and expanded it, restoring the screening process for admissions.",
+      "source_url": "https://en.wikipedia.org/wiki/Eric_Adams",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Implement agency budget cuts ranging from 3% to 5%",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Adams implemented multiple rounds of agency budget cuts known as Programs to Eliminate the Gap (PEGs), requiring city agencies to find savings in the 3-5% range.",
+      "source_url": "https://en.wikipedia.org/wiki/Eric_Adams",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve relations with New York State government",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Adams has worked with Albany on housing legislation and other initiatives, though tensions have emerged over migrant funding and other issues. Relations remain mixed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Review property taxes for potential reform",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Adams committed to reviewing the city's complex property tax system. Some advisory work has been done, but comprehensive reform requires state approval and remains incomplete.",
+      "source_url": "https://en.wikipedia.org/wiki/Eric_Adams",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Fight harder for New York families than anyone else",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "This broad rhetorical promise is difficult to measure objectively. Adams has pursued various quality-of-life initiatives, though his administration faces federal corruption charges that have complicated his tenure.",
+      "source_url": "https://www.queenseagle.com",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

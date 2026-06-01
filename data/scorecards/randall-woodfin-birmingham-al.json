@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Randall Woodfin",
+    "role": "Mayor",
+    "jurisdiction": "Birmingham, AL",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2017-11-28",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Woodfin has made measurable progress on signature initiatives like Birmingham Promise and early childhood education programs. His neighborhood revitalization efforts show mixed results across the city's 99 neighborhoods. Now in his third term, several major commitments remain ongoing with implementation continuing."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Launch Birmingham Promise to provide college tuition assistance and apprenticeship opportunities for Birmingham students",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Birmingham Promise was launched and has provided tuition assistance to hundreds of Birmingham City Schools graduates attending in-state colleges and universities.",
+      "source_url": "https://www.birminghampromise.org",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Focus administration on revitalization of the city's 99 neighborhoods",
+      "domain_label": "Community Development",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Multiple neighborhood revitalization initiatives have been launched, though progress varies significantly across different neighborhoods. Some areas have seen substantial investment while others await improvements.",
+      "source_url": "https://en.wikipedia.org/wiki/Randall_Woodfin",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Make Birmingham's children the 'why' behind every policy, investment, and decision",
+      "domain_label": "Youth Services",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Third term progress report emphasizes child-focused policies. Programs like Birmingham Talks early childhood education and Birmingham Promise demonstrate commitment, though comprehensive child-focused policy integration is ongoing.",
+      "source_url": "https://www.birminghamal.gov/mayors-office",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Implement Birmingham Talks early childhood education program",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Birmingham Talks program has been implemented to support early childhood language development and school readiness for Birmingham families.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Execute Vision 2025 strategic plan for city development",
+      "domain_label": "Economic Development",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Vision 2025 was introduced as part of 'The Woodfin Way' strategic planning. Implementation continues with 'The Blueprint' succeeding as the next phase of strategic development.",
+      "source_url": "https://www.bhamwiki.com/w/Randall_Woodfin",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Rebuild city systems after dismantling dysfunctional ones in first term",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Woodfin stated second term focused on rebuilding after first term spent 'tearing down systems that weren't functioning.' Progress has been made but comprehensive reform remains ongoing.",
+      "source_url": "https://www.bhamwiki.com/w/Randall_Woodfin",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Improve Birmingham residents' quality of life compared to previous administration",
+      "domain_label": "Quality of Life",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Various quality of life metrics have improved under Woodfin including expanded youth programs, infrastructure investments, and community development initiatives, contributing to his successful re-election campaigns.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Support and uplift Birmingham as one of the blackest cities in America",
+      "domain_label": "Equity",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While rhetoric emphasizes supporting Black Birmingham, some community advocates have criticized gaps between promises and tangible outcomes for Black residents in areas like economic equity and neighborhood investment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

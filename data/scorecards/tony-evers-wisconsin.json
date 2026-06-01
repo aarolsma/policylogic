@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Tony Evers",
+    "role": "Governor",
+    "jurisdiction": "Wisconsin",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2019-01-07",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Evers has achieved significant success on education funding, notably using his line-item veto power to secure long-term per-pupil funding increases. However, his agenda has faced significant obstacles from the Republican-controlled legislature, leaving several key promises stalled or only partially fulfilled. His decision not to seek a third term in 2026 may affect the completion of remaining initiatives."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Increase per-pupil funding for Wisconsin public schools",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Used line-item veto on 2023 budget to lock in $325 per-pupil increases annually through 2425, creating unprecedented long-term school funding stability.",
+      "source_url": "https://en.wikipedia.org/wiki/Tony_Evers",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Expand Pre-K education access in Wisconsin",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Evers has consistently proposed Pre-K expansion in budget requests and supported community-based programs, but comprehensive statewide expansion has not been fully enacted by the legislature.",
+      "source_url": "https://en.wikipedia.org/wiki/Tony_Evers",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Repeal changes made to Wisconsin's prevailing wage laws",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite repeated attempts to restore prevailing wage protections for construction workers, the Republican-controlled legislature has blocked repeal efforts throughout Evers' tenure.",
+      "source_url": "https://www.politifact.com/evers-o-meter/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Protect voting rights and election accessibility in Wisconsin",
+      "domain_label": "Elections",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Evers has vetoed numerous bills that would have restricted voting access, maintained election security funding, and defended the state's election infrastructure against attempts to undermine it.",
+      "source_url": "https://tonyevers.com/priorities/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Accept federal Medicaid expansion under the Affordable Care Act",
+      "domain_label": "Healthcare",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite including Medicaid expansion in every budget proposal, the Republican legislature has consistently removed it. Wisconsin remains one of few states that has not expanded Medicaid.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Legalize marijuana in Wisconsin",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Evers has proposed marijuana legalization in multiple budget cycles and supported decriminalization efforts, but the legislature has not passed legalization legislation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Invest in Wisconsin roads and infrastructure without raising gas taxes",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Evers secured increased transportation funding through budget negotiations and federal infrastructure dollars without implementing gas tax increases during his tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Support Wisconsin farmers and rural communities",
+      "domain_label": "Agriculture",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Established and funded farm mental health programs, maintained agricultural export promotion, and directed COVID relief funds to struggling dairy farmers and rural businesses.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

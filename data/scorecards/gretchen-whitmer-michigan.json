@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Gretchen Whitmer",
+    "role": "Governor",
+    "jurisdiction": "Michigan",
+    "party": "Democratic",
+    "term_start": "2019-01-01",
+    "term_end": "2027-01-01",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "Lansing, Michigan",
+    "office_website": "michigan.gov/whitmer"
+  },
+  "summary": {
+    "narrative": "Whitmer entered office with ambitious 2018 platform including road infrastructure, education access, and workforce development. Mixed delivery: achieved tuition-free community college, childcare expansion, abortion protection, right-to-work repeal, EV investment attraction. Major shortfall on flagship road-fixing promise, requiring multiple terms and bipartisan deal in 2024. Recent focus on civil rights updates and tribal partnership.",
+    "total_promises": 14,
+    "delivery_rate_estimate": 0.57,
+    "ambition_level": "High",
+    "grade_rationale": "Strong delivery on social policy (childcare, education, abortion access, labor rights) and some economic development wins. Chronic failure on marquee infrastructure promise damaged credibility despite eventual road funding passage. Limited data on 2025 promise tracking.",
+    "overall_grade": "C+"
+  },
+  "promises": [
+    {
+      "normalized": "Fix Michigan roads with long-term bipartisan funding solution",
+      "domain": "Infrastructure",
+      "domain_label": "Infrastructure & Transportation",
+      "clarity_score": 3,
+      "initiation_score": 2,
+      "outcome_score": 3,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 15.75,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand free pre-K and tuition-free community college access statewide",
+      "domain": "Education",
+      "domain_label": "Education & Workforce",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 32.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand affordable childcare access to 150,000 additional families",
+      "domain": "Social Policy",
+      "domain_label": "Family Support & Childcare",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.85,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 28.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Protect abortion access rights and modernize civil rights protections",
+      "domain": "Civil Rights",
+      "domain_label": "Rights & Protections",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 19.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific 2025 State of the State promise tracking beyond road funding mention",
+    "Quantified metrics on EV battery plant deal outcomes and job creation",
+    "Detailed breakdown of right-to-work repeal implementation status",
+    "Complete list of 14 promises from 2025 address for comprehensive grading",
+    "Election margin data from 2022 gubernatorial race",
+    "Timeline and attribution for tribal partnership initiatives",
+    "Status of civil rights law updates mentioned in sources",
+    "SOAR Fund performance metrics and actual investment results"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:49:29.160Z",
+    "slug": "gretchen-whitmer-michigan",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Fact check: How Gretchen Whitmer delivered — and didn’t — on her promises - Bridge Michigan",
+        "url": "https://bridgemi.com/michigan-government/fact-check-how-gretchen-whitmer-delivered-and-didnt-on-her-promises/"
+      },
+      {
+        "title": "What Gretchen Whitmer promises to do as Michigan’s next governor - Bridge Michigan",
+        "url": "https://bridgemi.com/michigan-government/what-gretchen-whitmer-promises-do-michigans-next-governor/"
+      },
+      {
+        "title": "Gretchen Whitmer made a lot of promises in 2018. Here’s how she’s done - Bridge Michigan",
+        "url": "https://bridgemi.com/michigan-government/gretchen-whitmer-made-lot-promises-2018-heres-how-shes-done/"
+      },
+      {
+        "title": "Governor Gretchen Whitmer",
+        "url": "https://www.michigan.gov/whitmer"
+      },
+      {
+        "title": "Accomplishments - Gretchen Whitmer for Governor",
+        "url": "https://gretchenwhitmer.com/accomplishments/"
+      },
+      {
+        "title": "State Orders and Directives",
+        "url": "https://www.michigan.gov/whitmer/0,9309,7-387-90499_90705---,00.html"
+      },
+      {
+        "title": "Governor Whitmer Signs Executive Order Extending Protections for Consumers, Grocery Store Employees",
+        "url": "https://www.michigan.gov/en/whitmer/news/press-releases/2020/06/17/governor-whitmer-signs-executive-order-extending-protections-for-consumers-grocery-store-employees"
+      },
+      {
+        "title": "Executive Order 2020-112: Rescission of certain executive orders - RESCINDED",
+        "url": "https://www.michigan.gov/en/whitmer/news/state-orders-and-directives/2020/06/03/executive-order-2020-112"
+      }
+    ]
+  }
+}

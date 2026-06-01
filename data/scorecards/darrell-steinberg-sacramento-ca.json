@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Darrell Steinberg",
+    "role": "Mayor",
+    "jurisdiction": "Sacramento, CA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2016-12-13",
+    "term_end": "2024-12-15"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Steinberg made significant progress on homelessness and affordable housing initiatives during his two terms, though some ambitious goals remained unmet by the end of his tenure. His signature efforts on mental health services and youth programs showed measurable results, while infrastructure funding proposals faced mixed outcomes at the ballot box."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Address homelessness by creating more shelter beds and permanent supportive housing",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Sacramento added over 1,200 shelter beds and expanded permanent supportive housing units during Steinberg's tenure, though homelessness remained a persistent challenge.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Propose a half-cent sales tax increase to fund affordable housing, public transportation, and safer streets",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Steinberg successfully proposed the sales tax measure projected to generate $8-9 billion over 40 years for housing, transit, and street safety improvements.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Expand youth programs and services in the city budget",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In May 2024, Steinberg sought Council approval for budget changes specifically to restore spending for youth and senior programs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Bring a Major League Soccer team to Sacramento",
+      "domain_label": "Economic Development",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite years of negotiations and public support, Sacramento's MLS expansion bid faced repeated setbacks and did not materialize during Steinberg's tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve mental health crisis response and diversion programs",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Building on his state-level mental health advocacy, Steinberg expanded Sacramento's mental health crisis teams and diversion programs as alternatives to incarceration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Revitalize downtown Sacramento and the riverfront",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Some downtown development projects advanced, but comprehensive riverfront revitalization remained partially complete at the end of his term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Reduce street homelessness by 50%",
+      "domain_label": "Housing",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite increased shelter capacity, Sacramento's point-in-time counts showed street homelessness did not decrease by the promised 50% during his tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Increase affordable housing production through streamlined approvals and city investment",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Sacramento approved zoning reforms and increased housing funding, though production targets for affordable units remained ongoing work for his successor.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

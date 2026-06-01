@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Jim Pillen",
+    "role": "Governor",
+    "jurisdiction": "Nebraska",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2023-01-05",
+    "term_end": "2027-01-07"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Pillen has made progress on several key campaign promises, particularly around tax relief and supporting agriculture. His ambitious property tax reform efforts have shown mixed results, with some initiatives advancing while others face legislative challenges. Several of his 2025 legislative priorities remain in progress."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Cut property taxes for Nebraska homeowners and farmers",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Pillen signed property tax relief legislation in 2024 and continues to push for TEEOSA reform to further reduce property tax burden. Full implementation remains ongoing.",
+      "source_url": "https://governor.nebraska.gov/press",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Support Nebraska agriculture producers as the backbone of the state",
+      "domain_label": "Agriculture",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Pillen has consistently prioritized agricultural interests, including proposing a ban on lab-grown meat to protect traditional livestock producers and advocating for farm-friendly tax policies.",
+      "source_url": "https://governor.nebraska.gov/press",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Create a strong future for Nebraska's children through education reform",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Pillen has proposed reworking the TEEOSA school funding formula and expanded school choice options, though comprehensive education reform remains in legislative process.",
+      "source_url": "https://governor.nebraska.gov/press",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Implement Summer EBT program to address child hunger",
+      "domain_label": "Social Services",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Governor Pillen announced successful implementation of S-EBT in December 2024, with plans for continued improvements in 2025.",
+      "source_url": "https://governor.nebraska.gov/press",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Ban transgender women from women's sports and locker rooms in Nebraska schools",
+      "domain_label": "Social Policy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Pillen announced this as a priority for the 2025 legislative session. The proposal is under consideration by the legislature.",
+      "source_url": "https://nebraskapublicmedia.org",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Return Nebraska's electoral vote allocation to winner-take-all",
+      "domain_label": "Elections",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite being a stated priority for the 2025 session, efforts to change Nebraska's unique split electoral vote system have faced significant legislative opposition.",
+      "source_url": "https://nebraskapublicmedia.org",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Ban lab-grown meat sales in Nebraska",
+      "domain_label": "Agriculture",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Pillen proposed banning lab-grown meat as part of his 2025 legislative priorities to protect traditional livestock producers. Legislation is pending.",
+      "source_url": "https://nebraskapublicmedia.org",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Eliminate state income tax",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "While Pillen campaigned on significant tax reform including eventual elimination of income tax, this ambitious goal has not materialized and focus has shifted to property tax relief instead.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

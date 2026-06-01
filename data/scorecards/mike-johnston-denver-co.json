@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Mike Johnston",
+    "role": "Mayor",
+    "jurisdiction": "Denver, CO",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-07-17",
+    "term_end": "2027-07-17"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Johnston has made significant progress on his signature homelessness initiatives, moving over 1,600 people into transitional housing. However, some promises like the electric vehicle fleet transition lack demonstrated progress, and his overall record shows mixed results across his key policy priorities."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Move 1,000+ homeless individuals off the streets and into transitional housing",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Johnston exceeded this goal, with reports indicating more than 1,600 people moved off the streets and into transitional housing by early 2024.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Declare a state of emergency on homelessness to access additional funding",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2023, Johnston declared a state of emergency in Denver over homelessness, allowing the city access to state and federal money to provide housing for homeless individuals.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Increase efforts to end street homelessness for veterans",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Johnston announced increased efforts targeting veteran homelessness in his 2024 State of the City address, though final outcomes are still being measured.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Make every new light-weight vehicle the city purchases electric by 2025",
+      "domain_label": "Environment",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "The mayor's office did not offer data demonstrating progress on this commitment when asked, raising questions about implementation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Create the Denver Asylum Seeker Program to assist migrants",
+      "domain_label": "Immigration",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2024, Johnston announced the creation of the Denver Asylum Seeker Program, focused on providing assistance and resources to asylum seekers arriving in Denver.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Reduce violent gun crime in Denver",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Violent gun crime reduction was listed as a key priority in Johnston's 2024 agenda. Results have been mixed with some improvement but continued challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Expand addiction and mental health services citywide",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Addiction and mental health expansion was included in Johnston's 2024 priorities, with ongoing program development but limited public metrics on progress.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Revitalize neighborhoods throughout Denver and increase affordable housing",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Neighborhood revitalization and affordable housing remain stated priorities. Progressive groups gave Johnston a failing grade for 2024, citing insufficient progress on affordability.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

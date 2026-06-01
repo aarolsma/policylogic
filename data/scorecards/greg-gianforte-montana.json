@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Greg Gianforte",
+    "role": "Governor",
+    "jurisdiction": "Montana",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2021-01-04",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 2,
+    "broken": 0,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 7,
+    "narrative": "Governor Gianforte has made progress on several campaign promises related to economic growth and regulatory reform, though comprehensive verification of outcomes remains limited. His administration has pursued legislative action on infrastructure, public safety, and tax policy, with several initiatives still in progress during his second term."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Grow Montana's economy and create jobs",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gianforte has emphasized economic growth as a central 2024 campaign pledge. Montana has seen job growth during his tenure, though measuring direct gubernatorial impact requires ongoing assessment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Rein in government regulations",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Regulatory reduction has been a stated priority for his second term campaign. His administration has pursued deregulation efforts, though comprehensive metrics on regulations eliminated are not fully documented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Address property tax burden for Montana residents",
+      "domain_label": "Taxation",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Gianforte acknowledged previous property tax measures were a one-time fix and pledged to work with the 2025 Legislature on further solutions. Work is ongoing with the legislature.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Crack down on fentanyl traffickers",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Gianforte worked with legislators during the 2023 session to pass measures targeting fentanyl trafficking, as confirmed by legislative endorsements citing this collaboration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve infrastructure through the SAFER Act",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The SAFER Act was passed during the 2023 legislative session, with projects including the expansion of West Reserve Drive cited as outcomes of this initiative.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Increase trades education opportunities",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Trades education expansion was part of 2023 legislative priorities. Implementation continues, with further collaboration planned for the 2025 session.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Make adoption more accessible through Montana Adoption Tax Credit",
+      "domain_label": "Family Policy",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "The Montana Adoption Tax Credit was pursued during the 2023 session. Current status of implementation and utilization rates require additional verification.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

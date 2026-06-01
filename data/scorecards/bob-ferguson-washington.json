@@ -1,0 +1,84 @@
+{
+  "official": {
+    "name": "Bob Ferguson",
+    "role": "Governor",
+    "jurisdiction": "Washington",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2025-01-15",
+    "term_end": "2029-01-15"
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 0,
+    "broken": 0,
+    "in_progress": 6,
+    "stalled": 0,
+    "total": 6,
+    "narrative": "Governor Bob Ferguson took office in January 2025 and is in the early months of his first term. Most campaign promises are still in the early implementation phase, making it premature to assign a definitive grade. His administration has signaled priorities on climate policy reform, protecting against federal policy changes, and limiting emergency powers."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Protect Washingtonians from harmful impacts of Project 2025 federal policies",
+      "domain_label": "Civil Rights",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Ferguson created a dedicated transition subcommittee focused on Project 2025 protections before taking office and has made this a stated priority of his administration.",
+      "source_url": "https://governor.wa.gov/news/governor-elect-bob-ferguson-creates-transition-committee-prepare-potential-harms-project-2025",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reform implementation of the Climate Commitment Act, particularly for farmers",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Ferguson has publicly addressed lawmakers about improving Climate Commitment Act implementation with specific focus on agricultural impacts, but legislative changes are still being negotiated.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Limit the governor's emergency powers to prevent overreach",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Ferguson stated commitment to working with lawmakers on limiting executive emergency powers, a response to criticism of pandemic-era gubernatorial authority.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Protect reproductive rights and abortion access in Washington State",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "As Attorney General, Ferguson was a strong defender of reproductive rights. His administration has continued this stance, though no major new legislation has been enacted yet in his gubernatorial term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Address housing affordability and increase housing supply",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Housing affordability was a campaign priority. Early budget proposals include housing investments, but major policy changes are still in legislative process.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Reform government operations rather than simply defend existing systems",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Ferguson stated at inauguration 'I'm not here to defend government' signaling intent to pursue reforms, though specific reform initiatives are still being developed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

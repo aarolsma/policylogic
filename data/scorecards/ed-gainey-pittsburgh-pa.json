@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Ed Gainey",
+    "role": "Mayor",
+    "jurisdiction": "Pittsburgh, PA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-01-03",
+    "term_end": "2026-01-05"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Gainey made significant progress on infrastructure funding and affordable housing initiatives during his term, delivering on increased bridge management funding and advancing zoning reforms. However, his administration faced criticism over tight budget margins and some public safety initiatives remained incomplete. His loss in the 2025 Democratic primary suggests voters had mixed views on his overall performance."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Quadruple funding allocated to bridge management",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The 2024 Pittsburgh budget included provisions to quadruple the funding allocated to bridge management as proposed by Mayor Gainey.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Increase traffic relieving amenities by 136%",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The 2024 budget proposal contained a 136% increase in traffic relieving amenities as promised by the administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Advance affordable housing initiatives through zoning reform",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gainey's 2025 budget address touted affordable housing initiatives including a suite of zoning amendments to remove obstacles to building new housing, which were set to be discussed by Council.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Increase requirements for affordable housing in new developments",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Zoning amendments included provisions increasing requirements for affordable housing alongside removing building obstacles, though final implementation remained pending Council action.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve downtown public safety through increased police patrols",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Pittsburgh police shared updates on increased downtown patrols, though the administration continued to face criticism on public safety policies through the end of the term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Protect access to gender-affirming health care in Pittsburgh",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Mayor Gainey publicly addressed protecting gender-affirming health care as a priority, though specific policy implementations were ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Maintain fiscal stability and balanced city budgets",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "The 2024 budget opened criticism due to tight margins facing the city in 2025-2026, and Gainey acknowledged leaner city revenues in 2025.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Reform police policy with increased public input",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "While Gainey discussed police policy and public input, his primary loss to Corey O'Connor, who argued Gainey's policies held the city back, suggests these reforms did not satisfy voters.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

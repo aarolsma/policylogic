@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "John Whitmire",
+    "role": "Mayor",
+    "jurisdiction": "Houston, TX",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2024-01-02",
+    "term_end": "2028-01-01"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Whitmire has made progress on several key campaign promises, particularly in infrastructure and public safety funding, but ambitious goals like ending homelessness remain in early stages. His administration achieved the water meter replacement target and secured a major firefighter settlement, though some initiatives face implementation challenges."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Replace 125,000 water meter readers before January 1, 2025",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Whitmire's administration committed to and completed the 125,000 water meter reader replacements before the January 1, 2025 deadline as part of his infrastructure improvement plan.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Resolve firefighter pay dispute and improve public safety compensation",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "City Council approved a $1.5 billion firefighter settlement and contract in June 2024, resolving a years-long pay dispute under Whitmire's leadership.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "End homelessness in Houston",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "In November 2024, Whitmire declared his intention to end homelessness in Houston, but the effort faces significant challenges and remains an ongoing initiative rather than an achieved goal.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Allocate $100 million for housing from disaster recovery funds",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Whitmire signaled support for allocating $100 million for housing from $315 million in disaster recovery funds as of July 2025, indicating progress toward this commitment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve public safety and reduce crime in Houston",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Public safety was a central campaign promise, with initiatives launched during his first year, though comprehensive results on crime reduction are still being measured.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Address city's financial needs and improve fiscal management",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While Whitmire campaigned on improving the city's financial health, the $1.5 billion firefighter settlement has created funding challenges that the administration is still working to address.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Improve city ethics and transparency",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Ethics reform was among Whitmire's seven core campaign promises, with some administrative changes implemented but no major legislative overhaul completed to date.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Major transportation infrastructure improvements",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite promises on transportation initiatives, no significant transportation infrastructure projects have been completed or substantially advanced in his first two years in office.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Bill Lee",
+    "role": "Governor",
+    "jurisdiction": "Tennessee",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2019-01-19",
+    "term_end": "2027-01-16"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 7,
+    "narrative": "Governor Bill Lee has had mixed results on his campaign promises during his tenure. He has achieved notable successes on fiscal responsibility and AI protections for artists, but his signature school voucher initiative faced repeated legislative setbacks before advancing. His childcare expansion promises remain largely unfulfilled compared to initial pledges."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Pass private school voucher legislation to give families education choice",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Lee's voucher proposal stalled in committee in 2024. He announced the Education Freedom Act of 2025 and vowed to bring it back to the General Assembly in January 2025.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Create tens of thousands of new daycare spots to support working families",
+      "domain_label": "Healthcare",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite promising tens of thousands of new daycare spots, Lee only specified an $11 million investment in Boys & Girls Clubs, falling far short of the scope initially promised.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Maintain fiscal responsibility and grow the state's rainy day fund",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lee successfully placed $20 million in Tennessee's rainy day fund in 2024, bringing the total to $2 billion even amid revenue shortfalls.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Protect artists from unauthorized AI deep fakes using their voice and likeness",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lee signed the ELVIS Act in 2024, preventing unauthorized artificial intelligence deep fakes from using and imitating artists' voices without consent.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Expand civics education in Tennessee schools",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Lee highlighted civics education as a priority in his annual address and has promoted initiatives to strengthen civic learning in schools.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Prepare Tennessee workers for jobs of tomorrow through workforce development",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Lee's annual address emphasized preparing Tennesseans for future jobs, with ongoing workforce development initiatives, though comprehensive results are still pending.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Keep Tennessee tax-free with no state income tax",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "B",
+      "evidence": "Tennessee has maintained its no-income-tax status under Lee, consistent with his fiscal conservative platform and prior commitments.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

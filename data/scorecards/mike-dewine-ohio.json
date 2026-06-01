@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Mike DeWine",
+    "role": "Governor",
+    "jurisdiction": "Ohio",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2019-01-14",
+    "term_end": "2027-01-11"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 2,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 7,
+    "narrative": "Governor DeWine has had a mixed record on campaign promises, with notable successes in economic development but struggles on redistricting reform where he reversed course. His tenure has been marked by occasional conflicts with the Republican-dominated legislature, particularly on social issues."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Increase state funding to help lower-income Ohioans obtain college degrees",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "DeWine has supported incremental increases in higher education funding and workforce development programs, though a comprehensive low-income college access program has not been fully implemented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Work to get a different redistricting process on the ballot if voters rejected Issue 1 in November 2024",
+      "domain_label": "Government Reform",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "After voters rejected Issue 1, DeWine reversed his promise and announced he would work to defeat the citizen-led redistricting ballot initiative rather than advance alternative reforms.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Advance an Iowa-model redistricting system as an alternative to citizen-led reforms",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "DeWine indicated he would work with lawmakers to advance an Iowa-based competing amendment, though legislative progress has been slow and faces uncertain prospects.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Protect parental rights in medical decisions for children",
+      "domain_label": "Healthcare",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "DeWine vetoed the gender-affirming care ban citing parental rights, but the Republican legislature overrode his veto in January 2024, and DeWine did not mount a sustained public campaign to uphold his veto.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Attract major economic development and job creation to Ohio",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "DeWine successfully attracted Intel's $20 billion semiconductor manufacturing facility to Ohio, representing one of the largest economic development wins in state history.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve Ohio's response to the opioid crisis",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "DeWine continued RecoveryOhio initiatives and secured significant opioid settlement funds for treatment and prevention programs across the state.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Increase funding for K-12 education and implement fair school funding reform",
+      "domain_label": "Education",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While the Fair School Funding Plan was enacted, full implementation has been delayed and funding increases have not kept pace with the original six-year phase-in timeline.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

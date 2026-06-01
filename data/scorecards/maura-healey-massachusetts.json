@@ -1,0 +1,152 @@
+{
+  "official": {
+    "name": "Maura Healey",
+    "role": "Governor",
+    "jurisdiction": "Massachusetts",
+    "party": "Democratic",
+    "term_start": "2023-01-19",
+    "term_end": "2027-01-19",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "State House, Boston, MA",
+    "office_website": "mass.gov"
+  },
+  "summary": {
+    "narrative": "Governor Healey's first term focused on tax cuts, housing affordability, climate initiatives, and federal infrastructure funding. Second-term agenda emphasizes cost reduction, education, and quality of life improvements. Facing reelection challenge with criticism of affordability policies and fiscal management.",
+    "total_promises": 6,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "High",
+    "grade_rationale": "Delivered on major initiatives (school meals, community college, tax package, federal funding) but faces criticism on affordability outcomes. Housing and climate promises partially implemented or ongoing.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Electrify all MBTA and school buses by 2030; full public transit by 2040",
+      "domain": "Climate/Transportation",
+      "domain_label": "Climate & Transportation",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2,
+      "policy_score": 5.6,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Implement Affordable Homes Act to address housing costs",
+      "domain": "Housing",
+      "domain_label": "Housing & Affordability",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 10.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Permanent free school meals and free community college for 25+",
+      "domain": "Education",
+      "domain_label": "Education & Workforce",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 18.9,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Secure $9B federal infrastructure funding for transportation projects",
+      "domain": "Infrastructure",
+      "domain_label": "Infrastructure & Development",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 21.6,
+      "requires_legislation": false,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "No detailed breakdown of tax cut implementation details or fiscal impact",
+    "Limited information on ICE restriction executive order outcomes",
+    "No specific metrics on life sciences job creation follow-up results",
+    "Missing timelines and current status of Affordable Homes Act passage",
+    "Lack of data on climate initiative progress since 2023 announcement",
+    "No information on electoral margin or campaign finance details",
+    "Limited detail on early literacy plan implementation status",
+    "No cost estimates for major initiatives or budget trade-offs documented"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:48:59.204Z",
+    "slug": "maura-healey-massachusetts",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Gov. Maura Healey officially launches reelection campaign | WPRI.com",
+        "url": "https://www.wpri.com/news/elections/gov-maura-healey-officially-launches-reelection-campaign/"
+      },
+      {
+        "title": "Maura Healey - Ballotpedia",
+        "url": "https://ballotpedia.org/Maura_Healey"
+      },
+      {
+        "title": "Mass. Gov. Healey hits campaign trail to ‘play offense and defense’",
+        "url": "https://www.yahoo.com/news/articles/mass-gov-healey-hits-campaign-095038588.html"
+      },
+      {
+        "title": "5 takeaways from Gov. Healey's 2025 State of the Commonwealth | GBH",
+        "url": "https://www.wgbh.org/news/politics/2025-01-16/5-takeaways-from-gov-healeys-2025-state-of-the-commonwealth"
+      },
+      {
+        "title": "Maura Healey - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Maura_Healey"
+      },
+      {
+        "title": "Governor Healey's Executive Orders | Mass.gov",
+        "url": "https://www.mass.gov/lists/governor-healeys-executive-orders"
+      },
+      {
+        "title": "Governor Healey Takes Action to Keep ICE out of Schools, Hospitals, Courthouses, and Places of Worship | Mass.gov",
+        "url": "https://www.mass.gov/news/governor-healey-takes-action-to-keep-ice-out-of-schools-hospitals-courthouses-and-places-of-worship"
+      },
+      {
+        "title": "Governor Healey Signs Executive Order, Releases Updated State Plan for Supporting Older Adults in Massachusetts | Mass.gov",
+        "url": "https://www.mass.gov/news/governor-healey-signs-executive-order-releases-updated-state-plan-for-supporting-older-adults-in-massachusetts"
+      }
+    ]
+  }
+}

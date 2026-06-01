@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Tim Keller",
+    "role": "Mayor",
+    "jurisdiction": "Albuquerque, NM",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2017-12-01",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 7,
+    "narrative": "Mayor Keller has made progress on renewable energy commitments and youth programs, though his flagship promise of 100% renewable energy by 2025 was not fully achieved by the deadline. His administration continues work on public safety and economic development initiatives, with mixed results on crime reduction goals."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Switch the City of Albuquerque to 100% renewables by 2025",
+      "domain_label": "Environment",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While significant progress was made on renewable energy adoption, the city did not achieve 100% renewable energy by the 2025 deadline as promised during the campaign.",
+      "source_url": "https://en.wikipedia.org/wiki/Tim_Keller_(politician)",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Expand youth programs and services across Albuquerque",
+      "domain_label": "Youth Services",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Keller administration expanded youth programs including job training, recreation, and after-school services, which was highlighted as an accomplishment in his re-election campaign.",
+      "source_url": "https://www.cabq.gov/mayor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Take bold action on climate and environmental sustainability",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The administration has implemented various climate action initiatives and continues to pursue sustainability goals, though the most ambitious renewable energy target was missed.",
+      "source_url": "https://www.cabq.gov/mayor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reduce violent crime and improve public safety in Albuquerque",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Crime reduction has been a central focus with increased police hiring and community programs, though Albuquerque continues to face significant public safety challenges. Keller defeated a law-and-order challenger in 2024.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Strengthen the local economy and create jobs",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Economic development initiatives have been implemented including business incentives and workforce programs, with the administration citing economic progress in the 2025 State of the City address.",
+      "source_url": "https://www.cabq.gov/mayor/news/mayor-tim-kellers-2025-state-of-the-city-address",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Increase transparency and accountability in city government",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The administration has published regular progress reports and accomplishment summaries, and maintained public communication about city initiatives.",
+      "source_url": "https://www.cabq.gov/mayor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Address homelessness through comprehensive services and housing",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While some initiatives have been launched, homelessness remains a persistent challenge in Albuquerque with limited measurable progress toward stated goals.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

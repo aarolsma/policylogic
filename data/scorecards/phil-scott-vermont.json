@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Phil Scott",
+    "role": "Governor",
+    "jurisdiction": "Vermont",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2023-01-05",
+    "term_end": "2027-01-07"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Phil Scott has made affordability and fiscal restraint central to his administration, with notable success in freezing property tax rates and signing education reform legislation. His record shows consistent effort on economic and housing issues, though some initiatives remain works in progress as Vermont continues to face affordability challenges."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Freeze property tax rates to protect Vermont homeowners",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Scott's FY18 budget froze property tax rates, and the FY19 budget froze residential property tax rates, delivering on his tax relief commitment.",
+      "source_url": "https://en.wikipedia.org/wiki/Phil_Scott",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Make Vermont more affordable for working families",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "News reports indicate Scott is actively pursuing affordability measures as promised in the 2024 campaign, though Vermont's cost of living remains among the highest in the nation.",
+      "source_url": "https://www.mountaintimes.info",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reform Vermont's education funding system",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In July 2025, Scott signed an education reform bill marking a significant shift in Vermont's public education funding structure.",
+      "source_url": "https://en.wikipedia.org/wiki/Phil_Scott",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Control government spending and propose fiscally responsible budgets",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Scott has consistently proposed budgets focused on fiscal restraint, including his FY25 budget which he described as taking a different approach than previous years.",
+      "source_url": "https://governor.vermont.gov/press-release/state-state-2024",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Address Vermont's housing shortage and increase housing supply",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Housing initiatives have been proposed and some legislation passed, but Vermont continues to face a significant housing shortage with slow progress on new construction.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Reduce education property tax burden on Vermonters",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "As state senator, Scott voted for legislation to reduce education property tax rates, and continued this priority as governor through rate freezes and reform efforts.",
+      "source_url": "https://en.wikipedia.org/wiki/Phil_Scott",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Implement a statewide paid family leave program through regional partnership",
+      "domain_label": "Labor",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Scott allowed a paid family leave bill to become law without his signature in 2024, requesting a feasibility study by January 2025 to reassess the 'go-it-alone approach.'",
+      "source_url": "https://governor.vermont.gov/press-release/action-taken-governor-phil-scott-legislation-may-30-2024",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Veto new broad-based taxes on Vermonters",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "While Scott has generally opposed tax increases, some fee increases and revenue measures have been enacted during his tenure that critics characterize as de facto tax increases.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

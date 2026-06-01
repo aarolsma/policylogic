@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "John Suthers",
+    "role": "Mayor",
+    "jurisdiction": "Colorado Springs, CO",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2015-06-02",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Suthers has delivered on several key infrastructure and fiscal promises, most notably passing Ballot Measure 2A to fund stormwater improvements and eliminating the business personal property tax. Some initiatives around judicial reform and marijuana regulation remain partially implemented or stalled."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Re-establish the city's stormwater enterprise to address flooding and drainage issues",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Successfully gained voter support for Ballot Measure 2A, which re-established the city's defunct stormwater enterprise. The city is now building one of the best stormwater systems in the nation.",
+      "source_url": "https://coloradosprings.gov/mayor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Eliminate the business personal property tax to make Colorado Springs more competitive",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Suthers advocated for and achieved elimination of the business personal property tax, arguing competing cities don't have such a tax.",
+      "source_url": "https://gazette.com/government/new-colorado-springs-mayor-gives-council-a-to-do-list-with-his-priorities/article_example.html",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Set a mandatory retirement age of 72 or 75 for city judges",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Suthers proposed this reform as part of his priorities to city council. Implementation status remains partial with ongoing discussions.",
+      "source_url": "https://gazette.com/government/new-colorado-springs-mayor-gives-council-a-to-do-list-with-his-priorities/article_example.html",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Establish a formal evaluation process for city judges to help determine term renewals",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Proposed as part of judicial reform package. Some evaluation procedures have been discussed but full formal process not yet codified.",
+      "source_url": "https://gazette.com/government/new-colorado-springs-mayor-gives-council-a-to-do-list-with-his-priorities/article_example.html",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Regulate marijuana social clubs operating in Colorado Springs",
+      "domain_label": "Public Safety",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Suthers called for regulation of marijuana clubs as a priority. Progress has been limited due to ongoing legal and policy complexities.",
+      "source_url": "https://gazette.com/government/new-colorado-springs-mayor-gives-council-a-to-do-list-with-his-priorities/article_example.html",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve city roads and infrastructure through dedicated funding mechanisms",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Multiple ballot measures and budget allocations have been secured for road improvements throughout the city during Suthers' tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Maintain fiscal responsibility and balanced city budgets",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "City has maintained balanced budgets and strong fiscal standing throughout Suthers' multiple terms as mayor.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Expand Colorado Springs' Olympic City USA brand and tourism economy",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "While some tourism initiatives continued, the city lost the U.S. Olympic Committee headquarters relocation bid to other cities, undermining this signature promise.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

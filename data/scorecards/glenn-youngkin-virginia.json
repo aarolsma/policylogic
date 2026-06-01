@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Glenn Youngkin",
+    "role": "Governor",
+    "jurisdiction": "Virginia",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2022-01-15",
+    "term_end": "2026-01-15"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Youngkin fulfilled several key campaign promises including eliminating the grocery tax and providing tax relief, while also delivering on education initiatives like teacher pay increases. Some promises faced legislative obstacles due to divided government, and his ambitious goal of eliminating the personal income tax remained unfulfilled during his term."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Eliminate the state grocery tax",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Virginia eliminated its 1.5% state grocery tax effective January 2023, fulfilling a central Youngkin campaign promise on Day One affordability.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Provide tax relief for Virginia families including doubling the standard deduction",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Youngkin successfully pushed through tax relief measures including an increased standard deduction, as part of his budget proposals focused on affordability.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Raise teacher pay and provide bonuses for educators",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Youngkin's budgets targeted education spending including bonuses and salary increases for teachers and state employees, as confirmed in his final budget proposals.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Invest in public safety and support law enforcement",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Youngkin's budget amendments consistently targeted public safety spending and law enforcement support throughout his term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Ban Critical Race Theory from Virginia schools on Day One",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Youngkin issued an executive order on his first day addressing divisive concepts in schools, though implementation and enforcement varied across school districts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Give parents more control over their children's education",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Youngkin established parental notification policies and a tip line, but broader school choice legislation faced obstacles in the divided legislature.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Eliminate the personal income tax over time",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "While Youngkin expressed this as a long-term aspiration, no substantive progress was made toward eliminating Virginia's personal income tax during his term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Withdraw Virginia from the Regional Greenhouse Gas Initiative (RGGI)",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Youngkin pursued RGGI withdrawal through regulatory action, but the effort faced legal challenges and legislative opposition throughout his term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

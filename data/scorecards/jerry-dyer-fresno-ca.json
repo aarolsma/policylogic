@@ -1,0 +1,84 @@
+{
+  "official": {
+    "name": "Jerry Dyer",
+    "role": "Mayor",
+    "jurisdiction": "Fresno, CA",
+    "party": "Independent",
+    "photo_url": "",
+    "term_start": "2021-01-05",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 0,
+    "broken": 0,
+    "in_progress": 6,
+    "stalled": 0,
+    "total": 6,
+    "narrative": "Mayor Jerry Dyer is serving his second term after winning re-election in March 2024. His administration has centered on his 'One Fresno' vision emphasizing inclusivity, neighborhood pride, and responsive government. Insufficient verified data exists to fully assess promise completion status; further investigation is needed to assign definitive grades."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Create an inclusive, prosperous city through the 'One Fresno' vision",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Dyer has consistently promoted the One Fresno initiative throughout his tenure, with ongoing equity programs and community engagement efforts, though measurable outcomes require further verification.",
+      "source_url": "https://www.fresno.gov/mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reduce homelessness in Fresno through increased services and housing initiatives",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The Dyer administration has invested in homeless services and navigation centers, but homelessness remains a significant challenge in Fresno with mixed results on reducing unsheltered populations.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Improve public safety and reduce crime rates citywide",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "As a former police chief, Dyer has prioritized public safety funding and police recruitment, though crime statistics show varied results across different categories.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Beautify neighborhoods and reduce blight throughout Fresno",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "City has expanded clean-up programs and code enforcement efforts as part of the beautification initiative, with ongoing neighborhood improvement projects.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Create a government that listens and keeps its promises to residents",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Dyer has held community meetings and town halls, and the city website explicitly references promise-keeping as a core value, but systematic tracking of commitments is limited.",
+      "source_url": "https://www.fresno.gov/mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Promote economic development and job creation in Fresno",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Administration has pursued business attraction and downtown revitalization efforts, with 2025 plans including continued economic development initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

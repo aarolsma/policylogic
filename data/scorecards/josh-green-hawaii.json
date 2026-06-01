@@ -1,0 +1,153 @@
+{
+  "official": {
+    "name": "Josh Green",
+    "role": "Governor",
+    "jurisdiction": "Hawaii",
+    "party": "Democratic",
+    "term_start": "2022-12-05",
+    "term_end": "2026-12-01",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2026-11-03",
+    "office_phone": null,
+    "office_address": "Executive Chambers, Honolulu, HI 96813",
+    "office_website": "governor.hawaii.gov"
+  },
+  "summary": {
+    "narrative": "Gov. Green campaigned on homelessness reduction, housing development, and cost-of-living relief. Administration claims significant progress: $1.5B rainy day fund, 253 bills signed in 2024, housing development at 'scale not seen in decades', and homelessness reduction target by 2026. Tax cuts implemented 2024; future cuts paused 2027-2029.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "high",
+    "grade_rationale": "Strong fiscal management and legislative productivity demonstrated. Housing and homelessness initiatives show tangible progress but require longer-term outcome validation. Fiscal discipline (spending reductions without service cuts) is verifiable. Tax cut execution clear but future pause creates policy uncertainty.",
+    "overall_grade": "B"
+  },
+  "promises": [
+    {
+      "normalized": "Address homelessness in Hawaii with comprehensive plan; cut homelessness in half by 2026",
+      "domain": "housing_social_services",
+      "domain_label": "Housing & Social Services",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 8.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Build new housing at scale not seen in decades; expand residential development significantly",
+      "domain": "economic_development",
+      "domain_label": "Economic Development & Housing",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 3,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 13.6,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Reduce cost of living in Hawaii through fiscal management and economic policy",
+      "domain": "economic_policy",
+      "domain_label": "Economic Policy",
+      "clarity_score": 1,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 7.2,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Implement income tax cuts in 2024; pause future cuts 2027-2029 pending fiscal conditions",
+      "domain": "taxation",
+      "domain_label": "Taxation & Fiscal Policy",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.95,
+      "difficulty_multiplier": 1.2,
+      "policy_score": 16.92,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "Specific homelessness reduction metrics and current vs. target numbers",
+    "Housing units constructed to date vs. projected targets",
+    "Detailed cost-of-living improvement measurements",
+    "Election margin from 2022 gubernatorial race",
+    "Impact assessment of 253 bills signed in 2024",
+    "Details on Maui wildfire recovery progress and funding",
+    "Specific executive order outcomes and measurable effects",
+    "Public approval ratings and polling data",
+    "Detailed breakdown of $1.5B rainy day fund allocation plans"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:44:06.073Z",
+    "slug": "josh-green-hawaii",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Josh Green (politician) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Josh_Green_(politician)"
+      },
+      {
+        "title": "Dr. Josh Green | Trusted, Caring Leadership",
+        "url": "https://joshgreenforhawaii.com/"
+      },
+      {
+        "title": "Gov. Josh Green raises possibility of 2028 run for president - Hawaii Tribune-Herald",
+        "url": "https://www.hawaiitribune-herald.com/2025/08/02/hawaii-news/gov-josh-green-raises-possiblity-of-2028-run-for-president/"
+      },
+      {
+        "title": "Governor Josh Green, M.D. | Office of the Governor – News Release – Gov. Green Unveils 2025 Policy Report Titled “Results For Our People”",
+        "url": "https://governor.hawaii.gov/newsroom/office-of-the-governor-news-release-gov-green-unveils-2025-policy-report-titled-results-for-our-people/"
+      },
+      {
+        "title": "Hawaiʻi Gov. Josh Green shares successes, goals for 2026 during State of State address | Big Island Now",
+        "url": "https://bigislandnow.com/2026/01/26/hawai%CA%BBi-gov-josh-green-shares-successes-goals-for-2026-during-state-of-state-address/"
+      },
+      {
+        "title": "Governor Josh Green, M.D. | Executive Orders",
+        "url": "https://governor.hawaii.gov/executive-orders/"
+      },
+      {
+        "title": "r/Hawaii on Reddit: Governor Josh Green, M.D. signed Executive Order 24-01 declaring Hawai‘i a trauma-informed state.",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1aw2fuo/governor_josh_green_md_signed_executive_order/"
+      },
+      {
+        "title": "Column: Broken promises on tax cuts carry a steep political price | Honolulu Star-Advertiser",
+        "url": "https://www.staradvertiser.com/2026/03/08/hawaii-news/volcanic-ash/column-broken-promises-on-tax-cuts-carry-a-steep-political-price/"
+      }
+    ]
+  }
+}

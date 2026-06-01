@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Andrew Ginther",
+    "role": "Mayor",
+    "jurisdiction": "Columbus, OH",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2016-01-01",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 3,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Ginther has made measurable progress on public safety and transit initiatives, with violent crime decreasing and the COTA levy passing in 2024. His ambitious affordable housing goals have fallen short of original targets, though significant investments continue. Major infrastructure bond packages are being implemented across housing, utilities, and public services."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Add 5,000 new and renovated affordable housing units by 2025 with up to $50 million in investment",
+      "domain_label": "Housing",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While significant housing investments were made, reporting indicates the 5,000 unit goal by 2025 was not fully achieved despite ongoing efforts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reduce violent crime in Columbus neighborhoods",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Ginther touted decreasing violent crime numbers in 2024, with $774 million of the 2025 budget allocated to neighborhood safety initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Pass the Central Ohio Transit Authority (COTA) levy to improve public transit",
+      "domain_label": "Transportation",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The COTA levy passed in 2024, which Ginther championed as a key accomplishment for improving regional transit options.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Implement zoning code changes to support housing and development",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Ginther cited zoning code changes as a 2024 accomplishment, aimed at facilitating housing development and neighborhood growth.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Direct $500 million to housing and neighborhood development through bond package",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The bond package Ginther supported includes $500 million for housing and neighborhood development, with implementation ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Allocate $500 million to public utilities infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The approved bond package includes $500 million for public utilities improvements, currently being deployed across the city.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Invest $400 million in public services through bond funding",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The bond package allocates $400 million to public services, with projects in various stages of implementation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Pass a $1.23 billion general fund budget for 2025 focused on safety, housing, and transportation",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Ginther proposed the $1.23 billion budget in November 2024, which was approved and allocates $774 million to neighborhood safety.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

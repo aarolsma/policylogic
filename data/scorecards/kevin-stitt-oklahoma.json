@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Kevin Stitt",
+    "role": "Governor",
+    "jurisdiction": "Oklahoma",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2019-01-14",
+    "term_end": "2027-01-11"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 2,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Stitt has achieved mixed results on his campaign promises. He has made progress on economic development and tax reduction goals but faced significant setbacks on tribal relations and healthcare policy. His signature 'Top Ten' initiative remains partially fulfilled as Oklahoma has improved in some metrics while lagging in others."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make Oklahoma a Top Ten state for business and job growth",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Oklahoma has seen improved business climate rankings and significant economic development investments, though it has not consistently ranked in the top ten nationally for job growth.",
+      "source_url": "https://www.ok.gov/governor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Oppose Medicaid expansion and find alternative healthcare solutions",
+      "domain_label": "Healthcare",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite Stitt's opposition, voters passed State Question 802 in 2020 to expand Medicaid. The expansion was implemented despite his resistance, representing a direct policy defeat.",
+      "source_url": "https://en.wikipedia.org/wiki/Kevin_Stitt",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Renegotiate tribal gaming compacts to increase state revenue",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Stitt's prolonged dispute with tribal nations over gaming compacts resulted in court losses and damaged state-tribal relations. The state chose not to appeal pro-tribe court rulings.",
+      "source_url": "https://ballotpedia.org/Kevin_Stitt",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Cut taxes for Oklahoma families and businesses",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Stitt signed multiple tax reduction measures during his tenure, including income tax cuts and various business tax incentives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve Oklahoma's education system and teacher pay",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Some teacher pay increases were implemented, but Oklahoma continues to rank below national averages. Stitt has promoted school choice initiatives as part of education reform.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Run state government like a business and improve efficiency",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Stitt implemented various government modernization initiatives and brought private sector management approaches to state agencies during his administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Improve Oklahoma's infrastructure including roads and bridges",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While some infrastructure funding has been allocated, Oklahoma continues to have significant infrastructure deficits and has not achieved top-ten status in this area.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Support federal immigration enforcement efforts in Oklahoma",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Stitt implemented Operation Guardian in February 2025 to aid federal deportation efforts, though he notably opposed proposals to check citizenship status of elementary school children.",
+      "source_url": "https://en.wikipedia.org/wiki/Kevin_Stitt",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

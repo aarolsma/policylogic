@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Phil Murphy",
+    "role": "Governor",
+    "jurisdiction": "New Jersey",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2018-01-16",
+    "term_end": "2026-01-21"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 6,
+    "broken": 1,
+    "in_progress": 1,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Governor Murphy fulfilled several major campaign promises including raising the minimum wage to $15/hour, legalizing adult-use cannabis, and implementing a millionaires tax. His 'stronger and fairer' agenda saw significant progress on education funding and paid family leave, though property tax relief efforts showed mixed results against his ambitious goals."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Raise the minimum wage to $15 per hour",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Governor Murphy signed legislation in February 2019 gradually raising New Jersey's minimum wage to $15/hour, with full implementation completed for most workers by January 2024.",
+      "source_url": "https://www.nj.gov/governor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Legalize adult-use cannabis in New Jersey",
+      "domain_label": "Criminal Justice",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Voters approved a constitutional amendment in November 2020, and Murphy signed implementing legislation in February 2021. Legal cannabis sales began in April 2022.",
+      "source_url": "https://www.nj.gov/governor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Ensure millionaires pay their fair share in taxes",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Murphy signed a millionaires tax into law in September 2020, raising the marginal tax rate on income over $1 million from 8.97% to 10.75%.",
+      "source_url": "https://www.nj.gov/governor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Expand paid family leave benefits",
+      "domain_label": "Labor",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Murphy signed legislation in February 2019 expanding paid family leave from 6 to 12 weeks and increasing wage replacement from 66% to 85% of average weekly wages.",
+      "source_url": "https://www.nj.gov/governor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Fully fund the school funding formula for K-12 education",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Murphy achieved full funding of the state's school funding formula during his tenure, with continued full funding for K-12 education included in his final proposed budgets.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Increase homeownership opportunities and affordable housing",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The administration invested over $50 million in housing initiatives to boost supply and affordability, fulfilling commitments to expand homeownership opportunities.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Provide meaningful property tax relief for New Jersey residents",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Murphy expanded property tax relief programs including ANCHOR, but New Jersey continues to have among the highest property taxes nationally. Relief efforts continued through his final budget.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Transition New Jersey to 100% clean energy by 2050",
+      "domain_label": "Environment",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While Murphy advanced offshore wind projects and clean energy initiatives, setbacks including canceled offshore wind contracts and slow infrastructure development put the 2050 goal in serious jeopardy.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

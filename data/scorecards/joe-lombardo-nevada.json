@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Joe Lombardo",
+    "role": "Governor",
+    "jurisdiction": "Nevada",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2023-01-03",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 5,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Governor Lombardo has delivered on several major budget and education funding promises, including record K-12 investments and raises for teachers and law enforcement. He has maintained his pledge against new taxes while pursuing housing affordability initiatives. Some criminal justice and regulatory reform efforts remain ongoing."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Pledge $2 billion per biennium for K-12 education with a 22% increase from the previous biennium",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lombardo's budget delivered more than $2 billion per biennium for K-12 education, representing a 22%+ increase as outlined in his State of the State address and passed by the legislature.",
+      "source_url": "https://en.wikipedia.org/wiki/Joe_Lombardo",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Provide raises for teachers statewide",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lombardo successfully enacted teacher pay raises as part of his education funding package, which he highlighted during his re-election campaign launch.",
+      "source_url": "https://thenevadaindependent.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Veto any new taxes",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lombardo pledged during his 2021 gubernatorial campaign announcement to veto new taxes and has maintained this position, vetoing tax increase legislation that reached his desk.",
+      "source_url": "https://ballotpedia.org/Joe_Lombardo",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Restore COVID-era budget cuts to higher education",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The governor's budget restored more than $75 million in COVID-era cuts to higher education and boosted graduate student stipends, marking the largest budget increase since 2019.",
+      "source_url": "https://thenevadaindependent.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Provide raises for law enforcement officers",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lombardo delivered on his promise to increase law enforcement compensation, citing this achievement during his re-election announcement.",
+      "source_url": "https://thenevadaindependent.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Increase attainable housing statewide",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Lombardo has pursued efforts to increase attainable housing statewide, though the full impact of these initiatives is still being measured as programs roll out.",
+      "source_url": "https://thenevadaindependent.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Increase school accountability measures",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Lombardo enacted accountability measures for schools as part of his education reform agenda, with implementation ongoing across Nevada school districts.",
+      "source_url": "https://thenevadaindependent.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Take a strong law and order approach to reduce crime",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While Lombardo campaigned on a 'law and order' platform as former Clark County Sheriff, crime rates in Nevada have shown mixed results and some legislative priorities in this area were not fully enacted.",
+      "source_url": "https://ballotpedia.org/Joe_Lombardo",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

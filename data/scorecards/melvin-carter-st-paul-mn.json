@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Melvin Carter",
+    "role": "Mayor",
+    "jurisdiction": "St. Paul, MN",
+    "party": "Democratic-Farmer-Labor",
+    "photo_url": "",
+    "term_start": "2018-01-02",
+    "term_end": "2026-01-02"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Melvin Carter delivered on several major equity-focused initiatives during his two terms, including a landmark medical debt relief program and expanded early childhood education investments. Some ambitious public safety reforms faced implementation challenges, while infrastructure promises showed mixed results."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Erase medical debt for qualifying Saint Paul residents",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mayor Carter committed $1.1 million in American Rescue Plan dollars to erase an estimated $110 million in medical debt for qualifying Saint Paul residents in 2024.",
+      "source_url": "https://www.stpaul.gov/mayor-melvin-w-carter-iii",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Implement the CollegeBound Saint Paul program to provide college savings accounts for every child born in the city",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "CollegeBound Saint Paul was launched and provided $50 college savings accounts to children born to Saint Paul residents, with additional deposits for low-income families.",
+      "source_url": "https://www.stpaul.gov/departments/mayors-office",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Raise the minimum wage for Saint Paul workers to $15 per hour",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Saint Paul's minimum wage ordinance was implemented with a phased approach reaching $15/hour for large employers by 2022 and smaller employers on a graduated timeline.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reform public safety through the Community-First Public Safety framework",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Carter launched community-first initiatives and alternative response programs, but full implementation of the comprehensive public safety reform vision remained incomplete by end of term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Invest in affordable housing and address housing instability",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Administration invested in affordable housing projects and tenant protections, though housing affordability crisis persisted and goals were only partially met.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Fill potholes within 72 hours of being reported",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "The 72-hour pothole repair promise faced significant challenges due to weather, staffing, and budget constraints, with response times frequently exceeding the promised timeframe.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Expand youth employment and job training programs",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Right Track youth employment program was expanded significantly under Carter's administration, providing job opportunities and skills training to thousands of Saint Paul youth.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Achieve citywide gigabit internet access through municipal broadband",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Plans for expanded municipal broadband faced funding and implementation challenges, with full citywide gigabit coverage not achieved by end of mayoral term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

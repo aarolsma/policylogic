@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Tina Kotek",
+    "role": "Governor",
+    "jurisdiction": "Oregon",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-09",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Kotek has made housing and homelessness her signature priorities, successfully securing $376 million for housing production in 2024 and maintaining focus on shelter systems. Progress on broader economic initiatives through her Prosperity Roadmap is ongoing, though transportation funding efforts have faced legislative challenges."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Invest significantly in housing production and ease rules for housing development",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2024, Kotek secured $376 million toward housing production as her top legislative priority, along with legislation easing rules for housing development.",
+      "source_url": "https://en.wikipedia.org/wiki/Tina_Kotek",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Address homelessness through expanded shelter capacity and services",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Her proposed $39.3B budget focuses on maintaining the state's shelter system and building additional affordable housing, continuing her emergency declaration on homelessness.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Increase state school fund investment",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The proposed budget includes provisions to increase the state school fund, though final appropriations depend on legislative approval.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Expand mental health and addiction treatment capacity",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Budget proposals include bolstering Oregon's treatment capacity as part of addressing the intersection of homelessness and behavioral health.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Streamline regulations and use tax incentives to spark job growth (Prosperity Roadmap)",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Kotek unveiled her Prosperity Roadmap seeking to streamline regulations and incentivize businesses, though implementation is in early stages.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Generate more funding for roads, bridges, and public transit",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Legislative leaders began the 2025 session intent on transportation funding but faced a complicated road with unclear outcomes on this priority.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Declare a state of emergency on homelessness and take immediate executive action",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Kotek signed an executive order declaring a homelessness state of emergency on her first day in office in January 2023.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Reduce unsheltered homelessness significantly within first year",
+      "domain_label": "Housing",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite the emergency declaration and increased investment, Oregon did not meet Kotek's ambitious timeline for significant reductions in visible homelessness.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

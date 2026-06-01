@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Spencer Cox",
+    "role": "Governor",
+    "jurisdiction": "Utah",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2021-01-04",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Governor Cox has made measurable progress on economic development and rural Utah initiatives, while housing affordability and water conservation remain active priorities in his second term. His administration has maintained focus on bipartisan civility efforts, though some education funding promises have faced legislative obstacles."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make housing more affordable and attainable for Utah families",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Cox has prioritized housing as a key second-term goal, signing multiple bills to increase housing supply and reduce regulatory barriers, though affordability challenges persist statewide.",
+      "source_url": "https://governor.utah.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Invest in rural Utah economic development and broadband expansion",
+      "domain_label": "Rural Development",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Cox administration secured over $400 million in broadband infrastructure funding and created the Office of Rural Development, significantly expanding internet access to underserved communities.",
+      "source_url": "https://business.utah.gov/rural",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Address Utah's water crisis through conservation and infrastructure investment",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Cox launched water conservation campaigns and signed legislation funding water infrastructure projects, but Great Salt Lake levels remain critically low despite intervention efforts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Increase teacher pay to be competitive with neighboring states",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Some teacher salary increases were achieved through budget allocations, but Utah still ranks below the national average in teacher compensation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Promote civil political discourse through the Disagree Better initiative",
+      "domain_label": "Governance",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Cox launched the nationally recognized 'Disagree Better' campaign with the National Governors Association, earning bipartisan praise for promoting political civility.",
+      "source_url": "https://disagreebetter.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Ensure energy reliability and develop diverse energy resources",
+      "domain_label": "Energy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Cox identified energy as a second-term priority, working with federal agencies on energy projects, though Utah remains heavily dependent on fossil fuels.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Reduce state regulations and support small business growth",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Utah consistently ranks among the top states for business climate, and the Cox administration eliminated hundreds of outdated regulations through executive action.",
+      "source_url": "https://governor.utah.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Implement ranked-choice voting pilot programs across Utah",
+      "domain_label": "Elections",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite initial support, Cox signed legislation in 2024 banning ranked-choice voting in Utah, reversing the pilot program that had been tested in several municipalities.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

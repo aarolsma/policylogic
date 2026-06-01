@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Kelly Ayotte",
+    "role": "Governor",
+    "jurisdiction": "New Hampshire",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2025-01-09",
+    "term_end": "2029-01-09"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 0,
+    "total": 7,
+    "narrative": "Governor Ayotte has delivered on key fiscal promises including maintaining tax cuts and banning sanctuary cities. However, she broke from her campaign position on gender identity notification by vetoing related legislation. Her record shows a pragmatic approach that has occasionally diverged from her stated campaign positions."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Maintain tax cuts including reductions to business profits tax, business enterprise tax, and full repeal of interest and dividends tax",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The tax cuts passed under Governor Sununu, including the full repeal of the interest and dividends tax, took effect in 2025 as scheduled and have been maintained under Ayotte's administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Ban sanctuary cities in New Hampshire",
+      "domain_label": "Immigration",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Governor Ayotte signed two bills banning sanctuary cities into law on May 22, 2025, at the Statehouse in Concord, fulfilling this campaign commitment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Support laws requiring schools to inform parents about a student's gender identity at school",
+      "domain_label": "Education",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite campaigning in support of parental notification laws regarding student gender identity, Ayotte vetoed two anti-LGBT bills in 2025, including legislation that would have required such notification.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Keep New Hampshire as the safest state in the nation",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Governor Ayotte has highlighted New Hampshire's continued status as the safest state in the nation during her administration, maintaining the state's strong public safety record.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Oppose laws that keep a student's gender identity confidential from parents",
+      "domain_label": "Education",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Ayotte's 2025 vetoes of anti-LGBT bills contradicted her campaign position opposing confidentiality of student gender identity from parents.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Continue pro-business economic policies to support New Hampshire's economy",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "By maintaining the business tax cuts and keeping New Hampshire's no income tax and no sales tax status, Ayotte has continued the state's pro-business economic environment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Address housing affordability and availability in New Hampshire",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Housing was a key campaign issue; administration has proposed initiatives but comprehensive reforms are still working through the legislative process.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

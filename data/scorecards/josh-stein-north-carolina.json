@@ -1,0 +1,84 @@
+{
+  "official": {
+    "name": "Josh Stein",
+    "role": "Governor",
+    "jurisdiction": "North Carolina",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2025-01-01",
+    "term_end": "2029-01-01"
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 0,
+    "broken": 0,
+    "in_progress": 6,
+    "stalled": 0,
+    "total": 6,
+    "narrative": "Governor Josh Stein took office in January 2025 and is in the early months of his first term. Most of his major campaign promises are in progress with limited legislative action completed to date. Given the Republican supermajority in the state legislature, many of his priorities face significant political obstacles."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Protect abortion rights and prevent further restrictions on reproductive healthcare",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Stein has vocally opposed further abortion restrictions but lacks veto-proof power against the Republican supermajority legislature. No additional restrictions have passed, but no expansion of rights has occurred either.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Raise the minimum wage for North Carolina workers",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "D",
+      "evidence": "Stein has advocated for minimum wage increases, but no legislation has advanced through the Republican-controlled General Assembly. The state minimum wage remains at the federal level of $7.25.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Cut taxes for working families",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Stein has proposed tax relief measures for middle and lower-income families in his budget proposals. Negotiations with the legislature are ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Lower costs for North Carolina families",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Stein has focused on healthcare costs and housing affordability in early policy initiatives. Some executive actions taken but major legislative achievements pending.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Build safer communities and reduce crime",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "As former Attorney General, Stein has prioritized public safety initiatives. He has proposed increased funding for law enforcement and community violence intervention programs in his budget.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Strengthen public schools and improve education outcomes",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Stein has proposed increased education funding and teacher pay raises. Budget negotiations with the legislature continue, with disagreements over school choice provisions.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

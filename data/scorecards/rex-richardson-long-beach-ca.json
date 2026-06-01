@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Rex Richardson",
+    "role": "Mayor",
+    "jurisdiction": "Long Beach, CA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-12-20",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 0,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Richardson has shown measurable progress on key campaign promises, particularly in public safety and homelessness reduction. His West Side Promise initiative continues to advance environmental and economic equity goals, though some long-term infrastructure and housing commitments remain in progress."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Reduce crime and improve public safety in Long Beach",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Long Beach has achieved its lowest overall crime rate in 20 years under Richardson's administration, according to official city data.",
+      "source_url": "https://www.rexrichardson.com/delivering-results",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reduce homelessness in Long Beach",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The city achieved its first decline in homelessness in a decade, marking significant progress on this priority issue.",
+      "source_url": "https://www.rexrichardson.com/delivering-results",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Create jobs and drive economic investment in Long Beach",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Over 4,100 new jobs have been created during Richardson's tenure as mayor, fulfilling economic development promises.",
+      "source_url": "https://www.rexrichardson.com/delivering-results",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Drive equitable economic investments in West Long Beach through the West Side Promise",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The West Side Promise initiative is actively working to bring economic investments to historically underserved West Long Beach neighborhoods.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Decrease pollution and improve air quality in West Long Beach",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Environmental improvements are part of the ongoing West Side Promise initiative, with pollution reduction efforts underway near port-adjacent communities.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Increase open spaces and parks in West Long Beach",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Open space expansion is a stated goal of the West Side Promise, though major new park openings have not yet been confirmed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Expand affordable housing development in Long Beach",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Multiple affordable housing projects have been approved or are in development, though the city continues to face housing affordability challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Empower community voices and increase civic engagement",
+      "domain_label": "Governance",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "While Richardson has emphasized community engagement, specific structural reforms to expand civic participation have not been fully implemented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

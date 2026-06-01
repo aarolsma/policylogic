@@ -1,0 +1,84 @@
+{
+  "official": {
+    "name": "Patrick Morrisey",
+    "role": "Governor",
+    "jurisdiction": "West Virginia",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2025-01-13",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 0,
+    "broken": 0,
+    "in_progress": 6,
+    "stalled": 0,
+    "total": 6,
+    "narrative": "Governor Morrisey has been in office for less than 14 months, making it too early to fully assess his promise-keeping record. Most of his major campaign commitments are currently in progress as his administration works through its first legislative sessions. His stated goal of improving West Virginia's national rankings across key metrics will require sustained effort over multiple years to evaluate."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make West Virginia the best state in the country to live, work and play, with metrics to back it up",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "This broad aspirational goal was stated during his transition period. Too early in his term to measure meaningful changes in state rankings.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Improve West Virginia's rankings from 48th, 49th and 50th in key state metrics",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Morrisey explicitly stated dissatisfaction with bottom-tier rankings and committed to improvement. Measurable progress requires multi-year data comparison.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Combat the opioid epidemic and continue fighting drug abuse",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "As Attorney General, Morrisey led opioid litigation efforts. His administration has continued prioritizing this issue but comprehensive outcome data is not yet available.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reduce government regulations and red tape to attract businesses",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Regulatory reform was a central campaign theme building on his Attorney General record. Legislative and executive actions are underway but full implementation is ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Support and expand West Virginia's energy industry including coal, oil and natural gas",
+      "domain_label": "Energy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Energy sector support was a key campaign pillar. Administration has signaled strong support for fossil fuel industries but specific new policies are still being developed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Protect Second Amendment rights for West Virginians",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Gun rights protection was a consistent campaign message. No major Second Amendment legislation has been signed yet but administration maintains pro-gun rights stance.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

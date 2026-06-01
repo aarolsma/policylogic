@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Donna Deegan",
+    "role": "Mayor",
+    "jurisdiction": "Jacksonville, FL",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-07-01",
+    "term_end": "2027-06-30"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 0,
+    "in_progress": 5,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Deegan has made measurable progress on several key campaign priorities including infrastructure investment, public health initiatives, and addressing homelessness through budget allocations. Most of her major promises remain in progress as she continues through her first term, with no major broken promises documented to date."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Address crumbling infrastructure in neglected neighborhoods",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Infrastructure repair has been identified as a top budget priority and funding has been allocated in successive city budgets, though multi-year projects are ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Prioritize public health and safety",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Mayor Deegan has implemented a holistic and equity-driven approach to public health as documented on Jacksonville.gov, with ongoing programs addressing resident health and well-being.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Build an inclusive economy for Jacksonville",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Economic development initiatives have been launched, but comprehensive metrics on inclusive economic growth are still being developed and tracked.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Address homelessness in Jacksonville",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The 2024-2025 budget directs $10 million to address homelessness, including compliance with new state law prohibiting sleeping in public spaces.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Secure community benefits from Jaguars Stadium renovation deal",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mayor Deegan signed a community benefits agreement as part of the Jacksonville Jaguars Stadium renovation, allocating money for workforce programs and housing issues.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Invest in workforce development programs",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Funding for workforce programs was secured through the Jaguars Stadium community benefits agreement, fulfilling this campaign commitment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Address housing affordability issues",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Housing initiatives have received funding through the stadium deal community benefits agreement and homelessness budget allocation, with broader affordability programs ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Protect reproductive rights at the local level",
+      "domain_label": "Healthcare",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Mayor Deegan has vocally opposed Florida's 6-week abortion ban, calling it dangerous for women, but local authority to counteract state law remains limited.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

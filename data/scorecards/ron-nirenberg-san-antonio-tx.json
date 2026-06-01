@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Ron Nirenberg",
+    "role": "Mayor",
+    "jurisdiction": "San Antonio, TX",
+    "party": "Democrat",
+    "photo_url": "",
+    "term_start": "2017-06-22",
+    "term_end": "2025-06-15"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Ron Nirenberg completed two terms as San Antonio mayor with a mixed but generally positive record on his major campaign promises. He delivered on key infrastructure and climate initiatives but faced criticism for incomplete progress on housing affordability and transportation improvements."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Implement a comprehensive climate action plan to make San Antonio carbon neutral by 2050",
+      "domain_label": "Environment",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "San Antonio adopted the Climate Ready SA plan in 2019, establishing concrete benchmarks toward carbon neutrality with ongoing implementation through city operations.",
+      "source_url": "https://www.sanantonio.gov/sustainability/climate-ready",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Pass a major infrastructure bond program to address streets, drainage, and public facilities",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Nirenberg championed the successful 2022 $1.2 billion bond program, the largest in city history, addressing streets, drainage, parks, and public safety facilities.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Increase affordable housing options and address homelessness in San Antonio",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The city expanded housing trust fund investments and opened new shelters, but housing affordability remained a persistent challenge with limited measurable improvement in availability.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Expand VIA Metropolitan Transit and improve public transportation connectivity",
+      "domain_label": "Transportation",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "The ConnectSA transportation plan was developed but major transit expansion initiatives, including advanced rapid transit lines, faced funding challenges and delays.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Maintain fiscal responsibility with balanced budgets and no property tax increases",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The city maintained balanced budgets throughout Nirenberg's tenure and kept property tax rates stable, though some fees increased for services.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Strengthen workforce development programs and job training partnerships",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "SA Works and Ready to Work programs expanded significantly, with the city dedicating sales tax revenue to job training that served thousands of residents.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Reform San Antonio police department policies and improve community relations",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Some policy reforms were implemented including body camera requirements, but police union contract negotiations limited the scope of changes advocates sought.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Complete the linear creek park system connecting neighborhoods across the city",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "While some segments were completed, the comprehensive linear park network remained fragmented with key connections unfinished by the end of his term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Henry McMaster",
+    "role": "Governor",
+    "jurisdiction": "South Carolina",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2017-01-24",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor McMaster has maintained a consistent record on fiscal conservatism and opposing new taxes, while advancing significant infrastructure investments. His administration has successfully resisted organized labor actions and maintained pro-business policies, though some education reform promises remain incomplete."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Oppose any new taxes on South Carolina residents",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "McMaster has consistently blocked new tax proposals, stating the state has 'plenty' without putting 'yet another tax on the people of South Carolina.'",
+      "source_url": "https://en.wikipedia.org/wiki/Henry_McMaster",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Make major investments in state infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2025, McMaster proposed allocating $1.1 billion to state construction projects, one of the largest single-year infrastructure investments in state history.",
+      "source_url": "https://en.wikipedia.org/wiki/Henry_McMaster",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Resist organized labor actions threatening South Carolina ports",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "McMaster actively opposed the International Longshoremen's Association boycott targeting the Port of Charleston, with the issue escalating to the U.S. Supreme Court.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Maintain South Carolina as a right-to-work state",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "South Carolina has maintained its right-to-work status throughout McMaster's tenure, with the governor vocally defending these protections.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Increase teacher pay to the national average",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Teacher salaries have increased under McMaster's budgets but South Carolina still falls short of the national average for teacher compensation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Expand school choice options for South Carolina families",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "McMaster has supported education savings account legislation and charter school expansion, with incremental progress made through the legislature.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Fully fund rural broadband expansion across the state",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While initial funding was allocated, full deployment to underserved rural areas has faced delays and implementation challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Eliminate the state income tax",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite campaign rhetoric about reducing tax burdens, South Carolina still maintains a state income tax with no legislation passed to eliminate it.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

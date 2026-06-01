@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Levar Stoney",
+    "role": "Mayor",
+    "jurisdiction": "Richmond, VA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2017-01-01",
+    "term_end": "2025-01-01"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Levar Stoney completed two terms with a mixed but generally positive record on campaign promises. He made notable progress on education investment and economic development, though some infrastructure and affordable housing initiatives fell short of stated goals."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Invest in public education and improve Richmond Public Schools",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Stoney cited keeping promises on public education as a top accomplishment. His administration increased RPS funding and supported school modernization initiatives.",
+      "source_url": "https://www.vpm.org/news",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Remove Confederate monuments from Monument Avenue",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2020, Stoney ordered the emergency removal of Confederate statues citing public safety concerns during protests. All city-owned Confederate monuments were removed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Increase affordable housing options in Richmond",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The administration created an Affordable Housing Trust Fund and invested in housing programs, but affordable housing shortages persisted throughout his tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Redevelop the Richmond Coliseum and downtown area",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "The Navy Hill development project, a $1.5 billion proposal to replace the Coliseum, was rejected by City Council in 2020 and never revived during his tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve city infrastructure including roads and bridges",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Stoney's administration passed a meals tax increase dedicated to school and infrastructure improvements, funding road repairs and facility upgrades.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Address poverty and create economic opportunity for all residents",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Launched anti-poverty initiatives and workforce development programs. Poverty rates showed modest improvement but remained significant challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Reform the Richmond Police Department and improve community relations",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Implemented police reforms including creating a civilian review board and updating use-of-force policies following 2020 protests.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Establish a comprehensive transit plan for Richmond",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While the Pulse BRT system expanded under his tenure, broader regional transit connectivity plans saw limited progress due to funding constraints.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

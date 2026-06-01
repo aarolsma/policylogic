@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Erin Mendenhall",
+    "role": "Mayor",
+    "jurisdiction": "Salt Lake City, UT",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2020-01-06",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Mendenhall has demonstrated steady progress on her administration's goals, with 54 of 69 goals from her 2024 Plan accomplished. Her most significant challenges center on homelessness, which she has called the 'single greatest challenge' of her administration. Some fiscal priorities, including the NHL stadium proposal, have drawn scrutiny from taxpayer advocates."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Address homelessness as a top priority through comprehensive solutions",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Mendenhall submitted a plan to state leaders for a 1,200-bed shelter with a 2025 deadline. She described homelessness as the 'single greatest challenge' her administration has faced, indicating ongoing but incomplete efforts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Accomplish goals laid out in the Mayor's 2024 Plan",
+      "domain_label": "Government Operations",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "According to city reporting, 54 of 69 goals (78%) from the 2024 Plan were accomplished, with 15 remaining goals carrying into 2025.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Focus on residents' day-to-day quality of life issues",
+      "domain_label": "Government Operations",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "City communications and annual reporting emphasize focus on daily resident concerns as part of the administration's approach.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Restore public safety in Salt Lake City",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Mendenhall responded to state leaders' calls for a public safety restoration plan. Efforts are ongoing but comprehensive results have not been fully realized.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Pursue fiscally responsible city spending",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "In 2024, Mendenhall supported a proposal to spend $1 billion in taxpayer money on a stadium for a potential NHL expansion team, which critics argue contradicts fiscally conservative governance.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve city infrastructure and development",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Development projects continue, including downtown revitalization efforts. The demolition and redevelopment of city properties is ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Build a 1,200-bed homeless shelter by 2025",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "A plan for a 1,200-bed shelter was submitted with a target completion date of January 1, 2025. Construction status and completion remain to be verified.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Maintain transparent and accessible communication with residents",
+      "domain_label": "Government Operations",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The Mayor's office maintains active public engagement through social media (16,500+ Facebook followers) and official government communications.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

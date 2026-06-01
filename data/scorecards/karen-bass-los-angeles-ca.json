@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Karen Bass",
+    "role": "Mayor",
+    "jurisdiction": "Los Angeles, CA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-12-12",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 0,
+    "in_progress": 5,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Bass has made addressing homelessness her top priority and followed through on her signature promise to declare a state of emergency on her first day in office. Her administration has shown measurable progress on housing placements, though many of her broader affordability and safety initiatives remain ongoing works in progress."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Declare a city state of emergency on homelessness on first day in office",
+      "domain_label": "Homelessness",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mayor Bass declared a city state of emergency on homelessness as her first official act upon assuming office on December 12, 2022.",
+      "source_url": "https://en.wikipedia.org/wiki/Karen_Bass",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Increase permanent housing move-ins for unhoused individuals",
+      "domain_label": "Homelessness",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "According to city data, the administration nearly doubled permanent housing move-ins compared to when Bass took office, with thousands more people moved inside than in 2022.",
+      "source_url": "https://mayor.lacity.gov/news/delivering-results-2024",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Partner with landlords to house more veterans experiencing homelessness",
+      "domain_label": "Homelessness",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The Mayor announced plans to launch a public campaign in 2025 to partner with landlords specifically to house more veterans.",
+      "source_url": "https://mayor.lacity.gov/news/delivering-results-2024",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Make Los Angeles safer",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Bass has made public safety a centerpiece of her re-election campaign, indicating ongoing efforts, but comprehensive crime reduction outcomes remain mixed.",
+      "source_url": "https://abc7.com/karen-bass-reelection-campaign-los-angeles-mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Make Los Angeles more affordable",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Affordability remains a stated priority in her re-election platform, with various housing initiatives underway, though LA remains one of the least affordable cities in the nation.",
+      "source_url": "https://abc7.com/karen-bass-reelection-campaign-los-angeles-mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Transform mental health services to address homelessness crisis",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Bass supported state-level mental health reform proposals signed by Governor Newsom in 2023, which were put before voters in 2024 to transform California's mental health system.",
+      "source_url": "https://calmatters.org/commentary/2025/01/karen-bass-los-angeles-mayor-2025/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Bring unhoused people inside through the Inside Safe program",
+      "domain_label": "Homelessness",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The Inside Safe program has been operational and has moved thousands of people into interim and permanent housing, though encampments persist across the city.",
+      "source_url": "https://mayor.lacity.gov/news/delivering-results-2024",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Streamline city permitting to accelerate housing construction",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While Bass has discussed permit reform, significant bureaucratic delays in housing construction permitting continue to be cited as an obstacle by developers and housing advocates.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

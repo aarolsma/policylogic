@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Andre Dickens",
+    "role": "Mayor",
+    "jurisdiction": "Atlanta, GA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-01-03",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 0,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Dickens has demonstrated meaningful progress on his signature housing and homelessness initiatives, with significant funding commitments and housing placements underway. His administration responded effectively to infrastructure emergencies, though some longer-term infrastructure modernization efforts remain ongoing. Overall, his record shows consistent effort toward campaign commitments with several major initiatives still in progress."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Provide 1,500 housing placements for impoverished families by collaborating with local government, corporations, nonprofits, and community members by end of 2024",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The city set a goal of 1,500 housing placements by end of 2024 through collaborative efforts. Program was actively implemented with placements ongoing, though full completion status requires verification.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Commit $60 million to combat homelessness in Atlanta",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mayor Dickens committed $60 million to combat homelessness, funding creation of up to 700 new units of deeply affordable housing including permanent supportive housing and quick-delivery units.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Create 200 permanent supportive housing units by end of 2025",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "This commitment is part of the $60 million homelessness investment package. Units are planned for delivery by end of 2025, with construction and development underway.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Deliver 500 quick-delivery housing units by end of 2025",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The 500 quick-delivery housing units are part of the comprehensive homelessness plan. These units are designed for faster deployment to address immediate housing needs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Provide $5 million aid package to businesses impacted by water main rupture",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In June 2024, Mayor Dickens pledged and delivered a $5 million package to aid businesses impacted by the major water main rupture that disrupted city operations.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Upgrade the city's aging water infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Following the 2024 water main crisis, Dickens announced plans to upgrade aging water infrastructure. This is a long-term project with initial planning and some work underway.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Focus on infrastructure stabilization and city stabilization",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Infrastructure and city stabilization were demonstrated priorities during his term, including emergency response to water crises and ongoing modernization planning efforts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Make Atlanta a 'shining city on a hill' through comprehensive city improvement",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "This aspirational campaign promise is difficult to measure concretely. While progress has been made in specific areas, broad transformational change is ongoing and incomplete.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

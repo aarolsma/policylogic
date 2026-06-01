@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Michelle Wu",
+    "role": "Mayor",
+    "jurisdiction": "Boston, MA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2021-11-16",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 0,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Wu has delivered on several key campaign promises including summer jobs for BPS students and reducing gun violence to record lows. Her administration has made progress on youth engagement and public safety initiatives, though some larger policy goals like rent stabilization remain stalled due to state-level constraints."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Provide a summer job to every Boston Public Schools student who wants one",
+      "domain_label": "Youth Employment",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Office of Youth Employment and Opportunity has delivered on this promise, providing summer jobs to every BPS student who needed one according to official city records.",
+      "source_url": "https://www.michelleforboston.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reduce gun violence in Boston",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Gun violence fell to the lowest level on record in Wu's first full year as mayor and has continued to decline. The U.S. Conference of Mayors described Boston as 'the safest big city in America' in late 2024.",
+      "source_url": "https://en.wikipedia.org/wiki/Mayoralty_of_Michelle_Wu",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Re-establish the Mayor's Youth Summit as an annual event",
+      "domain_label": "Youth Engagement",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Mayor's Youth Summit was re-established in 2024 after a 20-year hiatus and continued in 2025, with the 2026 summit announced by the Office of Youth Engagement and Advancement.",
+      "source_url": "https://www.boston.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Expand Universal Pre-K access in Boston",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Wu's administration has expanded Universal Pre-K according to her official campaign website documenting first-term accomplishments.",
+      "source_url": "https://www.michelleforboston.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Implement rent stabilization policies to address housing affordability",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Wu has advocated for rent stabilization but implementation requires state legislative approval, which has not been granted. The policy remains a goal but faces significant legal barriers.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Make Boston a Green New Deal city with climate action initiatives",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Wu has implemented several climate initiatives including building emissions standards and green infrastructure investments, though the full scope of her climate agenda remains ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Implement fare-free public transit on select MBTA bus routes",
+      "domain_label": "Transportation",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Wu secured fare-free service on three MBTA bus routes serving underserved communities, with ongoing efforts to expand the program pending MBTA cooperation and funding.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Improve Boston Public Schools facilities and education quality",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The administration has made investments in school facilities and launched initiatives to improve educational outcomes, though comprehensive school system reforms remain an ongoing multi-year effort.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

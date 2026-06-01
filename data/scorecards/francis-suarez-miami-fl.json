@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Francis Suarez",
+    "role": "Mayor",
+    "jurisdiction": "Miami, FL",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2017-11-15",
+    "term_end": "2025-12-18"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 0,
+    "stalled": 2,
+    "total": 7,
+    "narrative": "Francis Suarez delivered on several high-profile initiatives including positioning Miami as a tech and cryptocurrency hub, maintaining low taxes, and improving city infrastructure. However, affordable housing remained a persistent challenge throughout his tenure, and some sustainability goals fell short of targets. His presidential campaign suspended in August 2023 as promised when polling thresholds weren't met."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make Miami a major tech and innovation hub",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Successfully attracted major tech companies and startups to Miami, hosted major tech conferences, and personally recruited Silicon Valley firms via social media campaigns starting in 2020-2021.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Establish Miami as a cryptocurrency-friendly city",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Launched MiamiCoin cryptocurrency initiative in 2021, accepted Bitcoin for city payments, and hosted the Bitcoin 2021 conference, making Miami a recognized crypto hub.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Keep Miami taxes low with no city income tax",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Miami maintained no city income tax throughout Suarez's tenure, and he consistently promoted this as a draw for businesses and residents relocating from higher-tax states.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Address affordable housing crisis in Miami",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite creating affordable housing programs and trust funds, Miami's housing affordability crisis worsened during his tenure with rents and home prices increasing dramatically, outpacing wage growth.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Make Miami a climate-resilient city with sustainability initiatives",
+      "domain_label": "Environment",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "Implemented some resilience projects including sea-level rise preparations and stormwater improvements, but comprehensive climate goals faced funding and implementation challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve city infrastructure and roads",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Oversaw significant infrastructure investments including road improvements, the expansion of the Underline linear park project, and various neighborhood improvement initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Suspend presidential campaign if failing to meet 1% polling threshold",
+      "domain_label": "Government",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Suarez publicly committed to dropping out if he failed to reach polling thresholds. He suspended his campaign on August 29, 2023, becoming the first Republican to exit the 2024 race.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

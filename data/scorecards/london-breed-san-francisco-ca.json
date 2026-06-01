@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "London Breed",
+    "role": "Mayor",
+    "jurisdiction": "San Francisco, CA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2018-07-11",
+    "term_end": "2025-01-08"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 2,
+    "in_progress": 0,
+    "stalled": 3,
+    "total": 8,
+    "narrative": "London Breed had a mixed record on her campaign promises during her tenure as San Francisco Mayor. She achieved some progress on homelessness shelter capacity and budget management, but faced significant challenges delivering on public safety and housing production goals. Her 2024 reelection loss reflected voter frustration with ongoing quality-of-life issues despite some statistical improvements."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Reduce unsheltered homelessness in San Francisco",
+      "domain_label": "Housing/Homelessness",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Point-in-time counts showed unsheltered homelessness declined during her tenure, and Breed cited these statistics during her 2024 campaign as evidence of progress.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Build 5,000 new units of housing annually",
+      "domain_label": "Housing",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "San Francisco consistently fell short of ambitious housing production targets due to permitting delays, construction costs, and regulatory barriers throughout Breed's tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reduce property crime and make neighborhoods safer",
+      "domain_label": "Public Safety",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "While Breed pointed to declining crime statistics in her reelection campaign, public perception of safety remained poor, contributing to her low approval ratings and eventual electoral defeat.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Open new shelter beds and navigation centers for homeless residents",
+      "domain_label": "Housing/Homelessness",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Breed opened multiple navigation centers and expanded shelter capacity during her administration, including emergency expansions during the COVID-19 pandemic.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Address the open-air drug markets in the Tenderloin",
+      "domain_label": "Public Safety",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite declaring a state of emergency in the Tenderloin in 2021, the drug crisis persisted and remained a major voter concern through her 2024 campaign.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Maintain fiscal responsibility and balanced city budgets",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Breed proposed and passed record budgets including a $15.9 billion budget for 2024-2025 while maintaining fiscal stability despite economic challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Revitalize downtown San Francisco and support economic recovery",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Downtown San Francisco continued to struggle with high office vacancy rates and business closures throughout Breed's tenure, with limited recovery from pandemic impacts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Increase police staffing to improve public safety",
+      "domain_label": "Public Safety",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "SFPD continued to face staffing shortages throughout Breed's administration despite her stated commitment to increasing police presence in neighborhoods.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

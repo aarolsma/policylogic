@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Tishaura Jones",
+    "role": "Mayor",
+    "jurisdiction": "St. Louis, MO",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2021-04-20",
+    "term_end": "2025-04-15"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Tishaura Jones made significant progress on her core campaign promises around addressing racial disparities and modernizing city government during her first term. She successfully deployed historic federal relief funds toward equity initiatives and oversaw documented crime reductions, though some public safety reforms faced implementation challenges."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Use federal ARPA funds to shrink racial disparities in St. Louis",
+      "domain_label": "Equity",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Jones directed significant portions of St. Louis's $500+ million ARPA allocation toward programs targeting racial equity, including affordable housing, small business support in underserved areas, and community violence intervention programs.",
+      "source_url": "https://www.stlmag.com/news/tishaura-jones-arpa-racial-disparities/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reduce violent crime in St. Louis",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "During her re-election campaign, Jones cited lower crime statistics as a key accomplishment. St. Louis saw reductions in homicides and violent crime during her tenure, though the city remained among the highest crime rates nationally.",
+      "source_url": "https://www.stlpr.org/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Modernize city government and cut red tape",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Jones's 2023 State of the City address highlighted progress on government modernization initiatives, including streamlining permitting processes and improving city services delivery.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reimagine public safety beyond traditional policing",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Jones implemented some alternative response programs and invested in violence intervention, but comprehensive public safety restructuring faced political and logistical obstacles throughout her term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Make historic investments in underserved neighborhoods",
+      "domain_label": "Economic Development",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Jones directed unprecedented federal relief funding toward north St. Louis neighborhoods and other historically disinvested areas, funding infrastructure improvements, housing programs, and economic development initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Close the Workhouse (Medium Security Institution)",
+      "domain_label": "Criminal Justice Reform",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While Jones supported closing the controversial jail facility and reduced its population, complete closure faced ongoing obstacles related to detention capacity and was not fully accomplished during her term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Improve police accountability and rebuild community trust",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Jones implemented some accountability measures and community engagement initiatives, but systemic police reform proved difficult amid staffing shortages and union resistance.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Win a second term to continue transformation agenda",
+      "domain_label": "Political",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "According to Wikipedia, Jones's term ended in April 2025, indicating she did not secure a second term despite launching her re-election campaign in 2024.",
+      "source_url": "https://en.wikipedia.org/wiki/Tishaura_Jones",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

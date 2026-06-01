@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Kathy Hochul",
+    "role": "Governor",
+    "jurisdiction": "New York",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-01",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 2,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Hochul has achieved mixed results on her core campaign promises centered on affordability, safety, and fairness. She has made progress on housing and infrastructure but faced criticism for reversing course on congestion pricing and struggling to deliver on public safety improvements. Her record reflects ongoing tension between ambitious policy goals and political realities."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make New York more affordable for families",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Hochul has pursued various affordability initiatives including property tax relief and childcare investments, but New York remains one of the most expensive states. Recent pivot to address voter economic concerns suggests ongoing work.",
+      "source_url": "https://www.governor.ny.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Implement congestion pricing in Manhattan at $15 toll",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Hochul paused the $15 congestion pricing plan in June 2024, stating it was 'too much for everyday New Yorkers when affordability is top of mind.' This reversed years of planning and delayed MTA funding.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Make New York safer by addressing crime and public safety",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Hochul has deployed National Guard to NYC subways and pushed bail reform modifications, but crime remains a top voter concern. Progress has been incremental rather than transformative.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Protect abortion rights and reproductive freedom in New York",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Hochul signed legislation strengthening abortion protections and has positioned New York as a sanctuary state for reproductive healthcare. She has actively prepared legal defenses against potential federal restrictions.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Build 800,000 new housing units over 10 years",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Hochul's ambitious 'New York Housing Compact' faced significant opposition from suburban legislators and was substantially scaled back. Housing production remains well below targets needed to meet the goal.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Invest in Second Avenue Subway expansion and MTA improvements",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "The pause of congestion pricing eliminated a key funding source for Phase 2 of the Second Avenue Subway and other MTA capital projects, putting major transit improvements in jeopardy.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Make New York fairer through equity and justice initiatives",
+      "domain_label": "Civil Rights",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Hochul has advanced various equity initiatives including clean slate legislation for criminal records and investments in underserved communities, though implementation varies across programs.",
+      "source_url": "https://www.governor.ny.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Protect New Yorkers from federal overreach and Project 2025 policies",
+      "domain_label": "Civil Rights",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Working with AG Letitia James, Hochul has positioned New York to legally challenge federal policies. James stated they have been 'carefully preparing' and are 'ready' for potential conflicts with the Trump administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

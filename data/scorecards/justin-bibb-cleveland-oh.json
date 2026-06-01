@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Justin Bibb",
+    "role": "Mayor",
+    "jurisdiction": "Cleveland, OH",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-01-03",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Bibb has delivered on several key campaign promises including transferring West Side Market operations to a nonprofit and creating a downtown tax-increment finance district. His administration has made progress on homelessness and crime initiatives, though police staffing remains a persistent challenge and some neighborhood quality-of-life promises have stalled."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Turn over the West Side Market to a nonprofit operator",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Bibb administration successfully transferred management of the historic West Side Market to a nonprofit operator, fulfilling a key campaign promise to revitalize the landmark.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Create a tax-increment finance district in Downtown Cleveland",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In March 2024, City Council passed Mayor Bibb's legislation creating a tax-increment finance district in Downtown Cleveland as part of his 'core to shore' revitalization approach.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "End unsheltered homelessness in Cleveland",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The administration projected reaching 'equilibrium' or an end to unsheltered homelessness within the first quarter of 2025, with significant progress made through coordinated housing initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Increase enforcement targeted at violent crime hotspots",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Bibb implemented an 'all-of-government' approach to crime with increased enforcement targeted at the city's violent crime hotspots as promised.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Address police staffing shortages",
+      "domain_label": "Public Safety",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "The administration continues to face criticism from City Council over police staffing levels, with recruitment and retention remaining a persistent challenge.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Revitalize thousands of vacant properties through neighborhood investment",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The administration has initiated programs to address vacant properties, but neighborhood quality-of-life concerns remain a point of City Council criticism.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Implement 'core to shore' lakefront development strategy",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The core to shore approach has been implemented through multiple initiatives including the downtown TIF district, connecting Cleveland's downtown to its lakefront.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Improve neighborhood quality of life citywide",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite stated commitments, the administration has faced ongoing criticism from City Council specifically regarding neighborhood quality-of-life issues that remain unaddressed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

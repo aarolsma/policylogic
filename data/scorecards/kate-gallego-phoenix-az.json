@@ -1,0 +1,54 @@
+{
+  "official": {
+    "name": "Kate Gallego",
+    "role": "Mayor",
+    "jurisdiction": "Phoenix, AZ",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2019-03-21",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "I",
+    "kept": 0,
+    "broken": 0,
+    "in_progress": 3,
+    "stalled": 0,
+    "total": 3,
+    "narrative": "Mayor Kate Gallego has been a strong advocate for sustainability and climate initiatives in Phoenix, with stated goals around making Phoenix the most sustainable desert city. The available search context provides limited specific campaign promises with verifiable outcomes, resulting in insufficient data for a comprehensive grade. Additional research into city records and official statements would be needed for a complete assessment."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make Phoenix the most sustainable desert city on the planet",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gallego has taken leadership role as Chair of Climate Mayors and has championed various sustainability initiatives, though this is an ongoing aspirational goal without a defined endpoint.",
+      "source_url": "https://www.phoenix.gov/mayor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Elevate the role of mayors and cities in tackling climate change",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gallego became Chair of Climate Mayors, a coalition of U.S. mayors committed to climate action, demonstrating progress on this commitment.",
+      "source_url": "https://www.phoenix.gov/newsroom/mayor/2024",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Continue serving Phoenix residents through re-election",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gallego announced her intention to run for re-election in March 2024 and won the 2024 election by a margin of at least 20 points, continuing her service as mayor.",
+      "source_url": "https://ballotpedia.org/Kate_Gallego",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

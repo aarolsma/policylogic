@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Josh Shapiro",
+    "role": "Governor",
+    "jurisdiction": "Pennsylvania",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-17",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Shapiro has made significant progress on several campaign promises, particularly in areas of voter access, healthcare coverage, and school nutrition. However, his reversal on private school vouchers and the stalled effort to abolish the death penalty represent notable gaps in his promise-keeping record."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Implement automatic voter registration in Pennsylvania",
+      "domain_label": "Voting Rights",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Shapiro implemented automatic voter registration allowing Pennsylvanians to register to vote at the Department of Transportation.",
+      "source_url": "https://ballotpedia.org/Josh_Shapiro",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Support private school tuition voucher program (PASS scholarships)",
+      "domain_label": "Education",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite supporting vouchers during his campaign, Shapiro line-item vetoed the full $100 million appropriation for the PASS program, citing inability to reach legislative consensus.",
+      "source_url": "https://ballotpedia.org/Josh_Shapiro",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Abolish the death penalty in Pennsylvania",
+      "domain_label": "Criminal Justice",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Shapiro continued the moratorium on executions and called on the General Assembly to abolish the death penalty, but legislation has not passed.",
+      "source_url": "https://en.wikipedia.org/wiki/Josh_Shapiro",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Lower the corporate net income tax to attract more businesses",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Shapiro announced a plan to lower the state's corporate net income tax as part of his strategy to attract more businesses to Pennsylvania. Phase-down is underway.",
+      "source_url": "https://www.spotlightpa.org/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Protect abortion rights in Pennsylvania",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Shapiro has consistently defended abortion access and vowed to ensure Pennsylvania remains a place where a woman's right to choose is protected by law.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Expand insurance coverage for breast cancer screenings",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Shapiro signed legislation expanding insurance coverage for breast cancer screenings.",
+      "source_url": "https://ballotpedia.org/Josh_Shapiro",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Provide universal free school breakfast for Pennsylvania students",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Shapiro renewed funding for universal free school breakfast program.",
+      "source_url": "https://ballotpedia.org/Josh_Shapiro",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Protect LGBTQ+ rights including marriage equality",
+      "domain_label": "Civil Rights",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Shapiro has vocally supported LGBTQ+ rights and vowed Pennsylvania will be a place where you can marry who you love, though comprehensive state-level protections remain in progress.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

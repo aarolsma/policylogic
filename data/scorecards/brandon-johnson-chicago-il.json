@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Brandon Johnson",
+    "role": "Mayor",
+    "jurisdiction": "Chicago, IL",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-05-15",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Brandon Johnson has made progress on several progressive priorities including housing initiatives and worker protections, while keeping his first-year promise not to raise property taxes. However, his 2025 budget proposal to raise property taxes by $300 million contradicted this core campaign promise, though it was rejected by the City Council. Several major initiatives remain in progress or face significant political obstacles."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Will not raise property taxes",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Johnson kept this promise in his 2024 budget, but in 2024 proposed a $300 million property tax hike for the 2025 budget, breaking this core campaign commitment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Expand affordable housing and green social housing",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "In February 2025, Johnson introduced the Green Social Housing ordinance and has pushed to streamline housing development projects over aldermanic objections.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Support raising minimum wage for tipped workers",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2023, Johnson supported a city council-passed ordinance to raise the minimum wage for tipped workers.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Fully fund public schools",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Johnson has advocated for increased school funding as a former teacher and union organizer, but faces ongoing budget constraints and political opposition in the City Council.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Expand access to mental health care services",
+      "domain_label": "Healthcare",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Mental health care expansion was a key campaign priority, with some budget allocations made, but full implementation of promised mental health centers remains ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Create green jobs in Chicago",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Green jobs initiative was a campaign priority, but budget battles and political opposition have slowed significant progress on large-scale job creation programs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Protect immigrants from federal enforcement",
+      "domain_label": "Immigration",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2025, Johnson signed an executive order preventing federal immigration enforcement cooperation, maintaining Chicago's sanctuary city status.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Advocate for ceasefire in Gaza",
+      "domain_label": "Foreign Policy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2024, Johnson cast a tie-breaking vote to support a council resolution calling for a ceasefire in Gaza, fulfilling his stated position on the issue.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

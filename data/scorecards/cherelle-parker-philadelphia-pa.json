@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Cherelle Parker",
+    "role": "Mayor",
+    "jurisdiction": "Philadelphia, PA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2024-01-01",
+    "term_end": "2028-01-01"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 5,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Parker has made measurable progress on her core campaign themes of safety, cleanliness, and economic opportunity, with increased police funding and cleaning initiatives reflected in her first budget. However, some promises like Vision Zero funding have seen reductions, and major initiatives like ending the Kensington open-air drug market remain ongoing challenges."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Increase funding for Philadelphia Police Department to improve public safety",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Parker's FY2025 budget proposal included increased funding for police as part of her 'One Philly Budget' focused on making Philadelphia safer.",
+      "source_url": "https://www.phila.gov/2024-03-14-mayor-cherelle-l-parker-proposes-fiscal-year-2025-budget-five-year-plan/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Increase funding for city cleaning and greening efforts",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The FY2025 budget proposal included increased funding for city cleaning and greening efforts as a core component of her administration's priorities.",
+      "source_url": "https://www.phila.gov/2024-03-14-mayor-cherelle-l-parker-proposes-fiscal-year-2025-budget-five-year-plan/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "End the open-air drug market in Kensington",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Parker has committed to using 'every tool in the toolbox' to address the Kensington crisis and restore dignity to the community, but the open-air market remains an ongoing challenge.",
+      "source_url": "https://www.phila.gov/2025-01-state-of-the-city/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Increase School District of Philadelphia's share of real estate tax revenue",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Parker's FY2025 budget proposed an increase in the School District's share of real estate tax, advancing this education funding commitment.",
+      "source_url": "https://www.phila.gov/2024-03-14-mayor-cherelle-l-parker-proposes-fiscal-year-2025-budget-five-year-plan/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Maintain and expand Vision Zero safer streets funding",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Parker's budget proposed cutting safer streets funding from $2.5 million to just $1 million for 2025, a 60% reduction from the previous administration's allocation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Make Philadelphia the safest big city in the nation",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "This remains a stated goal of the administration with increased police funding, but Philadelphia continues to face significant violent crime challenges.",
+      "source_url": "https://www.phila.gov/departments/office-of-the-mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Expand economic opportunity for all Philadelphians",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Economic opportunity is a pillar of Parker's 'One Philly Budget' and administration priorities, with various workforce and development initiatives underway.",
+      "source_url": "https://www.phila.gov/departments/office-of-the-mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Make Philadelphia the cleanest and greenest big city in the nation",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Increased cleaning and greening budget allocations support this goal, though achieving 'cleanest and greenest' status remains a long-term objective.",
+      "source_url": "https://www.phila.gov/2024-03-14-mayor-cherelle-l-parker-proposes-fiscal-year-2025-budget-five-year-plan/",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Kristi Noem",
+    "role": "Governor",
+    "jurisdiction": "South Dakota",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2019-01-05",
+    "term_end": "2025-01-08"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 5,
+    "broken": 1,
+    "in_progress": 0,
+    "stalled": 1,
+    "total": 7,
+    "narrative": "Governor Noem fulfilled several key campaign promises including significant tax cuts and maintaining South Dakota's business-friendly environment without implementing an income tax. Her tenure was cut short when she resigned in January 2025 to join the Trump administration, leaving some initiatives incomplete."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Return $100 million in tax cuts to South Dakota taxpayers",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In 2023, Noem signed legislation cutting the state sales tax from 4.5% to 4.2%, delivering on her 2022 victory speech commitment to return tax relief to residents.",
+      "source_url": "https://ballotpedia.org/Kristi_Noem",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Keep South Dakota free of a state income tax",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Throughout her tenure, South Dakota maintained its status as one of the few states without a personal or corporate income tax.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Protect the unborn and advance pro-life policies",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Noem proclaimed 2024 the 'Freedom for Life Year' and promoted anti-abortion laws. Following the Dobbs decision, South Dakota's trigger law banning most abortions took effect.",
+      "source_url": "https://en.wikipedia.org/wiki/Kristi_Noem",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Keep South Dakota open for business and economic opportunity",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Noem maintained South Dakota as 'Open for Opportunity,' notably keeping the state open during COVID-19 and attracting business investment throughout her tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Reduce government regulation and red tape",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Noem signed multiple executive orders and legislation aimed at reducing regulatory burdens on South Dakota businesses during her administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Serve a full second term as Governor",
+      "domain_label": "Governance",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Noem resigned as governor in January 2025 to become Secretary of Homeland Security, leaving approximately three years remaining in her second term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Expand broadband access across rural South Dakota",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "While some federal funds were allocated for broadband expansion, full implementation of rural connectivity goals remained incomplete when Noem left office.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

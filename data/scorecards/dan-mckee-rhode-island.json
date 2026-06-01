@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Dan McKee",
+    "role": "Governor",
+    "jurisdiction": "Rhode Island",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-03",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Governor McKee has made progress on several key initiatives outlined in his RI2030 Plan, particularly in areas of workforce development and infrastructure investment. His administration has achieved notable successes in expanding abortion access and postsecondary education programs, though some economic development goals remain works in progress."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Implement RI2030 Plan to chart a comprehensive policy course for Rhode Island's future",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The RI2030 Plan has been formally launched and serves as the administration's guiding policy document, with multiple initiatives underway across state agencies.",
+      "source_url": "https://governor.ri.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Expand abortion coverage for state workers and Medicaid recipients",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Governor McKee signed legislation in May 2023 to fund abortion coverage for state workers and Medicaid recipients, fulfilling this reproductive rights commitment.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Raise incomes and create a more prosperous future for all Rhode Islanders",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Administration has implemented workforce development initiatives through RIPOC and other agencies, though comprehensive income growth data shows mixed results.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reform the Department of Children, Youth & Families with a new P.A.C.E. framework prioritizing prevention and accountability",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "DCYF has implemented the P.A.C.E. philosophical framework prioritizing prevention, accountability, collaboration, and engagement in the state's system of care.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Expand postsecondary education opportunities and accomplishments",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Rhode Island Office of the Postsecondary Commissioner achieved significant accomplishments in 2024, expanding educational access and career preparation programs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Secure federal resources to improve Rhode Island's infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Administration has actively pursued federal infrastructure funding, though specific project completions and funding amounts require ongoing tracking.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Protect Rhode Island from federal policy changes impacting the state",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Governor has stated commitment to protecting Rhode Island from Washington's agenda, but specific protective measures and their effectiveness remain partially documented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Lift up every resident, community, and corner of the state through equitable development",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While stated as a goal in RI2030, disparities in economic outcomes across Rhode Island communities persist, with some areas seeing limited improvement.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

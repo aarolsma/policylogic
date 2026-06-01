@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Jacob Frey",
+    "role": "Mayor",
+    "jurisdiction": "Minneapolis, MN",
+    "party": "DFL",
+    "photo_url": "",
+    "term_start": "2018-01-02",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Frey has demonstrated measurable progress on fiscal management and police department rebuilding, achieving AAA bond ratings and reversing officer attrition trends. His affordable housing commitments show mixed results, while his George Floyd Square plans faced significant political opposition. Overall, his administration has delivered on core operational promises while facing challenges on more contentious policy goals."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Rebuild the Minneapolis Police Department and increase officer recruitment",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Police applications increased 45% in 2024 compared to prior year, and the department achieved net positive officer gains in 2024 for the first time since 2020.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Achieve AAA bond ratings to lower borrowing costs and save taxpayer money",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Minneapolis earned AAA bond ratings from all three major U.S. accrediting agencies in 2025, lowering borrowing costs and saving taxpayers millions.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Deliver city government that is on time, under budget, accessible, and accountable",
+      "domain_label": "Government Reform",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The AAA bond rating achievement and fiscal management improvements indicate progress, though comprehensive metrics on all city services being on time and under budget are not fully documented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Protect progress on affordable housing initiatives",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Frey has publicly committed to protecting affordable housing progress, though specific metrics on units created or preserved require further verification against campaign targets.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Restore traffic flow to George Floyd Square through street redesign",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "The Frey administration proposed an overhaul in October 2024 to return traffic to the street, but Frey vetoed a City Council measure for a pedestrian mall in 2025, leaving the project in political limbo.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Make Minneapolis a model for progressive governance focused on results, not politics",
+      "domain_label": "Government Reform",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Frey lost the Minneapolis DFL endorsement in July 2025 to Omar Fateh, suggesting significant intraparty dissatisfaction with his governance approach among local progressives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "2025 will be a banner year for police officer recruitment",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Following 45% increase in applications in 2024 and net positive officer gains, early 2025 indicators showed continued recruitment momentum consistent with this prediction.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Maintain fiscal responsibility and strong city credit standing",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The achievement of AAA bond ratings from all three major agencies demonstrates successful maintenance of strong fiscal standing and creditworthiness.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

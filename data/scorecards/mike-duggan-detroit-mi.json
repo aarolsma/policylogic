@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Mike Duggan",
+    "role": "Mayor",
+    "jurisdiction": "Detroit, MI",
+    "party": "Independent",
+    "photo_url": "",
+    "term_start": "2014-01-01",
+    "term_end": "2026-12-31"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 5,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Duggan has delivered on key infrastructure and blight removal promises while making significant progress on public safety and neighborhood revitalization. Some economic development initiatives remain ongoing as his term concludes, and education outcomes have shown mixed results despite sustained efforts."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Demolish 10,000 blighted structures to revitalize Detroit neighborhoods",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Detroit Demolition Program exceeded this goal, removing over 23,000 blighted structures since 2014, transforming neighborhoods across the city.",
+      "source_url": "https://detroitmi.gov/departments/detroit-building-authority",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Improve streetlight coverage to 100% operational across the city",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Detroit completed its LED streetlight replacement program, installing over 65,000 new lights and achieving near-complete coverage citywide after decades of outages.",
+      "source_url": "https://www.pld.detroit.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reduce Detroit's high auto insurance rates through reform efforts",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Duggan championed Michigan's 2019 auto insurance reform law, which led to documented rate reductions for many Detroit drivers, though affordability concerns persist for some residents.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reduce emergency response times for police and fire services",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Police response times improved from over 50 minutes in 2013 to under 15 minutes for priority calls, with significant investments in vehicles and personnel.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Expand affordable housing options across Detroit neighborhoods",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The city launched multiple affordable housing programs and inclusionary zoning policies, but demand continues to outpace supply amid concerns about gentrification in revitalized areas.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve Detroit public school outcomes and graduation rates",
+      "domain_label": "Education",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Despite initiatives like the Detroit Children's Fund, DPSCD test scores remain among the lowest in the nation and graduation rate improvements have been modest relative to stated goals.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Bring major employers and jobs back to Detroit",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Duggan oversaw the relocation of major employers downtown including Quicken Loans, Chemical Bank, and attracted significant automotive and tech investment, adding thousands of jobs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Continue running the city effectively while campaigning for governor",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Duggan pledged to fulfill his mayoral duties through the end of his term in 2026 while running for governor, and city operations have continued without major disruption.",
+      "source_url": "https://www.nbcnews.com/politics/2026-election/mike-duggan-michigan-governor-independent-rcna183051",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Quinton Lucas",
+    "role": "Mayor",
+    "jurisdiction": "Kansas City, MO",
+    "party": "Non-Partisan",
+    "photo_url": "",
+    "term_start": "2019-08-01",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Quinton Lucas has made measurable progress on public safety initiatives and housing affordability during his tenure. He has successfully advanced gun safety ordinances and tenant protections, though some infrastructure and economic development promises remain in progress or have stalled."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Prohibit minors from purchasing firearm ammunition without parental consent",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mayor Lucas introduced and passed an ordinance prohibiting minors from purchasing firearm ammunition without parental consent as part of his second-term policy initiatives.",
+      "source_url": "https://www.kcmo.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Ban switch devices that modify guns to fire automatically",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lucas announced and introduced an ordinance banning switches, devices used to modify guns to allow them to fire more rounds more rapidly, during his second term inauguration.",
+      "source_url": "https://www.kcmo.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reduce violent crime and improve public safety in Kansas City",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Lucas has consistently stated improving safety is a top priority. Some initiatives have been implemented, but violent crime remains a significant challenge in Kansas City.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Increase affordable housing options for Kansas City residents",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Lucas has championed tenant protection ordinances and affordable housing initiatives, including the Tenant Bill of Rights, though housing affordability remains an ongoing challenge.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Keep professional sports teams (Chiefs and Royals) in Kansas City",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Lucas stated he predicts both teams stay in Kansas City and has engaged in stadium negotiations, but final agreements have not been reached as of early 2026.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Expand pre-K education access for Kansas City children",
+      "domain_label": "Education",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Lucas supported and helped secure funding for expanded pre-K programs in Kansas City through city initiatives and partnerships with local school districts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Fix Kansas City's roads and infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While some road improvements have occurred, major infrastructure projects have faced funding delays and implementation challenges, with residents citing ongoing concerns.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Reform the Kansas City Police Department and improve community relations",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Lucas advocated for local control of KCPD, but the police department remains under state control. Efforts to gain local oversight have not succeeded legislatively.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

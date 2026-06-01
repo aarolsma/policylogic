@@ -1,0 +1,118 @@
+{
+  "official": {
+    "name": "Mike Kehoe",
+    "role": "Governor",
+    "jurisdiction": "Missouri",
+    "party": "Republican",
+    "term_start": "2025-01-13",
+    "term_end": "2029-01-13",
+    "election_date": "2024-11-05",
+    "election_margin": null,
+    "next_election": "2028-11-05",
+    "office_phone": null,
+    "office_address": "State Capitol, Jefferson City, MO 65101",
+    "office_website": "https://governor.mo.gov/"
+  },
+  "summary": {
+    "narrative": "Governor Kehoe campaigned on pragmatism and public safety as top priority. Early tenure focused on Safer Missouri initiative with six executive orders. Platform emphasized job creation, workforce development, seniors/veterans support, and education improvement. Limited legislative accomplishments visible in first month; emphasis on executive action and appointments.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 15,
+    "ambition_level": "Moderate",
+    "grade_rationale": "Extremely early in tenure (3 weeks as of data); executive action initiated on signature issue but too soon for substantive outcome measurement. Grade reflects promise scope vs. minimal delivery timeline available.",
+    "overall_grade": "C"
+  },
+  "promises": [
+    {
+      "normalized": "Make Missouri easier to be a cop than criminal; hold criminals accountable",
+      "domain": "Public Safety",
+      "domain_label": "Law Enforcement & Crime",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 1,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 6.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Create more jobs and expand workforce development",
+      "domain": "Economy",
+      "domain_label": "Jobs & Economic Development",
+      "clarity_score": 1,
+      "initiation_score": 0,
+      "outcome_score": 0,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 0,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Support seniors and veterans",
+      "domain": "Social Services",
+      "domain_label": "Seniors & Veterans",
+      "clarity_score": 1,
+      "initiation_score": 0,
+      "outcome_score": 0,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 0,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Improve education",
+      "domain": "Education",
+      "domain_label": "K-12 & Higher Ed",
+      "clarity_score": 0,
+      "initiation_score": 0,
+      "outcome_score": 0,
+      "attribution_modifier": 0.5,
+      "difficulty_multiplier": 2,
+      "policy_score": 0,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Low"
+    }
+  ],
+  "data_gaps": [
+    "Specific policy details on job creation targets and workforce programs",
+    "Education improvement specifics (funding, curriculum, assessment focus)",
+    "Seniors/veterans support program details and budget allocations",
+    "Election margin percentage vs. Democratic opponent Crystal Quade",
+    "Detailed public safety metrics and criminal justice reform proposals",
+    "Legislative agenda and bill priorities for first term",
+    "Quantifiable goals and timelines for campaign promises",
+    "Status of Safer Missouri initiative outcomes beyond announcement"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:37:21.557Z",
+    "slug": "mike-kehoe-missouri",
+    "review_status": "pending",
+    "method": "brave+haiku"
+  }
+}

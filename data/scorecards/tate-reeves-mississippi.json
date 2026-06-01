@@ -1,0 +1,151 @@
+{
+  "official": {
+    "name": "Tate Reeves",
+    "role": "Governor",
+    "jurisdiction": "Mississippi",
+    "party": "Republican",
+    "term_start": "2020-01-01",
+    "term_end": "2028-01-01",
+    "election_date": "2023-11-07",
+    "election_margin": null,
+    "next_election": "2027-11-02",
+    "office_phone": null,
+    "office_address": "Jackson, Mississippi",
+    "office_website": "governorreeves.ms.gov"
+  },
+  "summary": {
+    "narrative": "Governor Reeves pursued conservative economic agenda including historic tax cuts, medical cannabis legalization, and school choice expansion over teacher pay increases. Implementation of key promises documented; fiscal concerns raised by rating agencies regarding income tax elimination plans.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.65,
+    "ambition_level": "High",
+    "grade_rationale": "Delivered on tax cuts and school choice priority; medical cannabis legalized; fiscal sustainability questions on income tax elimination reduce score despite strong execution on stated priorities.",
+    "overall_grade": "B-"
+  },
+  "promises": [
+    {
+      "normalized": "Eliminate state personal income tax",
+      "domain": "Economic Policy",
+      "domain_label": "Taxation",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2.5,
+      "policy_score": 12,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Implement historic tax cut to boost job growth",
+      "domain": "Economic Policy",
+      "domain_label": "Tax Reform",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.7,
+      "difficulty_multiplier": 1.8,
+      "policy_score": 15.68,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Legalize medical cannabis",
+      "domain": "Healthcare",
+      "domain_label": "Cannabis Policy",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 5,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1.5,
+      "policy_score": 18,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand school choice programs with public funding",
+      "domain": "Education",
+      "domain_label": "School Choice",
+      "clarity_score": 2,
+      "initiation_score": 4,
+      "outcome_score": 4,
+      "attribution_modifier": 0.9,
+      "difficulty_multiplier": 2,
+      "policy_score": 14.4,
+      "requires_legislation": true,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific election margin percentage for 2023 gubernatorial race",
+    "Detailed metrics on job growth attribution to tax policy",
+    "Timeline and status of income tax elimination legislation",
+    "School choice enrollment and funding figures",
+    "Direct office contact phone and mailing address",
+    "COVID-19 executive order details and outcomes",
+    "Rainy Day Fund management post-2020"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T19:50:26.953Z",
+    "slug": "tate-reeves-mississippi",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Tate Reeves - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tate_Reeves"
+      },
+      {
+        "title": "Official Website of Mississippi Governor Tate Reeves",
+        "url": "https://governorreeves.ms.gov/"
+      },
+      {
+        "title": "Tate for Governor - Tate Reeves",
+        "url": "https://tatereeves.com/"
+      },
+      {
+        "title": "Economic Growth - Office of Governor Tate Reeves",
+        "url": "https://governorreeves.ms.gov/key-initiatives/economic-growth/"
+      },
+      {
+        "title": "Governor Tate Reeves Issues Executive Orders to Protect Healthcare Professionals | Jackson Free Press | Jackson, MS",
+        "url": "https://www.jacksonfreepress.com/news/2020/apr/10/governor-tate-reeves-issues-executive-orders-prote/"
+      },
+      {
+        "title": "Governor Tate Reeves Issues Executive Orders to Protect Healthcare Professionals - Magnolia Tribune",
+        "url": "https://magnoliatribune.com/2020/04/10/governor-tate-reeves-issues-executive-orders-to-protect-healthcare-professionals/"
+      },
+      {
+        "title": "Governor Tate Reeves Signs Executive Orders Furthering Mississippi’s COVID-19 Response | Mississippi Politics and News - Y'all Politics",
+        "url": "https://yallpolitics.com/2020/03/16/governor-tate-reeves-signs-executive-orders-furthering-mississippis-covid-19-response/"
+      },
+      {
+        "title": "r/mississippi on Reddit: Why do people not like Tate Reeves",
+        "url": "https://www.reddit.com/r/mississippi/comments/1fccmbc/why_do_people_not_like_tate_reeves/"
+      }
+    ]
+  }
+}

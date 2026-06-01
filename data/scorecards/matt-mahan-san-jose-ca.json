@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Matt Mahan",
+    "role": "Mayor",
+    "jurisdiction": "San Jose, CA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-01",
+    "term_end": "2027-01-01"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Mahan has made incremental progress on public safety and homelessness, with resident perception of safety showing modest improvement. His tough-on-crime stance led him to champion Proposition 36, which passed statewide. However, some infrastructure and housing promises remain in progress or stalled amid budget constraints."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Increase public safety and make San Jose residents feel safer",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Resident surveys show 65% view San Jose as safe in Q3 FY2024-25, up from 63% the prior year, indicating modest improvement in perceived safety.",
+      "source_url": "https://sanjosespotlight.com/is-san-joses-mayor-hitting-the-mark-on-his-promises/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Support tougher penalties for repeat drug and theft offenses",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mahan was a leading supporter of Proposition 36, which passed in November 2024, implementing tougher penalties for repeat drug and theft crimes.",
+      "source_url": "https://www.kqed.org/news/12012345/san-jose-mayor-matt-mahan-announces-run-for-california-governor",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reduce homelessness through increased shelter capacity and enforcement",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The city has expanded interim housing options but homelessness remains a significant challenge with encampments persisting throughout the city.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Build 1,000 interim housing units for homeless residents",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Progress has been made on expanding interim housing capacity but the full 1,000-unit goal has not yet been completed.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve city infrastructure including pothole repairs and street maintenance",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Budget constraints have limited the pace of infrastructure improvements, with residents continuing to report delays in pothole repairs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Hold city council members accountable for misconduct",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "In October 2024, Mahan publicly called for Councilmember Omar Torres to resign following child sexual misconduct allegations; Torres subsequently resigned and was arrested.",
+      "source_url": "https://en.wikipedia.org/wiki/Matt_Mahan",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Expand police staffing to improve emergency response times",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The city has worked to recruit additional officers but remains below targeted staffing levels due to competitive hiring challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Streamline permitting to accelerate housing construction",
+      "domain_label": "Housing",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite stated goals, permitting timelines have not significantly improved and developers continue to report bureaucratic delays.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

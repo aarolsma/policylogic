@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Todd Gloria",
+    "role": "Mayor",
+    "jurisdiction": "San Diego, CA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2020-12-10",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 0,
+    "total": 8,
+    "narrative": "Mayor Todd Gloria has made measurable progress on housing production and police oversight commitments from his 2020 campaign. His administration has permitted thousands of new housing units annually, though homelessness and housing affordability remain persistent challenges. Several key promises remain in progress as he continues his second term."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Adequately fund the Commission on Police Practices (CPP) for independent oversight of police",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Gloria supported and implemented funding for the independent Commission on Police Practices, which oversees and investigates incidents involving the San Diego Police Department.",
+      "source_url": "https://en.wikipedia.org/wiki/Todd_Gloria",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Address homelessness in San Diego",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Gloria has implemented various homelessness programs and shelter expansions, but homelessness remains a significant challenge in San Diego with ongoing encampments and service gaps.",
+      "source_url": "https://ballotpedia.org/Todd_Gloria",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Improve housing affordability in San Diego",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The city permitted approximately 8,500 new homes in 2024 despite unfavorable economic conditions. Gloria announced a 2025 policy shift toward creating more homes for sale to address affordability.",
+      "source_url": "https://www.sandiego.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Improve the city's infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gloria has prioritized infrastructure investments including road repairs and stormwater systems, though significant deferred maintenance backlog remains citywide.",
+      "source_url": "https://ballotpedia.org/Todd_Gloria",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Improve public safety in San Diego",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gloria has worked to address police staffing shortages and supported the independent police oversight commission, though SDPD recruitment challenges persist.",
+      "source_url": "https://ballotpedia.org/Todd_Gloria",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Increase housing production through streamlined permitting",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "San Diego permitted roughly 8,500 new homes in 2024, demonstrating successful efforts to increase housing production despite challenging economic conditions.",
+      "source_url": "https://www.sandiego.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Create more homes for sale for middle-class families",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Gloria announced in his 2025 State of the City address that policy focus would shift toward creating more homes for sale, with new initiatives being implemented.",
+      "source_url": "https://www.sandiego.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Tackle the city's fiscal challenges responsibly",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Despite promises to address fiscal challenges, San Diego has faced ongoing budget deficits and Gloria acknowledged in his State of the City that fiscal challenges remain a significant concern requiring continued attention.",
+      "source_url": "https://www.sandiego.gov/",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

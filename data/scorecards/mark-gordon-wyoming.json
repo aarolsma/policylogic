@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Mark Gordon",
+    "role": "Governor",
+    "jurisdiction": "Wyoming",
+    "party": "Republican",
+    "photo_url": "",
+    "term_start": "2019-01-07",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Governor Mark Gordon has maintained a moderate record on fulfilling campaign promises, with notable success in fiscal management and government efficiency initiatives. He has faced challenges balancing economic diversification goals with Wyoming's traditional energy economy. His commitment to limited government and local control has been largely consistent throughout his tenure."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Make government more transparent, accessible, productive, and efficient",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Gordon launched the Wyoming Boards and Commissions portal and implemented performance-based budgeting across state agencies to increase accountability and transparency.",
+      "source_url": "https://governor.wyo.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Set Wyoming on a sustainable fiscal path without implementing a state income tax",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Gordon has consistently vetoed or opposed income tax proposals while working to build state reserves and reduce reliance on mineral severance taxes through budget reforms.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Diversify Wyoming's economy beyond coal and fossil fuels",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Gordon has supported carbon capture initiatives and hydrogen hub development, but Wyoming remains heavily dependent on fossil fuel revenues. Progress has been incremental rather than transformational.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Give local communities the tools they need to thrive",
+      "domain_label": "Local Government",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Gordon supported increased direct aid to counties and municipalities and opposed unfunded state mandates, maintaining his commitment to local control principles.",
+      "source_url": "https://governor.wyo.gov/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Protect Wyoming's traditional energy industries and coal jobs",
+      "domain_label": "Energy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Gordon has advocated against federal coal regulations and supported legal challenges to EPA rules, though market forces have continued to reduce coal employment despite state efforts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Expand broadband access to rural Wyoming communities",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Gordon's administration allocated significant federal infrastructure funds to rural broadband expansion and created the Wyoming Broadband Office to coordinate deployment efforts.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Address Wyoming's healthcare workforce shortage",
+      "domain_label": "Healthcare",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite identifying healthcare workforce as a priority, Wyoming continues to face critical shortages of physicians and nurses in rural areas with limited new programs implemented.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Maintain Wyoming's low tax burden while funding essential services",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Budget shortfalls led to discussions of new revenue sources including lodging taxes and fee increases, partially compromising the no-new-taxes commitment in practice.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}
