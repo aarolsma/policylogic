@@ -1,0 +1,173 @@
+{
+  "official": {
+    "name": "Katie Boyd Britt",
+    "role": "U.S. Senator",
+    "jurisdiction": "Alabama",
+    "party": "Republican",
+    "chamber": "Senate",
+    "term_start": "2023-01-03",
+    "term_end": "2029-01-03",
+    "election_date": "2022-11-08",
+    "election_margin": null,
+    "next_election": "2028-11-05",
+    "office_phone": "+1-202-224-4124",
+    "office_address": "B40B Dirksen Senate Office Building, Washington, DC 20510",
+    "office_website": "https://www.britt.senate.gov",
+    "minority_party": false
+  },
+  "summary": {
+    "narrative": "Katie Britt, first-term Republican Senator from Alabama (2023–2029), entered office with campaign commitments centered on agricultural protection, pro-life policy, and China-focused economic security. As a majority party member, she has institutional leverage on legislative priorities but limited record of high-impact bill passage as of early 2025. Evidence shows early action on agricultural supply-chain security (Not One Inch or Acre Act, co-sponsored with Tom Cotton), committee participation, and constituent services positioning. However, most sponsored legislation remains in committee without passage, and measurable outcomes on flagship promises are limited.",
+    "total_promises": 5,
+    "delivery_rate_estimate": 0.42,
+    "ambition_level": "Moderate",
+    "preliminary_grade": "C+",
+    "grade_rationale": "Britt demonstrates policy initiation and committee engagement typical of a junior majority senator, but few promises have advanced to passage or measurable outcome. The pro-life pledge aligns with Republican caucus priorities but has not translated into independent legislative leadership. Agricultural security work (China farmland restrictions) shows concrete co-sponsorship and alignment with party priorities, earning partial credit. Constituent services and committee positioning are adequate but do not offset weak legislative delivery on stated campaign priorities."
+  },
+  "promises": [
+    {
+      "normalized": "Ban Chinese nationals/entities from purchasing US farmland",
+      "domain": "Economic Security / Agriculture",
+      "domain_label": "Economic Security",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 2,
+      "policy_score": 4.8,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Uphold sanctity of life / pro-life policies",
+      "domain": "Governance / Values",
+      "domain_label": "Social Policy",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 2.28,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Champion and advocate for Alabama farmers",
+      "domain": "Agriculture / Constituent Services",
+      "domain_label": "Agriculture",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 3,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 8,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Co-sponsor and advance agricultural security bills",
+      "domain": "Economic Security / Agriculture",
+      "domain_label": "Economic Security",
+      "clarity_score": 3,
+      "initiation_score": 4,
+      "outcome_score": 2,
+      "attribution_modifier": 0.8,
+      "difficulty_multiplier": 1.3,
+      "policy_score": 6.76,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Expand retirement plan access for charities/nonprofits",
+      "domain": "Economic Policy",
+      "domain_label": "Economic Policy",
+      "clarity_score": 3,
+      "initiation_score": 3,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 3.6,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Medium"
+    }
+  ],
+  "data_gaps": [
+    "Specific outcomes and passage dates for Not One More Inch or Acre Act and related co-sponsored legislation",
+    "Detailed voting record on pro-life measures or related amendments in 118th/119th Congress",
+    "Quantified constituent services metrics (casework resolved, town halls held, etc.)",
+    "Committee assignments, subcommittee leadership, and legislative output by committee",
+    "Primary election margin and general election victory margin in 2022",
+    "Specific language from campaign platform documents or official website archives",
+    "Follow-up on retirement fairness legislation (S.4917) status as of 2025",
+    "Public statements or press releases on promise fulfillment milestones"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T22:53:44.793Z",
+    "slug": "katie-britt-alabama",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Katie Britt - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Katie_Britt"
+      },
+      {
+        "title": "Katie Britt - Ballotpedia",
+        "url": "https://ballotpedia.org/Katie_Britt"
+      },
+      {
+        "title": "Katie Britt for Senate",
+        "url": "https://www.katiebrittforsenate.com/"
+      },
+      {
+        "title": "Legislative Record - Senator Katie Britt",
+        "url": "https://www.britt.senate.gov/priorities/legislative-record/"
+      },
+      {
+        "title": "Sen. Katie Britt [R-AL, 2023-2028]’s 2024 legislative statistics.",
+        "url": "https://www.govtrack.us/congress/members/katie_britt/456874/report-card/2024"
+      },
+      {
+        "title": "Sen. Katie Britt [R-AL, 2023-2028], Senator for Alabama - GovTrack.us",
+        "url": "https://www.govtrack.us/congress/members/katie_britt/456874"
+      },
+      {
+        "title": "U.S. Senator Katie Britt Secures Historic Wins for Alabamians in First Seven Months of 119th Congress - Senator Katie Britt",
+        "url": "https://www.britt.senate.gov/news/press-releases/u-s-senator-katie-britt-secures-historic-wins-for-alabamians-in-first-seven-months-of-119th-congress/"
+      },
+      {
+        "title": "Home - Senator Katie Britt",
+        "url": "https://www.britt.senate.gov/"
+      }
+    ]
+  }
+}

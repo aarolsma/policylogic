@@ -1,0 +1,192 @@
+{
+  "official": {
+    "name": "Tommy Tuberville",
+    "role": "U.S. Senator",
+    "jurisdiction": "Alabama",
+    "party": "Republican",
+    "chamber": "Senate",
+    "term_start": "2021-01-03",
+    "term_end": "2027-01-03",
+    "election_date": "2020-11-03",
+    "election_margin": null,
+    "next_election": null,
+    "office_phone": null,
+    "office_address": null,
+    "office_website": "https://www.tuberville.senate.gov/",
+    "minority_party": false
+  },
+  "summary": {
+    "narrative": "Tommy Tuberville ran a low-profile 2020 Senate campaign centered on conservative, pro-Trump messaging. His stated campaign priorities included manufacturing job creation, illegal immigration reduction, and education improvement. During his Senate tenure (2021–present), Tuberville has been characterized as a highly loyal Trump supporter and ultra-conservative votes. He has sponsored relatively few bills and has a sparse legislative record. In May 2025, he announced his intention to run for Alabama governor in 2026 rather than seek reelection to the Senate, citing plans to focus on vocational education, crime reduction, and tax relief. Evidence of direct promise fulfillment on legislative priorities is limited; most documented activities reflect voting record alignment rather than proactive legislative initiative or constituent service emphasis.",
+    "total_promises": 4,
+    "delivery_rate_estimate": 0.35,
+    "ambition_level": "Low-to-Moderate",
+    "preliminary_grade": "C-",
+    "grade_rationale": "Tuberville's Senate record shows minimal legislative initiation, with few bills sponsored or advanced. His voting record reflects alignment with ultra-conservative and Trump positions, but this represents reactive legislative behavior rather than promise fulfillment on specific campaign commitments. No documented evidence of significant progress on the three core 2020 campaign promises (manufacturing jobs, immigration reduction, education improvement). His early exit from the Senate (announcing 2026 gubernatorial run in May 2025) further suggests limited investment in long-term Senate priorities. Score reflects low clarity, low initiation, and weak attribution for legislative outcomes in a majority position where more proactive leadership was available."
+  },
+  "promises": [
+    {
+      "normalized": "Bring more manufacturing jobs to Alabama",
+      "domain": "Economic Development",
+      "domain_label": "Economic policy",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 1,
+      "attribution_modifier": 0.4,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 1.92,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Stop illegal immigration",
+      "domain": "Immigration",
+      "domain_label": "Immigration policy",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 1,
+      "attribution_modifier": 0.6,
+      "difficulty_multiplier": 2,
+      "policy_score": 2.16,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Make education in Alabama better again",
+      "domain": "Education",
+      "domain_label": "Education policy",
+      "clarity_score": 1,
+      "initiation_score": 0,
+      "outcome_score": 0,
+      "attribution_modifier": 0.4,
+      "difficulty_multiplier": 1.6,
+      "policy_score": 0.64,
+      "requires_legislation": true,
+      "requires_federal": true,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": true
+      },
+      "confidence": "Low"
+    },
+    {
+      "normalized": "Advance vocational education as governor",
+      "domain": "Education",
+      "domain_label": "Education policy",
+      "clarity_score": 2,
+      "initiation_score": 1,
+      "outcome_score": 0,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 3,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "Medium"
+    },
+    {
+      "normalized": "Support ultra-conservative legislative agenda",
+      "domain": "Governance",
+      "domain_label": "Political alignment/voting record",
+      "clarity_score": 2,
+      "initiation_score": 2,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 8,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": true,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    },
+    {
+      "normalized": "Remain loyal Trump backer in Senate votes",
+      "domain": "Governance",
+      "domain_label": "Political alignment/voting record",
+      "clarity_score": 2,
+      "initiation_score": 3,
+      "outcome_score": 4,
+      "attribution_modifier": 1,
+      "difficulty_multiplier": 1,
+      "policy_score": 9,
+      "requires_legislation": false,
+      "requires_federal": false,
+      "flags": {
+        "reversed": false,
+        "redefined": false,
+        "externally_blocked": false
+      },
+      "confidence": "High"
+    }
+  ],
+  "data_gaps": [
+    "No comprehensive list of specific bills sponsored or cosponsored with success metrics",
+    "No documented constituent service or casework metrics",
+    "No specific timeline or measurable targets for manufacturing job creation, immigration enforcement, or education improvement",
+    "No evidence of committee assignments driving legislative priorities or public pressure campaigns",
+    "Election margin for 2020 Senate race not verified in provided sources",
+    "No data on committee assignments, subcommittee roles, or oversight activities",
+    "No detailed voting record analysis beyond references to Fiscal Responsibility Act opposition and Ukraine-related comments",
+    "No evidence of legislation introduced specifically tied to 2020 campaign promises"
+  ],
+  "_meta": {
+    "generated_at": "2026-03-08T22:52:24.917Z",
+    "slug": "tommy-tuberville-alabama",
+    "review_status": "pending",
+    "method": "brave+haiku",
+    "sources": [
+      {
+        "title": "Tommy Tuberville - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tommy_Tuberville"
+      },
+      {
+        "title": "Tuberville passes on Senate reelection to launch Alabama gubernatorial campaign | Courthouse News Service",
+        "url": "https://www.courthousenews.com/tuberville-passes-on-senate-re-election-to-launch-alabama-gubernatorial-campaign/"
+      },
+      {
+        "title": "Sen. Tommy Tuberville officially files for 2026 Alabama governor's race",
+        "url": "https://www.wvtm13.com/article/tommy-tuberville-files-alabama-governor-2026/69917341"
+      },
+      {
+        "title": "Sen. Tommy Tuberville [R-AL, 2021-2026], Senator for Alabama - GovTrack.us",
+        "url": "https://www.govtrack.us/congress/members/tommy_tuberville/456796"
+      },
+      {
+        "title": "Sen. Tommy Tuberville [R-AL, 2021-2026]’s 2024 legislative statistics.",
+        "url": "https://www.govtrack.us/congress/members/tommy_tuberville/456796/report-card/2024"
+      },
+      {
+        "title": "Tommy Tuberville - Ballotpedia",
+        "url": "https://ballotpedia.org/Tommy_Tuberville"
+      },
+      {
+        "title": "Sen. Tommy Tuberville announces 2026 run for governor of Alabama - Ballotpedia News",
+        "url": "https://news.ballotpedia.org/2025/05/28/sen-tommy-tuberville-announces-2026-run-for-governor-of-alabama/"
+      },
+      {
+        "title": "Coach Tommy Tuberville - U.S. Senator for Alabama",
+        "url": "https://www.tuberville.senate.gov/"
+      }
+    ]
+  }
+}
