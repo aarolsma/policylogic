@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Shammas Malik",
+    "role": "Mayor",
+    "jurisdiction": "Akron, OH",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2024-01-01",
+    "term_end": "2027-12-31"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 3,
+    "broken": 0,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Malik has demonstrated follow-through on several early commitments from his 100 Day Plan, including launching the SCOUT pilot program for mental health crisis response. Several major initiatives remain in progress as the administration moves beyond its first year. No major campaign promises have been definitively broken, though some programs have experienced delays."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Launch SCOUT (Street Crisis Outreach Unit Team) pilot program for mental health crisis response",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The SCOUT pilot program launched in March 2024, meeting the 100-day deadline set by Mayor Malik.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Establish hospital violence intervention program",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "The hospital program missed the 100-day target but was expected to launch in fall 2024. Implementation has been delayed from original timeline.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Release and implement a 100 Day Plan for the new administration",
+      "domain_label": "Governance",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Mayor Malik unveiled his 100 Day Plan on February 21, 2024, and delivered a State of the City address on April 11, 2024 detailing progress.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Update and reform City of Akron policies",
+      "domain_label": "Governance",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Mayor Malik announced updates to City of Akron policies at a press conference on January 25, 2024, within his first month in office.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Address Akron's population decline with new economic strategies",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Population stabilization was identified as a core campaign priority. Long-term demographic data not yet available to assess impact.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Implement new approaches to public safety beyond traditional policing",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "SCOUT program represents progress on alternative crisis response. Additional public safety reforms are ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Increase transparency and resident engagement in city government",
+      "domain_label": "Governance",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "State of the City address drew 1,500 attendees. Administration has held public press conferences and community events.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Partner with Akron Public Schools to improve educational outcomes",
+      "domain_label": "Education",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Schools were identified as a major campaign priority, but limited public evidence of significant new city-school partnership initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Sharon Weston Broome",
+    "role": "Mayor",
+    "jurisdiction": "Baton Rouge, LA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2017-01-02",
+    "term_end": "2024-12-31"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 2,
+    "in_progress": 0,
+    "stalled": 2,
+    "total": 7,
+    "narrative": "Sharon Weston Broome completed two terms as Baton Rouge's first African-American female mayor-president. She made notable progress on childhood hunger initiatives and inclusive governance but faced criticism for delayed infrastructure improvements and persistent crime challenges. Her record reflects mixed results on key campaign commitments."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Address childhood hunger and food insecurity in Baton Rouge",
+      "domain_label": "Social Services",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Broome became chair of the Mayors Alliance to End Childhood Hunger in January 2024, partnering with No Kid Hungry campaign and implementing local food security programs.",
+      "source_url": "https://www.brla.gov/CivicAlerts.aspx?AID=1847",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Improve drainage and flood protection infrastructure",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Despite launching the MOVEBR program, many drainage projects experienced significant delays and budget overruns. Flooding remained a persistent issue throughout her tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reduce violent crime and improve public safety",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Baton Rouge experienced elevated homicide rates during much of Broome's tenure, with crime remaining a top concern among residents and a major issue in the 2024 election.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Promote inclusive governance and diverse representation",
+      "domain_label": "Governance",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Broome consistently emphasized inclusion, innovation, and information in governance, appointing diverse leadership and creating community engagement initiatives throughout her administration.",
+      "source_url": "https://www.nlc.org/people/sharon-weston-broome/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Implement major road and transportation improvements through MOVEBR",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "The MOVEBR program launched under her administration but faced criticism for slow progress on promised road projects and cost increases that limited the scope of improvements.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Improve quality of life and build community resiliency",
+      "domain_label": "Community Development",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Broome launched multiple quality-of-life initiatives including blight reduction programs, community centers improvements, and resilience planning following the 2016 floods.",
+      "source_url": "https://www.nlc.org/people/sharon-weston-broome/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Address Baton Rouge's growing homelessness crisis",
+      "domain_label": "Social Services",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Despite promises to address homelessness, visible homeless populations increased in downtown Baton Rouge and comprehensive solutions remained elusive through her final term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

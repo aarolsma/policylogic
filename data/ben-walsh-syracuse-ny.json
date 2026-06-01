@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Ben Walsh",
+    "role": "Mayor",
+    "jurisdiction": "Syracuse, NY",
+    "party": "Independent",
+    "photo_url": "",
+    "term_start": "2018-01-01",
+    "term_end": "2025-12-31"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Ben Walsh completed two terms with a solid record on government accountability and economic development initiatives. His signature Syracuse Surge program and Office of Accountability were successfully implemented, though some housing and infrastructure goals remained incomplete at the end of his tenure."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Increase accountability of city government through new oversight mechanisms",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Walsh created the Office of Accountability, Performance, and Innovation and implemented a comprehensive performance management program with online tracking.",
+      "source_url": "https://www.benwalshforsyracuse.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Launch Syracuse Surge to transform the city into a tech hub and create jobs",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Syracuse Surge was introduced in January 2019 as the administration's major policy plan, bringing tech training programs and economic development investments to the city.",
+      "source_url": "https://en.wikipedia.org/wiki/Ben_Walsh",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Address housing distress and deferred maintenance in Syracuse neighborhoods",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Housing strategy project launched in 2024 identified one-third of Syracuse homes showing distress, with remediation costs of $300 million+. Program initiated but full implementation extends beyond Walsh's term.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Improve police-community relations and engagement",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Created Director of Community Engagement position within Syracuse Police Department, with Jimmy Oliver serving in this role to bridge police and community relationships.",
+      "source_url": "https://www.syracuse.com",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Ensure smooth transition of leadership at end of term",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Walsh endorsed Deputy Mayor Sharon Owens in the 2025 election and facilitated an orderly transition when she succeeded him on December 31, 2025.",
+      "source_url": "https://en.wikipedia.org/wiki/Ben_Walsh",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Invest in downtown revitalization and economic growth",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Multiple investment initiatives launched during Walsh's eight years in office, with ongoing projects continuing under successor administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Fully remediate lead paint hazards in city housing stock",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While housing survey data was collected, the $300 million+ needed for full remediation was not secured, leaving significant work incomplete.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Implement data-driven decision making across city departments",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Performance management program established through Office of Accountability provided data tracking and metrics across city operations.",
+      "source_url": "https://www.benwalshforsyracuse.com",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Aftab Pureval",
+    "role": "Mayor",
+    "jurisdiction": "Cincinnati, OH",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2022-01-03",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 1,
+    "in_progress": 4,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Pureval has made measurable progress on several key campaign commitments, particularly in clean energy and public safety initiatives. Affordable housing efforts continue but face acknowledged difficulties. His administration has maintained focus on core priorities through his first term and into his second."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Convert 65 acres of unused brownfield into a solar installation to power 1,200 homes and eliminate 60,000 tons of carbon annually",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Pureval announced this initiative in his State of the City address, indicating active planning and commitment to the clean energy project.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Increase affordable housing options for Cincinnati residents",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Pureval acknowledged affordable housing is 'incredibly complicated, incredibly expensive and incredibly difficult' but stated City Hall does not plan to give up on the effort.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Improve public safety across Cincinnati neighborhoods",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Public safety was highlighted as a priority in State of the City address, with ongoing initiatives to address crime and community safety concerns.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Make Cincinnati a stronger city through continued economic development",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Pureval campaigned on making Cincinnati 'stronger' and has pursued various economic development initiatives throughout his tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Swiftly respond to issues affecting the Cincinnati community",
+      "domain_label": "Governance",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Some residents perceived a double standard in the city's response to international events, noting swift condemnation of October 7 attacks but lack of resolution on Gaza ceasefire.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Seek re-election to continue implementing his policy agenda",
+      "domain_label": "Governance",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Pureval announced his intention to run for re-election in January 2025 and won the general election on November 4, 2025.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Provide financial savings on electricity for residents through clean energy initiatives",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The brownfield solar project was specifically designed to provide financial savings on electricity for approximately 1,200 homes.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Address climate change through local government action",
+      "domain_label": "Environment",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While the solar project represents progress, broader comprehensive climate action plans have not materialized at the scale initially suggested during the campaign.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

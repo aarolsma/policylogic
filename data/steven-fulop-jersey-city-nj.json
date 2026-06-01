@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Steven Fulop",
+    "role": "Mayor",
+    "jurisdiction": "Jersey City, NJ",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2013-07-01",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 3,
+    "broken": 2,
+    "in_progress": 1,
+    "stalled": 1,
+    "total": 7,
+    "narrative": "Mayor Fulop has a mixed record on campaign promises. While he achieved several years without direct tax increases and made progress on development initiatives, his stormwater fee was criticized as a 'backdoor tax' and was ultimately suspended. His focus has increasingly shifted toward his 2025 gubernatorial campaign."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "No tax increases for Jersey City residents",
+      "domain_label": "Economy",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "While Fulop claims eight years of no tax increases, the 2020 stormwater utility fee was widely criticized as a 'backdoor tax' that overcharged residents, contradicting his promise of no tax increases that year.",
+      "source_url": "https://en.wikipedia.org/wiki/Steven_Fulop",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Keep Jersey City affordable for residents",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Fulop has stated affordability was a 'main priority' and avoided direct property tax increases, but rising costs and the stormwater fee controversy undermine full delivery on this promise.",
+      "source_url": "https://gothamist.com/news/jersey-city-mayor-accuses-predecessor-partnership-for-nyc-head-of-financial-deception",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Implement stormwater utility fee with nominal charges",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "The stormwater fee approved in 2020 resulted in residents 'being way overcharged on what was supposed to be a nominal fee' according to Fulop himself, leading to its suspension before the 2021 elections.",
+      "source_url": "https://en.wikipedia.org/wiki/Steven_Fulop",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reevaluate and fix the stormwater fee formula",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "After suspending the fee in 2021, Fulop promised the formula would be reevaluated. Progress on implementing a revised fee structure remains unclear.",
+      "source_url": "https://en.wikipedia.org/wiki/Steven_Fulop",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Maintain fiscal stability for Jersey City",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Fulop stated the city was left 'very stable' financially, and Jersey City has maintained its credit ratings and avoided major fiscal crises during his tenure.",
+      "source_url": "https://gothamist.com/news/jersey-city-mayor-accuses-predecessor-partnership-for-nyc-head-of-financial-deception",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Run a policy-focused gubernatorial campaign",
+      "domain_label": "Government Reform",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Fulop launched his 2025 gubernatorial bid in April 2023, promising a campaign 'more throughout around public policy' and has engaged substantively on policy issues at campaign events.",
+      "source_url": "https://newjerseyglobe.com/governor-2025/steve-fulops-counterprogramming/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Prioritize public safety and reduce crime in Jersey City",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Jersey City has seen reductions in violent crime during Fulop's tenure, with investments in police technology and community policing initiatives.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

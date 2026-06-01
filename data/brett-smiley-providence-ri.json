@@ -1,0 +1,94 @@
+{
+  "official": {
+    "name": "Brett Smiley",
+    "role": "Mayor",
+    "jurisdiction": "Providence, RI",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-02",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 5,
+    "broken": 0,
+    "in_progress": 2,
+    "stalled": 0,
+    "total": 7,
+    "narrative": "Mayor Smiley has delivered on several core campaign promises, particularly around basic city services and securing a landmark PILOT agreement with universities. His 'back-to-basics' approach has shown measurable results in public safety and infrastructure, though some housing and development initiatives remain ongoing."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Negotiate a new payment in lieu of taxes (PILOT) agreement with colleges and universities",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Smiley negotiated and signed a historic $223 million PILOT agreement with Providence's colleges and universities, more than doubling previous financial contributions to the city.",
+      "source_url": "https://www.providenceri.gov/mayor/",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Launch a Real Time Crime Center to improve public safety",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Real Time Crime Center was launched and is operational, contributing to public safety monitoring and response capabilities in Providence.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Fully fund the police department",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The administration has fully funded the police department, which has contributed to bringing violent crime to a 30-year low according to city reports.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Reduce violent crime in Providence",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Violent crime has dropped to a 30-year low under the Smiley administration, fulfilling a key public safety promise.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Focus on basic city services: fixing potholes, plowing roads, and running the city efficiently",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "According to Boston Globe reporting, Smiley has largely accomplished his back-to-basics goals focused on potholes, road plowing, and city efficiency.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Pass a comprehensive plan to make building housing easier and faster",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "A comprehensive plan has been passed to streamline housing development, with over 1,600 units of housing created or preserved, though full implementation is ongoing.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Create or preserve affordable housing units",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "The administration reports creating or preserving over 1,600 units of housing, with continued efforts underway to address housing affordability.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

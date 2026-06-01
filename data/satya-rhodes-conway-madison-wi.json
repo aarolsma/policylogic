@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Satya Rhodes-Conway",
+    "role": "Mayor",
+    "jurisdiction": "Madison, WI",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2019-04-16",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 0,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Rhodes-Conway has made substantial progress on her key campaign promises, particularly in housing policy and transit transformation. Her Housing Forward initiative and the Bus Rapid Transit project demonstrate follow-through on major commitments. Some equity and budget sustainability goals remain works in progress."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Transform Madison's transit network with Bus Rapid Transit",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Metro Transit Bus Rapid Transit (BRT) system launched in 2024, representing the largest transit investment in Madison's history with dedicated lanes and improved service.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Create policy that makes it easier to build housing",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Launched Housing Forward initiative in 2021 with updates through 2024, established new housing goals aligned with Dane County Regional Housing Strategy, and created public housing tracker for transparency.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Expand affordable housing options in Madison",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Administration has prioritized affordable housing funding and policy changes, with ongoing efforts through Housing Forward initiative, though housing affordability challenges persist citywide.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Address the city's racial and social inequities",
+      "domain_label": "Equity",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Equity has been stated as an administration priority with various programs initiated, but measurable progress on closing racial disparities remains ongoing work.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Deliver high-quality public services",
+      "domain_label": "Government Operations",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "City services have generally been maintained and expanded, including transit improvements and housing programs, though budget pressures have created future sustainability concerns.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Maintain fiscal responsibility and sustainable city budgets",
+      "domain_label": "Economy",
+      "status": "stalled",
+      "grade": "C",
+      "evidence": "2024 budget increased spending 5.9% with mayor issuing warnings about future budget sustainability; administration has deferred addressing long-term structural budget challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Increase transparency and public engagement in city government",
+      "domain_label": "Government Operations",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Created interactive housing tracker for public monitoring of progress; maintained regular public communications about administration priorities and progress.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Address climate change and sustainability goals",
+      "domain_label": "Environment",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "BRT investment supports reduced emissions; administration has maintained climate as a stated priority with various sustainability initiatives underway.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

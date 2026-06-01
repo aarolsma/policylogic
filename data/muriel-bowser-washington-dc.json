@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Muriel Bowser",
+    "role": "Mayor",
+    "jurisdiction": "Washington DC",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2023-01-02",
+    "term_end": "2027-01-02"
+  },
+  "summary": {
+    "overall_grade": "C",
+    "kept": 2,
+    "broken": 2,
+    "in_progress": 3,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Bowser has delivered on some major infrastructure promises, including the Ward 8 hospital, but fell short on the high-profile Vision Zero goal to eliminate traffic fatalities by 2024. Several housing and economic development initiatives remain in progress as she continues her third term."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Eliminate all traffic fatalities in DC by 2024 through Vision Zero initiative",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "The Vision Zero goal announced in 2015 was not achieved. DC continued to experience dozens of traffic fatalities annually through 2024, with pedestrian and cyclist deaths remaining a persistent problem.",
+      "source_url": "https://en.wikipedia.org/wiki/Muriel_Bowser",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Deliver a full-service hospital in Ward 8",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Cedar Hill Regional Medical Center opened in Ward 8, fulfilling a long-standing promise to bring full-service healthcare to the underserved community east of the Anacostia River.",
+      "source_url": "https://mayor.dc.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Do more for Ward 8 than any Mayor ever had",
+      "domain_label": "Economic Development",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Bowser has directed significant investment to Ward 8 including the new hospital, entertainment venues, and housing developments, though economic disparities persist between Ward 8 and other parts of DC.",
+      "source_url": "https://mayor.dc.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Create 36,000 new housing units by 2025",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Housing production has increased under Bowser's tenure with thousands of new units built, but the ambitious 36,000 unit target faced delays due to pandemic disruptions and rising construction costs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Establish a Black Homeownership Fund to close racial wealth gaps",
+      "domain_label": "Housing",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Black Homeownership Fund was created and funded, providing down payment assistance and resources specifically targeted at increasing Black homeownership rates in the District.",
+      "source_url": "https://mayor.dc.gov",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Reduce violent crime and make neighborhoods safer",
+      "domain_label": "Public Safety",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Violent crime, including homicides and carjackings, surged during Bowser's third term, leading to criticism of her public safety approach and tensions with the DC Council over crime legislation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Achieve universal pre-K access for all DC children",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "DC has significantly expanded pre-K access and leads the nation in early childhood education enrollment, though some families still face waitlists and access challenges.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Modernize DC's aging infrastructure including water systems",
+      "domain_label": "Infrastructure",
+      "status": "broken",
+      "grade": "D",
+      "evidence": "Despite infrastructure investments, the 2025 Potomac sewage spill that prompted a disaster emergency declaration highlighted ongoing vulnerabilities in DC's water and sewer infrastructure.",
+      "source_url": "https://www.foxnews.com",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

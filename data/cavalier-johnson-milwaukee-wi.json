@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Cavalier Johnson",
+    "role": "Mayor",
+    "jurisdiction": "Milwaukee, WI",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2021-12-23",
+    "term_end": null
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 2,
+    "broken": 0,
+    "in_progress": 5,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Cavalier Johnson has made measurable progress on his core priorities of violence reduction, lead pipe replacement, and economic development. His administration achieved record lead service line replacements in 2024 and has maintained focus on public safety initiatives. Several major promises remain in progress as ongoing multi-year efforts."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Accelerate the replacement of lead service lines delivering water to Milwaukee homes",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "A",
+      "evidence": "Milwaukee Water Works replaced 2,700 lead service lines in 2024, the most ever replaced in a single year according to the 2025 State of the City address.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Reduce violent crime and build a safer city",
+      "domain_label": "Public Safety",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Violence reduction has been a stated top priority since taking office. The administration has implemented multiple public safety initiatives including the Office of Violence Prevention programs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Improve roadway safety throughout Milwaukee",
+      "domain_label": "Infrastructure",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Roadway safety is listed as a core administration priority with ongoing Vision Zero-style initiatives, though traffic fatalities remain a persistent challenge.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Promote economic development and job creation in Milwaukee",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Economic development is a stated administration priority. Johnson has supported major development projects and workforce initiatives during his tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Launch Adopt-A-Neighborhood program to improve city neighborhoods",
+      "domain_label": "Community Development",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Adopt-A-Neighborhood initiative was launched and is listed as an active program on the Mayor's Office website.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Establish Financial Empowerment Center to help residents build economic stability",
+      "domain_label": "Economy",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "The Financial Empowerment Center is operational and listed as an active initiative under the Mayor's Office programs.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Address Milwaukee's structural budget deficit and fiscal challenges",
+      "domain_label": "Government Operations",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Johnson advocated for state shared revenue reform and Milwaukee received additional funding through 2023 state legislation, though long-term fiscal challenges persist.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Expand affordable housing options in Milwaukee",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Housing affordability remains a challenge in Milwaukee with limited evidence of major new affordable housing initiatives reaching completion under current administration.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

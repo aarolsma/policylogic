@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "LaToya Cantrell",
+    "role": "Mayor",
+    "jurisdiction": "New Orleans, LA",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2018-05-07",
+    "term_end": "2026-05-04"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "kept": 2,
+    "broken": 3,
+    "in_progress": 1,
+    "stalled": 2,
+    "total": 8,
+    "narrative": "Mayor Cantrell's two terms produced mixed results, with some infrastructure investment and police pay increases achieved, but her administration was marred by a federal indictment and unfulfilled promises on crime reduction and government transparency. Her legacy is significantly impacted by ethics controversies and stalled initiatives on key quality-of-life issues."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Secure state funds owed to the city and invest in critical infrastructure projects",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Cantrell's administration successfully secured state funds owed to New Orleans and utilized federal money for critical infrastructure projects, as highlighted in her final days press release.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Obtain pay raises for New Orleans police officers to address staffing shortages",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "The administration secured pay raises for NOPD officers, which Cantrell cited as a key accomplishment in her end-of-term summary.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Reduce violent crime and improve public safety in New Orleans",
+      "domain_label": "Public Safety",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Despite police pay raises, New Orleans continued to struggle with high violent crime rates throughout Cantrell's tenure, with the city remaining among the most dangerous in the nation.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Run an ethical, transparent city government",
+      "domain_label": "Government Reform",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Cantrell became the first sitting mayor in New Orleans history to be federally indicted while in office in 2025, following controversies over travel expenses and her security detail chief's indictment in 2024.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Protect immigrant communities by limiting cooperation with ICE",
+      "domain_label": "Immigration",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Cantrell supported and passed a resolution requiring NOPD to deny ICE detainer requests, working with the Congress of Day Laborers and the Orleans Parish Sheriff.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Develop and implement a strategic plan to support New Orleans nightlife and cultural economy",
+      "domain_label": "Economy",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Cantrell announced a strategic plan to support the city's nightlife in late 2025, just three months before leaving office, leaving implementation to her successor.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Fix the city's drainage and flood protection systems",
+      "domain_label": "Infrastructure",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "While some infrastructure investment occurred, the Sewerage & Water Board continued to face operational challenges and the city experienced repeated flooding events during her tenure.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Address blight and improve neighborhood quality of life",
+      "domain_label": "Housing",
+      "status": "stalled",
+      "grade": "D",
+      "evidence": "Blight reduction efforts showed inconsistent progress, with many neighborhoods continuing to report abandoned properties and slow code enforcement response times.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}

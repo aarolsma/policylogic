@@ -1,0 +1,104 @@
+{
+  "official": {
+    "name": "Ras Baraka",
+    "role": "Mayor",
+    "jurisdiction": "Newark, NJ",
+    "party": "Democratic",
+    "photo_url": "",
+    "term_start": "2014-07-01",
+    "term_end": "2026-06-30"
+  },
+  "summary": {
+    "overall_grade": "B",
+    "kept": 4,
+    "broken": 1,
+    "in_progress": 2,
+    "stalled": 1,
+    "total": 8,
+    "narrative": "Mayor Baraka has made significant progress on public safety reforms, lead pipe replacement, and establishing Newark as a sanctuary city. His administration has struggled with some affordable housing targets and economic development timelines. His 2025 gubernatorial campaign was unsuccessful, but he continues serving as mayor through his current term."
+  },
+  "promises": [
+    {
+      "id": 1,
+      "text": "Replace all lead service lines in Newark to ensure safe drinking water",
+      "domain_label": "Infrastructure",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Newark completed replacement of approximately 23,000 lead service lines by 2021, ahead of schedule and at no cost to residents, becoming a national model for lead pipe remediation.",
+      "source_url": "https://www.newarknj.gov/news/newark-completes-lead-service-line-replacement-program",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 2,
+      "text": "Establish Newark as a sanctuary city to protect undocumented immigrants",
+      "domain_label": "Immigration",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Newark has maintained sanctuary city policies limiting cooperation with federal immigration enforcement. Baraka was notably arrested by ICE in 2025 while defending these policies, demonstrating strong commitment.",
+      "source_url": "https://www.theguardian.com/us-news/newark-mayor-ras-baraka-ice-arrest",
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 3,
+      "text": "Create a civilian complaint review board with subpoena power for police oversight",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Newark established a Civilian Complaint Review Board with investigative powers to review police misconduct allegations, fulfilling a key police reform promise.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 4,
+      "text": "Build 6,000 units of affordable housing during mayoral tenure",
+      "domain_label": "Housing",
+      "status": "in_progress",
+      "grade": "C",
+      "evidence": "Newark has added several thousand affordable units through various developments, but has not fully reached the 6,000-unit target. Progress continues through inclusionary zoning requirements.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 5,
+      "text": "Reduce violent crime through community-based intervention programs",
+      "domain_label": "Public Safety",
+      "status": "kept",
+      "grade": "B",
+      "evidence": "Newark's Newark Community Street Team and other violence intervention programs have contributed to multi-year declines in shootings and homicides since 2014, though crime remains a challenge.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 6,
+      "text": "Implement universal pre-K for all Newark children",
+      "domain_label": "Education",
+      "status": "in_progress",
+      "grade": "B",
+      "evidence": "Newark has significantly expanded pre-K access through state partnerships, though universal coverage for all eligible children has not been fully achieved.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 7,
+      "text": "Create a municipal ID program for all Newark residents regardless of immigration status",
+      "domain_label": "Immigration",
+      "status": "kept",
+      "grade": "A",
+      "evidence": "Newark launched the IDNYC-style municipal identification program providing IDs to all residents including undocumented immigrants, fulfilling this inclusion promise.",
+      "source_url": null,
+      "date_checked": "2026-03-09"
+    },
+    {
+      "id": 8,
+      "text": "Win the Democratic primary for New Jersey Governor in 2025",
+      "domain_label": "Electoral",
+      "status": "broken",
+      "grade": "F",
+      "evidence": "Baraka announced his gubernatorial campaign in February 2024 but lost the Democratic primary on June 10, 2025, failing to advance to the general election.",
+      "source_url": "https://ballotpedia.org/Ras_J._Baraka",
+      "date_checked": "2026-03-09"
+    }
+  ],
+  "last_updated": "2026-03-09",
+  "methodology_version": "1.0"
+}
