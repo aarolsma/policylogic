@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error Log — PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gold-light: #d4a843; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
+
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 40px 80px; }
+
+  .page-title { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .page-deck { font-family: 'Playfair Display', serif; font-style: italic; font-size: 18px; color: var(--gray); margin-bottom: 12px; line-height: 1.5; }
+  .page-policy { font-size: 13px; color: var(--gray); line-height: 1.6; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--rule); }
+  .page-policy a { color: var(--gold); text-decoration: none; }
+
+  /* Stats row */
+  .stats-row { display: flex; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-bottom: 40px; }
+  .stat-box { background: var(--paper); padding: 20px 24px; flex: 1; }
+  .stat-val { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; line-height: 1; margin-bottom: 4px; }
+  .stat-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); }
+
+  /* Empty state */
+  .empty-state { text-align: center; padding: 80px 40px; border: 1px solid var(--rule); }
+  .empty-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+  .empty-body { font-size: 14px; color: var(--gray); line-height: 1.6; max-width: 440px; margin: 0 auto; }
+
+  /* Log entries */
+  .log-entry { border: 1px solid var(--rule); margin-bottom: 12px; background: var(--paper); }
+  .log-header { display: flex; align-items: flex-start; gap: 16px; padding: 18px 20px; cursor: pointer; }
+  .log-header:hover { background: var(--cream); }
+  .log-date { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); flex-shrink: 0; margin-top: 3px; width: 80px; }
+  .log-main { flex: 1; }
+  .log-type { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px; }
+  .log-type.correction { color: var(--red); }
+  .log-type.update { color: var(--gold); }
+  .log-type.retraction { color: var(--red); }
+  .log-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+  .log-official { font-size: 12px; color: var(--gray); }
+  .log-toggle { font-size: 18px; color: var(--rule); flex-shrink: 0; transition: transform 0.2s; }
+  .log-entry.open .log-toggle { transform: rotate(90deg); }
+
+  .log-detail { display: none; border-top: 1px solid var(--cream); padding: 20px; }
+  .log-entry.open .log-detail { display: block; }
+
+  .detail-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .detail-block { background: var(--cream); padding: 14px 16px; }
+  .detail-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-bottom: 6px; }
+  .detail-val { font-size: 13px; line-height: 1.5; }
+  .detail-reason { font-size: 13px; line-height: 1.6; color: var(--gray); margin-bottom: 12px; }
+  .detail-source { font-size: 11px; color: var(--gray); }
+  .detail-source a { color: var(--gold); text-decoration: none; }
+
+  /* Filter bar */
+  .filter-row { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+  .filter-btn { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); cursor: pointer; padding: 5px 12px; border: 1px solid transparent; background: none; transition: all 0.15s; }
+  .filter-btn:hover { border-color: var(--rule); color: var(--ink); }
+  .filter-btn.active { border-color: var(--ink); color: var(--ink); background: var(--cream); }
+  .filter-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-right: 4px; }
+
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 40px; }
+  footer a { color: var(--gray); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 768px) {
+    .masthead-nav { gap: 16px; justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+    .masthead { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+
+<style>
+/* ── MOBILE OVERRIDES (max-width: 600px) ── */
+@media (max-width: 600px) {
+  /* Masthead */
+  .masthead { padding: 20px 20px 14px; }
+  .masthead::before { margin-bottom: 14px; }
+
+  /* Nav — horizontal scroll, no wrap */
+  .masthead-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+  .masthead-nav a, .nav-dropdown-trigger {
+    white-space: nowrap;
+  }
+
+  /* Main content padding */
+  .wrap, .coming-soon, .page-wrap, .content-wrap,
+  [style*="padding: 0 40px"], [style*="padding:0 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Grids — single column on mobile */
+  .principle-grid,
+  .flag-grid,
+  .tflag-grid,
+  .limitations-grid,
+  .stats-row,
+  .session-grid,
+  .detail-row,
+  .cs-categories {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Card grids */
+  [style*="grid-template-columns: repeat(auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables — horizontal scroll */
+  .rubric-table, .grade-table, .lookup-table,
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .rubric-table td, .lookup-table td, table td,
+  .rubric-table th, .lookup-table th, table th {
+    white-space: normal;
+    min-width: 100px;
+  }
+
+  /* Methodology tab nav */
+  .tab-nav-inner {
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn { padding: 11px 12px; font-size: 9px; }
+
+  /* Modal */
+  .modal-overlay, .pres-modal-overlay { padding: 16px 12px; }
+  .modal-box, .pres-modal { width: 100%; }
+
+  /* Footer */
+  footer { padding: 16px 20px; }
+}
+
+@media (max-width: 380px) {
+  .masthead-title { font-size: 32px !important; }
+  .masthead-eyebrow { letter-spacing: 0.12em; }
+}
+</style>
+
+<style>
+@media (max-width: 600px) {
+  .stats-row { flex-wrap: wrap; }
+  .stat-box { flex: 1 1 calc(50% - 1px); min-width: 0; }
+}
+@media (max-width: 360px) {
+  .stat-box { flex: 1 1 100%; }
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">EST. 2026 &middot; UNITED STATES</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Error Log</div>
+  <div class="masthead-rule"><span></span><em>CORRECTIONS &amp; RETRACTIONS</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html#elected">Elected Officials</a>
+        <a href="/methodology.html#agencies">Depts &amp; Agencies</a>
+        <a href="/methodology.html#presidential">Presidential &amp; International</a>
+        <a href="/methodology.html#ai">AI Pipeline</a>
+        <a href="/methodology.html#limits">Limitations</a>
+      </div>
+    </div>
+    <a href="/error-log.html" class="active">Error Log</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="page-title">Error Log</div>
+  <div class="page-deck">Every correction to a published scorecard, documented in full.</div>
+  <div class="page-policy">
+    When a scorecard is found to contain an error — a promise misclassified, evidence overlooked, or a score that doesn't match the documented record — the correction is made and logged here with the original score, the corrected score, the evidence that prompted the change, and the date. Corrections submitted by officials, staff, or the public go through the same review process. To report an error, use the "Report an error" link on any scorecard, or visit the <a href="/about.html">About page</a> for more on the dispute process.
+  </div>
+
+  <div class="stats-row" id="stats-row">
+    <div class="stat-box">
+      <div class="stat-val" id="stat-total">0</div>
+      <div class="stat-label">Total corrections</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" id="stat-score">0</div>
+      <div class="stat-label">Score changes</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" id="stat-evidence">0</div>
+      <div class="stat-label">Evidence updates</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" id="stat-retraction">0</div>
+      <div class="stat-label">Retractions</div>
+    </div>
+  </div>
+
+  <div class="filter-row">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="correction">Score corrections</button>
+    <button class="filter-btn" data-filter="update">Evidence updates</button>
+    <button class="filter-btn" data-filter="retraction">Retractions</button>
+  </div>
+
+  <div id="log-container"></div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
+</footer>
+
+<script>
+// ── LOG DATA ────────────────────────────────────────────────────
+// Add entries here as corrections are made. Each entry:
+// {
+//   id: unique string,
+//   date: 'YYYY-MM-DD',
+//   type: 'correction' | 'update' | 'retraction',
+//   official: 'Name',
+//   office: 'Role · Jurisdiction',
+//   title: 'Short description of what changed',
+//   promise: 'The promise text',
+//   original: 'Original score or classification',
+//   corrected: 'Corrected score or classification',
+//   reason: 'Why the change was made — evidence-based explanation',
+//   submitted_by: 'Public report | Internal review | Official submission',
+//   source_url: '',
+//   source_label: ''
+// }
+
+var LOG_ENTRIES = [
+  // Example entry (commented out — remove comment markers when first real entry is added):
+  // {
+  //   id: 'example-001',
+  //   date: '2026-04-15',
+  //   type: 'correction',
+  //   official: 'Example Official',
+  //   office: 'Governor · Example State',
+  //   title: 'Delivery score corrected from D1 to D2',
+  //   promise: '"I will pass a tenant protection bill in the first session."',
+  //   original: 'D1 (Minimal) — Statements and plans only',
+  //   corrected: 'D2 (Partial) — Bill introduced and passed committee',
+  //   reason: 'Initial scoring missed the bill\'s committee passage in March 2025. Legislative record (state legislature official website) confirms the bill passed the Housing Committee 7-2 on March 14, 2025.',
+  //   submitted_by: 'Public report',
+  //   source_url: 'https://legislature.example.state.gov/bills/HB-123',
+  //   source_label: 'State Legislature — HB 123 Committee Record'
+  // },
+];
+
+// ── RENDER ──────────────────────────────────────────────────────
+var activeFilter = 'all';
+
+function typeLabel(type) {
+  return { correction: 'Score Correction', update: 'Evidence Update', retraction: 'Retraction' }[type] || type;
+}
+
+function fmtDate(str) {
+  var d = new Date(str + 'T12:00:00');
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function renderLog() {
+  var container = document.getElementById('log-container');
+  var entries = activeFilter === 'all' ? LOG_ENTRIES : LOG_ENTRIES.filter(function(e) { return e.type === activeFilter; });
+
+  // Update stats
+  document.getElementById('stat-total').textContent = LOG_ENTRIES.length;
+  document.getElementById('stat-score').textContent = LOG_ENTRIES.filter(function(e) { return e.type === 'correction'; }).length;
+  document.getElementById('stat-evidence').textContent = LOG_ENTRIES.filter(function(e) { return e.type === 'update'; }).length;
+  document.getElementById('stat-retraction').textContent = LOG_ENTRIES.filter(function(e) { return e.type === 'retraction'; }).length;
+
+  if (entries.length === 0) {
+    container.innerHTML =
+      '<div class="empty-state">' +
+        '<div class="empty-title">' + (activeFilter === 'all' ? 'No corrections on record' : 'No entries of this type') + '</div>' +
+        '<div class="empty-body">' +
+          (activeFilter === 'all'
+            ? 'This log will be updated whenever a published scorecard is corrected. All corrections are documented here with the original and corrected scores and the evidence that prompted the change.'
+            : 'No ' + typeLabel(activeFilter).toLowerCase() + 's have been logged yet.') +
+        '</div>' +
+      '</div>';
+    return;
+  }
+
+  // Sort newest first
+  var sorted = entries.slice().sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+  container.innerHTML = sorted.map(function(e) {
+    var hasScore = e.original && e.corrected;
+    return '<div class="log-entry" id="entry-' + e.id + '">' +
+      '<div class="log-header" onclick="toggleEntry(\'' + e.id + '\')">' +
+        '<div class="log-date">' + fmtDate(e.date) + '</div>' +
+        '<div class="log-main">' +
+          '<div class="log-type ' + e.type + '">' + typeLabel(e.type) + '</div>' +
+          '<div class="log-title">' + e.title + '</div>' +
+          '<div class="log-official">' + e.official + ' · ' + e.office + '</div>' +
+        '</div>' +
+        '<div class="log-toggle">›</div>' +
+      '</div>' +
+      '<div class="log-detail">' +
+        (e.promise ? '<div style="font-size:13px;font-style:italic;color:var(--gray);margin-bottom:16px;padding:12px 16px;border-left:3px solid var(--rule);">' + e.promise + '</div>' : '') +
+        (hasScore ?
+          '<div class="detail-row">' +
+            '<div class="detail-block"><div class="detail-label">Original</div><div class="detail-val">' + e.original + '</div></div>' +
+            '<div class="detail-block"><div class="detail-label">Corrected</div><div class="detail-val" style="color:var(--green);">' + e.corrected + '</div></div>' +
+          '</div>' : '') +
+        '<div class="detail-label" style="margin-bottom:6px;">Reason for change</div>' +
+        '<div class="detail-reason">' + e.reason + '</div>' +
+        '<div class="detail-source">Submitted by: ' + (e.submitted_by || '—') +
+          (e.source_url ? ' · <a href="' + e.source_url + '" target="_blank" rel="noopener">' + (e.source_label || e.source_url) + '</a>' : '') +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function toggleEntry(id) {
+  var entry = document.getElementById('entry-' + id);
+  entry.classList.toggle('open');
+}
+
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    activeFilter = btn.dataset.filter;
+    renderLog();
+  });
+});
+
+renderLog();
+</script>
+
+<script>
+(function() {
+  function closeAll() { document.querySelectorAll('.nav-dropdown.open').forEach(function(el) { el.classList.remove('open'); }); }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) { dropdown.classList.add('open'); }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>
