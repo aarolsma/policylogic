@@ -3,77 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn — PolicyLogic.io</title>
+  <title>Policy Glossary — PolicyLogic.io</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4; --gold: #b8892a; --gold-light: #d4a843; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459; --blue: #1a3a6b; }
+    :root { --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4; --gold: #b8892a; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459; --blue: #1a3a6b; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
-    .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
+    .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; }
   .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
   .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
-  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
   .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
   .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
   .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
   .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
-
-    /* HERO */
-    .hero { max-width: 900px; margin: 80px auto 0; padding: 0 40px; text-align: center; }
-    .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(40px, 7vw, 80px); font-weight: 900; line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 24px; }
+    .learn-nav { border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--cream); position: sticky; top: 0; z-index: 100; overflow-x: auto; }
+    .learn-nav-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-right: 8px; white-space: nowrap; }
+    .learn-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 4px 12px; border: 1px solid transparent; white-space: nowrap; transition: all 0.15s; }
+    .learn-nav a:hover { border-color: var(--rule); color: var(--ink); }
+    .learn-nav a.active { border-color: var(--ink); color: var(--ink); background: var(--paper); }
+    .hero { max-width: 780px; margin: 64px auto 0; padding: 0 40px; }
+    .hero-track { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 64px); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px; }
     .hero-title em { font-style: italic; color: var(--gold); }
-    .hero-intro { font-size: 18px; line-height: 1.75; color: var(--gray); font-weight: 300; max-width: 640px; margin: 0 auto 48px; }
-    .hero-divider { display: flex; align-items: center; gap: 16px; justify-content: center; margin-bottom: 64px; }
-    .hero-divider span { flex: 1; max-width: 80px; height: 1px; background: var(--rule); }
-    .hero-divider em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
-
-    /* MODULE GRID */
-    .modules { max-width: 900px; margin: 0 auto; padding: 0 40px 100px; }
-    .modules-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 24px; text-align: center; }
-    .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-    @media (max-width: 740px) { .module-grid { grid-template-columns: 1fr; } }
-    .module-card { background: var(--paper); padding: 36px 28px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: background 0.2s; position: relative; overflow: hidden; }
-    .module-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; transition: background 0.2s; }
-    .module-card.bias::before { background: var(--red); }
-    .module-card.policy::before { background: var(--blue); }
-    .module-card.govt::before { background: var(--gold); }
-    .track-govt { color: var(--gold); }
-    .module-card:hover { background: var(--cream); }
-    .module-num { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 900; color: var(--rule); line-height: 1; margin-bottom: 16px; transition: color 0.2s; }
-    .module-card:hover .module-num { color: var(--gold); }
-    .module-track { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 10px; }
-    .track-bias { color: var(--red); }
-    .track-policy { color: var(--blue); }
-    .track-influence { color: var(--green); }
-    .module-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; line-height: 1.2; margin-bottom: 12px; }
-    .module-desc { font-size: 14px; line-height: 1.7; color: var(--gray); flex: 1; margin-bottom: 24px; }
-    .module-cta { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); display: flex; align-items: center; gap: 8px; }
-    .module-cta::after { content: '→'; transition: transform 0.2s; }
-    .module-card:hover .module-cta::after { transform: translateX(4px); }
-    .module-time { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--gray); margin-top: 4px; }
-
-    /* REFERENCE ROW */
-    .reference-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 1px; }
-    @media (max-width: 600px) { .reference-row { grid-template-columns: 1fr; } }
-    .ref-card { background: var(--cream); padding: 24px 28px; text-decoration: none; color: var(--ink); transition: background 0.2s; display: flex; align-items: center; gap: 20px; }
-    .ref-card:hover { background: var(--paper); }
-    .ref-icon { font-size: 28px; opacity: 0.5; }
-    .ref-title { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; margin-bottom: 4px; }
-    .ref-desc { font-size: 13px; color: var(--gray); line-height: 1.5; }
-
-    /* MANIFESTO */
-    .manifesto { max-width: 680px; margin: 80px auto 0; padding: 0 40px 80px; text-align: center; }
-    .manifesto-rule { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; }
-    .manifesto-rule span { flex: 1; height: 1px; background: var(--rule); }
-    .manifesto-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
-    .manifesto blockquote { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(18px, 2.5vw, 24px); line-height: 1.5; color: var(--ink); margin-bottom: 24px; }
-    .manifesto-attribution { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); }
-
-    /* OPACITY ANIM */
-    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-    .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+    .hero-deck { font-size: 17px; line-height: 1.7; color: var(--gray); font-weight: 300; border-left: 3px solid var(--gold); padding-left: 20px; margin-bottom: 40px; }
+    .hero-meta { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); padding-bottom: 32px; border-bottom: 1px solid var(--rule); }
+    /* SEARCH */
+    .glossary-controls { max-width: 780px; margin: 32px auto 0; padding: 0 40px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .search-wrap { flex: 1; min-width: 200px; position: relative; }
+    .search-wrap input { width: 100%; background: var(--cream); border: 1px solid var(--rule); padding: 10px 16px 10px 40px; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--ink); outline: none; }
+    .search-wrap input:focus { border-color: var(--ink); }
+    .search-wrap::before { content: '⌕'; position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--gray); font-size: 16px; pointer-events: none; }
+    .alpha-filters { display: flex; flex-wrap: wrap; gap: 4px; }
+    .alpha-btn { font-family: 'DM Mono', monospace; font-size: 10px; padding: 4px 8px; border: 1px solid var(--rule); background: transparent; color: var(--gray); cursor: pointer; transition: all 0.15s; }
+    .alpha-btn:hover { border-color: var(--ink); color: var(--ink); }
+    .alpha-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .alpha-btn.all-btn { padding: 4px 12px; }
+    /* GLOSSARY BODY */
+    .glossary { max-width: 780px; margin: 0 auto; padding: 24px 40px 80px; }
+    .letter-group { margin-top: 48px; }
+    .letter-heading { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 900; color: var(--rule); line-height: 1; padding-bottom: 12px; border-bottom: 2px solid var(--rule); margin-bottom: 0; }
+    .term-entry { padding: 20px 0; border-bottom: 1px solid var(--rule); display: flex; gap: 24px; }
+    .term-entry:last-child { border-bottom: none; }
+    .term-name { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; min-width: 200px; max-width: 200px; color: var(--ink); padding-top: 2px; }
+    .term-body { flex: 1; }
+    .term-def { font-size: 14px; line-height: 1.7; color: var(--ink); margin-bottom: 6px; }
+    .term-note { font-size: 13px; line-height: 1.6; color: var(--gray); font-style: italic; }
+    .term-tag { display: inline-block; font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px; border: 1px solid var(--rule); color: var(--gray); margin-right: 6px; margin-bottom: 8px; }
+    .tag-scorecard { border-color: var(--gold); color: var(--gold); }
+    .tag-congress { border-color: var(--blue); color: var(--blue); }
+    .tag-state { border-color: var(--green); color: var(--green); }
+    @media (max-width: 600px) { .term-entry { flex-direction: column; gap: 6px; } .term-name { min-width: auto; max-width: none; } }
+    .no-results { padding: 48px 0; text-align: center; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); display: none; }
+    .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
   .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
   .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
   .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
@@ -83,27 +65,108 @@
   .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
   .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
   .nav-dropdown:hover .nav-dropdown-menu { display: block; }
-  .nav-dropdown.open .nav-dropdown-menu { display: block; }
   /* Bridge: invisible padding so mouse can travel from trigger to menu */
   .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
 
-    /* LEARN SUB-NAV */
-    .learn-nav { border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--cream); overflow-x: auto; }
-    .learn-nav-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-right: 8px; white-space: nowrap; }
-    .learn-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 4px 12px; border: 1px solid transparent; white-space: nowrap; transition: all 0.15s; }
-    .learn-nav a:hover { border-color: var(--rule); color: var(--ink); }
-    .learn-nav a.active { border-color: var(--ink); color: var(--ink); background: var(--paper); }
+  /* ── LEARN SUB-NAV (matches methodology tab-nav) ── */
+  .tab-nav { border-bottom: 2px solid var(--ink); background: var(--cream); position: sticky; top: 0; z-index: 100; }
+  .tab-nav-inner { max-width: 900px; margin: 0 auto; padding: 0 40px; display: flex; gap: 0; overflow-x: auto; }
+  .tab-btn { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 13px 18px; cursor: pointer; transition: all 0.15s; white-space: nowrap; text-decoration: none; display: inline-block; }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn.active { color: var(--ink); font-weight: 500; border-bottom-color: var(--ink); }
+  @media (max-width: 640px) { .tab-nav-inner { padding: 0 16px; } .tab-btn { padding: 11px 12px; font-size: 9px; } }
+</style>
+
+<style>
+/* ── MOBILE OVERRIDES (max-width: 600px) ── */
+@media (max-width: 600px) {
+  /* Masthead */
+  .masthead { padding: 20px 20px 14px; }
+  .masthead::before { margin-bottom: 14px; }
+
+  /* Nav — horizontal scroll, no wrap */
+  .masthead-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+  .masthead-nav a, .nav-dropdown-trigger {
+    white-space: nowrap;
+  }
+
+  /* Main content padding */
+  .wrap, .coming-soon, .page-wrap, .content-wrap,
+  [style*="padding: 0 40px"], [style*="padding:0 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Grids — single column on mobile */
+  .principle-grid,
+  .flag-grid,
+  .tflag-grid,
+  .limitations-grid,
+  .stats-row,
+  .session-grid,
+  .detail-row,
+  .cs-categories {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Card grids */
+  [style*="grid-template-columns: repeat(auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables — horizontal scroll */
+  .rubric-table, .grade-table, .lookup-table,
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .rubric-table td, .lookup-table td, table td,
+  .rubric-table th, .lookup-table th, table th {
+    white-space: normal;
+    min-width: 100px;
+  }
+
+  /* Methodology tab nav */
+  .tab-nav-inner {
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn { padding: 11px 12px; font-size: 9px; }
+
+  /* Modal */
+  .modal-overlay, .pres-modal-overlay { padding: 16px 12px; }
+  .modal-box, .pres-modal { width: 100%; }
+
+  /* Footer */
+  footer { padding: 16px 20px; }
+}
+
+@media (max-width: 380px) {
+  .masthead-title { font-size: 32px !important; }
+  .masthead-eyebrow { letter-spacing: 0.12em; }
+}
 </style>
 </head>
 <body>
-
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-eyebrow">EST. 2026 &middot; UNITED STATES</div>
   <div class="masthead-title">PolicyLogic</div>
   <div class="masthead-subtitle">Education &amp; Context</div>
-  <div class="masthead-rule"><span></span><em>Learn · Understand · Act</em><span></span></div>
+  <div class="masthead-rule"><span></span><em>GLOSSARY</em><span></span></div>
   <nav class="masthead-nav">
     <a href="/">Home</a>
+    <a href="/about.html">About</a>
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger">Scorecards</span>
       <div class="nav-dropdown-menu">
@@ -111,11 +174,11 @@
         <a href="/state-local.html">State &amp; Local</a>
         <a href="/national.html">Congress</a>
         <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
         <a href="/departments.html">Depts &amp; Agencies</a>
         <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
       </div>
     </div>
-    <a href="/international.html">International</a>
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger active">Learn</span>
       <div class="nav-dropdown-menu">
@@ -124,128 +187,361 @@
         <a href="/learn-how-policy-works.html">How Policy Works</a>
         <a href="/learn-how-to-influence.html">Take Action</a>
         <a href="/learn-govt-101.html">Govt 101</a>
-        <a href="/learn-glossary.html">Glossary</a>
+        <a href="/learn-glossary.html" class="active">Glossary</a>
       </div>
     </div>
-    <a href="/methodology.html">Methodology</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html#elected">Elected Officials</a>
+        <a href="/methodology.html#agencies">Depts &amp; Agencies</a>
+        <a href="/methodology.html#presidential">Presidential &amp; International</a>
+        <a href="/methodology.html#ai">AI Pipeline</a>
+        <a href="/methodology.html#limits">Limitations</a>
+      </div>
+    </div>
+    <a href="/error-log.html">Error Log</a>
   </nav>
 </header>
 
-<nav class="learn-nav">
-  <span class="learn-nav-label">Learn —</span>
-  <a href="/learn-cognitive-biases.html">Think Clearly</a>
-  <a href="/learn-how-policy-works.html">How Policy Works</a>
-  <a href="/learn-how-to-influence.html">Take Action</a>
-  <a href="/learn-govt-101.html">Govt 101</a>
-  <a href="/learn-glossary.html">Glossary</a>
-</nav>
-
-<div class="hero fade-in">
-  <div class="hero-eyebrow">The PolicyLogic Learning Center</div>
-  <h1 class="hero-title">Read the Scorecards<br><em>With Informed Eyes</em></h1>
-  <p class="hero-intro">
-    Four short modules that give you the context to evaluate political accountability honestly — without the ideological shorthand.
-  </p>
-  <div class="hero-divider"><span></span><em>Four modules · One reference</em><span></span></div>
-</div>
-
-<div class="modules">
-  <div class="modules-label">The Curriculum</div>
-
-  <div class="module-grid fade-in">
-    <a href="/learn-cognitive-biases.html" class="module-card bias">
-      <div class="module-num">1</div>
-      <div class="module-track track-bias">Think Clearly</div>
-      <div class="module-title">Why Smart People Believe Wrong Things</div>
-      <div class="module-desc">Six cognitive shortcuts that make objective political evaluation so hard — and how to catch yourself using them. Includes illustrative examples from both parties.</div>
-      <div class="module-cta">Read the module</div>
-      <div class="module-time">12 min read</div>
-    </a>
-    <a href="/learn-how-policy-works.html" class="module-card policy">
-      <div class="module-num">2</div>
-      <div class="module-track track-policy">How Policy Works</div>
-      <div class="module-title">From Promise to Law: How Policy Actually Gets Made</div>
-      <div class="module-desc">What it takes for a policy idea to become law — the seven stages, the six kill points, and the difference between a broken promise and an undeliverable one.</div>
-      <div class="module-cta">Read the module</div>
-      <div class="module-time">10 min read</div>
-    </a>
-    <a href="/learn-how-to-influence.html" class="module-card influence">
-      <div class="module-num">3</div>
-      <div class="module-track track-influence">Take Action</div>
-      <div class="module-title">How to Actually Influence Policy</div>
-      <div class="module-desc">What the research shows works, what doesn't, and a practical guide to political participation organized by time and leverage — not by what feels satisfying.</div>
-      <div class="module-cta">Read the module</div>
-      <div class="module-time">8 min read</div>
-    </a>
-    <a href="/learn-govt-101.html" class="module-card govt">
-      <div class="module-num">4</div>
-      <div class="module-track track-govt">Government 101</div>
-      <div class="module-title">Terms, Elections &amp; How Long They Serve</div>
-      <div class="module-desc">Term lengths, election cycles, and what the progress bar on every scorecard actually means — with a 2024–2030 election calendar.</div>
-      <div class="module-cta">Read the module</div>
-      <div class="module-time">5 min read</div>
-    </a>
-  </div>
-
-  <div class="reference-row fade-in">
-    <a href="/learn-glossary.html" class="ref-card">
-      <div class="ref-icon">📖</div>
-      <div>
-        <div class="ref-title">Policy Glossary</div>
-        <div class="ref-desc">Plain-language definitions for terms that appear in political coverage, scorecards, and the methodology. Searchable and filterable.</div>
-      </div>
-    </a>
-    <a href="/methodology.html" class="ref-card">
-      <div class="ref-icon">⚖️</div>
-      <div>
-        <div class="ref-title">How We Score</div>
-        <div class="ref-desc">A full explanation of the methodology behind the scorecards — how promises are identified, scored, and weighted.</div>
-      </div>
-    </a>
+<div class="tab-nav">
+  <div class="tab-nav-inner">
+    <a href="/learn.html" class="tab-btn">Learning Center</a>
+    <a href="/learn-cognitive-biases.html" class="tab-btn">Think Clearly</a>
+    <a href="/learn-how-policy-works.html" class="tab-btn">How Policy Works</a>
+    <a href="/learn-how-to-influence.html" class="tab-btn">Take Action</a>
+    <a href="/learn-govt-101.html" class="tab-btn">Govt 101</a>
+    <a href="/learn-glossary.html" class="tab-btn active">Glossary</a>
   </div>
 </div>
 
-<div class="manifesto fade-in">
-  <div class="manifesto-rule"><span></span><em>Why this section exists</em><span></span></div>
-  <blockquote>
-    "Accountability without context produces outrage. Context without accountability produces excuses. The scorecards need both."
-  </blockquote>
-  <div class="manifesto-attribution">— PolicyLogic Editorial Principles</div>
+<div class="hero">
+  <div class="hero-track">Reference</div>
+  <h1 class="hero-title">Policy <em>Glossary</em></h1>
+  <p class="hero-deck">Plain-language definitions for the terms that show up in political coverage, on the scorecards, and in the methodology — without the jargon.</p>
+  <div class="hero-meta">Searchable · Updated as scorecards expand</div>
+</div>
+<div class="glossary-controls">
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search terms..." oninput="filterGlossary()">
+  </div>
+  <div class="alpha-filters" id="alphaFilters">
+    <button class="alpha-btn all-btn active" onclick="filterByLetter('all', this)">All</button>
+  </div>
+</div>
+<div class="glossary" id="glossaryBody">
+  <div class="no-results" id="noResults">No terms found</div>
+
+  <!-- A -->
+  <div class="letter-group" data-letter="A">
+    <div class="letter-heading">A</div>
+    <div class="term-entry" data-term="amendment">
+      <div class="term-name">Amendment</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A proposed change to a bill or existing law, offered during the legislative process. Amendments can add, remove, or modify language.</div><div class="term-note">Amendments can be used to improve bills, but also to attach unrelated provisions, weaken key elements, or create "poison pills" designed to sink the whole thing.</div></div>
+    </div>
+    <div class="term-entry" data-term="appropriations">
+      <div class="term-name">Appropriations</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">The process by which Congress allocates funding for government programs. Separate from authorizations — a program can be authorized to exist but receive no money if it isn't appropriated.</div><div class="term-note">Many policy promises require both authorization (permission to do something) and appropriation (money to do it). Politicians sometimes take credit for authorizations that were never funded.</div></div>
+    </div>
+    <div class="term-entry" data-term="attribution modifier">
+      <div class="term-name">Attribution Modifier</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">A factor in PolicyLogic's scoring that adjusts credit based on how much an official could actually control the outcome. Ranges from 1.0 (full control) to 0.0 (no meaningful role).</div><div class="term-note">A senator in the minority party trying to pass legislation through a hostile chamber would receive a lower attribution modifier than a governor signing a bill with supermajority legislative support.</div></div>
+    </div>
+    <div class="term-entry" data-term="authorization">
+      <div class="term-name">Authorization</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">Legislation that creates a program or establishes that something is legally permitted. Does not itself provide funding — that requires a separate appropriations bill.</div></div>
+    </div>
+  </div>
+
+  <!-- B -->
+  <div class="letter-group" data-letter="B">
+    <div class="letter-heading">B</div>
+    <div class="term-entry" data-term="bicameral">
+      <div class="term-name">Bicameral</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A legislative system with two chambers. The U.S. Congress is bicameral: the House of Representatives and the Senate. Most federal legislation must pass both chambers in identical form.</div><div class="term-note">Most U.S. state legislatures are also bicameral. Nebraska is the only exception — it has a single-chamber legislature.</div></div>
+    </div>
+    <div class="term-entry" data-term="budget reconciliation">
+      <div class="term-name">Budget Reconciliation</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A special legislative process that allows Congress to pass certain budget-related bills with a simple majority (51 votes) in the Senate, bypassing the usual 60-vote threshold to end debate.</div><div class="term-note">Reconciliation can only be used for legislation related to spending, taxes, or the debt limit. Its use has become increasingly common for major legislation when the majority party can't reach 60 votes.</div></div>
+    </div>
+    <div class="term-entry" data-term="bully pulpit">
+      <div class="term-name">Bully Pulpit</div>
+      <div class="term-body"><div class="term-def">The platform a president or major elected official uses to influence public opinion and pressure other officials. The term originates with Theodore Roosevelt's description of the presidency.</div><div class="term-note">Using the bully pulpit is real political action, even when it doesn't result in legislation. We count visible, sustained public pressure campaigns when scoring executive promises.</div></div>
+    </div>
+  </div>
+
+  <!-- C -->
+  <div class="letter-group" data-letter="C">
+    <div class="letter-heading">C</div>
+    <div class="term-entry" data-term="caucus">
+      <div class="term-name">Caucus</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">An informal group of legislators who meet to pursue common goals. The term also refers to the voting meeting process used in some states to select presidential nominees instead of primaries.</div></div>
+    </div>
+    <div class="term-entry" data-term="chamber">
+      <div class="term-name">Chamber</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">One body of a bicameral legislature. At the federal level, the two chambers are the Senate and the House of Representatives. Each has different rules, terms, and powers.</div></div>
+    </div>
+    <div class="term-entry" data-term="cloture">
+      <div class="term-name">Cloture</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">The Senate procedure to end debate and bring a matter to a vote. Requires 60 votes for most legislation. Effectively, reaching cloture is the same as having 60 votes to pass a bill.</div><div class="term-note">The 60-vote cloture threshold is a Senate rule, not a constitutional requirement. It can be changed by a simple majority — something known as the "nuclear option."</div></div>
+    </div>
+    <div class="term-entry" data-term="committee">
+      <div class="term-name">Committee</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A subset of legislators organized to review legislation and conduct oversight in a specific policy area. Most legislation must pass through a committee before reaching the full chamber floor.</div><div class="term-note">Committee chairs have enormous gatekeeping power. Bills can be kept in committee indefinitely without a vote — effectively killing them without any member having to vote no.</div></div>
+    </div>
+    <div class="term-entry" data-term="conference committee">
+      <div class="term-name">Conference Committee</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A temporary joint committee of House and Senate members formed to reconcile differences between House and Senate versions of the same bill. The compromise produced must then be approved by both chambers.</div></div>
+    </div>
+  </div>
+
+  <!-- D -->
+  <div class="letter-group" data-letter="D">
+    <div class="letter-heading">D</div>
+    <div class="term-entry" data-term="delivery rate">
+      <div class="term-name">Delivery Rate</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">On PolicyLogic scorecards, the estimated percentage of an official's promises that have been substantially delivered. Calculated from outcome scores across all tracked promises.</div><div class="term-note">The delivery rate is an estimate, not a precise measurement. Promises vary in complexity and completeness of available evidence. See the methodology for full detail.</div></div>
+    </div>
+    <div class="term-entry" data-term="difficulty multiplier">
+      <div class="term-name">Difficulty Multiplier</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">A factor in PolicyLogic's scoring that adjusts for how hard a promise was to keep, based on legislative barriers, required coalition size, constitutional constraints, and external complexity. Ranges from 1.0 (easy) to 2.5 (extremely hard).</div></div>
+    </div>
+    <div class="term-entry" data-term="discretionary spending">
+      <div class="term-name">Discretionary Spending</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">Government spending that is determined through the annual appropriations process — as opposed to mandatory spending (like Social Security and Medicare), which flows automatically under existing law.</div><div class="term-note">Defense, education, infrastructure, and most domestic programs fall under discretionary spending. About 30% of the federal budget is discretionary.</div></div>
+    </div>
+  </div>
+
+  <!-- E -->
+  <div class="letter-group" data-letter="E">
+    <div class="letter-heading">E</div>
+    <div class="term-entry" data-term="executive action">
+      <div class="term-name">Executive Action</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">Any action taken by the president or a governor that doesn't require legislative approval — including executive orders, memoranda, agency direction, and prosecutorial discretion.</div><div class="term-note">Executive actions are real policy changes, but they're more fragile than legislation. The next administration can reverse them without any Congressional action. We note this distinction when scoring promises delivered via executive action.</div></div>
+    </div>
+    <div class="term-entry" data-term="executive order">
+      <div class="term-name">Executive Order</div>
+      <div class="term-body"><div class="term-def">A formal directive from the president (or governor at the state level) to federal agencies and departments. Has the force of law within the executive branch.</div><div class="term-note">Executive orders can only reach as far as the president's constitutional authority. They can't create new programs that require funding, override existing laws, or amend the Constitution.</div></div>
+    </div>
+  </div>
+
+  <!-- F -->
+  <div class="letter-group" data-letter="F">
+    <div class="letter-heading">F</div>
+    <div class="term-entry" data-term="filibuster">
+      <div class="term-name">Filibuster</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">The Senate practice of extending debate to delay or block a vote. Originally involved senators speaking continuously; the modern filibuster typically requires only a threat. Stopping it requires 60 votes for cloture.</div><div class="term-note">The filibuster doesn't exist in the House, which has strict time limits on debate. This is one reason the Senate is slower and requires more consensus to act.</div></div>
+    </div>
+    <div class="term-entry" data-term="fiscal year">
+      <div class="term-name">Fiscal Year</div>
+      <div class="term-body"><div class="term-def">The 12-month period used for budgeting and financial reporting. The federal fiscal year runs October 1 through September 30 — so fiscal year 2025 began October 1, 2024.</div></div>
+    </div>
+    <div class="term-entry" data-term="floor vote">
+      <div class="term-name">Floor Vote</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A vote taken by the full membership of a legislative chamber, as opposed to a committee vote. A bill typically requires both a committee vote and a floor vote to advance.</div></div>
+    </div>
+  </div>
+
+  <!-- G -->
+  <div class="letter-group" data-letter="G">
+    <div class="letter-heading">G</div>
+    <div class="term-entry" data-term="gerrymandering">
+      <div class="term-name">Gerrymandering</div>
+      <div class="term-body"><div class="term-tag tag-state">State</div><div class="term-def">The drawing of legislative district boundaries to favor a particular party or group. Named after Elbridge Gerry, a Massachusetts governor who signed a district shaped like a salamander in 1812.</div><div class="term-note">Gerrymandering affects the pool of candidates who can win in a district, which shapes what promises they need to make — and who they're accountable to once in office.</div></div>
+    </div>
+    <div class="term-entry" data-term="governor">
+      <div class="term-name">Governor</div>
+      <div class="term-body"><div class="term-tag tag-state">State</div><div class="term-def">The chief executive of a U.S. state. Has executive authority over state agencies, usually holds veto power over state legislation, and is the commander of the state National Guard unless federalized.</div><div class="term-note">Governors have more unilateral executive authority in many areas than the president — particularly because most have a line-item veto that the president lacks.</div></div>
+    </div>
+  </div>
+
+  <!-- L -->
+  <div class="letter-group" data-letter="L">
+    <div class="letter-heading">L</div>
+    <div class="term-entry" data-term="lame duck">
+      <div class="term-name">Lame Duck</div>
+      <div class="term-body"><div class="term-def">An elected official serving out the remainder of their term after losing an election or being term-limited. The period between Election Day and the next inauguration is sometimes called the "lame duck session."</div><div class="term-note">Lame duck officials have less political leverage — but also less political constraint. They sometimes act more boldly (or more purely in self-interest) when they no longer face voters.</div></div>
+    </div>
+    <div class="term-entry" data-term="legislation">
+      <div class="term-name">Legislation</div>
+      <div class="term-body"><div class="term-def">A bill or resolution that has been passed by a legislative body. At the federal level, legislation becomes law when passed by both chambers of Congress and signed by the president (or when Congress overrides a veto).</div></div>
+    </div>
+    <div class="term-entry" data-term="line-item veto">
+      <div class="term-name">Line-Item Veto</div>
+      <div class="term-body"><div class="term-tag tag-state">State</div><div class="term-def">The authority to reject specific provisions of a bill — particularly spending items — without vetoing the entire legislation. Most governors have this power. The president does not (the Supreme Court struck down a federal line-item veto in 1998).</div></div>
+    </div>
+  </div>
+
+  <!-- M -->
+  <div class="letter-group" data-letter="M">
+    <div class="letter-heading">M</div>
+    <div class="term-entry" data-term="majority leader">
+      <div class="term-name">Majority Leader</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">The top elected leader of the majority party in the Senate (or the second-ranking leader in the House, after the Speaker). Controls the Senate floor schedule and has enormous gatekeeping power over what comes to a vote.</div></div>
+    </div>
+    <div class="term-entry" data-term="mandate">
+      <div class="term-name">Mandate</div>
+      <div class="term-body"><div class="term-def">The authority an elected official claims to have based on election results. A candidate who wins by a large margin often claims a mandate to pursue their platform. The term is not legally defined and is frequently contested.</div><div class="term-note">Politicians across both parties claim mandates when they win. Whether an election result actually indicates broad public support for a specific policy is a separate and harder question.</div></div>
+    </div>
+    <div class="term-entry" data-term="markup">
+      <div class="term-name">Markup</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">The committee process of reviewing, amending, and approving a bill for floor consideration. During markup, committee members can change the bill significantly before it reaches the full chamber.</div></div>
+    </div>
+    <div class="term-entry" data-term="minority party">
+      <div class="term-name">Minority Party</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">The political party that holds fewer seats in a legislative chamber. In PolicyLogic scorecards, we flag when senators are in the minority party and apply attribution modifiers accordingly — minority senators have significantly limited ability to pass legislation.</div></div>
+    </div>
+  </div>
+
+  <!-- O -->
+  <div class="letter-group" data-letter="O">
+    <div class="letter-heading">O</div>
+    <div class="term-entry" data-term="omnibus bill">
+      <div class="term-name">Omnibus Bill</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A large bill that bundles many unrelated pieces of legislation into one package. Often used at the end of legislative sessions to move stalled priorities through as a single take-it-or-leave-it vote.</div><div class="term-note">Omnibus bills make it difficult for legislators to cast clear votes on individual issues — and make it difficult to assess who deserves credit or blame for specific provisions.</div></div>
+    </div>
+    <div class="term-entry" data-term="oversight">
+      <div class="term-name">Oversight</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">Congress's power to investigate and monitor the executive branch. Includes hearings, subpoenas, and the power to withhold funding. Oversight is a major responsibility of Congress separate from legislation.</div></div>
+    </div>
+  </div>
+
+  <!-- P -->
+  <div class="letter-group" data-letter="P">
+    <div class="letter-heading">P</div>
+    <div class="term-entry" data-term="partisan">
+      <div class="term-name">Partisan</div>
+      <div class="term-body"><div class="term-def">Acting primarily in the interest of a political party rather than on the merits of an issue. Partisan votes, gerrymandering, and messaging are driven by party loyalty rather than independent judgment.</div><div class="term-note">PolicyLogic aims to apply the same methodology to officials of all parties. Scoring is based on promise-keeping, not on whether we agree with the policy direction of the promises made.</div></div>
+    </div>
+    <div class="term-entry" data-term="preemption">
+      <div class="term-name">Preemption</div>
+      <div class="term-body"><div class="term-tag tag-state">State</div><div class="term-def">When a higher level of government (state or federal) passes a law that overrides or prohibits a lower level (local government) from acting in a particular area.</div><div class="term-note">State preemption of local laws has become increasingly common, blocking cities from passing minimum wage laws, tenant protections, gun restrictions, and more above state baselines.</div></div>
+    </div>
+    <div class="term-entry" data-term="primary election">
+      <div class="term-name">Primary Election</div>
+      <div class="term-body"><div class="term-def">An election within a party to determine who will run in the general election. Primaries typically have much lower turnout than general elections, which means a small, engaged minority often determines who reaches the general election ballot.</div></div>
+    </div>
+    <div class="term-entry" data-term="promise score">
+      <div class="term-name">Promise Score</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">PolicyLogic's per-promise score, normalized to a 0–10 scale. Derived from specificity, actions taken, outcome, attribution, and difficulty. See the methodology page for full detail.</div></div>
+    </div>
+  </div>
+
+  <!-- R -->
+  <div class="letter-group" data-letter="R">
+    <div class="letter-heading">R</div>
+    <div class="term-entry" data-term="recess appointment">
+      <div class="term-name">Recess Appointment</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A presidential appointment made while the Senate is in recess, which doesn't require Senate confirmation. The appointment expires at the end of the next Senate session unless the Senate confirms it.</div></div>
+    </div>
+    <div class="term-entry" data-term="rider">
+      <div class="term-name">Rider</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A provision added to a bill that is unrelated to the bill's main subject. Riders are often attached to must-pass legislation — like appropriations bills — to move policies that couldn't pass on their own.</div></div>
+    </div>
+    <div class="term-entry" data-term="rulemaking">
+      <div class="term-name">Rulemaking</div>
+      <div class="term-body"><div class="term-def">The process by which federal agencies develop specific regulations under authority granted by legislation. Most major laws delegate rulemaking to agencies, which then write detailed rules through a public comment process.</div><div class="term-note">Rulemaking is where a lot of the real policy substance gets decided. Agencies can write rules broadly or narrowly under the same statutory authority — and rules can be reversed by subsequent administrations.</div></div>
+    </div>
+  </div>
+
+  <!-- S -->
+  <div class="letter-group" data-letter="S">
+    <div class="letter-heading">S</div>
+    <div class="term-entry" data-term="separation of powers">
+      <div class="term-name">Separation of Powers</div>
+      <div class="term-body"><div class="term-def">The constitutional division of federal government into three branches: legislative (Congress), executive (president), and judicial (courts). Each branch has distinct powers and can check the others.</div><div class="term-note">The separation of powers is a key reason promises made by one branch often can't be delivered without cooperation from another. A president cannot pass laws; Congress cannot enforce them.</div></div>
+    </div>
+    <div class="term-entry" data-term="sunset clause">
+      <div class="term-name">Sunset Clause</div>
+      <div class="term-body"><div class="term-def">A provision in a law specifying that it will automatically expire on a certain date unless renewed by the legislature. Tax cuts and certain national security provisions frequently include sunsets.</div><div class="term-note">Sunsets can create recurring leverage: the expiration date becomes a deadline around which future negotiations are structured. Promises delivered via legislation with sunsets are considered more fragile in our scoring.</div></div>
+    </div>
+    <div class="term-entry" data-term="supermajority">
+      <div class="term-name">Supermajority</div>
+      <div class="term-body"><div class="term-def">A majority greater than a simple majority — commonly two-thirds or three-fifths. Required for constitutional amendments, overriding a presidential veto, and certain other legislative actions.</div></div>
+    </div>
+  </div>
+
+  <!-- V -->
+  <div class="letter-group" data-letter="V">
+    <div class="letter-heading">V</div>
+    <div class="term-entry" data-term="veto">
+      <div class="term-name">Veto</div>
+      <div class="term-body"><div class="term-def">The executive's power to reject legislation passed by the legislature. At the federal level, a presidential veto can be overridden by a two-thirds vote of both chambers. Most governors have similar veto authority.</div></div>
+    </div>
+    <div class="term-entry" data-term="veto player">
+      <div class="term-name">Veto Player</div>
+      <div class="term-body"><div class="term-tag tag-scorecard">Scorecard</div><div class="term-def">Any actor — individual or institutional — whose agreement is required before policy can change. In political science, counting veto players helps explain why some systems produce more change than others.</div><div class="term-note">PolicyLogic uses veto player analysis informally when assessing attribution. If an official faced multiple veto players they couldn't reasonably overcome, that affects how much credit or blame they receive for the outcome.</div></div>
+    </div>
+  </div>
+
+  <!-- W -->
+  <div class="letter-group" data-letter="W">
+    <div class="letter-heading">W</div>
+    <div class="term-entry" data-term="whip">
+      <div class="term-name">Whip</div>
+      <div class="term-body"><div class="term-tag tag-congress">Congress</div><div class="term-def">A legislative leader responsible for counting votes, maintaining party discipline, and ensuring members show up to vote on important legislation. The majority and minority whips are among the most powerful figures in each chamber.</div></div>
+    </div>
+  </div>
+
 </div>
 
 <script>
-  var fadeEls = document.querySelectorAll('.fade-in');
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-  }, { threshold: 0.08 });
-  fadeEls.forEach(function(el) { obs.observe(el); });
+  // Build alphabet filter buttons from data
+  var letters = [];
+  document.querySelectorAll('.letter-group').forEach(function(g) {
+    letters.push(g.dataset.letter);
+  });
+  var alphaContainer = document.getElementById('alphaFilters');
+  letters.forEach(function(l) {
+    var btn = document.createElement('button');
+    btn.className = 'alpha-btn';
+    btn.textContent = l;
+    btn.onclick = function() { filterByLetter(l, this); };
+    alphaContainer.appendChild(btn);
+  });
+
+  var activeLetter = 'all';
+
+  function filterByLetter(letter, btn) {
+    activeLetter = letter;
+    document.querySelectorAll('.alpha-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById('searchInput').value = '';
+    document.querySelectorAll('.letter-group').forEach(function(g) {
+      g.style.display = (letter === 'all' || g.dataset.letter === letter) ? '' : 'none';
+    });
+    document.querySelectorAll('.term-entry').forEach(function(e) { e.style.display = ''; });
+    document.getElementById('noResults').style.display = 'none';
+  }
+
+  function filterGlossary() {
+    var query = document.getElementById('searchInput').value.toLowerCase().trim();
+    document.querySelectorAll('.alpha-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelector('.all-btn').classList.add('active');
+    activeLetter = 'all';
+
+    var anyVisible = false;
+    document.querySelectorAll('.letter-group').forEach(function(g) {
+      g.style.display = '';
+      var groupHasMatch = false;
+      g.querySelectorAll('.term-entry').forEach(function(entry) {
+        var termText = entry.dataset.term || '';
+        var bodyText = entry.textContent.toLowerCase();
+        var match = !query || bodyText.includes(query);
+        entry.style.display = match ? '' : 'none';
+        if (match) { groupHasMatch = true; anyVisible = true; }
+      });
+      // Hide letter heading if no terms match in group
+      var heading = g.querySelector('.letter-heading');
+      if (heading) heading.style.display = groupHasMatch ? '' : 'none';
+      g.style.display = groupHasMatch ? '' : 'none';
+    });
+    document.getElementById('noResults').style.display = anyVisible ? 'none' : 'block';
+  }
 </script>
 <footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);">
   PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
 </footer>
 
-
-<script>
-// Mobile tap support for nav dropdowns
-(function() {
-  function closeAll() {
-    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
-      el.classList.remove('open');
-    });
-  }
-  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
-    trigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var dropdown = trigger.closest('.nav-dropdown');
-      var isOpen = dropdown.classList.contains('open');
-      closeAll();
-      if (!isOpen) {
-        dropdown.classList.add('open');
-      }
-    });
-  });
-  document.addEventListener('click', closeAll);
-})();
-</script>
 </body>
 </html>
