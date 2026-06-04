@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gold-light: #d4a843; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
+
+  /* ── MASTHEAD ── */
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  /* ── MISSION STATEMENT ── */
+  .mission { max-width: 760px; margin: 0 auto; padding: 56px 40px 0; }
+  .mission-quote { border-left: 4px solid var(--gold); padding: 24px 32px; margin-bottom: 0; }
+  .mission-quote p { font-family: 'Playfair Display', serif; font-size: clamp(18px, 2.5vw, 24px); font-style: italic; line-height: 1.6; color: var(--ink); margin-bottom: 0; }
+
+  /* ── STATS STRIP ── */
+  .stats-strip { border-top: 1px solid var(--rule); border-bottom: 3px double var(--ink); background: var(--cream); margin-top: 40px; }
+  .stats-strip-inner { max-width: 760px; margin: 0 auto; padding: 0 40px; display: flex; }
+  .stat-item { flex: 1; padding: 20px 16px; text-align: center; border-right: 1px solid var(--rule); }
+  .stat-item:last-child { border-right: none; }
+  .stat-item-val { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; line-height: 1; margin-bottom: 4px; }
+  .stat-item-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); }
+
+  /* ── CONTENT SECTIONS ── */
+  .section-wrap { max-width: 760px; margin: 0 auto; padding: 0 40px; }
+  .section { padding: 48px 0; border-bottom: 1px solid var(--rule); }
+  .section:last-child { border-bottom: none; }
+  .section-band-outer { padding: 48px 0; border-bottom: 1px solid var(--rule); }
+  .section-band { max-width: 760px; margin: 0 auto; background: var(--cream); border: 1px solid var(--rule); padding: 40px; }
+
+  .section-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .section-heading { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; margin-bottom: 18px; letter-spacing: -0.01em; }
+  p { font-size: 15px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+  p:last-child { margin-bottom: 0; }
+
+  /* ── PRINCIPLE GRID ── */
+  .principle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 28px; }
+  .principle { background: var(--paper); padding: 22px; }
+  .principle-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .principle-text { font-size: 13px; line-height: 1.65; color: var(--ink); }
+
+  /* ── FOUNDER BLOCK ── */
+  .founder-block { border: 1px solid var(--rule); border-left: 4px solid var(--gold); background: var(--cream); margin-top: 28px; }
+  .founder-inner { padding: 28px 32px; display: grid; grid-template-columns: 180px 1fr; gap: 32px; align-items: start; }
+  .founder-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .founder-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; margin-bottom: 4px; line-height: 1.1; }
+  .founder-title { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 16px; }
+  .founder-bio { font-size: 13px; line-height: 1.7; color: var(--gray); }
+  .founder-left { border-right: 1px solid var(--rule); padding-right: 32px; }
+
+  /* ── PEOPLE GRID ── */
+  .people-section-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin: 32px 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+  .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .person-card { background: var(--paper); padding: 20px; }
+  .person-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .person-title { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .person-bio { font-size: 12px; color: var(--gray); line-height: 1.6; }
+
+  /* ── PARTNER GRID ── */
+  .partner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .partner-card { background: var(--paper); padding: 20px; }
+  .partner-name { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .partner-desc { font-size: 12px; color: var(--gray); line-height: 1.55; }
+
+  /* ── DISPUTES ── */
+  .disputes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 24px; }
+  .dispute-item { background: var(--paper); padding: 22px; }
+  .dispute-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .dispute-heading { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .dispute-text { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+  .links-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+  .link-pill { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper); background: var(--ink); text-decoration: none; border: 1px solid var(--ink); padding: 10px 20px; transition: all 0.15s; }
+  .link-pill:hover { background: var(--gold); border-color: var(--gold); }
+  .link-pill.secondary { color: var(--ink); background: none; }
+  .link-pill.secondary:hover { background: var(--ink); color: var(--paper); }
+
+  /* ── FOOTER ── */
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 0; }
+  footer a { color: var(--gray); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 768px) {
+    .masthead-nav { gap: 16px; justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+    .masthead { padding-left: 20px; padding-right: 20px; }
+    .founder-inner { grid-template-columns: 1fr; gap: 0; }
+    .founder-left { border-right: none; border-bottom: 1px solid var(--rule); padding-right: 0; padding-bottom: 20px; margin-bottom: 20px; }
+    .disputes-grid { grid-template-columns: 1fr; }
+    .stats-strip-inner { flex-wrap: wrap; }
+    .stat-item { flex: 1 1 50%; border-bottom: 1px solid var(--rule); }
+  }
+
+  @media (max-width: 600px) {
+    .mission { padding: 36px 20px 0; }
+    .mission-quote { padding: 18px 20px; }
+    .stats-strip-inner { padding: 0 20px; }
+    .section-wrap { padding: 0 20px; }
+    .section-band { padding: 36px 20px; }
+    .principle-grid, .people-grid, .partner-grid { grid-template-columns: 1fr; }
+    .stat-item { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">EST. 2026 &middot; UNITED STATES</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Who We Are</div>
+  <div class="masthead-rule"><span></span><em>ABOUT POLICYLOGIC</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <a href="/about.html" class="active">About</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html#elected">Elected Officials</a>
+        <a href="/methodology.html#agencies">Depts &amp; Agencies</a>
+        <a href="/methodology.html#presidential">Presidential &amp; International</a>
+        <a href="/methodology.html#ai">AI Pipeline</a>
+        <a href="/methodology.html#limits">Limitations</a>
+      </div>
+    </div>
+    <a href="/error-log.html">Error Log</a>
+  </nav>
+</header>
+
+<!-- ── MISSION STATEMENT ── -->
+<div class="mission">
+  <div class="mission-quote">
+    <p>PolicyLogic is an independent, nonpartisan platform that measures what elected officials and government institutions promised — and what they actually did. The scoring is rigorous, the methodology is published in full, and the conclusions are yours to draw.</p>
+  </div>
+</div>
+
+<!-- ── STATS STRIP ── -->
+<div class="stats-strip">
+  <div class="stats-strip-inner">
+    <div class="stat-item">
+      <div class="stat-item-val">2026</div>
+      <div class="stat-item-label">Founded</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item-val">U.S.</div>
+      <div class="stat-item-label">Coverage</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item-val">7</div>
+      <div class="stat-item-label">Scorecard Categories</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item-val">0</div>
+      <div class="stat-item-label">Advertisers</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DESIGN PRINCIPLES (cream band) ── -->
+<div class="section-band-outer">
+  <div class="section-band">
+    <div class="section-eyebrow">Design Principles</div>
+    <div class="section-heading">Built to Be Auditable</div>
+    <p>Every design decision in the methodology was made with one question in mind: could a journalist, a researcher, or a skeptical critic reproduce this result from the same evidence? If not, the rule was not specific enough.</p>
+    <div class="principle-grid">
+      <div class="principle">
+        <div class="principle-label">Nonpartisan by design</div>
+        <div class="principle-text">The same scoring rules apply to every official regardless of party. Methodology decisions are tested against equivalent cases from both major parties before adoption.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-label">Transparent formula</div>
+        <div class="principle-text">The full scoring formula — every axis, every modifier, every flag — is published in full. There are no hidden weights or editorial adjustments.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-label">Judgment returned to the user</div>
+        <div class="principle-text">PolicyLogic surfaces evidence and scores. It does not tell you what to think. Conclusions are yours to draw.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-label">AI-assisted, human-reviewed</div>
+        <div class="principle-text">Scorecards are AI-generated drafts under human review before publication. The AI assigns bucket values; deterministic code computes the math.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-label">Errors acknowledged publicly</div>
+        <div class="principle-text">When scorecards are wrong, corrections are published in the Error Log with the original score, the corrected score, and the reason for the change.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-label">Source trails required</div>
+        <div class="principle-text">Every promise and every delivery assessment is sourced. The official's own office cannot be the sole source for a positive outcome.</div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- ── WHAT IT ISN'T (paper) ── -->
+<div class="section-wrap">
+  <div class="section">
+    <div class="section-eyebrow">Scope</div>
+    <div class="section-heading">What PolicyLogic Is Not</div>
+    <p>PolicyLogic is not a fact-checker. It does not evaluate whether statements made in office are true. It evaluates whether commitments made during campaigns or at the start of terms were followed through on.</p>
+    <p>PolicyLogic is not a rating service for policy outcomes. A promise to cut taxes is scored on whether taxes were cut — not on whether cutting taxes was good policy. The merit of the policy is outside the platform's scope.</p>
+    <p>The platform has known limitations — coverage asymmetry between large and small jurisdictions, the subjective elements of certain scoring judgments, and the risk of AI training data bias. These are documented in the <a href="/methodology.html#limits" style="color:var(--gold);">methodology</a>, not buried.</p>
+  </div>
+</div>
+
+<!-- ── THE PEOPLE (cream band) ── -->
+<div class="section-band-outer">
+  <div class="section-band">
+    <div class="section-eyebrow">The People</div>
+    <div class="section-heading">Who Builds This</div>
+    <p>PolicyLogic is an independent civic technology project. It is not affiliated with any political party, campaign, PAC, government agency, or advocacy organization. It does not accept advertising and does not accept funding from organizations with active electoral interests.</p>
+
+    <!-- FOUNDER -->
+    <div class="founder-block">
+      <div class="founder-inner">
+        <div class="founder-left">
+          <div class="founder-label">Founder</div>
+          <div class="founder-name">Anna</div>
+          <div class="founder-title">Founder &amp; Executive Director</div>
+        </div>
+        <div>
+          <div class="founder-bio">[Bio placeholder — expertise and background relevant to PolicyLogic's mission.]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOARD -->
+    <div class="people-section-label">Board of Directors</div>
+    <div class="people-grid">
+      <div class="person-card">
+        <div class="person-name">[Board Member Name]</div>
+        <div class="person-title">[Title · Organization]</div>
+        <div class="person-bio">[Bio placeholder — expertise relevant to PolicyLogic's mission.]</div>
+      </div>
+      <div class="person-card">
+        <div class="person-name">[Board Member Name]</div>
+        <div class="person-title">[Title · Organization]</div>
+        <div class="person-bio">[Bio placeholder — expertise relevant to PolicyLogic's mission.]</div>
+      </div>
+      <div class="person-card">
+        <div class="person-name">[Board Member Name]</div>
+        <div class="person-title">[Title · Organization]</div>
+        <div class="person-bio">[Bio placeholder — expertise relevant to PolicyLogic's mission.]</div>
+      </div>
+    </div>
+
+    <!-- ADVISORY -->
+    <div class="people-section-label">Advisory Board</div>
+    <div class="people-grid">
+      <div class="person-card">
+        <div class="person-name">[Advisor Name]</div>
+        <div class="person-title">[Title · Organization]</div>
+        <div class="person-bio">[Bio placeholder — area of expertise and connection to the platform's work.]</div>
+      </div>
+      <div class="person-card">
+        <div class="person-name">[Advisor Name]</div>
+        <div class="person-title">[Title · Organization]</div>
+        <div class="person-bio">[Bio placeholder — area of expertise and connection to the platform's work.]</div>
+      </div>
+      <div class="person-card">
+        <div class="person-name">[Advisor Name]</div>
+        <div class="person-title">[Title · Organization]</div>
+        <div class="person-bio">[Bio placeholder — area of expertise and connection to the platform's work.]</div>
+      </div>
+    </div>
+
+    <!-- PARTNERS -->
+    <div class="people-section-label">Partners</div>
+    <div class="partner-grid">
+      <div class="partner-card">
+        <div class="partner-name">[Partner Organization]</div>
+        <div class="partner-desc">[Brief description of the partnership and how it supports the platform's work.]</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-name">[Partner Organization]</div>
+        <div class="partner-desc">[Brief description of the partnership and how it supports the platform's work.]</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-name">[Partner Organization]</div>
+        <div class="partner-desc">[Brief description of the partnership and how it supports the platform's work.]</div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- ── DISPUTES (paper) ── -->
+<div class="section-wrap">
+  <div class="section">
+    <div class="section-eyebrow">Disputes &amp; Corrections</div>
+    <div class="section-heading">How to Challenge a Score</div>
+    <p>If you believe a scorecard contains an error — a promise misclassified, evidence overlooked, or a score that does not match the documented record — use the Report an Error link on any scorecard. Submissions are treated identically regardless of source. The evidence governs, not who submitted the challenge.</p>
+
+    <div class="disputes-grid">
+      <div class="dispute-item">
+        <div class="dispute-label">Timeline</div>
+        <div class="dispute-heading">30-Day Review</div>
+        <div class="dispute-text">All submissions are reviewed within 30 days. If a correction is warranted, the updated score is published and the change is logged in full.</div>
+      </div>
+      <div class="dispute-item">
+        <div class="dispute-label">Documentation</div>
+        <div class="dispute-heading">Full Transparency</div>
+        <div class="dispute-text">Every correction shows the original score, the corrected score, and the evidence that prompted the change. Nothing is quietly updated.</div>
+      </div>
+    </div>
+
+    <div class="links-row">
+      <a href="/methodology.html" class="link-pill">Read the Methodology</a>
+      <a href="/error-log.html" class="link-pill secondary">View Error Log</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+<script>
+(function() {
+  function closeAll() { document.querySelectorAll('.nav-dropdown.open').forEach(function(el) { el.classList.remove('open'); }); }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) { dropdown.classList.add('open'); }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>
