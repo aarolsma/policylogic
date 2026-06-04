@@ -14,96 +14,15 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
 
-  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; }
-  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
-  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
-  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
-  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
-  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
   .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
   .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
-
-  .nav-bar { border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--cream); position: sticky; top: 0; z-index: 100; flex-wrap: wrap; }
-  .nav-filter { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); cursor: pointer; padding: 4px 10px; border: 1px solid transparent; transition: all 0.15s; background: none; white-space: nowrap; }
-  .nav-filter:hover { border-color: var(--rule); color: var(--ink); }
-  .nav-filter.active { border-color: var(--ink); color: var(--ink); background: var(--paper); }
-  .nav-divider { width: 1px; height: 18px; background: var(--rule); margin: 0 4px; flex-shrink: 0; }
-  .nav-search { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
-  .nav-search input { background: var(--paper); border: 1px solid var(--rule); padding: 5px 12px; font-size: 12px; font-family: 'DM Sans', sans-serif; color: var(--ink); outline: none; width: 200px; transition: border-color 0.15s; }
-  .nav-search input:focus { border-color: var(--ink); }
-  .nav-search input::placeholder { color: var(--gray); }
-
-  .topic-bar { border-bottom: 1px solid var(--rule); padding: 8px 40px; background: var(--paper); display: flex; align-items: center; justify-content: center; gap: 10px; }
-  .topic-bar-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); white-space: nowrap; flex-shrink: 0; }
-  .topic-select { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); background: var(--paper); border: 1px solid var(--rule); padding: 4px 28px 4px 10px; cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6459'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; transition: border-color 0.15s; }
-  .topic-select:focus { border-color: var(--ink); }
-  .topic-select.filtered { border-color: var(--gold); color: var(--gold); }
-
-  /* CARD */
-  .card { background: var(--paper); padding: 24px; cursor: pointer; transition: background 0.15s; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 180px; }
-  .card:hover { background: var(--cream); }
-  .card-pending { opacity: 0.5; cursor: default; }
-  .card-draft { position: absolute; top: 10px; right: -20px; background: var(--gold); color: white; font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.15em; padding: 2px 28px; transform: rotate(45deg); }
-
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-  .card-meta-col { flex: 1; min-width: 0; }
-  .card-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
-  .card-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; line-height: 1.2; margin-bottom: 2px; }
-  .card-stats-line { font-size: 11px; color: var(--gray); }
-
-  /* Term bar on card */
-  .card-term-bar { margin-top: 7px; display: flex; align-items: center; gap: 6px; }
-  .card-term-track { flex: 1; height: 2px; background: var(--rule); }
-  .card-term-fill { height: 2px; background: var(--gold); }
-  .card-term-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--gray); white-space: nowrap; }
-
-
-  .card-narrative { font-size: 12px; line-height: 1.55; color: var(--gray); flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-
-  /* MODAL */
-  .modal-overlay-nat { display: none; position: fixed; inset: 0; background: rgba(26,23,20,0.6); z-index: 1000; overflow-y: auto; padding: 40px 20px; }
-  .modal { background: var(--paper); max-width: 760px; width: 100%; border: 1px solid var(--rule); position: relative; animation: slideUp 0.2s ease; margin: 0 auto; }
-  @keyframes slideUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
-  .modal-header { padding: 32px 36px 24px; border-bottom: 3px double var(--ink); }
-  .modal-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
-  .modal-name-lg { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 900; line-height: 1.1; margin-bottom: 4px; }
-  .modal-meta-sm { font-size: 11px; color: var(--gray); margin-bottom: 12px; }
-
-  /* Modal term block */
-  .modal-term-block { margin-bottom: 20px; padding: 14px 18px; background: var(--cream); border: 1px solid var(--rule); }
-  .modal-term-pct { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1; margin-bottom: 6px; }
-  .modal-term-bar-track { height: 3px; background: var(--rule); margin-bottom: 6px; }
-  .modal-term-bar-fill { height: 3px; }
-  .modal-term-detail { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); line-height: 1.6; }
-
-  .modal-grade-row { display: flex; align-items: center; gap: 20px; }
-  .modal-grade-lg { font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 900; line-height: 1; }
-  .modal-grade-detail { flex: 1; }
-  .modal-grade-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
-  .modal-narrative { font-size: 13px; line-height: 1.6; color: var(--gray); margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
-
-  .promise-item { padding: 16px 0; border-bottom: 1px solid var(--rule); }
-  .promise-item:last-child { border-bottom: none; }
-  .promise-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-  .promise-text { font-size: 14px; font-weight: 500; line-height: 1.4; flex: 1; }
-  .domain-tag { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); padding: 1px 7px; border: 1px solid var(--rule); flex-shrink: 0; }
-  .bars { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
-  .bar-item {}
-  .bar-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
-  .bar-track { height: 3px; background: var(--rule); }
-  .bar-fill { height: 100%; background: var(--ink); }
-  .bar-val { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--ink); margin-top: 3px; }
-  .flag-chip { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--red); color: var(--red); }
-  .confidence-chip { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--rule); color: var(--gray); }
-  .modal-foot { padding: 16px 36px; border-top: 1px solid var(--rule); background: var(--cream); }
-
-  @media (max-width: 600px) {
-    .nav-bar, .main, .topic-bar { padding-left: 20px; padding-right: 20px; }
-    .nav-bar { flex-wrap: wrap; gap: 6px; }
-    .nav-search { margin-left: 0; width: 100%; }
-    .nav-search input { width: 100%; }
-  }
-  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
   .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
   .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
   .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
@@ -116,29 +35,116 @@
   .nav-dropdown.open .nav-dropdown-menu { display: block; }
   /* Bridge: invisible padding so mouse can travel from trigger to menu */
   .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  @media (max-width: 768px) {
+    .masthead-nav { gap: 16px; justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+    .masthead { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+
+<style>
+/* ── MOBILE OVERRIDES (max-width: 600px) ── */
+@media (max-width: 600px) {
+  /* Masthead */
+  .masthead { padding: 20px 20px 14px; }
+  .masthead::before { margin-bottom: 14px; }
+
+  /* Nav — horizontal scroll, no wrap */
+  .masthead-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+  .masthead-nav a, .nav-dropdown-trigger {
+    white-space: nowrap;
+  }
+
+  /* Main content padding */
+  .wrap, .coming-soon, .page-wrap, .content-wrap,
+  [style*="padding: 0 40px"], [style*="padding:0 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Grids — single column on mobile */
+  .principle-grid,
+  .flag-grid,
+  .tflag-grid,
+  .limitations-grid,
+  .stats-row,
+  .session-grid,
+  .detail-row,
+  .cs-categories {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Card grids */
+  [style*="grid-template-columns: repeat(auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables — horizontal scroll */
+  .rubric-table, .grade-table, .lookup-table,
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .rubric-table td, .lookup-table td, table td,
+  .rubric-table th, .lookup-table th, table th {
+    white-space: normal;
+    min-width: 100px;
+  }
+
+  /* Methodology tab nav */
+  .tab-nav-inner {
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn { padding: 11px 12px; font-size: 9px; }
+
+  /* Modal */
+  .modal-overlay, .pres-modal-overlay { padding: 16px 12px; }
+  .modal-box, .pres-modal { width: 100%; }
+
+  /* Footer */
+  footer { padding: 16px 20px; }
+}
+
+@media (max-width: 380px) {
+  .masthead-title { font-size: 32px !important; }
+  .masthead-eyebrow { letter-spacing: 0.12em; }
+}
 </style>
 </head>
 <body>
 
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-eyebrow">EST. 2026 &middot; UNITED STATES</div>
   <div class="masthead-title">PolicyLogic</div>
-  <div class="masthead-subtitle">National Scorecard</div>
-  <div class="masthead-rule"><span></span><em>Congress · Senate &amp; House</em><span></span></div>
+  <div class="masthead-subtitle">Congressional Scorecards</div>
+  <div class="masthead-rule"><span></span><em>SCORECARDS &middot; JUNE 2026</em><span></span></div>
   <nav class="masthead-nav">
     <a href="/">Home</a>
+    <a href="/about.html">About</a>
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger active">Scorecards</span>
       <div class="nav-dropdown-menu">
         <a href="/scorecards.html">All Scorecards</a>
         <a href="/state-local.html">State &amp; Local</a>
-        <a href="/national.html">Congress</a>
+        <a href="/national.html" class="active">Congress</a>
         <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
         <a href="/departments.html">Depts &amp; Agencies</a>
         <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
       </div>
     </div>
-    <a href="/international.html">International</a>
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger">Learn</span>
       <div class="nav-dropdown-menu">
@@ -150,7 +156,17 @@
         <a href="/learn-glossary.html">Glossary</a>
       </div>
     </div>
-    <a href="/methodology.html">Methodology</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html#elected">Elected Officials</a>
+        <a href="/methodology.html#agencies">Depts &amp; Agencies</a>
+        <a href="/methodology.html#presidential">Presidential &amp; International</a>
+        <a href="/methodology.html#ai">AI Pipeline</a>
+        <a href="/methodology.html#limits">Limitations</a>
+      </div>
+    </div>
+    <a href="/error-log.html">Error Log</a>
   </nav>
 </header>
 
@@ -369,6 +385,7 @@ function openModal(d) {
           '<div style="font-size:10px;color:var(--gray);margin-top:1px;">' + src.url.replace(/^https?:\/\//,'').split('/')[0] + '</div></div>';
       }).join('') + '</div>' : '';
 
+  window._currentOfficial = o;
   overlay.style.display = 'block';
   overlay.innerHTML =
     '<div class="modal" id="modal-box">' +
@@ -400,6 +417,7 @@ function openModal(d) {
         (o.office_phone ? '<div style="font-size:12px;color:var(--gray);">&#9990; ' + o.office_phone + '</div>' : '') +
         (o.office_address ? '<div style="font-size:12px;color:var(--gray);">' + o.office_address + '</div>' : '') +
         (o.office_website ? '<div style="font-size:12px;"><a href="' + (o.office_website.indexOf('http')===0?o.office_website:'https://'+o.office_website) + '" target="_blank" style="color:var(--gold);text-decoration:none;">Official Website &rarr;</a></div>' : '') +
+      '<button onclick="openReport()" style="background:none;border:none;padding:0;font-size:9px;letter-spacing:0.08em;color:var(--gold);cursor:pointer;font-family:'\''DM Mono'\''\,monospace;text-transform:uppercase;margin-top:8px;">Report an error &rarr;</button>' +
       '</div>' +
     '</div>';
 }
@@ -453,6 +471,70 @@ loadManifest();
 <footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);">
   PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
 </footer>
+
+<!-- REPORT MODAL -->
+<div id="report-overlay" onclick="if(event.target===this)closeReport()" style="display:none;position:fixed;inset:0;background:rgba(26,23,20,0.7);z-index:300;overflow-y:auto;padding:40px 20px;align-items:flex-start;justify-content:center;">
+  <div style="background:var(--paper);max-width:520px;width:100%;border:1px solid var(--rule);position:relative;margin:auto;">
+    <div style="padding:24px 28px 20px;border-bottom:3px double var(--ink);">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:8px;">PolicyLogic</div>
+      <div style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;">Report an Error</div>
+      <div style="font-size:13px;color:var(--gray);margin-top:4px;" id="report-official-name"></div>
+    </div>
+    <div style="padding:24px 28px;">
+      <div style="margin-bottom:16px;">
+        <label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">What is incorrect? *</label>
+        <textarea id="report-wrong" rows="3" placeholder="Describe the error..." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea>
+      </div>
+      <div style="margin-bottom:16px;">
+        <label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Correct information / source</label>
+        <textarea id="report-correct" rows="2" placeholder="What should it say? Include a source URL if possible." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea>
+      </div>
+      <div style="margin-bottom:20px;">
+        <label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your email (optional)</label>
+        <input id="report-email" type="email" placeholder="If you'd like a response" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" />
+      </div>
+      <div id="report-status" style="display:none;font-size:12px;padding:10px 12px;margin-bottom:12px;"></div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;">
+        <button onclick="closeReport()" style="background:none;border:1px solid var(--rule);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--gray);">Cancel</button>
+        <button onclick="submitReport()" id="report-submit" style="background:var(--ink);border:1px solid var(--ink);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--paper);">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+var reportOfficial = {};
+function openReport() {
+  var o = window._currentOfficial || {};
+  reportOfficial = { name: o.name||'', role: o.role||'', jurisdiction: o.jurisdiction||'' };
+  document.getElementById('report-official-name').textContent = [reportOfficial.name, reportOfficial.role, reportOfficial.jurisdiction].filter(Boolean).join(' · ');
+  ['report-wrong','report-correct','report-email'].forEach(function(id){ document.getElementById(id).value=''; });
+  document.getElementById('report-status').style.display = 'none';
+  var btn = document.getElementById('report-submit'); btn.disabled=false; btn.textContent='Submit';
+  var overlay = document.getElementById('report-overlay'); overlay.style.display='flex';
+}
+function closeReport() { document.getElementById('report-overlay').style.display='none'; }
+async function submitReport() {
+  var wrong = document.getElementById('report-wrong').value.trim();
+  if (!wrong) { showReportStatus('Please describe what is incorrect.','error'); return; }
+  var btn = document.getElementById('report-submit'); btn.disabled=true; btn.textContent='Sending...';
+  try {
+    var r = await fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({official:reportOfficial.name,role:reportOfficial.role,jurisdiction:reportOfficial.jurisdiction,
+        what_is_wrong:wrong,correct_info:document.getElementById('report-correct').value.trim(),
+        submitter_email:document.getElementById('report-email').value.trim()})});
+    var j = await r.json();
+    if (j.ok) { showReportStatus('Thank you — your report has been submitted.','ok'); btn.textContent='Sent'; }
+    else throw new Error(j.error||'Unknown error');
+  } catch(e) { showReportStatus('Error: '+e.message,'error'); btn.disabled=false; btn.textContent='Submit'; }
+}
+function showReportStatus(msg,type) {
+  var el=document.getElementById('report-status'); el.textContent=msg; el.style.display='';
+  el.style.background=type==='ok'?'#f0faf4':'#fdf0f0';
+  el.style.border='1px solid '+(type==='ok'?'#1a6b3c':'#c0392b');
+  el.style.color=type==='ok'?'#1a6b3c':'#c0392b';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeReport();});
+</script>
 
 
 <script>
