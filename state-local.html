@@ -14,13 +14,18 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
 
-  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; background: var(--paper); position: relative; }
-  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
-  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
-  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
   .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
   .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
-  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 72px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
   .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
   .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 12px; margin-bottom: 12px; }
   .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); }
@@ -144,29 +149,116 @@
   .nav-dropdown:hover .nav-dropdown-menu { display: block; }
   .nav-dropdown.open .nav-dropdown-menu { display: block; }
   .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  @media (max-width: 768px) {
+    .masthead-nav { gap: 16px; justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+    .masthead { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+
+<style>
+/* ── MOBILE OVERRIDES (max-width: 600px) ── */
+@media (max-width: 600px) {
+  /* Masthead */
+  .masthead { padding: 20px 20px 14px; }
+  .masthead::before { margin-bottom: 14px; }
+
+  /* Nav — horizontal scroll, no wrap */
+  .masthead-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+  .masthead-nav a, .nav-dropdown-trigger {
+    white-space: nowrap;
+  }
+
+  /* Main content padding */
+  .wrap, .coming-soon, .page-wrap, .content-wrap,
+  [style*="padding: 0 40px"], [style*="padding:0 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Grids — single column on mobile */
+  .principle-grid,
+  .flag-grid,
+  .tflag-grid,
+  .limitations-grid,
+  .stats-row,
+  .session-grid,
+  .detail-row,
+  .cs-categories {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Card grids */
+  [style*="grid-template-columns: repeat(auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables — horizontal scroll */
+  .rubric-table, .grade-table, .lookup-table,
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .rubric-table td, .lookup-table td, table td,
+  .rubric-table th, .lookup-table th, table th {
+    white-space: normal;
+    min-width: 100px;
+  }
+
+  /* Methodology tab nav */
+  .tab-nav-inner {
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn { padding: 11px 12px; font-size: 9px; }
+
+  /* Modal */
+  .modal-overlay, .pres-modal-overlay { padding: 16px 12px; }
+  .modal-box, .pres-modal { width: 100%; }
+
+  /* Footer */
+  footer { padding: 16px 20px; }
+}
+
+@media (max-width: 380px) {
+  .masthead-title { font-size: 32px !important; }
+  .masthead-eyebrow { letter-spacing: 0.12em; }
+}
 </style>
 </head>
 <body>
 
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. 2026 · Nonpartisan Public Accountability</div>
+  <div class="masthead-eyebrow">EST. 2026 &middot; UNITED STATES</div>
   <div class="masthead-title">PolicyLogic</div>
-  <div class="masthead-subtitle">State &amp; Local Scorecard</div>
-  <div class="masthead-rule"><span></span><em>Draft Scorecards · Under Review</em><span></span></div>
+  <div class="masthead-subtitle">State &amp; Local Scorecards</div>
+  <div class="masthead-rule"><span></span><em>SCORECARDS &middot; JUNE 2026</em><span></span></div>
   <nav class="masthead-nav">
     <a href="/">Home</a>
+    <a href="/about.html">About</a>
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger active">Scorecards</span>
       <div class="nav-dropdown-menu">
         <a href="/scorecards.html">All Scorecards</a>
-        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/state-local.html" class="active">State &amp; Local</a>
         <a href="/national.html">Congress</a>
         <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
         <a href="/departments.html">Depts &amp; Agencies</a>
         <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
       </div>
     </div>
-    <a href="/international.html">International</a>
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger">Learn</span>
       <div class="nav-dropdown-menu">
@@ -178,7 +270,17 @@
         <a href="/learn-glossary.html">Glossary</a>
       </div>
     </div>
-    <a href="/methodology.html">Methodology</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html#elected">Elected Officials</a>
+        <a href="/methodology.html#agencies">Depts &amp; Agencies</a>
+        <a href="/methodology.html#presidential">Presidential &amp; International</a>
+        <a href="/methodology.html#ai">AI Pipeline</a>
+        <a href="/methodology.html#limits">Limitations</a>
+      </div>
+    </div>
+    <a href="/error-log.html">Error Log</a>
   </nav>
 </header>
 
@@ -625,14 +727,14 @@ loadData();
 </script>
 
 <footer style="border-top:3px double var(--ink);padding:20px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);margin-top:40px;">
-  Civic Accountability Index &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html" style="color:var(--gray);">Methodology</a>
 </footer>
 
 <!-- REPORT MODAL -->
 <div class="modal-overlay" id="report-overlay" onclick="closeReport(event)">
   <div class="modal" style="max-width:520px;" id="report-modal">
     <div class="modal-header" style="padding:24px 28px 20px;">
-      <div class="modal-eyebrow">Civic Accountability Index</div>
+      <div class="modal-eyebrow">PolicyLogic</div>
       <div class="modal-name" style="font-size:24px;">Report an Error</div>
       <div class="modal-meta" id="report-official-name"></div>
     </div>
