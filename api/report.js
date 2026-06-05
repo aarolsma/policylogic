@@ -9,7 +9,7 @@ module.exports = async function handler(req, res) {
   if (!official || !what_is_wrong) return res.status(400).json({ error: 'Missing required fields' });
 
   const body = [
-    'CAI Error Report',
+    'PolicyLogic Error Report',
     '',
     'Official: ' + official + ', ' + (role||'') + ' of ' + (jurisdiction||''),
     'Submitted by: ' + (submitter_email || 'Anonymous'),
@@ -29,9 +29,9 @@ module.exports = async function handler(req, res) {
         'Authorization': 'Bearer ' + process.env.RESEND_API_KEY,
       },
       body: JSON.stringify({
-        from: 'CAI Error Reports <onboarding@resend.dev>',
+        from: 'PolicyLogic Error Reports <onboarding@resend.dev>',
         to: ['anna.rolsma@proton.me'],
-        subject: 'CAI Error Report: ' + official,
+        subject: 'PolicyLogic Error Report: ' + official,
         text: body,
       }),
     });
