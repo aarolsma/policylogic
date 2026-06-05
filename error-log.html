@@ -11,9 +11,9 @@
     --gold: #b8892a; --gold-light: #d4a843; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; overscroll-behavior-y: none; }
 
-  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; }
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; position: relative; }
   .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
   .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
   .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
@@ -93,6 +93,24 @@
     .masthead-nav { gap: 16px; justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
     .masthead { padding-left: 20px; padding-right: 20px; }
   }
+
+  /* ── HAMBURGER (mobile nav) ── */
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 250; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 4px 0; transition: all 0.2s; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: var(--paper); z-index: 500; overflow-y: auto; padding: 24px 28px 60px; }
+  .mobile-menu.open { display: block; }
+  .mobile-menu-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+  .mobile-menu-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; }
+  .mobile-menu-close { background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: var(--ink); padding: 0 4px; }
+  .mobile-menu a { display: block; font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu .mm-group-label { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); padding: 24px 0 8px; border-bottom: none; margin-top: 4px; }
+  .mobile-menu .mm-sub { font-family: 'DM Mono', monospace; font-weight: 400; padding-left: 16px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); padding-top: 11px; padding-bottom: 11px; }
+  @media (max-width: 768px) {
+    .hamburger { display: block; }
+    .masthead-nav { display: none !important; }
+  }
+
 </style>
 
 <style>
@@ -222,15 +240,50 @@
     <div class="nav-dropdown">
       <span class="nav-dropdown-trigger">Methodology</span>
       <div class="nav-dropdown-menu">
-        <a href="/methodology.html#elected">Elected Officials</a>
-        <a href="/methodology.html#agencies">Depts &amp; Agencies</a>
-        <a href="/methodology.html#presidential">Presidential &amp; International</a>
-        <a href="/methodology.html#ai">AI Pipeline</a>
-        <a href="/methodology.html#limits">Limitations</a>
+        <a href="/methodology.html">Elected Officials</a>
+        <a href="/methodology-agencies.html">Depts &amp; Agencies</a>
+        <a href="/methodology-presidential.html">Presidential &amp; International</a>
+        <a href="/methodology-ai.html">AI Pipeline</a>
+        <a href="/methodology-limitations.html">Limitations</a>
       </div>
     </div>
     <a href="/error-log.html" class="active">Error Log</a>
   </nav>
+
+<button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="mobile-menu-title">PolicyLogic</div>
+    <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='';" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <div class="mm-group-label">Scorecards</div>
+  <a href="/scorecards.html" class="mm-sub">All Scorecards</a>
+  <a href="/state-local.html" class="mm-sub">State &amp; Local</a>
+  <a href="/national.html" class="mm-sub">Congress</a>
+  <a href="/presidential.html" class="mm-sub">Presidential</a>
+  <a href="/international.html" class="mm-sub">International</a>
+  <a href="/departments.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/nonprofits.html" class="mm-sub">Nonprofits &amp; NGOs</a>
+  <div class="mm-group-label">Learn</div>
+  <a href="/learn.html" class="mm-sub">Learning Center</a>
+  <a href="/learn-cognitive-biases.html" class="mm-sub">Think Clearly</a>
+  <a href="/learn-how-policy-works.html" class="mm-sub">How Policy Works</a>
+  <a href="/learn-how-to-influence.html" class="mm-sub">Take Action</a>
+  <a href="/learn-govt-101.html" class="mm-sub">Govt 101</a>
+  <a href="/learn-glossary.html" class="mm-sub">Glossary</a>
+  <div class="mm-group-label">Methodology</div>
+  <a href="/methodology.html" class="mm-sub">Elected Officials</a>
+  <a href="/methodology-agencies.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
+  <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
+  <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
+  <a href="/error-log.html">Error Log</a>
+</div>
+
 </header>
 
 <div class="wrap">
