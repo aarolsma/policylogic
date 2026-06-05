@@ -344,8 +344,8 @@
 
 <div class="tab-nav">
   <div class="tab-nav-inner">
-    <a href="/methodology.html" class="tab-btn active">Elected Officials</a>
-    <a href="/methodology-agencies.html" class="tab-btn">Departments &amp; Agencies</a>
+    <a href="/methodology.html" class="tab-btn">Elected Officials</a>
+    <a href="/methodology-agencies.html" class="tab-btn active">Departments &amp; Agencies</a>
     <a href="/methodology-presidential.html" class="tab-btn">Presidential &amp; International</a>
     <a href="/methodology-ai.html" class="tab-btn">AI Pipeline</a>
     <a href="/methodology-limitations.html" class="tab-btn">Limitations</a>
@@ -353,252 +353,110 @@
 </div>
 
 <div class="wrap">
-<div class="page-title">Elected Officials Methodology</div>
-  <div class="page-deck">How PolicyLogic scores governors, mayors, senators, and representatives on their campaign and inaugural commitments. Version 2.0 — operative standard. All prior versions superseded.</div>
+<div class="page-title">Departments &amp; Agencies Methodology</div>
+  <div class="page-deck">How PolicyLogic scores federal departments and agencies on their formal public commitments. Extends the Elected Officials methodology — same scoring architecture, adapted for institutional accountability.</div>
 
   <div class="draft-banner">
-    <strong>All scorecards are AI-generated drafts pending human review.</strong> Scores are generated using Claude (Anthropic) and reflect public records as of the research date. The grade formula is computed deterministically from AI-assigned bucket values — the AI does not calculate grades. Every scorecard carries an AI Draft flag until verified by a human reviewer.
+    <strong>The Federal Agencies methodology shares the same three questions as the Elected Officials methodology:</strong> Did they deliver? Was it hard? Did it matter? The scoring architecture — Delivery, Difficulty, Impact, Their Role — is identical. What differs is what counts as a commitment, what counts as evidence, and what contextual factors explain delivery patterns.
   </div>
 
-  <h2>What Counts as a Promise</h2>
-  <p>A statement qualifies as a trackable promise if it meets all three conditions: it is <strong>attributable</strong> directly to the official (not a surrogate) in a campaign or inaugural context; it is <strong>forward-looking</strong> (an expressed intention, not a description of existing policy); and it is <strong>verifiable</strong> — it has at least one condition that can in principle be confirmed true or false.</p>
-  <p>Statements of value without action components ("I believe in education") are excluded. Promises contingent on federal action outside the official's jurisdiction are excluded. Where a promise appears at multiple specificity levels, the more specific version is retained.</p>
-  <p>There is no cap on promise count. All qualifying promises are scored. Capping promise count introduces editorial bias — selecting 6 from 30 means 24 are excluded on undisclosed grounds. Every scorecard displays a mandatory disclosure: <em>N promises tracked · estimated M identified · X excluded for non-verifiability.</em></p>
+  <h2>What Counts as a Commitment</h2>
+  <p>Federal agencies generate substantial volumes of formal communication. Not all of it constitutes a trackable commitment. A statement enters the database only if it meets all four criteria.</p>
 
-  <h2>Promise Types</h2>
-  <p>PolicyLogic recognizes three promise types, each with its own delivery scoring track. All three feed into the same D0–D4 delivery buckets — the distinction is in how the bucket is determined.</p>
+  <h3>Criterion 1 — Formal Public Documentation</h3>
+  <p>The commitment must appear in an eligible primary source. Eligible sources include: GPRAMA strategic plans, annual performance plans and reports, the Unified Regulatory Agenda (reginfo.gov), Federal Register publications, congressional testimony by agency heads, executive order and OMB memorandum responses, Inspector General audit responses, GAO report responses, and interagency agreements or memoranda of understanding.</p>
 
-  <table class="rubric-table">
-    <tr><th>Type</th><th>Definition</th><th>How Delivery Is Measured</th></tr>
-    <tr>
-      <td><strong>Quantitative</strong></td>
-      <td>Promise includes a numeric target or measurable threshold.</td>
-      <td>Percentage of stated goal achieved. D4 = 70% or more, D3 = 40% to under 70%, D2 = 10% to under 40%, D1 = under 10% with documented action, D0 = no meaningful action.</td>
-    </tr>
-    <tr>
-      <td><strong>Qualitative</strong></td>
-      <td>Promise specifies an action or outcome without a numeric target (pass a bill, make an appointment, launch a program).</td>
-      <td>Action milestone ladder: D0 = no action · D1 = public commitment only · D2 = formal action initiated (bill introduced, passed committee) · D3 = advanced past the decisive hurdle (passed a full chamber, nominee confirmed, program launched) · D4 = fully delivered.</td>
-    </tr>
-    <tr>
-      <td><strong>Negative</strong></td>
-      <td>Promise to prevent, avoid, or not do something ("I will not raise taxes").</td>
-      <td>Inverted criteria, scored binary. D4 = condition fully avoided through the term. D0 = condition occurred. Intermediate buckets (D1–D3) do not apply to negative promises — a thing is either avoided or not. The single exception: any mid-term redefinition of the condition triggers an automatic Redefined flag and caps delivery at D2.</td>
-    </tr>
-  </table>
+  <div class="callout callout-red">
+    <strong>Excluded as primary sources:</strong> Agency press releases, social media posts, informal staff statements, journalist-reported commitments without supporting agency documentation, and classified or non-public documents.
+  </div>
+
+  <h3>Criterion 2 — Specificity (3-of-4 threshold)</h3>
+  <p>The commitment must contain at least three of the following four elements: an identifiable deliverable, a measurable target, a defined timeframe, and a responsible owner (a specific agency or named office). Commitments meeting all four are tracked at full specificity. Commitments meeting exactly three carry a Missing-Element Flag. Commitments meeting two or fewer are excluded.</p>
+
+  <h3>Criterion 3 — Evaluable Timeframe</h3>
+  <p>The commitment must have a timeframe against which delivery can be assessed — explicit deadline, plan period, regulatory action timeline, or inferable timeframe from document type. Open-ended commitments are excluded because delivery cannot be evaluated.</p>
+
+  <h3>Criterion 4 — Agency or Office Attribution</h3>
+  <p>The commitment must be attributable to a specific agency or named office. Diffuse attributions ("the administration," "federal stakeholders") do not satisfy this criterion on their own. Multi-agency commitments are tracked under the lead agency with cross-reference flags.</p>
 
   <h2>Scoring Framework</h2>
-  <p>Each promise is scored on three independent axes. The axes combine into a Promise Score. Promise scores are aggregated into an overall grade. Maximum per promise: 25 points.</p>
+  <p>The four-axis scoring framework is identical to the Elected Officials methodology — Delivery (max 12), Difficulty (max 5), Impact (max 8), Their Role (0.0–1.0) — with bucket definitions adapted to agency commitment types.</p>
 
-  <h3>Axis 1 — Delivery (max 12 points)</h3>
-  <p>Delivery measures what the official actually accomplished relative to what was promised. It is the primary axis and carries the most weight in the final grade.</p>
-
+  <h3>Delivery Buckets — Agency Adaptation</h3>
   <table class="rubric-table">
-    <tr><th>Code</th><th>Label</th><th>Description</th><th>Pts</th></tr>
-    <tr><td class="code">D4</td><td>Delivered</td><td>70%+ of quantitative goal achieved, or qualitative promise fully delivered.</td><td class="pts">12</td></tr>
-    <tr><td class="code">D3</td><td>Substantially Delivered</td><td>40% to under 70% achieved, or qualitative promise advanced past the decisive hurdle (D3 on the ladder) with documented evidence.</td><td class="pts">9</td></tr>
-    <tr><td class="code">D2</td><td>Partial</td><td>10% to under 40% achieved, or qualitative promise at formal-action stage (D2 on the ladder). Concrete actions taken without full outcome.</td><td class="pts">6</td></tr>
-    <tr><td class="code">D1</td><td>Minimal</td><td>Under 10% of a quantitative goal with documented action, or a qualitative promise at public-commitment-only stage (D1 on the ladder). No enacted policy or measurable outcome yet.</td><td class="pts">3</td></tr>
-    <tr><td class="code">D0</td><td>Not Delivered</td><td>No meaningful action taken, promise abandoned, or condition of a negative promise occurred.</td><td class="pts">0</td></tr>
+    <tr><th>Code</th><th>Label</th><th>Agency-Specific Description</th><th>Pts</th></tr>
+    <tr><td class="code">D4</td><td>Delivered</td><td>Commitment fully executed: rule finalized, system operational, program implemented, capability deployed, or stated outcome achieved.</td><td class="pts">12</td></tr>
+    <tr><td class="code">D3</td><td>Substantially Delivered</td><td>Rule proposed and on track for finalization, system in pilot, program partially operational, or substantial progress toward stated outcome.</td><td class="pts">9</td></tr>
+    <tr><td class="code">D2</td><td>Partial</td><td>Rule in early drafting, system in design phase, program planned but not implemented, or partial outcome achieved.</td><td class="pts">6</td></tr>
+    <tr><td class="code">D1</td><td>Minimal</td><td>Commitment included in plan or agenda but no observable action toward execution.</td><td class="pts">3</td></tr>
+    <tr><td class="code">D0</td><td>Not Delivered</td><td>No meaningful action, commitment abandoned, or formally revoked.</td><td class="pts">0</td></tr>
   </table>
 
-  <p><strong>Their Role modifier (0.0–1.0):</strong> The official's direct causal contribution to the outcome is assessed and applied to Delivery points before aggregation.</p>
-  <div class="formula-box">
-    <div class="formula">Adjusted Delivery = Delivery Points × Their Role</div>
-  </div>
-
-  <p>See the Their Role lookup table below for anchor values by office-action combination.</p>
-
-  <h3>Axis 2 — Difficulty (max 5 points, earned proportionally)</h3>
-  <p>Difficulty rewards ambition — but only when delivery occurs. Zero delivery earns zero Difficulty points regardless of how ambitious the promise was.</p>
-
+  <h3>Difficulty Buckets — Agency Adaptation</h3>
   <table class="rubric-table">
-    <tr><th>Code</th><th>Label</th><th>Description</th><th>Max Pts</th></tr>
-    <tr><td class="code">H3</td><td>Structural</td><td>Multi-year initiative requiring coalition-building, constitutional change, or federal coordination.</td><td class="pts">5</td></tr>
-    <tr><td class="code">H2</td><td>Legislative</td><td>Requires passage of legislation, significant political capital, or cross-chamber negotiation.</td><td class="pts">3</td></tr>
-    <tr><td class="code">H1</td><td>Executive</td><td>Achievable through executive order, budget allocation, appointment, or regulatory change within direct authority.</td><td class="pts">1</td></tr>
+    <tr><th>Code</th><th>Label</th><th>Agency-Specific Description</th><th>Max Pts</th></tr>
+    <tr><td class="code">H3</td><td>Structural</td><td>Cross-agency coordination required, congressional engagement, court navigation, multi-administration timeline, or significant institutional restructuring.</td><td class="pts">5</td></tr>
+    <tr><td class="code">H2</td><td>Programmatic</td><td>Deploy a new system, restructure operations, implement a new program, complete a major capability build, or coordinate with external partners.</td><td class="pts">3</td></tr>
+    <tr><td class="code">H1</td><td>Operational</td><td>Publish guidance, issue a technical document, propose a rule under existing authority, complete an internal assessment, or take regulatory action within established frameworks.</td><td class="pts">1</td></tr>
   </table>
 
-  <div class="formula-box">
-    <div class="formula">Difficulty Earned = Bucket Points × (Delivery Points / 12)</div>
-    <div class="example">Example: H3 promise with D2 delivery = 5 × (6/12) = 2.5 pts · H3 with D0 = 0 pts</div>
-  </div>
-
-  <h3>Axis 3 — Impact (max 8 points)</h3>
-  <p>Impact measures what was at stake. It is <strong>not modified by delivery</strong> — a failed promise on a critical issue still carries high impact stakes. This is intentional: if you promise something that matters and don't deliver, the grade reflects how much it mattered.</p>
-
-  <table class="rubric-table">
-    <tr><th>Scale</th><th>Description</th><th>Pts</th><th>Magnitude</th><th>Description</th><th>Pts</th></tr>
-    <tr><td class="code">S3</td><td>Systemic / Statewide</td><td class="pts">4</td><td class="code">M3</td><td>Transformative</td><td class="pts">4</td></tr>
-    <tr><td class="code">S2</td><td>Regional / Citywide</td><td class="pts">2</td><td class="code">M2</td><td>Significant</td><td class="pts">2</td></tr>
-    <tr><td class="code">S1</td><td>Neighborhood / Segment</td><td class="pts">1</td><td class="code">M1</td><td>Minor / Symbolic</td><td class="pts">1</td></tr>
-  </table>
-
-  <div class="callout callout-gold">
-    <strong>Specificity Cap (Clarity Rule):</strong> If a promise has a Clarity score of 2 (see Clarity Scale below), Magnitude is capped at M1. A vague promise cannot be awarded high magnitude because its intended scope was never defined.
-  </div>
-
-  <h3>Promise Score</h3>
-  <div class="formula-box">
-    <div class="formula">Promise Score = Adjusted Delivery + Difficulty Earned + Impact</div>
-    <div class="note">Maximum per promise: 12 (Delivery) + 5 (Difficulty) + 8 (Impact) = 25 points</div>
-  </div>
-
-  <h2>Grade Calculation</h2>
-  <p>The final grade is calculated from two ratios combined in a fixed 60/40 split. This split is published on every scorecard and does not vary by official, party, or jurisdiction.</p>
-
-  <div class="formula-box">
-    <div class="formula">Delivery Ratio = Sum of Adjusted Delivery Points ÷ (N promises × 12)</div>
-    <div class="formula">Promise Score Ratio = Sum of Promise Scores ÷ (N promises × 25)</div>
-    <div class="formula">Grade Input = (Delivery Ratio × 0.60) + (Promise Score Ratio × 0.40)</div>
-    <div class="note">The 60/40 weighting ensures raw delivery dominates. An official cannot achieve a high grade by promising only easy, low-impact things and delivering them all.</div>
-    <div class="note">Boundary convention: all thresholds are inclusive of their lower bound. A band stated as 70–84% means 70.0% up to but not including 85%. The same convention applies to every range in this methodology — Delivery percentages, Difficulty bands, and Time Pressure cutoffs — so no value falls into two buckets.</div>
-  </div>
-
-  <table class="grade-table">
-    <tr><td><span class="grade-letter" style="color:#1a6b3c">A+</span></td><td><strong>90%+</strong></td><td>Exceptional delivery on ambitious, high-impact promises across multiple domains.</td></tr>
-    <tr><td><span class="grade-letter" style="color:#1a6b3c">A</span></td><td><strong>85–89%</strong></td><td>Strong delivery across most domains with documented outcomes.</td></tr>
-    <tr><td><span class="grade-letter" style="color:#2d7a4f">B</span></td><td><strong>70–84%</strong></td><td>Above-average to solid delivery; meaningful gaps remain.</td></tr>
-    <tr><td><span class="grade-letter" style="color:#b8892a">C</span></td><td><strong>50–69%</strong></td><td>Mixed to marginal delivery; structural or political barriers evident.</td></tr>
-    <tr><td><span class="grade-letter" style="color:#c0612b">D</span></td><td><strong>30–49%</strong></td><td>Poor to very poor delivery; few concrete outcomes.</td></tr>
-    <tr><td><span class="grade-letter" style="color:#c0392b">F</span></td><td><strong>Below 30%</strong></td><td>No meaningful delivery on tracked promises.</td></tr>
-  </table>
-
-  <h2>Worked Example</h2>
-
-  <div class="example-box">
-    <div class="example-header">Worked Example · Housing Promise · Senator (Qualitative, H2)</div>
-    <div class="example-body">
-      <p style="font-style:italic;font-size:13px;margin-bottom:16px;color:var(--gray);">"I will pass a tenant protection bill in the first session."</p>
-      <div class="example-row"><span class="example-label">Promise Type</span><span>Qualitative</span></div>
-      <div class="example-row"><span class="example-label">Delivery Bucket</span><span>D2 — Bill introduced, passed committee, stalled on floor (formal action initiated)</span></div>
-      <div class="example-row"><span class="example-label">Delivery Points</span><span class="example-val">6</span></div>
-      <div class="example-row"><span class="example-label">Their Role</span><span>0.6 — Advocated, dependent on legislature</span></div>
-      <div class="example-row"><span class="example-label">Adjusted Delivery</span><span class="example-val">6 × 0.6 = 3.6 pts</span></div>
-      <div class="example-row"><span class="example-label">Difficulty</span><span>H2 (Legislative) = 3 max pts</span></div>
-      <div class="example-row"><span class="example-label">Difficulty Earned</span><span class="example-val">3 × (6/12) = 1.5 pts</span></div>
-      <div class="example-row"><span class="example-label">Impact</span><span>S2 + M2 = 2 + 2 = 4 pts</span></div>
-      <div class="example-row"><span class="example-label">Promise Score</span><span class="example-val">3.6 + 1.5 + 4 = 9.1 / 25</span></div>
-    </div>
-  </div>
-
-  <h2>Their Role — Lookup Table</h2>
-  <p>The Their Role modifier is the single most judgment-dependent element of the methodology. The following anchor values reduce inconsistency across AI runs and human reviewers.</p>
-
+  <h3>Their Role — Agency Anchor Values</h3>
   <table class="lookup-table">
-    <tr><th>Score</th><th>Situation</th><th>Common Examples</th></tr>
-    <tr>
-      <td class="role-score">1.0</td>
-      <td>Sole or near-sole authority. Official acted unilaterally within clear constitutional or statutory power.</td>
-      <td>Governor signing an executive order; mayor appointing a department head.</td>
-    </tr>
-    <tr>
-      <td class="role-score">0.8</td>
-      <td>Official championed, negotiated, and signed legislation. Legislature was a necessary co-actor but official drove the outcome.</td>
-      <td>Governor securing and signing a major budget deal; senator authoring and passing a bill with party in majority.</td>
-    </tr>
-    <tr>
-      <td class="role-score">0.6</td>
-      <td>Official advocated consistently but was dependent on others who were not fully aligned.</td>
-      <td>Senator in majority facing moderate opposition within own caucus; governor working with a split legislature.</td>
-    </tr>
-    <tr>
-      <td class="role-score">0.4</td>
-      <td>Supporting or facilitative role. Outcome primarily driven by other actors, market forces, or federal policy.</td>
-      <td>Mayor benefiting from a federal infrastructure grant they applied for but did not design.</td>
-    </tr>
-    <tr>
-      <td class="role-score">0.2</td>
-      <td>Minimal causal influence. Outcome largely driven by forces entirely outside the official's sphere.</td>
-      <td>Economic improvement during a governor's term primarily driven by national trends.</td>
-    </tr>
-    <tr>
-      <td class="role-score">0.0</td>
-      <td>No meaningful causal connection. Official's actions were irrelevant to the outcome.</td>
-      <td>Official claims credit for a federal policy they had no role in; outcome occurred despite official's opposition.</td>
-    </tr>
+    <tr><th>Score</th><th>Situation</th><th>Agency Examples</th></tr>
+    <tr><td class="role-score">1.0</td><td>Agency has independent legal authority to deliver without coordination with other actors.</td><td>NIST publication decisions; FDA approval decisions within existing pathways; agency internal operational changes.</td></tr>
+    <tr><td class="role-score">0.8</td><td>Agency holds primary authority but coordinates with supporting actors who are involved but not directing.</td><td>Lead-agency multi-stakeholder rulemakings; agency-led interagency working groups.</td></tr>
+    <tr><td class="role-score">0.6</td><td>Agency holds significant but not primary authority. Delivery depends on substantial coordination with equal or senior actors.</td><td>Dual-agency rulemakings; agency contributions to White House initiatives.</td></tr>
+    <tr><td class="role-score">0.4</td><td>Agency has a defined role but cannot deliver independently. Other actors hold primary or veto authority.</td><td>Agency implementations of congressional appropriations; agency execution of executive orders where White House controls scope.</td></tr>
+    <tr><td class="role-score">0.2</td><td>Agency contributes but has minimal independent authority.</td><td>Agency technical support to other agencies' lead efforts; advisory roles in multi-actor processes.</td></tr>
+    <tr><td class="role-score">0.0</td><td>No meaningful causal connection. The agency's actions were irrelevant to the outcome.</td><td>Agency claims credit for an outcome driven by another agency, a court ruling, or congressional action it had no role in; outcome occurred despite the agency's inaction.</td></tr>
   </table>
 
-  <h2>Clarity Scale</h2>
-  <p>Clarity measures how specifically a promise was stated at the time it was made. It is assessed as of the original statement — it cannot be improved retroactively by subsequent clarifications.</p>
-  <p>The scale begins at 2. Pure values statements with no action component ("I believe in stronger communities") carry no verifiable condition and are screened out at qualification under <em>What Counts as a Promise</em> — they never enter the scored set, so there is no Clarity score of 1.</p>
-
-  <table class="rubric-table">
-    <tr><th>Score</th><th>Label</th><th>Definition &amp; Example</th></tr>
-    <tr><td class="code">2</td><td>Directional, no specifics</td><td>General intent stated, no mechanism, target, or timeframe. Magnitude capped at M1. <em>"We will improve public safety."</em></td></tr>
-    <tr><td class="code">3</td><td>Specific policy named</td><td>A named policy, program, or bill is referenced. <em>"I will pass a tenant protection bill."</em></td></tr>
-    <tr><td class="code">4</td><td>Specific + conditions</td><td>Named policy plus timeframe, jurisdiction, or population. <em>"I will pass a tenant protection bill in the first year."</em></td></tr>
-    <tr><td class="code">5</td><td>Specific + measurable target</td><td>Named policy with a quantified, verifiable outcome. <em>"I will reduce violent crime 20% by 2026."</em></td></tr>
-  </table>
-
-  <h2>Time Pressure Adjustment</h2>
-  <p>Every promise is assigned a timeline bucket based on the official's stated or implied delivery window. Delivery scores are adjusted for whether a promise is early, on-track, or overdue.</p>
-
-  <table class="rubric-table">
-    <tr><th>Condition</th><th>Status</th><th>Effect</th></tr>
-    <tr><td>Time Pressure &lt; 0.5</td><td>Early</td><td>Delivery weight = Time Pressure × 2. Grade is provisional. Displayed with clock indicator.</td></tr>
-    <tr><td>Time Pressure 0.5–1.0</td><td>On Track</td><td>Full delivery weight applied. No adjustment.</td></tr>
-    <tr><td>Time Pressure 1.0–1.25</td><td>Overdue (mild)</td><td>10% delivery score reduction.</td></tr>
-    <tr><td>Time Pressure 1.25–1.5</td><td>Overdue (moderate)</td><td>20% delivery score reduction.</td></tr>
-    <tr><td>Time Pressure &gt; 1.5</td><td>Overdue (significant)</td><td>Reduction continues at 10% per 0.25 over 1.0, capped at 40%.</td></tr>
-  </table>
-
-  <h2>Behavioral Flags</h2>
-  <p>Behavioral flags override or cap standard scoring when the official actively distorted the promise. Each flag requires a written rationale in the scorecard JSON.</p>
-  <p>When more than one flag applies to the same promise, a cap (maximum) always takes precedence over a floor (minimum), and the lowest applicable cap controls. Example: if Externally Blocked sets a D2 floor and Scope Reduced caps Magnitude while Redefined caps delivery at D2, the delivery score resolves to D2 — the cap binds. A flag that sets the score to a fixed value (Reversed = D0) overrides both caps and floors.</p>
+  <h2>Agency-Specific Behavioral Flags</h2>
+  <p>The standard behavioral flags (Reversed, Redefined, Externally Blocked, Credit Overclaimed, Deadline Shifted, Scope Reduced) apply with agency-appropriate definitions. Two additional flags are specific to agency commitments. The same precedence rule applies as in the Elected Officials methodology: when multiple flags apply, a cap takes precedence over a floor, the lowest cap controls, and a fixed-value flag (Reversed = D0) overrides both.</p>
 
   <div class="flag-grid">
     <div class="flag-item">
-      <div class="flag-name">Reversed</div>
-      <div class="flag-effect">Score = D0 regardless</div>
-      <div class="flag-desc">Official explicitly reversed or repealed a previously promised policy.</div>
+      <div class="flag-name">Self-Reported Only</div>
+      <div class="flag-effect">Score capped at D2</div>
+      <div class="flag-desc">Delivery evidence comes entirely from agency self-reporting without independent verification by IG, GAO, congressional oversight, or external reporting.</div>
     </div>
     <div class="flag-item">
-      <div class="flag-name">Redefined</div>
-      <div class="flag-effect">Outcome capped at D2</div>
-      <div class="flag-desc">Definition of success materially changed mid-term, or condition of a negative promise redefined.</div>
-    </div>
-    <div class="flag-item">
-      <div class="flag-name">Externally Blocked</div>
-      <div class="flag-effect">D2 minimum if actions taken</div>
-      <div class="flag-desc">Promise failed due to documented external intervention meeting the Changed-Circumstances Test.</div>
-    </div>
-    <div class="flag-item">
-      <div class="flag-name">Credit Overclaimed</div>
-      <div class="flag-effect">Their Role capped at 0.4</div>
-      <div class="flag-desc">Official claimed credit for outcomes driven by prior administration or federal action.</div>
-    </div>
-    <div class="flag-item">
-      <div class="flag-name">Deadline Shifted</div>
-      <div class="flag-effect">Time Pressure cap relief removed</div>
-      <div class="flag-desc">Timeline extended without explanation after original deadline passed.</div>
-    </div>
-    <div class="flag-item">
-      <div class="flag-name">Scope Reduced</div>
-      <div class="flag-effect">Magnitude capped at M1</div>
-      <div class="flag-desc">Promise delivered in significantly diminished form without acknowledgment.</div>
+      <div class="flag-name">Contested Evidence</div>
+      <div class="flag-effect">Lower bucket scored; flagged for review</div>
+      <div class="flag-desc">Evidence sources disagree on whether the commitment was delivered. Methodology scores conservatively and notes the conflict.</div>
     </div>
   </div>
 
-  <h2>Transparency Flags</h2>
-  <p>Transparency flags are applied at the scorecard level and communicate limitations to readers without modifying the grade. They appear as labeled badges on the scorecard.</p>
+  <h2>Capability Modifiers</h2>
+  <p>The Federal Agencies methodology adds a capability layer not present in the Elected Officials methodology. Five capability factors are scored independently and published alongside the Promise Score. They do not adjust the score — they provide context for interpreting it, enabling a distinction between structural failure (the agency lacked the conditions to deliver) and performance failure (the conditions were there but the agency didn't deliver).</p>
 
-  <div class="tflag-grid">
-    <div class="tflag-item"><div class="tflag-name">Contested</div><div class="tflag-desc">A classification is disputed by the official or a credible third party. Evidence and rationale are documented.</div></div>
-    <div class="tflag-item"><div class="tflag-name">Limited Evidence</div><div class="tflag-desc">Fewer sources than the standard minimum. Judgment applied. Grade should not be cited as definitive.</div></div>
-    <div class="tflag-item"><div class="tflag-name">AI Draft</div><div class="tflag-desc">Scorecard is AI-generated and pending human review.</div></div>
-    <div class="tflag-item"><div class="tflag-name">Under Review</div><div class="tflag-desc">Classification actively being re-evaluated due to new evidence.</div></div>
-    <div class="tflag-item"><div class="tflag-name">Low Promise Count</div><div class="tflag-desc">Fewer than five promises scored. Grade may not reflect the full record.</div></div>
-    <div class="tflag-item"><div class="tflag-name">Mid-Term Departure</div><div class="tflag-desc">Official left office before term ended. Scoring rules for departure cases documented in full methodology.</div></div>
+  <table class="rubric-table">
+    <tr><th>Factor</th><th>Question It Answers</th><th>Scored 1–5</th></tr>
+    <tr><td><strong>Resource Adequacy</strong></td><td>Did the agency have the budget and staffing to deliver?</td><td>5 = fully resourced · 1 = resources entirely absent</td></tr>
+    <tr><td><strong>Authority Alignment</strong></td><td>Did the agency have the legal authority to deliver independently?</td><td>5 = sole authority · 1 = authority insufficient</td></tr>
+    <tr><td><strong>Political Support</strong></td><td>Did executive and congressional leadership actively support delivery?</td><td>5 = consistent support · 1 = active opposition</td></tr>
+    <tr><td><strong>Timeline Realism</strong></td><td>Was the original deadline achievable given required actions?</td><td>5 = generous timeline · 1 = unachievable</td></tr>
+    <tr><td><strong>External Dependencies</strong></td><td>Did delivery depend on contractor performance, court rulings, or other factors outside agency control?</td><td>5 = minimal dependencies · 1 = delivery largely outside agency control</td></tr>
+  </table>
+
+  <div class="callout callout-green">
+    <strong>How to read capability patterns:</strong> Low delivery + low capability across all five factors = structural failure. Low delivery + high capability = performance failure. The distinction matters for accountability: an agency that failed despite full resources, clear authority, and political support has a different accountability story than one that failed because Congress rescinded its budget mid-term.
   </div>
 
-  <h2>Data Sources</h2>
-  <ul class="sources-list">
-    <li><strong>Tier 1 — Primary:</strong> Official government records, signed legislation, executive orders, budget documents, Federal Register publications. Required for D3 or D4 delivery scores.</li>
-    <li><strong>Tier 2 — Authoritative:</strong> Major news organizations with named sources, academic and policy research, nonpartisan watchdog reports (CBO, GAO, CRS). Acceptable for confirmation; not sufficient alone for contested outcomes.</li>
-    <li><strong>Tier 3 — Supporting:</strong> Other credible reporting, official statements, press releases. Requires corroboration.</li>
-    <li><strong>Inadmissible:</strong> Anonymous social media, partisan advocacy material, press releases from the official's own office as sole support for a positive outcome.</li>
-  </ul>
+  <h2>Agency Profiles — No Single Grade</h2>
+  <p>Federal agencies do not receive a single letter grade. Agency missions are too varied and their commitment portfolios too complex for a single grade to carry meaning. Instead, each agency receives a structured profile showing delivery patterns by commitment type, by difficulty level, and by capability-adjusted analysis. The profile surfaces whether the agency's performance is structurally driven or performance-driven — a distinction that a single letter grade would erase.</p>
+
+  <h2>Lifecycle Flags</h2>
+  <p>Agency commitments may be flagged based on events after they enter the database. These flags appear on the commitment record and do not modify the delivery score.</p>
+
+  <table class="rubric-table">
+    <tr><th>Flag</th><th>Applied When</th></tr>
+    <tr><td><strong>Revoked</strong></td><td>Commitment explicitly rescinded by the agency or a superseding authority.</td></tr>
+    <tr><td><strong>Superseded</strong></td><td>Commitment replaced by a later commitment that materially alters the deliverable, target, timeframe, or scope.</td></tr>
+    <tr><td><strong>Contingent</strong></td><td>Commitment execution depends on action not yet taken (most commonly: congressional appropriation).</td></tr>
+    <tr><td><strong>Lapsed</strong></td><td>Cross-administration commitment that dropped without explicit revocation. Applied if a new administration does not formally restate a prior commitment within 12 months of transition.</td></tr>
+    <tr><td><strong>Awaiting Translation</strong></td><td>Executive order or OMB memorandum directed at an agency that the agency has not yet translated into a formal implementation commitment.</td></tr>
+  </table>
 </div>
 
 <footer>
