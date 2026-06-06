@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submission Tracker — PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gold-light: #d4a843; --red: #c0392b; --green: #1a6b3c; --gray: #6b6459;
+    --blue: #2c5f7a; --amber: #9a6b1e; --purple: #6b4a7a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; overscroll-behavior-y: none; }
+
+  /* ── MASTHEAD ── */
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; position: relative; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  /* ── HAMBURGER (mobile nav) ── */
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 250; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 4px 0; transition: all 0.2s; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: var(--paper); z-index: 500; overflow-y: auto; padding: 24px 28px 60px; }
+  .mobile-menu.open { display: block; }
+  .mobile-menu-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+  .mobile-menu-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; }
+  .mobile-menu-close { background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: var(--ink); padding: 0 4px; }
+  .mobile-menu a { display: block; font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu .mm-group-label { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); padding: 24px 0 8px; border-bottom: none; margin-top: 4px; }
+  .mobile-menu .mm-sub { font-family: 'DM Mono', monospace; font-weight: 400; padding-left: 16px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); padding-top: 11px; padding-bottom: 11px; }
+  @media (max-width: 768px) {
+    .hamburger { display: block; }
+    .masthead-nav { display: none !important; }
+  }
+
+  /* ── PAGE WRAP ── */
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 40px 80px; }
+  .intro { max-width: 720px; margin-bottom: 32px; }
+  .intro p { font-size: 15px; line-height: 1.7; color: var(--gray); margin-bottom: 12px; }
+  .intro a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .intro a:hover { border-color: var(--gold); }
+
+  /* ── KEY / LEGEND ── */
+  .legend { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-bottom: 32px; }
+  .legend-col { background: var(--paper); padding: 20px 22px; }
+  .legend-title { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  .legend-item { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; font-size: 12.5px; line-height: 1.5; }
+  .legend-item:last-child { margin-bottom: 0; }
+  .badge { font-family: 'DM Mono', monospace; font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; white-space: nowrap; border: 1px solid; flex-shrink: 0; width: 140px; text-align: center; }
+  .legend-desc { color: var(--gray); }
+  .cat-tag { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink); background: var(--cream); border: 1px solid var(--rule); padding: 3px 6px; white-space: nowrap; flex-shrink: 0; width: 140px; text-align: center; overflow: hidden; }
+
+  /* Status badge colors */
+  .st-submitted   { color: var(--gray);  border-color: var(--gray); background: rgba(107,100,89,0.06); }
+  .st-review      { color: var(--blue);  border-color: var(--blue); background: rgba(44,95,122,0.07); }
+  .st-accepted    { color: var(--amber); border-color: var(--amber); background: rgba(154,107,30,0.08); }
+  .st-validation  { color: var(--purple);border-color: var(--purple); background: rgba(107,74,122,0.07); }
+  .st-rejected    { color: var(--red);   border-color: var(--red); background: rgba(192,57,43,0.06); }
+  .st-confirmed   { color: var(--green); border-color: var(--green); background: rgba(26,107,60,0.07); }
+
+  /* ── TABLE (spreadsheet style) ── */
+  .table-tools { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+  .table-count { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); }
+  .filter-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .filter-btn { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); background: none; border: 1px solid var(--rule); padding: 6px 12px; cursor: pointer; transition: all 0.12s; }
+  .filter-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .filter-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  .grid-wrap { border: 1px solid var(--ink); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.tracker { width: 100%; border-collapse: collapse; min-width: 720px; }
+  table.tracker thead th { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper); background: var(--ink); padding: 11px 14px; text-align: left; white-space: nowrap; position: sticky; top: 0; }
+  table.tracker tbody td { font-size: 13px; padding: 12px 14px; border-bottom: 1px solid var(--rule); vertical-align: middle; color: var(--ink); }
+  table.tracker tbody tr { cursor: pointer; transition: background 0.1s; }
+  table.tracker tbody tr:nth-child(even) { background: rgba(212,201,180,0.18); }
+  table.tracker tbody tr:hover { background: var(--cream); }
+  .col-id { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--gold); font-weight: 500; white-space: nowrap; }
+  .col-title { font-weight: 400; min-width: 240px; }
+  .col-date { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gray); white-space: nowrap; }
+  td .badge { display: inline-block; width: auto; min-width: 0; }
+  td .cat-tag { display: inline-block; width: auto; min-width: 0; overflow: visible; }
+  .row-arrow { color: var(--rule); font-size: 14px; }
+  table.tracker tbody tr:hover .row-arrow { color: var(--gold); }
+
+  /* ── DETAIL MODAL ── */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(26,23,20,0.75); z-index: 600; overflow-y: auto; padding: 40px 20px; }
+  .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+  .modal-box { background: var(--paper); max-width: 640px; width: 100%; border: 1px solid var(--rule); margin: auto; }
+  .modal-head { padding: 24px 28px 20px; border-bottom: 3px double var(--ink); }
+  .modal-id { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 8px; }
+  .modal-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; line-height: 1.25; }
+  .modal-meta-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; align-items: center; }
+  .modal-body { padding: 22px 28px 26px; }
+  .modal-field { margin-bottom: 18px; }
+  .modal-field-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-bottom: 6px; }
+  .modal-field-val { font-size: 14px; line-height: 1.65; color: var(--ink); }
+  .modal-request { background: var(--cream); border-left: 3px solid var(--gold); padding: 14px 16px; font-size: 13.5px; line-height: 1.6; color: var(--ink); font-style: italic; }
+  .modal-timeline { border-top: 1px solid var(--rule); padding-top: 16px; margin-top: 4px; }
+  .tl-item { display: flex; gap: 12px; margin-bottom: 12px; font-size: 12.5px; }
+  .tl-date { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gray); white-space: nowrap; min-width: 78px; }
+  .tl-text { color: var(--ink); line-height: 1.5; }
+  .modal-foot { padding: 16px 28px 20px; border-top: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .modal-link { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); background: var(--green); border: 1px solid var(--green); padding: 9px 16px; text-decoration: none; transition: all 0.15s; }
+  .modal-link:hover { opacity: 0.85; }
+  .modal-close { background: none; border: 1px solid var(--rule); padding: 8px 18px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; color: var(--gray); }
+  .modal-close:hover { border-color: var(--ink); color: var(--ink); }
+  .reject-note { background: rgba(192,57,43,0.06); border-left: 3px solid var(--red); padding: 12px 14px; font-size: 13px; line-height: 1.6; color: var(--ink); }
+
+  /* ── FOOTER ── */
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); }
+  footer a { color: var(--gray); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 768px) {
+    .masthead-nav { display: none !important; }
+    .wrap { padding: 28px 20px 60px; }
+    .legend { grid-template-columns: 1fr; }
+    .badge, .cat-tag { width: 128px; }
+  }
+  @media (max-width: 600px) {
+    .masthead { padding-left: 20px; padding-right: 20px; }
+    .table-tools { flex-direction: column; align-items: flex-start; }
+    .modal-foot { flex-direction: column; align-items: stretch; }
+    .modal-link, .modal-close { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Nonpartisan Government Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Submission Tracker</div>
+  <div class="masthead-rule"><span></span><em>CORRECTION REQUESTS &middot; PUBLIC QUEUE</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html">Elected Officials</a>
+        <a href="/methodology-agencies.html">Depts &amp; Agencies</a>
+        <a href="/methodology-presidential.html">Presidential &amp; International</a>
+        <a href="/methodology-ai.html">AI Pipeline</a>
+        <a href="/methodology-limitations.html">Limitations</a>
+      </div>
+    </div>
+    <a href="/error-log.html" class="active">Error Log</a>
+  </nav>
+
+<button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="mobile-menu-title">PolicyLogic</div>
+    <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='';" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <div class="mm-group-label">Scorecards</div>
+  <a href="/scorecards.html" class="mm-sub">All Scorecards</a>
+  <a href="/state-local.html" class="mm-sub">State &amp; Local</a>
+  <a href="/national.html" class="mm-sub">Congress</a>
+  <a href="/presidential.html" class="mm-sub">Presidential</a>
+  <a href="/international.html" class="mm-sub">International</a>
+  <a href="/departments.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/nonprofits.html" class="mm-sub">Nonprofits &amp; NGOs</a>
+  <div class="mm-group-label">Learn</div>
+  <a href="/learn.html" class="mm-sub">Learning Center</a>
+  <a href="/learn-cognitive-biases.html" class="mm-sub">Think Clearly</a>
+  <a href="/learn-how-policy-works.html" class="mm-sub">How Policy Works</a>
+  <a href="/learn-how-to-influence.html" class="mm-sub">Take Action</a>
+  <a href="/learn-govt-101.html" class="mm-sub">Govt 101</a>
+  <a href="/learn-glossary.html" class="mm-sub">Glossary</a>
+  <div class="mm-group-label">Methodology</div>
+  <a href="/methodology.html" class="mm-sub">Elected Officials</a>
+  <a href="/methodology-agencies.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
+  <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
+  <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
+  <a href="/error-log.html">Error Log</a>
+</div>
+
+</header>
+
+<div class="wrap">
+
+  <div class="intro">
+    <p>Every correction request we receive is logged here and tracked through review. Submissions are anonymized — names, emails, and contact details are never published. Each entry shows the claimed issue, its category, and where it stands in the review process.</p>
+    <p>Confirmed corrections are published in full on the <a href="/error-log.html">Error Log</a>.</p>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-col">
+      <div class="legend-title">Status</div>
+      <div class="legend-item"><span class="badge st-submitted">Submitted</span><span class="legend-desc">Received and logged; not yet reviewed.</span></div>
+      <div class="legend-item"><span class="badge st-review">In Review</span><span class="legend-desc">A reviewer is assessing whether the claim has merit.</span></div>
+      <div class="legend-item"><span class="badge st-accepted">Accepted</span><span class="legend-desc">Accepted for further investigation against sources.</span></div>
+      <div class="legend-item"><span class="badge st-validation">Validation</span><span class="legend-desc">Proposed change is in second-reviewer validation.</span></div>
+      <div class="legend-item"><span class="badge st-confirmed">Confirmed</span><span class="legend-desc">Change made; published in the Error Log.</span></div>
+      <div class="legend-item"><span class="badge st-rejected">Rejected</span><span class="legend-desc">Evidence did not support a change; reason given.</span></div>
+    </div>
+    <div class="legend-col">
+      <div class="legend-title">Category</div>
+      <div class="legend-item"><span class="cat-tag">Misclassified</span><span class="legend-desc">Promise sorted into the wrong scoring type.</span></div>
+      <div class="legend-item"><span class="cat-tag">Overlooked Evidence</span><span class="legend-desc">A relevant source was missed in scoring.</span></div>
+      <div class="legend-item"><span class="cat-tag">Incorrect Score</span><span class="legend-desc">Delivery or role value disputed.</span></div>
+      <div class="legend-item"><span class="cat-tag">Outdated Info</span><span class="legend-desc">Newer information supersedes what was scored.</span></div>
+      <div class="legend-item"><span class="cat-tag">Factual Error</span><span class="legend-desc">A name, date, or detail is wrong.</span></div>
+      <div class="legend-item"><span class="cat-tag">Other</span><span class="legend-desc">Does not fit the categories above.</span></div>
+    </div>
+  </div>
+
+  <!-- TABLE TOOLS -->
+  <div class="table-tools">
+    <div class="table-count" id="count"></div>
+    <div class="filter-row" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="submitted">Submitted</button>
+      <button class="filter-btn" data-filter="review">In Review</button>
+      <button class="filter-btn" data-filter="accepted">Accepted</button>
+      <button class="filter-btn" data-filter="validation">Validation</button>
+      <button class="filter-btn" data-filter="confirmed">Confirmed</button>
+      <button class="filter-btn" data-filter="rejected">Rejected</button>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <div class="grid-wrap">
+    <table class="tracker">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Category</th>
+          <th>Summary</th>
+          <th>Status</th>
+          <th>Submitted</th>
+          <th>Updated</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-id" id="m-id"></div>
+      <div class="modal-title" id="m-title"></div>
+      <div class="modal-meta-row" id="m-meta"></div>
+    </div>
+    <div class="modal-body" id="m-body"></div>
+    <div class="modal-foot" id="m-foot"></div>
+  </div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; Submissions are anonymized &middot; <a href="/error-log.html">Error Log</a> &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+<script>
+// ── SAMPLE DATA (front-end demo — replace with live feed from backend) ──
+var STATUS_LABEL = {
+  submitted: 'Submitted', review: 'In Review', accepted: 'Accepted',
+  validation: 'Validation', confirmed: 'Confirmed', rejected: 'Rejected'
+};
+var STATUS_CLASS = {
+  submitted: 'st-submitted', review: 'st-review', accepted: 'st-accepted',
+  validation: 'st-validation', confirmed: 'st-confirmed', rejected: 'st-rejected'
+};
+
+let SUBMISSIONS = [
+  {
+    id: '#001', category: 'Overlooked Evidence', status: 'confirmed',
+    title: 'Broadband bill missed in Colorado governor scoring',
+    submitted: '2026-04-28', updated: '2026-05-12',
+    scorecard: 'Governor · Colorado',
+    request: 'The scorecard lists the rural broadband promise as Minimal delivery, but HB 24-1234 was signed into law in April 2025 and the state has reached 78% coverage. This should be a much higher delivery score.',
+    timeline: [
+      ['2026-04-28', 'Submitted and logged.'],
+      ['2026-05-01', 'In review — claim assessed for merit.'],
+      ['2026-05-04', 'Accepted for investigation against legislative record.'],
+      ['2026-05-09', 'Validation — proposed change to D3 reviewed by second scorer.'],
+      ['2026-05-12', 'Confirmed. Score corrected D1 to D3.']
+    ],
+    errorLog: '/error-log.html'
+  },
+  {
+    id: '#002', category: 'Incorrect Score', status: 'confirmed',
+    title: 'Credit overclaimed on Ohio senator infrastructure promise',
+    submitted: '2026-04-10', updated: '2026-04-28',
+    scorecard: 'U.S. Senator · Ohio',
+    request: 'The bridge funding credited to this senator was allocated under the 2021 infrastructure act, before he took office. His role value of 0.8 is too high.',
+    timeline: [
+      ['2026-04-10', 'Submitted and logged.'],
+      ['2026-04-14', 'In review.'],
+      ['2026-04-18', 'Accepted for investigation against the federal funding timeline.'],
+      ['2026-04-24', 'Validation — Credit Overclaimed flag and role reduction reviewed.'],
+      ['2026-04-28', 'Confirmed. Role reduced 0.8 to 0.4; flag applied.']
+    ],
+    errorLog: '/error-log.html'
+  },
+  {
+    id: '#003', category: 'Misclassified', status: 'validation',
+    title: 'Negative promise scored as qualitative for CA representative',
+    submitted: '2026-05-18', updated: '2026-05-29',
+    scorecard: 'U.S. Representative · CA-15',
+    request: 'The pledge to never vote to cut Medicare is a negative promise (a commitment not to do something) but it appears to be scored on the qualitative milestone ladder. The scoring track looks wrong.',
+    timeline: [
+      ['2026-05-18', 'Submitted and logged.'],
+      ['2026-05-22', 'In review.'],
+      ['2026-05-25', 'Accepted for investigation against voting record.'],
+      ['2026-05-29', 'Validation — reclassification to negative track under second review.']
+    ],
+    errorLog: null
+  },
+  {
+    id: '#004', category: 'Outdated Info', status: 'accepted',
+    title: 'Newer city audit changes San Antonio housing unit count',
+    submitted: '2026-05-26', updated: '2026-06-02',
+    scorecard: 'Mayor · San Antonio, TX',
+    request: 'A city auditor report from April 2026 shows 3,920 affordable units completed, not the 1,840 the scorecard cites from an older press release. The delivery level should be reviewed.',
+    timeline: [
+      ['2026-05-26', 'Submitted and logged.'],
+      ['2026-05-30', 'In review.'],
+      ['2026-06-02', 'Accepted for investigation against the city auditor report.']
+    ],
+    errorLog: null
+  },
+  {
+    id: '#005', category: 'Factual Error', status: 'review',
+    title: 'Committee name listed incorrectly on a Senate scorecard',
+    submitted: '2026-06-01', updated: '2026-06-03',
+    scorecard: 'U.S. Senator · Arizona',
+    request: 'The scorecard refers to the "Senate Energy Committee" but the correct name is the Committee on Energy and Natural Resources. Minor but worth fixing.',
+    timeline: [
+      ['2026-06-01', 'Submitted and logged.'],
+      ['2026-06-03', 'In review.']
+    ],
+    errorLog: null
+  },
+  {
+    id: '#006', category: 'Incorrect Score', status: 'submitted',
+    title: 'Dispute over delivery level on a governor climate pledge',
+    submitted: '2026-06-04', updated: '2026-06-04',
+    scorecard: 'Governor · Washington',
+    request: 'I think the climate pledge is graded too low. The executive order counts as substantial action and should raise the delivery level.',
+    timeline: [
+      ['2026-06-04', 'Submitted and logged. Awaiting review.']
+    ],
+    errorLog: null
+  },
+  {
+    id: '#007', category: 'Overlooked Evidence', status: 'rejected',
+    title: 'Claimed missing tax-cut legislation on a state scorecard',
+    submitted: '2026-04-02', updated: '2026-04-19',
+    scorecard: 'Governor · Texas',
+    request: 'The scorecard ignores a tax cut the governor signed. The delivery score should be higher.',
+    timeline: [
+      ['2026-04-02', 'Submitted and logged.'],
+      ['2026-04-06', 'In review.'],
+      ['2026-04-11', 'Accepted for investigation against the legislative record.'],
+      ['2026-04-19', 'Rejected — see reason.']
+    ],
+    rejectReason: 'The cited legislation was already accounted for in the scorecard. The promise was scored on the full enacted measure; the delivery level reflects that the cut was partial relative to the specific campaign commitment, which pledged a larger reduction. The evidence did not support a higher score.',
+    errorLog: null
+  },
+  {
+    id: '#008', category: 'Other', status: 'rejected',
+    title: 'Request to add an official not yet in scope',
+    submitted: '2026-03-20', updated: '2026-03-27',
+    scorecard: 'General',
+    request: 'Please add a scorecard for my state legislator.',
+    timeline: [
+      ['2026-03-20', 'Submitted and logged.'],
+      ['2026-03-24', 'In review.'],
+      ['2026-03-27', 'Rejected — see reason.']
+    ],
+    rejectReason: 'State legislators are not yet within PolicyLogic coverage. This is a coverage request rather than a correction. It has been noted for future scope planning but does not enter the correction pipeline.',
+    errorLog: null
+  }
+];
+
+var activeFilter = 'all';
+
+function statusBadge(s) {
+  return '<span class="badge ' + STATUS_CLASS[s] + '">' + STATUS_LABEL[s] + '</span>';
+}
+function fmtDate(d) {
+  var parts = d.split('-');
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return months[parseInt(parts[1],10)-1] + ' ' + parseInt(parts[2],10) + ', ' + parts[0];
+}
+
+function renderRows() {
+  var tbody = document.getElementById('rows');
+  var list = SUBMISSIONS.filter(function(s){ return activeFilter==='all' || s.status===activeFilter; });
+  tbody.innerHTML = list.map(function(s, i) {
+    var realIndex = SUBMISSIONS.indexOf(s);
+    return '<tr onclick="openModal(' + realIndex + ')">' +
+      '<td class="col-id">' + s.id + '</td>' +
+      '<td><span class="cat-tag">' + s.category + '</span></td>' +
+      '<td class="col-title">' + s.title + '</td>' +
+      '<td>' + statusBadge(s.status) + '</td>' +
+      '<td class="col-date">' + fmtDate(s.submitted) + '</td>' +
+      '<td class="col-date">' + fmtDate(s.updated) + '</td>' +
+      '<td class="row-arrow">&rsaquo;</td>' +
+    '</tr>';
+  }).join('');
+  document.getElementById('count').textContent = list.length + ' of ' + SUBMISSIONS.length + ' submissions';
+}
+
+function openModal(i) {
+  var s = SUBMISSIONS[i];
+  document.getElementById('m-id').textContent = s.id + ' \u00b7 ' + s.scorecard;
+  document.getElementById('m-title').textContent = s.title;
+  document.getElementById('m-meta').innerHTML =
+    '<span class="cat-tag">' + s.category + '</span>' + statusBadge(s.status);
+
+  var body = '';
+  body += '<div class="modal-field"><div class="modal-field-label">Submitted Request (anonymized)</div>' +
+          '<div class="modal-request">' + s.request + '</div></div>';
+  if (s.status === 'rejected' && s.rejectReason) {
+    body += '<div class="modal-field"><div class="modal-field-label">Reason for Rejection</div>' +
+            '<div class="reject-note">' + s.rejectReason + '</div></div>';
+  }
+  body += '<div class="modal-field modal-timeline"><div class="modal-field-label">Status History</div>';
+  body += s.timeline.map(function(t){
+    return '<div class="tl-item"><span class="tl-date">' + fmtDate(t[0]) + '</span><span class="tl-text">' + t[1] + '</span></div>';
+  }).join('');
+  body += '</div>';
+  document.getElementById('m-body').innerHTML = body;
+
+  var foot = '';
+  if (s.status === 'confirmed' && s.errorLog) {
+    foot += '<a href="' + s.errorLog + '" class="modal-link">View in Error Log &rarr;</a>';
+  } else {
+    foot += '<span style="font-size:11px;color:var(--gray);font-family:\'DM Mono\',monospace;">' +
+            (s.status==='rejected' ? 'No change made' : 'In progress') + '</span>';
+  }
+  foot += '<button class="modal-close" onclick="closeModal()">Close</button>';
+  document.getElementById('m-foot').innerHTML = foot;
+
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+
+document.querySelectorAll('.filter-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    activeFilter = btn.dataset.filter;
+    renderRows();
+  });
+});
+
+// Load live submissions from the API; fall back to the built-in sample data.
+(function loadSubmissions() {
+  fetch('/api/submissions')
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if (j && j.ok && Array.isArray(j.submissions) && j.submissions.length) {
+        SUBMISSIONS = j.submissions;
+      }
+      renderRows();
+    })
+    .catch(function(){ renderRows(); });
+})();
+</script>
+
+<script>
+(function() {
+  function closeAll() { document.querySelectorAll('.nav-dropdown.open').forEach(function(el) { el.classList.remove('open'); }); }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) { dropdown.classList.add('open'); }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>
