@@ -6,8 +6,8 @@
 // Optionally syncs current status from Linear so the public statuses reflect
 // where each issue actually is in your Linear workflow.
 
-import { listPublicRecords } from '../lib/store.js';
-import { getIssueStatuses } from '../lib/linear.js';
+import { listPublicRecords } from './_store.js';
+import { getIssueStatuses } from './_linear.js';
 
 // Map your Linear workflow state names → the tracker's status keys.
 // Adjust the left-hand strings to match YOUR Linear workflow state names exactly.
