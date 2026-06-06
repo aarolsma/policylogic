@@ -8,7 +8,7 @@
 // This is the human gate: a submission's `request` text is the submitter's own
 // words and is NOT shown publicly until reviewedForPII is set true here.
 
-import { updatePublicRecord } from '../lib/store.js';
+import { updatePublicRecord } from './_store.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
