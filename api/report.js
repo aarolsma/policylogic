@@ -10,8 +10,8 @@
 //
 // This function NEVER returns submitter name/email to the browser.
 
-import { createIssue } from '../lib/linear.js';
-import { savePublicRecord, nextAssignmentNumber } from '../lib/store.js';
+import { createIssue } from './_linear.js';
+import { savePublicRecord, nextAssignmentNumber } from './_store.js';
 
 const CATEGORY_LABELS = {
   misclassified: 'Misclassified',
