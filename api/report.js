@@ -5,7 +5,7 @@
 //
 // ENV VARS required (set in Vercel → Project → Settings → Environment Variables):
 //   LINEAR_API_KEY   — Linear personal API key (Linear → Settings → Security & access → API)
-//   LINEAR_TEAM_ID   — the Linear team UUID the issues are created in
+//   LINEAR_TEAM_KEY  — the Linear team short key, e.g. "POL"
 //   SUBMISSIONS_KV   — (optional) if using Vercel KV / Upstash for public records
 //
 // This function NEVER returns submitter name/email to the browser.
