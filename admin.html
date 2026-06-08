@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Review Console · PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#1a1714; --paper:#f5f0e8; --cream:#ede8dc; --rule:#d4c9b4;
+    --gold:#b8892a; --red:#c0392b; --green:#1a6b3c; --gray:#6b6459;
+    --blue:#2c5f7a; --amber:#9a6b1e; --purple:#6b4a7a;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--paper); color:var(--ink); font-family:'DM Sans',sans-serif; font-weight:300; min-height:100vh; }
+  .bar { border-bottom:3px double var(--ink); padding:20px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  .bar-title { font-family:'Playfair Display',serif; font-size:24px; font-weight:900; }
+  .bar-title span { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); display:block; font-weight:400; margin-bottom:2px; }
+  .wrap { max-width:920px; margin:0 auto; padding:32px; }
+
+  /* Gate */
+  .gate { max-width:420px; margin:80px auto; text-align:center; }
+  .gate h1 { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; margin-bottom:10px; }
+  .gate p { font-size:13px; color:var(--gray); line-height:1.6; margin-bottom:20px; }
+  .gate input { width:100%; background:var(--cream); border:1px solid var(--rule); padding:12px 14px; font-size:14px; font-family:'DM Mono',monospace; color:var(--ink); outline:none; margin-bottom:12px; }
+  .gate input:focus { border-color:var(--ink); }
+  .btn { background:var(--ink); border:1px solid var(--ink); padding:11px 24px; font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; color:var(--paper); transition:opacity 0.15s; }
+  .btn:hover { opacity:0.85; }
+  .btn:disabled { opacity:0.5; cursor:default; }
+  .btn-sm { padding:7px 14px; font-size:9px; }
+  .btn-ghost { background:none; color:var(--gray); border:1px solid var(--rule); }
+  .btn-ghost:hover { border-color:var(--ink); color:var(--ink); opacity:1; }
+  .btn-green { background:var(--green); border-color:var(--green); }
+  .btn-red { background:var(--red); border-color:var(--red); }
+
+  .gate-error { color:var(--red); font-size:12px; margin-top:8px; min-height:16px; }
+
+  /* Summary counts */
+  .counts { display:flex; gap:1px; background:var(--rule); border:1px solid var(--rule); margin-bottom:28px; }
+  .count-box { background:var(--paper); padding:14px 18px; flex:1; text-align:center; }
+  .count-num { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; line-height:1; }
+  .count-label { font-family:'DM Mono',monospace; font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:var(--gray); margin-top:4px; }
+
+  /* Cards */
+  .sub { border:1px solid var(--rule); margin-bottom:14px; background:var(--paper); }
+  .sub.pending { border-color:var(--amber); border-left:3px solid var(--amber); }
+  .sub-head { padding:16px 20px; display:flex; align-items:flex-start; justify-content:space-between; gap:14px; cursor:pointer; }
+  .sub-head:hover { background:var(--cream); }
+  .sub-id { font-family:'DM Mono',monospace; font-size:13px; color:var(--gold); font-weight:500; }
+  .sub-title { font-size:14px; margin:3px 0; }
+  .sub-meta { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:0.06em; text-transform:uppercase; color:var(--gray); }
+  .badge { font-family:'DM Mono',monospace; font-size:8px; letter-spacing:0.08em; text-transform:uppercase; padding:3px 8px; border:1px solid; white-space:nowrap; }
+  .b-pending { color:var(--amber); border-color:var(--amber); }
+  .b-live { color:var(--green); border-color:var(--green); }
+  .st-submitted{color:var(--gray);border-color:var(--gray);} .st-review{color:var(--blue);border-color:var(--blue);}
+  .st-accepted{color:var(--amber);border-color:var(--amber);} .st-validation{color:var(--purple);border-color:var(--purple);}
+  .st-confirmed{color:var(--green);border-color:var(--green);} .st-rejected{color:var(--red);border-color:var(--red);}
+
+  .sub-body { display:none; border-top:1px solid var(--rule); padding:20px; background:var(--cream); }
+  .sub.open .sub-body { display:block; }
+  .field { margin-bottom:14px; }
+  .field label { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:0.12em; text-transform:uppercase; color:var(--gray); display:block; margin-bottom:5px; }
+  .field textarea, .field input, .field select { width:100%; background:var(--paper); border:1px solid var(--rule); padding:9px 11px; font-size:13px; font-family:'DM Sans',sans-serif; color:var(--ink); outline:none; resize:vertical; }
+  .field textarea:focus, .field input:focus, .field select:focus { border-color:var(--ink); }
+  .hint { font-size:11px; color:var(--gray); line-height:1.5; margin-top:4px; }
+  .pii-warn { background:rgba(154,107,30,0.08); border-left:3px solid var(--amber); padding:10px 12px; font-size:12px; color:var(--ink); line-height:1.5; margin-bottom:14px; }
+  .row-actions { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+  .row-status { font-size:11px; color:var(--gray); font-family:'DM Mono',monospace; }
+  .empty { text-align:center; padding:60px 20px; color:var(--gray); font-style:italic; font-family:'Playfair Display',serif; }
+  .linear-link { font-family:'DM Mono',monospace; font-size:10px; color:var(--gold); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-title"><span>Internal · Not Public</span>Submission Review Console</div>
+  <button class="btn btn-ghost btn-sm" id="logout-btn" onclick="logout()" style="display:none;">Lock</button>
+</div>
+
+<!-- GATE -->
+<div class="wrap" id="gate-wrap">
+  <div class="gate">
+    <h1>Review Console</h1>
+    <p>Enter your admin token to review and approve correction submissions. The token is held only in this browser tab and is never saved.</p>
+    <input id="token-input" type="password" placeholder="Admin token" onkeydown="if(event.key==='Enter')unlock()" />
+    <button class="btn" onclick="unlock()" id="unlock-btn">Unlock</button>
+    <div class="gate-error" id="gate-error"></div>
+  </div>
+</div>
+
+<!-- CONSOLE -->
+<div class="wrap" id="console-wrap" style="display:none;">
+  <div class="counts" id="counts"></div>
+  <div id="list"></div>
+</div>
+
+<script>
+var TOKEN = '';
+var RECORDS = [];
+
+var STATUS_OPTIONS = [
+  ['submitted','Submitted'],['review','In Review'],['accepted','Accepted'],
+  ['validation','Validation'],['confirmed','Confirmed'],['rejected','Rejected']
+];
+
+function authHeaders() {
+  return { 'Content-Type':'application/json', 'Authorization':'Bearer ' + TOKEN };
+}
+
+async function unlock() {
+  var val = document.getElementById('token-input').value.trim();
+  if (!val) return;
+  TOKEN = val;
+  var btn = document.getElementById('unlock-btn');
+  btn.disabled = true; btn.textContent = 'Checking...';
+  document.getElementById('gate-error').textContent = '';
+  try {
+    var ok = await loadRecords();
+    if (ok) {
+      document.getElementById('gate-wrap').style.display = 'none';
+      document.getElementById('console-wrap').style.display = '';
+      document.getElementById('logout-btn').style.display = '';
+    }
+  } finally {
+    btn.disabled = false; btn.textContent = 'Unlock';
+  }
+}
+
+function logout() {
+  TOKEN = ''; RECORDS = [];
+  document.getElementById('token-input').value = '';
+  document.getElementById('console-wrap').style.display = 'none';
+  document.getElementById('logout-btn').style.display = 'none';
+  document.getElementById('gate-wrap').style.display = '';
+}
+
+async function loadRecords() {
+  try {
+    var r = await fetch('/api/admin-list', { method:'POST', headers: authHeaders(), body:'{}' });
+    if (r.status === 401) { document.getElementById('gate-error').textContent = 'Invalid token.'; return false; }
+    if (!r.ok) { document.getElementById('gate-error').textContent = 'Could not load (error ' + r.status + ').'; return false; }
+    var j = await r.json();
+    RECORDS = (j.records || []);
+    render();
+    return true;
+  } catch (e) {
+    document.getElementById('gate-error').textContent = 'Network error: ' + e.message;
+    return false;
+  }
+}
+
+function fmt(d){ return d || ''; }
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function render() {
+  var pending = RECORDS.filter(function(r){ return !r.reviewedForPII; }).length;
+  var live = RECORDS.filter(function(r){ return r.reviewedForPII; }).length;
+  document.getElementById('counts').innerHTML =
+    '<div class="count-box"><div class="count-num">' + RECORDS.length + '</div><div class="count-label">Total</div></div>' +
+    '<div class="count-box"><div class="count-num" style="color:var(--amber)">' + pending + '</div><div class="count-label">Pending Review</div></div>' +
+    '<div class="count-box"><div class="count-num" style="color:var(--green)">' + live + '</div><div class="count-label">Live on Tracker</div></div>';
+
+  var list = document.getElementById('list');
+  if (!RECORDS.length) { list.innerHTML = '<div class="empty">No submissions yet.</div>'; return; }
+
+  list.innerHTML = RECORDS.map(function(r, i) {
+    var liveBadge = r.reviewedForPII
+      ? '<span class="badge b-live">Live</span>'
+      : '<span class="badge b-pending">Pending</span>';
+    var statusOpts = STATUS_OPTIONS.map(function(o){
+      return '<option value="' + o[0] + '"' + (r.status===o[0]?' selected':'') + '>' + o[1] + '</option>';
+    }).join('');
+    var linearLink = r.linearIdentifier
+      ? '<a class="linear-link" href="https://linear.app/policylogic/issue/' + r.linearIdentifier + '" target="_blank" rel="noopener">' + r.linearIdentifier + ' &rarr;</a>'
+      : '';
+
+    return '<div class="sub' + (r.reviewedForPII?'':' pending') + '" id="sub-' + i + '">' +
+      '<div class="sub-head" onclick="document.getElementById(\'sub-' + i + '\').classList.toggle(\'open\')">' +
+        '<div>' +
+          '<div class="sub-id">' + r.id + ' &nbsp; ' + liveBadge + '</div>' +
+          '<div class="sub-title">' + esc(r.title || '') + '</div>' +
+          '<div class="sub-meta">' + esc(r.category||'') + ' &middot; ' + esc(r.scorecard||'') + ' &middot; ' + fmt(r.submitted) + '</div>' +
+        '</div>' +
+        '<span class="badge st-' + (r.status||'submitted') + '">' + (r.status||'submitted') + '</span>' +
+      '</div>' +
+      '<div class="sub-body">' +
+        (!r.reviewedForPII ? '<div class="pii-warn"><strong>Not yet public.</strong> Review the request text below for any personal or identifying details before approving. Name and email are NOT stored here — they are only in Linear.</div>' : '') +
+        '<div class="field"><label>Public title (shown on tracker)</label><input id="f-title-' + i + '" value="' + esc(r.title||'') + '" /></div>' +
+        '<div class="field"><label>Request text (anonymized — scrub identifying details)</label><textarea id="f-request-' + i + '" rows="5">' + esc(r.request||'') + '</textarea></div>' +
+        '<div class="field"><label>Status</label><select id="f-status-' + i + '">' + statusOpts + '</select></div>' +
+        '<div class="field"><label>Reject reason (only if rejecting)</label><textarea id="f-reject-' + i + '" rows="2">' + esc(r.rejectReason||'') + '</textarea></div>' +
+        '<div class="field"><label>Error Log link (only if confirmed)</label><input id="f-errorlog-' + i + '" value="' + esc(r.errorLog||'') + '" placeholder="/error-log.html" /></div>' +
+        (linearLink ? '<div style="margin-bottom:12px;">Linear issue: ' + linearLink + '</div>' : '') +
+        '<div class="row-actions">' +
+          (!r.reviewedForPII
+            ? '<button class="btn btn-green btn-sm" onclick="save(' + i + ', true)">Approve &amp; Publish</button>'
+            : '<button class="btn btn-sm" onclick="save(' + i + ', true)">Save Changes</button>') +
+          (r.reviewedForPII ? '<button class="btn btn-ghost btn-sm" onclick="save(' + i + ', false)">Unpublish</button>' : '') +
+          '<span class="row-status" id="rowstatus-' + i + '"></span>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+async function save(i, publish) {
+  var r = RECORDS[i];
+  var statusEl = document.getElementById('rowstatus-' + i);
+  statusEl.textContent = 'Saving...';
+
+  var payload = {
+    id: r.id,
+    reviewedForPII: publish,
+    title: document.getElementById('f-title-' + i).value,
+    request: document.getElementById('f-request-' + i).value,
+    status: document.getElementById('f-status-' + i).value,
+    rejectReason: document.getElementById('f-reject-' + i).value,
+    errorLog: document.getElementById('f-errorlog-' + i).value,
+  };
+
+  try {
+    var resp = await fetch('/api/admin-update', { method:'POST', headers: authHeaders(), body: JSON.stringify(payload) });
+    var j = await resp.json();
+    if (j.ok) {
+      RECORDS[i] = j.record;
+      statusEl.textContent = 'Saved.';
+      setTimeout(render, 600);
+    } else {
+      statusEl.textContent = 'Error: ' + (j.error || 'failed');
+    }
+  } catch (e) {
+    statusEl.textContent = 'Network error.';
+  }
+}
+</script>
+</body>
+</html>
