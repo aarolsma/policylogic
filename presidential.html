@@ -198,7 +198,14 @@
         <a href="/methodology-limitations.html">Limitations</a>
       </div>
     </div>
-    <a href="/error-log.html">Error Log</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Corrections</span>
+      <div class="nav-dropdown-menu">
+        <a href="/error-log.html">Error Log</a>
+        <a href="/submission-tracker.html">Submission Tracker</a>
+      </div>
+    </div>
+    <a href="/contact.html">Contact</a>
   </nav>
 
 <button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
@@ -232,7 +239,10 @@
   <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
   <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
   <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
-  <a href="/error-log.html">Error Log</a>
+  <div class="mm-group-label">Corrections</div>
+  <a href="/error-log.html" class="mm-sub">Error Log</a>
+  <a href="/submission-tracker.html" class="mm-sub">Submission Tracker</a>
+  <a href="/contact.html">Contact</a>
 </div>
 
 </header>
@@ -283,6 +293,8 @@
     <div style="padding:24px 28px;">
       <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">What is incorrect? *</label><textarea id="report-wrong" rows="3" placeholder="Describe the error..." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea></div>
       <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Correct information / source</label><textarea id="report-correct" rows="2" placeholder="What should it say? Include a source URL if possible." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Category</label><select id="report-category" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;"><option value="">Select a category…</option><option value="misclassified">Misclassified</option><option value="evidence">Overlooked Evidence</option><option value="score">Incorrect Score</option><option value="outdated">Outdated Info</option><option value="factual">Factual Error</option><option value="other">Other</option></select></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your name (optional)</label><input id="report-name" type="text" placeholder="If you'd like it on record" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" /></div>
       <div style="margin-bottom:20px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your email (optional)</label><input id="report-email" type="email" placeholder="If you'd like a response" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" /></div>
       <div id="report-status" style="display:none;font-size:12px;padding:10px 12px;margin-bottom:12px;"></div>
       <div style="display:flex;gap:10px;justify-content:flex-end;">
@@ -697,7 +709,7 @@ var _reportEntry = {};
 function openReport(id, title) {
   _reportEntry = { id: id, title: title };
   document.getElementById('report-entry-name').textContent = title;
-  ['report-wrong','report-correct','report-email'].forEach(function(i){ document.getElementById(i).value=''; });
+  ['report-wrong','report-correct','report-category','report-name','report-email'].forEach(function(i){ document.getElementById(i).value=''; });
   document.getElementById('report-status').style.display = 'none';
   var btn = document.getElementById('report-submit'); btn.disabled=false; btn.textContent='Submit';
   document.getElementById('report-overlay').style.display = 'flex';
@@ -711,6 +723,8 @@ async function submitReport() {
     var r = await fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({entry_id:_reportEntry.id,title:_reportEntry.title,
         what_is_wrong:wrong,correct_info:document.getElementById('report-correct').value.trim(),
+        category:document.getElementById('report-category').value,
+        submitter_name:document.getElementById('report-name').value.trim(),
         submitter_email:document.getElementById('report-email').value.trim()})});
     var j = await r.json();
     if (j.ok) { showReportStatus('Thank you — your report has been submitted.','ok'); btn.textContent='Sent'; }

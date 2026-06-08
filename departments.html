@@ -264,7 +264,14 @@
         <a href="/methodology-limitations.html">Limitations</a>
       </div>
     </div>
-    <a href="/error-log.html">Error Log</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Corrections</span>
+      <div class="nav-dropdown-menu">
+        <a href="/error-log.html">Error Log</a>
+        <a href="/submission-tracker.html">Submission Tracker</a>
+      </div>
+    </div>
+    <a href="/contact.html">Contact</a>
   </nav>
 
 <button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
@@ -298,7 +305,10 @@
   <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
   <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
   <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
-  <a href="/error-log.html">Error Log</a>
+  <div class="mm-group-label">Corrections</div>
+  <a href="/error-log.html" class="mm-sub">Error Log</a>
+  <a href="/submission-tracker.html" class="mm-sub">Submission Tracker</a>
+  <a href="/contact.html">Contact</a>
 </div>
 
 </header>
@@ -338,6 +348,67 @@
     Agency accountability requires a different methodology than elected official scorecards — we're developing rubrics for statutory mandates, inspector general findings, and Government Accountability Office reports.
   </p>
 </div>
+
+
+<div style="text-align:center;padding:8px 40px 40px;">
+  <button onclick="openReport()" style="background:none;border:1px solid var(--rule);padding:9px 20px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;color:var(--gray);transition:all 0.15s;" onmouseover="this.style.borderColor='var(--ink)';this.style.color='var(--ink)';" onmouseout="this.style.borderColor='var(--rule)';this.style.color='var(--gray)';">Report an error &rarr;</button>
+</div>
+
+<!-- REPORT MODAL -->
+<div id="report-overlay" onclick="if(event.target===this)closeReport()" style="display:none;position:fixed;inset:0;background:rgba(26,23,20,0.7);z-index:400;overflow-y:auto;padding:40px 20px;align-items:flex-start;justify-content:center;">
+  <div style="background:var(--paper);max-width:520px;width:100%;border:1px solid var(--rule);margin:auto;">
+    <div style="padding:24px 28px 20px;border-bottom:3px double var(--ink);">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:8px;">PolicyLogic</div>
+      <div style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;">Report an Error</div>
+      <div style="font-size:13px;color:var(--gray);margin-top:4px;" id="report-entry-name"></div>
+    </div>
+    <div style="padding:24px 28px;">
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">What is incorrect? *</label><textarea id="report-wrong" rows="3" placeholder="Describe the error..." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Correct information / source</label><textarea id="report-correct" rows="2" placeholder="What should it say? Include a source URL if possible." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Category</label><select id="report-category" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;"><option value="">Select a category…</option><option value="misclassified">Misclassified</option><option value="evidence">Overlooked Evidence</option><option value="score">Incorrect Score</option><option value="outdated">Outdated Info</option><option value="factual">Factual Error</option><option value="other">Other</option></select></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your name (optional)</label><input id="report-name" type="text" placeholder="If you'd like it on record" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" /></div>
+      <div style="margin-bottom:20px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your email (optional)</label><input id="report-email" type="email" placeholder="If you'd like a response" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" /></div>
+      <div id="report-status" style="display:none;font-size:12px;padding:10px 12px;margin-bottom:12px;"></div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;">
+        <button onclick="closeReport()" style="background:none;border:1px solid var(--rule);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--gray);">Cancel</button>
+        <button onclick="submitReport()" id="report-submit" style="background:var(--ink);border:1px solid var(--ink);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--paper);">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openReport() {
+  ['report-wrong','report-correct','report-category','report-name','report-email'].forEach(function(i){ document.getElementById(i).value=''; });
+  document.getElementById('report-status').style.display = 'none';
+  var btn = document.getElementById('report-submit'); btn.disabled=false; btn.textContent='Submit';
+  document.getElementById('report-overlay').style.display = 'flex';
+}
+function closeReport() { document.getElementById('report-overlay').style.display='none'; }
+async function submitReport() {
+  var wrong = document.getElementById('report-wrong').value.trim();
+  if (!wrong) { showReportStatus('Please describe what is incorrect.','error'); return; }
+  var btn = document.getElementById('report-submit'); btn.disabled=true; btn.textContent='Sending...';
+  try {
+    var r = await fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({scorecard:'Departments &amp; Agencies — general',
+        what_is_wrong:wrong,correct_info:document.getElementById('report-correct').value.trim(),
+        category:document.getElementById('report-category').value,
+        submitter_name:document.getElementById('report-name').value.trim(),
+        submitter_email:document.getElementById('report-email').value.trim()})});
+    var j = await r.json();
+    if (j.ok) { showReportStatus('Thank you — your report has been submitted.','ok'); btn.textContent='Sent'; }
+    else throw new Error(j.error||'Unknown error');
+  } catch(e) { showReportStatus('Error: '+e.message,'error'); btn.disabled=false; btn.textContent='Submit'; }
+}
+function showReportStatus(msg,type) {
+  var el=document.getElementById('report-status'); el.textContent=msg; el.style.display='';
+  el.style.background=type==='ok'?'#f0faf4':'#fdf0f0';
+  el.style.border='1px solid '+(type==='ok'?'#1a6b3c':'#c0392b');
+  el.style.color=type==='ok'?'#1a6b3c':'#c0392b';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeReport();});
+</script>
 
 <footer>
   PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
