@@ -41,6 +41,7 @@ import dataclasses
 import datetime as dt
 import json
 import os
+import re
 import sys
 from dataclasses import dataclass, field, asdict
 from enum import Enum
@@ -153,10 +154,50 @@ class EvidenceItem:
 # ============================================================================
 # The collector
 # ============================================================================
+# ============================================================================
+# Full-content fetching — turn a search result into the actual page text.
+# Search gives one-line snippets; the real promises/evidence live in the page
+# body. We fetch and extract readable text for credible-tier results only
+# (Tier 1 and 2), since fetching weak sources wastes time and adds noise.
+# ============================================================================
+def fetch_full_text(url: str, *, max_chars: int = 6000) -> str:
+    """Return clean readable text from a page, or '' on any failure.
+    Uses trafilatura if installed (best extraction); falls back to a simple
+    HTML-strip if not. Never raises — a fetch failure just means we keep the
+    snippet."""
+    if not url:
+        return ""
+    try:
+        try:
+            import trafilatura
+            downloaded = trafilatura.fetch_url(url)
+            if downloaded:
+                text = trafilatura.extract(downloaded, include_comments=False,
+                                           include_tables=False) or ""
+                return text.strip()[:max_chars]
+        except ImportError:
+            pass
+        # Fallback: fetch + crude tag strip.
+        import re as _re
+        import requests
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=20)
+        r.raise_for_status()
+        html = r.text
+        html = _re.sub(r"<script.*?</script>", " ", html, flags=_re.S | _re.I)
+        html = _re.sub(r"<style.*?</style>", " ", html, flags=_re.S | _re.I)
+        text = _re.sub(r"<[^>]+>", " ", html)
+        text = _re.sub(r"\s+", " ", text)
+        return text.strip()[:max_chars]
+    except Exception:  # noqa: BLE001 — fetch failure must never break collection
+        return ""
+
+
 def collect(seat: Seat, official_id: str, official_name: str,
-            searcher: Searcher, verifiers: list[VerificationAPI]) -> dict[str, Any]:
+            searcher: Searcher, verifiers: list[VerificationAPI],
+            *, max_fetches: int = 12) -> dict[str, Any]:
     items: list[EvidenceItem] = []
     seen_urls: set[str] = set()
+    fetch_budget = {"remaining": max_fetches}
     counters = {"cid": 0, "dropped_out_of_window": 0, "dropped_inadmissible": 0,
                 "dropped_duplicate": 0}
 
@@ -195,17 +236,27 @@ def collect(seat: Seat, official_id: str, official_name: str,
         for r in searcher.search(q, max_results=10):
             url = r.get("url", "")
             tier = classify_tier(url)
+            snippet = r.get("snippet") or r.get("title") or ""
+            # For credible sources, pull the full page text — the actual promise
+            # statements live in the body, not the one-line snippet.
+            full = ""
+            if tier in (Tier.PRIMARY, Tier.AUTHORITATIVE) and fetch_budget["remaining"] > 0:
+                full = fetch_full_text(url)
+                if full:
+                    fetch_budget["remaining"] -= 1
             push(EvidenceItem(
                 pass_type="promise",
-                text=r.get("snippet") or r.get("title") or "",
+                text=(full or snippet),
                 url=url, date=r.get("date", ""),
                 tier=tier.value,
                 term_origin=term_origin(r.get("date", ""), seat),
                 source_kind="campaign_statement",
-                note="Promise CANDIDATE. The AI step decides if it qualifies; "
+                note=("Full page text fetched." if full else "Snippet only.") +
+                     " Promise CANDIDATE. The AI step decides if it qualifies; "
                      "the analyst verifies."))
 
-    # ---- PASS 2: VERIFICATION via structured APIs (+ search to fill) ----
+    # ---- PASS 2: VERIFICATION ----
+    # (a) Structured APIs where they exist (Congress) — high-confidence bonus.
     for v in verifiers:
         for rec in v.fetch(seat, official_id):
             url = rec.get("url", "")
@@ -217,6 +268,36 @@ def collect(seat: Seat, official_id: str, official_name: str,
                 term_origin=term_origin(rec.get("date", ""), seat),
                 source_kind=rec.get("kind", "action_record"),
                 note=rec.get("note", "")))
+
+    # (b) Tiered web-search verification — runs for EVERY official, so governors,
+    # mayors, and the president get verification too, not just Congress. Searches
+    # for evidence of action on commitments; tier ranking handles authority.
+    verification_queries = [
+        f'"{official_name}" {seat.office} signed OR enacted OR passed {seat.jurisdiction}',
+        f'"{official_name}" executive order OR budget OR policy record {seat.jurisdiction}',
+        f'"{official_name}" delivered OR failed OR broke promise {seat.jurisdiction}',
+        f'"{official_name}" {seat.office} accomplishment OR outcome',
+        f'"{official_name}" voted OR vetoed OR blocked {seat.jurisdiction}',
+    ]
+    for q in verification_queries:
+        for r in searcher.search(q, max_results=10):
+            url = r.get("url", "")
+            tier = classify_tier(url)
+            snippet = r.get("snippet") or r.get("title") or ""
+            full = ""
+            if tier in (Tier.PRIMARY, Tier.AUTHORITATIVE) and fetch_budget["remaining"] > 0:
+                full = fetch_full_text(url)
+                if full:
+                    fetch_budget["remaining"] -= 1
+            push(EvidenceItem(
+                pass_type="verification",
+                text=(full or snippet),
+                url=url, date=r.get("date", ""),
+                tier=tier.value,
+                term_origin=term_origin(r.get("date", ""), seat),
+                source_kind="reported_action",
+                note=("Full page text fetched." if full else "Snippet only.") +
+                     " Verification CANDIDATE from tiered search."))
 
     # Coverage honesty: surface what we have and don't have.
     primaries = sum(1 for i in items if i.tier == Tier.PRIMARY.value)
@@ -258,30 +339,162 @@ def collect(seat: Seat, official_id: str, official_name: str,
 # Reference adapters
 # ============================================================================
 class WebSearchSearcher:
-    """Real searcher: wire to your web_search / SerpAPI / Brave here.
-    Left as the integration point; raises if used without wiring so it can't
-    silently return nothing."""
+    """Brave Search API adapter. Free tier; needs BRAVE_API_KEY.
+    Provider is swappable: this class is the only thing to replace to switch to
+    Tavily/SerpAPI later — the collector only depends on the .search() shape.
+
+    Returns: list of {title, url, snippet, date}.
+    """
+    ENDPOINT = "https://api.search.brave.com/res/v1/web/search"
+
+    def __init__(self, api_key: str | None = None, *, requests_module=None):
+        self.api_key = api_key or os.environ.get("BRAVE_API_KEY")
+        # injectable for testing; real use imports requests lazily
+        self._requests = requests_module
+
+    def _http(self):
+        if self._requests:
+            return self._requests
+        import requests  # lazy: keeps module importable without the dep
+        return requests
+
     def search(self, query: str, *, max_results: int = 10) -> list[dict[str, Any]]:
-        raise NotImplementedError(
-            "Wire WebSearchSearcher.search to your search provider. "
-            "Use FixtureSearcher for offline tests.")
+        if not self.api_key:
+            raise RuntimeError("BRAVE_API_KEY not set. Get a free key at "
+                               "https://brave.com/search/api/ or use FixtureSearcher.")
+        # Brave rejects some punctuation (e.g. periods in "U.S.") with a 422.
+        # Sanitize: drop periods, collapse whitespace, cap length.
+        clean = re.sub(r"\.", "", query)
+        clean = re.sub(r"\s+", " ", clean).strip()[:380]
+        try:
+            r = self._http().get(
+                self.ENDPOINT,
+                headers={"Accept": "application/json",
+                         "X-Subscription-Token": self.api_key},
+                params={"q": clean, "count": min(max_results, 20)},
+                timeout=30,
+            )
+            r.raise_for_status()
+            return self.parse(r.json(), max_results)
+        except requests.exceptions.HTTPError as e:
+            # One bad query must not kill the whole run. Log and skip.
+            code = getattr(e.response, "status_code", "?")
+            print(f"  [search skipped: HTTP {code}] {clean[:60]}", file=sys.stderr)
+            return []
+        except requests.exceptions.RequestException as e:
+            print(f"  [search skipped: {type(e).__name__}] {clean[:60]}", file=sys.stderr)
+            return []
+
+    @staticmethod
+    def parse(payload: dict[str, Any], max_results: int = 10) -> list[dict[str, Any]]:
+        """Pure parser — unit-testable without network. Maps Brave's response to
+        the collector's {title,url,snippet,date} shape."""
+        results = (payload.get("web") or {}).get("results") or []
+        out = []
+        for item in results[:max_results]:
+            out.append({
+                "title": item.get("title", ""),
+                "url": item.get("url", ""),
+                "snippet": item.get("description", ""),
+                # Brave exposes age/page_age when available (e.g. "2024-09-01").
+                "date": (item.get("page_age") or item.get("age") or "")[:10],
+            })
+        return out
 
 
 class CongressAPIVerifier:
-    """Verification adapter for U.S. Congress. Wire to Congress.gov / GovTrack.
-    Returns action records (sponsored bills, votes) as verification evidence."""
-    def __init__(self, api_key: str | None = None):
+    """Verification via Congress.gov v3 (needs CONGRESS_API_KEY, free at
+    api.data.gov). Returns sponsored legislation as action records."""
+    BASE = "https://api.congress.gov/v3"
+
+    def __init__(self, api_key: str | None = None, *, requests_module=None):
         self.api_key = api_key or os.environ.get("CONGRESS_API_KEY")
+        self._requests = requests_module
+
+    def _http(self):
+        if self._requests:
+            return self._requests
+        import requests
+        return requests
 
     def fetch(self, seat: Seat, official_id: str) -> list[dict[str, Any]]:
         if not self.api_key:
-            return [{"summary": "CONGRESS_API_KEY not set — verification API skipped.",
+            return [{"summary": "CONGRESS_API_KEY not set — Congress.gov skipped.",
                      "url": "", "date": "", "kind": "note",
-                     "note": "Set CONGRESS_API_KEY (free at api.data.gov) to pull bills/votes."}]
-        # Integration point: call Congress.gov v3 sponsored-legislation + votes,
-        # map each to {summary,url,date,kind}. Network-blocked in sandbox; wired
-        # on your machine. Returning [] here keeps the module importable.
-        return []
+                     "note": "Free key at https://api.data.gov/signup/"}]
+        r = self._http().get(
+            f"{self.BASE}/member/{official_id}/sponsored-legislation",
+            params={"api_key": self.api_key, "limit": 50},
+            headers={"Accept": "application/json"}, timeout=30,
+        )
+        r.raise_for_status()
+        return self.parse(r.json())
+
+    @staticmethod
+    def parse(payload: dict[str, Any]) -> list[dict[str, Any]]:
+        out = []
+        for b in payload.get("sponsoredLegislation", []) or []:
+            num = f"{b.get('type','')}{b.get('number','')}".strip()
+            out.append({
+                "summary": f"Sponsored {num}: {b.get('title','(untitled)')}",
+                "url": b.get("url", ""),
+                "date": (b.get("introducedDate") or "")[:10],
+                "kind": "sponsored_bill",
+                "note": "Congress.gov sponsored legislation — evidence of action, "
+                        "not delivery itself; confirm outcome.",
+            })
+        return out
+
+
+class GovTrackVerifier:
+    """Verification via GovTrack (no key). Returns recent votes by the member as
+    action records. Complements Congress.gov sponsored bills."""
+    BASE = "https://www.govtrack.us/api/v2"
+
+    def __init__(self, *, requests_module=None):
+        self._requests = requests_module
+
+    def _http(self):
+        if self._requests:
+            return self._requests
+        import requests
+        return requests
+
+    def fetch(self, seat: Seat, official_id: str) -> list[dict[str, Any]]:
+        # GovTrack keys people by its own id; resolve from bioguide first.
+        try:
+            pr = self._http().get(f"{self.BASE}/person",
+                                  params={"bioguideid": official_id}, timeout=30)
+            pr.raise_for_status()
+            people = pr.json().get("objects", [])
+            if not people:
+                return [{"summary": "GovTrack: member not found by bioguide.",
+                         "url": "", "date": "", "kind": "note", "note": ""}]
+            pid = people[0]["id"]
+            vr = self._http().get(f"{self.BASE}/vote_voter",
+                                  params={"person": pid, "limit": 50,
+                                          "sort": "-created"}, timeout=30)
+            vr.raise_for_status()
+            return self.parse(vr.json())
+        except Exception as e:  # noqa: BLE001
+            return [{"summary": f"GovTrack fetch failed: {e}", "url": "",
+                     "date": "", "kind": "note", "note": ""}]
+
+    @staticmethod
+    def parse(payload: dict[str, Any]) -> list[dict[str, Any]]:
+        out = []
+        for v in payload.get("objects", []) or []:
+            vote = v.get("vote", {})
+            out.append({
+                "summary": f"Voted {v.get('option', {}).get('value','')} on "
+                           f"{vote.get('question','(vote)')}",
+                "url": vote.get("link", "") or
+                       f"https://www.govtrack.us{vote.get('url','')}",
+                "date": (vote.get("created") or "")[:10],
+                "kind": "vote",
+                "note": "GovTrack roll-call vote.",
+            })
+        return out
 
 
 # ---- Offline fixture adapters for testing ----------------------------------
@@ -333,7 +546,14 @@ def main() -> None:
         ])]
     else:
         searcher = WebSearchSearcher()
-        verifiers = [CongressAPIVerifier()]
+        # Structured APIs apply only to Congress. Other offices (Governor, Mayor,
+        # President) have no universal structured source, so they rely on the
+        # tiered web-search verification pass — which runs for everyone.
+        office_l = seat.office.lower()
+        if "senator" in office_l or "representative" in office_l or "congress" in office_l:
+            verifiers = [CongressAPIVerifier(), GovTrackVerifier()]
+        else:
+            verifiers = []  # tiered search verification still runs in collect()
 
     packet = collect(seat, args.id, args.name, searcher, verifiers)
     out = os.path.join(args.out_dir, f"{args.id}.packet.json")
