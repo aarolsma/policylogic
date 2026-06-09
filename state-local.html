@@ -122,6 +122,31 @@
   .flag-chip { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--red); color: var(--red); }
   .flag-chip.blocked { border-color: var(--gray); color: var(--gray); }
   .confidence-badge { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--rule); color: var(--gray); }
+  /* ── v2 promise rendering ── */
+  .label-row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+  .status { display:inline-flex; align-items:center; gap:6px; font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; padding:4px 11px; font-weight:500; }
+  .status .dot { width:7px; height:7px; border-radius:50%; background:currentColor; display:inline-block; }
+  .status.s-delivered { background:rgba(26,107,60,.12); color:var(--green); border:1px solid var(--green); }
+  .status.s-progress { background:rgba(184,137,42,.12); color:var(--gold); border:1px solid var(--gold); }
+  .status.s-stalled { background:rgba(107,100,89,.12); color:var(--gray); border:1px solid var(--gray); }
+  .status.s-broken { background:rgba(192,57,43,.12); color:var(--red); border:1px solid var(--red); }
+  .flag-sep { font-family:'DM Mono',monospace; font-size:8px; color:var(--gray); letter-spacing:.1em; text-transform:uppercase; }
+  .flag { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.08em; text-transform:uppercase; padding:3px 9px; border:1px dashed var(--gold); color:var(--gold); background:transparent; }
+  .happened-lbl { font-family:'DM Mono',monospace; font-size:8px; letter-spacing:.12em; text-transform:uppercase; color:var(--gray); margin-bottom:6px; }
+  ul.acts { list-style:none; margin:0 0 8px; padding:0; }
+  ul.acts li { font-size:13.5px; line-height:1.55; color:var(--ink); padding:4px 0 4px 20px; position:relative; }
+  ul.acts li::before { content:'\2713'; position:absolute; left:0; color:var(--green); font-size:12px; font-weight:700; }
+  ul.acts li.no::before { content:'\2717'; color:var(--red); }
+  .src-inline { font-size:11px; color:var(--gray); margin:2px 0 0; line-height:1.6; }
+  .src-inline a { color:var(--gold); text-decoration:none; }
+  .src-inline .tier { font-family:'DM Mono',monospace; font-size:8px; letter-spacing:.08em; text-transform:uppercase; color:var(--gray); }
+  .axes { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-top:14px; padding-top:12px; border-top:1px dotted var(--rule); }
+  .axis { text-align:center; }
+  .axis-lbl { font-family:'DM Mono',monospace; font-size:7.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gray); margin-bottom:4px; }
+  .axis-val { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; line-height:1; }
+  .axis-sub { font-family:'DM Mono',monospace; font-size:7.5px; color:var(--gray); margin-top:2px; }
+  .score-line { text-align:right; font-family:'DM Mono',monospace; font-size:9px; color:var(--gray); margin-top:8px; }
+  .score-line b { font-family:'Playfair Display',serif; font-size:15px; color:var(--ink); }
   .modal-gaps { margin-top: 24px; padding: 16px 18px; background: var(--cream); border: 1px solid var(--rule); }
   .gap-item { font-size: 12px; color: var(--gray); line-height: 1.6; padding: 3px 0; }
   .gap-item::before { content: '— '; }
@@ -496,7 +521,7 @@ function officialMatchesDomain(d) {
 
 function makeCard(d) {
   var o = d.official || {}, s = d.summary || {};
-  var grade = s.overall_grade || s.preliminary_grade;
+  var grade = s.overall_grade;
   var color = gradeColor(grade);
   var isPending = !grade;
   var tp = termProgress(o);
@@ -509,22 +534,11 @@ function makeCard(d) {
   card.dataset.jurisdiction = (o.jurisdiction || '').toLowerCase();
   if (!isPending) card.onclick = function() { openModal(d); };
 
-  var deliveryPct = (function() {
-    var ps = d.promises || [];
-    // New schema: use summary.kept / summary.total
-    if (s.kept !== undefined && s.total) {
-      return Math.round((s.kept / s.total) * 100) + '%';
-    }
-    // Legacy schema: calculate from outcome_score on each promise
-    if (ps.length) {
-      var hasScores = ps.some(function(p) { return p.outcome_score !== undefined; });
-      if (hasScores) {
-        var tot = ps.reduce(function(sum, p) { return sum + (p.outcome_score || 0); }, 0);
-        return Math.round((tot / (ps.length * 5)) * 100) + '%';
-      }
-    }
-    return '—';
-  })();
+  var deliveryPct = (s.delivery_ratio !== undefined && s.delivery_ratio !== null)
+    ? Math.round(s.delivery_ratio * 100) + '%' : '—';
+
+  var thirdStat = { val: (s.grade_input_pct != null ? Math.round(s.grade_input_pct) + '%' : '—'),
+                    label: 'Grade Input' };
 
   // Term bar under jurisdiction
   var termBarHTML = '';
@@ -557,7 +571,7 @@ function makeCard(d) {
     '<div class="card-footer">' +
       '<div class="card-stat"><div class="card-stat-val">' + (s.total_promises || s.total || '—') + '</div><div class="card-stat-label">Promises</div></div>' +
       '<div class="card-stat"><div class="card-stat-val">' + deliveryPct + '</div><div class="card-stat-label">Delivery</div></div>' +
-      '<div class="card-stat"><div class="card-stat-val" style="text-transform:capitalize;word-break:break-word;font-size:13px;line-height:1.2">' + (s.ambition_level || '—') + '</div><div class="card-stat-label">Ambition</div></div>' +
+      '<div class="card-stat"><div class="card-stat-val" style="text-transform:capitalize;word-break:break-word;font-size:13px;line-height:1.2">' + thirdStat.val + '</div><div class="card-stat-label">' + thirdStat.label + '</div></div>' +
       '<div class="card-party">' + (o.party || '') + '</div>' +
     '</div>';
 
@@ -568,26 +582,11 @@ function makeCard(d) {
 function openModal(d) {
   var o = d.official || {}, s = d.summary || {};
   var promises = d.promises || [], _meta = d._meta || {};
-  var grade = s.overall_grade || s.preliminary_grade;
+  var grade = s.overall_grade;
   var color = gradeColor(grade);
   var tp = termProgress(o);
 
-  var deliveryPct = (function() {
-    var ps = d.promises || [];
-    // New schema: use summary.kept / summary.total
-    if (s.kept !== undefined && s.total) {
-      return Math.round((s.kept / s.total) * 100) + '%';
-    }
-    // Legacy schema: calculate from outcome_score on each promise
-    if (ps.length) {
-      var hasScores = ps.some(function(p) { return p.outcome_score !== undefined; });
-      if (hasScores) {
-        var tot = ps.reduce(function(sum, p) { return sum + (p.outcome_score || 0); }, 0);
-        return Math.round((tot / (ps.length * 5)) * 100) + '%';
-      }
-    }
-    return '—';
-  })();
+  var deliveryPct = (s.delivery_ratio != null) ? Math.round(s.delivery_ratio * 100) + '%' : '—';
 
   // Term progress block for modal
   var termBlockHTML = '';
@@ -604,37 +603,71 @@ function openModal(d) {
       '</div>';
   }
 
+  // ── v2 promise rendering: status + flags · what-happened checklist + sources · buckets + math ──
+  var STATUS_CLASS = { 'Delivered':'s-delivered', 'In progress':'s-progress',
+                       'Stalled':'s-stalled', 'Broken':'s-broken' };
+  var DIFF_SUB = { H3:'structural', H2:'legislative', H1:'executive' };
+  var SCALE_SUB = { S3:'systemic', S2:'regional', S1:'narrow' };
+  var MAG_SUB = { M3:'transformative', M2:'significant', M1:'minor' };
+  var DELIV_PTS = { D4:'12 pts', D3:'9 pts', D2:'6 pts', D1:'3 pts', D0:'0 pts' };
+  var ROLE_SUB = function(r){ return r>=0.8?'championed': r>=0.6?'advocated': r>=0.4?'supporting': r>0?'minimal':'none'; };
+  var TIER_LABEL = { tier1_primary:'Tier 1 primary', tier2_authoritative:'Tier 2', tier3_supporting:'Tier 3' };
+
   var promisesHTML = promises.map(function(p) {
-    var activeFlags = [];
-    if (p.flags) {
-      if (p.flags.reversed) activeFlags.push('<span class="flag-chip">Reversed</span>');
-      if (p.flags.redefined) activeFlags.push('<span class="flag-chip">Redefined</span>');
-      if (p.flags.externally_blocked) activeFlags.push('<span class="flag-chip blocked">Blocked</span>');
-    }
-    // Detect schema: new schema has status/grade/evidence, legacy has outcome_score
-    var hasScores = p.clarity_score !== undefined || p.outcome_score !== undefined;
-    var statusColors = { kept:'var(--green)', broken:'var(--red)', in_progress:'var(--gold)', stalled:'var(--gray)' };
-    var statusColor = statusColors[p.status] || 'var(--gray)';
-    var barsHTML = hasScores
-      ? '<div class="promise-bars">' +
-          '<div class="bar-item"><div class="bar-label">Specificity of Promise</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.clarity_score||0,3) + '"></div></div><div class="bar-val">' + (p.clarity_score||0) + '/3</div></div>' +
-          '<div class="bar-item"><div class="bar-label">Actions Taken</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.initiation_score||0,4) + '"></div></div><div class="bar-val">' + (p.initiation_score||0) + '/4</div></div>' +
-          '<div class="bar-item"><div class="bar-label">Outcome &amp; Results</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.outcome_score||0,5) + '"></div></div><div class="bar-val">' + (p.outcome_score||0) + '/5</div></div>' +
-          '<div class="bar-item"><div class="bar-label">Their Role</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.attribution_modifier||0,1) + '"></div></div><div class="bar-val">' + (p.attribution_modifier||0) + 'x</div></div>' +
-        '</div>'
-      : '<div class="promise-bars">' +
-          '<div class="bar-item"><div class="bar-label">Status</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:' + statusColor + ';"></div></div><div class="bar-val" style="color:' + statusColor + ';text-transform:capitalize;">' + (p.status||'—') + '</div></div>' +
-          (p.grade ? '<div class="bar-item"><div class="bar-label">Promise Grade</div><div class="bar-track"><div class="bar-fill" style="width:100%;opacity:0;"></div></div><div class="bar-val" style="font-family:\'Playfair Display\',serif;font-weight:900;color:' + gradeColor(p.grade) + ';">' + p.grade + '</div></div>' : '') +
-        '</div>' +
-        (p.evidence ? '<div style="font-size:12px;color:var(--gray);line-height:1.6;margin-top:8px;padding:8px 10px;background:var(--cream);border-left:2px solid var(--rule);">' + p.evidence + '</div>' : '');
+    var srcMap = {};
+    (p.sources||[]).forEach(function(s){ srcMap[s.cid] = s; });
+
+    // Layer 1 — status chip + flags row
+    var statusChip = '<span class="status ' + (STATUS_CLASS[p.status]||'s-stalled') + '">' +
+                     '<span class="dot"></span>' + (p.status||'—') + '</span>';
+    var flagChips = (p.flags||[]).map(function(f){
+      return '<span class="flag">' + f + '</span>';
+    }).join('');
+    var labelRow = '<div class="label-row">' + statusChip +
+      (flagChips ? '<span class="flag-sep">Flags:</span>' + flagChips : '') + '</div>';
+
+    // Layer 2 — what-happened checklist
+    var checklist = (p.what_happened||[]).map(function(w){
+      return '<li class="' + (w.done ? '' : 'no') + '">' + w.text + '</li>';
+    }).join('');
+    var checklistHTML = checklist
+      ? '<div class="happened-lbl">What actually happened</div><ul class="acts">' + checklist + '</ul>'
+      : '';
+
+    // sources line
+    var srcHTML = (p.sources||[]).map(function(s){
+      return '<a href="' + (s.url||'#') + '" target="_blank" rel="noopener">' + (s.title||s.url) + '</a>' +
+             ' <span class="tier">· ' + (TIER_LABEL[s.tier]||s.tier||'') + '</span>';
+    }).join('<br>');
+    var srcLine = srcHTML ? '<div class="src-inline">Source: ' + srcHTML + '</div>' : '';
+
+    // Layer 3 — v2 buckets + math
+    function axis(lbl,val,sub){ return '<div class="axis"><div class="axis-lbl">'+lbl+'</div><div class="axis-val">'+val+'</div><div class="axis-sub">'+sub+'</div></div>'; }
+    var axes = '<div class="axes">' +
+      axis('Delivery', p.delivery||'—', DELIV_PTS[p.delivery]||'') +
+      axis('Difficulty', p.difficulty||'—', DIFF_SUB[p.difficulty]||'') +
+      axis('Scale', p.scale||'—', SCALE_SUB[p.scale]||'') +
+      axis('Magnitude', p.magnitude||'—', MAG_SUB[p.magnitude]||'') +
+      axis('Their Role', (p.their_role!=null?p.their_role:'—'), ROLE_SUB(p.their_role||0)) +
+    '</div>';
+    var flagNote = (p.flags && p.flags.length) ? ' (' + p.flags.join(', ') + ')' : '';
+    var scoreLine = '<div class="score-line">' +
+      (p.adjusted_delivery!=null ? p.adjusted_delivery + ' adjusted' + flagNote : '') +
+      (p.difficulty_earned!=null ? ' + ' + p.difficulty_earned + ' difficulty' : '') +
+      (p.impact!=null ? ' + ' + p.impact + ' impact' : '') +
+      (p.promise_score!=null ? ' = <b>' + p.promise_score + ' / 25</b>' : '') + '</div>';
+
     return '<div class="promise-item">' +
       '<div class="promise-top">' +
-        '<div class="promise-text">' + (p.normalized || p.text || '') + '</div>' +
-        '<div class="promise-domain">' + (p.domain_label || p.domain || '') + '</div>' +
+        '<div class="promise-text">' + (p.text||'') + '</div>' +
+        '<div class="promise-domain">' + (p.domain_label||'') + '</div>' +
       '</div>' +
-      barsHTML +
-      (activeFlags.length ? '<div class="promise-flags">' + activeFlags.join('') + '</div>' : '') +
-      '<div style="margin-top:6px"><span class="confidence-badge">Confidence: ' + (p.confidence||'—') + '</span></div>' +
+      labelRow +
+      checklistHTML +
+      srcLine +
+      axes +
+      scoreLine +
+      '<div style="margin-top:8px"><span class="confidence-badge">Confidence: ' + (p.confidence||'—') + '</span></div>' +
     '</div>';
   }).join('');
 
@@ -655,8 +688,8 @@ function openModal(d) {
       '<div class="modal-grade-row">' +
         '<div class="modal-grade ' + gradeClass(grade) + '" style="color:' + color + '">' + (grade||'?') + '</div>' +
         '<div class="modal-grade-detail">' +
-          '<div class="modal-grade-label" style="color:' + color + '">' + (s.ambition_level||'') + ' · ' + deliveryPct + ' delivery</div>' +
-          '<div class="modal-grade-rationale">' + (s.grade_rationale||'') + '</div>' +
+          '<div class="modal-grade-label" style="color:' + color + '">Grade input ' + (s.grade_input_pct!=null?s.grade_input_pct:'—') + '% · ' + deliveryPct + ' delivery</div>' +
+          '<div class="modal-grade-rationale">Grade = 60% delivery ratio + 40% promise-score ratio. Every promise below shows what happened, the sources, and how it scored.</div>' +
         '</div>' +
       '</div>' +
     '</div>' +
@@ -714,7 +747,7 @@ function render() {
   dataSet.forEach(function(d) {
     var o = d.official || {}, s = d.summary || {};
     var role = o.role || '';
-    var grade = (s.overall_grade || s.preliminary_grade || '').charAt(0);
+    var grade = (s.overall_grade || '').charAt(0);
     var name = (o.name || '').toLowerCase();
     var juris = (o.jurisdiction || '').toLowerCase();
 
@@ -909,4 +942,3 @@ function showReportStatus(msg, type) {
 </script>
 </body>
 </html>
-
