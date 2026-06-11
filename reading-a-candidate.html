@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading a Candidate · PolicyLogic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    :root{
+    /* site-canonical palette (matches all other pages) */
+    --ink:#1a1714;
+    --paper:#f5f0e8;
+    --cream:#ede8dc;
+    --rule:#d4c9b4;
+    --gold:#b8892a;
+    --gray:#6b6459;
+    /* page content tokens, tuned to the site family */
+    --cream-deep:#ede8dc;
+    --ink-soft:#4A453B;
+    --gold-deep:#8C6A28;
+    --card:#FBF8F1;
+    --shadow:rgba(60,48,24,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"DM Sans",system-ui,sans-serif;
+    font-weight:400;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    font-size:17px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px}
+  .mono{font-family:"DM Mono",monospace;font-weight:400;letter-spacing:.02em}
+  .eyebrow{
+    font-family:"DM Mono",monospace;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+  }
+  header.top{
+    border-bottom:1px solid var(--rule);
+    padding:22px 0;
+  }
+  header.top .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .brand{font-family:"Playfair Display",serif;font-weight:600;font-size:19px;letter-spacing:.01em}
+  .brand span{color:var(--gold-deep)}
+  .kicker{font-family:"DM Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+  .hero{padding:84px 0 64px}
+  .hero .eyebrow{display:block;margin-bottom:26px}
+  .hero h1{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:clamp(38px,6.6vw,62px);
+    line-height:1.04;
+    letter-spacing:-.012em;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold-deep)}
+  .hero .lede{
+    margin-top:30px;
+    font-size:20px;
+    line-height:1.5;
+    color:var(--ink-soft);
+    max-width:60ch;
+  }
+  .thesis{
+    margin:58px 0 0;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    padding:46px 0;
+  }
+  .equation{display:grid;gap:0}
+  .eq-row{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+    align-items:center;
+    gap:22px;
+  }
+  .eq-cell{padding:22px 0}
+  .eq-cell h3{
+    font-family:"DM Mono",monospace;
+    font-size:12px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .eq-cell.subjective h3{color:var(--gold-deep)}
+  .eq-cell.objective h3{color:var(--ink-soft)}
+  .eq-cell p{font-size:16px;line-height:1.5}
+  .eq-cell .big{
+    font-family:"Playfair Display",serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:23px;
+    line-height:1.25;
+    margin-bottom:8px;
+    display:block;
+  }
+  .eq-div{
+    font-family:"Playfair Display",serif;
+    font-size:30px;
+    color:var(--rule);
+    text-align:center;
+    user-select:none;
+  }
+  .thesis .foot{
+    margin-top:30px;
+    padding-top:26px;
+    border-top:1px dashed var(--rule);
+    font-size:16px;
+    color:var(--ink-soft);
+  }
+  .thesis .foot strong{color:var(--ink);font-weight:600}
+  section.engine{padding:72px 0}
+  .engine-head{margin-bottom:42px}
+  .engine-num{
+    font-family:"DM Mono",monospace;
+    font-size:12px;
+    letter-spacing:.16em;
+    color:var(--gold-deep);
+    display:block;
+    margin-bottom:14px;
+  }
+  .engine-head h2{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:clamp(28px,4.4vw,40px);
+    line-height:1.1;
+    letter-spacing:-.01em;
+  }
+  .engine-head .sub{
+    margin-top:18px;
+    font-size:18px;
+    color:var(--ink-soft);
+    max-width:58ch;
+  }
+  .engine.alt{background:var(--cream-deep)}
+  .prompts{display:grid;gap:18px;margin-top:8px}
+  .prompt{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding:26px 28px;
+    box-shadow:0 1px 0 var(--shadow);
+  }
+  .prompt .tag{
+    font-family:"DM Mono",monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+    display:block;
+    margin-bottom:12px;
+  }
+  .prompt .q{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:21px;
+    line-height:1.3;
+    margin-bottom:12px;
+  }
+  .prompt .why{font-size:15.5px;color:var(--ink-soft);line-height:1.55}
+  .prompt .why b{color:var(--ink);font-weight:600}
+  .lenses{margin-top:6px;border-top:1px solid var(--rule)}
+  .lens{
+    display:grid;
+    grid-template-columns:46px 1fr;
+    gap:24px;
+    padding:34px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .lens .idx{
+    font-family:"Playfair Display",serif;
+    font-style:italic;
+    font-size:30px;
+    color:var(--gold);
+    line-height:1;
+  }
+  .lens h3{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:24px;
+    margin-bottom:4px;
+  }
+  .lens .qline{
+    font-family:"DM Sans",sans-serif;
+    font-size:16px;
+    color:var(--gold-deep);
+    font-weight:500;
+    margin-bottom:18px;
+  }
+  .lens dl{display:grid;grid-template-columns:1fr;gap:14px;margin-top:6px}
+  .lens dt{
+    font-family:"DM Mono",monospace;
+    font-size:11px;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:3px;
+  }
+  .lens dd{font-size:16px;line-height:1.55}
+  .lens dd.evidence{color:var(--ink)}
+  .lens dd.flag{color:var(--ink-soft)}
+  .lens dd b{font-weight:600}
+  .gate-note{
+    background:var(--card);
+    border-left:2px solid var(--gold);
+    padding:20px 24px;
+    margin-top:38px;
+    font-size:16px;
+    line-height:1.6;
+    color:var(--ink-soft);
+  }
+  .gate-note b{color:var(--ink);font-weight:600}
+  .close{padding:78px 0 30px}
+  .close .eyebrow{display:block;margin-bottom:24px}
+  .close h2{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:clamp(26px,4vw,36px);
+    line-height:1.18;
+    letter-spacing:-.01em;
+    max-width:24ch;
+  }
+  .close p{margin-top:24px;font-size:18px;color:var(--ink-soft);max-width:56ch}
+  .checklist{
+    margin-top:40px;
+    display:grid;
+    gap:2px;
+    border-top:1px solid var(--rule);
+  }
+  .check{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:16px;
+    align-items:baseline;
+    padding:18px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .check .mk{font-family:"DM Mono",monospace;color:var(--gold-deep);font-size:14px}
+  .check span.t{font-size:16.5px}
+  .check span.t b{font-weight:600}
+  footer{border-top:1px solid var(--rule);padding:34px 0 70px;margin-top:40px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer p{font-size:13.5px;color:var(--ink-soft);font-family:"DM Mono",monospace;letter-spacing:.03em}
+  footer p a{color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--rule)}
+  @media (max-width:620px){
+    body{font-size:16px}
+    .eq-row{grid-template-columns:1fr;gap:0}
+    .eq-div{transform:rotate(90deg);padding:6px 0}
+    .eq-cell{padding:18px 0;border-bottom:1px solid var(--rule)}
+    .eq-cell:last-child{border-bottom:none}
+    .lens{grid-template-columns:1fr;gap:10px}
+    .lens .idx{font-size:24px}
+  }
+  a:focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px}
+
+  /* ===== SITE CHROME (masthead / nav / hamburger / footer) ===== */
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; position: relative; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  /* HAMBURGER */
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 250; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 4px 0; transition: all 0.2s; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: var(--paper); z-index: 500; overflow-y: auto; padding: 24px 28px 60px; }
+  .mobile-menu.open { display: block; }
+  .mobile-menu-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+  .mobile-menu-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; }
+  .mobile-menu-close { background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: var(--ink); padding: 0 4px; }
+  .mobile-menu a { display: block; font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu .mm-group-label { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); padding: 24px 0 8px; border-bottom: none; margin-top: 4px; }
+  .mobile-menu .mm-sub { font-family: 'DM Mono', monospace; font-weight: 400; padding-left: 16px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); padding-top: 11px; padding-bottom: 11px; }
+  @media (max-width: 768px) {
+    .hamburger { display: block; }
+    .masthead-nav { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Nonpartisan Government Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">How to Read a Candidate</div>
+  <div class="masthead-rule"><span></span><em>FOR VOTERS</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html">Elected Officials</a>
+        <a href="/methodology-agencies.html">Depts &amp; Agencies</a>
+        <a href="/methodology-presidential.html">Presidential &amp; International</a>
+        <a href="/methodology-ai.html">AI Pipeline</a>
+        <a href="/methodology-limitations.html">Limitations</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Corrections</span>
+      <div class="nav-dropdown-menu">
+        <a href="/error-log.html">Error Log</a>
+        <a href="/submission-tracker.html">Submission Tracker</a>
+      </div>
+    </div>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
+<button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="mobile-menu-title">PolicyLogic</div>
+    <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='';" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <div class="mm-group-label">Scorecards</div>
+  <a href="/scorecards.html" class="mm-sub">All Scorecards</a>
+  <a href="/state-local.html" class="mm-sub">State &amp; Local</a>
+  <a href="/national.html" class="mm-sub">Congress</a>
+  <a href="/presidential.html" class="mm-sub">Presidential</a>
+  <a href="/international.html" class="mm-sub">International</a>
+  <a href="/departments.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/nonprofits.html" class="mm-sub">Nonprofits &amp; NGOs</a>
+  <div class="mm-group-label">Learn</div>
+  <a href="/learn.html" class="mm-sub">Learning Center</a>
+  <a href="/learn-cognitive-biases.html" class="mm-sub">Think Clearly</a>
+  <a href="/learn-how-policy-works.html" class="mm-sub">How Policy Works</a>
+  <a href="/learn-how-to-influence.html" class="mm-sub">Take Action</a>
+  <a href="/learn-govt-101.html" class="mm-sub">Govt 101</a>
+  <a href="/learn-glossary.html" class="mm-sub">Glossary</a>
+  <div class="mm-group-label">Methodology</div>
+  <a href="/methodology.html" class="mm-sub">Elected Officials</a>
+  <a href="/methodology-agencies.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
+  <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
+  <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
+  <div class="mm-group-label">Corrections</div>
+  <a href="/error-log.html" class="mm-sub">Error Log</a>
+  <a href="/submission-tracker.html" class="mm-sub">Submission Tracker</a>
+  <a href="/contact.html">Contact</a>
+</div>
+
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <span class="eyebrow">How to read a candidate</span>
+      <h1>Party tells you what they're <em>called.</em> Vibes tell you how they make you <em>feel.</em> Neither tells you what they've done.</h1>
+      <p class="lede">This is a procedure for closing that gap. It does two things in order: it helps you name the standard you're actually judging by, then it shows you how to test a candidate against it with evidence instead of instinct.</p>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <div class="thesis">
+      <div class="equation">
+        <div class="eq-row">
+          <div class="eq-cell subjective">
+            <h3>Yours to name</h3>
+            <span class="big">What you value</span>
+            <p>Subjective. There is no correct answer, and this page will never suggest one. But it has to be conscious and specific, not absorbed from a party or a mood.</p>
+          </div>
+          <div class="eq-div" aria-hidden="true">&divide;</div>
+          <div class="eq-cell objective">
+            <h3>Checkable</h3>
+            <span class="big">Whether they meet it</span>
+            <p>Objective. Once your standard is named, this is a matter of record &mdash; passed laws, who benefited, loops closed or left open. Two people can verify it and agree.</p>
+          </div>
+        </div>
+      </div>
+      <p class="foot">Most voting collapses these two into one move: you read the value off the party label and read &ldquo;meets it&rdquo; off a feeling. <strong>Keeping them apart is the whole method.</strong> You own the standard out loud; the record either clears it or it doesn't.</p>
+    </div>
+  </div>
+
+  <!-- ENGINE ONE -->
+  <section class="engine">
+    <div class="wrap">
+      <div class="engine-head">
+        <span class="engine-num">Engine 01 &mdash; Surface your standard</span>
+        <h2>Name what you actually want, before you look at anyone.</h2>
+        <p class="sub">Do this first, and do it blind &mdash; without a candidate in mind &mdash; so you're describing a standard, not reverse-engineering a justification for someone you already like. These prompts are structural on purpose: they ask for the <em>shape</em> of your criterion and leave the substance entirely to you.</p>
+      </div>
+
+      <div class="prompts">
+        <div class="prompt">
+          <span class="tag">Prompt A &middot; the hard floor</span>
+          <p class="q">What would disqualify a candidate no matter how good the rest of their record?</p>
+          <p class="why">Your dealbreaker is the most useful thing you own, because it's a value you can <b>check a record against directly.</b> &ldquo;I don't like them&rdquo; isn't a floor. &ldquo;They used someone's private life as a weapon&rdquo; is &mdash; it's a thing that either happened or didn't.</p>
+        </div>
+
+        <div class="prompt">
+          <span class="tag">Prompt B &middot; the kind of skill</span>
+          <p class="q">When you say you want someone who &ldquo;gets things done,&rdquo; done how?</p>
+          <p class="why">Passing new laws, blocking bad ones, and building coalitions are <b>three different skills with three different evidence trails.</b> Naming which one you mean tells you what to go looking for &mdash; and stops a candidate's strength in one from masquerading as proof of another.</p>
+        </div>
+
+        <div class="prompt">
+          <span class="tag">Prompt C &middot; the direction</span>
+          <p class="q">When power is used, who do you want it pointed at?</p>
+          <p class="why">Every record has a direction: it tends to benefit those with more leverage or those with less. Neither answer is the right one &mdash; that's yours. But naming it converts a vague allegiance into a test you can run on <b>who actually benefited</b> from what a candidate built.</p>
+        </div>
+
+        <div class="prompt">
+          <span class="tag">Prompt D &middot; the means</span>
+          <p class="q">Does it matter to you <em>how</em> a result was reached, or only that it was?</p>
+          <p class="why">Some voters weight outcomes only; some treat the method as part of the result. Decide which you are. If method matters, you've just named a second, independent test &mdash; one a strong record can still fail.</p>
+        </div>
+
+        <div class="prompt">
+          <span class="tag">Prompt E &middot; the weighting</span>
+          <p class="q">If two of your criteria collide, which one wins?</p>
+          <p class="why">A candidate may clear your floor on direction but not on means, or deliver on the skill you wanted toward an end you don't. Knowing your <b>priority order in advance</b> is what keeps the final call from collapsing back into a vibe at the moment it's hardest.</p>
+        </div>
+      </div>
+
+      <div class="gate-note">
+        Write your answers down in your own words. That short list is your <b>rubric</b> &mdash; and it's yours alone. Someone who wants a pro-business dealmaker and someone who wants a redistributive reformer both produce a valid rubric here. The next engine runs identically for both of them.
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGINE TWO -->
+  <section class="engine alt">
+    <div class="wrap">
+      <div class="engine-head">
+        <span class="engine-num">Engine 02 &mdash; Test it against the record</span>
+        <h2>Four lenses, in order. Each one asks for evidence, not impressions.</h2>
+        <p class="sub">Run them as a sequence &mdash; a candidate has to clear the earlier gates before the later ones matter. The lenses are the same for everyone; only your rubric from Engine 01 decides what counts as passing. That's what makes the procedure objective even though the verdict is yours.</p>
+      </div>
+
+      <div class="lenses">
+        <div class="lens">
+          <div class="idx">i</div>
+          <div>
+            <h3>Can they build at all?</h3>
+            <p class="qline">Has this person ever turned intent into a finished outcome &mdash; in any arena?</p>
+            <dl>
+              <dt>What counts as evidence</dt>
+              <dd class="evidence">A completed thing with their name on it: a law, a program, an organization, a case won. Capacity demonstrated somewhere, not merely claimed.</dd>
+              <dt>What doesn't</dt>
+              <dd class="flag">Titles held, years served, intentions stated, problems described. A r&eacute;sum&eacute; is a list of <b>positions</b>, not a list of <b>outputs</b>.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="lens">
+          <div class="idx">ii</div>
+          <div>
+            <h3>Did they build in this role?</h3>
+            <p class="qline">Not capacity in the abstract &mdash; shipped work in the seat they're asking you to extend or hand them.</p>
+            <dl>
+              <dt>What counts as evidence</dt>
+              <dd class="evidence">Legislation passed with a date and a vote count. Initiatives that closed. Things you can point to with a citation, ideally from a neutral record rather than their own campaign page.</dd>
+              <dt>What doesn't</dt>
+              <dd class="flag">Bills introduced but never passed. Press releases. &ldquo;Fought for&rdquo; and &ldquo;championed&rdquo; with no outcome attached. <b>Read the verb: introduced, fought, and championed are not passed.</b></dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="lens">
+          <div class="idx">iii</div>
+          <div>
+            <h3>Toward what?</h3>
+            <p class="qline">Describe the direction of the record before you judge it &mdash; characterize, then evaluate.</p>
+            <dl>
+              <dt>What counts as evidence</dt>
+              <dd class="evidence">Who measurably benefited from what they passed, traceable from the text of the bill: which group, which ward, which side of a power gap. This step is descriptive &mdash; you're mapping the record, not scoring it yet.</dd>
+              <dt>Where your rubric enters</dt>
+              <dd class="flag">Now lay Prompt C against the map. The direction is a fact; whether it's the direction you wanted is your call. <b>The lens finds the pattern; your standard grades it.</b></dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="lens">
+          <div class="idx">iv</div>
+          <div>
+            <h3>By what means?</h3>
+            <p class="qline">How they operate, tested against the floor and the method-question you set in Engine 01.</p>
+            <dl>
+              <dt>What counts as evidence</dt>
+              <dd class="evidence">Documented conduct: how they treat opponents, whether they deal directly or maneuver, whether their coalitions are built with the people affected or around them, whether they own mistakes or bury them.</dd>
+              <dt>Where your rubric enters</dt>
+              <dd class="flag">This is where a strong record can still fail <em>your</em> test &mdash; and where two honest voters most often part ways. <b>A method that crosses your floor outranks any achievement above it</b>, if that's how you weighted it in Prompt E.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="gate-note">
+        The order is load-bearing. A candidate who fails Lens ii &mdash; no shipped record &mdash; never reaches the question of <em>direction</em>, because there's nothing built to point anywhere. <b>Competence is the gate; values are the grade.</b> Run them in sequence and a likable candidate with no output can't slip through on Lens iii, and an effective one can't escape Lens iv.
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE -->
+  <section class="close">
+    <div class="wrap">
+      <span class="eyebrow">The test of the test</span>
+      <h2>A real method works even for a candidate you'd never pick.</h2>
+      <p>If your framework only ever validates the people you already favored, it's a rationalization, not a procedure. The proof that you're reasoning rather than rationalizing: someone applying these same lenses with a <em>different</em> rubric should be able to reach a different candidate &mdash; honestly, and by the same route.</p>
+
+      <div class="checklist">
+        <div class="check"><span class="mk">01</span><span class="t"><b>Named your standard</b> &mdash; written down, in your words, before looking at any candidate.</span></div>
+        <div class="check"><span class="mk">02</span><span class="t"><b>Set a hard floor</b> &mdash; at least one thing that disqualifies regardless of record.</span></div>
+        <div class="check"><span class="mk">03</span><span class="t"><b>Sourced the record</b> &mdash; outputs verified from neutral evidence, not campaign copy.</span></div>
+        <div class="check"><span class="mk">04</span><span class="t"><b>Separated fact from grade</b> &mdash; mapped the direction first, judged it second.</span></div>
+        <div class="check"><span class="mk">05</span><span class="t"><b>Ranked your criteria</b> &mdash; decided in advance which value wins a collision.</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; <a href="/about.html">About</a> &middot; <a href="/methodology.html">Methodology</a> &middot; <a href="/error-log.html">Error Log</a>
+</footer>
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) { el.classList.remove('open'); });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) { dropdown.classList.add('open'); }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+
+</body>
+</html>
