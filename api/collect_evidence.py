@@ -46,6 +46,12 @@ import sys
 from dataclasses import dataclass, field, asdict
 from enum import Enum
 from typing import Any, Callable, Protocol
+from urllib.parse import urlsplit
+
+
+# Identify ourselves honestly on every outbound request (politeness + so site
+# operators can see who is fetching). Shared by the full-text fetcher below.
+UA = "PolicyLogic-evidence-collector/1.0 (research; +https://policylogic.io)"
 
 
 # ============================================================================
@@ -60,35 +66,64 @@ class Tier(str, Enum):
 
 # Domain → tier classification. Conservative: unknown domains default to Tier 3
 # (supporting, needs corroboration), never Tier 1, so nothing is over-credited.
-TIER1_DOMAINS = (
-    ".gov", "congress.gov", "govinfo.gov", "federalregister.gov",
-    "gpo.gov", "senate.gov", "house.gov", "whitehouse.gov",
-)
-TIER2_DOMAINS = (
-    "cbo.gov", "gao.gov", "crsreports.congress.gov",  # nonpartisan watchdogs (.gov but T2 role)
+#
+# CREDIBILITY NOTE: matching is on the URL's HOSTNAME, by exact host or true
+# subdomain — never a raw substring of the whole URL. Substring matching let a
+# gov string in a path/query (evil.com/?x=congress.gov) or an attacker subdomain
+# (congress.gov.phish.ru) masquerade as Tier 1, which would unlock D3/D4 delivery
+# credit it hasn't earned. Hostname matching closes that.
+TIER1_HOST_SUFFIXES = ("gov", "mil")  # official US government (.gov / .mil)
+# Nonpartisan watchdogs live on .gov but play a Tier-2 (authoritative) role.
+# Checked BEFORE the generic .gov rule so they aren't over-credited as primary.
+TIER2_GOV_HOSTS = ("cbo.gov", "gao.gov", "crsreports.congress.gov")
+TIER2_HOSTS = (
     "reuters.com", "apnews.com", "nytimes.com", "washingtonpost.com",
     "wsj.com", "bloomberg.com", "npr.org", "politico.com", "propublica.org",
-    "bsky.app",  # placeholder; real list maintained externally
 )
-# Things that are never sufficient on their own.
-INADMISSIBLE_HINTS = ("twitter.com", "x.com", "facebook.com", "reddit.com",
-                      "t.me", "truthsocial.com")
+# Social / self-published platforms: never sufficient on their own. (Bluesky
+# was previously mislabeled authoritative — it's social media, same as X.)
+INADMISSIBLE_HOSTS = ("twitter.com", "x.com", "facebook.com", "instagram.com",
+                      "threads.net", "reddit.com", "t.me", "telegram.org",
+                      "truthsocial.com", "bsky.app", "tiktok.com")
+
+
+def _hostname(url: str) -> str:
+    """Lowercased host with no port/userinfo, trailing dot stripped, or '' if the
+    URL can't be parsed to a host."""
+    try:
+        host = urlsplit(url).hostname or ""
+    except ValueError:
+        return ""
+    return host.lower().strip(".")
+
+
+def _host_matches(host: str, domain: str) -> bool:
+    """True iff `host` is exactly `domain` or a subdomain of it. So 'gov' matches
+    'www.congress.gov' but NOT 'congress.gov.evil.ru' (parent registrable domain
+    is evil.ru) and NOT 'notagov.com'. This is the substring-free guarantee."""
+    domain = domain.lower().strip(".")
+    return host == domain or host.endswith("." + domain)
 
 
 def classify_tier(url: str, *, is_official_press_release: bool = False) -> Tier:
-    u = (url or "").lower()
-    if any(h in u for h in INADMISSIBLE_HINTS):
+    host = _hostname(url)
+    if not host:
+        # Unparseable / hostless URL: weakest admissible tier, never credited high.
+        return Tier.SUPPORTING
+    if any(_host_matches(host, d) for d in INADMISSIBLE_HOSTS):
         return Tier.INADMISSIBLE
     # Nonpartisan watchdogs are Tier 2 even though .gov — check before generic .gov.
-    if any(d in u for d in ("cbo.gov", "gao.gov", "crsreports")):
+    if any(_host_matches(host, d) for d in TIER2_GOV_HOSTS):
         return Tier.AUTHORITATIVE
-    if any(d in u for d in TIER1_DOMAINS):
-        return Tier.PRIMARY
-    if any(d in u for d in TIER2_DOMAINS):
+    if any(_host_matches(host, s) for s in TIER1_HOST_SUFFIXES):
+        # An official's OWN press release is not sufficient as the sole support
+        # for a positive outcome (methodology). When the caller knows the item is
+        # such a release, drop it to Tier 3 so the corroboration rule applies
+        # downstream instead of auto-crediting it as primary.
+        return Tier.SUPPORTING if is_official_press_release else Tier.PRIMARY
+    if any(_host_matches(host, d) for d in TIER2_HOSTS):
         return Tier.AUTHORITATIVE
-    # Official's own press release as sole support for a positive outcome is
-    # inadmissible *as sole support*; we keep it but mark it Tier 3 and let the
-    # corroboration rule apply downstream.
+    # Unknown domain: supporting, needs corroboration — never Tier 1.
     return Tier.SUPPORTING
 
 
@@ -149,6 +184,7 @@ class EvidenceItem:
     source_kind: str        # e.g. "campaign_statement", "sponsored_bill", "vote"
     cid: str = ""
     note: str = ""
+    fetched: bool = False    # True if `text` is full page body, False if search snippet
 
 
 # ============================================================================
@@ -192,12 +228,54 @@ def fetch_full_text(url: str, *, max_chars: int = 6000) -> str:
         return ""
 
 
+def _search_pass(searcher: Searcher, queries: list[str], *, pass_type: str,
+                 source_kind: str, note_suffix: str, seat: Seat,
+                 budget: dict[str, int], push: Callable[[EvidenceItem], None]) -> None:
+    """Run a set of search queries, fetch full page bodies for credible-tier
+    results within `budget`, and push the resulting items.
+
+    Two credibility-driven choices:
+      1. Tier-1 bodies are fetched BEFORE Tier-2, so when the budget is tight the
+         highest-authority text (the kind required for D3/D4) is what we capture.
+      2. A URL seen across multiple queries is fetched at most once — duplicate
+         hits reuse the body instead of burning budget re-fetching it.
+    Items are still emitted in original discovery order."""
+    gathered = [(r, classify_tier(r.get("url", "")))
+                for q in queries for r in searcher.search(q, max_results=10)]
+    fetch_rank = {Tier.PRIMARY: 0, Tier.AUTHORITATIVE: 1}
+    order = sorted(range(len(gathered)),
+                   key=lambda i: fetch_rank.get(gathered[i][1], 9))
+    full_by_url: dict[str, str] = {}
+    for i in order:
+        r, tier = gathered[i]
+        url = r.get("url", "")
+        if not url or url in full_by_url or budget["remaining"] <= 0:
+            continue
+        if tier in (Tier.PRIMARY, Tier.AUTHORITATIVE):
+            full = fetch_full_text(url)
+            if full:
+                budget["remaining"] -= 1
+                full_by_url[url] = full
+    for r, tier in gathered:
+        url = r.get("url", "")
+        snippet = r.get("snippet") or r.get("title") or ""
+        full = full_by_url.get(url, "")
+        push(EvidenceItem(
+            pass_type=pass_type,
+            text=(full or snippet),
+            url=url, date=r.get("date", ""),
+            tier=tier.value,
+            term_origin=term_origin(r.get("date", ""), seat),
+            source_kind=source_kind,
+            fetched=bool(full),
+            note=("Full page text fetched." if full else "Snippet only.") + note_suffix))
+
+
 def collect(seat: Seat, official_id: str, official_name: str,
             searcher: Searcher, verifiers: list[VerificationAPI],
             *, max_fetches: int = 12) -> dict[str, Any]:
     items: list[EvidenceItem] = []
     seen_urls: set[str] = set()
-    fetch_budget = {"remaining": max_fetches}
     counters = {"cid": 0, "dropped_out_of_window": 0, "dropped_inadmissible": 0,
                 "dropped_duplicate": 0}
 
@@ -222,6 +300,11 @@ def collect(seat: Seat, official_id: str, official_name: str,
         it.cid = f"c{counters['cid']}"
         items.append(it)
 
+    # Split the fetch budget so the verification pass — which carries the Tier-1
+    # evidence that anchors delivery scores — can't be starved by the promise
+    # pass running first. Verification reclaims whatever promises leave unspent.
+    promise_budget = {"remaining": max_fetches // 2}
+
     # ---- PASS 1: PROMISES via tiered web search ----
     # Queries fan out across source intent; the term window is applied per-result
     # by date, since search can't be perfectly time-scoped.
@@ -232,28 +315,11 @@ def collect(seat: Seat, official_id: str, official_name: str,
         f'"{official_name}" debate transcript {seat.jurisdiction}',
         f'"{official_name}" inaugural OR "first day" commitment',
     ]
-    for q in promise_queries:
-        for r in searcher.search(q, max_results=10):
-            url = r.get("url", "")
-            tier = classify_tier(url)
-            snippet = r.get("snippet") or r.get("title") or ""
-            # For credible sources, pull the full page text — the actual promise
-            # statements live in the body, not the one-line snippet.
-            full = ""
-            if tier in (Tier.PRIMARY, Tier.AUTHORITATIVE) and fetch_budget["remaining"] > 0:
-                full = fetch_full_text(url)
-                if full:
-                    fetch_budget["remaining"] -= 1
-            push(EvidenceItem(
-                pass_type="promise",
-                text=(full or snippet),
-                url=url, date=r.get("date", ""),
-                tier=tier.value,
-                term_origin=term_origin(r.get("date", ""), seat),
-                source_kind="campaign_statement",
-                note=("Full page text fetched." if full else "Snippet only.") +
-                     " Promise CANDIDATE. The AI step decides if it qualifies; "
-                     "the analyst verifies."))
+    _search_pass(searcher, promise_queries, pass_type="promise",
+                 source_kind="campaign_statement",
+                 note_suffix=" Promise CANDIDATE. The AI step decides if it "
+                             "qualifies; the analyst verifies.",
+                 seat=seat, budget=promise_budget, push=push)
 
     # ---- PASS 2: VERIFICATION ----
     # (a) Structured APIs where they exist (Congress) — high-confidence bonus.
@@ -272,6 +338,8 @@ def collect(seat: Seat, official_id: str, official_name: str,
     # (b) Tiered web-search verification — runs for EVERY official, so governors,
     # mayors, and the president get verification too, not just Congress. Searches
     # for evidence of action on commitments; tier ranking handles authority.
+    verif_budget = {"remaining": max_fetches - max_fetches // 2
+                    + promise_budget["remaining"]}
     verification_queries = [
         f'"{official_name}" {seat.office} signed OR enacted OR passed {seat.jurisdiction}',
         f'"{official_name}" executive order OR budget OR policy record {seat.jurisdiction}',
@@ -279,31 +347,17 @@ def collect(seat: Seat, official_id: str, official_name: str,
         f'"{official_name}" {seat.office} accomplishment OR outcome',
         f'"{official_name}" voted OR vetoed OR blocked {seat.jurisdiction}',
     ]
-    for q in verification_queries:
-        for r in searcher.search(q, max_results=10):
-            url = r.get("url", "")
-            tier = classify_tier(url)
-            snippet = r.get("snippet") or r.get("title") or ""
-            full = ""
-            if tier in (Tier.PRIMARY, Tier.AUTHORITATIVE) and fetch_budget["remaining"] > 0:
-                full = fetch_full_text(url)
-                if full:
-                    fetch_budget["remaining"] -= 1
-            push(EvidenceItem(
-                pass_type="verification",
-                text=(full or snippet),
-                url=url, date=r.get("date", ""),
-                tier=tier.value,
-                term_origin=term_origin(r.get("date", ""), seat),
-                source_kind="reported_action",
-                note=("Full page text fetched." if full else "Snippet only.") +
-                     " Verification CANDIDATE from tiered search."))
+    _search_pass(searcher, verification_queries, pass_type="verification",
+                 source_kind="reported_action",
+                 note_suffix=" Verification CANDIDATE from tiered search.",
+                 seat=seat, budget=verif_budget, push=push)
 
     # Coverage honesty: surface what we have and don't have.
     primaries = sum(1 for i in items if i.tier == Tier.PRIMARY.value)
     promises = [i for i in items if i.pass_type == "promise"]
     verifs = [i for i in items if i.pass_type == "verification"]
     prior = sum(1 for i in items if i.term_origin == "prior_term_same_seat")
+    full_text = sum(1 for i in items if i.fetched)
 
     return {
         "schema": "policylogic/evidence-packet/v1",
@@ -322,6 +376,7 @@ def collect(seat: Seat, official_id: str, official_name: str,
             "promise_candidates": len(promises),
             "verification_records": len(verifs),
             "tier1_count": primaries,
+            "full_text_fetched": full_text,  # items backed by page body, not just a snippet
             "prior_term_flagged": prior,
             "dropped_out_of_window": counters["dropped_out_of_window"],
             "dropped_inadmissible": counters["dropped_inadmissible"],
@@ -366,8 +421,13 @@ class WebSearchSearcher:
         # Sanitize: drop periods, collapse whitespace, cap length.
         clean = re.sub(r"\.", "", query)
         clean = re.sub(r"\s+", " ", clean).strip()[:380]
+        # Reference the requests module via the (possibly injected) handle so the
+        # exception classes resolve — `requests` is imported lazily, not at module
+        # scope, so `requests.exceptions.*` here would otherwise be a NameError
+        # that masked every real HTTP failure.
+        req = self._http()
         try:
-            r = self._http().get(
+            r = req.get(
                 self.ENDPOINT,
                 headers={"Accept": "application/json",
                          "X-Subscription-Token": self.api_key},
@@ -376,12 +436,12 @@ class WebSearchSearcher:
             )
             r.raise_for_status()
             return self.parse(r.json(), max_results)
-        except requests.exceptions.HTTPError as e:
+        except req.exceptions.HTTPError as e:
             # One bad query must not kill the whole run. Log and skip.
             code = getattr(e.response, "status_code", "?")
             print(f"  [search skipped: HTTP {code}] {clean[:60]}", file=sys.stderr)
             return []
-        except requests.exceptions.RequestException as e:
+        except req.exceptions.RequestException as e:
             print(f"  [search skipped: {type(e).__name__}] {clean[:60]}", file=sys.stderr)
             return []
 
