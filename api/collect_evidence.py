@@ -164,7 +164,8 @@ def term_origin(date_iso: str, seat: Seat) -> str:
 # ============================================================================
 class Searcher(Protocol):
     """Web search abstraction. Returns list of {title,url,snippet,date}."""
-    def search(self, query: str, *, max_results: int = 10) -> list[dict[str, Any]]: ...
+    def search(self, query: str, *, max_results: int = 10,
+               pages: int = 1) -> list[dict[str, Any]]: ...
 
 
 class VerificationAPI(Protocol):
@@ -228,33 +229,103 @@ def fetch_full_text(url: str, *, max_chars: int = 6000) -> str:
         return ""
 
 
+@dataclass
+class CollectorConfig:
+    """All scope/depth knobs in one place, so coverage is tuned here (or via CLI
+    flags) instead of hunting through code. Bigger numbers = broader/deeper, but
+    also more API cost and more low-tier noise — defaults aim at a deeper-than-
+    before setting that is still bounded and tier-gated.
+
+    SCOPE (breadth)
+      max_results   results requested per query (Brave hard cap is 20)
+      pages         result pages to pull per query (pagination beyond page 1)
+    DEPTH (how much we actually read)
+      max_fetches   total Tier-1/Tier-2 full-page body fetches per official,
+                    split across the promise and verification passes
+      tier3_fetch   ADDITIONAL bodies fetched from top-ranked Tier-3 results per
+                    pass (own cap; never eats the Tier-1/2 budget). 0 = off.
+      max_chars     per-page text cap
+    STRUCTURED
+      congress_limit records per Congress.gov / GovTrack call
+    """
+    max_results: int = 15
+    pages: int = 2
+    max_fetches: int = 24
+    tier3_fetch: int = 6
+    max_chars: int = 8000
+    congress_limit: int = 100
+
+
+# Query banks — generated per official. More framings = more recall. Each entry
+# is a template formatted with name/office/jurisdiction. Kept as data so the set
+# is easy to extend without touching control flow.
+PROMISE_QUERY_TEMPLATES = (
+    '"{name}" {office} campaign promise',
+    '"{name}" pledge OR "I will" {juris}',
+    '"{name}" vowed OR "promised to" {juris}',
+    '"{name}" platform OR agenda {office}',
+    '"{name}" plan OR proposal {office} {juris}',
+    '"{name}" debate transcript {juris}',
+    '"{name}" inaugural OR "first day" OR "day one" commitment',
+    '"{name}" "first 100 days" OR "if elected" {juris}',
+)
+VERIFICATION_QUERY_TEMPLATES = (
+    '"{name}" {office} signed OR enacted OR passed {juris}',
+    '"{name}" executive order OR budget OR policy record {juris}',
+    '"{name}" delivered OR failed OR "broke promise" {juris}',
+    '"{name}" {office} accomplishment OR outcome OR "track record"',
+    '"{name}" voted OR vetoed OR blocked {juris}',
+    '"{name}" progress OR "status update" {office} {juris}',
+)
+
+
+def _build_queries(templates, official_name: str, seat: Seat) -> list[str]:
+    return [t.format(name=official_name, office=seat.office, juris=seat.jurisdiction)
+            for t in templates]
+
+
 def _search_pass(searcher: Searcher, queries: list[str], *, pass_type: str,
                  source_kind: str, note_suffix: str, seat: Seat,
-                 budget: dict[str, int], push: Callable[[EvidenceItem], None]) -> None:
-    """Run a set of search queries, fetch full page bodies for credible-tier
-    results within `budget`, and push the resulting items.
+                 budget: dict[str, int], push: Callable[[EvidenceItem], None],
+                 config: CollectorConfig) -> None:
+    """Run a set of search queries, fetch full page bodies within budget, and
+    push the resulting items.
 
-    Two credibility-driven choices:
+    Credibility-driven choices:
       1. Tier-1 bodies are fetched BEFORE Tier-2, so when the budget is tight the
          highest-authority text (the kind required for D3/D4) is what we capture.
-      2. A URL seen across multiple queries is fetched at most once — duplicate
+      2. Tier-3 bodies are fetched only after Tier-1/2 and only up to a SEPARATE
+         small cap (config.tier3_fetch) — so we can read local-news / statement
+         bodies without ever letting them displace primary-source reads.
+      3. A URL seen across multiple queries is fetched at most once — duplicate
          hits reuse the body instead of burning budget re-fetching it.
     Items are still emitted in original discovery order."""
     gathered = [(r, classify_tier(r.get("url", "")))
-                for q in queries for r in searcher.search(q, max_results=10)]
-    fetch_rank = {Tier.PRIMARY: 0, Tier.AUTHORITATIVE: 1}
+                for q in queries
+                for r in searcher.search(q, max_results=config.max_results,
+                                         pages=config.pages)]
+    # Fetch primaries first, then authoritative, then (separately capped) tier-3.
+    fetch_rank = {Tier.PRIMARY: 0, Tier.AUTHORITATIVE: 1, Tier.SUPPORTING: 2}
     order = sorted(range(len(gathered)),
                    key=lambda i: fetch_rank.get(gathered[i][1], 9))
     full_by_url: dict[str, str] = {}
+    tier3_left = config.tier3_fetch
     for i in order:
         r, tier = gathered[i]
         url = r.get("url", "")
-        if not url or url in full_by_url or budget["remaining"] <= 0:
+        if not url or url in full_by_url:
             continue
         if tier in (Tier.PRIMARY, Tier.AUTHORITATIVE):
-            full = fetch_full_text(url)
+            if budget["remaining"] <= 0:
+                continue
+            full = fetch_full_text(url, max_chars=config.max_chars)
             if full:
                 budget["remaining"] -= 1
+                full_by_url[url] = full
+        elif tier is Tier.SUPPORTING and tier3_left > 0:
+            full = fetch_full_text(url, max_chars=config.max_chars)
+            if full:
+                tier3_left -= 1
                 full_by_url[url] = full
     for r, tier in gathered:
         url = r.get("url", "")
@@ -273,7 +344,9 @@ def _search_pass(searcher: Searcher, queries: list[str], *, pass_type: str,
 
 def collect(seat: Seat, official_id: str, official_name: str,
             searcher: Searcher, verifiers: list[VerificationAPI],
-            *, max_fetches: int = 12) -> dict[str, Any]:
+            *, config: CollectorConfig | None = None) -> dict[str, Any]:
+    config = config or CollectorConfig()
+    max_fetches = config.max_fetches
     items: list[EvidenceItem] = []
     seen_urls: set[str] = set()
     counters = {"cid": 0, "dropped_out_of_window": 0, "dropped_inadmissible": 0,
@@ -308,18 +381,12 @@ def collect(seat: Seat, official_id: str, official_name: str,
     # ---- PASS 1: PROMISES via tiered web search ----
     # Queries fan out across source intent; the term window is applied per-result
     # by date, since search can't be perfectly time-scoped.
-    promise_queries = [
-        f'"{official_name}" {seat.office} campaign promise',
-        f'"{official_name}" pledge OR "I will" {seat.jurisdiction}',
-        f'"{official_name}" platform OR agenda {seat.office}',
-        f'"{official_name}" debate transcript {seat.jurisdiction}',
-        f'"{official_name}" inaugural OR "first day" commitment',
-    ]
+    promise_queries = _build_queries(PROMISE_QUERY_TEMPLATES, official_name, seat)
     _search_pass(searcher, promise_queries, pass_type="promise",
                  source_kind="campaign_statement",
                  note_suffix=" Promise CANDIDATE. The AI step decides if it "
                              "qualifies; the analyst verifies.",
-                 seat=seat, budget=promise_budget, push=push)
+                 seat=seat, budget=promise_budget, push=push, config=config)
 
     # ---- PASS 2: VERIFICATION ----
     # (a) Structured APIs where they exist (Congress) — high-confidence bonus.
@@ -340,17 +407,12 @@ def collect(seat: Seat, official_id: str, official_name: str,
     # for evidence of action on commitments; tier ranking handles authority.
     verif_budget = {"remaining": max_fetches - max_fetches // 2
                     + promise_budget["remaining"]}
-    verification_queries = [
-        f'"{official_name}" {seat.office} signed OR enacted OR passed {seat.jurisdiction}',
-        f'"{official_name}" executive order OR budget OR policy record {seat.jurisdiction}',
-        f'"{official_name}" delivered OR failed OR broke promise {seat.jurisdiction}',
-        f'"{official_name}" {seat.office} accomplishment OR outcome',
-        f'"{official_name}" voted OR vetoed OR blocked {seat.jurisdiction}',
-    ]
+    verification_queries = _build_queries(VERIFICATION_QUERY_TEMPLATES,
+                                          official_name, seat)
     _search_pass(searcher, verification_queries, pass_type="verification",
                  source_kind="reported_action",
                  note_suffix=" Verification CANDIDATE from tiered search.",
-                 seat=seat, budget=verif_budget, push=push)
+                 seat=seat, budget=verif_budget, push=push, config=config)
 
     # Coverage honesty: surface what we have and don't have.
     primaries = sum(1 for i in items if i.tier == Tier.PRIMARY.value)
@@ -413,7 +475,8 @@ class WebSearchSearcher:
         import requests  # lazy: keeps module importable without the dep
         return requests
 
-    def search(self, query: str, *, max_results: int = 10) -> list[dict[str, Any]]:
+    def search(self, query: str, *, max_results: int = 10,
+               pages: int = 1) -> list[dict[str, Any]]:
         if not self.api_key:
             raise RuntimeError("BRAVE_API_KEY not set. Get a free key at "
                                "https://brave.com/search/api/ or use FixtureSearcher.")
@@ -421,6 +484,22 @@ class WebSearchSearcher:
         # Sanitize: drop periods, collapse whitespace, cap length.
         clean = re.sub(r"\.", "", query)
         clean = re.sub(r"\s+", " ", clean).strip()[:380]
+        # Pull `pages` result pages and merge, de-duping by URL across pages so
+        # pagination adds reach without re-counting the same hit.
+        out: list[dict[str, Any]] = []
+        seen: set[str] = set()
+        for page in range(max(1, pages)):
+            for item in self._one_page(clean, max_results, offset=page):
+                u = item.get("url", "")
+                if u and u in seen:
+                    continue
+                if u:
+                    seen.add(u)
+                out.append(item)
+        return out
+
+    def _one_page(self, clean_query: str, max_results: int,
+                  *, offset: int) -> list[dict[str, Any]]:
         # Reference the requests module via the (possibly injected) handle so the
         # exception classes resolve — `requests` is imported lazily, not at module
         # scope, so `requests.exceptions.*` here would otherwise be a NameError
@@ -431,18 +510,19 @@ class WebSearchSearcher:
                 self.ENDPOINT,
                 headers={"Accept": "application/json",
                          "X-Subscription-Token": self.api_key},
-                params={"q": clean, "count": min(max_results, 20)},
+                params={"q": clean_query, "count": min(max_results, 20),
+                        "offset": offset},
                 timeout=30,
             )
             r.raise_for_status()
             return self.parse(r.json(), max_results)
         except req.exceptions.HTTPError as e:
-            # One bad query must not kill the whole run. Log and skip.
+            # One bad query/page must not kill the whole run. Log and skip.
             code = getattr(e.response, "status_code", "?")
-            print(f"  [search skipped: HTTP {code}] {clean[:60]}", file=sys.stderr)
+            print(f"  [search skipped: HTTP {code}] {clean_query[:60]}", file=sys.stderr)
             return []
         except req.exceptions.RequestException as e:
-            print(f"  [search skipped: {type(e).__name__}] {clean[:60]}", file=sys.stderr)
+            print(f"  [search skipped: {type(e).__name__}] {clean_query[:60]}", file=sys.stderr)
             return []
 
     @staticmethod
@@ -467,8 +547,10 @@ class CongressAPIVerifier:
     api.data.gov). Returns sponsored legislation as action records."""
     BASE = "https://api.congress.gov/v3"
 
-    def __init__(self, api_key: str | None = None, *, requests_module=None):
+    def __init__(self, api_key: str | None = None, *, limit: int = 50,
+                 requests_module=None):
         self.api_key = api_key or os.environ.get("CONGRESS_API_KEY")
+        self.limit = limit
         self._requests = requests_module
 
     def _http(self):
@@ -482,26 +564,39 @@ class CongressAPIVerifier:
             return [{"summary": "CONGRESS_API_KEY not set — Congress.gov skipped.",
                      "url": "", "date": "", "kind": "note",
                      "note": "Free key at https://api.data.gov/signup/"}]
-        r = self._http().get(
-            f"{self.BASE}/member/{official_id}/sponsored-legislation",
-            params={"api_key": self.api_key, "limit": 50},
-            headers={"Accept": "application/json"}, timeout=30,
-        )
-        r.raise_for_status()
-        return self.parse(r.json())
+        # Sponsored = bills the member authored; cosponsored = bills they signed
+        # onto. Both are evidence of action; pull both for fuller coverage.
+        out: list[dict[str, Any]] = []
+        for endpoint, key, role in (
+            ("sponsored-legislation", "sponsoredLegislation", "Sponsored"),
+            ("cosponsored-legislation", "cosponsoredLegislation", "Cosponsored"),
+        ):
+            try:
+                r = self._http().get(
+                    f"{self.BASE}/member/{official_id}/{endpoint}",
+                    params={"api_key": self.api_key, "limit": self.limit},
+                    headers={"Accept": "application/json"}, timeout=30,
+                )
+                r.raise_for_status()
+                out.extend(self.parse(r.json(), key=key, role=role))
+            except Exception as e:  # noqa: BLE001 — one endpoint failing must not kill the run
+                out.append({"summary": f"Congress.gov {role.lower()} fetch failed: {e}",
+                            "url": "", "date": "", "kind": "note", "note": ""})
+        return out
 
     @staticmethod
-    def parse(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    def parse(payload: dict[str, Any], *, key: str = "sponsoredLegislation",
+              role: str = "Sponsored") -> list[dict[str, Any]]:
         out = []
-        for b in payload.get("sponsoredLegislation", []) or []:
+        for b in payload.get(key, []) or []:
             num = f"{b.get('type','')}{b.get('number','')}".strip()
             out.append({
-                "summary": f"Sponsored {num}: {b.get('title','(untitled)')}",
+                "summary": f"{role} {num}: {b.get('title','(untitled)')}",
                 "url": b.get("url", ""),
                 "date": (b.get("introducedDate") or "")[:10],
-                "kind": "sponsored_bill",
-                "note": "Congress.gov sponsored legislation — evidence of action, "
-                        "not delivery itself; confirm outcome.",
+                "kind": f"{role.lower()}_bill",
+                "note": f"Congress.gov {role.lower()} legislation — evidence of "
+                        "action, not delivery itself; confirm outcome.",
             })
         return out
 
@@ -511,7 +606,8 @@ class GovTrackVerifier:
     action records. Complements Congress.gov sponsored bills."""
     BASE = "https://www.govtrack.us/api/v2"
 
-    def __init__(self, *, requests_module=None):
+    def __init__(self, *, limit: int = 50, requests_module=None):
+        self.limit = limit
         self._requests = requests_module
 
     def _http(self):
@@ -532,7 +628,7 @@ class GovTrackVerifier:
                          "url": "", "date": "", "kind": "note", "note": ""}]
             pid = people[0]["id"]
             vr = self._http().get(f"{self.BASE}/vote_voter",
-                                  params={"person": pid, "limit": 50,
+                                  params={"person": pid, "limit": self.limit,
                                           "sort": "-created"}, timeout=30)
             vr.raise_for_status()
             return self.parse(vr.json())
@@ -561,7 +657,8 @@ class GovTrackVerifier:
 class FixtureSearcher:
     def __init__(self, results: list[dict[str, Any]]):
         self._results = results
-    def search(self, query: str, *, max_results: int = 10) -> list[dict[str, Any]]:
+    def search(self, query: str, *, max_results: int = 10,
+               pages: int = 1) -> list[dict[str, Any]]:
         return self._results[:max_results]
 
 
@@ -583,7 +680,27 @@ def main() -> None:
     ap.add_argument("--name", required=True, help="Official full name.")
     ap.add_argument("--out-dir", default=".")
     ap.add_argument("--demo", action="store_true", help="Use offline fixtures (no network).")
+    # Scope/depth knobs (default to CollectorConfig's values). Raising these
+    # broadens coverage and reads deeper, at higher API cost.
+    _cfg = CollectorConfig()
+    ap.add_argument("--max-results", type=int, default=_cfg.max_results,
+                    help="Search results requested per query (Brave cap 20).")
+    ap.add_argument("--pages", type=int, default=_cfg.pages,
+                    help="Result pages to pull per query.")
+    ap.add_argument("--max-fetches", type=int, default=_cfg.max_fetches,
+                    help="Total Tier-1/Tier-2 full-page fetches per official.")
+    ap.add_argument("--tier3-fetch", type=int, default=_cfg.tier3_fetch,
+                    help="Extra top-ranked Tier-3 bodies fetched per pass (0=off).")
+    ap.add_argument("--max-chars", type=int, default=_cfg.max_chars,
+                    help="Per-page extracted-text cap.")
+    ap.add_argument("--congress-limit", type=int, default=_cfg.congress_limit,
+                    help="Records per Congress.gov / GovTrack call.")
     args = ap.parse_args()
+
+    config = CollectorConfig(
+        max_results=args.max_results, pages=args.pages,
+        max_fetches=args.max_fetches, tier3_fetch=args.tier3_fetch,
+        max_chars=args.max_chars, congress_limit=args.congress_limit)
 
     sd = json.load(open(args.seat_file, encoding="utf-8"))
     seat = Seat(office=sd["office"], jurisdiction=sd["jurisdiction"],
@@ -611,11 +728,12 @@ def main() -> None:
         # tiered web-search verification pass — which runs for everyone.
         office_l = seat.office.lower()
         if "senator" in office_l or "representative" in office_l or "congress" in office_l:
-            verifiers = [CongressAPIVerifier(), GovTrackVerifier()]
+            verifiers = [CongressAPIVerifier(limit=config.congress_limit),
+                         GovTrackVerifier(limit=config.congress_limit)]
         else:
             verifiers = []  # tiered search verification still runs in collect()
 
-    packet = collect(seat, args.id, args.name, searcher, verifiers)
+    packet = collect(seat, args.id, args.name, searcher, verifiers, config=config)
     out = os.path.join(args.out_dir, f"{args.id}.packet.json")
     json.dump(packet, open(out, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     c = packet["coverage"]
