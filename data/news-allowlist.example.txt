@@ -1,0 +1,24 @@
+# PolicyLogic — Tier-2 (authoritative) news allowlist (EXAMPLE / starter)
+#
+# The built-in authoritative list in collect_evidence.py is national-only
+# (Reuters, AP, NYT, WaPo, WSJ, Bloomberg, NPR, Politico, ProPublica). That
+# leaves local/regional reporting — where a governor's or mayor's record is
+# actually covered — stuck at Tier 3. Add vetted outlet hosts here to promote
+# them to Tier 2 for evidence collection.
+#
+# Rules:
+#   - one hostname per line (no scheme, no path): cleveland.com  NOT  https://...
+#   - subdomains match automatically: "cleveland.com" covers "www.cleveland.com"
+#   - '#' starts a comment (whole-line or trailing)
+#   - this is a TRUST decision — only add outlets you've vetted for credible,
+#     named-source reporting. It is never auto-populated.
+#
+# Use it via:  --news-allowlist data/news-allowlist.txt
+#         or:  POLICYLOGIC_NEWS_ALLOWLIST=data/news-allowlist.txt
+#
+# Examples (commented out — copy into your own list and vet first):
+# texastribune.org        # statewide nonprofit newsroom
+# calmatters.org          # California policy nonprofit
+# cleveland.com           # Ohio (Advance/Plain Dealer)
+# startribune.com         # Minnesota
+# miamiherald.com         # Florida

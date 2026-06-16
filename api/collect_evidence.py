@@ -86,6 +86,27 @@ INADMISSIBLE_HOSTS = ("twitter.com", "x.com", "facebook.com", "instagram.com",
                       "threads.net", "reddit.com", "t.me", "telegram.org",
                       "truthsocial.com", "bsky.app", "tiktok.com")
 
+# Operator-curated extension to the Tier-2 (authoritative) news list. The built-in
+# TIER2_HOSTS is national-only, which leaves local/regional reporting — exactly
+# where a governor's or mayor's record lives — stuck at Tier 3. Load a vetted list
+# of additional outlet hosts (one per line, '#' comments allowed) to promote them.
+# This is a TRUST decision, so it is opt-in and operator-maintained, never scraped.
+EXTRA_TIER2_HOSTS: set[str] = set()
+
+
+def load_tier2_allowlist(path: str) -> int:
+    """Merge an external newline-delimited host allowlist into EXTRA_TIER2_HOSTS.
+    Returns the number of hosts now registered. Missing/empty file is a no-op."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                host = line.split("#", 1)[0].strip().lower().strip(".")
+                if host:
+                    EXTRA_TIER2_HOSTS.add(host)
+    except FileNotFoundError:
+        print(f"  [allowlist not found, skipped] {path}", file=sys.stderr)
+    return len(EXTRA_TIER2_HOSTS)
+
 
 def _hostname(url: str) -> str:
     """Lowercased host with no port/userinfo, trailing dot stripped, or '' if the
@@ -122,6 +143,9 @@ def classify_tier(url: str, *, is_official_press_release: bool = False) -> Tier:
         # downstream instead of auto-crediting it as primary.
         return Tier.SUPPORTING if is_official_press_release else Tier.PRIMARY
     if any(_host_matches(host, d) for d in TIER2_HOSTS):
+        return Tier.AUTHORITATIVE
+    # Operator-curated local/regional outlets, if an allowlist was loaded.
+    if any(_host_matches(host, d) for d in EXTRA_TIER2_HOSTS):
         return Tier.AUTHORITATIVE
     # Unknown domain: supporting, needs corroboration — never Tier 1.
     return Tier.SUPPORTING
@@ -254,6 +278,10 @@ class CollectorConfig:
     tier3_fetch: int = 6
     max_chars: int = 8000
     congress_limit: int = 100
+    # Path to an operator-curated Tier-2 news allowlist (one host per line). Falls
+    # back to the POLICYLOGIC_NEWS_ALLOWLIST env var when unset. None = built-in
+    # national list only.
+    news_allowlist: str | None = None
 
 
 # Query banks — generated per official. More framings = more recall. Each entry
@@ -695,12 +723,21 @@ def main() -> None:
                     help="Per-page extracted-text cap.")
     ap.add_argument("--congress-limit", type=int, default=_cfg.congress_limit,
                     help="Records per Congress.gov / GovTrack call.")
+    ap.add_argument("--news-allowlist", default=None,
+                    help="Path to a curated Tier-2 news host allowlist (one host "
+                         "per line). Defaults to $POLICYLOGIC_NEWS_ALLOWLIST.")
     args = ap.parse_args()
 
     config = CollectorConfig(
         max_results=args.max_results, pages=args.pages,
         max_fetches=args.max_fetches, tier3_fetch=args.tier3_fetch,
-        max_chars=args.max_chars, congress_limit=args.congress_limit)
+        max_chars=args.max_chars, congress_limit=args.congress_limit,
+        news_allowlist=args.news_allowlist)
+
+    allowlist = config.news_allowlist or os.environ.get("POLICYLOGIC_NEWS_ALLOWLIST")
+    if allowlist:
+        n = load_tier2_allowlist(allowlist)
+        print(f"  [tier-2 allowlist] {n} operator-curated outlet(s) registered")
 
     sd = json.load(open(args.seat_file, encoding="utf-8"))
     seat = Seat(office=sd["office"], jurisdiction=sd["jurisdiction"],
