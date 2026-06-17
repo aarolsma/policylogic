@@ -1,0 +1,22 @@
+{
+  "id": "G000596",
+  "name": "Marjorie Taylor Greene",
+  "party": "Republican",
+  "office": "U.S. Representative",
+  "jurisdiction": "Georgia (GA-14)",
+  "seat_key": "US-HOUSE-GA-14",
+  "current_term": [
+    "2025-01-03",
+    "2027-01-03"
+  ],
+  "prior_terms_same_seat": [
+    [
+      "2021-01-03",
+      "2023-01-03"
+    ],
+    [
+      "2023-01-03",
+      "2025-01-03"
+    ]
+  ]
+}

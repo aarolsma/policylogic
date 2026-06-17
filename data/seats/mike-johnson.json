@@ -1,0 +1,18 @@
+{
+  "id": "J000299",
+  "name": "Mike Johnson",
+  "party": "Republican",
+  "office": "U.S. Representative",
+  "jurisdiction": "Louisiana (LA-04)",
+  "seat_key": "US-HOUSE-LA-04",
+  "current_term": [
+    "2025-01-03",
+    "2027-01-03"
+  ],
+  "prior_terms_same_seat": [
+    [
+      "2023-01-03",
+      "2025-01-03"
+    ]
+  ]
+}

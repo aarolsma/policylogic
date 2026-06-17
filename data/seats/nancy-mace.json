@@ -1,0 +1,22 @@
+{
+  "id": "M001218",
+  "name": "Nancy Mace",
+  "party": "Republican",
+  "office": "U.S. Representative",
+  "jurisdiction": "South Carolina (SC-01)",
+  "seat_key": "US-HOUSE-SC-01",
+  "current_term": [
+    "2025-01-03",
+    "2027-01-03"
+  ],
+  "prior_terms_same_seat": [
+    [
+      "2021-01-03",
+      "2023-01-03"
+    ],
+    [
+      "2023-01-03",
+      "2025-01-03"
+    ]
+  ]
+}

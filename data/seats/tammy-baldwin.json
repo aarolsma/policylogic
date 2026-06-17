@@ -1,0 +1,22 @@
+{
+  "id": "B001230",
+  "name": "Tammy Baldwin",
+  "party": "Democratic",
+  "office": "U.S. Senator",
+  "jurisdiction": "Wisconsin",
+  "seat_key": "US-SEN-WI-CLASS1",
+  "current_term": [
+    "2025-01-03",
+    "2031-01-03"
+  ],
+  "prior_terms_same_seat": [
+    [
+      "2013-01-03",
+      "2019-01-03"
+    ],
+    [
+      "2019-01-03",
+      "2025-01-03"
+    ]
+  ]
+}

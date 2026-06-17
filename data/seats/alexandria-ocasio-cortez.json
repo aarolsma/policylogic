@@ -1,0 +1,26 @@
+{
+  "id": "O000172",
+  "name": "Alexandria Ocasio-Cortez",
+  "party": "Democratic",
+  "office": "U.S. Representative",
+  "jurisdiction": "New York (NY-14)",
+  "seat_key": "US-HOUSE-NY-14",
+  "current_term": [
+    "2025-01-03",
+    "2027-01-03"
+  ],
+  "prior_terms_same_seat": [
+    [
+      "2019-01-03",
+      "2021-01-03"
+    ],
+    [
+      "2021-01-03",
+      "2023-01-03"
+    ],
+    [
+      "2023-01-03",
+      "2025-01-03"
+    ]
+  ]
+}
