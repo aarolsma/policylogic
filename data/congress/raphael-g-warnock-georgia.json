@@ -2,7 +2,7 @@
   "official": {
     "name": "Raphael G. Warnock",
     "role": "U.S. Senator",
-    "jurisdiction": "GA",
+    "jurisdiction": "Georgia",
     "party": "Democrat",
     "term_start": "2023-01-03",
     "term_end": "2029-01-03",
@@ -41,7 +41,7 @@
         "2024-07-11: Sponsored S4684 Bridge to Medicaid Act of 2024, referred to Committee on Finance",
         "2026-05-21: Publicly urged Georgia state leaders to expand Medicaid at Atlanta Press Club"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S4684: Bridge to Medicaid Act of 2024 — latest action: Read twice and referred t",
@@ -70,7 +70,7 @@
       "what_happened": [
         "S.4011 (117th) Capping Drug Costs for Seniors Act listed as enacted legislation primarily sponsored by Warnock (c19)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sen. Raphael Warnock [D-GA, 2021-2028], Senator for Georgia - GovTrack.us Internet Explore",
@@ -107,7 +107,7 @@
       "what_happened": [
         "Documented championing of efforts to lower prescription drug costs for seniors (c26)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Throughout his 2022 campaign, Walker has criticized federal-level Democrats for high gas p",
@@ -136,7 +136,7 @@
       "what_happened": [
         "Documented support for expanding the Affordable Care Act (c141)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "The New Georgia Project raised and spent millions of dollars in its partisan efforts and f",
@@ -163,7 +163,7 @@
       "difficulty_earned": 3.0,
       "promise_score": 13.8,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sen. Raphael Warnock [D-GA, 2021-2028], Senator for Georgia - GovTrack.us Internet Explore",
@@ -189,7 +189,7 @@
         "2023-07-27: Sponsored S2575 Preventing Election Subversion Act, referred to committee",
         "2026-05-21: Publicly advocated passage of the John Lewis Voting Rights Advancement Act at Atlanta Press Club"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
@@ -222,7 +222,7 @@
       "what_happened": [
         "2026-05-21: Publicly advocated passage of the Freedom to Vote Act at Atlanta Press Club (c25)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
@@ -247,7 +247,7 @@
       "what_happened": [
         "2026-05-21: Official release states Warnock introduced legislation to ban partisan gerrymandering nationwide (c25)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
@@ -274,7 +274,7 @@
         "2025-03-11: Sponsored S967 Downpayment Toward Equity Act and S968 Rent Relief Act",
         "2026-03-17: Atlanta Mayor Dickens endorsed Warnock's provision to ban large private equity firms from acquiring single-family homes (c145)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S969: Stop Predatory Investing Act — latest action: Read twice and referred to t",
@@ -335,7 +335,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:34:11+00:00",
-    "generated_at": "2026-06-22T22:35:11+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

@@ -2,7 +2,7 @@
   "official": {
     "name": "Alexandria Ocasio-Cortez",
     "role": "U.S. Representative",
-    "jurisdiction": "NY",
+    "jurisdiction": "New York",
     "party": "Democrat",
     "term_start": "2019-01-03",
     "term_end": "2027-01-03",
@@ -41,7 +41,7 @@
         "Official page lists support for H.R.1976 Medicare for All Act of 2021 (page dated 2022-11-30)",
         "M4A bill remains in committee with no chamber passage through term"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Healthcare | Representative Ocasio-Cortez Skip to main content First St SE, Washington, DC",
@@ -74,7 +74,7 @@
       "what_happened": [
         "Publicly advocated for tuition-free public college (2019-11-29 tweet)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "<strong>&quot;Just like rich kids can attend public school, they should be able to attend ",
@@ -104,7 +104,7 @@
         "Signed letters pressing Biden to cancel student debt (2021-10-08)",
         "Publicly advocated for $50,000 cancellation (2021-04-04)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Now, rather than using executive action to forgive the $10,000 Mr Biden said he would supp",
@@ -146,9 +146,9 @@
         "House voted to raise federal minimum wage to $15 by 2025 (2019-07-18)",
         "$15 provision struck from 2021 COVID bill by Senate parliamentarian; blocked 58-42 in Senate"
       ],
-      "flags": {
-        "externally_blocked": true
-      },
+      "flags": [
+        "Externally Blocked"
+      ],
       "sources": [
         {
           "title": "<strong>The House voted Thursday to raise the federal minimum wage to $15 an hour by 2025<",
@@ -186,7 +186,7 @@
         "Stated support for legislation banning semiautomatic assault weapons and large-capacity magazines (page dated 2022-11-18)",
         "Advocated bans on bump stocks and semi-automatic weapons (2019-03)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "She also supports legislation that would establish new background check requirements for f",
@@ -224,7 +224,7 @@
         "Cosponsored Background Check Expansion Act / H.R.8 and voted YEA (passed House 240-190-2, 2019-02-27)",
         "H.R.8 passed House again 227-203-1 (2021-03-11); no Senate action"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Alexandria Ocasio-Cortez on Gun Control Follow @ontheissuesorg Alexandria Ocasio-Cortez on",
@@ -258,7 +258,7 @@
         "Advocated disarming domestic abusers (2019-03)",
         "Voted for Bipartisan Gun Safety Bill passed summer 2022 (page dated 2022-11-18)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Ocasio-Cortez then laid out the ... (#HR8!)...disarm domestic abusers...mandate safe stora",
@@ -289,7 +289,7 @@
         "Sponsored Green New Deal for Public Housing Act (H.R.5185, 2019-11-19; reintroduced H.R.2664 2021; H.R.7782 2024)",
         "Reintroduced GND resolution (2023, H.Res.319) — not passed"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HRES109: Recognizing the duty of the Federal Government to create a Green New De",
@@ -334,7 +334,7 @@
       "what_happened": [
         "Started petition to repeal the Hyde Amendment (2019-06-15)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Alexandria Ocasio-Cortez (D-N.Y.) started a petition Saturday seeking to repeal the Hyde A",
@@ -368,7 +368,7 @@
         "Sponsored Civilian Climate Corps for Jobs and Justice Act (H.R.2670, 2021-04-20)",
         "Reintroduced (H.R.5572, 2023-09-19) — referred to committee, no passage"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR2670: The Civilian Climate Corps for Jobs and Justice Act — latest action: Ref",
@@ -401,7 +401,7 @@
       "what_happened": [
         "Voted for the federal Equality Act banning SOGI discrimination (per her issues page, c242)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "That’s why <strong>she voted for the federal “Equality Act” that bans discrimination on th",
@@ -447,7 +447,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:41:18+00:00",
-    "generated_at": "2026-06-22T22:42:38+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

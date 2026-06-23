@@ -2,7 +2,7 @@
   "official": {
     "name": "Elise M. Stefanik",
     "role": "U.S. Representative",
-    "jurisdiction": "NY",
+    "jurisdiction": "New York",
     "party": "Republican",
     "term_start": "2015-01-06",
     "term_end": "2027-01-03",
@@ -38,7 +38,7 @@
       "difficulty_earned": 2.5,
       "promise_score": 12.9,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
@@ -61,7 +61,7 @@
       "difficulty_earned": 0.0,
       "promise_score": 6.0,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
@@ -84,7 +84,7 @@
       "difficulty_earned": 0.0,
       "promise_score": 6.0,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
@@ -107,7 +107,7 @@
       "difficulty_earned": 0.0,
       "promise_score": 6.0,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
@@ -132,7 +132,7 @@
       "what_happened": [
         "c59: recorded vote (NAY) on A-PLUS Amendment to Student Success Act consistent with opposing federal education-reform mandates (date not specified in record)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Stefanik voted NAY A-PLUS Amendment To Student Success Act · Heritage Action Summary: An a",
@@ -155,7 +155,7 @@
       "difficulty_earned": 0.0,
       "promise_score": 5.0,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "We cannot provide a description for this page right now",
@@ -186,7 +186,7 @@
         "2017-03-29 (c249): sponsored HR1796 Lift the Relocation Burden from Military Spouses Act",
         "2026-04-22 (c27): official site reports defense-bill wins for Fort Drum in FY27 National Defense Bill"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "“From the start, Albany Democrats torpedoed this process with partisan tactics and corrupt",
@@ -221,7 +221,7 @@
       "difficulty_earned": 0.75,
       "promise_score": 5.95,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "About Congresswoman Stefanik | Congresswoman Elise Stefanik Facebook Icon Google Plus Icon",
@@ -248,7 +248,7 @@
         "2017-11-07 (c242): sponsored HR4291 Precision Farming Act",
         "2022-12-08 (c169): sponsored HR9483 Agriculture Foreign Investment Transparency Act"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR281: Family Farm Relief Act of 2017 — latest action: Referred to the Subcommit",
@@ -302,7 +302,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:39:07+00:00",
-    "generated_at": "2026-06-22T22:40:13+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

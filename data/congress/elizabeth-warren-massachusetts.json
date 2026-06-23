@@ -2,7 +2,7 @@
   "official": {
     "name": "Elizabeth Warren",
     "role": "U.S. Senator",
-    "jurisdiction": "MA",
+    "jurisdiction": "Massachusetts",
     "party": "Democrat",
     "term_start": "2025-01-03",
     "term_end": "2031-01-03",
@@ -43,7 +43,7 @@
         "2025-04-04 filed amendments to Republican budget bill to protect medical research and education funding (c159)",
         "Proposed 16 amendments with Sen. Markey to protect Massachusetts from budget cuts (c160)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "U.S. Senator Elizabeth Warren | Warren Unveils Budget Bil... Skip to primary navigation Sk",
@@ -90,7 +90,7 @@
         "2025-05-05 pressed Fed nominee Bowman at confirmation hearing (c181)",
         "2026-04-29 Banking Committee voted 13-11 along party lines on Kevin Warsh; Warren opposed (c176)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Look, already families all across this country are feeling the pressure from high grocery ",
@@ -125,7 +125,7 @@
         "2025-11-07 floor advocacy for reopening government with ACA premium tax credit extension (c175)",
         "2026-03-19 co-signed Senate Democratic plan to reverse Republican health care cuts (c187)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "The Affordable Care Act made massive strides in expanding access to health insurance cover",
@@ -165,7 +165,7 @@
         "2025-06-30 pressed defense contractors on lobbying for retroactive tax breaks (c191)",
         "2026-04-22 letter opposing Treasury rule enabling tax dodging by wealthy partnerships (c196)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S4246: Ultra-Millionaire Tax Act of 2026 — latest action: Read twice and referre",
@@ -208,7 +208,7 @@
         "2025-06-30 pressed contractors on tax breaks in 'big, beautiful bill' (c191)",
         "2025-11-10 noted One Big Beautiful Bill Act cut taxes for billionaires while hiking taxes for student loan borrowers (c194)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "“President Trump and his allies in Congress passed the One Big Beautiful Bill Act to cut t",
@@ -245,7 +245,7 @@
         "2025-02-14 warned of 'culture of corruption' at the Fed, called for stronger ethics enforcement (c198)",
         "Pressed for IG investigation into Trump third-country deportations (c185)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "“But instead of following through ... count with me,” <strong>Warren plans to say before l",
@@ -290,7 +290,7 @@
       "what_happened": [
         "Senate site lists sponsored legislation 'to prohibit, or require disclosure of, the surveillance, monitoring...' (c11)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "U.S. Senator Elizabeth Warren | Home | U.S. Senator Eliza... Skip to primary navigation Sk",
@@ -316,7 +316,7 @@
         "2026-03-26 sponsored S4246 Ultra-Millionaire Tax Act of 2026, referred to Committee on Finance (c102)",
         "2026-04-02 renewed Ultra-Millionaire Tax proposal: 2% on net worth $50M-$1B, 3% over $1B (c197)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S4246: Ultra-Millionaire Tax Act of 2026 — latest action: Read twice and referre",
@@ -375,7 +375,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:31:15+00:00",
-    "generated_at": "2026-06-22T22:32:23+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

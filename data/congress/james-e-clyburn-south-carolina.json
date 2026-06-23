@@ -2,7 +2,7 @@
   "official": {
     "name": "James E. Clyburn",
     "role": "U.S. Representative",
-    "jurisdiction": "SC",
+    "jurisdiction": "South Carolina",
     "party": "Democrat",
     "term_start": "1993-01-05",
     "term_end": "2027-01-03",
@@ -44,7 +44,7 @@
         "2021-03-11 Sponsored HR1783 Accessible, Affordable Internet for All Act",
         "2023-02-21 Announced GetConnectedSC broadband campaign with state officials"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR1783: Accessible, Affordable Internet for All Act — latest action: Referred to",
@@ -94,7 +94,7 @@
         "2025-01-28 Highlighted House-passed funding increasing CMS and health agency funding",
         "2026-03-12 Published constituent guidance on Social Security and the tax bill's effects"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "You may have seen an email from the Social Security Administration (SSA) claiming that Tru",
@@ -129,7 +129,7 @@
         "2021-10-18 Announced more than $15 million for SC healthcare construction via American Rescue Plan",
         "2024-01-28 Called for delivering accessible, affordable healthcare in Weekly Democratic Address"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR1943: Community Health Center and Primary Care Workforce Expansion Act of 2019",
@@ -176,9 +176,9 @@
         "2023-04-26 Sponsored HR2883 Domestic Reinvestment Act of 2023",
         "2022-04-02 Campaign site reported delivery of 7,200 manufacturing jobs to SC"
       ],
-      "flags": {
-        "credit_overclaimed": true
-      },
+      "flags": [
+        "Credit Overclaimed"
+      ],
       "sources": [
         {
           "title": "Sponsored HR2883: Domestic Reinvestment Act of 2023 — latest action: Referred to the Subco",
@@ -222,7 +222,7 @@
         "2022-12-08 Sponsored HR9466 Housing, Opportunity, Mobility, and Equity Act of 2022",
         "2025-07-14 Opposed FY2026 THUD bill cuts to HUD rental assistance as ranking member"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR9466: Housing, Opportunity, Mobility, and Equity Act of 2022 — latest action: ",
@@ -269,7 +269,7 @@
         "2019-07-23 Sponsored HR3887 Student Loan Debt Relief Act of 2019",
         "2024-07-03 Delivered remarks at SC technical college commissioners convening on education access"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR3887: Student Loan Debt Relief Act of 2019 — latest action: Referred to the Su",
@@ -323,7 +323,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-23T19:06:04+00:00",
-    "generated_at": "2026-06-23T19:07:00+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

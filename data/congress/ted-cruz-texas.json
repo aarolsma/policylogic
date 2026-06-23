@@ -2,7 +2,7 @@
   "official": {
     "name": "Ted Cruz",
     "role": "U.S. Senator",
-    "jurisdiction": "TX",
+    "jurisdiction": "Texas",
     "party": "Republican",
     "term_start": "2025-01-03",
     "term_end": "2031-01-03",
@@ -42,7 +42,7 @@
         "2025-05-20: Passed Senate 100-0",
         "2026-01-02: Cruz statement confirms No Tax on Tips enacted via Working Families Tax Cut Act"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Ted Cruz (R-Texas) issued a statement following the passing of his No Tax on Tips Act in t",
@@ -77,7 +77,7 @@
         "2026-04-07: Chaired Commerce hearing on Big Tech censorship",
         "2026-06-11: Introduced S4749 jawboning bill"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "WASHINGTON, D.C. – In his opening statement at today’s Senate Commerce Committee hearing t",
@@ -116,7 +116,7 @@
         "2025-12-17: ROTOR Act passed Senate by unanimous consent",
         "2026-02-26: House Republicans struck down the bill"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Jerry Moran (R-Kan.), Chairman ... he and Ranking Member Maria Cantwell (D-Wash.) <strong>",
@@ -150,7 +150,7 @@
         "2025-06-25: Released updated Commerce reconciliation text including spectrum and AI provisions",
         "2026-01-02: Year-end statement cites enacted spectrum auction and innovation provisions"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Chairman Cruz Releases Updated Budget Reconciliation Text - U.S. Senate Committee on Comme",
@@ -184,7 +184,7 @@
         "2025: Introduced legislation to reverse the Sagebrush Lizard ESA listing (per Cruz highlights)",
         "2026-04-28: Sponsored S4412 No FED in West Texas Act (related land-use measure)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
@@ -215,7 +215,7 @@
         "2025-11-07: Introduced legislation to hold Mexico accountable for water deliveries",
         "2025-11-25: State Department pressed Mexico per Cruz-backed advocacy"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Cruz championed a provision providing ... and Rio Grande Rivers. Sens. <strong>Cruz and Jo",
@@ -250,7 +250,7 @@
         "2025-02-10: Sponsored S496 Wildfire Victim Tax Relief and Recovery Act",
         "2025-07-07: Engaged on Central Texas flood victim response"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "I have spoken to the president multiple times throughout the course of this storm from the",
@@ -283,7 +283,7 @@
       "what_happened": [
         "2025: Cleared bipartisan procurement bill (with Sen. Peters) through Senate Homeland Security and Government Affairs Committee"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
@@ -314,7 +314,7 @@
         "2026-03-30: Sent letters demanding sports organizations comply with eligibility rules",
         "2026-06-02: Sponsored S4668 Protect College Sports Act, passed committee 19-9"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S4668: Protect College Sports Act of 2026 — latest action: Committee on Commerce",
@@ -377,7 +377,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:26:39+00:00",
-    "generated_at": "2026-06-22T22:27:46+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

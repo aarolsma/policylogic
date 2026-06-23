@@ -2,7 +2,7 @@
   "official": {
     "name": "Jim Jordan",
     "role": "U.S. Representative",
-    "jurisdiction": "OH",
+    "jurisdiction": "Ohio",
     "party": "Republican",
     "term_start": "2007-01-04",
     "term_end": "2027-01-03",
@@ -43,7 +43,7 @@
         "2013-03-12: Sponsored HR1091 Life at Conception Act (referred to subcommittee)",
         "2007-04-18: Floor speech supporting the Partial-Birth Abortion Ban Act"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR1091: Life at Conception Act — latest action: Referred to the Subcommittee on ",
@@ -90,7 +90,7 @@
         "2015-06-26: Issued statement opposing Supreme Court marriage ruling",
         "2022-07-20: Led GOP objections to House bill codifying gay marriage"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR2608: To define marriage for all legal purposes in the District of Columbia to",
@@ -130,7 +130,7 @@
         "2011-01-24: Sponsored HR408 Spending Reduction Act of 2011 (referred to subcommittee)",
         "2010-07-28: Ranked most fiscally conservative member by NTUF for FY2009 sponsored legislation"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored HR408: Spending Reduction Act of 2011 — latest action: Referred to the Subcommit",
@@ -173,7 +173,7 @@
       "difficulty_earned": 0.75,
       "promise_score": 6.95,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Issues | U.S. Congressman Jim Jordan Skip to main content 2056 Rayburn House Office Buildi",
@@ -219,7 +219,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:37:18+00:00",
-    "generated_at": "2026-06-22T22:37:58+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [
       "LOW PROMISE COUNT"

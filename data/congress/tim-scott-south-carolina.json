@@ -2,7 +2,7 @@
   "official": {
     "name": "Tim Scott",
     "role": "U.S. Senator",
-    "jurisdiction": "SC",
+    "jurisdiction": "South Carolina",
     "party": "Republican",
     "term_start": "2023-01-03",
     "term_end": "2029-01-03",
@@ -43,7 +43,7 @@
         "2024-04-25: Signed into law as part of national security supplemental",
         "2025-06-25: Treasury acted against Mexico-based financial institutions under the law"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S1271: FEND Off Fentanyl Act — latest action: Committee on Banking, Housing, and",
@@ -87,7 +87,7 @@
         "2025-03-06: Reintroduced S883 Unlocking Domestic LNG Potential Act of 2025",
         "2025-11: House companion bill passed 217-188"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "WASHINGTON — Today, U.S. Senator Tim Scott (R-S.C.) introduced the <strong>Unlocking Domes",
@@ -131,7 +131,7 @@
         "2026-03-12: Senate passed 21st Century ROAD to Housing Act 89-10",
         "2025-12: Removed from final NDAA in House negotiations"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "WASHINGTON — U.S. Senator Tim ... the ROAD to Housing Act, <strong>comprehensive legislati",
@@ -172,7 +172,7 @@
       "what_happened": [
         "2024-09-23: Introduced S5139 Empowering Main Street in America Act of 2024"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Sponsored S5139: Empowering Main Street in America Act of 2024 — latest action: Read twice",
@@ -201,7 +201,7 @@
       "what_happened": [
         "2023-11-14: Led 39 Republican senators in letter urging regulators to withdraw the Basel III Endgame proposal"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Tim Scott, R-S.C., the ranking member of the Senate Banking Committee, wrote to the bankin",
@@ -232,7 +232,7 @@
       "difficulty_earned": 1.25,
       "promise_score": 7.45,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "<strong>Tim Scott</strong> believes in the sanctity of traditional marriage between a man ",
@@ -259,7 +259,7 @@
       "difficulty_earned": 0.75,
       "promise_score": 8.55,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "President Obama&#x27;s health care plan taxes too much, spends too much, is bad for our he",
@@ -292,7 +292,7 @@
       "what_happened": [
         "2023-11-14: Stated on official issues page that he cosponsored legislation creating a Balanced Budget Amendment"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "<strong>Washington must be more responsible with taxpayer dollars, funding only true natio",
@@ -363,7 +363,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T22:29:05+00:00",
-    "generated_at": "2026-06-22T22:30:02+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [
