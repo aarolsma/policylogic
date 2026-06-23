@@ -1,0 +1,1096 @@
+{
+  "official": {
+    "name": "James E. Clyburn",
+    "role": "U.S. Representative",
+    "jurisdiction": "SC",
+    "party": "Democrat",
+    "term_start": "1993-01-05",
+    "term_end": "2027-01-03",
+    "election_date": "1992-11-01",
+    "next_election": "2026-11-01",
+    "office_phone": "202-225-3315",
+    "office_address": "274 Cannon House Office Building Washington DC 20515-4006",
+    "office_website": "https://clyburn.house.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 38.39,
+    "delivery_ratio": 0.35,
+    "narrative": "Across his commitments on broadband, healthcare, housing, education, jobs, and protecting Social Security/Medicare, Clyburn's record this term is dominated by sustained legislative sponsorship and appropriations advocacy. Broadband shows the most advanced delivery, with enacted federal benefits and a launched statewide deployment effort; healthcare shows secured funding and enrollment assistance, while housing, education, and jobs largely consist of introduced bills that remained in committee under a Congress not aligned with his proposals. He took documented protective action on Social Security and Medicare with no documented cuts enacted.",
+    "grade_rationale": "The record reflects consistent, well-documented action across most promises but uneven completion: only broadband reaches an advanced/launched stage, while several economic and education pledges stall at the bill-introduction milestone, and his causal role is frequently shared (0.4-0.6) given Congress and federal agencies as necessary co-actors. Promise quality is mostly directional-to-specific (clarity 3-4) with moderate-to-high magnitude.",
+    "ambition_level": "Moderate",
+    "total_promises": 6,
+    "total": 6
+  },
+  "promises": [
+    {
+      "text": "Connect every home and business in SC-06 to fast, affordable broadband / make high-speed broadband accessible and affordable for the people of the 6th Congressional District",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 11.65,
+      "what_happened": [
+        "2020-05-27 Sponsored HR7022 Rural Broadband Acceleration Act",
+        "2020-06-24 Sponsored HR7302 Accessible, Affordable Internet for All Act",
+        "2021-02-05 Emergency Broadband Benefit ($50 monthly discount) enacted",
+        "2021-03-11 Sponsored HR1783 Accessible, Affordable Internet for All Act",
+        "2023-02-21 Announced GetConnectedSC broadband campaign with state officials"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR1783: Accessible, Affordable Internet for All Act — latest action: Referred to",
+          "url": "https://www.congress.gov/bill/117th-congress/house-bill/1783"
+        },
+        {
+          "title": "Sponsored HR7302: Accessible, Affordable Internet for All Act — latest action: Referred to",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/7302"
+        },
+        {
+          "title": "Sponsored HR7022: Rural Broadband Acceleration Act. — latest action: Referred to the House",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/7022"
+        },
+        {
+          "title": "The enacted provisions included the <strong>establishment of a new Emergency Broadband Ben",
+          "url": "https://kahele.house.gov/media/press-releases/whip-clyburn-announces-new-members-house-rural-broadband-task-force"
+        },
+        {
+          "title": "As a required first step in the deployment of these funds, South Carolina was granted plan",
+          "url": "https://scbiznews.com/news/government/83193/"
+        },
+        {
+          "title": "Governor Henry McMaster and Congressman James E. Clyburn were joined by officials from the",
+          "url": "https://ors.sc.gov/news/2023/mcmaster-clyburn-announce-getconnectedsc-campaign-expand-broadband-access"
+        },
+        {
+          "title": "&quot;Thanks to our federal partners, we will have another way to help more people connect",
+          "url": "https://www.ntia.gov/press-release/2024/biden-harris-administration-approves-georgia-iowa-minnesota-and-south-carolina-s-internet-all"
+        }
+      ]
+    },
+    {
+      "text": "Protect Social Security and Medicare for seniors in the 6th Congressional District",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 3.0,
+      "promise_score": 15.8,
+      "what_happened": [
+        "2025-01-28 Highlighted House-passed funding increasing CMS and health agency funding",
+        "2026-03-12 Published constituent guidance on Social Security and the tax bill's effects"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "You may have seen an email from the Social Security Administration (SSA) claiming that Tru",
+          "url": "https://clyburn.house.gov/the-truth-about-trumps-tax-bill-and-your-social-security/"
+        },
+        {
+          "title": "The House-passed funding bill increases funding for the National Institutes of Health, Cen",
+          "url": "https://clyburn.house.gov/affordable-care-act/"
+        },
+        {
+          "title": "Home &gt; Members &gt; Representative James E. Clyburn ... Sort View Member Activity Congr",
+          "url": "https://www.congress.gov/member/james-clyburn/C000537?q=%7B%22subject%22:%22Social+Welfare%22%7D"
+        }
+      ]
+    },
+    {
+      "text": "Lower the costs of healthcare / make healthcare accessible and affordable for the people of the 6th Congressional District",
+      "domain_label": "Healthcare",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 11.65,
+      "what_happened": [
+        "2019-03-28 Sponsored HR1943 Community Health Center and Primary Care Workforce Expansion Act",
+        "2021-10-18 Announced more than $15 million for SC healthcare construction via American Rescue Plan",
+        "2024-01-28 Called for delivering accessible, affordable healthcare in Weekly Democratic Address"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR1943: Community Health Center and Primary Care Workforce Expansion Act of 2019",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/1943"
+        },
+        {
+          "title": "Sponsored HR3059: Community Health Center and Primary Care Workforce Expansion Act of 2017",
+          "url": "https://www.congress.gov/bill/115th-congress/house-bill/3059"
+        },
+        {
+          "title": "Sponsored HR1296: Access for All America Act — latest action: Referred to the Subcommittee",
+          "url": "https://www.congress.gov/bill/111th-congress/house-bill/1296"
+        },
+        {
+          "title": "These funds, made available through the American Rescue Plan legislation passed by Democra",
+          "url": "https://clyburn.house.gov/press-release/congressman-clyburn-announces-more-15-million-construction-and-capital-improvements"
+        },
+        {
+          "title": "The House-passed funding bill increases funding for the National Institutes of Health, Cen",
+          "url": "https://clyburn.house.gov/affordable-care-act/"
+        },
+        {
+          "title": "Clyburn also <strong>called on Republicans in Congress to work with Democrats to deliver a",
+          "url": "https://clyburn.house.gov/assistant-democratic-leader-james-e-clyburn-delivers-weekly-democratic-address/"
+        }
+      ]
+    },
+    {
+      "text": "Fight for good-paying jobs and educational/economic opportunities for children in SC-06",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 2.4,
+      "difficulty_earned": 1.5,
+      "promise_score": 7.9,
+      "what_happened": [
+        "2014-09-18 Sponsored HR5571 10-20-30 Act (persistent poverty formula)",
+        "2023-04-26 Sponsored HR2883 Domestic Reinvestment Act of 2023",
+        "2022-04-02 Campaign site reported delivery of 7,200 manufacturing jobs to SC"
+      ],
+      "flags": {
+        "credit_overclaimed": true
+      },
+      "sources": [
+        {
+          "title": "Sponsored HR2883: Domestic Reinvestment Act of 2023 — latest action: Referred to the Subco",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/2883"
+        },
+        {
+          "title": "Sponsored HR9041: Domestic Reinvestment Act of 2022 — latest action: Referred to the House",
+          "url": "https://www.congress.gov/bill/117th-congress/house-bill/9041"
+        },
+        {
+          "title": "Sponsored HR6531: Targeting Resources to Communities in Need Act of 2022 — latest action: ",
+          "url": "https://www.congress.gov/bill/117th-congress/house-bill/6531"
+        },
+        {
+          "title": "Sponsored HR5571: 10-20-30 Act of 2014 — latest action: Referred to the Subcommittee on Re",
+          "url": "https://www.congress.gov/bill/113th-congress/house-bill/5571"
+        },
+        {
+          "title": "<strong>Enacting key provisions of the House-passed America COMPETES Act into law will ens",
+          "url": "https://clyburnforcongress.com/congressman-james-clyburn-delivers-7200-manufacturing-jobs-to-sc/"
+        }
+      ]
+    },
+    {
+      "text": "Make housing accessible and affordable / provide sustenance and shelter for vulnerable constituents in the 6th Congressional District",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 9.1,
+      "what_happened": [
+        "2018-07-26 Sponsored HR6542 Restoring Tax Credits for Affordable Housing Act",
+        "2020-02-13 Sponsored HR5884 Legal Assistance to Prevent Evictions Act of 2020",
+        "2022-12-08 Sponsored HR9466 Housing, Opportunity, Mobility, and Equity Act of 2022",
+        "2025-07-14 Opposed FY2026 THUD bill cuts to HUD rental assistance as ranking member"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR9466: Housing, Opportunity, Mobility, and Equity Act of 2022 — latest action: ",
+          "url": "https://www.congress.gov/bill/117th-congress/house-bill/9466"
+        },
+        {
+          "title": "Sponsored HR4808: Housing, Opportunity, Mobility, and Equity Act of 2019 — latest action: ",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/4808"
+        },
+        {
+          "title": "Sponsored HR6542: Restoring Tax Credits for Affordable Housing Act — latest action: Referr",
+          "url": "https://www.congress.gov/bill/115th-congress/house-bill/6542"
+        },
+        {
+          "title": "Sponsored HR5884: Legal Assistance to Prevent Evictions Act of 2020 — latest action: Refer",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/5884"
+        },
+        {
+          "title": "Congressman Clyburn also introduced the <strong>Restoring Tax Credits for Affordable Housi",
+          "url": "https://assistantdemocraticleader.house.gov/issues/housing"
+        },
+        {
+          "title": "Ranking Member Clyburn Statement at the Subcommittee Markup of the 2026 Transportation, an",
+          "url": "https://democrats-appropriations.house.gov/news/statements/ranking-member-clyburn-statement-subcommittee-markup-2026-transportation-and"
+        }
+      ]
+    },
+    {
+      "text": "Make education accessible and affordable / pursue greater educational opportunities for the people and children of the 6th Congressional District",
+      "domain_label": "Education",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 9.1,
+      "what_happened": [
+        "2014-09-18 Sponsored HR5570 to reauthorize HBCU Historic Preservation program",
+        "2019-07-23 Sponsored HR3887 Student Loan Debt Relief Act of 2019",
+        "2024-07-03 Delivered remarks at SC technical college commissioners convening on education access"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR3887: Student Loan Debt Relief Act of 2019 — latest action: Referred to the Su",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/3887"
+        },
+        {
+          "title": "Sponsored HR5570: To reauthorize the Historically Black Colleges and Universities Historic",
+          "url": "https://www.congress.gov/bill/113th-congress/house-bill/5570"
+        },
+        {
+          "title": "Sponsored HR870: To reauthorize the Historically Black Colleges and Universities Historic ",
+          "url": "https://www.congress.gov/bill/116th-congress/house-bill/870"
+        },
+        {
+          "title": "CONGRESSMAN CLYBURN DELIVERS REMARKS AT CONVENING OF SOUTH CAROLINA ASSOCIATION OF TECHNIC",
+          "url": "https://clyburn.house.gov/congressman-clyburn-delivers-remarks-at-convening-of-south-carolina-association-of-technical-college-commissioners/"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Promise candidates are largely directional restatements drawn from a 2024 election article and a 2026 campaign-announcement list (c1-c12), with no campaign-window-dated original text; near-duplicate 2024/2026 pledges were consolidated. Many delivery evidence items predate the current term and reflect Clyburn's long tenure rather than this-term action — reviewer should confirm term attribution. The jobs promise relies on a campaign-site claim (c227) flagged for credit overclaim. Some sources (c200 GovTrack fetch failure) were unusable."
+  ],
+  "term_identity": {
+    "term_id": "us-house-sc-1993",
+    "ordinal": "1st House tenure",
+    "status": "in_progress",
+    "as_of": "2026-06-23",
+    "pct_elapsed": 98.4,
+    "office": "U.S. Representative",
+    "jurisdiction": "SC",
+    "term_start": "1993-01-05",
+    "term_end": "2027-01-03"
+  },
+  "person_ref": "james-e-clyburn",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-23",
+    "pct_elapsed": 98.4,
+    "display": "Grade is record-to-date — term in progress, 98.4% elapsed (as of 2026-06-23). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-house-sc-1993",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-23T19:06:04+00:00",
+    "generated_at": "2026-06-23T19:07:00+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "In an interview with CNN’s “State of the Union,” Clyburn criticized the Supreme Court’s ru",
+        "url": "https://www.politico.com/news/2026/05/10/clyburn-confident-reelection-redistricting-efforts-00913563"
+      },
+      {
+        "title": "Biography - Congressman James E. Clyburn Skip to content Skip to content About Biography C",
+        "url": "https://clyburn.house.gov/biography/"
+      },
+      {
+        "title": "James e. (Jim) Clyburn’s 1992 election made him the first African American \nfrom South Car",
+        "url": "https://www.govinfo.gov/content/pkg/GPO-CDOC-108hdoc224/pdf/GPO-CDOC-108hdoc224-3-8.pdf"
+      },
+      {
+        "title": "How Rep. James Clyburn Protected His District at a Cost to Black Democrats &#8212; ProPubl",
+        "url": "https://www.propublica.org/article/how-rep-james-clyburn-protected-his-district-at-a-cost-to-black-democrats"
+      },
+      {
+        "title": "James E. Clyburn, the Representative from South Carolina - in Congress from 1993 through P",
+        "url": "https://www.congress.gov/member/james-clyburn/C000537"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/James_Clyburn"
+      },
+      {
+        "title": "CQ &amp; A: An Interview with House Majority Whip James E. Clyburn - New York Times Skip t",
+        "url": "https://archive.nytimes.com/www.nytimes.com/cq/2007/04/03/cq_2507.html"
+      },
+      {
+        "title": "Contact James Clyburn · VoteMatch ... (Click on topic for excerpt &amp; citation) Favors t",
+        "url": "https://www.ontheissues.org/house/james_clyburn.htm"
+      },
+      {
+        "title": "4. EMPLOYMENT - US Army - 1953-55; ... in the SC House of Representatives 1981-1992; Emplo",
+        "url": "https://www.scstatehouse.gov/sess111_1995-1996/hj96/19960109.htm"
+      },
+      {
+        "title": "Aires just 2 years earlier, in 1992. Trag- ... SIRES, I introduced H. Res. 201, which ... ",
+        "url": "https://www.govinfo.gov/content/pkg/CREC-2017-07-18/pdf/CREC-2017-07-18.pdf"
+      },
+      {
+        "title": "Mr. Steyer, a billionaire running for president, rents his campaign headquarters in South ",
+        "url": "https://www.nytimes.com/2020/02/24/us/politics/tom-steyer-james-clyburn-south-carolina.html"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by James Clyburn.",
+        "url": "https://ballotpedia.org/Endorsements_by_James_Clyburn"
+      },
+      {
+        "title": "South Carolina Party Control: 1992-2024 No Democratic trifectas • Twenty-two years of Repu",
+        "url": "https://ballotpedia.org/South_Carolina's_6th_Congressional_District_election,_2024"
+      },
+      {
+        "title": "South Carolina Party Control: 1992-2022 No Democratic trifectas • Twenty years of Republic",
+        "url": "https://ballotpedia.org/South_Carolina's_6th_Congressional_District_election,_2022"
+      },
+      {
+        "title": "Heading into the election the incumbent was Democrat James Clyburn, who was first elected ",
+        "url": "https://ballotpedia.org/South_Carolina's_6th_Congressional_District_election,_2020"
+      },
+      {
+        "title": "The table below displays the officeholders in South Carolina&#x27;s top four state executi",
+        "url": "https://ballotpedia.org/South_Carolina's_6th_Congressional_District_election,_2024_(June_11_Democratic_primary)"
+      },
+      {
+        "title": "Rep. James E. Clyburn",
+        "url": "https://ballotpedia.org/Preston_Brittain"
+      },
+      {
+        "title": "James Clyburn · Retrieved from &quot;https://ballotpedia.org/wiki/index.php?title=Jim_Clyb",
+        "url": "https://ballotpedia.org/wiki/index.php?title=Jim_Clyburn&redirect=no"
+      },
+      {
+        "title": "Incumbent James Clyburn (D) defeated John McCollum (R) and Mark Hackett (Constitution Part",
+        "url": "https://ballotpedia.org/South_Carolina's_6th_Congressional_District_election,_2026"
+      },
+      {
+        "title": "See also: South Carolina&#x27;s 6th Congressional District election, 2022 · Incumbent Jame",
+        "url": "https://ballotpedia.org/South_Carolina's_6th_Congressional_District"
+      },
+      {
+        "title": "James Clyburn is a <strong>Hard-Core Liberal</strong> (Click for details)",
+        "url": "https://www.ontheissues.org/House/James_Clyburn.htm"
+      },
+      {
+        "title": "As the sole Democrat in the South Carolina delegation (albeit one in a district protected ",
+        "url": "https://ontheissues.org/House/James_Clyburn_Environment.htm"
+      },
+      {
+        "title": "Motion to add language to the &quot;Goals 2000: Educate America Act&quot; to give federal ",
+        "url": "https://www.ontheissues.org/house/James_Clyburn_Education.htm"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "http://www.ontheissues.org/Contact_James_Clyburn.asp?name=James_Clyburn"
+      },
+      {
+        "title": "Vote on an amendment to the &quot;Kosovo ... any invasion of Yugoslavia with U.S. ground f",
+        "url": "https://www.ontheissues.org/House/James_Clyburn_War_+_Peace.htm"
+      },
+      {
+        "title": "Clyburn voted NAY Gosar Anti-DACA Amendment to H.R. 5293 · Congressional Summary: The Hous",
+        "url": "https://www.ontheissues.org/house/James_Clyburn_Immigration.htm"
+      },
+      {
+        "title": "It was led by James Clyburn (SC), who was then its main leader, and include Bennie Thompso",
+        "url": "https://ontheissues.org/House/James_Clyburn_Foreign_Policy.htm"
+      },
+      {
+        "title": "As the sole Democrat in the South Carolina delegation (albeit one in a district protected ",
+        "url": "https://ontheissues.org/House/James_Clyburn_Welfare_+_Poverty.htm"
+      },
+      {
+        "title": "It was led by James Clyburn (SC), who was then its main leader, and include Bennie Thompso",
+        "url": "https://www.ontheissues.org/Archive/Obama_Empire_James_Clyburn.htm"
+      },
+      {
+        "title": "As the <strong>3rd-ranking Democrat in the US House</strong>, Representative Clyburn has l",
+        "url": "https://ontheissues.org/House/James_Clyburn_Civil_Rights.htm"
+      },
+      {
+        "title": "Jim Clyburn <strong>did not provide voters with positions on key issues covered by the 202",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/27066/jim-clyburn"
+      },
+      {
+        "title": "James &#x27;Jim&#x27; E. Clyburn",
+        "url": "https://justfacts.votesmart.org/candidate/biography/27066/jim-clyburn"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/105194/clyburn-halley/"
+      },
+      {
+        "title": "Vote Smart measures candidates’ willingness to answer voters’ questions through the Politi",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Political Courage Test Forms · Biographical Form · Presidential Political Courage Test · C",
+        "url": "https://votesmart.org/for-candidates/forms"
+      },
+      {
+        "title": "Keep in mind that ratings done by special interest groups often do not represent a non-par",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/27066/jim-clyburn"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "Candidates are free to address ... one aspect of political courage: <strong>candidates&#x2",
+        "url": "https://justfacts.votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Washington, D.C. Website https://clyburn.house.gov/ Office Social Media",
+        "url": "https://votesmart.org/candidate/27066/jim-clyburn?categoryId=22"
+      },
+      {
+        "title": "A candidate&#x27;s political courage is calculated based on the number of issue areas the ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "The first one is that he is keeping his promise to the American people. And as he said fro",
+        "url": "https://www.washingtonpost.com/washington-post-live/2021/04/30/transcript-first-100-days-with-house-majority-whip-rep-james-e-clyburn-d-sc/"
+      },
+      {
+        "title": "Rep. James E. Clyburn’s endorsement of Joe Biden days before the South Carolina primary la",
+        "url": "https://www.washingtonpost.com/washington-post-live/2021/04/30/first-100-days-with-house-majority-whip-rep-james-e-clyburn-d-sc/"
+      },
+      {
+        "title": "Sponsored HR9269: Renewing the African American Civil Rights Network Act — latest action: ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/9269"
+      },
+      {
+        "title": "Sponsored HR8078: Voter Empowerment Act of 2026 — latest action: Referred to the Committee",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/8078"
+      },
+      {
+        "title": "Sponsored HR3868: Enhanced Background Checks Act of 2025 — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3868"
+      },
+      {
+        "title": "Sponsored HR10084: Renewing the African American Civil Rights Network Act — latest action:",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/10084"
+      },
+      {
+        "title": "Sponsored HR9727: Voter Empowerment Act of 2024 — latest action: Referred to the Committee",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/9727"
+      },
+      {
+        "title": "Sponsored HR8607: VA Housing Loan Forever Act of 2024 — latest action: Subcommittee Hearin",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/8607"
+      },
+      {
+        "title": "Sponsored HR6239: To designate the facility of the United States Postal Service located at",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6239"
+      },
+      {
+        "title": "Sponsored HR3849: Rural Energy Savings Act — latest action: Referred to the Subcommittee o",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/3849"
+      },
+      {
+        "title": "Sponsored HRES453: Providing for consideration of the bill (H.R. 2403) to amend chapter 44",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/453"
+      },
+      {
+        "title": "Sponsored HR2883: Domestic Reinvestment Act of 2023 — latest action: Referred to the Subco",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/2883"
+      },
+      {
+        "title": "Sponsored HR2403: Enhanced Background Checks Act of 2023 — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/2403"
+      },
+      {
+        "title": "Sponsored HR9466: Housing, Opportunity, Mobility, and Equity Act of 2022 — latest action: ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9466"
+      },
+      {
+        "title": "Sponsored HR9097: Public Service Reward Act — latest action: Referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9097"
+      },
+      {
+        "title": "Sponsored HR9098: International Nuclear Energy Act of 2022 — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9098"
+      },
+      {
+        "title": "Sponsored HR9041: Domestic Reinvestment Act of 2022 — latest action: Referred to the House",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9041"
+      },
+      {
+        "title": "Sponsored HR6531: Targeting Resources to Communities in Need Act of 2022 — latest action: ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6531"
+      },
+      {
+        "title": "Sponsored HRES861: Providing for a committee to notify the President of the assembly of th",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/861"
+      },
+      {
+        "title": "Sponsored HRES863: Providing for the hour of meeting of the House. — latest action: Motion",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/863"
+      },
+      {
+        "title": "Sponsored HRES862: To inform the Senate that a quorum of the House has assembled. — latest",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/862"
+      },
+      {
+        "title": "Sponsored HR5349: To designate the facility of the United States Postal Service located at",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5349"
+      },
+      {
+        "title": "Sponsored HR2358: Voter Empowerment Act of 2021 — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/2358"
+      },
+      {
+        "title": "Sponsored HR1783: Accessible, Affordable Internet for All Act — latest action: Referred to",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1783"
+      },
+      {
+        "title": "Sponsored HR1619: Catawba Indian Nation Lands Act — latest action: Received in the Senate ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1619"
+      },
+      {
+        "title": "Sponsored HR1446: Enhanced Background Checks Act of 2021 — latest action: Read the second ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1446"
+      },
+      {
+        "title": "Sponsored HR1286: Southern Campaign of the Revolution National Heritage Corridor Act of 20",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1286"
+      },
+      {
+        "title": "Sponsored HR1287: To amend the Omnibus Parks and Public Lands Management Act of 1996 to ex",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1287"
+      },
+      {
+        "title": "Sponsored HR1288: To amend the Gullah/Geechee Cultural Heritage Act to extend the authoriz",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1288"
+      },
+      {
+        "title": "Sponsored HR920: Brown v. Board of Education National Historical Park Expansion and Redesi",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/920"
+      },
+      {
+        "title": "Sponsored HR301: To amend title 36, United States Code, to establish the composition known",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/301"
+      },
+      {
+        "title": "Sponsored HR8917: To amend the Omnibus Parks and Public Lands Management Act of 1996 to ex",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8917"
+      },
+      {
+        "title": "Sponsored HR8916: To amend the Gullah/Geechee Cultural Heritage Act to extend the authoriz",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8916"
+      },
+      {
+        "title": "Sponsored HRES1253: Designating room H-150 of the United States Capitol as \"The Joseph H. ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-resolution/1253"
+      },
+      {
+        "title": "Sponsored HR8281: Brown v. Board of Education National Historic Site Expansion Act — lates",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8281"
+      },
+      {
+        "title": "Sponsored HCONRES107: Directing the Clerk of the House to make a correction in the enrollm",
+        "url": "https://www.congress.gov/bill/116th-congress/house-concurrent-resolution/107"
+      },
+      {
+        "title": "Sponsored HR7447: To direct the Federal Communications Commission to take certain actions ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7447"
+      },
+      {
+        "title": "Sponsored HR7302: Accessible, Affordable Internet for All Act — latest action: Referred to",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7302"
+      },
+      {
+        "title": "Sponsored HR7068: VoteSafe Act of 2020 — latest action: Referred to the House Committee on",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7068"
+      },
+      {
+        "title": "Sponsored HR7022: Rural Broadband Acceleration Act. — latest action: Referred to the House",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7022"
+      },
+      {
+        "title": "Sponsored HR6807: VoteSafe Act of 2020 — latest action: Referred to the House Committee on",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6807"
+      },
+      {
+        "title": "Sponsored HR5884: Legal Assistance to Prevent Evictions Act of 2020 — latest action: Refer",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5884"
+      },
+      {
+        "title": "Sponsored HR5042: Opportunity Zone Reform Act — latest action: Referred to the House Commi",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5042"
+      },
+      {
+        "title": "Sponsored HR4808: Housing, Opportunity, Mobility, and Equity Act of 2019 — latest action: ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/4808"
+      },
+      {
+        "title": "Sponsored HR3936: Southern Campaign of the Revolution National Heritage Corridor Act of 20",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/3936"
+      },
+      {
+        "title": "Sponsored HR3887: Student Loan Debt Relief Act of 2019 — latest action: Referred to the Su",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/3887"
+      },
+      {
+        "title": "Sponsored HR2055: An Act Targeting Resources to Communities in Need — latest action: Refer",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/2055"
+      },
+      {
+        "title": "Sponsored HR1943: Community Health Center and Primary Care Workforce Expansion Act of 2019",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/1943"
+      },
+      {
+        "title": "Sponsored HR5570: To reauthorize the Historically Black Colleges and Universities Historic",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/5570"
+      },
+      {
+        "title": "Sponsored HR5571: 10-20-30 Act of 2014 — latest action: Referred to the Subcommittee on Re",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/5571"
+      },
+      {
+        "title": "Sponsored HR6379: To designate the facility of the United States Postal Service located at",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/6379"
+      },
+      {
+        "title": "Sponsored HR5922: To extend the temporary suspension of duty on Primid XL-552. — latest ac",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/5922"
+      },
+      {
+        "title": "Sponsored HR5918: To extend the temporary suspension of duty on Grilamid TR 90. — latest a",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/5918"
+      },
+      {
+        "title": "Sponsored HR5917: To suspend temporarily the duty on 4,4'-Diamino-2,2'-stilbenedisulfonic ",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/5917"
+      },
+      {
+        "title": "Sponsored HR5921: To extend the temporary suspension of duty on Primid QM-1260. — latest a",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/5921"
+      },
+      {
+        "title": "Sponsored HR5919: To extend the temporary suspension of duty on Grilbond IL 6-50%F. — late",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/5919"
+      },
+      {
+        "title": "Sponsored HR1223: Stop the Tax Hike on Charities and Places of Worship Act — latest action",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/1223"
+      },
+      {
+        "title": "Sponsored HR1112: Enhanced Background Checks Act of 2019 — latest action: Read the second ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/1112"
+      },
+      {
+        "title": "Sponsored HR972: Reconstruction Era National Historical Park Act — latest action: Referred",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/972"
+      },
+      {
+        "title": "Sponsored HR870: To reauthorize the Historically Black Colleges and Universities Historic ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/870"
+      },
+      {
+        "title": "Sponsored HRES41: Rejecting White nationalism and White supremacy. — latest action: Motion",
+        "url": "https://www.congress.gov/bill/116th-congress/house-resolution/41"
+      },
+      {
+        "title": "Sponsored HR7230: To designate the facility of the United States Postal Service located at",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/7230"
+      },
+      {
+        "title": "Sponsored HR7050: Housing, Opportunity, Mobility, and Equity Act of 2018 — latest action: ",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/7050"
+      },
+      {
+        "title": "Sponsored HR7009: An Act Targeting Resources to Communities in Need — latest action: Refer",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/7009"
+      },
+      {
+        "title": "Sponsored HR6542: Restoring Tax Credits for Affordable Housing Act — latest action: Referr",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/6542"
+      },
+      {
+        "title": "Sponsored HR6504: Stop the Tax Hike on Charities and Places of Worship Act — latest action",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/6504"
+      },
+      {
+        "title": "Sponsored HR5532: Reconstruction Era National Historical Park Act — latest action: Committ",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/5532"
+      },
+      {
+        "title": "Sponsored HR3464: Background Check Completion Act of 2017 — latest action: Motion to Disch",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/3464"
+      },
+      {
+        "title": "Sponsored HR3059: Community Health Center and Primary Care Workforce Expansion Act of 2017",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/3059"
+      },
+      {
+        "title": "Sponsored HR1135: To reauthorize the Historically Black Colleges and Universities Historic",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/1135"
+      },
+      {
+        "title": "Sponsored HR5358: Penn School - Reconstruction Era National Monument Act — latest action: ",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5358"
+      },
+      {
+        "title": "Sponsored HR3051: Background Check Completion Act — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/3051"
+      },
+      {
+        "title": "Sponsored HR2131: To designate the Federal building and United States courthouse located a",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/2131"
+      },
+      {
+        "title": "Sponsored HR295: To reauthorize the Historically Black Colleges and Universities Historic ",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/295"
+      },
+      {
+        "title": "Sponsored HR694: Gullah/Geechee Cultural Heritage Act — latest action: Received in the Sen",
+        "url": "https://www.congress.gov/bill/109th-congress/house-bill/694"
+      },
+      {
+        "title": "Sponsored HRES872: Removing a Member from the Committee on Ways and Means. — latest action",
+        "url": "https://www.congress.gov/bill/109th-congress/house-resolution/872"
+      },
+      {
+        "title": "Sponsored HRES796: Electing a certain Member to a certain standing committee of the House ",
+        "url": "https://www.congress.gov/bill/109th-congress/house-resolution/796"
+      },
+      {
+        "title": "Sponsored HRES778: Electing a certain Member to a certain standing committee of the House ",
+        "url": "https://www.congress.gov/bill/109th-congress/house-resolution/778"
+      },
+      {
+        "title": "Sponsored HRES678: Electing Members to certain standing committees of the House of Represe",
+        "url": "https://www.congress.gov/bill/109th-congress/house-resolution/678"
+      },
+      {
+        "title": "Sponsored HRES33: Electing Members to certain standing committees of the House of Represen",
+        "url": "https://www.congress.gov/bill/109th-congress/house-resolution/33"
+      },
+      {
+        "title": "Sponsored HR3004: To amend the Gullah/Geechee Cultural Heritage Act to extend the authoriz",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/3004"
+      },
+      {
+        "title": "Sponsored HRES344: Urging the discontinued use of the Confederate battle flag, which repre",
+        "url": "https://www.congress.gov/bill/114th-congress/house-resolution/344"
+      },
+      {
+        "title": "Sponsored HR5878: Economic Fair Treatment and Job Creation Act of 2010 — latest action: Re",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/5878"
+      },
+      {
+        "title": "Sponsored HR4785: To authorize the Secretary of Agriculture to make loans to certain entit",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/4785"
+      },
+      {
+        "title": "Sponsored HR1296: Access for All America Act — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/1296"
+      },
+      {
+        "title": "Sponsored HR6332: To authorize additional appropriations for summer youth employment activ",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/6332"
+      },
+      {
+        "title": "Sponsored HR5444: Job Investment and Economic Stimulus Act of 2008 — latest action: Referr",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/5444"
+      },
+      {
+        "title": "Sponsored HR3324: First Tee in Character Education Act of 2007 — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/3324"
+      },
+      {
+        "title": "Sponsored HR1144: Hurricanes Katrina, Rita, and Wilma Federal Match Relief Act of 2007 — l",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/1144"
+      },
+      {
+        "title": "Sponsored HRES787: Expressing the support and sympathy of the House of Representatives and",
+        "url": "https://www.congress.gov/bill/110th-congress/house-resolution/787"
+      },
+      {
+        "title": "Sponsored HRES670: Recognizing College Summit for its achievements in increasing the colle",
+        "url": "https://www.congress.gov/bill/110th-congress/house-resolution/670"
+      },
+      {
+        "title": "Sponsored HCONRES67: Providing for a conditional adjournment of the House of Representativ",
+        "url": "https://www.congress.gov/bill/110th-congress/house-concurrent-resolution/67"
+      },
+      {
+        "title": "Sponsored HR4683: Gullah/Geechee Cultural Heritage Act — latest action: Received in the Se",
+        "url": "https://www.congress.gov/bill/108th-congress/house-bill/4683"
+      },
+      {
+        "title": "Sponsored HR3287: To award congressional gold medals posthumously on behalf of Reverend Jo",
+        "url": "https://www.congress.gov/bill/108th-congress/house-bill/3287"
+      },
+      {
+        "title": "Sponsored HR2580: Congaree National Park Act of 2003 — latest action: Referred to the Subc",
+        "url": "https://www.congress.gov/bill/108th-congress/house-bill/2580"
+      },
+      {
+        "title": "Sponsored HR1055: To designate the facility of the United States Postal Service located at",
+        "url": "https://www.congress.gov/bill/108th-congress/house-bill/1055"
+      },
+      {
+        "title": "Sponsored HRES52: Electing Members and Delegates to certain standing committees of the Hou",
+        "url": "https://www.congress.gov/bill/108th-congress/house-resolution/52"
+      },
+      {
+        "title": "Sponsored HRES23: Designating minority membership on certain standing committees of the Ho",
+        "url": "https://www.congress.gov/bill/108th-congress/house-resolution/23"
+      },
+      {
+        "title": "Sponsored HRES22: Electing certain ranking minority members to standing committees. — late",
+        "url": "https://www.congress.gov/bill/108th-congress/house-resolution/22"
+      },
+      {
+        "title": "Sponsored HR5034: Rev. Joseph A. De Laine Congressional Gold Medal Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/107th-congress/house-bill/5034"
+      },
+      {
+        "title": "Sponsored HR1606: To amend section 507 of the Omnibus Parks and Public Lands Management Ac",
+        "url": "https://www.congress.gov/bill/107th-congress/house-bill/1606"
+      },
+      {
+        "title": "Sponsored HR941: To require the use of adjusted census data in the administration of any l",
+        "url": "https://www.congress.gov/bill/107th-congress/house-bill/941"
+      },
+      {
+        "title": "Sponsored HR49: Election Law Reform Act of 2001 — latest action: Referred to the Committee",
+        "url": "https://www.congress.gov/bill/107th-congress/house-bill/49"
+      },
+      {
+        "title": "Sponsored HJRES1: Proposing an amendment to the Constitution of the United States to provi",
+        "url": "https://www.congress.gov/bill/107th-congress/house-joint-resolution/1"
+      },
+      {
+        "title": "Sponsored HR3019: To designate the United States Post Office located at 4026 Lamar Street ",
+        "url": "https://www.congress.gov/bill/106th-congress/house-bill/3019"
+      },
+      {
+        "title": "Sponsored HR3018: An Act to designate certain facilities of the United States Postal Servi",
+        "url": "https://www.congress.gov/bill/106th-congress/house-bill/3018"
+      },
+      {
+        "title": "Sponsored HR3017: To designate the United States Post Office located at 78 Sycamore Street",
+        "url": "https://www.congress.gov/bill/106th-congress/house-bill/3017"
+      },
+      {
+        "title": "Sponsored HR3016: To designate the United States Post Office located at 301 Main Street in",
+        "url": "https://www.congress.gov/bill/106th-congress/house-bill/3016"
+      },
+      {
+        "title": "Sponsored HR2963: To direct the Librarian of Congress to purchase papers of Dr. Martin Lut",
+        "url": "https://www.congress.gov/bill/106th-congress/house-bill/2963"
+      },
+      {
+        "title": "Sponsored HRES293: Expressing the sense of the House of Representatives in support of \"Nat",
+        "url": "https://www.congress.gov/bill/106th-congress/house-resolution/293"
+      },
+      {
+        "title": "Sponsored HR4543: To designate the United States courthouse to be constructed at 907 Richl",
+        "url": "https://www.congress.gov/bill/103th-congress/house-bill/4543"
+      },
+      {
+        "title": "Sponsored HR3925: To authorize and request a posthumous commission in the Army for Johnson",
+        "url": "https://www.congress.gov/bill/103th-congress/house-bill/3925"
+      },
+      {
+        "title": "Sponsored HR1958: To amend the Internal Revenue Code of 1986 to provide tax incentives wit",
+        "url": "https://www.congress.gov/bill/103th-congress/house-bill/1958"
+      },
+      {
+        "title": "Sponsored HR3187: Aviation Safety Protection Act of 1996 — latest action: Subcommittee Hea",
+        "url": "https://www.congress.gov/bill/104th-congress/house-bill/3187"
+      },
+      {
+        "title": "Sponsored HR1553: South Carolina National Heritage Corridor Act of 1995 — latest action: F",
+        "url": "https://www.congress.gov/bill/104th-congress/house-bill/1553"
+      },
+      {
+        "title": "Sponsored HR1394: To authorize the Secretary of Transportation to issue a certificate of d",
+        "url": "https://www.congress.gov/bill/104th-congress/house-bill/1394"
+      },
+      {
+        "title": "Sponsored HR768: Liveable Wage Act of 1995 — latest action: Referred to the Subcommittee o",
+        "url": "https://www.congress.gov/bill/104th-congress/house-bill/768"
+      },
+      {
+        "title": "Sponsored HR4040: To designate the building in Eau Claire, South Carolina, which houses th",
+        "url": "https://www.congress.gov/bill/105th-congress/house-bill/4040"
+      },
+      {
+        "title": "Sponsored HR4044: To designate the building in Orangeburg, South Carolina, which houses th",
+        "url": "https://www.congress.gov/bill/105th-congress/house-bill/4044"
+      },
+      {
+        "title": "Sponsored HR4042: To designate the United States Post Office located at 78 Sycamore Street",
+        "url": "https://www.congress.gov/bill/105th-congress/house-bill/4042"
+      },
+      {
+        "title": "Sponsored HR4043: To designate the building in Eastover, South Carolina, which houses the ",
+        "url": "https://www.congress.gov/bill/105th-congress/house-bill/4043"
+      },
+      {
+        "title": "Sponsored HR4041: To designate the United States Post Office located at 557 East Bay Stree",
+        "url": "https://www.congress.gov/bill/105th-congress/house-bill/4041"
+      },
+      {
+        "title": "Sponsored HR3266: To amend section 507 of the Omnibus Parks and Public Land Management Act",
+        "url": "https://www.congress.gov/bill/105th-congress/house-bill/3266"
+      },
+      {
+        "title": "Array ( [actionDate] =&gt; 1996-03-29 [displayText] =&gt; Reported adversely by the Commit",
+        "url": "https://www.congress.gov/member/james-clyburn/C000537?q=%7B%22senate-committee%22:%22Budget%22,%22congress%22:%5B%22104%22%5D%7D"
+      },
+      {
+        "title": "The changes include a redraw of the congressional district held by James E. Clyburn, the D",
+        "url": "https://www.nytimes.com/2026/05/20/us/politics/south-carolina-redistricting-map-clyburn.html"
+      },
+      {
+        "title": "(Washington, DC) - House Democratic Caucus Vice Chair James E. Clyburn (D-SC) today issued",
+        "url": "https://clyburn.house.gov/press-release/congressman-clyburn-denounces-budget-shortfall-veterans-health-care"
+      },
+      {
+        "title": "Clyburn Op-Ed For The Post And Courier: Joe Biden Delivered For South Carolina - Congressm",
+        "url": "https://clyburn.house.gov/clyburn-op-ed-for-the-post-and-courier-joe-biden-delivered-for-south-carolina/"
+      },
+      {
+        "title": "In a statement after the measure failed, state Sen.",
+        "url": "https://www.politico.com/news/2026/05/26/south-carolina-redistricting-fails-clyburn-trump-00936000"
+      },
+      {
+        "title": "Rep. James E. Clyburn has long been a power broker in the Democratic Party. A state Senate",
+        "url": "https://www.washingtonpost.com/politics/2026/05/12/south-carolina-republicans-block-plan-eliminate-james-clyburns-house-seat/"
+      },
+      {
+        "title": "Press Releases - Congressman James E. Clyburn Skip to content Skip to content About Biogra",
+        "url": "https://clyburn.house.gov/press-releases/8/"
+      },
+      {
+        "title": "Press Releases - Congressman James E. Clyburn Skip to content Skip to content About Biogra",
+        "url": "https://clyburn.house.gov/press-releases/4/"
+      },
+      {
+        "title": "CONGRESSMAN CLYBURN DELIVERS REMARKS AT CONVENING OF SOUTH CAROLINA ASSOCIATION OF TECHNIC",
+        "url": "https://clyburn.house.gov/congressman-clyburn-delivers-remarks-at-convening-of-south-carolina-association-of-technical-college-commissioners/"
+      },
+      {
+        "title": "Ranking Member Clyburn Statement at the Subcommittee Markup of the 2026 Transportation, an",
+        "url": "https://democrats-appropriations.house.gov/news/statements/ranking-member-clyburn-statement-subcommittee-markup-2026-transportation-and"
+      },
+      {
+        "title": "CONGRESSMAN CLYBURN SECURES NEARLY $28 MILLION FOR SOUTH CAROLINA COMMUNITY PROJECTS IN FE",
+        "url": "https://clyburn.house.gov/congressman-clyburn-secures-nearly-28-million-for-south-carolina-community-projects-in-federal-funding-bill/"
+      },
+      {
+        "title": "These funds, made available through the American Rescue Plan legislation passed by Democra",
+        "url": "https://clyburn.house.gov/press-release/congressman-clyburn-announces-more-15-million-construction-and-capital-improvements"
+      },
+      {
+        "title": "COLUMBIA, SC – Today, U.S. Congressman James E. Clyburn (SC-06) applauded House passage of",
+        "url": "https://clyburn.house.gov/press-release/clyburn-hails-house-passage-spending-package-delivers-south-carolina"
+      },
+      {
+        "title": "Here is a list of funds secured by Congressman Clyburn for South Carolina: The omnibus app",
+        "url": "https://clyburn.house.gov/congressman-clyburn-secures-more-than-35-million-for-sc-in-the-omnibus-2009-appropriations-bill/"
+      },
+      {
+        "title": "WASHINGTON, DC – Congressman James E. Clyburn (SC-06), Congresswoman Teresa Leger Fernánde",
+        "url": "https://clyburn.house.gov/clyburn-leger-fernandez-klobuchar-lujan-lead-effort-to-press-commerce-secretary-lutnick-to-reverse-harmful-broadband-policy/"
+      },
+      {
+        "title": "&quot;Thanks to our federal partners, we will have another way to help more people connect",
+        "url": "https://www.ntia.gov/press-release/2024/biden-harris-administration-approves-georgia-iowa-minnesota-and-south-carolina-s-internet-all"
+      },
+      {
+        "title": "Governor Henry McMaster and Congressman James E. Clyburn were joined by officials from the",
+        "url": "https://ors.sc.gov/news/2023/mcmaster-clyburn-announce-getconnectedsc-campaign-expand-broadband-access"
+      },
+      {
+        "title": "Home &gt; Members &gt; Representative James E. Clyburn ... Sort View Member Activity Congr",
+        "url": "https://www.congress.gov/member/james-clyburn/C000537?q=%7B%22subject%22:%22Social+Welfare%22%7D"
+      },
+      {
+        "title": "You may have seen an email from the Social Security Administration (SSA) claiming that Tru",
+        "url": "https://clyburn.house.gov/the-truth-about-trumps-tax-bill-and-your-social-security/"
+      },
+      {
+        "title": "The House-passed funding bill increases funding for the National Institutes of Health, Cen",
+        "url": "https://clyburn.house.gov/affordable-care-act/"
+      },
+      {
+        "title": "Clyburn also <strong>called on Republicans in Congress to work with Democrats to deliver a",
+        "url": "https://clyburn.house.gov/assistant-democratic-leader-james-e-clyburn-delivers-weekly-democratic-address/"
+      },
+      {
+        "title": "In this week’s address, Assistant Leader Clyburn wished House Majority Whip Steve Scalise ",
+        "url": "https://clyburn.house.gov/press-release/assistant-democratic-leader-james-e-clyburn-delivers-weekly-democratic-address"
+      },
+      {
+        "title": "Congressman Clyburn also introduced the <strong>Restoring Tax Credits for Affordable Housi",
+        "url": "https://assistantdemocraticleader.house.gov/issues/housing"
+      },
+      {
+        "title": "WASHINGTON, D.C. – U.S. House Assistant Democratic Leader James E. Clyburn (SC) today rele",
+        "url": "https://clyburn.house.gov/press-release/clyburn-statement-introduction-restoring-tax-credits-affordable-housing-act"
+      },
+      {
+        "title": "<strong>The Fair Housing Law of 1968</strong> represents a simple but crucial promise that",
+        "url": "https://democrats-appropriations.house.gov/news/statements/ranking-member-clyburn-remarks-fiscal-year-2026-department-housing-and-urban"
+      },
+      {
+        "title": "WASHINGTON — U.S. Senator Amy Klobuchar (D-MN), co-chair of the Senate Broadband Caucus, r",
+        "url": "https://www.klobuchar.senate.gov/public/index.cfm/2020/7/klobuchar-led-legislation-to-expand-access-to-affordable-high-speed-internet-passes-house"
+      },
+      {
+        "title": "The enacted provisions included the <strong>establishment of a new Emergency Broadband Ben",
+        "url": "https://kahele.house.gov/media/press-releases/whip-clyburn-announces-new-members-house-rural-broadband-task-force"
+      },
+      {
+        "title": "Vote Type: Yea-and-Nay Member Vote: Nay Result: Passed - Yea: 215 | Nay: 195 (R 208-0 Pres",
+        "url": "https://www.congress.gov/member/james-clyburn/C000537?page=3"
+      }
+    ]
+  }
+}

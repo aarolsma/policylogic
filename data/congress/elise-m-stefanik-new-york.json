@@ -1,0 +1,1263 @@
+{
+  "official": {
+    "name": "Elise M. Stefanik",
+    "role": "U.S. Representative",
+    "jurisdiction": "NY",
+    "party": "Republican",
+    "term_start": "2015-01-06",
+    "term_end": "2027-01-03",
+    "election_date": "2014-11-01",
+    "next_election": "2026-11-01",
+    "office_phone": "202-225-4611",
+    "office_address": "2211 Rayburn House Office Building Washington DC 20515-3221",
+    "office_website": "https://stefanik.house.gov"
+  },
+  "summary": {
+    "overall_grade": "F",
+    "grade_input_pct": 23.07,
+    "delivery_ratio": 0.1611,
+    "narrative": "On her 2014 campaign platform, Stefanik's healthcare pledges (ACA repeal/replace, cross-state insurance, tort reform, high-risk pools) show little to no documented delivery in the supplied record, with verification anchored only to the original platform text. Her district-facing commitments fared better in documented activity: she repeatedly advocated for Fort Drum and military families and sponsored numerous military and agriculture bills, though most remained at the introduction or advocacy stage rather than enactment. Negative/values-type pledges on Common Core and taxes are partly supported by her voting record but lack Tier-1 verification specific to this term.",
+    "grade_rationale": "The record pairs broadly stated campaign pledges with mostly early-stage delivery: consistent advocacy and bill introductions on defense and agriculture, but few documented enacted outcomes, and several healthcare platform items with no documented action in the supplied evidence. Promise quality is mostly directional-to-specific (clarity 2-4) with limited measurable targets, and her causal role is largely supporting given the multi-actor legislative environment.",
+    "ambition_level": "Moderate",
+    "total_promises": 9,
+    "total": 9
+  },
+  "promises": [
+    {
+      "text": "Repeal the Affordable Care Act (ObamaCare) and replace it with common-sense solutions",
+      "domain_label": "Healthcare",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.4,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 2.4,
+      "difficulty_earned": 2.5,
+      "promise_score": 12.9,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
+          "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Health_Care.htm"
+        }
+      ]
+    },
+    {
+      "text": "Allow families and businesses to shop for health insurance across state lines",
+      "domain_label": "Healthcare",
+      "status": "broken",
+      "confidence": "low",
+      "delivery": "D0",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 6.0,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
+          "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Health_Care.htm"
+        }
+      ]
+    },
+    {
+      "text": "Pursue tort reform to lower health care costs",
+      "domain_label": "Healthcare",
+      "status": "broken",
+      "confidence": "low",
+      "delivery": "D0",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 6.0,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
+          "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Health_Care.htm"
+        }
+      ]
+    },
+    {
+      "text": "Protect those with pre-existing conditions by funding state-level high-risk pools",
+      "domain_label": "Healthcare",
+      "status": "broken",
+      "confidence": "low",
+      "delivery": "D0",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 6.0,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "My family&#x27;s business lost our health care plan as a result of ObamaCare, and we are n",
+          "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Health_Care.htm"
+        }
+      ]
+    },
+    {
+      "text": "Oppose requiring states to implement education reforms (Common Core) as a condition for federal grants",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "low",
+      "delivery": "D4",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 3.0,
+      "promise_score": 13.8,
+      "what_happened": [
+        "c59: recorded vote (NAY) on A-PLUS Amendment to Student Success Act consistent with opposing federal education-reform mandates (date not specified in record)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Stefanik voted NAY A-PLUS Amendment To Student Success Act · Heritage Action Summary: An a",
+          "url": "https://ontheissues.org/NY/Elise_Stefanik_Education.htm"
+        }
+      ]
+    },
+    {
+      "text": "Oppose tax increases and make the tax code flatter and fairer",
+      "domain_label": "Economy",
+      "status": "broken",
+      "confidence": "low",
+      "delivery": "D0",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 5.0,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "We cannot provide a description for this page right now",
+          "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Tax_Reform.htm"
+        },
+        {
+          "title": "<strong>She voted with Democrats on a bill that would have blocked Trump from withdrawing ",
+          "url": "https://rollcall.com/2021/05/05/the-evolution-of-elise-stefanik/"
+        }
+      ]
+    },
+    {
+      "text": "Support and advocate for Fort Drum and military families in the North Country",
+      "domain_label": "Foreign Policy",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 11.65,
+      "what_happened": [
+        "2022-02-04 (c288): Stefanik publicly pledged continued support for Fort Drum",
+        "2017-03-29 (c249): sponsored HR1796 Lift the Relocation Burden from Military Spouses Act",
+        "2026-04-22 (c27): official site reports defense-bill wins for Fort Drum in FY27 National Defense Bill"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "“From the start, Albany Democrats torpedoed this process with partisan tactics and corrupt",
+          "url": "https://www.nny360.com/news/jeffersoncounty/stefanik-pledges-continued-support-for-fort-drum-even-if-part-of-base-removed-from-21st/article_efc1fa3e-c13f-594d-b866-f24e35f676ff.html"
+        },
+        {
+          "title": "Congresswoman Elise Stefanik Facebook Icon Google Plus Icon Instagram Icon LinkedIn Icon T",
+          "url": "https://stefanik.house.gov/"
+        },
+        {
+          "title": "Sponsored HR1796: Lift the Relocation Burden from Military Spouses Act — latest action: Re",
+          "url": "https://www.congress.gov/bill/115th-congress/house-bill/1796"
+        },
+        {
+          "title": "Sponsored HR279: Military Family Stability Act of 2017 — latest action: Referred to the Su",
+          "url": "https://www.congress.gov/bill/115th-congress/house-bill/279"
+        }
+      ]
+    },
+    {
+      "text": "Expand rural broadband access throughout the district",
+      "domain_label": "Other",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 0.75,
+      "promise_score": 5.95,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "About Congresswoman Stefanik | Congresswoman Elise Stefanik Facebook Icon Google Plus Icon",
+          "url": "https://stefanik.house.gov/about-congresswoman-stefanik"
+        }
+      ]
+    },
+    {
+      "text": "Support Upstate farmers and agricultural producers",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 3,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 8.1,
+      "what_happened": [
+        "2017-01-04 (c259): sponsored HR281 Family Farm Relief Act of 2017",
+        "2017-11-07 (c242): sponsored HR4291 Precision Farming Act",
+        "2022-12-08 (c169): sponsored HR9483 Agriculture Foreign Investment Transparency Act"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR281: Family Farm Relief Act of 2017 — latest action: Referred to the Subcommit",
+          "url": "https://www.congress.gov/bill/115th-congress/house-bill/281"
+        },
+        {
+          "title": "Sponsored HR4291: Precision Farming Act — latest action: Referred to the Subcommittee on C",
+          "url": "https://www.congress.gov/bill/115th-congress/house-bill/4291"
+        },
+        {
+          "title": "Sponsored HR5897: Precision Farming Act of 2016 — latest action: Referred to the Subcommit",
+          "url": "https://www.congress.gov/bill/114th-congress/house-bill/5897"
+        },
+        {
+          "title": "Sponsored HR9483: Agriculture Foreign Investment Transparency Act — latest action: Referre",
+          "url": "https://www.congress.gov/bill/117th-congress/house-bill/9483"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Campaign-window dating is weak: most platform items (c1-c17) are undated or dated to election day with no campaign-window confirmation; coverage notes zero campaign-window-dated candidates. Healthcare promises lack Tier-1 delivery verification, so D-scores are low-confidence and several rest on absence of evidence. The supplied verification set is dominated by bill-introduction records (mostly 'Referred to Committee'), few enactments shown; only c232 and a couple of postal/coin bills became law and are not tied to these promises. Tax pledge is compound and contested (c287 reports she voted against the 2017 tax cuts). Human reviewer should confirm campaign-era attribution and seek Tier-1 verification of healthcare and tax votes within the 2015-2027 term."
+  ],
+  "term_identity": {
+    "term_id": "us-house-ny-2015",
+    "ordinal": "1st House tenure",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 95.5,
+    "office": "U.S. Representative",
+    "jurisdiction": "NY",
+    "term_start": "2015-01-06",
+    "term_end": "2027-01-03"
+  },
+  "person_ref": "elise-m-stefanik",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 95.5,
+    "display": "Grade is record-to-date — term in progress, 95.5% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-house-ny-2015",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:39:07+00:00",
+    "generated_at": "2026-06-22T22:40:13+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Repeal the Affordable Care Act (ObamaCare) and replace it with common-sense solutions",
+        "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Health_Care.htm"
+      },
+      {
+        "title": "Oppose requiring states to implement education reforms (Common Core) as a condition for fe",
+        "url": "https://ontheissues.org/NY/Elise_Stefanik_Education.htm"
+      },
+      {
+        "title": "Support the Keystone XL pipeline",
+        "url": "https://www.ontheissues.org/NY/Elise_Stefanik.htm"
+      },
+      {
+        "title": "Oppose tax increases and make the tax code flatter and fairer",
+        "url": "https://ontheissues.org/NY/Elise_Stefanik_HouseMatch.htm"
+      },
+      {
+        "title": "Support and advocate for Fort Drum and military families in the North Country",
+        "url": "https://stefanik.house.gov/about-congresswoman-stefanik"
+      },
+      {
+        "title": "In her statement she said, &quot;My top priority has been keeping my promises to <strong>b",
+        "url": "https://ballotpedia.org/Elise_Stefanik"
+      },
+      {
+        "title": "Stefanik, who leads the House Republican Conference, represents a hard right turn from New",
+        "url": "https://www.nytimes.com/2022/10/28/nyregion/ny-elise-stefanik-castelli-republicans.html"
+      },
+      {
+        "title": "Elise M. Stefanik, the Representative from New York - in Congress from 2015 through Presen",
+        "url": "https://www.congress.gov/member/elise-stefanik/S001196"
+      },
+      {
+        "title": "Rep. Elise Stefanik [R-NY21, 2015-2026], Representative for New York's 21st Congressional ",
+        "url": "https://www.govtrack.us/congress/members/elise_stefanik/412648"
+      },
+      {
+        "title": "Congresswoman Elise Stefanik Facebook Icon Google Plus Icon Instagram Icon LinkedIn Icon T",
+        "url": "https://stefanik.house.gov/"
+      },
+      {
+        "title": "Stefanik, who considers herself the presumptive GOP nominee, despite facing a primary agai",
+        "url": "https://www.politico.com/newsletters/new-york-playbook/2025/12/16/stefanik-reckons-with-her-right-00692335"
+      },
+      {
+        "title": "STEFANIK, ELISE M. - Candidate overview | FEC Javascript recommended: FEC.gov uses Javascr",
+        "url": "https://www.fec.gov/data/candidate/H4NY21079/"
+      },
+      {
+        "title": "Elise M. Stefanik, the Representative from New York - in Congress from 2015 through Presen",
+        "url": "https://www.congress.gov/member/district/elise-stefanik/S001196"
+      },
+      {
+        "title": "The woman nominated to become President-elect Donald Trump’s U.S. ambassador to the United",
+        "url": "https://www.politico.com/news/2024/11/15/elise-stefaniks-void-in-new-york-00189676"
+      },
+      {
+        "title": "Rep. Stefanik Speech on Leading for Life in America - One Year After Dobbs | Press Release",
+        "url": "https://stefanik.house.gov/2023/6/rep-stefanik-speech-on-leading-for-life-in-america-one-year-after-dobbs"
+      },
+      {
+        "title": "Everything you need to know about ranked-choice voting in one spot. Click to learn more! .",
+        "url": "https://ballotpedia.org/New_York's_21st_Congressional_District_elections,_2014"
+      },
+      {
+        "title": "Incumbent Bill Owens (D) did not run for re-election. <strong>Republican, Conservative and",
+        "url": "https://ballotpedia.org/New_York's_21st_Congressional_District"
+      },
+      {
+        "title": "The 21st Congressional District of New York held an election for the U.S. House of Represe",
+        "url": "https://ballotpedia.org/New_York's_21st_Congressional_District_election,_2016"
+      },
+      {
+        "title": "Scott Smith (&quot;Send Mr. Smith&quot;)[27] ... The 21st Congressional District of New Yo",
+        "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_New_York,_2014"
+      },
+      {
+        "title": "Rep. Elise Stefanik becomes the 11th Republican U.S. House member to announce a gubernator",
+        "url": "https://news.ballotpedia.org/2025/11/07/rep-elise-stefanik-becomes-the-11th-republican-u-s-house-member-to-announce-a-gubernatorial-bid-for-2026/"
+      },
+      {
+        "title": "The 21st Congressional District of New York held an election for the U.S. House of Represe",
+        "url": "https://ballotpedia.org/New_York's_21st_Congressional_District_election,_2022"
+      },
+      {
+        "title": "The 21st Congressional District of New York held an election for the U.S. House of Represe",
+        "url": "https://ballotpedia.org/New_York's_21st_Congressional_District_election,_2018"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Elise Stefanik.",
+        "url": "https://ballotpedia.org/Endorsements_by_Elise_Stefanik"
+      },
+      {
+        "title": "<strong>Elevate PAC</strong>&#x27;s website described their mission as follows as of April",
+        "url": "https://ballotpedia.org/Elevate_PAC"
+      },
+      {
+        "title": "Stefanik voted YEA H.Amdt. 1128 to H.R. 5055 · Heritage Action Summary: The Maloney Amendm",
+        "url": "https://ontheissues.org/NY/Elise_Stefanik_Civil_Rights.htm"
+      },
+      {
+        "title": "Stefanik co-sponsored H.R.349 · Congressional Summary: A bill to create a database of info",
+        "url": "https://ontheissues.org/NY/Elise_Stefanik_Environment.htm"
+      },
+      {
+        "title": "That means our future generations are already saddled with crushing debt, and the programs",
+        "url": "https://ontheissues.org/NY/Elise_Stefanik_Social_Security.htm"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://www.ontheissues.org/NY/Elise_Stefanik_Tax_Reform.htm"
+      },
+      {
+        "title": "lowers the criminal intent ... for misconduct in a federal prosecution, limits qualified i",
+        "url": "https://www.ontheissues.org/House/Yvette_Herrell_Crime.htm"
+      },
+      {
+        "title": "lowers the criminal intent ... for misconduct in a federal prosecution, limits qualified i",
+        "url": "https://www.ontheissues.org/house/Mark_Amodei_Crime.htm"
+      },
+      {
+        "title": "Vote Smart does not edit for misspelled words, punctuation or grammar. ... <strong>Elise S",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/152539/elise-stefanik"
+      },
+      {
+        "title": "Member, Senior Advisory Committee of Harvard&#x27;s Institute of Politics, present",
+        "url": "https://justfacts.votesmart.org/candidate/biography/152539/elise-stefanik"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/152539/elise-stefanik"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/152539/elise-stefanik"
+      },
+      {
+        "title": "&quot;We think so highly of Vote Smart that we are distributing their materials to all of ",
+        "url": "https://votesmart.org/candidate/152539/elise-stefanik?categoryId=&p=2&type=V%2CS%2CR%2CE%2CF%2CP"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/152539/elise-stefanik/89/foreign-aid"
+      },
+      {
+        "title": "And finally, I would say this, Mr. President: I hope you will explain to the country today",
+        "url": "https://justfacts.votesmart.org/public-statement/1384773/hearing-of-the-house-permanent-select-committee-on-intelligence-transcript-marie-yovanovitchs-nov-15-testimony-in-front-of-the-house-intelligence-committee"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/152539/elise-stefanik/76/sexual-orientation-and-gender-identity"
+      },
+      {
+        "title": "U.S. House (NY) - District 21, Republican Majority Conference Chair",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/152539/elise-stefanik/27/education"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/152539/elise-stefanik/47/military-personnel"
+      },
+      {
+        "title": "AP AUDIO: Stefanik pledges an ‘<strong>America First</strong>’ agenda at the UN and a revi",
+        "url": "https://apnews.com/article/stefanik-united-nations-ambassador-confirmation-hearing-0a4dd959bdd9fde2dec921742e32166f"
+      },
+      {
+        "title": "Stefanik, Greene Introduce Resolutions to Expunge Donald Trump&#x27;s Impeachments ... Was",
+        "url": "https://stefanik.house.gov/2025/4/stefanik-on-president-trump-s-first-100-days-promises-made-promises-kept"
+      },
+      {
+        "title": "Sponsored HR9203: Student Protection and University Accountability Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/9203"
+      },
+      {
+        "title": "Sponsored HR8558: To amend the Research and Development, Competition, and Innovation Act t",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/8558"
+      },
+      {
+        "title": "Sponsored HR8559: To amend the National Defense Authorization Act for Fiscal Year 2021 to ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/8559"
+      },
+      {
+        "title": "Sponsored HR8189: American Security Robotics Act of 2026 — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/8189"
+      },
+      {
+        "title": "Sponsored HR7924: Trucking Security and CCP Disclosure Act of 2026 — latest action: Referr",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/7924"
+      },
+      {
+        "title": "Sponsored HR7894: Truman Scholarship Clean House Act — latest action: Ordered to be Report",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/7894"
+      },
+      {
+        "title": "Sponsored HR7560: LCBP Enhancements Act of 2026 — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/7560"
+      },
+      {
+        "title": "Sponsored HR5923: Servicemember Credit Monitoring Enhancement Act — latest action: Referre",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5923"
+      },
+      {
+        "title": "Sponsored HR5760: PASS Act of 2025 — latest action: Referred to the Committee on Financial",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5760"
+      },
+      {
+        "title": "Sponsored HR5759: INFANT Act of 2025 — latest action: Referred to the House Committee on E",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5759"
+      },
+      {
+        "title": "Sponsored HR5659: Consistent Egg Labels Act of 2025 — latest action: Referred to the House",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5659"
+      },
+      {
+        "title": "Sponsored HR5411: Sovereign Enforcement Integrity Act of 2025 — latest action: Referred to",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5411"
+      },
+      {
+        "title": "Sponsored HR5213: No Federal Funds for Cashless Bail Act — latest action: Placed on the Un",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5213"
+      },
+      {
+        "title": "Sponsored HR5214: District of Columbia Cash Bail Reform Act of 2025 — latest action: Recei",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5214"
+      },
+      {
+        "title": "Sponsored HR5121: Fairness in Higher Education Accreditation Act — latest action: Referred",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5121"
+      },
+      {
+        "title": "Sponsored HR4901: WWII Nurses Congressional Gold Medal Act — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/4901"
+      },
+      {
+        "title": "Sponsored HRES636: Condemning the tragic act of violence that took place in New York City,",
+        "url": "https://www.congress.gov/bill/119th-congress/house-resolution/636"
+      },
+      {
+        "title": "Sponsored HR4617: American Investment Accountability Act — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/4617"
+      },
+      {
+        "title": "Sponsored HR4616: Trusted Foreign Auditing Act of 2025 — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/4616"
+      },
+      {
+        "title": "Sponsored HR4049: Employer-Directed Skills Act — latest action: Referred to the House Comm",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/4049"
+      },
+      {
+        "title": "Sponsored HR4050: Advancing Skills-Based Hiring Act of 2025 — latest action: Referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/4050"
+      },
+      {
+        "title": "Sponsored HR3786: Drones for First Responders Act — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3786"
+      },
+      {
+        "title": "Sponsored HR3123: Ernest Peltz Accrued Veterans Benefits Act — latest action: Received in ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3123"
+      },
+      {
+        "title": "Sponsored HR3024: Stamp Out Invasive Species Act — latest action: Referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3024"
+      },
+      {
+        "title": "Sponsored HR2962: Border Airport Fairness Act of 2025 — latest action: Referred to the Hou",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/2962"
+      },
+      {
+        "title": "Sponsored HR2917: TRACKS Act — latest action: Referred to the House Committee on Oversight",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/2917"
+      },
+      {
+        "title": "Sponsored HR2916: To authorize, ratify, and confirm the Agreement of Settlement and Compro",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/2916"
+      },
+      {
+        "title": "Sponsored HR2895: Maurice D. Hinchey Hudson River Valley National Heritage Area Enhancemen",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/2895"
+      },
+      {
+        "title": "Sponsored HR1550: Strengthening America’s Turning Point Act — latest action: Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/1550"
+      },
+      {
+        "title": "Sponsored HR10056: To amend the Older Americans Act of 1965 to authorize appropriations fo",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/10056"
+      },
+      {
+        "title": "Sponsored HR9090: TRACKS Act — latest action: Referred to the House Committee on Oversight",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/9090"
+      },
+      {
+        "title": "Sponsored HRES1371: Strongly condemning the Biden Administration and its Border Czar, Kama",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1371"
+      },
+      {
+        "title": "Sponsored HR9022: Military Moms Act — latest action: Referred to the House Committee on Ar",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/9022"
+      },
+      {
+        "title": "Sponsored HR8931: To redesignate Saratoga National Historical Park as Saratoga National Ba",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/8931"
+      },
+      {
+        "title": "Sponsored HR8850: To amend the Child Nutrition Act of 1966 to set maximum monthly allowanc",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/8850"
+      },
+      {
+        "title": "Sponsored HR8416: Drones for First Responders Act — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/8416"
+      },
+      {
+        "title": "Sponsored HRES1223: Designating October, 10, 2024, as \"American Girls in Sports Day\". — la",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1223"
+      },
+      {
+        "title": "Sponsored HRES1133: Electing Members to certain standing committees of the House of Repres",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1133"
+      },
+      {
+        "title": "Sponsored HR7935: Defense Quantum Acceleration Act of 2024 — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7935"
+      },
+      {
+        "title": "Sponsored HR7789: Ban Chinese Communist Party Access to U.S. Military Students Act of 2024",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7789"
+      },
+      {
+        "title": "Sponsored HR7450: Protecting Privacy in Purchases Act — latest action: Referred to the Hou",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7450"
+      },
+      {
+        "title": "Sponsored HR7214: Improving Access to Maternal Health for Military and Dependent Moms Act ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7214"
+      },
+      {
+        "title": "Sponsored HR6945: Consistent Egg Labels Act of 2024 — latest action: Referred to the Subco",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6945"
+      },
+      {
+        "title": "Sponsored HR6769: Trusted Foreign Auditing Act of 2023 — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6769"
+      },
+      {
+        "title": "Sponsored HR6733: American Investment Accountability Act — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6733"
+      },
+      {
+        "title": "Sponsored HRES927: Condemning antisemitism on University campuses and the testimony of Uni",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/927"
+      },
+      {
+        "title": "Sponsored HR6585: Bipartisan Workforce Pell Act — latest action: Placed on the Union Calen",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6585"
+      },
+      {
+        "title": "Sponsored HR6453: No ICBMs or Drones for Iran Act of 2023 — latest action: Referred to the",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6453"
+      },
+      {
+        "title": "Sponsored HR6452: VSAFE Act of 2024 — latest action: Placed on the Union Calendar, Calenda",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6452"
+      },
+      {
+        "title": "Sponsored HR6166: Validate Prior Learning to Accelerate Employment Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/6166"
+      },
+      {
+        "title": "Sponsored HRES705: Electing the Sergeant-at-Arms of the House of Representatives. — latest",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/705"
+      },
+      {
+        "title": "Sponsored HR5513: To amend the Fair Labor Standards Act of 1938 and the National Labor Rel",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/5513"
+      },
+      {
+        "title": "Sponsored HR5053: Wage Equity Act of 2023 — latest action: Referred to the House Committee",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/5053"
+      },
+      {
+        "title": "Sponsored HR4944: Military Families and Surviving Spouses Benefits Enhancement Act — lates",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4944"
+      },
+      {
+        "title": "Sponsored HR4660: HALT Our Adversaries Act — latest action: Referred to the Committee on E",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4660"
+      },
+      {
+        "title": "Sponsored HR4562: Ernest Peltz Accrued Veterans Benefits Act — latest action: Committee He",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4562"
+      },
+      {
+        "title": "Sponsored HR4448: Canadian Snowbird Visa Act — latest action: Referred to the Committee on",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4448"
+      },
+      {
+        "title": "Sponsored HRES547: Expunging the January 13, 2021, impeachment of President Donald John Tr",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/547"
+      },
+      {
+        "title": "Sponsored HR4188: Northern Border Regional Commission Reauthorization Act of 2023 — latest",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4188"
+      },
+      {
+        "title": "Sponsored HR4186: Employer-Directed Skills Act — latest action: Referred to the House Comm",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4186"
+      },
+      {
+        "title": "Sponsored HR4187: Advancing Skills-Based Hiring Act of 2023 — latest action: Referred to t",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4187"
+      },
+      {
+        "title": "Sponsored HR4137: Make American Flags in America Act of 2023 — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4137"
+      },
+      {
+        "title": "Sponsored HR3540: INFANT Act of 2023 — latest action: Referred to the House Committee on E",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/3540"
+      },
+      {
+        "title": "Sponsored HR3448: American Battlefield Protection Program Enhancement Act of 2023 — latest",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/3448"
+      },
+      {
+        "title": "Sponsored HR3271: Empowering Employer Child and Elder Care Solutions Act — latest action: ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/3271"
+      },
+      {
+        "title": "Sponsored HR3272: WWII Nurses Congressional Gold Medal Act — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/3272"
+      },
+      {
+        "title": "Sponsored HR2979: Border Airport Enhancement Act of 2023 — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/2979"
+      },
+      {
+        "title": "Sponsored HR2864: Countering CCP Drones Act — latest action: Received in the Senate and Re",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/2864"
+      },
+      {
+        "title": "Sponsored HR2451: Freedom of Association in Higher Education Act of 2023 — latest action: ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/2451"
+      },
+      {
+        "title": "Sponsored HR1521: Servicemember Credit Monitoring Enhancement Act — latest action: Referre",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/1521"
+      },
+      {
+        "title": "Sponsored HR347: Reduce Exacerbated Inflation Negatively Impacting the Nation Act — latest",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/347"
+      },
+      {
+        "title": "Sponsored HRES179: Electing Members to certain standing committees of the House of Represe",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/179"
+      },
+      {
+        "title": "Sponsored HRES103: Electing Members to a certain standing committee of the House of Repres",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/103"
+      },
+      {
+        "title": "Sponsored HR819: Protecting School Milk Choices Act of 2023 — latest action: Referred to t",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/819"
+      },
+      {
+        "title": "Sponsored HR820: Foreign Adversary Communications Transparency Act — latest action: Read t",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/820"
+      },
+      {
+        "title": "Sponsored HR683: PASS Act of 2023 — latest action: Referred to the Committee on Financial ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/683"
+      },
+      {
+        "title": "Sponsored HRES70: Electing Members to certain standing committees of the House of Represen",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/70"
+      },
+      {
+        "title": "Sponsored HR572: Ensuring Workers Get PAID Act of 2023 — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/572"
+      },
+      {
+        "title": "Sponsored HR496: PELL Act — latest action: Referred to the House Committee on Education an",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/496"
+      },
+      {
+        "title": "Sponsored HRES1: Electing officers of the House of Representatives. — latest action: Motio",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1"
+      },
+      {
+        "title": "Sponsored HR390: Maurice D. Hinchey Hudson River Valley National Heritage Area Enhancement",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/390"
+      },
+      {
+        "title": "Sponsored HR304: SERVE Our Communities Act — latest action: Referred to the House Committe",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/304"
+      },
+      {
+        "title": "Sponsored HR210: Stamp Out Invasive Species Act — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/210"
+      },
+      {
+        "title": "Sponsored HRES14: Electing Members to certain standing committees of the House of Represen",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/14"
+      },
+      {
+        "title": "Sponsored HR9483: Agriculture Foreign Investment Transparency Act — latest action: Referre",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9483"
+      },
+      {
+        "title": "Sponsored HR9398: U.S. Customs and Border Protection Behavioral Health Act — latest action",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9398"
+      },
+      {
+        "title": "Sponsored HR9236: Foreign Adversary Communications Transparency Act — latest action: Refer",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9236"
+      },
+      {
+        "title": "Sponsored HR9189: Border Airport Enhancement Act of 2022 — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9189"
+      },
+      {
+        "title": "Sponsored HR9082: Advancing Skills-Based Hiring Act of 2022 — latest action: Referred to t",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/9082"
+      },
+      {
+        "title": "Sponsored HR8945: Restoring Academic Freedom on Campus Act of 2022 — latest action: Referr",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8945"
+      },
+      {
+        "title": "Sponsored HR8388: Empowering Employer Child and Elder Care Solutions Act — latest action: ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8388"
+      },
+      {
+        "title": "Sponsored HR8369: Reduce Exacerbated Inflation Negatively Impacting the Nation Act — lates",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8369"
+      },
+      {
+        "title": "Sponsored HR8290: Make American Flags in America Act of 2022 — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8290"
+      },
+      {
+        "title": "Sponsored HR8274: PASS Act of 2022 — latest action: Referred to the Committee on Financial",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8274"
+      },
+      {
+        "title": "Sponsored HR7973: Firearm Training and Proficiency Act — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7973"
+      },
+      {
+        "title": "Sponsored HR7855: HALT Our Adversaries Act — latest action: Referred to the Committee on E",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7855"
+      },
+      {
+        "title": "Sponsored HR7830: Babies Need More Formula Now Act of 2022 — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7830"
+      },
+      {
+        "title": "Sponsored HR7758: Geospatial Support for Atrocity Accountability Act — latest action: Refe",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7758"
+      },
+      {
+        "title": "Sponsored HR7759: WWII Nurses Congressional Gold Medal Act — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7759"
+      },
+      {
+        "title": "Sponsored HR7526: Servicemembers’ Credit Monitoring Enhancement Act — latest action: Refer",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7526"
+      },
+      {
+        "title": "Sponsored HR7488: Freedom of Association in Higher Education Act of 2022 — latest action: ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7488"
+      },
+      {
+        "title": "Sponsored HR7349: Validate Prior Learning to Accelerate Employment Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7349"
+      },
+      {
+        "title": "Sponsored HR7070: Protecting School Milk Choices Act of 2022 — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7070"
+      },
+      {
+        "title": "Sponsored HR7050: Ernest Peltz Accrued Veterans Benefits Act — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7050"
+      },
+      {
+        "title": "Sponsored HR6936: Stamp Out Invasive Species Act — latest action: Reported by the Committe",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6936"
+      },
+      {
+        "title": "Sponsored HR6572: Countering CCP Drones Act — latest action: Referred to the Subcommittee ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6572"
+      },
+      {
+        "title": "Sponsored HR6506: St. Lawrence River and Great Lakes Waterways Protection Act — latest act",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6506"
+      },
+      {
+        "title": "Sponsored HRES875: Electing a Member to a certain standing committee of the House of Repre",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/875"
+      },
+      {
+        "title": "Sponsored HR6322: VA Safe Holidays Act — latest action: Referred to the Subcommittee on Ov",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6322"
+      },
+      {
+        "title": "Sponsored HR6255: Employer-Directed Skills Act — latest action: Referred to the House Comm",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6255"
+      },
+      {
+        "title": "Sponsored HR6239: Upholding the Law at Our Border Act — latest action: Referred to the Sub",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6239"
+      },
+      {
+        "title": "Sponsored HR5759: BE GONE Act — latest action: Referred to the Subcommittee on Immigration",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5759"
+      },
+      {
+        "title": "Sponsored HR5743: Ensuring Workers Get PAID Act of 2021 — latest action: Referred to the H",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5743"
+      },
+      {
+        "title": "Sponsored HR5670: Maurice D. Hinchey Hudson River Valley National Heritage Area Enhancemen",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5670"
+      },
+      {
+        "title": "Sponsored HR5174: National Commission on United States Involvement in Afghanistan Act of 2",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5174"
+      },
+      {
+        "title": "Sponsored HR4856: Canadian Snowbird Visa Act — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/4856"
+      },
+      {
+        "title": "Sponsored HR4191: Gold Star Spouses Non-Monetary Benefits Act — latest action: Subcommitte",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/4191"
+      },
+      {
+        "title": "Sponsored HR4105: Restoring Northern Border Travel Act — latest action: Referred to the Su",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/4105"
+      },
+      {
+        "title": "Sponsored HR3641: Military Spouse Student Loan Deferment Act — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/3641"
+      },
+      {
+        "title": "Sponsored HR3545: Family Child Care Networks Act of 2021 — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/3545"
+      },
+      {
+        "title": "Sponsored HR2491: Wage Equity Act of 2021 — latest action: Referred to the House Committee",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/2491"
+      },
+      {
+        "title": "Sponsored HR2174: Success for Rural Students and Communities Act of 2021 — latest action: ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/2174"
+      },
+      {
+        "title": "Sponsored HR2112: American Workforce Recovery Act — latest action: Referred to the House C",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/2112"
+      },
+      {
+        "title": "Sponsored HR1988: Women’s Military History Day Act — latest action: Referred to the House ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1988"
+      },
+      {
+        "title": "Sponsored HR1892: Violence Against Women Extension Act of 2021 — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1892"
+      },
+      {
+        "title": "Sponsored HR1777: Stop Higher Education Espionage and Theft Act of 2021 — latest action: R",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1777"
+      },
+      {
+        "title": "Sponsored HR1715: SAGA Act — latest action: Referred to the Subcommittee on Crime, Terrori",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1715"
+      },
+      {
+        "title": "Sponsored HR1523: Modern Worker Empowerment Act — latest action: Referred to the House Com",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1523"
+      },
+      {
+        "title": "Sponsored HRES161: Commemorating the 30th anniversary of Operation Desert Storm's ground c",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/161"
+      },
+      {
+        "title": "Sponsored HR1263: End College CCP Act — latest action: Referred to the House Committee on ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/1263"
+      },
+      {
+        "title": "Sponsored HR954: Chinese Research Funds Accounting Act — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/954"
+      },
+      {
+        "title": "Sponsored HRES90: Supporting an international investigation into the handling by the Gover",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/90"
+      },
+      {
+        "title": "Sponsored HRES81: Expressing the opposition of the House of Representatives of providing t",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/81"
+      },
+      {
+        "title": "Sponsored HR489: Protecting Rural Access to Care Act — latest action: Referred to the Subc",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/489"
+      },
+      {
+        "title": "Sponsored HR8058: Chinese Research Funds Accounting Act — latest action: Referred to the H",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8058"
+      },
+      {
+        "title": "Sponsored HR8025: Protecting Rural Access to Care Act — latest action: Referred to the Hou",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8025"
+      },
+      {
+        "title": "Sponsored HR7497: Success for Rural Students and Communities Act of 2020 — latest action: ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7497"
+      },
+      {
+        "title": "Sponsored HR7433: Military Spouse Student Loan Deferment Act — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7433"
+      },
+      {
+        "title": "Sponsored HR7322: Restore Integrity of Special Prosecutors Act — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7322"
+      },
+      {
+        "title": "Sponsored HR7321: Elevating America’s Workforce Act — latest action: Referred to the House",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7321"
+      },
+      {
+        "title": "Sponsored HR6597: Equity in Student Loan Relief Act — latest action: Referred to the House",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6597"
+      },
+      {
+        "title": "Sponsored HRES909: Supporting an international investigation into the handling by the Gove",
+        "url": "https://www.congress.gov/bill/116th-congress/house-resolution/909"
+      },
+      {
+        "title": "Sponsored HR4851: State Workforce Incentive Act — latest action: Referred to the House Com",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/4851"
+      },
+      {
+        "title": "Sponsored HR4186: Renewable Electricity Tax Credit Equalization Act — latest action: Refer",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/4186"
+      },
+      {
+        "title": "Sponsored HR4069: Modern Worker Empowerment Act — latest action: Referred to the House Com",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/4069"
+      },
+      {
+        "title": "Sponsored HR3241: Canadian Snowbird Visa Act — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/3241"
+      },
+      {
+        "title": "Sponsored HR2816: Vietnam-Era Veterans Hepatitis C Testing Enhancement Act of 2019 — lates",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/2816"
+      },
+      {
+        "title": "Sponsored HR2423: Women's Suffrage Centennial Commemorative Coin Act — latest action: Beca",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/2423"
+      },
+      {
+        "title": "Sponsored HR2286: To amend the National Security Act of 1947 to direct the Director of the",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/2286"
+      },
+      {
+        "title": "Sponsored HR1935: Wage Equity Act of 2019 — latest action: Referred to the House Committee",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/1935"
+      },
+      {
+        "title": "Sponsored HR1741: Violence Against Women Extension Act of 2019 — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/1741"
+      },
+      {
+        "title": "Sponsored HR6930: To designate the facility of the United States Postal Service located at",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/6930"
+      },
+      {
+        "title": "Sponsored HR6796: Violence Against Women Extension Act of 2018 — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/6796"
+      },
+      {
+        "title": "Sponsored HR6362: Invasive Fish and Wildlife Prevention Act of 2018 — latest action: Refer",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/6362"
+      },
+      {
+        "title": "Sponsored HR5922: Vietnam-Era Veterans Hepatitis C Testing Enhancement Act of 2018 — lates",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/5922"
+      },
+      {
+        "title": "Sponsored HR5356: National Security Commission Artificial Intelligence Act of 2018 — lates",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/5356"
+      },
+      {
+        "title": "Sponsored HRES784: Honoring Chris Mazdzer of Saranac Lake, New York, for proudly represent",
+        "url": "https://www.congress.gov/bill/115th-congress/house-resolution/784"
+      },
+      {
+        "title": "Sponsored HR4291: Precision Farming Act — latest action: Referred to the Subcommittee on C",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/4291"
+      },
+      {
+        "title": "Sponsored HR4137: Renewable Electricity Tax Credit Equalization Act — latest action: Refer",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/4137"
+      },
+      {
+        "title": "Sponsored HR3770: Community Health Investment, Modernization, and Excellence Act of 2017 —",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/3770"
+      },
+      {
+        "title": "Sponsored HR3513: Canadian Snowbird Visa Act — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/3513"
+      },
+      {
+        "title": "Sponsored HR2482: Federal Perkins Loan Program Extension Act of 2017 — latest action: Refe",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/2482"
+      },
+      {
+        "title": "Sponsored HR1910: Support Our Military Caregivers Act — latest action: Referred to the Sub",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/1910"
+      },
+      {
+        "title": "Sponsored HCONRES45: Expressing the sense of Congress that those who served in the bays, h",
+        "url": "https://www.congress.gov/bill/115th-congress/house-concurrent-resolution/45"
+      },
+      {
+        "title": "Sponsored HR1796: Lift the Relocation Burden from Military Spouses Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/1796"
+      },
+      {
+        "title": "Sponsored HRES195: Expressing the commitment of the House of Representatives to conservati",
+        "url": "https://www.congress.gov/bill/115th-congress/house-resolution/195"
+      },
+      {
+        "title": "Sponsored HR1485: Flexible Pell Grant for 21st Century Students Act — latest action: Refer",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/1485"
+      },
+      {
+        "title": "Sponsored HR1357: Stamp Out Invasive Species Act — latest action: Referred to the Subcommi",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/1357"
+      },
+      {
+        "title": "Sponsored HRES170: Expressing the commitment of the House of Representatives to work to co",
+        "url": "https://www.congress.gov/bill/115th-congress/house-resolution/170"
+      },
+      {
+        "title": "Sponsored HR842: EDIT Act — latest action: Referred to the House Committee on House Admini",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/842"
+      },
+      {
+        "title": "Sponsored HR344: Forest Legacy Management Flexibility Act — latest action: Referred to the",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/344"
+      },
+      {
+        "title": "Sponsored HR283: Student Debt Repayment Fairness Act — latest action: Referred to the Hous",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/283"
+      },
+      {
+        "title": "Sponsored HR284: Advancing Medical Resident Training in Community Hospitals Act of 2017 — ",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/284"
+      },
+      {
+        "title": "Sponsored HR282: Military Residency Choice Act — latest action: Received in the Senate and",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/282"
+      },
+      {
+        "title": "Sponsored HR281: Family Farm Relief Act of 2017 — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/281"
+      },
+      {
+        "title": "Sponsored HR280: HIRED Act — latest action: Referred to the House Committee on Education a",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/280"
+      },
+      {
+        "title": "Sponsored HR279: Military Family Stability Act of 2017 — latest action: Referred to the Su",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/279"
+      },
+      {
+        "title": "Sponsored HR6285: Canadian Snowbird Visa Act — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/6285"
+      },
+      {
+        "title": "Sponsored HCONRES161: Expressing the sense of Congress that those who served in the bays, ",
+        "url": "https://www.congress.gov/bill/114th-congress/house-concurrent-resolution/161"
+      },
+      {
+        "title": "Sponsored HR5897: Precision Farming Act of 2016 — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5897"
+      },
+      {
+        "title": "Sponsored HR5683: Lift the Relocation Burden from Military Spouses Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5683"
+      },
+      {
+        "title": "Sponsored HR5493: EDIT Act — latest action: Referred to the House Committee on House Admin",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5493"
+      },
+      {
+        "title": "Sponsored HRES782: Encouraging the people of the United States to honor the service of mil",
+        "url": "https://www.congress.gov/bill/114th-congress/house-resolution/782"
+      },
+      {
+        "title": "Sponsored HR5415: HELPS Act — latest action: Referred to the House Committee on Ways and M",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5415"
+      },
+      {
+        "title": "Sponsored HR5334: Stamp Out Invasive Species Act — latest action: Referred to the Subcommi",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5334"
+      },
+      {
+        "title": "Sponsored HRES754: Expressing the commitment of the House of Representatives to work to co",
+        "url": "https://www.congress.gov/bill/114th-congress/house-resolution/754"
+      },
+      {
+        "title": "Sponsored HR4810: U.S.-Israel Security Cooperation Act — latest action: Referred to the Su",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/4810"
+      },
+      {
+        "title": "Sponsored HR3989: Support Our Military Caregivers Act — latest action: Received in the Sen",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/3989"
+      },
+      {
+        "title": "Sponsored HR3180: Flexible Pell Grant for 21st Century Students Act — latest action: Refer",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/3180"
+      },
+      {
+        "title": "Sponsored HR3112: Be Open Act — latest action: Referred to the House Committee on Educatio",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/3112"
+      },
+      {
+        "title": "Sponsored HR2560: Common Sense Waiver Act of 2015 — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/2560"
+      },
+      {
+        "title": "ICYMI: Stefanik Stands Up for Victims of New York Crime Crisis | Press Releases | Congress",
+        "url": "https://stefanik.house.gov/2023/4/icymi-stefanik-stands-up-for-victims-of-new-york-crime-crisis"
+      },
+      {
+        "title": "ICYMI: Stefanik Op-Ed In Newsweek: Hold Andrew Cuomo Accountable For COVID Scandals | Pres",
+        "url": "https://stefanik.house.gov/2024/9/icymi-stefanik-op-ed-in-newsweek-hold-andrew-cuomo-accountable-for-covid-scandals"
+      },
+      {
+        "title": "Stefanik Statement on Columbia University’s Failed Leadership | Press Releases | Congressw",
+        "url": "https://stefanik.house.gov/2024/4/stefanik-statement-on-columbia-university-s-failed-leadership"
+      },
+      {
+        "title": "House Roll Call Vote 94 (2025-04-09) — 119th Congress, 1st Session (2025) Vote Question: O",
+        "url": "https://www.congress.gov/member/elise-stefanik/S001196?page=6"
+      },
+      {
+        "title": "“We have to stop the policymaking of coming to the brink with discussions of government sh",
+        "url": "https://stefanik.house.gov/media-center/in-the-news/stefanik-decision-dhs-funding-was-not-difficult"
+      }
+    ]
+  }
+}

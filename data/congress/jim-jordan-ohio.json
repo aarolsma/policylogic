@@ -1,0 +1,666 @@
+{
+  "official": {
+    "name": "Jim Jordan",
+    "role": "U.S. Representative",
+    "jurisdiction": "OH",
+    "party": "Republican",
+    "term_start": "2007-01-04",
+    "term_end": "2027-01-03",
+    "election_date": "2006-11-01",
+    "next_election": "2026-11-01",
+    "office_phone": "202-225-2676",
+    "office_address": "2056 Rayburn House Office Building Washington DC 20515-3504",
+    "office_website": "https://jordan.house.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 30.7,
+    "delivery_ratio": 0.25,
+    "narrative": "Across his campaign-era commitments, Jordan repeatedly took formal legislative action — sponsoring pro-life, traditional-marriage, and spending-reduction bills, and earning a top fiscal-conservative ranking in 2009. However, the supplied record shows these sponsored measures were generally referred to committee, failed, or stalled, with multiple sources noting no bill he personally introduced has been signed into law. The education/parents commitment is supported mainly by position statements with no specific documented action.",
+    "grade_rationale": "The pattern is consistent introduction and advocacy (formal action initiated) without documented advancement to enactment on the cited measures, placing most promises at the early milestone-ladder rungs; promise clarity is largely directional-to-specific, and the official's causal role is dependent on a Congress and courts not fully aligned with him.",
+    "ambition_level": "Moderate",
+    "total_promises": 4,
+    "total": 4
+  },
+  "promises": [
+    {
+      "text": "Protect the sanctity of human life with an unwavering commitment as a pro-life legislator.",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 11.1,
+      "what_happened": [
+        "2009-01-22: Sponsored HR649 Ultrasound Informed Consent Act (referred to subcommittee)",
+        "2012-01-23: Sponsored HR3805 Ultrasound Informed Consent Act (referred to committee)",
+        "2013-03-12: Sponsored HR1091 Life at Conception Act (referred to subcommittee)",
+        "2007-04-18: Floor speech supporting the Partial-Birth Abortion Ban Act"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR1091: Life at Conception Act — latest action: Referred to the Subcommittee on ",
+          "url": "https://www.congress.gov/bill/113th-congress/house-bill/1091"
+        },
+        {
+          "title": "Sponsored HR3805: Ultrasound Informed Consent Act — latest action: Referred to the House C",
+          "url": "https://www.congress.gov/bill/112th-congress/house-bill/3805"
+        },
+        {
+          "title": "Sponsored HR649: Ultrasound Informed Consent Act — latest action: Referred to the Subcommi",
+          "url": "https://www.congress.gov/bill/111th-congress/house-bill/649"
+        },
+        {
+          "title": "Sponsored HR5032: Ultrasound Informed Consent Act — latest action: Referred to the Subcomm",
+          "url": "https://www.congress.gov/bill/110th-congress/house-bill/5032"
+        },
+        {
+          "title": "Jim Jordan on Abortion Follow @ontheissuesorg Jim Jordan on Abortion Republican &nbsp; Unw",
+          "url": "https://www.ontheissues.org/OH/Jim_Jordan_Abortion.htm"
+        },
+        {
+          "title": "SPEECH OF HON. JIM JORDAN OF OHIO IN THE HOUSE OF REPRESENTATIVES APRIL 18, 2007 Mr. JORDA",
+          "url": "https://jordan.house.gov/media/speech-and-floor-statements/scourge-abortion-america"
+        }
+      ]
+    },
+    {
+      "text": "Defend traditional marriage.",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 11.1,
+      "what_happened": [
+        "2009-05-21: Sponsored HR2608 to define marriage in DC as one man and one woman (referred to subcommittee)",
+        "2015-06-26: Issued statement opposing Supreme Court marriage ruling",
+        "2022-07-20: Led GOP objections to House bill codifying gay marriage"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR2608: To define marriage for all legal purposes in the District of Columbia to",
+          "url": "https://www.congress.gov/bill/111th-congress/house-bill/2608"
+        },
+        {
+          "title": "Congressman Jim Jordan (R-Ohio) ... marriage nationwide: &quot;In today&#x27;s ruling, <st",
+          "url": "https://jordan.house.gov/media/press-releases/jordan-statement-supreme-court-marriage-ruling"
+        },
+        {
+          "title": "<strong>When the House of Representatives passed the Defense of Marriage Act by a 342 to 6",
+          "url": "https://www.cleveland.com/news/2022/07/house-passes-bill-to-codify-gay-marriage-over-republican-objections-led-by-ohios-jim-jordan.html"
+        },
+        {
+          "title": "<strong>Jordan signed respecting faith-based opposition to same-sex marriage</strong>",
+          "url": "https://www.ontheissues.org/OH/Jim_Jordan_Civil_Rights.htm"
+        }
+      ]
+    },
+    {
+      "text": "Shrink the federal government and rein in federal spending.",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 10.1,
+      "what_happened": [
+        "2009-07-22: Sponsored HR3298 Discretionary Spending Control Act of 2009 (referred to House Rules)",
+        "2010-05-26: Sponsored HCONRES281 balanced-budget resolution (referred to Budget Committee)",
+        "2011-01-24: Sponsored HR408 Spending Reduction Act of 2011 (referred to subcommittee)",
+        "2010-07-28: Ranked most fiscally conservative member by NTUF for FY2009 sponsored legislation"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR408: Spending Reduction Act of 2011 — latest action: Referred to the Subcommit",
+          "url": "https://www.congress.gov/bill/112th-congress/house-bill/408"
+        },
+        {
+          "title": "Sponsored HR3298: Discretionary Spending Control Act of 2009 — latest action: Referred to ",
+          "url": "https://www.congress.gov/bill/111th-congress/house-bill/3298"
+        },
+        {
+          "title": "Sponsored HR5029: Economic Freedom Act of 2010 — latest action: Referred to House Appropri",
+          "url": "https://www.congress.gov/bill/111th-congress/house-bill/5029"
+        },
+        {
+          "title": "Sponsored HCONRES281: Establishing the congressional budget for the United States Governme",
+          "url": "https://www.congress.gov/bill/111th-congress/house-concurrent-resolution/281"
+        },
+        {
+          "title": "JORDAN EARNS TOP RANKING FOR SPENDING CUTS | U.S. Congressman Jim Jordan Skip to main cont",
+          "url": "https://jordan.house.gov/media/press-releases/jordan-earns-top-ranking-spending-cuts"
+        },
+        {
+          "title": "Amends Bill: H.R.3288 Sponsor: Jordan, Jim [Rep.-R-OH-4] (Offered 07/23/2009) Latest Actio",
+          "url": "https://www.congress.gov/member/jim-jordan/J000289?q=%7B%22sponsorship%22:%22sponsored%22%7D"
+        }
+      ]
+    },
+    {
+      "text": "Give parents the tools they need to help build a brighter future for their children.",
+      "domain_label": "Education",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 0.75,
+      "promise_score": 6.95,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Issues | U.S. Congressman Jim Jordan Skip to main content 2056 Rayburn House Office Buildi",
+          "url": "https://jordan.house.gov/issues"
+        },
+        {
+          "title": "Jim Jordan on Abortion Follow @ontheissuesorg Jim Jordan on Abortion Republican &nbsp; Unw",
+          "url": "https://www.ontheissues.org/OH/Jim_Jordan_Abortion.htm"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Campaign-window dating is thin (only 2 candidates window-dated); 2006 campaign-website promises (c1-c3) are Tier-2 researcher-supplied. The education promise has limited evidence. Many delivery-evidence sponsorships span multiple Congresses; the engine should note none cited here is shown signed into law (c113, c114, c158)."
+  ],
+  "term_identity": {
+    "term_id": "us-house-oh-2007",
+    "ordinal": "1st House tenure",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 97.3,
+    "office": "U.S. Representative",
+    "jurisdiction": "OH",
+    "term_start": "2007-01-04",
+    "term_end": "2027-01-03"
+  },
+  "person_ref": "jim-jordan",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 97.3,
+    "display": "Grade is record-to-date — term in progress, 97.3% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-house-oh-2007",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:37:18+00:00",
+    "generated_at": "2026-06-22T22:37:58+00:00",
+    "review_status": "draft",
+    "card_flags": [
+      "LOW PROMISE COUNT"
+    ],
+    "sources": [
+      {
+        "title": "Protect the sanctity of human life with an unwavering commitment as a pro-life legislator",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_Abortion.htm"
+      },
+      {
+        "title": "Shrink the federal government and rein in federal spending",
+        "url": "https://www.npr.org/2023/01/31/1152661066/jim-jordan-moves-from-leadership-nemesis-to-key-player-in-gop-agenda"
+      },
+      {
+        "title": "Jordan, Jim. Official Campaign Web Site - Jim Jordan. 2006. Web Archive.",
+        "url": "https://www.loc.gov/item/lcwaN0006499/"
+      },
+      {
+        "title": "JORDAN, JAMES D. - Candidate overview | FEC Javascript recommended: FEC.gov uses Javascrip",
+        "url": "https://www.fec.gov/data/candidate/H6OH04082/"
+      },
+      {
+        "title": "Jordan (Republican Party) is running for re-election to the U.S. House to represent Ohio&#",
+        "url": "https://ballotpedia.org/Jim_Jordan_(Ohio)"
+      },
+      {
+        "title": "Jordan was first elected in 2006 to represent a deeply conservative rural district in nort",
+        "url": "https://www.reuters.com/world/us/jim-jordan-longtime-critic-top-us-house-republicans-grasps-gavel-2023-10-13/"
+      },
+      {
+        "title": "Jordan won his House seat in 2006, the year Democrats took the majority, but he didn’t eme",
+        "url": "https://www.politico.com/story/2016/09/jim-jordan-freedom-caucus-228646"
+      },
+      {
+        "title": "So if Jordan’s invocation of those four topics gives leadership any heartburn, it’s not wi",
+        "url": "https://www.politico.com/news/2022/10/19/jim-jordan-gop-majority-00062411"
+      },
+      {
+        "title": "On The Ballot: Running, Republican for U.S. House (OH) - District 4 ... Washington, D.C. W",
+        "url": "https://justfacts.votesmart.org/candidate/8158/jim-jordan"
+      },
+      {
+        "title": "Whether Jim Jordan wins the speakership or not, voters in his Ohio district will stand by ",
+        "url": "https://apnews.com/article/jim-jordan-ohio-voters-gop-speaker-vote-56038ee563ff0479a223240ac93b1e2c"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/8158/jim-jordan"
+      },
+      {
+        "title": "Jim Jordan on the Issues &nbsp;&nbsp; Follow @ontheissuesorg &nbsp;On&nbsp;the&nbsp;issues",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan.htm"
+      },
+      {
+        "title": "ICYMI | Chairman Jim Jordan Takes Free Speech Debate International | House Judiciary Commi",
+        "url": "https://judiciary.house.gov/media/press-releases/icymi-chairman-jim-jordan-takes-free-speech-debate-international"
+      },
+      {
+        "title": "Issues | U.S. Congressman Jim Jordan Skip to main content 2056 Rayburn House Office Buildi",
+        "url": "https://jordan.house.gov/issues"
+      },
+      {
+        "title": "Jim Jordan on Homeland Security Follow @ontheissuesorg Jim Jordan on Homeland Security Rep",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_Homeland_Security.htm"
+      },
+      {
+        "title": "Jordan is a member of the House Committee on Oversight &amp; Government Reform",
+        "url": "https://ontheissues.org/OH/Jim_Jordan_Government_Reform.htm"
+      },
+      {
+        "title": "2008 On November 4, 2008, Jim Jordan won re-election to the United States House. He defeat",
+        "url": "https://ballotpedia.org/Ohio's_4th_Congressional_District"
+      },
+      {
+        "title": "Prior to joining the 160th District Court, Jordan served as a judge of the 44th District C",
+        "url": "https://ballotpedia.org/Jim_Jordan_(Texas)"
+      },
+      {
+        "title": "Incumbent: Heading into the election the incumbent was Jim Jordan (R), who was first elect",
+        "url": "https://ballotpedia.org/Ohio's_4th_Congressional_District_elections,_2014"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Jim Jordan.",
+        "url": "https://ballotpedia.org/Endorsements_by_Jim_Jordan"
+      },
+      {
+        "title": "Incumbent: Heading into the election the incumbent was Jim Jordan (R), who was first elect",
+        "url": "https://ballotpedia.org/Ohio's_4th_Congressional_District_election,_2016"
+      },
+      {
+        "title": "Jim Jordan may refer to: Jim Jordan (Ohio) Jim Jordan (Texas) Retrieved from &quot;https:/",
+        "url": "https://ballotpedia.org/Jim_Jordan"
+      },
+      {
+        "title": "Heading into the election the incumbent was Jim Jordan (R), who was first elected in 2006.",
+        "url": "https://ballotpedia.org/Ohio's_4th_Congressional_District_election,_2018"
+      },
+      {
+        "title": "Incumbent Jim Jordan defeated Shannon Freshour and Steve Perkins in the general election f",
+        "url": "https://ballotpedia.org/Jeffrey_Sites"
+      },
+      {
+        "title": "Heading into the election, the incumbent was Jim Jordan (Republican), who was first electe",
+        "url": "https://ballotpedia.org/Ohio's_4th_Congressional_District_election,_2020_(March_17_Democratic_primary)"
+      },
+      {
+        "title": "Jordan co-sponsored strengthening sanctions on Syria &amp; assist democratic transition",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_War_+_Peace.htm"
+      },
+      {
+        "title": "Jordan co-sponsored keeping sanctions against Syria until WMDs are dismantled",
+        "url": "https://ontheissues.org/OH/Jim_Jordan_Foreign_Policy.htm"
+      },
+      {
+        "title": "<strong>Jim Jordan</strong> on other issues: OH Gubernatorial: Betty Sutton Connie Pillich",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_Energy_+_Oil.htm"
+      },
+      {
+        "title": "Jordan scores 25% National Organization for the Reform of Marijuana Law",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_Drugs.htm"
+      },
+      {
+        "title": "<strong>Voted YES on allowing compensatory time off for working overtime</strong>. Congres",
+        "url": "https://ontheissues.org/OH/Jim_Jordan_Jobs.htm"
+      },
+      {
+        "title": "Buck]: &quot;Big Tech is out to get conservatives. But rather than address Republican conc",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_Technology.htm"
+      },
+      {
+        "title": "<strong>Jim Jordan</strong> on other issues: OH Gubernatorial: Betty Sutton Connie Pillich",
+        "url": "https://ontheissues.org/OH/Jim_Jordan_Gun_Control.htm"
+      },
+      {
+        "title": "<strong>Jim Jordan did not provide voters with positions on key issues covered by the 2024",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/8158/jim-jordan"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/176743/jen-jordan"
+      },
+      {
+        "title": "Letter to Nancy Pelosi, David Obey and Liouse Slaughter, House of Representatives Leaders.",
+        "url": "https://votesmart.org/candidate/political-courage-test/57781/"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Political Courage Test Forms · Biographical Form · Presidential Political Courage Test · C",
+        "url": "https://votesmart.org/for-candidates/forms"
+      },
+      {
+        "title": "A candidate&#x27;s political courage is calculated based on the number of issue areas the ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "David Jordan has refused to provide voters with positions on key issues covered by the 201",
+        "url": "https://votesmart.org/candidate/political-courage-test/3621/david-jordan/"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "Political Courage Test: 2024 Congressional Edition · Candidates are strongly encouraged to",
+        "url": "https://justfacts.votesmart.org/static/pdfs/forcandidates/congressional/2024_Federal_PCT.pdf"
+      },
+      {
+        "title": "I still remember the excitement in the air on January 20, when millions of Americans gathe",
+        "url": "https://jordan.house.gov/media/opinion-pieces/report-card-first-100-days-obama-administration"
+      },
+      {
+        "title": "Jim Jordan, the Representative from Ohio - in Congress from 2007 through Present",
+        "url": "https://www.congress.gov/member/jim-jordan/J000289"
+      },
+      {
+        "title": "Sponsored HRES86: Providing amounts for the expenses of the Committee on the Judiciary in ",
+        "url": "https://www.congress.gov/bill/119th-congress/house-resolution/86"
+      },
+      {
+        "title": "Sponsored HRES1292: Recommending that the House of Representatives find United States Atto",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1292"
+      },
+      {
+        "title": "Sponsored HR4791: Free Speech Protection Act — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4791"
+      },
+      {
+        "title": "Sponsored HRES159: Providing amounts for the expenses of the Committee on the Judiciary in",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/159"
+      },
+      {
+        "title": "Sponsored HRES12: Establishing a Select Subcommittee on the Weaponization of the Federal G",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/12"
+      },
+      {
+        "title": "Sponsored HR3827: Protect Speech Act — latest action: Referred to the Subcommittee on Comm",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/3827"
+      },
+      {
+        "title": "Sponsored HR8517: Protect Speech Act — latest action: Referred to the House Committee on E",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8517"
+      },
+      {
+        "title": "Sponsored HRES1138: Expressing the sense of the House of Representatives that the number o",
+        "url": "https://www.congress.gov/bill/116th-congress/house-resolution/1138"
+      },
+      {
+        "title": "Sponsored HR5246: To require the United States attorney to bring the matter of an individu",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/5246"
+      },
+      {
+        "title": "Sponsored HR4731: Welfare Reform Act of 2014 — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/4731"
+      },
+      {
+        "title": "Sponsored HR3689: To restore Second Amendment rights in the District of Columbia. — latest",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/3689"
+      },
+      {
+        "title": "Sponsored HR1091: Life at Conception Act — latest action: Referred to the Subcommittee on ",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/1091"
+      },
+      {
+        "title": "Sponsored HR859: Taxpayers' COP Act — latest action: Referred to the Committee on Appropri",
+        "url": "https://www.congress.gov/bill/113th-congress/house-bill/859"
+      },
+      {
+        "title": "Sponsored HRES565: Calling on Attorney General Eric H. Holder, Jr., to appoint a special c",
+        "url": "https://www.congress.gov/bill/113th-congress/house-resolution/565"
+      },
+      {
+        "title": "Sponsored HR6688: Averting the Fiscal Cliff Act — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/6688"
+      },
+      {
+        "title": "Sponsored HR3805: Ultrasound Informed Consent Act — latest action: Referred to the House C",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/3805"
+      },
+      {
+        "title": "Sponsored HR1167: Welfare Reform Act of 2011 — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/1167"
+      },
+      {
+        "title": "Sponsored HR1135: Welfare Reform Act of 2011 — latest action: Referred to the Subcommittee",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/1135"
+      },
+      {
+        "title": "Sponsored HR430: HAMP Repeal and Deficit Reduction Act of 2011 — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/430"
+      },
+      {
+        "title": "Sponsored HR408: Spending Reduction Act of 2011 — latest action: Referred to the Subcommit",
+        "url": "https://www.congress.gov/bill/112th-congress/house-bill/408"
+      },
+      {
+        "title": "Sponsored HR2832: Welfare Reform and Upward Mobility Act — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/2832"
+      },
+      {
+        "title": "Sponsored HR1436: To provide for reconciliation pursuant to title II of the concurrent res",
+        "url": "https://www.congress.gov/bill/115th-congress/house-bill/1436"
+      },
+      {
+        "title": "Sponsored HR5360: Welfare Reform and Upward Mobility Act — latest action: Referred to the ",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/5360"
+      },
+      {
+        "title": "Sponsored HR1701: Second Amendment Enforcement Act of 2015 — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/114th-congress/house-bill/1701"
+      },
+      {
+        "title": "Sponsored HR5029: Economic Freedom Act of 2010 — latest action: Referred to House Appropri",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/5029"
+      },
+      {
+        "title": "Sponsored HR3298: Discretionary Spending Control Act of 2009 — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/3298"
+      },
+      {
+        "title": "Sponsored HR2608: To define marriage for all legal purposes in the District of Columbia to",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/2608"
+      },
+      {
+        "title": "Sponsored HR1825: Clean Up Government Act of 2009 — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/1825"
+      },
+      {
+        "title": "Sponsored HR649: Ultrasound Informed Consent Act — latest action: Referred to the Subcommi",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/649"
+      },
+      {
+        "title": "Sponsored HR477: Federal Efficiency and Performance Act of 2009 — latest action: Referred ",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/477"
+      },
+      {
+        "title": "Sponsored HR478: Federal Agency Performance Review and Efficiency Act — latest action: Ref",
+        "url": "https://www.congress.gov/bill/111th-congress/house-bill/478"
+      },
+      {
+        "title": "Sponsored HCONRES281: Establishing the congressional budget for the United States Governme",
+        "url": "https://www.congress.gov/bill/111th-congress/house-concurrent-resolution/281"
+      },
+      {
+        "title": "Sponsored HR6639: Federal Agency Performance Review and Efficiency Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/6639"
+      },
+      {
+        "title": "Sponsored HR6638: Federal Efficiency and Performance Act of 2008 — latest action: Referred",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/6638"
+      },
+      {
+        "title": "Sponsored HR5088: To suspend temporarily the duty on certain laundry work surfaces. — late",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/5088"
+      },
+      {
+        "title": "Sponsored HR5032: Ultrasound Informed Consent Act — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/5032"
+      },
+      {
+        "title": "Sponsored HR2438: Clean Up Government Act of 2007 — latest action: Referred to the Subcomm",
+        "url": "https://www.congress.gov/bill/110th-congress/house-bill/2438"
+      },
+      {
+        "title": "Sponsored HRES728: Expressing the support and sympathy of the House of Representatives and",
+        "url": "https://www.congress.gov/bill/110th-congress/house-resolution/728"
+      },
+      {
+        "title": "Rep. Jim Jordan [R-OH4, 2007-2026], Representative for Ohio's 4th Congressional District -",
+        "url": "https://www.govtrack.us/congress/members/jim_jordan/412226"
+      },
+      {
+        "title": "Rep. Jim Jordan (R-Ohio) walks to a House Republican Conference speaker candidate forum la",
+        "url": "https://www.washingtonpost.com/politics/2023/10/16/jim-jordan-speaker-legislation-effectiveness/"
+      },
+      {
+        "title": "Jim Jordan, the Representative from Ohio - in Congress from 2007 through Present",
+        "url": "https://www.congress.gov/member/jim-jordan/J000289?q=%7B%22bill-status%22%3A%22passed-both%22%7D"
+      },
+      {
+        "title": "Votes and Legislation | U.S. Congressman Jim Jordan Skip to main content 2056 Rayburn Hous",
+        "url": "https://jordan.house.gov/about/votes-and-legislation"
+      },
+      {
+        "title": "Blake made the case convincingly; <strong>Jordan (R-Ohio) has never had a bill signed into",
+        "url": "https://www.washingtonpost.com/politics/2023/10/17/bills-that-jim-jordan-did-want-pass/"
+      },
+      {
+        "title": "Budget and Fiscal Issues | U.S. Congressman Jim Jordan Skip to main content 2056 Rayburn H",
+        "url": "https://jordan.house.gov/issues/budget-and-fiscal-issues"
+      },
+      {
+        "title": "Vote Smart provides a summary of the version of the bill text associated with each selecte",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/8158/jim-jordan/90/government-budget-and-spending"
+      },
+      {
+        "title": "Jim Jordan on Budget & Economy Follow @ontheissuesorg Jim Jordan on Budget & Economy Repub",
+        "url": "https://ontheissues.org/OH/Jim_Jordan_Budget_+_Economy.htm"
+      },
+      {
+        "title": "JORDAN EARNS TOP RANKING FOR SPENDING CUTS | U.S. Congressman Jim Jordan Skip to main cont",
+        "url": "https://jordan.house.gov/media/press-releases/jordan-earns-top-ranking-spending-cuts"
+      },
+      {
+        "title": "Amends Bill: H.R.3288 Sponsor: Jordan, Jim [Rep.-R-OH-4] (Offered 07/23/2009) Latest Actio",
+        "url": "https://www.congress.gov/member/jim-jordan/J000289?q=%7B%22sponsorship%22:%22sponsored%22%7D"
+      },
+      {
+        "title": "House Roll Call Vote 620 (2019-11-15) — 116th Congress, 1st Session (2019) Vote Question: ",
+        "url": "https://www.congress.gov/member/jim-jordan/J000289?page=35"
+      },
+      {
+        "title": "Congressman Jim Jordan (R-Ohio) released the following statement after the House of Repres",
+        "url": "https://jordan.house.gov/news/documentquery.aspx?IssueID=4568"
+      },
+      {
+        "title": "The Ohio Republican rose to prominence as a headline-grabbing conservative firebrand, then",
+        "url": "https://www.politico.com/news/2026/04/06/jim-jordan-house-gop-leader-00858917"
+      },
+      {
+        "title": "Jim Jordan Demands Testimony from Jack Smith | House Judiciary Committee Republicans Skip ",
+        "url": "https://judiciary.house.gov/media/press-releases/jim-jordan-demands-testimony-jack-smith"
+      },
+      {
+        "title": "[1/6]U.S. Rep. Jim Jordan (R-OH) speaks to reporters during an early morning press confere",
+        "url": "https://www.reuters.com/world/us/jim-jordan-make-third-try-top-job-paralyzed-us-house-2023-10-20/"
+      },
+      {
+        "title": "Rep. Jim Jordan (R-Ohio) after he failed to secure enough votes in his bid for speaker in ",
+        "url": "https://www.washingtonpost.com/politics/2023/10/17/jordan-speaker-votes/"
+      },
+      {
+        "title": "Jim Jordan’s fellow Republicans smashed his hopes to be their leader three years ago. But ",
+        "url": "https://www.politico.com/newsletters/inside-congress/2026/04/06/jim-jordan-waits-in-the-wings-00859395"
+      },
+      {
+        "title": "Jim Jordan (R-OH), currently the top contender in the race to be the next Speaker of the U",
+        "url": "https://www.reuters.com/world/us/hardline-republican-jim-jordan-make-second-attempt-top-us-house-job-2023-10-18/"
+      },
+      {
+        "title": "House speaker updates: Jim Jordan out as Republican nominee : NPR Accessibility links Skip",
+        "url": "https://www.npr.org/2023/10/20/1207328228/house-to-vote-for-a-3rd-time-on-jim-jordans-nomination-for-speaker"
+      },
+      {
+        "title": "Jim Jordan (R-Ohio) as the GOP speaker nominee, as more Republicans voted against him. Fol",
+        "url": "https://www.washingtonpost.com/politics/interactive/2023/republicans-voting-against-jim-jordan-house-speaker/"
+      },
+      {
+        "title": "Speaker Nancy Pelosi stunned the GOP on Wednesday by vetoing two of House Minority Leader ",
+        "url": "https://www.politico.com/news/2021/07/21/pelosi-vetoes-banks-jordan-for-jan-6-select-committee-500424"
+      },
+      {
+        "title": "<strong>Republicans cast aside their latest nominee for House speaker on Friday, rejecting",
+        "url": "https://www.nytimes.com/live/2023/10/20/us/house-speaker-vote-jim-jordan"
+      },
+      {
+        "title": "SPEECH OF HON. JIM JORDAN OF OHIO IN THE HOUSE OF REPRESENTATIVES APRIL 18, 2007 Mr. JORDA",
+        "url": "https://jordan.house.gov/media/speech-and-floor-statements/scourge-abortion-america"
+      },
+      {
+        "title": "Mr. Speaker, today <strong>the Supreme Court upheld the Partial-Birth Abortion Ban Act of ",
+        "url": "https://jordan.house.gov/media/speech-and-floor-statements"
+      },
+      {
+        "title": "Congressman Jim Jordan (R-Ohio) ... marriage nationwide: &quot;In today&#x27;s ruling, <st",
+        "url": "https://jordan.house.gov/media/press-releases/jordan-statement-supreme-court-marriage-ruling"
+      },
+      {
+        "title": "<strong>Jordan signed respecting faith-based opposition to same-sex marriage</strong>",
+        "url": "https://www.ontheissues.org/OH/Jim_Jordan_Civil_Rights.htm"
+      },
+      {
+        "title": "President Joe Biden “was excited … to go after parents” with the FBI after receiving the N",
+        "url": "https://judiciary.house.gov/media/press-releases/jim-jordan-joe-biden-excited-about-going-after-parents-with-domestic-terrorism"
+      },
+      {
+        "title": "... Washington, D.C. – Tomorrow, the U.S. House of Representatives will consider H. Res. 9",
+        "url": "https://jordan.house.gov/issues/government-reform"
+      }
+    ]
+  }
+}

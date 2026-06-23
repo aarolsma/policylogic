@@ -1,0 +1,1242 @@
+{
+  "official": {
+    "name": "Ted Cruz",
+    "role": "U.S. Senator",
+    "jurisdiction": "TX",
+    "party": "Republican",
+    "term_start": "2025-01-03",
+    "term_end": "2031-01-03",
+    "election_date": "2024-11-01",
+    "next_election": "2030-11-01",
+    "office_phone": "202-224-5922",
+    "office_address": "167 Russell Senate Office Building Washington DC 20510",
+    "office_website": "https://www.cruz.senate.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 49.88,
+    "delivery_ratio": 0.4833,
+    "narrative": "This term Cruz delivered on his signature No Tax on Tips pledge, which passed the Senate 100-0 and was enacted through the Working Families Tax Cut Act, and on tech-platform legislation via the enacted TAKE IT DOWN Act. As Commerce Committee chair he advanced aviation safety (ROTOR Act passed the Senate but was struck down in the House), innovation/spectrum measures, and small-business procurement reform, several of which cleared committee or one chamber but stalled short of enactment. Several Texas-specific commitments — water treaty enforcement, disaster relief, and the Sagebrush Lizard reversal — saw introduced legislation and advocacy but depend on external actors (Mexico, FEMA, the House) and remain incomplete. His transgender-sports ban remains advocacy and committee-stage legislation rather than an enacted prohibition.",
+    "grade_rationale": "The record shows full delivery on a clearly specified, high-clarity quantitative-adjacent promise (No Tax on Tips) plus a second enacted measure, with a cluster of qualitative committee-driven promises reaching the advanced (D3) milestone but stalling before enactment due to House or external dependencies. Promise quality is generally specific (clarity 3-5) with mostly significant (M2) magnitude, and Cruz's causal role is high (0.8) where he sponsored and drove legislation, lower (0.6) where outcomes depend on foreign governments, FEMA, or the NCAA.",
+    "ambition_level": "Moderate",
+    "total_promises": 9,
+    "total": 9
+  },
+  "promises": [
+    {
+      "text": "Pass the No Tax on Tips Act to exempt tips from federal income tax",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2025-01-16: Introduced S.129 No Tax on Tips Act",
+        "2025-05-20: Passed Senate 100-0",
+        "2026-01-02: Cruz statement confirms No Tax on Tips enacted via Working Families Tax Cut Act"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Ted Cruz (R-Texas) issued a statement following the passing of his No Tax on Tips Act in t",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruzs-no-tax-on-tips-legislation-passes-senate"
+        },
+        {
+          "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-concludes-another-successful-year-serving-texas-and-america"
+        },
+        {
+          "title": "Sponsored S129: No Tax on Tips Act — latest action: Held at the desk.",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/129"
+        }
+      ]
+    },
+    {
+      "text": "Hold Big Tech accountable through the Senate Commerce Committee",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.45,
+      "what_happened": [
+        "2025-01-16: Introduced S.146 TAKE IT DOWN Act (became Public Law 119-12)",
+        "2026-04-07: Chaired Commerce hearing on Big Tech censorship",
+        "2026-06-11: Introduced S4749 jawboning bill"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "WASHINGTON, D.C. – In his opening statement at today’s Senate Commerce Committee hearing t",
+          "url": "https://www.commerce.senate.gov/press/rep/release/sen-cruz-big-tech-caved-to-biden-pressure-to-censure/"
+        },
+        {
+          "title": "Sponsored S4749: A bill to amend the Communications Act of 1934 to create a Federal cause ",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4749"
+        },
+        {
+          "title": "Sponsored S146: TAKE IT DOWN Act — latest action: Became Public Law No: 119-12.",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/146"
+        },
+        {
+          "title": "Klobuchar said: “One year ago, the <strong>TAKE IT DOWN Act</strong> was signed into law –",
+          "url": "https://www.commerce.senate.gov/press/rep/release/cruz-klobuchar-mark-one-year-of-take-it-down-act-as-ftc-enforcement-begins/"
+        }
+      ]
+    },
+    {
+      "text": "Invest in American aviation safety as Senate Commerce Committee chair",
+      "domain_label": "Safety & Justice",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.45,
+      "what_happened": [
+        "2025-07-29: Sponsored S2503 ROTOR Act",
+        "2025-12-17: ROTOR Act passed Senate by unanimous consent",
+        "2026-02-26: House Republicans struck down the bill"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Jerry Moran (R-Kan.), Chairman ... he and Ranking Member Maria Cantwell (D-Wash.) <strong>",
+          "url": "https://www.commerce.senate.gov/2025/12/chairman-cruz-senate-passage-of-rotor-act-a-key-step-for-aviation-safety"
+        },
+        {
+          "title": "“I’ve been sounding the alarm about close calls and aging equipment for years, and while o",
+          "url": "https://www.commerce.senate.gov/press/dem/release/commerce-committee-approves-cantwell-cruz-bipartisan-aviation-safety-bill/"
+        },
+        {
+          "title": "Ted Cruz (R-TX) and Ranking Member Sen. Maria Cantwell (D-WA), <strong>the ROTOR Act was p",
+          "url": "https://www.jalopnik.com/2110309/house-republicans-strike-down-ted-cruz-aviation-safety-bill/"
+        }
+      ]
+    },
+    {
+      "text": "Drive innovation to keep America competitive as Senate Commerce Committee chair",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.45,
+      "what_happened": [
+        "2025-06-25: Released updated Commerce reconciliation text including spectrum and AI provisions",
+        "2026-01-02: Year-end statement cites enacted spectrum auction and innovation provisions"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Chairman Cruz Releases Updated Budget Reconciliation Text - U.S. Senate Committee on Comme",
+          "url": "https://www.commerce.senate.gov/2025/6/chairman-cruz-releases-updated-budget-reconciliation-text"
+        },
+        {
+          "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-concludes-another-successful-year-serving-texas-and-america"
+        },
+        {
+          "title": "On June 5, Senate Republicans, led by Chair Ted Cruz (R-TX) on the Senate Commerce Committ",
+          "url": "https://www.mintz.com/insights-center/viewpoints/54731/2025-06-26-senate-parliamentarian-approves-ted-cruzs-rewritten-10"
+        }
+      ]
+    },
+    {
+      "text": "Introduce and pass legislation to reverse the Fish & Wildlife Service's listing of the Sagebrush Lizard under the Endangered Species Act to protect oil and gas production in the Permian Basin",
+      "domain_label": "Environment",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 1.5,
+      "promise_score": 10.3,
+      "what_happened": [
+        "2025: Introduced legislation to reverse the Sagebrush Lizard ESA listing (per Cruz highlights)",
+        "2026-04-28: Sponsored S4412 No FED in West Texas Act (related land-use measure)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-concludes-another-successful-year-serving-texas-and-america"
+        },
+        {
+          "title": "Sen. Cruz on Delivering for the Lone Star State | Senator Ted Cruz Skip to content Senator",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-on-delivering-for-the-lone-star-state"
+        }
+      ]
+    },
+    {
+      "text": "Ensure Mexico complies with the 1944 Water Treaty and provide relief for South Texas agricultural producers harmed by Mexico's treaty violations",
+      "domain_label": "Foreign Policy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.5,
+      "promise_score": 10.1,
+      "what_happened": [
+        "2025-11-06: Sponsored S3120 Ensuring Predictable and Reliable Water Deliveries Act",
+        "2025-11-07: Introduced legislation to hold Mexico accountable for water deliveries",
+        "2025-11-25: State Department pressed Mexico per Cruz-backed advocacy"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Cruz championed a provision providing ... and Rio Grande Rivers. Sens. <strong>Cruz and Jo",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-introduces-legislation-to-hold-mexico-accountable-for-lack-of-water-deliveries-to-texas"
+        },
+        {
+          "title": "Sponsored S3120: Ensuring Predictable and Reliable Water Deliveries Act of 2025 — latest a",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3120"
+        },
+        {
+          "title": "On November 25, the U.S. State Department reported on a meeting between Mexican and U.S. o",
+          "url": "https://english.elpais.com/usa/2025-12-03/us-pressures-mexico-for-violating-the-1944-water-treaty.html?outputType=amp"
+        }
+      ]
+    },
+    {
+      "text": "Secure federal support and disaster declarations for Texas communities struck by natural disasters",
+      "domain_label": "Safety & Justice",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 11.65,
+      "what_happened": [
+        "2025: Pledged federal support and secured disaster declaration after Hurricane Beryl (per Cruz statement)",
+        "2025-02-10: Sponsored S496 Wildfire Victim Tax Relief and Recovery Act",
+        "2025-07-07: Engaged on Central Texas flood victim response"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "I have spoken to the president multiple times throughout the course of this storm from the",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-and-lsquotexas-will-rebuild-and-rsquo"
+        },
+        {
+          "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-concludes-another-successful-year-serving-texas-and-america"
+        },
+        {
+          "title": "Sponsored S496: Wildfire Victim Tax Relief and Recovery Act — latest action: Read twice an",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/496"
+        }
+      ]
+    },
+    {
+      "text": "Advance legislation to make the federal procurement process easier for small businesses and new government contractors",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "low",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.45,
+      "what_happened": [
+        "2025: Cleared bipartisan procurement bill (with Sen. Peters) through Senate Homeland Security and Government Affairs Committee"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-concludes-another-successful-year-serving-texas-and-america"
+        },
+        {
+          "title": "Sen. Cruz on Delivering for the Lone Star State | Senator Ted Cruz Skip to content Senator",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-on-delivering-for-the-lone-star-state"
+        }
+      ]
+    },
+    {
+      "text": "Ban transgender athletes from participating in women's sports at the NCAA level",
+      "domain_label": "Safety & Justice",
+      "status": "broken",
+      "confidence": "medium",
+      "delivery": "D0",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 5.0,
+      "what_happened": [
+        "2024-08-08: Signed letter urging NCAA to ban transgender athletes from women's sports",
+        "2026-03-30: Sent letters demanding sports organizations comply with eligibility rules",
+        "2026-06-02: Sponsored S4668 Protect College Sports Act, passed committee 19-9"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S4668: Protect College Sports Act of 2026 — latest action: Committee on Commerce",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4668"
+        },
+        {
+          "title": "The <strong>Protect College Sports Act</strong>, which Cruz wrote with Sen. Maria Cantwell",
+          "url": "https://www.texastribune.org/2026/06/18/texas-ted-cruz-college-sports-nil-regulations-senate/"
+        },
+        {
+          "title": "WASHINGTON, D.C. – U.S. Senate Commerce, Science, and Transportation Committee Chairman Te",
+          "url": "https://www.commerce.senate.gov/press/rep/release/sen-cruz-demands-olympics-protect-womens-sports/"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Many delivery claims for Texas-specific items (Sagebrush Lizard, procurement) rest primarily on Cruz's own press releases [c204][c210] with limited independent corroboration — flagged LIMITED EVIDENCE. Several campaign 'promises' in the source (Keep Texas, Texas; safeguard freedoms; secure the border; school choice statements) were excluded as slogans or value statements lacking a verifiable forward-looking condition. The transgender-sports promise is classified Negative/preventative and is CONTESTED. Verification evidence is API-anchored and Tier-1 heavy, but some dated 2026 items fall within term and were retained."
+  ],
+  "term_identity": {
+    "term_id": "us-sen-tx-2025",
+    "ordinal": "3rd Senate term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 24.4,
+    "office": "U.S. Senator",
+    "jurisdiction": "TX",
+    "term_start": "2025-01-03",
+    "term_end": "2031-01-03"
+  },
+  "person_ref": "ted-cruz",
+  "sibling_terms": [
+    {
+      "term_id": "us-sen-tx-2013",
+      "label": "U.S. Senator 2013–2019",
+      "status": "completed",
+      "grade": null
+    },
+    {
+      "term_id": "us-sen-tx-2019",
+      "label": "U.S. Senator 2019–2025",
+      "status": "completed",
+      "grade": null
+    }
+  ],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 24.4,
+    "display": "Grade is record-to-date — term in progress, 24.4% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-sen-tx-2025",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:26:39+00:00",
+    "generated_at": "2026-06-22T22:27:46+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Exempt tips from federal income tax by passing the No Tax on Tips Act",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-on-delivering-for-the-lone-star-state"
+      },
+      {
+        "title": "Ban transgender athletes from participating in women's sports at the NCAA level",
+        "url": "https://ontheissues.org/Domestic/Ted_Cruz_Civil_Rights.htm"
+      },
+      {
+        "title": "Home | Senator Ted Cruz Skip to content Senator Cruz Facebook Senator Cruz Instagram Senat",
+        "url": "https://www.cruz.senate.gov/"
+      },
+      {
+        "title": "The fiery senator, who was nearly unseated in 2018, has been trying to rebrand himself in ",
+        "url": "https://www.nytimes.com/2024/09/24/us/politics/ted-cruz-colin-allred-texas-senate.html"
+      },
+      {
+        "title": "Ted Cruz described the Senate as “the battlefield right now,&quot; with his seat up next y",
+        "url": "https://www.politico.com/news/2023/02/02/cruz-texas-2024-republicans-senate-00080629"
+      },
+      {
+        "title": "Videos | Senator Ted Cruz Skip to content Senator Cruz Facebook Senator Cruz Instagram Sen",
+        "url": "https://www.cruz.senate.gov/newsroom/videos"
+      },
+      {
+        "title": "Cruz is also <strong>touting efforts to protect in-vitro fertilization, an effort to blunt",
+        "url": "https://www.politico.com/news/2024/09/30/ted-cruz-colin-allred-texas-00181509"
+      },
+      {
+        "title": "Ted Cruz (Republican Party) is a member of the U.S. Senate from Texas. He assumed office o",
+        "url": "https://ballotpedia.org/Ted_Cruz"
+      },
+      {
+        "title": "Senator Ted Cruz and his Democratic challenger, Representative Colin Allred, packed a lot ",
+        "url": "https://www.nytimes.com/2024/10/16/us/politics/cruz-allred-texas-senate-debate-takeaways.html"
+      },
+      {
+        "title": "The debate featured familiar campaign slogans, with Mr. Cruz vowing to “<strong>keep Texas",
+        "url": "https://www.nytimes.com/2024/10/15/us/politics/cruz-allred-texas-senate-debate.html"
+      },
+      {
+        "title": "Incumbent Ted Cruz (R) defeated Colin Allred (D), Ted Brown (L), and Tracy Andrus (D) (Wri",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2024"
+      },
+      {
+        "title": "<strong>A Republican Party primary took place on March 5, 2024</strong>, in Texas to deter",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2024_(March_5_Republican_primary)"
+      },
+      {
+        "title": "As of March 1, 2024, Allred had raised $21,371,157.51, followed by Gutierrez with $1,301,5",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2024_(March_5_Democratic_primary)"
+      },
+      {
+        "title": "In the 2024 election, incumbent <strong>Ted Cruz (R) defeated Colin Allred (D) 53%–45%</st",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026"
+      },
+      {
+        "title": "↑ X, &quot;Harris on July 21, 2024,&quot; accessed July 21, 2024 · ↑ Twitter, &quot;Stein ",
+        "url": "https://ballotpedia.org/Presidential_candidates,_2024"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Ted Cruz.",
+        "url": "https://ballotpedia.org/Endorsements_by_Ted_Cruz"
+      },
+      {
+        "title": "Because state Republican parties are responsible for crafting their own rules on what thei",
+        "url": "https://ballotpedia.org/What_happens_to_Ted_Cruz's_delegates"
+      },
+      {
+        "title": "Pivot Counties in the 2024 presidential election · General election voter turnout in 2024 ",
+        "url": "https://ballotpedia.org/wiki/index.php?title=Rafael_Edward_%22Ted%22_Cruz&redirect=no"
+      },
+      {
+        "title": "<strong>I believe the human connection is too strong and that the majority of people can c",
+        "url": "https://ballotpedia.org/Texas'_4th_Congressional_District_election,_2024"
+      },
+      {
+        "title": "Ted Cruz on the Issues &nbsp;&nbsp; Follow @ontheissuesorg &nbsp;On&nbsp;the&nbsp;issues:&",
+        "url": "https://www.ontheissues.org/senate/ted_cruz.htm"
+      },
+      {
+        "title": "Ted Cruz on Crime Follow @ontheissuesorg Ted Cruz on Crime &nbsp; &nbsp; In death penalty ",
+        "url": "https://ontheissues.org/2016/Ted_Cruz_Crime.htm"
+      },
+      {
+        "title": "Sunday Political Talk Show interviews throughout 2013-2015 Ted Cruz in Sunday Political Ta",
+        "url": "http://www.ontheissues.org/Archive/2016_Hopefuls_Ted_Cruz.htm"
+      },
+      {
+        "title": "Ted Cruz has <strong>fought to protect innocent human life</strong>. He played a leading r",
+        "url": "https://ontheissues.org/2016/Ted_Cruz_Abortion.htm"
+      },
+      {
+        "title": "At Liberty University in March 2015, Cruz said, &quot;Imagine embracing school choice as t",
+        "url": "https://ontheissues.org/2016/Ted_Cruz_Education.htm"
+      },
+      {
+        "title": "Rand PAUL]: Senator Cruz&#x27;s campaign is out with a video saying that Cruz is the intel",
+        "url": "https://ontheissues.org/Economic/Ted_Cruz_Budget_+_Economy.htm"
+      },
+      {
+        "title": "Sen. Ted Cruz agreed to give the oral arguments before the Supreme Court in a potentially ",
+        "url": "https://www.ontheissues.org/Economic/Ted_Cruz_Government_Reform.htm"
+      },
+      {
+        "title": "Sen. <strong>Ted Cruz</strong> of Texas flat out opposed the RFS [the Renewable Fuel Stand",
+        "url": "https://www.ontheissues.org/Domestic/Ted_Cruz_Environment.htm"
+      },
+      {
+        "title": "Ted Cruz <strong>delivered a speech heavy with themes of liberty and freedom alongside bit",
+        "url": "https://www.ontheissues.org/social/Ted_Cruz_Health_Care.htm"
+      },
+      {
+        "title": "<strong>Ted Cruz did not provide voters with positions on key issues covered by the 2024 P",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/135705/ted-cruz"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/135705/ted-cruz"
+      },
+      {
+        "title": "Cruz Bustamante <strong>refused to tell citizens where he stands on any of the issues addr",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/8148/cruz-bustamante"
+      },
+      {
+        "title": "Candidates are free to address ... one aspect of political courage: <strong>candidates&#x2",
+        "url": "https://justfacts.votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/135705/ted-cruz?categoryId=43&type=V%2CS%2CR%2CE%2CF%2CP"
+      },
+      {
+        "title": "A candidate&#x27;s political courage is calculated based on the number of issue areas the ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "Print Track This Politician · Washington, D.C. Webmail http://www.cruz.senate.gov/?p=email",
+        "url": "https://votesmart.org/candidate/135705/ted-cruz?categoryId=47&type=V%2CS%2CR%2CE%2CF%2CP"
+      },
+      {
+        "title": "Keep in mind that ratings done by special interest groups often do not represent a non-par",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/135705/ted-cruz/37/"
+      },
+      {
+        "title": "This is truly a radical agenda. And I think that&#x27;s what we&#x27;re going to see laid ",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-on-fox-and-friends-and-145in-100-days-we-and-146ve-seen-some-of-the-most-radical-policies-that-have-ever-been-implemented-and-146"
+      },
+      {
+        "title": "Cruz’s opening remarks as prepared for delivery:? “For... ... WASHINGTON, D.C. – U.S. Sens",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/"
+      },
+      {
+        "title": "Texas Sen. Ted Cruz is embarking on a cross-country midterm campaign swing as he weighs a ",
+        "url": "https://www.politico.com/news/2022/09/20/ted-cruz-campaign-2024-00057668"
+      },
+      {
+        "title": "Sponsored S4783: A bill to amend the Servicemembers Civil Relief Act to provide relief for",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4783"
+      },
+      {
+        "title": "Sponsored S4749: A bill to amend the Communications Act of 1934 to create a Federal cause ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4749"
+      },
+      {
+        "title": "Sponsored S4693: NEW HORIZON Act — latest action: Read twice and referred to the Committee",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4693"
+      },
+      {
+        "title": "Sponsored S4677: SUSTAIN Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4677"
+      },
+      {
+        "title": "Sponsored S4668: Protect College Sports Act of 2026 — latest action: Committee on Commerce",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4668"
+      },
+      {
+        "title": "Sponsored S4521: Army Organic Industrial Base Mineral Partnerships Act of 2026 — latest ac",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4521"
+      },
+      {
+        "title": "Sponsored SRES695: A resolution commemorating April 6, 2026, as the day the Artemis II cre",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/695"
+      },
+      {
+        "title": "Sponsored S4412: No FED in West Texas Act — latest action: Read twice and referred to the ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4412"
+      },
+      {
+        "title": "Sponsored S4407: CHATBOT Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4407"
+      },
+      {
+        "title": "Sponsored S3966: TREY'S Law — latest action: Held at the desk.",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3966"
+      },
+      {
+        "title": "Sponsored S4340: Stop Climate Shakedowns Act of 2026 — latest action: Read twice and refer",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4340"
+      },
+      {
+        "title": "Sponsored S4063: Polisario Front Terrorist Designation Act of 2026 — latest action: Read t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4063"
+      },
+      {
+        "title": "Sponsored S4009: Falun Gong and Victims of Forced Organ Harvesting Protection Act — latest",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4009"
+      },
+      {
+        "title": "Sponsored S3972: Highway Formula Fairness Act — latest action: Read twice and referred to ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3972"
+      },
+      {
+        "title": "Sponsored S3942: SPONSOR Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3942"
+      },
+      {
+        "title": "Sponsored S3923: Weather Research and Forecasting Innovation Reauthorization Act of 2026 —",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3923"
+      },
+      {
+        "title": "Sponsored S3862: Payment Integrity Act — latest action: Read twice and referred to the Com",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3862"
+      },
+      {
+        "title": "Sponsored S3849: Community Bank Relief Act — latest action: Read twice and referred to the",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3849"
+      },
+      {
+        "title": "Sponsored S3798: Safe Access to Cash Act of 2026 — latest action: Placed on Senate Legisla",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3798"
+      },
+      {
+        "title": "Sponsored S3639: SAT Streamlining Act — latest action: Committee on Commerce, Science, and",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3639"
+      },
+      {
+        "title": "Sponsored S3418: COMPETE Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3418"
+      },
+      {
+        "title": "Sponsored S3263: Stop TSP ESG Act — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3263"
+      },
+      {
+        "title": "Sponsored S3120: Ensuring Predictable and Reliable Water Deliveries Act of 2025 — latest a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3120"
+      },
+      {
+        "title": "Sponsored S3107: USPS Act — latest action: Read twice and referred to the Committee on Hom",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3107"
+      },
+      {
+        "title": "Sponsored S3113: Deporting Fraudsters Act of 2025 — latest action: Read twice and referred",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3113"
+      },
+      {
+        "title": "Sponsored S3081: Reciprocity Ensures Streamlined Use of Lifesaving Treatments Act of 2025 ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3081"
+      },
+      {
+        "title": "Sponsored S3035: Natural Gas Export Expansion Act — latest action: Read twice and referred",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3035"
+      },
+      {
+        "title": "Sponsored SRES463: A resolution expressing condemnation of the Chinese Communist Party's p",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/463"
+      },
+      {
+        "title": "Sponsored S3031: Keep America Flying Act of 2026 — latest action: Read the second time. Pl",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3031"
+      },
+      {
+        "title": "Sponsored S3018: A bill to permit visiting dignitaries and service members from Taiwan to ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3018"
+      },
+      {
+        "title": "Sponsored S3016: Advancing Research in Nuclear Fuel Recycling Act of 2025 — latest action:",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3016"
+      },
+      {
+        "title": "Sponsored S2975: PIPELINE Safety Act of 2025 — latest action: Held at the desk.",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2975"
+      },
+      {
+        "title": "Sponsored S2893: SEVER Act of 2025 — latest action: Read twice and referred to the Committ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2893"
+      },
+      {
+        "title": "Sponsored S2887: Route 66 National Historic Trail Designation Act — latest action: Read tw",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2887"
+      },
+      {
+        "title": "Sponsored S2810: Retirement Freedom Act — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2810"
+      },
+      {
+        "title": "Sponsored S2750: SANDBOX Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2750"
+      },
+      {
+        "title": "Sponsored S2747: Nigeria Religious Freedom Accountability Act of 2025 — latest action: Rea",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2747"
+      },
+      {
+        "title": "Sponsored S2687: CLEAN DC Act — latest action: Read twice and referred to the Committee on",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2687"
+      },
+      {
+        "title": "Sponsored S2583: NOAA Weather Radio Modernization Act — latest action: Read twice and refe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2583"
+      },
+      {
+        "title": "Sponsored S2547: Kate's Law — latest action: Read twice and referred to the Committee on t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2547"
+      },
+      {
+        "title": "Sponsored S2503: ROTOR Act — latest action: On motion to suspend the rules and pass the bi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2503"
+      },
+      {
+        "title": "Sponsored S2506: SkyFoundry Act of 2025 — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2506"
+      },
+      {
+        "title": "Sponsored S2509: Transparency in Reporting of Adversarial Contributions to Education Act —",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2509"
+      },
+      {
+        "title": "Sponsored S817: Falun Gong Protection Act — latest action: Read twice and referred to the ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/817"
+      },
+      {
+        "title": "Sponsored S2010: TERMS Act — latest action: Read twice and referred to the Committee on Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2010"
+      },
+      {
+        "title": "Sponsored S2293: Muslim Brotherhood Terrorist Designation Act of 2025 — latest action: Rea",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2293"
+      },
+      {
+        "title": "Sponsored S2394: A bill to designate the facility of the United States Postal Service loca",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2394"
+      },
+      {
+        "title": "Sponsored S2376: A bill to amend title 18, United States Code, to include rioting in the d",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2376"
+      },
+      {
+        "title": "Sponsored S2351: Space Exploration Research Act — latest action: Placed on Senate Legislat",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2351"
+      },
+      {
+        "title": "Sponsored S2105: Dyess Air Base Access Infrastructure Design Act — latest action: Read twi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2105"
+      },
+      {
+        "title": "Sponsored S2109: Dyess CDC Addition Design Authorization Act — latest action: Read twice a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2109"
+      },
+      {
+        "title": "Sponsored S2080: FLRAA Production Acceleration Act of 2025 — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2080"
+      },
+      {
+        "title": "Sponsored S2075: Future Long Range Assault Aircraft Medical Evacuation and Special Operati",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2075"
+      },
+      {
+        "title": "Sponsored S2056: CREATE JOBS Act — latest action: Read twice and referred to the Committee",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2056"
+      },
+      {
+        "title": "Sponsored S2030: CMV–22 Readiness Enhancement and Industrial Sustainment Act — latest acti",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2030"
+      },
+      {
+        "title": "Sponsored S2025: CMV–22 Reliability and Readiness Enhancement Act — latest action: Read tw",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2025"
+      },
+      {
+        "title": "Sponsored S1976: Skillbridge Congressional Fellowship Act of 2025 — latest action: Read tw",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1976"
+      },
+      {
+        "title": "Sponsored S1951: RESCUE Act of 2025 — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1951"
+      },
+      {
+        "title": "Sponsored SJRES56: Life Month Resolution — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/56"
+      },
+      {
+        "title": "Sponsored S1869: HOVER Act of 2025 — latest action: Read twice and referred to the Committ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1869"
+      },
+      {
+        "title": "Sponsored S1901: Protect LNG Act of 2025 — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1901"
+      },
+      {
+        "title": "Sponsored S1852: IBEM Act of 2025 — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1852"
+      },
+      {
+        "title": "Sponsored S1810: Universal School Choice Act — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1810"
+      },
+      {
+        "title": "Sponsored S1781: LIP Enhancement Act of 2025 — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1781"
+      },
+      {
+        "title": "Sponsored S1718: Invest America Act — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1718"
+      },
+      {
+        "title": "Sponsored S1684: A bill to require audits of institutions with respect to disclosures of f",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1684"
+      },
+      {
+        "title": "Sponsored S1641: RESTORE Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1641"
+      },
+      {
+        "title": "Sponsored S1614: AVIATE Act of 2025 — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1614"
+      },
+      {
+        "title": "Sponsored S1581: Universal Savings Account Act of 2025 — latest action: Read twice and ref",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1581"
+      },
+      {
+        "title": "Sponsored S1510: Civil Rights Cold Case Records Collection Reauthorization Act — latest ac",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1510"
+      },
+      {
+        "title": "Sponsored S1487: LIABLE Act — latest action: Read twice and referred to the Committee on t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1487"
+      },
+      {
+        "title": "Sponsored S1278: Fog Observations and Geographic Forecasting Act — latest action: Placed o",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1278"
+      },
+      {
+        "title": "Sponsored S1244: Education Savings Accounts for Military Families Act of 2025 — latest act",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1244"
+      },
+      {
+        "title": "Sponsored S1188: FLARE Act — latest action: Read twice and referred to the Committee on Fi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1188"
+      },
+      {
+        "title": "Sponsored S1124: Anti-CBDC Surveillance State Act — latest action: Read twice and referred",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1124"
+      },
+      {
+        "title": "Sponsored S1081: Comprehensive NASA Reporting Act of 2025 — latest action: Placed on Senat",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1081"
+      },
+      {
+        "title": "Sponsored S933: NASA Transition Authorization Act of 2025 — latest action: Committee on Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/933"
+      },
+      {
+        "title": "Sponsored S900: Make American Flags in America Act of 2025 — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/900"
+      },
+      {
+        "title": "Sponsored S839: Safeguarding Honest Speech Act — latest action: Read twice and referred to",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/839"
+      },
+      {
+        "title": "Sponsored S798: Capital Gains Inflation Relief Act of 2025 — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/798"
+      },
+      {
+        "title": "Sponsored S802: Pay Our Coast Guard Act — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/802"
+      },
+      {
+        "title": "Sponsored S759: Modernizing Access to Our Public Oceans Act — latest action: Held at the d",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/759"
+      },
+      {
+        "title": "Sponsored S718: Eric’s Law — latest action: Read twice and referred to the Committee on th",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/718"
+      },
+      {
+        "title": "Sponsored S685: Stop Dangerous Sanctuary Cities Act — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/685"
+      },
+      {
+        "title": "Sponsored S677: Border Airport Fairness Act of 2025 — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/677"
+      },
+      {
+        "title": "Sponsored SRES82: An original resolution authorizing expenditures by the Committee on Comm",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/82"
+      },
+      {
+        "title": "Sponsored S615: Chemical Tax Repeal Act — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/615"
+      },
+      {
+        "title": "Sponsored S571: Officer John Barnes Act — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/571"
+      },
+      {
+        "title": "Sponsored S582: Astronaut Ground Travel Support Act — latest action: Star Print ordered on",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/582"
+      },
+      {
+        "title": "Sponsored S512: Agent Raul Gonzalez Officer Safety Act — latest action: Read twice and ref",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/512"
+      },
+      {
+        "title": "Sponsored S524: Coast Guard Authorization Act of 2025 — latest action: Held at the Desk",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/524"
+      },
+      {
+        "title": "Sponsored S496: Wildfire Victim Tax Relief and Recovery Act — latest action: Read twice an",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/496"
+      },
+      {
+        "title": "Sponsored S430: TICKET Act — latest action: Read twice and referred to the Committee on Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/430"
+      },
+      {
+        "title": "Sponsored S442: AIM HIGH Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/442"
+      },
+      {
+        "title": "Sponsored SJRES16: A joint resolution proposing an amendment to the Constitution of the Un",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/16"
+      },
+      {
+        "title": "Sponsored S370: Education Freedom Scholarships and Opportunity Act — latest action: Read t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/370"
+      },
+      {
+        "title": "Sponsored S303: Defund the CFPB Act — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/303"
+      },
+      {
+        "title": "Sponsored S271: Stop Illegal Reentry Act — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/271"
+      },
+      {
+        "title": "Sponsored S276: Personalized Care Act of 2025 — latest action: Read twice and referred to ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/276"
+      },
+      {
+        "title": "Sponsored S283: Illegal Red Snapper and Tuna Enforcement Act — latest action: Held at the ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/283"
+      },
+      {
+        "title": "Sponsored SJRES7: A joint resolution providing for congressional disapproval under chapter",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/7"
+      },
+      {
+        "title": "Sponsored SJRES4: A joint resolution providing for congressional disapproval under chapter",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/4"
+      },
+      {
+        "title": "Sponsored S214: MEDAL Act of 2025 — latest action: Committee on Veterans' Affairs. Hearing",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/214"
+      },
+      {
+        "title": "Sponsored S215: Maintaining Academy Culture and Assuring Retention of Tradition, Honor, an",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/215"
+      },
+      {
+        "title": "Sponsored S218: A bill to designate the area between the intersections of 16th Street, Nor",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/218"
+      },
+      {
+        "title": "Sponsored S197: Protecting Military Installations and Ranges Act of 2025 — latest action: ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/197"
+      },
+      {
+        "title": "Sponsored SJRES3: A joint resolution providing for congressional disapproval under chapter",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/3"
+      },
+      {
+        "title": "Sponsored S152: Student Empowerment Act — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/152"
+      },
+      {
+        "title": "Sponsored S117: AMERICANS Act — latest action: Read twice and referred to the Committee on",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/117"
+      },
+      {
+        "title": "Sponsored S115: GATE CRASHERS Act — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/115"
+      },
+      {
+        "title": "Sponsored S129: No Tax on Tips Act — latest action: Held at the desk.",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/129"
+      },
+      {
+        "title": "Sponsored S143: Natural Gas Tax Repeal Act — latest action: Read twice and referred to the",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/143"
+      },
+      {
+        "title": "Sponsored S146: TAKE IT DOWN Act — latest action: Became Public Law No: 119-12.",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/146"
+      },
+      {
+        "title": "Sponsored S104: Overturn Biden’s Offshore Energy Ban Act — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/104"
+      },
+      {
+        "title": "Sponsored S83: Thin Blue Line Act — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/83"
+      },
+      {
+        "title": "Sponsored S70: A bill to require the imposition of sanctions with respect to Ansarallah an",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/70"
+      },
+      {
+        "title": "Sponsored S72: Justice for Jocelyn Act — latest action: Read twice and referred to the Com",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/72"
+      },
+      {
+        "title": "Sponsored S58: A bill to designate the facility of the United States Postal Service locate",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/58"
+      },
+      {
+        "title": "Sponsored S32: LACA — latest action: Held at the desk.",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/32"
+      },
+      {
+        "title": "Sponsored S28: Informing Consumers about Smart Devices Act — latest action: Placed on Sena",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/28"
+      },
+      {
+        "title": "Sponsored SJRES1: A joint resolution proposing an amendment to the Constitution of the Uni",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/1"
+      },
+      {
+        "title": "Sen. Cruz Concludes Another Successful Year Serving Texas and America | Senator Ted Cruz S",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-concludes-another-successful-year-serving-texas-and-america"
+      },
+      {
+        "title": "Sen. Ted Cruz [R-TX, 2013-2030], Senator for Texas - GovTrack.us Internet Explorer version",
+        "url": "https://www.govtrack.us/congress/members/ted_cruz/412573"
+      },
+      {
+        "title": "Sen. Cruz Statement Following President Trump Signing the MEDAL Act into Law | Senator Ted",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-statement-following-president-trump-signing-the-medal-act-into-law"
+      },
+      {
+        "title": "(PDF) (All Actions) Tracker: ... ... =&gt; 2024-04-20 [displayText] =&gt; Passed/agreed to",
+        "url": "https://www.congress.gov/member/ted-cruz/C001098?q=%7B%22bill-status%22%3A%22law%22%7D"
+      },
+      {
+        "title": "Legislative Wins | Senator Ted Cruz Skip to content Senator Cruz Facebook Senator Cruz Ins",
+        "url": "https://www.cruz.senate.gov/legislative-wins"
+      },
+      {
+        "title": "Sen. Cruz: Another Great Year of Fighting and Winning for Texans | Senator Ted Cruz Skip t",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-another-great-year-of-fighting-and-winning-for-texans"
+      },
+      {
+        "title": "WTAS: Sen. Cruz Leads the Fight for Cryptocurrency | Senator Ted Cruz Skip to content Sena",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/wtas-sen-cruz-leads-the-fight-for-cryptocurrency"
+      },
+      {
+        "title": "Chairman Cruz Releases Updated Budget Reconciliation Text - U.S. Senate Committee on Comme",
+        "url": "https://www.commerce.senate.gov/2025/6/chairman-cruz-releases-updated-budget-reconciliation-text"
+      },
+      {
+        "title": "The Commerce Committee’s reconciliation language will <strong>reduce deficits by more than",
+        "url": "https://www.commerce.senate.gov/2025/6/chairman-cruz-releases-budget-reconciliation-text"
+      },
+      {
+        "title": "WASHINGTON, D.C. – U.S. Sen. <strong>Ted Cruz (R-Texas) today voted against Senate funding",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-votes-against-funding-bill-that-fails-to-secure-the-texas-mexico-border"
+      },
+      {
+        "title": "Array ( [actionDate] =&gt; 2016-09-09 [displayText] =&gt; Passed/agreed to in House: On mo",
+        "url": "https://www.congress.gov/member/ted-cruz/C001098?q=%7B%22bill-status%22:%22veto%22%7D"
+      },
+      {
+        "title": "WASHINGTON, D.C. – U.S. Sen. Ted Cruz (R-Texas), member of the Senate Foreign Relations Co",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-statement-on-foreign-aid-package-vote"
+      },
+      {
+        "title": "Ted Cruz (R-Texas), member of the ... statement after <strong>voting against the Senate&#x",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-votes-against-senate-attempt-to-override-president-trump-and-039s-veto-of-ndaa"
+      },
+      {
+        "title": "Ted Cruz&#x27;s &quot;No Tax on Tips&quot; plan, ... standalone bill. “<strong>Cruz&#x27;s",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/icymi-sen-cruzs-no-tax-on-tips-passes-senate-unanimously_coverage-roundup"
+      },
+      {
+        "title": "Ted Cruz (R-Texas) issued a statement following the passing of his No Tax on Tips Act in t",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruzs-no-tax-on-tips-legislation-passes-senate"
+      },
+      {
+        "title": "Ted Cruz (R-Texas), joined by Sens. Rick Scott (R-Fla.), Jacky Rosen (D-Nev.), Catherine C",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-introduces-bipartisan-bicameral-no-tax-on-tips-act"
+      },
+      {
+        "title": "Cruz’s No Tax on Tips Act, which ... card charges, and checks—from federal income tax by <",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-introduces-the-create-jobs-act"
+      },
+      {
+        "title": "In 2013, Ted was sworn into the United States Senate, where he has been a passionate fight",
+        "url": "https://www.cruz.senate.gov/about-ted"
+      },
+      {
+        "title": "Ted Cruz (R-Texas), Chairman of ... statement after President Donald Trump signed into law",
+        "url": "https://www.cruz.senate.gov/newsroom/statements"
+      },
+      {
+        "title": "WASHINGTON, D.C. – In his opening statement at today’s Senate Commerce Committee hearing t",
+        "url": "https://www.commerce.senate.gov/press/rep/release/sen-cruz-big-tech-caved-to-biden-pressure-to-censure/"
+      },
+      {
+        "title": "He is also leading the fight in the Senate to support Texas jobs, <strong>hold Big Tech ac",
+        "url": "https://www.commerce.senate.gov/about/chair/"
+      },
+      {
+        "title": "Klobuchar said: “One year ago, the <strong>TAKE IT DOWN Act</strong> was signed into law –",
+        "url": "https://www.commerce.senate.gov/press/rep/release/cruz-klobuchar-mark-one-year-of-take-it-down-act-as-ftc-enforcement-begins/"
+      },
+      {
+        "title": "Ted Cruz (R-Texas) today issued the following statement after the <strong>Aircraft Safety ",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-applauds-commerce-committee-and-039s-passage-of-bipartisan-aircraft-safety-and-certification-reform-act"
+      },
+      {
+        "title": "Here are Sen. Cruz’s remarks as prepared for delivery: “It&#x27;s been nearly one year sin",
+        "url": "https://www.commerce.senate.gov/2025/5/sen-cruz-bold-thinking-needed-to-set-faa-up-for-long-term-success"
+      },
+      {
+        "title": "“I’ve been sounding the alarm about close calls and aging equipment for years, and while o",
+        "url": "https://www.commerce.senate.gov/press/dem/release/commerce-committee-approves-cantwell-cruz-bipartisan-aviation-safety-bill/"
+      },
+      {
+        "title": "S. 146: TAKE IT DOWN Act Sponsor: Sen. Ted Cruz [R-TX] Status: Enacted — Signed by the Pre",
+        "url": "https://www.govtrack.us/congress/committees/SSCM"
+      },
+      {
+        "title": "Jerry Moran (R-Kan.), Chairman ... he and Ranking Member Maria Cantwell (D-Wash.) <strong>",
+        "url": "https://www.commerce.senate.gov/2025/12/chairman-cruz-senate-passage-of-rotor-act-a-key-step-for-aviation-safety"
+      },
+      {
+        "title": "Jerry Moran (R-Kan.), Chairman ... and Ranking Member Maria Cantwell (D-Wash.) <strong>rea",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-senate-passage-of-rotor-act-a-key-step-for-aviation-safety"
+      },
+      {
+        "title": "WASHINGTON, D.C. – U.S. Senate Commerce, Science, and Transportation Committee Chairman Te",
+        "url": "https://www.commerce.senate.gov/press/rep/release/sen-cruz-demands-olympics-protect-womens-sports/"
+      },
+      {
+        "title": "Please update your browser to ensure your payment is secure. Pay.gov requires the use of c",
+        "url": "https://www.pay.gov/public/form/start/71654715"
+      },
+      {
+        "title": "<strong>In 2024 Congress passed and the President signed into law the All-American Flag Ac",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-introduces-the-make-american-flags-in-america-act-of-2025"
+      },
+      {
+        "title": "Senator Ted Cruz said, &quot;There is bipartisan agreement that American flags should be p",
+        "url": "https://www.rickscott.senate.gov/2025/3/sens-rick-scott-ted-cruz-and-thom-tillis-lead-bill-to-require-american-flags-be-made-in-america"
+      },
+      {
+        "title": "Ted Cruz (R-Texas), member of the Senate Judiciary Committee, issued the following stateme",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-applauds-as-white-house-backtracks-on-nomination-of-two-unqualified-judicial-nominees"
+      },
+      {
+        "title": "Because our decision is based on ... will of the American people, <strong>this Committee w",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-joins-senate-judiciary-committee-letter-opposing-hearings-for-a-supreme-court-nominee"
+      },
+      {
+        "title": "Sen. Risch said, &quot;Democrats’ attempts to pack the Supreme Court with radical appointe",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-introduces-constitutional-amendment-to-prevent-democrats-from-court-packing-the-supreme-court"
+      },
+      {
+        "title": "In November, Sen. Cruz sent a letter requesting that U.S. Attorney General Pam Bondi unsea",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-chairs-hearing-on-judicial-overreach-urges-impeachment-of-judges-boasberg-and-boardman"
+      },
+      {
+        "title": "Ted Cruz (R): No statement found, but opposed Obama EPA&#x27;s Clean Power Plan &amp; said",
+        "url": "https://ontheissues.org/domestic/Ted_Cruz_Environment.htm"
+      },
+      {
+        "title": "<strong>Illegal, Unreported, and Unregulated (IUU) fishing activities violate both nationa",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sens-cruz-schatz-britt-and-tuberville-introduce-bill-targeting-illegal-fishing-operations"
+      },
+      {
+        "title": "WASHINGTON, D.C. – The United States Senate passed the <strong>Illegal Red Snapper and Tun",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/cruz-led-bipartisan-bill-to-protect-livelihoods-of-texas-fishermen-passes-the-senate"
+      },
+      {
+        "title": "WASHINGTON, D.C. – Today, the United States Senate passed the <strong>Illegal Red Snapper ",
+        "url": "https://www.commerce.senate.gov/press/rep/release/cruz-led-bipartisan-bill-to-protect-livelihoods-of-texas-fishermen-passes-the-senate-2025-7/"
+      },
+      {
+        "title": "Sen. Cruz said, “I’m deeply grateful to my colleagues in Congress and to President Trump f",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/cruz-cornyn-bill-to-make-jocelyn-nungaray-national-wildlife-refuge-signed-into-law"
+      },
+      {
+        "title": "Almost one year later, however, Texas cannot begin to utilize this important funding becau",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sens-cruz-cornyn-gov-abbott-texas-delegation-urge-administration-to-release-billions-in-hurricane-harvey-response-funds"
+      },
+      {
+        "title": "I have spoken to the president multiple times throughout the course of this storm from the",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-and-lsquotexas-will-rebuild-and-rsquo"
+      },
+      {
+        "title": "&quot;Simply put, Democrats exploited the need for relief to advance their political agend",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-badly-needed-covid-relief-should-have-passed-as-standalone-bill-months-ago-not-in-taxpayer-funded-spending-spree"
+      },
+      {
+        "title": "More than half of all chambers have less than 10 percent of annual revenues worth of cash ",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-to-sba-if-we-allow-chambers-of-commerce-to-go-under-it-will-seriously-delay-our-economy-and-146s-ability-to-recover-from-this-crisis"
+      },
+      {
+        "title": "Cruz has spearheaded the fight to hold Mexico accountable and encourage compliance with th",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sens-cruz-cornyn-file-amendment-creating-new-framework-to-ensure-mexican-compliance-with-water-treaty-obligations"
+      },
+      {
+        "title": "Cruz championed a provision providing ... and Rio Grande Rivers. Sens. <strong>Cruz and Jo",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-introduces-legislation-to-hold-mexico-accountable-for-lack-of-water-deliveries-to-texas"
+      },
+      {
+        "title": "&quot;<strong>The Space Frontier Act</strong> builds upon the U.S. Commercial Space Launch",
+        "url": "https://www.cruz.senate.gov/newsroom/press-releases/sen-cruz-applauds-commerce-committee-and-039s-passage-of-e-frontier-act-and-space-frontier-act"
+      },
+      {
+        "title": "Ted Cruz represents 30 million Texans in the U.S. Senate as a passionate fighter for limit",
+        "url": "https://www.commerce.senate.gov/chair"
+      },
+      {
+        "title": "Cruz’s efforts to encourage American innovation through Chips manufacturing: During a Sena",
+        "url": "https://www.commerce.senate.gov/press/rep/release/landmark-bipartisan-cruz-kelly-chips-permitting-reform-bill-heads-to-potus-desk-2024-9/"
+      },
+      {
+        "title": "Cruz’s efforts to encourage American innovation through Chips manufacturing: During a Sena",
+        "url": "https://www.commerce.senate.gov/press/rep/release/sen-cruz-celebrates-presidential-signing-of-landmark-bipartisan-cruz-kelly-chips-permitting-reform-bill-into-law-2024-10/"
+      },
+      {
+        "title": "In opening statement at hearing on AI and Data Privacy, Cruz calls for balance of privacy ",
+        "url": "https://www.commerce.senate.gov/press/rep/release/sen-cruz-attempts-to-regulate-the-totality-of-the-internet-will-hurt-us-prosperity-global-competitiveness-2024-7/"
+      }
+    ]
+  }
+}

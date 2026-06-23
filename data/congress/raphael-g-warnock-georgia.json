@@ -1,0 +1,776 @@
+{
+  "official": {
+    "name": "Raphael G. Warnock",
+    "role": "U.S. Senator",
+    "jurisdiction": "GA",
+    "party": "Democrat",
+    "term_start": "2023-01-03",
+    "term_end": "2029-01-03",
+    "election_date": "2022-11-01",
+    "next_election": "2028-11-01",
+    "office_phone": "202-224-3643",
+    "office_address": "717 Hart Senate Office Building Washington DC 20510",
+    "office_website": "https://www.warnock.senate.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 40.89,
+    "delivery_ratio": 0.3333,
+    "narrative": "Warnock's strongest documented delivery this period is the enacted $35 insulin cap for Medicare seniors, which he primarily sponsored. On healthcare and housing affordability he sponsored multiple bills (Bridge to Medicaid, Stop Predatory Investing, Downpayment Toward Equity, Rent Relief), most of which remain in committee. His voting-rights and anti-gerrymandering commitments are documented through introduced legislation and consistent public advocacy but have not been enacted, reflecting dependence on a non-aligned Congress.",
+    "grade_rationale": "The record pairs one fully enacted, high-clarity quantitative win (insulin cap) with several specific, ambitious bills that reached only introduction or committee stage, plus directional commitments tied to broad national legislation outside his unilateral control. The pattern is consistent legislative action and advocacy with limited enactment beyond the insulin measure.",
+    "ambition_level": "High",
+    "total_promises": 9,
+    "total": 9
+  },
+  "promises": [
+    {
+      "text": "Expand Medicaid in Georgia and push state leaders to accept Medicaid expansion",
+      "domain_label": "Healthcare",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.5,
+      "promise_score": 14.1,
+      "what_happened": [
+        "2024-07-11: Sponsored S4684 Bridge to Medicaid Act of 2024, referred to Committee on Finance",
+        "2026-05-21: Publicly urged Georgia state leaders to expand Medicaid at Atlanta Press Club"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S4684: Bridge to Medicaid Act of 2024 — latest action: Read twice and referred t",
+          "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4684"
+        },
+        {
+          "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
+          "url": "https://www.warnock.senate.gov/newsroom/press-releases/warnock-speaks-to-atlanta-press-club-on-voting-rights-gerrymandering-affordability/"
+        }
+      ]
+    },
+    {
+      "text": "Cap the cost of insulin for seniors at $35 a month",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "S.4011 (117th) Capping Drug Costs for Seniors Act listed as enacted legislation primarily sponsored by Warnock (c19)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sen. Raphael Warnock [D-GA, 2021-2028], Senator for Georgia - GovTrack.us Internet Explore",
+          "url": "https://www.govtrack.us/congress/members/raphael_warnock/456858"
+        },
+        {
+          "title": "About The Senator &#187; Reverend Raphael Warnock Skip to content Search About About The S",
+          "url": "https://www.warnock.senate.gov/about/"
+        },
+        {
+          "title": "Throughout his 2022 campaign, Walker has criticized federal-level Democrats for high gas p",
+          "url": "https://www.gpb.org/news/2022/12/02/us-senate-race-voter-guide-warnock-walker-on-the-issues"
+        },
+        {
+          "title": "Raphael Warnock (D) and Herschel Walker (R) are running in the runoff for U.S. Senate in G",
+          "url": "https://news.ballotpedia.org/2022/11/23/raphael-warnock-d-and-herschel-walker-r-are-running-in-the-runoff-for-u-s-senate-in-georgia/"
+        }
+      ]
+    },
+    {
+      "text": "Allow Medicare to negotiate prescription drug prices",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 3.0,
+      "promise_score": 13.8,
+      "what_happened": [
+        "Documented championing of efforts to lower prescription drug costs for seniors (c26)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Throughout his 2022 campaign, Walker has criticized federal-level Democrats for high gas p",
+          "url": "https://www.gpb.org/news/2022/12/02/us-senate-race-voter-guide-warnock-walker-on-the-issues"
+        },
+        {
+          "title": "“There is no question that people are feeling pain at the grocery store, at the pharmacy c",
+          "url": "https://www.gpb.org/news/2022/10/14/raphael-warnock-herschel-walker-clash-in-us-senate-debate"
+        }
+      ]
+    },
+    {
+      "text": "Protect, improve, and build upon the Affordable Care Act",
+      "domain_label": "Healthcare",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.4,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 2.4,
+      "difficulty_earned": 2.5,
+      "promise_score": 9.9,
+      "what_happened": [
+        "Documented support for expanding the Affordable Care Act (c141)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "The New Georgia Project raised and spent millions of dollars in its partisan efforts and f",
+          "url": "https://en.wikipedia.org/wiki/Raphael_Warnock"
+        },
+        {
+          "title": "Sponsored S4684: Bridge to Medicaid Act of 2024 — latest action: Read twice and referred t",
+          "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4684"
+        }
+      ]
+    },
+    {
+      "text": "Stand up against any effort to raise the Medicare eligibility age",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "low",
+      "delivery": "D4",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 3.0,
+      "promise_score": 13.8,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sen. Raphael Warnock [D-GA, 2021-2028], Senator for Georgia - GovTrack.us Internet Explore",
+          "url": "https://www.govtrack.us/congress/members/raphael_warnock/456858"
+        }
+      ]
+    },
+    {
+      "text": "Pass the John Lewis Voting Rights Advancement Act",
+      "domain_label": "Governance",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 10.55,
+      "what_happened": [
+        "2023-07-27: Sponsored S2575 Preventing Election Subversion Act, referred to committee",
+        "2026-05-21: Publicly advocated passage of the John Lewis Voting Rights Advancement Act at Atlanta Press Club"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
+          "url": "https://www.warnock.senate.gov/newsroom/press-releases/warnock-speaks-to-atlanta-press-club-on-voting-rights-gerrymandering-affordability/"
+        },
+        {
+          "title": "The New Georgia Project raised and spent millions of dollars in its partisan efforts and f",
+          "url": "https://en.wikipedia.org/wiki/Raphael_Warnock"
+        },
+        {
+          "title": "Sponsored S2575: Preventing Election Subversion Act of 2023 — latest action: Read twice an",
+          "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2575"
+        }
+      ]
+    },
+    {
+      "text": "Pass the Freedom to Vote Act to protect voters' ability to participate in elections",
+      "domain_label": "Governance",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 10.55,
+      "what_happened": [
+        "2026-05-21: Publicly advocated passage of the Freedom to Vote Act at Atlanta Press Club (c25)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
+          "url": "https://www.warnock.senate.gov/newsroom/press-releases/warnock-speaks-to-atlanta-press-club-on-voting-rights-gerrymandering-affordability/"
+        }
+      ]
+    },
+    {
+      "text": "Pass legislation banning partisan gerrymandering nationwide",
+      "domain_label": "Governance",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 13.1,
+      "what_happened": [
+        "2026-05-21: Official release states Warnock introduced legislation to ban partisan gerrymandering nationwide (c25)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Warnock Speaks to Atlanta Press Club on Voting Rights, Gerrymandering, Affordability &#187",
+          "url": "https://www.warnock.senate.gov/newsroom/press-releases/warnock-speaks-to-atlanta-press-club-on-voting-rights-gerrymandering-affordability/"
+        }
+      ]
+    },
+    {
+      "text": "Limit the number of properties private equity firms can own and incentivize construction of more homes",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 13.1,
+      "what_happened": [
+        "2025-03-11: Sponsored S969 Stop Predatory Investing Act, referred to Committee on Finance",
+        "2025-03-11: Sponsored S967 Downpayment Toward Equity Act and S968 Rent Relief Act",
+        "2026-03-17: Atlanta Mayor Dickens endorsed Warnock's provision to ban large private equity firms from acquiring single-family homes (c145)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S969: Stop Predatory Investing Act — latest action: Read twice and referred to t",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/969"
+        },
+        {
+          "title": "Sponsored S967: Downpayment Toward Equity Act of 2025 — latest action: Read twice and refe",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/967"
+        },
+        {
+          "title": "Sponsored S968: Rent Relief Act of 2025 — latest action: Read twice and referred to the Co",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/968"
+        },
+        {
+          "title": "Mayor Dickens endorses Warnock&#x27;s housing provision: Atlanta Mayor Andre Dickens has p",
+          "url": "https://www.quiverquant.com/news/Press+Release:+Atlanta+Mayor+Andre+Dickens+Endorses+Senator+Warnock's+Provision+to+Ban+Private+Equity+in+Housing"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Several promises restated in 2026 official press releases (c25) are treated as continuations of campaign-era commitments per the era-confirmation note; some delivery attributions (Medicare negotiation, ACA) rely on broad reconciliation context rather than Warnock-specific sponsorship and carry LIMITED EVIDENCE. No promise-stated deadlines were available, so all time_pressure values are null. Excluded items (reproductive justice, infrastructure/green jobs, decriminalize marijuana, Equality Act, police accountability) were either value statements, lacked confirmable delivery evidence in the material, or were not reachable with confident bucket assignment; they could be revisited with additional sources."
+  ],
+  "term_identity": {
+    "term_id": "us-sen-ga-2023",
+    "ordinal": "2nd Senate term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 57.8,
+    "office": "U.S. Senator",
+    "jurisdiction": "GA",
+    "term_start": "2023-01-03",
+    "term_end": "2029-01-03"
+  },
+  "person_ref": "raphael-g-warnock",
+  "sibling_terms": [
+    {
+      "term_id": "us-sen-ga-2021",
+      "label": "U.S. Senator 2021–2023",
+      "status": "completed",
+      "grade": null
+    }
+  ],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 57.8,
+    "display": "Grade is record-to-date — term in progress, 57.8% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-sen-ga-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:34:11+00:00",
+    "generated_at": "2026-06-22T22:35:11+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Protect, improve, and build upon the Affordable Care Act",
+        "url": "https://ontheissues.org/Social/Raphael_Warnock_Health_Care.htm"
+      },
+      {
+        "title": "Cap the cost of insulin for seniors at $35 a month",
+        "url": "https://news.ballotpedia.org/2022/11/23/raphael-warnock-d-and-herschel-walker-r-are-running-in-the-runoff-for-u-s-senate-in-georgia/"
+      },
+      {
+        "title": "Pass the John Lewis Voting Rights Advancement Act",
+        "url": "https://www.warnock.senate.gov/newsroom/press-releases/warnock-speaks-to-atlanta-press-club-on-voting-rights-gerrymandering-affordability/"
+      },
+      {
+        "title": "Support reproductive justice and a woman's right to choose, opposing restrictions on abort",
+        "url": "https://ontheissues.org/Social/Raphael_Warnock_Abortion.htm"
+      },
+      {
+        "title": "Invest in infrastructure and green energy jobs",
+        "url": "https://ontheissues.org/Senate/Raphael_Warnock.htm"
+      },
+      {
+        "title": "Home &#187; Reverend Raphael Warnock Skip to content Search About About The Senator Legisl",
+        "url": "https://www.warnock.senate.gov/"
+      },
+      {
+        "title": "Sen. Raphael Warnock [D-GA, 2021-2028], Senator for Georgia - GovTrack.us Internet Explore",
+        "url": "https://www.govtrack.us/congress/members/raphael_warnock/456858"
+      },
+      {
+        "title": "Incumbent Raphael Warnock and Herschel Walker advanced to a runoff. They defeated Chase Ol",
+        "url": "https://ballotpedia.org/Raphael_Warnock"
+      },
+      {
+        "title": "Raphael Warnock won his seat running as an activist preacher. To keep it he’ll have to per",
+        "url": "https://www.politico.com/news/magazine/2022/08/05/raphael-warnock-georgia-senate-2022-profile-00049352"
+      },
+      {
+        "title": "Mr. Warnock, a pastor known for enlivening audiences on the stump and from the pulpit, has",
+        "url": "https://www.nytimes.com/2022/10/12/us/politics/raphael-warnock-georgia.html"
+      },
+      {
+        "title": "Raphael Warnock - The New York Times Skip to content Skip to site index Politics Today’s P",
+        "url": "https://www.nytimes.com/spotlight/raphael-warnock"
+      },
+      {
+        "title": "Walker has been dogged by scandals, gaffes and more: <strong>A stream of allegations that ",
+        "url": "https://www.politico.com/news/2022/12/05/warnock-walker-georgia-senate-runoff-2022-00072147"
+      },
+      {
+        "title": "Sure, he&#x27;d be the 51st Democrat in the Senate. But more than that, he&#x27;s doing ha",
+        "url": "https://www.washingtonpost.com/opinions/2022/11/28/georgians-reelect-raphael-warnock/"
+      },
+      {
+        "title": "14, 2022Updated April 30, 2025 ... SAVANNAH, Ga. — The former football great Herschel Walk",
+        "url": "https://www.nytimes.com/live/2022/10/14/us/walker-warnock-debate-georgia"
+      },
+      {
+        "title": "October 14, 2022 at 8:23 p.m. EDT|Published October 14, 2022 at 6:59 a.m. EDT · Sen. Rapha",
+        "url": "https://www.washingtonpost.com/politics/2022/10/14/warnock-walker-debate-trump-subpoena/"
+      },
+      {
+        "title": "The Libertarian candidate for Senate in Georgia, Chase Oliver, left, and Senator Raphael W",
+        "url": "https://www.nytimes.com/2022/10/14/us/politics/warnock-georgia-senate-debate.html"
+      },
+      {
+        "title": "Senate Georgia on November 8, 2022. ... Incumbent Raphael Warnock defeated Tamara Johnson-",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2022"
+      },
+      {
+        "title": "Since no candidate won a majority ... to represent Georgia in the U.S. Senate since 2005. ",
+        "url": "https://news.ballotpedia.org/2022/08/15/incumbent-raphael-warnock-herschel-walker-and-chase-oliver-are-running-to-represent-georgia-in-the-u-s-senate/"
+      },
+      {
+        "title": "<strong>A Democratic Party primary took place on May 24, 2022, in Georgia to determine whi",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2022_(May_24_Democratic_primary)"
+      },
+      {
+        "title": "See also: United States Senate election in Georgia, 2022 · Incumbent Raphael Warnock (D) a",
+        "url": "https://ballotpedia.org/United_States_Senate_elections,_2022"
+      },
+      {
+        "title": "Incumbent Raphael Warnock (D) <strong>defeated Herschel Walker (R) in the runoff election ",
+        "url": "https://news.ballotpedia.org/2022/12/07/warnock-d-defeats-walker-r-in-the-runoff-election-for-u-s-senate-in-georgia/"
+      },
+      {
+        "title": "May 24, 2022: Warnock and Walker advanced to the general election from Georgia’s Democrati",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2022_(November_8_general_election)"
+      },
+      {
+        "title": "Senate Georgia on November 8, 2022. ... Incumbent Raphael Warnock defeated Tamara Johnson-",
+        "url": "https://ballotpedia.org/Tamara_Johnson-Shealey"
+      },
+      {
+        "title": "May 24, 2022: Warnock and Walker advanced to the general election from Georgia’s Democrati",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2022_(December_6_runoff)"
+      },
+      {
+        "title": "&quot;Both Ossoff and Warnock will prioritize the passage of the Equality Act if elected, ",
+        "url": "https://www.ontheissues.org/domestic/Raphael_Warnock_Civil_Rights.htm"
+      },
+      {
+        "title": "Raphael Warnock: Tighten. &quot;Environmental justice is on the ballot.&quot; Nothing is &",
+        "url": "https://www.ontheissues.org/Domestic/Raphael_Warnock_Environment.htm"
+      },
+      {
+        "title": "Warnock opposes the Christian Coalition survey question on tax cuts · The Christian Coalit",
+        "url": "https://www.ontheissues.org/Economic/Raphael_Warnock_Tax_Reform.htm"
+      },
+      {
+        "title": "Reverend Warnock will advance America&#x27;s values around the world and commits to suppor",
+        "url": "https://www.ontheissues.org/International/Raphael_Warnock_Foreign_Policy.htm"
+      },
+      {
+        "title": "Raphael Warnock: No. Immigration is &quot;desperately broken.&quot; Cites Jesus as an &quo",
+        "url": "https://www.ontheissues.org/international/Raphael_Warnock_Immigration.htm"
+      },
+      {
+        "title": "No stance on record. Click here for definitions &amp; background information on Free Trade",
+        "url": "https://www.ontheissues.org/International/Raphael_Warnock_Free_Trade.htm"
+      },
+      {
+        "title": "<strong>2025 Incoming Ambassadors</strong> · Vance-Walz debate (Oct. 1, 2024) Trump-Harris",
+        "url": "https://recent.ontheissues.org/Domestic/Raphael_Warnock_Drugs.htm"
+      },
+      {
+        "title": "U.S. Senate (GA) - Jr, Democratic ... Official Position: Candidate addressed this issue di",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/189794/raphael-warnock"
+      },
+      {
+        "title": "U.S. Senate (GA) - Jr, Democratic",
+        "url": "https://justfacts.votesmart.org/candidate/189794/raphael-warnock"
+      },
+      {
+        "title": "U.S. Senate (GA) - Jr, Democratic",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/189794/raphael-warnock"
+      },
+      {
+        "title": "U.S. Senate (GA) - Jr, Democratic",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/189794/raphael-warnock"
+      },
+      {
+        "title": "U.S. Senate (GA) - Jr, Democratic",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/189794/raphael-warnock/22/defense"
+      },
+      {
+        "title": "Police brutality needs to be addressed, but we as a nation need to encourage good policing",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/188718/kelly-loeffler"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://static.votesmart.org/static/pdf/2022_VSDM.pdf"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "I have demonstrated my Political ...strict:_______________ Date: ________________________ ",
+        "url": "https://justfacts.votesmart.org/static/pdfs/forcandidates/states/2022_NY_PCT.pdf"
+      },
+      {
+        "title": "If you are a candidate for an office that Vote Smart covers (Presidential, Congressional, ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Please wait...your file download will begin shortly · If your download does not begin soon",
+        "url": "https://newdemocratcoalition.house.gov/download/100-day-agenda-wtas-doc"
+      },
+      {
+        "title": "Raphael G. Warnock, the Senator from Georgia - in Congress from 2021 through Present",
+        "url": "https://www.congress.gov/member/raphael-warnock/W000790"
+      },
+      {
+        "title": "THE PUBLIC POLICY CENTER OF · THE CONFERENCE BOARD · SOLUTIONS BRIEF · A series focused on",
+        "url": "https://files.eric.ed.gov/fulltext/ED614040.pdf"
+      },
+      {
+        "title": "Sponsored SJRES172: A joint resolution to direct the removal of United States Armed Forces",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/172"
+      },
+      {
+        "title": "Sponsored S4195: Kira Johnson Act — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4195"
+      },
+      {
+        "title": "Sponsored S4167: HBCU Research Capacity Act — latest action: Read twice and referred to th",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4167"
+      },
+      {
+        "title": "Sponsored SJRES140: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/140"
+      },
+      {
+        "title": "Sponsored SJRES141: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/141"
+      },
+      {
+        "title": "Sponsored S4119: Student Loan Marriage Penalty Elimination Act of 2026 — latest action: Re",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4119"
+      },
+      {
+        "title": "Sponsored SRES584: A resolution honoring the life and legacy of Reverend Richard Smallwood",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/584"
+      },
+      {
+        "title": "Sponsored SRES534: Original Resolution Honoring Alpha Phi Alpha — latest action: Referred ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/534"
+      },
+      {
+        "title": "Sponsored SRES512: A resolution designating November 30, 2025, as \"Drive Safer Sunday\". — ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/512"
+      },
+      {
+        "title": "Sponsored S3185: ANCHOR for Military Families Act — latest action: Read twice and referred",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3185"
+      },
+      {
+        "title": "Sponsored S2772: Commissary Healthy Options and servicemember Welfare (CHOW) Act — latest ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2772"
+      },
+      {
+        "title": "Sponsored S2628: Catastrophic Specialty Hospital Act of 2025 — latest action: Read twice a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2628"
+      },
+      {
+        "title": "Sponsored S2322: Appraisal Modernization Act — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2322"
+      },
+      {
+        "title": "Sponsored S2454: Fair Debt Collection Practices for Servicemembers Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2454"
+      },
+      {
+        "title": "Sponsored S2323: HEADWAY Act — latest action: Committee on Health, Education, Labor, and P",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2323"
+      },
+      {
+        "title": "Sponsored S2131: Dads Matter Act of 2025 — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2131"
+      },
+      {
+        "title": "Sponsored S2050: ASSIST Act — latest action: Read twice and referred to the Committee on F",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2050"
+      },
+      {
+        "title": "Sponsored S1939: BARK Act of 2025 — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1939"
+      },
+      {
+        "title": "Sponsored S1438: Disaster Related Extension of Deadlines Act — latest action: Read twice a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1438"
+      },
+      {
+        "title": "Sponsored S1122: BAH Restoration Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1122"
+      },
+      {
+        "title": "Sponsored S967: Downpayment Toward Equity Act of 2025 — latest action: Read twice and refe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/967"
+      },
+      {
+        "title": "Sponsored S968: Rent Relief Act of 2025 — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/968"
+      },
+      {
+        "title": "Sponsored S969: Stop Predatory Investing Act — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/969"
+      },
+      {
+        "title": "Sponsored S529: Capping Prescription Costs Act of 2025 — latest action: Read twice and ref",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/529"
+      },
+      {
+        "title": "Sponsored SRES19: A resolution honoring the life and legacy of President Jimmy Carter and ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/19"
+      },
+      {
+        "title": "Sponsored SRES911: A resolution designating December 1, 2024, as \"Drive Safer Sunday\". — l",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/911"
+      },
+      {
+        "title": "Sponsored SRES903: A resolution expressing support for the designation of November 8, 2024",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/903"
+      },
+      {
+        "title": "Sponsored SRES894: A resolution designating December 1, 2024, as \"Drive Safer Sunday\". — l",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/894"
+      },
+      {
+        "title": "Sponsored S5328: A bill to direct the Secretary of Commerce to submit to Congress a report",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5328"
+      },
+      {
+        "title": "Sponsored SRES811: A resolution condemning the horrific shooting at Apalachee High School ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/811"
+      },
+      {
+        "title": "Sponsored S4854: MHPI Act — latest action: Read twice and referred to the Committee on Arm",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4854"
+      },
+      {
+        "title": "Sponsored S954: Affordable Insulin Now Act of 2023 — latest action: Committee on Banking, ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/954"
+      },
+      {
+        "title": "Sponsored S4684: Bridge to Medicaid Act of 2024 — latest action: Read twice and referred t",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4684"
+      },
+      {
+        "title": "Sponsored SCONRES37: A concurrent resolution recognizing the significance of equal pay and",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-concurrent-resolution/37"
+      },
+      {
+        "title": "Sponsored S4580: Pathways to Prosperity Act — latest action: Read twice and referred to th",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4580"
+      },
+      {
+        "title": "Sponsored S4522: Dads Matter Act of 2024 — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4522"
+      },
+      {
+        "title": "Sponsored S4352: Benton MacKaye National Scenic Trail Feasibility Study Act of 2024 — late",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4352"
+      },
+      {
+        "title": "Sponsored S4272: Shirley Chisholm Statue Act — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4272"
+      },
+      {
+        "title": "Sponsored S2682: Protecting America’s Orchardists and Nursery Tree Growers Act — latest ac",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2682"
+      },
+      {
+        "title": "Sponsored S4170: Southern CROPS Act — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4170"
+      },
+      {
+        "title": "Sponsored S1935: AIRWAYS Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1935"
+      },
+      {
+        "title": "Sponsored S3930: Downpayment Toward Equity Act of 2024 — latest action: Read twice and ref",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3930"
+      },
+      {
+        "title": "Sponsored S2977: Increase America’s Research Capacity Act of 2023 — latest action: Read tw",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2977"
+      },
+      {
+        "title": "Sponsored SRES500: A resolution designating November 8, 2023, as \"National First-Generatio",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/500"
+      },
+      {
+        "title": "Sponsored SRES492: A resolution honoring the life of the First Lady Rosalynn Carter. — lat",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/492"
+      },
+      {
+        "title": "Sponsored SRES468: A resolution designating November 26, 2023, as \"Drive Safer Sunday\". — ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/468"
+      },
+      {
+        "title": "Sponsored S2832: HEADWAY Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2832"
+      },
+      {
+        "title": "Sponsored S2575: Preventing Election Subversion Act of 2023 — latest action: Read twice an",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2575"
+      },
+      {
+        "title": "Sponsored S2478: Mighty Eighth Air Force National Museum Act — latest action: Read twice a",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2478"
+      },
+      {
+        "title": "Sponsored S2239: Kira Johnson Act — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2239"
+      },
+      {
+        "title": "Sponsored S2396: Fair Debt Collection Practices for Servicemembers Act — latest action: Re",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2396"
+      },
+      {
+        "title": "Sponsored S2370: BARK Act of 2023 — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2370"
+      },
+      {
+        "title": "Sponsored S1962: AAERO Act — latest action: Read twice and referred to the Committee on Co",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1962"
+      },
+      {
+        "title": "Sponsored S1823: BAH Restoration Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1823"
+      },
+      {
+        "title": "Sponsored SRES256: A resolution recognizing Father's Day and the role of father engagement",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/256"
+      },
+      {
+        "title": "Sponsored S1933: DCA Act — latest action: Read twice and referred to the Committee on Comm",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1933"
+      },
+      {
+        "title": "Sponsored S1774: ASSIST Act — latest action: Read twice and referred to the Committee on F",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1774"
+      },
+      {
+        "title": "Sponsored S1506: FAA Advancements Act — latest action: Read twice and referred to the Comm",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1506"
+      },
+      {
+        "title": "Sponsored S759: Beagle Brigade Act of 2023 — latest action: Became Public Law No: 118-191.",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/759"
+      },
+      {
+        "title": "Sponsored S882: State and Local General Sales Tax Protection Act — latest action: Read twi",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/882"
+      },
+      {
+        "title": "Sponsored S3257: Sgt. Isaac Woodard, Jr. and Sgt. Joseph H. Maddox GI Bill Restoration Act",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3257"
+      },
+      {
+        "title": "Sponsored S3647: Justice for Former American Hostages in Iran Act of 2024 — latest action:",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3647"
+      },
+      {
+        "title": "Raphael G. Warnock, the Senator from Georgia - in Congress from 2021 through Present",
+        "url": "https://www.congress.gov/member/raphael-warnock/W000790?page=4"
+      },
+      {
+        "title": "About The Senator &#187; Reverend Raphael Warnock Skip to content Search About About The S",
+        "url": "https://www.warnock.senate.gov/about/"
+      }
+    ]
+  }
+}

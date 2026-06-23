@@ -1,0 +1,972 @@
+{
+  "official": {
+    "name": "Alexandria Ocasio-Cortez",
+    "role": "U.S. Representative",
+    "jurisdiction": "NY",
+    "party": "Democrat",
+    "term_start": "2019-01-03",
+    "term_end": "2027-01-03",
+    "election_date": "2018-11-01",
+    "next_election": "2026-11-01",
+    "office_phone": "202-225-3965",
+    "office_address": "250 Cannon House Office Building Washington DC 20515-3214",
+    "office_website": "https://ocasio-cortez.house.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 34.49,
+    "delivery_ratio": 0.25,
+    "narrative": "On her core 2018 campaign agenda, Ocasio-Cortez has been a consistent and visible sponsor and advocate but has secured few enacted outcomes this term. Several commitments — universal background checks, the $15 minimum wage, and anti-discrimination protections — passed the House but died in the Senate, while signature items like Medicare for All, the Green New Deal, tuition-free college, student debt cancellation, and Hyde repeal remain at the advocacy or bill-introduction stage. The dominant pattern is sustained legislative effort and sponsorship constrained by a chamber she does not control and a Senate that blocked one-chamber wins.",
+    "grade_rationale": "The record shows high ambition and documented action (sponsored bills, votes, petitions, House passage on several items), but most high-magnitude promises stalled at D1-D3 because enactment depended on a Senate and external actors not aligned with her; only background checks, the $15 wage, and the Equality Act reached one-chamber passage, none became law. Delivery is concentrated in advocacy/introduction milestones rather than enacted outcomes, with her causal role frequently shared or supporting.",
+    "ambition_level": "High",
+    "total_promises": 11,
+    "total": 11
+  },
+  "promises": [
+    {
+      "text": "Enact Medicare for All, covering full vision, dental, and mental healthcare",
+      "domain_label": "Healthcare",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 10.55,
+      "what_happened": [
+        "Official page lists support for H.R.1976 Medicare for All Act of 2021 (page dated 2022-11-30)",
+        "M4A bill remains in committee with no chamber passage through term"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Healthcare | Representative Ocasio-Cortez Skip to main content First St SE, Washington, DC",
+          "url": "https://ocasio-cortez.house.gov/legislation/healthcare?page=1"
+        },
+        {
+          "title": "OCASIO-CORTEZ: We need to realize that Medicare-for-All would save the American people a v",
+          "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Health_Care.htm"
+        },
+        {
+          "title": "Coverage would include primary care, vision, dental, prescriptions, mental healthcare, sub",
+          "url": "https://www.washingtonexaminer.com/news/health-medicare-for-all-bernie-sanders-alexandria-ocasio-cortez"
+        }
+      ]
+    },
+    {
+      "text": "Make public colleges and trade schools tuition-free",
+      "domain_label": "Education",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 10.55,
+      "what_happened": [
+        "Publicly advocated for tuition-free public college (2019-11-29 tweet)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "<strong>&quot;Just like rich kids can attend public school, they should be able to attend ",
+          "url": "https://www.businessinsider.com/aoc-slams-pete-buttigieg-ad-against-tuition-free-public-college-2019-11"
+        },
+        {
+          "title": "Alexandria Ocasio-Cortez on Education Follow @ontheissuesorg Alexandria Ocasio-Cortez on E",
+          "url": "https://ontheissues.org/NY/Alexandria_Ocasio-Cortez_Education.htm"
+        }
+      ]
+    },
+    {
+      "text": "Cancel student loan debt held by the federal government and buy back privately held student loans on behalf of borrowers",
+      "domain_label": "Education",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 0.75,
+      "promise_score": 9.95,
+      "what_happened": [
+        "Signed letters pressing Biden to cancel student debt (2021-10-08)",
+        "Publicly advocated for $50,000 cancellation (2021-04-04)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Now, rather than using executive action to forgive the $10,000 Mr Biden said he would supp",
+          "url": "https://www.independent.co.uk/news/world/americas/us-politics/aoc-twitter-biden-student-debt-loans-b1864394.html"
+        },
+        {
+          "title": "“The time has come to release the memo and cancel student debt.” · They then gave Biden a ",
+          "url": "https://truthout.org/articles/omar-ocasio-cortez-give-biden-deadline-on-student-debt-cancelation-memo/"
+        },
+        {
+          "title": "Alexandria Ocasio-Cortez (D-N.Y.) responded to President Biden’s comments on student loan ",
+          "url": "https://thehill.com/homenews/administration/539157-ocasio-cortez-knocks-biden-on-student-loan-forgiveness-looking/"
+        },
+        {
+          "title": "&quot;Squad&quot; Reps. Alexandria Ocasio-Cortez, D-N.Y., and Ilhan Omar, D-Minn., are lea",
+          "url": "https://www.foxnews.com/politics/aoc-omar-pressure-biden-student-debt-cancel-memo"
+        },
+        {
+          "title": "&quot;Through the payment pause, I was able to realize what [this debt] meant to our lives",
+          "url": "https://ocasio-cortez.house.gov/media/in-the-news/student-loan-forgiveness-aoc-offers-tip-parent-borrowers"
+        }
+      ]
+    },
+    {
+      "text": "Pass a $15 federal minimum wage",
+      "domain_label": "Economy",
+      "status": "blocked",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.65,
+      "what_happened": [
+        "House voted to raise federal minimum wage to $15 by 2025 (2019-07-18)",
+        "$15 provision struck from 2021 COVID bill by Senate parliamentarian; blocked 58-42 in Senate"
+      ],
+      "flags": {
+        "externally_blocked": true
+      },
+      "sources": [
+        {
+          "title": "<strong>The House voted Thursday to raise the federal minimum wage to $15 an hour by 2025<",
+          "url": "https://democrats-edworkforce.house.gov/media/news/house-passes-bill-to-raise-minimum-wage-to-15-a-victory-for-liberals"
+        },
+        {
+          "title": "Representative Alexandria-Ocasio Cortez has said <strong>the fight for a $15 federal minim",
+          "url": "https://www.newsweek.com/alexandria-ocasio-cortez-take-minimum-wage-fight-directly-joe-biden-1575614"
+        },
+        {
+          "title": "“His own constituents believe in a $15 minimum wage,” Ocasio-Cortez said. “In almost every",
+          "url": "https://thehill.com/homenews/house/541025-ocasio-cortez-15-minimum-wage-only-socialist-to-those-in-dystopian-capitalist/"
+        },
+        {
+          "title": "(Andrew Lichtenstein/Corbis via Getty Images) <strong>The bill failed to clear the Senate,",
+          "url": "https://www.foxnews.com/politics/aoc-swipes-republicans-over-not-supporting-minimum-wage-raise-gets-reminded-democrats-killed-the-bill"
+        }
+      ]
+    },
+    {
+      "text": "Ban assault weapons, high-capacity magazines, and bump stocks",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 10.55,
+      "what_happened": [
+        "Stated support for legislation banning semiautomatic assault weapons and large-capacity magazines (page dated 2022-11-18)",
+        "Advocated bans on bump stocks and semi-automatic weapons (2019-03)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "She also supports legislation that would establish new background check requirements for f",
+          "url": "https://ocasio-cortez.house.gov/legislation/gun-reform"
+        },
+        {
+          "title": "Ocasio-Cortez then laid out the ... (#HR8!)...disarm domestic abusers...mandate safe stora",
+          "url": "https://www.newsweek.com/alexandria-ocasio-cortez-has-four-point-plan-solve-americas-gun-issues-1371990"
+        },
+        {
+          "title": "While <strong>Democratic legislators failed to pass a so-called “assault weapon” ban while",
+          "url": "https://www.nssf.org/articles/u-s-rep-alexandria-ocasio-cortez-kneecaps-gun-controls-white-whale/"
+        },
+        {
+          "title": "Alexandria Ocasio-Cortez has used her position to support gun control measures — co-sponso",
+          "url": "https://www.factcheck.org/2019/04/a-phantom-ocasio-cortez-quote-on-gun-ownership/"
+        }
+      ]
+    },
+    {
+      "text": "Mandate universal background checks for all firearm purchases and transfers",
+      "domain_label": "Safety & Justice",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.65,
+      "what_happened": [
+        "Cosponsored Background Check Expansion Act / H.R.8 and voted YEA (passed House 240-190-2, 2019-02-27)",
+        "H.R.8 passed House again 227-203-1 (2021-03-11); no Senate action"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Alexandria Ocasio-Cortez on Gun Control Follow @ontheissuesorg Alexandria Ocasio-Cortez on",
+          "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Gun_Control.htm"
+        },
+        {
+          "title": "You wouldn’t lend a car to someone ... the Bipartisan Background Checks Act of 2019, which",
+          "url": "https://www.cbsnews.com/news/aoc-dan-crenshaw-background-checks-guns-twitter-2019-09-04/"
+        },
+        {
+          "title": "Senate Majority Leader Mitch McConnell has refused to allow a vote on H.R. 8, the backgrou",
+          "url": "https://americanjournalnews.com/alexandria-ocasio-cortez-dan-crenshaw-lending-guns-friends-universal-background-checks/"
+        }
+      ]
+    },
+    {
+      "text": "Require domestic abusers and stalkers to surrender their firearms",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 2.4,
+      "difficulty_earned": 1.5,
+      "promise_score": 9.9,
+      "what_happened": [
+        "Advocated disarming domestic abusers (2019-03)",
+        "Voted for Bipartisan Gun Safety Bill passed summer 2022 (page dated 2022-11-18)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Ocasio-Cortez then laid out the ... (#HR8!)...disarm domestic abusers...mandate safe stora",
+          "url": "https://www.newsweek.com/alexandria-ocasio-cortez-has-four-point-plan-solve-americas-gun-issues-1371990"
+        },
+        {
+          "title": "The SUV program has been shown to decrease recurrence of violence by more than 50%. The Co",
+          "url": "https://ocasio-cortez.house.gov/legislation/public-safety"
+        }
+      ]
+    },
+    {
+      "text": "Enact the Green New Deal to address climate change",
+      "domain_label": "Environment",
+      "status": "in_committee",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 2.5,
+      "promise_score": 15.3,
+      "what_happened": [
+        "Sponsored H.Res.109 Green New Deal resolution (2019-02-07)",
+        "Sponsored Green New Deal for Public Housing Act (H.R.5185, 2019-11-19; reintroduced H.R.2664 2021; H.R.7782 2024)",
+        "Reintroduced GND resolution (2023, H.Res.319) — not passed"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HRES109: Recognizing the duty of the Federal Government to create a Green New De",
+          "url": "https://www.congress.gov/bill/116th-congress/house-resolution/109"
+        },
+        {
+          "title": "Sponsored HRES332: Recognizing the duty of the Federal Government to create a Green New De",
+          "url": "https://www.congress.gov/bill/117th-congress/house-resolution/332"
+        },
+        {
+          "title": "Sponsored HRES319: Recognizing the duty of the Federal Government to create a Green New De",
+          "url": "https://www.congress.gov/bill/118th-congress/house-resolution/319"
+        },
+        {
+          "title": "Sponsored HR7782: Green New Deal for Public Housing Act — latest action: Referred to the H",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/7782"
+        },
+        {
+          "title": "<strong>It passed the House, but was never voted on in the Senate</strong>. The Green New ",
+          "url": "https://www.nbcnews.com/politics/congress/move-over-oscasio-cortez-green-new-deal-s-got-some-n972181"
+        },
+        {
+          "title": "The deal promised to tackle economic ... 2023, Markey and Ocasio-Cortez reintroduced the G",
+          "url": "https://www.investopedia.com/the-green-new-deal-explained-4588463"
+        }
+      ]
+    },
+    {
+      "text": "Repeal the Hyde Amendment to ensure abortion coverage for low-income women",
+      "domain_label": "Healthcare",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 0.75,
+      "promise_score": 7.95,
+      "what_happened": [
+        "Started petition to repeal the Hyde Amendment (2019-06-15)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Alexandria Ocasio-Cortez (D-N.Y.) started a petition Saturday seeking to repeal the Hyde A",
+          "url": "https://www.commondreams.org/news/2019/06/15/ocasio-cortez-were-going-fight-repeal-hyde-amendment"
+        },
+        {
+          "title": "The Hyde Amendment, which <strong>prohibits government health programs such as Medicaid fr",
+          "url": "https://ocasio-cortez.house.gov/media/in-the-news/ocasio-cortez-starts-petition-repeal-hyde-amendment"
+        },
+        {
+          "title": "... Hyde, passed in 1976, <strong>bars federal funds from being used for abortion care exc",
+          "url": "https://www.rawstory.com/2019/06/ocasio-cortez-were-going-to-fight-to-repeal-the-hyde-amendment/"
+        }
+      ]
+    },
+    {
+      "text": "Establish a federal jobs guarantee program",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.5,
+      "promise_score": 14.1,
+      "what_happened": [
+        "Sponsored Civilian Climate Corps for Jobs and Justice Act (H.R.2670, 2021-04-20)",
+        "Reintroduced (H.R.5572, 2023-09-19) — referred to committee, no passage"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored HR2670: The Civilian Climate Corps for Jobs and Justice Act — latest action: Ref",
+          "url": "https://www.congress.gov/bill/117th-congress/house-bill/2670"
+        },
+        {
+          "title": "Sponsored HR5572: Civilian Climate Corps for Jobs and Justice Act — latest action: Referre",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/5572"
+        },
+        {
+          "title": "Others say that despite its merits, the odds of the proposal actually passing are slim. &q",
+          "url": "https://www.cnbc.com/2019/02/08/alexandria-ocasio-cortez-new-green-deal-jobs-guarantee-what-to-expect.html"
+        }
+      ]
+    },
+    {
+      "text": "Make discrimination based on gender and sexual orientation illegal",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.25,
+      "promise_score": 13.85,
+      "what_happened": [
+        "Voted for the federal Equality Act banning SOGI discrimination (per her issues page, c242)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "That’s why <strong>she voted for the federal “Equality Act” that bans discrimination on th",
+          "url": "https://www.ocasiocortez.com/issues"
+        },
+        {
+          "title": "To this end, Alex will advocate ... <strong>to make discrimination on the basis of sexual ",
+          "url": "https://ontheissues.org/NY/Alexandria_Ocasio-Cortez_Civil_Rights.htm"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Most promises lack a campaign-stated deadline, so time_pressure is null throughout. Several delivery buckets rely on her own official-site issue pages (Tier 1) plus secondary news; the domestic-abuser firearm and Equality Act items have thinner corroboration (LIMITED EVIDENCE). As a single House member in a chamber/Senate she does not control, her_role anchors are mostly 0.4-0.6 except where she is the defining sponsor (GND, 0.8). Excluded as non-verifiable/values-only: c10 (guarantee access to reproductive healthcare — directional value), and abolish-ICE (c35/c72 — campaign-era but appears in secondary framing without a clean attributable forward-looking commitment in provided campaign sources) and reproductive-healthcare access framed as a value statement."
+  ],
+  "term_identity": {
+    "term_id": "us-house-ny-2019",
+    "ordinal": "1st House tenure",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 93.3,
+    "office": "U.S. Representative",
+    "jurisdiction": "NY",
+    "term_start": "2019-01-03",
+    "term_end": "2027-01-03"
+  },
+  "person_ref": "alexandria-ocasio-cortez",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 93.3,
+    "display": "Grade is record-to-date — term in progress, 93.3% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-house-ny-2019",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:41:18+00:00",
+    "generated_at": "2026-06-22T22:42:38+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Enact Medicare for All, covering full vision, dental, and mental healthcare",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Health_Care.htm"
+      },
+      {
+        "title": "Make public colleges and trade schools tuition-free",
+        "url": "https://ontheissues.org/NY/Alexandria_Ocasio-Cortez_Education.htm"
+      },
+      {
+        "title": "Pass a $15 federal minimum wage",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Principles_+_Values.htm"
+      },
+      {
+        "title": "Ban assault weapons, high-capacity magazines, and bump stocks",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Gun_Control.htm"
+      },
+      {
+        "title": "Repeal the Hyde Amendment to ensure abortion coverage for low-income women",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez.htm"
+      },
+      {
+        "title": "Representative Adriano Espaillat of Upper Manhattan, a formerly undocumented resident who ",
+        "url": "https://www.nytimes.com/2018/11/07/nyregion/ocasio-cortez-congress-washington.html"
+      },
+      {
+        "title": "Representative Ocasio-Cortez | Skip to main content First St SE, Washington, DC 20004 --> ",
+        "url": "https://ocasio-cortez.house.gov/"
+      },
+      {
+        "title": "Press Releases | Representative Ocasio-Cortez Skip to main content First St SE, Washington",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases"
+      },
+      {
+        "title": "The Bronx native spoke about her campaign’s mission a day after she shook up the Democrati",
+        "url": "https://www.nytimes.com/2018/06/27/nyregion/alexandria-ocasio-cortez.html"
+      },
+      {
+        "title": "Alexandria Ocasio-Cortez, the Representative from New York - in Congress from 2019 through",
+        "url": "https://www.congress.gov/member/alexandria-ocasio-cortez/O000172"
+      },
+      {
+        "title": "↑ Buzzfeed, &quot;AOC’s Reaction To Zohran Mamdani’s Election Win Is Going Viral,&quot; No",
+        "url": "https://ballotpedia.org/Alexandria_Ocasio-Cortez"
+      },
+      {
+        "title": "After her stunning upset of Representative Joseph Crowley, Alexandria Ocasio-Cortez immedi",
+        "url": "https://www.nytimes.com/2018/07/06/nyregion/ocasio-cortez-effect-election-democrat.html"
+      },
+      {
+        "title": "OCASIO-CORTEZ, ALEXANDRIA - Candidate overview | FEC Javascript recommended: FEC.gov uses ",
+        "url": "https://www.fec.gov/data/candidate/H8NY15148/"
+      },
+      {
+        "title": "Election results for Alexandria Ocasio-Cortez.",
+        "url": "https://results.elections.ny.gov/candidate/47"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/180416/alexandria-ocasio-cortez"
+      },
+      {
+        "title": "But back home in Queens he is facing his first primary challenge in more than a decade fro",
+        "url": "https://www.politico.com/states/new-york/city-hall/story/2018/06/15/crowley-ocasio-cortez-stay-civil-despite-differences-in-primary-debate-470236"
+      },
+      {
+        "title": "Heading into the election the incumbent was Joseph Crowley (D), who was first elected in 1",
+        "url": "https://ballotpedia.org/New_York's_14th_Congressional_District_election,_2018"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Alexandria Ocasio-Cortez.",
+        "url": "https://ballotpedia.org/Endorsements_by_Alexandria_Ocasio-Cortez"
+      },
+      {
+        "title": "Alexandria Ocasio-Cortez (D) <strong>defeated incumbent Joseph Crowley (D) in the Democrat",
+        "url": "https://ballotpedia.org/New_York's_14th_Congressional_District"
+      },
+      {
+        "title": "King sees millennial voters as key to his campaign.[11] See also: New York&#x27;s 14th Con",
+        "url": "https://dev.ballotpedia.org/Ballotpedia's_Top_10_Democratic_primaries,_August_23,_2018"
+      },
+      {
+        "title": "Ocasio-Cortez garnered endorsements from progressive groups including Justice Democrats, B",
+        "url": "https://ballotpedia.org:443/Ballotpedia's_Top_10_Democratic_primaries,_June_28,_2018"
+      },
+      {
+        "title": "Crowley had been identified in ... did NARAL and Planned Parenthood. [20] Ocasio-Cortez ca",
+        "url": "https://ballotpedia.org/Timeline_of_events_impacting_2018_congressional_elections"
+      },
+      {
+        "title": "During the 2018 campaign cycle, Justice Democrats recruited 12 challengers to Democratic i",
+        "url": "https://dev.ballotpedia.org/Justice_Democrats"
+      },
+      {
+        "title": "Alexandria Ocasio-Cortez (D) District 15 · Ritchie Torres (D) District 16 · Jamaal Bowman ",
+        "url": "https://ballotpedia.org/United_States_House_elections_in_New_York_(2018_Democratic_primaries)"
+      },
+      {
+        "title": "Alexandria Ocasio-Cortez (<strong>Democratic Party</strong>) ✔ · Anthony Pappas (Republica",
+        "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_New_York,_2018"
+      },
+      {
+        "title": "Alexandria does not accept any federal, state or local rollbacks, cuts or restrictions on ",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Abortion.htm"
+      },
+      {
+        "title": "<strong>Alexandria Ocasio-Cortez and Pramilla Jayapal sent a Dear Colleague letter to Secr",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Foreign_Policy.htm"
+      },
+      {
+        "title": "There are those that would say AOC is giving voice to the voiceless, but I disagree. Undoc",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Immigration.htm"
+      },
+      {
+        "title": "OCASIO-CORTEZ: Puerto Ricans have no right to vote in federal elections. They cannot choos",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Government_Reform.htm"
+      },
+      {
+        "title": "Alexandria Ocasio-Cortez <strong>went head-to-head with Boebert on Twitter using the congr",
+        "url": "https://www.ontheissues.org/NY/Alexandria_Ocasio-Cortez_Social_Security.htm"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/180416/alexandria-ocasio-cortez"
+      },
+      {
+        "title": "&quot;In accordance with Rep. Alexandria Ocasio-Cortez Green New Deal resolutionwhich ca",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/186905/gary-chambers-jr"
+      },
+      {
+        "title": "OCASIO-CORTEZ: It&#x27;s -- for so many of us, especially women, we have grown up -- and I",
+        "url": "https://justfacts.votesmart.org/public-statement/1492868/cnn-state-of-the-union-with-jake-tapper-transcript-interview-with-congresswoman-alexandria-ocasio-cortez"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/180416/alexandria-ocasio-cortez"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/180416/alexandria-ocasio-cortez?categoryId=7&type=V,S,R,E,F,P,E"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/180416/alexandria-ocasio-cortez?categoryId=37&type=V,S,R,E,F,P"
+      },
+      {
+        "title": "Track This Politician · attach_money Who is funding Ocasio-Cortez? Page 1 of 3 · Page 1 of",
+        "url": "https://justfacts.votesmart.org/candidate/public-statements/180416/alexandria-ocasio-cortez//?s=date&speechType=4"
+      },
+      {
+        "title": "stars How do Ocasio-Cortez&#x27;s votes match her positions?",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/180416/alexandria-ocasio-cortez/89/foreign-aid"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Sponsored HR7917: Fair Wages for Home Care Workers Act — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/7917"
+      },
+      {
+        "title": "Sponsored HR5333: 9/11 Immigrant Worker Freedom Act — latest action: Referred to the House",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/5333"
+      },
+      {
+        "title": "Sponsored HR3562: DEFIANCE Act of 2025 — latest action: Referred to the House Committee on",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3562"
+      },
+      {
+        "title": "Sponsored HR3302: Healthy Start Reauthorization Act of 2025 — latest action: Placed on the",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/3302"
+      },
+      {
+        "title": "Sponsored HR1944: 10 Percent Credit Card Interest Rate Cap Act — latest action: Referred t",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/1944"
+      },
+      {
+        "title": "Sponsored HR398: Geothermal Cost-Recovery Authority Act of 2025 — latest action: Placed on",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/398"
+      },
+      {
+        "title": "Sponsored HR360: Oyster Reef Recovery Act of 2025 — latest action: Referred to the House C",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/360"
+      },
+      {
+        "title": "Sponsored HR9705: Oyster Reef Recovery Act — latest action: Referred to the House Committe",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/9705"
+      },
+      {
+        "title": "Sponsored HR9662: Homes Act of 2024 — latest action: Referred to the House Committee on Fi",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/9662"
+      },
+      {
+        "title": "Sponsored HRES1353: Impeaching Clarence Thomas, Associate Justice of the Supreme Court of ",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1353"
+      },
+      {
+        "title": "Sponsored HRES1354: Impeaching Samuel Alito, Jr., Associate Justice of the Supreme Court o",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/1354"
+      },
+      {
+        "title": "Sponsored HR7782: Green New Deal for Public Housing Act — latest action: Referred to the H",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7782"
+      },
+      {
+        "title": "Sponsored HR7569: DEFIANCE Act of 2024 — latest action: Referred to the House Committee on",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7569"
+      },
+      {
+        "title": "Sponsored HR7422: Geothermal Cost-Recovery Authority Act of 2024 — latest action: Received",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/7422"
+      },
+      {
+        "title": "Sponsored HR5572: Civilian Climate Corps for Jobs and Justice Act — latest action: Referre",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/5572"
+      },
+      {
+        "title": "Sponsored HR5154: CHARGE Act of 2023 — latest action: Referred to the Subcommittee on Ener",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/5154"
+      },
+      {
+        "title": "Sponsored HR4936: NOW Act — latest action: Referred to the House Committee on Natural Reso",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/4936"
+      },
+      {
+        "title": "Sponsored HRES319: Recognizing the duty of the Federal Government to create a Green New De",
+        "url": "https://www.congress.gov/bill/118th-congress/house-resolution/319"
+      },
+      {
+        "title": "Sponsored HR8476: Housing Inspections Accountability Act — latest action: Ordered to be Re",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8476"
+      },
+      {
+        "title": "Sponsored HR8394: Lawrence v. Texas Codification Act of 2022 — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8394"
+      },
+      {
+        "title": "Sponsored HR8395: EPA Regulatory Authority Act of 2022 — latest action: Referred to the Ho",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8395"
+      },
+      {
+        "title": "Sponsored HR8396: Loving v. Virginia Codification Act of 2022 — latest action: Referred to",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/8396"
+      },
+      {
+        "title": "Sponsored HR7393: Improving VA Workforce Diversity Through Minority-serving Institutions A",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/7393"
+      },
+      {
+        "title": "Sponsored HRES899: Providing for the consideration of the bill (H.R. 1579) to prohibit Mem",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/899"
+      },
+      {
+        "title": "Sponsored HR6549: To provide support for international initiatives to provide debt relief ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6549"
+      },
+      {
+        "title": "Sponsored HR6419: Fair Chance Improvement Act — latest action: Ordered to be Reported (Ame",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/6419"
+      },
+      {
+        "title": "Sponsored HR5700: 9/11 Immigrant Worker Freedom Act — latest action: Referred to the Subco",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5700"
+      },
+      {
+        "title": "Sponsored HR4207: Political Appointments Inclusion and Diversity Act — latest action: Refe",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/4207"
+      },
+      {
+        "title": "Sponsored HR5285: Extend Unemployment Assistance Act of 2021 — latest action: Referred to ",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5285"
+      },
+      {
+        "title": "Sponsored HR4620: To amend the Investment Advisers Act of 1940 to limit the exemption prov",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/4620"
+      },
+      {
+        "title": "Sponsored HJRES49: Providing for congressional disapproval of the proposed direct commerci",
+        "url": "https://www.congress.gov/bill/117th-congress/house-joint-resolution/49"
+      },
+      {
+        "title": "Sponsored HR2670: The Civilian Climate Corps for Jobs and Justice Act — latest action: Ref",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/2670"
+      },
+      {
+        "title": "Sponsored HRES332: Recognizing the duty of the Federal Government to create a Green New De",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/332"
+      },
+      {
+        "title": "Sponsored HR2664: Green New Deal for Public Housing Act — latest action: Referred to the H",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/2664"
+      },
+      {
+        "title": "Sponsored HRES239: Commemorating the 50th anniversary of Bangladesh's independence. — late",
+        "url": "https://www.congress.gov/bill/117th-congress/house-resolution/239"
+      },
+      {
+        "title": "Sponsored HR659: Repeal the Faircloth Amendment Act of 2021 — latest action: Referred to t",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/659"
+      },
+      {
+        "title": "Sponsored HR8019: Climate Equity Act of 2020 — latest action: Referred to the Committee on",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/8019"
+      },
+      {
+        "title": "Sponsored HR7711: Badge Transparency Act of 2020 — latest action: Referred to the House Co",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7711"
+      },
+      {
+        "title": "Sponsored HR7221: Prohibiting Law Enforcement Use of Chemical Weapons Act — latest action:",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/7221"
+      },
+      {
+        "title": "Sponsored HR6989: Pandemic Anti-Monopoly Act of 2020 — latest action: Referred to the Hous",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6989"
+      },
+      {
+        "title": "Sponsored HR6852: To prohibit the Secretary of the Treasury and the Board of Governors of ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6852"
+      },
+      {
+        "title": "Sponsored HR6851: To require major corporations receiving Federal aid related to COVID-19 ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6851"
+      },
+      {
+        "title": "Sponsored HR6827: Corporate Accountability Act — latest action: Referred to the House Comm",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6827"
+      },
+      {
+        "title": "Sponsored HR6828: COVID–19 Funeral Assistance Fund — latest action: Referred to the Subcom",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6828"
+      },
+      {
+        "title": "Sponsored HR6778: _______ Act of 2020 — latest action: Referred to the House Committee on ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6778"
+      },
+      {
+        "title": "Sponsored HR6779: To specify the ineligibility requirements based on illegal activity or c",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6779"
+      },
+      {
+        "title": "Sponsored HR6687: Pandemic Disaster Assistance Act of 2020 — latest action: Referred to th",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6687"
+      },
+      {
+        "title": "Sponsored HR6360: To establish requirements on accelerated filers receiving Federal aid re",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/6360"
+      },
+      {
+        "title": "Sponsored HR5857: Fracking Ban Act — latest action: Referred to the Subcommittee on Energy",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5857"
+      },
+      {
+        "title": "Sponsored HR5185: Green New Deal for Public Housing Act — latest action: Sponsor introduct",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5185"
+      },
+      {
+        "title": "Sponsored HR5069: The Recognizing Poverty Act — latest action: Referred to the House Commi",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5069"
+      },
+      {
+        "title": "Sponsored HR5071: A Just Society: The Embrace Act — latest action: Referred to the House C",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5071"
+      },
+      {
+        "title": "Sponsored HR5070: A Just Society: The Mercy In Re-entry Act — latest action: Referred to t",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5070"
+      },
+      {
+        "title": "Sponsored HR5072: A Just Society: A Place to Prosper Act of 2019 — latest action: Referred",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5072"
+      },
+      {
+        "title": "Sponsored HR5073: A Just Society: The Uplift Our Workers Act — latest action: Message on S",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/5073"
+      },
+      {
+        "title": "Sponsored HRES666: Expressing the sense of the House of Representatives on the ratificatio",
+        "url": "https://www.congress.gov/bill/116th-congress/house-resolution/666"
+      },
+      {
+        "title": "Sponsored HR3685: Fair Chance at Housing Act of 2018 — latest action: Referred to the Hous",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/3685"
+      },
+      {
+        "title": "Sponsored HR2930: Loan Shark Prevention Act — latest action: Referred to the House Committ",
+        "url": "https://www.congress.gov/bill/116th-congress/house-bill/2930"
+      },
+      {
+        "title": "Sponsored HRES109: Recognizing the duty of the Federal Government to create a Green New De",
+        "url": "https://www.congress.gov/bill/116th-congress/house-resolution/109"
+      },
+      {
+        "title": "Rep. Alexandria Ocasio-Cortez [D-NY14, 2019-2026], Representative for New York's 14th Cong",
+        "url": "https://www.govtrack.us/congress/members/alexandria_ocasio_cortez/412804"
+      },
+      {
+        "title": "BILL 6. H.R.7917 — 119th Congress (2025-2026) <strong>Fair Wages for Home Care Workers Act",
+        "url": "https://www.congress.gov/index.php/member/alexandria-ocasio-cortez/O000172"
+      },
+      {
+        "title": "Ocasio-Cortez Signs on to Letter Demanding Trump Administration Reveal List of Frozen Inve",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-signs-letter-demanding-trump-administration-reveal-list-frozen"
+      },
+      {
+        "title": "H.R.8019 — 116th Congress (2019-2020) Climate Equity Act of 2020 Sponsor: Ocasio-Cortez, A",
+        "url": "https://www.congress.gov/member/alexandria-ocasio-cortez/O000172?q=%7B%22house-committee%22:%22Budget%22%7D"
+      },
+      {
+        "title": "Rep. Alexandria Ocasio-Cortez Secures Millions for Bronx, Queens Community Projects in Gov",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/rep-alexandria-ocasio-cortez-secures-millions-bronx-queens-community-projects"
+      },
+      {
+        "title": "Foreign Policy | Representative Ocasio-Cortez Skip to main content First St SE, Washington",
+        "url": "https://ocasio-cortez.house.gov/legislation/foreign-policy?page=1"
+      },
+      {
+        "title": "<strong>The New York Times called her out for failing to open a district office for her fi",
+        "url": "https://www.politico.com/magazine/story/2019/04/08/alexandria-ocasio-cortez-new-york-226578/"
+      },
+      {
+        "title": "Ocasio-Cortez Calls Out Pattern of Corruption Behind Trump and Republican Efforts to Ban S",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-calls-out-pattern-corruption-behind-trump-and-republican-efforts"
+      },
+      {
+        "title": "Spokespeople for Ocasio-Cortez did not return repeated requests for comment from POLITICO.",
+        "url": "https://www.politico.com/news/2026/02/05/aoc-and-ny-house-dems-to-endorse-hochul-00768518"
+      },
+      {
+        "title": "Healthcare | Representative Ocasio-Cortez Skip to main content First St SE, Washington, DC",
+        "url": "https://ocasio-cortez.house.gov/legislation/healthcare?page=1"
+      },
+      {
+        "title": "The letter details that at least ... had their funding jeopardized, and that <strong>resci",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-nadler-lead-ny-congressional-delegation-requesting-meeting-hhs"
+      },
+      {
+        "title": "Alexandria Ocasio-Cortez on Wednesday criticized President Joe Biden for his opposition to",
+        "url": "https://ocasio-cortez.house.gov/legislation/education"
+      },
+      {
+        "title": "&quot;Through the payment pause, I was able to realize what [this debt] meant to our lives",
+        "url": "https://ocasio-cortez.house.gov/media/in-the-news/student-loan-forgiveness-aoc-offers-tip-parent-borrowers"
+      },
+      {
+        "title": "<strong>The House voted Thursday to raise the federal minimum wage to $15 an hour by 2025<",
+        "url": "https://democrats-edworkforce.house.gov/media/news/house-passes-bill-to-raise-minimum-wage-to-15-a-victory-for-liberals"
+      },
+      {
+        "title": "WASHINGTON, D.C. – Today, Representative Alexandria Ocasio-Cortez (NY-14) released the fol",
+        "url": "https://ocasio-cortez.house.gov/legislation/economy"
+      },
+      {
+        "title": "She also supports legislation that would establish new background check requirements for f",
+        "url": "https://ocasio-cortez.house.gov/legislation/gun-reform"
+      },
+      {
+        "title": "The SUV program has been shown to decrease recurrence of violence by more than 50%. The Co",
+        "url": "https://ocasio-cortez.house.gov/legislation/public-safety"
+      },
+      {
+        "title": "<strong>Ocasio-Cortez did not respond to multiple requests for comment about the climate l",
+        "url": "https://www.politico.com/news/2026/05/14/green-new-deal-champion-aoc-absent-as-new-york-weakens-climate-law-00920778"
+      },
+      {
+        "title": "For more on the Green New Deal and other work the Congresswoman has done on climate change",
+        "url": "https://ocasio-cortez.house.gov/legislation/climate"
+      },
+      {
+        "title": "<strong>It actually will be impossible to enact a Green New Deal while Trump is in the Whi",
+        "url": "https://www.politico.com/magazine/story/2019/02/07/green-new-deal-224928/"
+      },
+      {
+        "title": "<strong>The sweeping resolution, which calls for the United States to eliminate additional",
+        "url": "https://www.nytimes.com/2019/02/11/climate/green-new-deal-faq.html"
+      },
+      {
+        "title": "The Hyde Amendment, which <strong>prohibits government health programs such as Medicaid fr",
+        "url": "https://ocasio-cortez.house.gov/media/in-the-news/ocasio-cortez-starts-petition-repeal-hyde-amendment"
+      },
+      {
+        "title": "“The Council of Large Public Housing Authorities is pleased to support the Homes Act, spon",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/us-senator-tina-smith-and-congresswoman-ocasio-cortez-introduce-homes-act"
+      },
+      {
+        "title": "To this end, Alex will advocate ... <strong>to make discrimination on the basis of sexual ",
+        "url": "https://ontheissues.org/NY/Alexandria_Ocasio-Cortez_Civil_Rights.htm"
+      },
+      {
+        "title": "Let’s start with <strong>the Civil Rights Act</strong>, which is designed to ensure no per",
+        "url": "https://oversightdemocrats.house.gov/news/press-releases/vice-ranking-member-ocasio-cortezs-opening-remarks-during-hearing-examining"
+      },
+      {
+        "title": "House Roll Call Vote 135 (2025-05-20) — 119th Congress, 1st Session (2025) Vote Question: ",
+        "url": "https://www.congress.gov/member/alexandria-ocasio-cortez/O000172?page=5"
+      },
+      {
+        "title": "So while we are all grateful that Congress has taken the tremendous step in passing <stron",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-lee-join-house-members-and-advocates-calling-pass-defiance-act"
+      },
+      {
+        "title": "Deprives individuals of entrepreneurial opportunities. The PRO Act would eliminate the fra",
+        "url": "https://ontheissues.org/NY/Alexandria_Ocasio-Cortez_Jobs.htm"
+      },
+      {
+        "title": "During the 2018-2019 shutdown, we worked with President Trump to enact the <strong>Governm",
+        "url": "https://www.warner.senate.gov/public/index.cfm/pressreleases?id=5C52FC70-A948-40DF-8A18-E464FDC5336F"
+      },
+      {
+        "title": "Federal pandemic unemployment insurance and stimulus checks lifted nearly 8.5 million Amer",
+        "url": "https://ocasio-cortez.house.gov/media/press-releases/rep-alexandria-ocasio-cortez-introduces-bill-extend-pandemic-unemployment"
+      },
+      {
+        "title": "&quot;I simply just could not allow this to happen without at least trying.”Federal pandem",
+        "url": "https://ocasiocortezforms.house.gov/news/email/show.aspx?ID=4KETUYHZDYAPI"
+      }
+    ]
+  }
+}

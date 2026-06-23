@@ -1,0 +1,1204 @@
+{
+  "official": {
+    "name": "Tim Scott",
+    "role": "U.S. Senator",
+    "jurisdiction": "SC",
+    "party": "Republican",
+    "term_start": "2023-01-03",
+    "term_end": "2029-01-03",
+    "election_date": "2022-11-01",
+    "next_election": "2028-11-01",
+    "office_phone": "202-224-6121",
+    "office_address": "104 Hart Senate Office Building Washington DC 20510",
+    "office_website": "https://www.scott.senate.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 40.17,
+    "delivery_ratio": 0.35,
+    "narrative": "This term Scott delivered fully on his FEND Off Fentanyl Act commitment (signed into law in 2024) and advanced his ROAD to Housing Act to a strong bipartisan Senate passage, though it was removed from the final NDAA. His LNG export and Empowering Main Street bills were introduced and, for LNG, advanced in the House but not enacted in the Senate, and he led organized opposition to the Basel III Endgame proposal. Several conservative-values platform items (traditional marriage, ACA mandate repeal, balanced budget amendment) show stated support but little documented legislative action this term.",
+    "grade_rationale": "The record pairs one fully enacted, high-magnitude law and a near-passage major housing bill with several bills that stalled at introduction or in the opposite chamber, plus a cluster of values-based platform pledges with minimal documented action. Delivery is strongest where Scott chaired the relevant committee and weakest on broad ideological commitments requiring multi-actor coalitions.",
+    "ambition_level": "High",
+    "total_promises": 8,
+    "total": 8
+  },
+  "promises": [
+    {
+      "text": "Pass the FEND Off Fentanyl Act to target illicit fentanyl trade and money laundering operations",
+      "domain_label": "Safety & Justice",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2023-04-25: Sponsored S1271 FEND Off Fentanyl Act",
+        "2023-06-21: Bill unanimously passed out of Senate Banking Committee",
+        "2024-04-25: Signed into law as part of national security supplemental",
+        "2025-06-25: Treasury acted against Mexico-based financial institutions under the law"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S1271: FEND Off Fentanyl Act — latest action: Committee on Banking, Housing, and",
+          "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1271"
+        },
+        {
+          "title": "WASHINGTON — U.S. Senator Tim Scott’s (R-S.C.), <strong>effort to crack down on the illici",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/sen-scotts-fentanyl-bill-signed-into-law/"
+        },
+        {
+          "title": "Washington, D.C. – Today, Ranking Member Tim Scott’s (R-S.C.) legislative efforts to crack",
+          "url": "https://www.banking.senate.gov/newsroom/minority/scott-led-efforts-to-crack-down-on-fentanyl-trade-expose-iranian-assets-pass-senate"
+        },
+        {
+          "title": "News AUSTIN – U.S. Senator John Cornyn (R-TX) released the following statement after the F",
+          "url": "https://www.cornyn.senate.gov/news/cornyn-tim-scott-bill-to-crack-down-on-fentanyl-supply-chain-signed-into-law/"
+        },
+        {
+          "title": "Treasury’s orders are a direct result of the authorities provided by the FEND Off Fentanyl",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/sen-scott-applauds-treasurys-action-to-crack-down-on-illicit-actors-fueling-fentanyl-trade/"
+        }
+      ]
+    },
+    {
+      "text": "Advance legislation to eliminate the DOE authorization requirement for U.S. LNG exports and give FERC sole authority over the approval process",
+      "domain_label": "Environment",
+      "status": "in_committee",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 11.1,
+      "what_happened": [
+        "2024-02-02: Introduced Unlocking Domestic LNG Potential Act",
+        "2024-02: House version passed 224-200",
+        "2025-03-06: Reintroduced S883 Unlocking Domestic LNG Potential Act of 2025",
+        "2025-11: House companion bill passed 217-188"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "WASHINGTON — Today, U.S. Senator Tim Scott (R-S.C.) introduced the <strong>Unlocking Domes",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-bucks-bidens-halt-of-american-energy-exports-introduces-bill-to-boost-american-energy-independence-dominance/"
+        },
+        {
+          "title": "Sponsored S3704: Unlocking Domestic LNG Potential Act of 2024 — latest action: Read twice ",
+          "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3704"
+        },
+        {
+          "title": "Sponsored S883: Unlocking Domestic LNG Potential Act of 2025 — latest action: Read twice a",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/883"
+        },
+        {
+          "title": "Senator Scott 2024 Year in Review &#8212; U.S. Senator Tim Scott of South Carolina Skip to",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-2024-year-in-review/"
+        },
+        {
+          "title": "Senator Tim Scott Releases 2025 Year in Review &#8212; U.S. Senator Tim Scott of South Car",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/senator-tim-scott-releases-2025-year-in-review/"
+        }
+      ]
+    },
+    {
+      "text": "Introduce the ROAD to Housing Act to create more affordable housing opportunities and increase federal housing regulator accountability",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 17.45,
+      "what_happened": [
+        "2024-09-11: Introduced ROAD to Housing Act (S5027)",
+        "2025-08-01: ROAD to Housing Act of 2025 placed on Senate Legislative Calendar",
+        "2026-03-12: Senate passed 21st Century ROAD to Housing Act 89-10",
+        "2025-12: Removed from final NDAA in House negotiations"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "WASHINGTON — U.S. Senator Tim ... the ROAD to Housing Act, <strong>comprehensive legislati",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/scott-introduces-comprehensive-housing-legislation/"
+        },
+        {
+          "title": "Washington, D.C. – Today, <strong>the U.S. Senate passed the 21st Century ROAD to Housing ",
+          "url": "https://www.banking.senate.gov/newsroom/majority/us-senate-passes-chairman-scotts-historic-housing-affordability-legislation"
+        },
+        {
+          "title": "WASHINGTON — Today, <strong>the U.S. Senate passed the 21st Century ROAD to Housing Act by",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/u-s-senate-passes-sen-scotts-historic-housing-affordability-legislation/"
+        },
+        {
+          "title": "The ROAD to Housing Act — formally ... Housing Act of 2025 — <strong>did not survive a fin",
+          "url": "https://nationalmortgageprofessional.com/news/bipartisan-road-housing-act-axed-national-defense-authorization-act"
+        },
+        {
+          "title": "The 21st Century ROAD to Housing Act represents a major legislative push to increase housi",
+          "url": "https://eciks.org/10062-97538-tim-scott-housing-bill-passage-timeline"
+        }
+      ]
+    },
+    {
+      "text": "Advance the Empowering Main Street in America Act to increase access to capital for entrepreneurs and allow more Americans to invest in their local communities",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 11.1,
+      "what_happened": [
+        "2024-09-23: Introduced S5139 Empowering Main Street in America Act of 2024"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S5139: Empowering Main Street in America Act of 2024 — latest action: Read twice",
+          "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5139"
+        },
+        {
+          "title": "Senator Scott 2024 Year in Review &#8212; U.S. Senator Tim Scott of South Carolina Skip to",
+          "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-2024-year-in-review/"
+        }
+      ]
+    },
+    {
+      "text": "Push back on the Federal Reserve's Basel III Endgame proposal",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 0.75,
+      "promise_score": 12.15,
+      "what_happened": [
+        "2023-11-14: Led 39 Republican senators in letter urging regulators to withdraw the Basel III Endgame proposal"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Tim Scott, R-S.C., the ranking member of the Senate Banking Committee, wrote to the bankin",
+          "url": "https://www.americanbanker.com/news/senate-republicans-ask-regulators-to-withdraw-basel-iii-proposal"
+        },
+        {
+          "title": "Thirty-nine Republican senators, led by former presidential candidate Tim Scott, R-SC, urg",
+          "url": "https://www.bankingdive.com/news/tim-scott-letter-fed-barr-fdic-gruenberg-occ-hsu-testimony-capital-requirements/699682/"
+        },
+        {
+          "title": "John Kennedy (R-La.), a member ... other Republican colleagues on the Banking Committee in",
+          "url": "https://www.kennedy.senate.gov/public/2023/11/kennedy-scott-colleagues-call-on-biden-administration-to-withdraw-basel-iii-endgame-proposal"
+        }
+      ]
+    },
+    {
+      "text": "Defend the traditional definition of marriage as between one man and one woman",
+      "domain_label": "Governance",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 1.25,
+      "promise_score": 7.45,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "<strong>Tim Scott</strong> believes in the sanctity of traditional marriage between a man ",
+          "url": "https://www.ontheissues.org/house/Tim_Scott_Civil_Rights.htm"
+        },
+        {
+          "title": "For example, a same-sex couple legally married in Massachusetts can now have a federal ban",
+          "url": "https://ontheissues.org/2024/Tim_Scott_Civil_Rights.htm"
+        }
+      ]
+    },
+    {
+      "text": "Support repeal of the Affordable Care Act's mandates that intrude on Americans' religious beliefs",
+      "domain_label": "Healthcare",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 8.55,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "President Obama&#x27;s health care plan taxes too much, spends too much, is bad for our he",
+          "url": "https://www.ontheissues.org/social/Tim_Scott_Health_Care.htm"
+        },
+        {
+          "title": "Pledge for candidates states, &quot;I ... takeover passed in 2010, and replace it with rea",
+          "url": "https://ontheissues.org/House/Tim_Scott_Health_Care.htm"
+        },
+        {
+          "title": "Thirteen years ago today, the Affordable Care Act (ACA) was signed into law, which lowered",
+          "url": "https://scdp.org/scdp-news/press-releases/on-affordable-care-act-anniversary-nikki-haley-and-tim-scott-remain-committed-to-rolling-back-progress/"
+        }
+      ]
+    },
+    {
+      "text": "Propose and support a balanced budget amendment to the U.S. Constitution",
+      "domain_label": "Governance",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 1.25,
+      "promise_score": 7.45,
+      "what_happened": [
+        "2023-11-14: Stated on official issues page that he cosponsored legislation creating a Balanced Budget Amendment"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "<strong>Washington must be more responsible with taxpayer dollars, funding only true natio",
+          "url": "https://www.scott.senate.gov/issues/fighting-big-government/?latest=70"
+        },
+        {
+          "title": "[externalActionCode] =&gt; 9000 [description] =&gt; Failed House [chamberOfAction] =&gt; H",
+          "url": "https://www.congress.gov/member/tim-scott/S001184?q={\"bill-status\":\"failed-one\",\"type\":\"all\"}"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Many platform items (abortion-related bills c1-c3, c6-c7; Fed audit c10; spending caps c9) were sourced to issues pages and OnTheIssues without clear campaign-window attribution and lacked specific delivery evidence this term, so they were not tracked as confirmed promises. Presidential-campaign process items (RNC pledge, debate qualification) were excluded as non-policy. Several tracked promises rely on official self-reporting (year-in-review releases) which should be corroborated. Time pressure could not be computed for any promise as none stated an internal deadline."
+  ],
+  "term_identity": {
+    "term_id": "us-sen-sc-2023",
+    "ordinal": "4th Senate term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 57.8,
+    "office": "U.S. Senator",
+    "jurisdiction": "SC",
+    "term_start": "2023-01-03",
+    "term_end": "2029-01-03"
+  },
+  "person_ref": "tim-scott",
+  "sibling_terms": [
+    {
+      "term_id": "us-house-sc-2011",
+      "label": "U.S. Representative 2011–2013",
+      "status": "completed",
+      "grade": null
+    },
+    {
+      "term_id": "us-sen-sc-2013",
+      "label": "U.S. Senator 2013–2015",
+      "status": "completed",
+      "grade": null
+    },
+    {
+      "term_id": "us-sen-sc-2015",
+      "label": "U.S. Senator 2015–2017",
+      "status": "completed",
+      "grade": null
+    },
+    {
+      "term_id": "us-sen-sc-2017",
+      "label": "U.S. Senator 2017–2023",
+      "status": "completed",
+      "grade": null
+    }
+  ],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 57.8,
+    "display": "Grade is record-to-date — term in progress, 57.8% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-sen-sc-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:29:05+00:00",
+    "generated_at": "2026-06-22T22:30:02+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Support and vote for the Child Interstate Abortion Notification Act",
+        "url": "https://www.scott.senate.gov/issues/conservative-values/"
+      },
+      {
+        "title": "Prohibit federal funding to organizations like Planned Parenthood that perform abortions",
+        "url": "https://ontheissues.org/house/Tim_Scott_Abortion.htm"
+      },
+      {
+        "title": "Propose and support a balanced budget amendment to the U.S. Constitution",
+        "url": "https://ontheissues.org/Senate/Tim_Scott.htm"
+      },
+      {
+        "title": "Push back on the Federal Reserve's Basel III Endgame proposal",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-2024-year-in-review/"
+      },
+      {
+        "title": "South Carolina&#x27;s Tim Scott launches 2022 reelection campaign | AP News Menu World SEC",
+        "url": "https://apnews.com/article/joe-biden-tim-scott-south-carolina-senate-elections-campaigns-d1ecd64feb3bcdcff75675e439f47196"
+      },
+      {
+        "title": "Catherine Fleming Bruce and Krystle Matthews advanced to a runoff. They defeated Angela Ge",
+        "url": "https://ballotpedia.org/Tim_Scott"
+      },
+      {
+        "title": "Home &#8212; U.S. Senator Tim Scott of South Carolina Skip to content Find Resources for S",
+        "url": "https://www.scott.senate.gov/"
+      },
+      {
+        "title": "Tim Scott heading back to US Senate as bigger ambitions loom | AP News Menu World SECTIONS",
+        "url": "https://apnews.com/article/south-carolina-senate-race-2022-midterm-elections-41a9fcf9977d8d17dacc8921b412e51d"
+      },
+      {
+        "title": "Contact &#8212; U.S. Senator Tim Scott of South Carolina Skip to content About About Senat",
+        "url": "https://www.scott.senate.gov/contact/"
+      },
+      {
+        "title": "Senator Tim Scott of South Carolina, who announced his presidential campaign on Monday, is",
+        "url": "https://www.nytimes.com/2023/05/22/us/politics/tim-scott-2024-election.html"
+      },
+      {
+        "title": "Democrat says registration key to ousting SC&#x27;s Tim Scott | AP News Menu World SECTION",
+        "url": "https://apnews.com/article/senate-elections-tim-scott-columbia-elections-south-carolina-017cc0a156dbb7a72f25fb82d35967f9"
+      },
+      {
+        "title": "Contact Tim Scott SC Senate Debate Wikipedia Ballotpedia · VoteMatch Responses (Click here",
+        "url": "https://www.ontheissues.org/senate/Tim_Scott.htm"
+      },
+      {
+        "title": "United States Senate election in South Carolina, 2022 (June 14 Democratic primary) ... Inc",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_South_Carolina,_2022"
+      },
+      {
+        "title": "The section below lists noteworthy endorsements for Tim Scott in the Republican presidenti",
+        "url": "https://ballotpedia.org/Tim_Scott_presidential_campaign,_2024"
+      },
+      {
+        "title": "In 2023, Scott hired DeCasper to work as the campaign manager for his 2024 presidential ca",
+        "url": "https://ballotpedia.org/Jennifer_DeCasper"
+      },
+      {
+        "title": "This page contains a select list of Tim Scott&#x27;s (R) national campaign staff.",
+        "url": "https://ballotpedia.org/Tim_Scott_presidential_campaign_staff,_2024"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Tim Scott.",
+        "url": "https://ballotpedia.org/Endorsements_by_Tim_Scott"
+      },
+      {
+        "title": "This page was current at the end of the individual&#x27;s last campaign covered by Ballotp",
+        "url": "https://ballotpedia.org/Scott_Timko"
+      },
+      {
+        "title": "↑ 28.0 28.1 NBC News, &quot;Doug Burgum suspends presidential campaign,&quot; December 4, ",
+        "url": "https://ballotpedia.org/Presidential_candidates,_2024"
+      },
+      {
+        "title": "Scott campaigned in <strong>Iowa on May 24 and New Hampshire on May 25.</strong> Donald Tr",
+        "url": "https://news.ballotpedia.org/2023/05/26/tim-scott-ron-desantis-join-republican-primary-field/"
+      },
+      {
+        "title": "Retrieved from &quot;https://ballotpedia.org/wiki/index.php?title=Timothy_Scott&amp;oldid=",
+        "url": "https://ballotpedia.org/wiki/index.php?title=Timothy_Scott&redirect=no"
+      },
+      {
+        "title": "<strong>Tim Scott</strong> believes in the sanctity of traditional marriage between a man ",
+        "url": "https://www.ontheissues.org/house/Tim_Scott_Civil_Rights.htm"
+      },
+      {
+        "title": "The Republicans had zero. Now there were two of the latter. The other African-American fre",
+        "url": "https://www.ontheissues.org/social/Tim_Scott_Principles_+_Values.htm"
+      },
+      {
+        "title": "Tim spent his first summer in the U.S. House of Representatives fighting to save 1,100 Sou",
+        "url": "https://ontheissues.org/Domestic/Tim_Scott_Jobs.htm"
+      },
+      {
+        "title": "Sen. <strong>Tim Scott</strong>: You have to cut taxes. When we cut taxes in 2017, I wrote",
+        "url": "https://www.ontheissues.org/Economic/Tim_Scott_Tax_Reform.htm"
+      },
+      {
+        "title": "President Obama&#x27;s health care plan taxes too much, spends too much, is bad for our he",
+        "url": "https://www.ontheissues.org/social/Tim_Scott_Health_Care.htm"
+      },
+      {
+        "title": "Tim will protect our Second Amendment rights, which he believes is a fundamental freedom a",
+        "url": "https://www.ontheissues.org/Domestic/Tim_Scott_Gun_Control.htm"
+      },
+      {
+        "title": "<strong>Tim Scott</strong> on other issues: SC Gubernatorial: Catherine Templeton Henry Mc",
+        "url": "https://www.ontheissues.org/House/Tim_Scott_Budget_+_Economy.htm"
+      },
+      {
+        "title": "Tim opposes relocating the prisoners at Guantanamo Bay to American soil. Guantanamo is a w",
+        "url": "https://www.ontheissues.org/House/Tim_Scott_Homeland_Security.htm"
+      },
+      {
+        "title": "<strong>Tim Scott did not provide voters with positions on key issues covered by the 2024 ",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/11940/tim-scott"
+      },
+      {
+        "title": "<strong>Tim Scott did not provide voters with positions on key issues covered by the 2024 ",
+        "url": "https://votesmart.org/candidate/political-courage-test/11940/"
+      },
+      {
+        "title": "Keep in mind that ratings done by special interest groups often do not represent a non-par",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/11940/tim-scott"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/11940/tim-scott"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/11940/tim-scott"
+      },
+      {
+        "title": "Timothy &#x27;Tim&#x27; E. Scott",
+        "url": "https://justfacts.votesmart.org/candidate/biography/11940/tim-scott"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/60362/tim-hawkins/"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/11940/tim-scott/68/women"
+      },
+      {
+        "title": "<strong>It is a totally non-partisan test</strong>. Candidates only have to provide answer",
+        "url": "https://votesmart.org/blog-archive/2007/oct/3/the-launch-of-the-political-courage-test/"
+      },
+      {
+        "title": "Editor’s note: Morning Money is a free version of POLITICO Pro Financial Services morning ",
+        "url": "https://www.politico.com/newsletters/morning-money/2024/10/31/the-tim-scott-agenda-00186428"
+      },
+      {
+        "title": "As part of my mission to positively affect the lives of a billion people with a message of",
+        "url": "https://www.scott.senate.gov/about/opportunity-agenda/"
+      },
+      {
+        "title": "Editor’s note: Morning Money is a free version of POLITICO Pro Financial Services morning ",
+        "url": "https://www.politico.com/newsletters/morning-money/2022/11/04/tim-scotts-banking-agenda-what-we-know-00065089"
+      },
+      {
+        "title": "Framing the camera shot behind him will be something the nation has never seen before: two",
+        "url": "https://www.politico.com/newsletters/the-recast/2021/04/27/tim-scott-loneliest-conservative-492617"
+      },
+      {
+        "title": "Mariannette Miller-Meeks: “Today marks 100 days since @POTUS returned to the White House, ",
+        "url": "https://kustoff.house.gov/media/in-the-news/icymi-celebrating-president-trumps-incredible-first-100-days-white-house"
+      },
+      {
+        "title": "Sponsored S4793: A bill to clarify provisions of the United States-Mexico-Canada Agreement",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4793"
+      },
+      {
+        "title": "Sponsored S4767: Renewing the African American Civil Rights Network Act — latest action: R",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4767"
+      },
+      {
+        "title": "Sponsored S4761: Tax Court Parity Act — latest action: Read twice and referred to the Comm",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4761"
+      },
+      {
+        "title": "Sponsored SRES764: A resolution congratulating the students, parents, teachers, and leader",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/764"
+      },
+      {
+        "title": "Sponsored S4528: IGNITE HBCU Excellence Act — latest action: Read twice and referred to th",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4528"
+      },
+      {
+        "title": "Sponsored S4440: Clinical Trial Modernization Act — latest action: Read twice and referred",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4440"
+      },
+      {
+        "title": "Sponsored SRES689: A resolution congratulating the University of South Carolina Aiken wome",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/689"
+      },
+      {
+        "title": "Sponsored S4242: Supporting Pregnant and Parenting Women and Families Act — latest action:",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4242"
+      },
+      {
+        "title": "Sponsored S4048: PREDICT Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4048"
+      },
+      {
+        "title": "Sponsored S4047: Kids in Classes Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4047"
+      },
+      {
+        "title": "Sponsored S3848: Apples to Apples Comparison Act of 2026 — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3848"
+      },
+      {
+        "title": "Sponsored S3816: Repair Abuses of MSP Payments (RAMP) Act — latest action: Read twice and ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3816"
+      },
+      {
+        "title": "Sponsored S3692: PREVENT DIABETES Act — latest action: Read twice and referred to the Comm",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3692"
+      },
+      {
+        "title": "Sponsored SRES587: A resolution designating the week of January 25 through January 31, 202",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/587"
+      },
+      {
+        "title": "Sponsored S3128: Worker Privacy Act — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3128"
+      },
+      {
+        "title": "Sponsored S3073: Pay Our Capitol Police Act — latest action: Read twice and referred to th",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3073"
+      },
+      {
+        "title": "Sponsored SRES465: A resolution designating September 2025 as \"National Childhood Cancer A",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/465"
+      },
+      {
+        "title": "Sponsored S2984: Employee Rights Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2984"
+      },
+      {
+        "title": "Sponsored SRES416: A resolution expressing support for the designation of September 2025 a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/416"
+      },
+      {
+        "title": "Sponsored S2814: Transit Crime Reporting Act of 2025 — latest action: Read twice and refer",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2814"
+      },
+      {
+        "title": "Sponsored S2709: Telehealth Modernization Act — latest action: Read twice and referred to ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2709"
+      },
+      {
+        "title": "Sponsored S2651: ROAD to Housing Act of 2025 — latest action: Placed on Senate Legislative",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2651"
+      },
+      {
+        "title": "Sponsored S558: Antisemitism Awareness Act of 2025 — latest action: Committee on Health, E",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/558"
+      },
+      {
+        "title": "Sponsored S2237: Hospital Inpatient Services Modernization Act — latest action: Read twice",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2237"
+      },
+      {
+        "title": "Sponsored S2419: Business of Insurance Regulatory Reform Act of 2025 — latest action: Read",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2419"
+      },
+      {
+        "title": "Sponsored S2486: Protecting Access to Credit for Small Businesses Act — latest action: Rea",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2486"
+      },
+      {
+        "title": "Sponsored S2464: Community Investment and Prosperity Act — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2464"
+      },
+      {
+        "title": "Sponsored S2358: IRS Accountability and Taxpayer Protection Act — latest action: Read twic",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2358"
+      },
+      {
+        "title": "Sponsored S2301: Improving Care in Rural America Reauthorization Act of 2025 — latest acti",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2301"
+      },
+      {
+        "title": "Sponsored S2228: Modern Worker Empowerment Act — latest action: Read twice and referred to",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2228"
+      },
+      {
+        "title": "Sponsored S2116: A bill to require the Committee on Foreign Investment in the United State",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2116"
+      },
+      {
+        "title": "Sponsored S2118: Value Over Cost Act of 2025 — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2118"
+      },
+      {
+        "title": "Sponsored SRES282: A resolution commemorating June 17, 2025, as the tenth anniversary of t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/282"
+      },
+      {
+        "title": "Sponsored S2003: Strengthening Benefit Plans Act of 2025 — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2003"
+      },
+      {
+        "title": "Sponsored S1998: Small Business Tax Fairness and Compliance Simplification Act — latest ac",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1998"
+      },
+      {
+        "title": "Sponsored S1982: COACHES Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1982"
+      },
+      {
+        "title": "Sponsored S1944: Employee Access to Worksite Health Services Act — latest action: Read twi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1944"
+      },
+      {
+        "title": "Sponsored S1889: A bill to repeal the sunset provision of the Iran Sanctions Act of 1996. ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1889"
+      },
+      {
+        "title": "Sponsored SRES238: A resolution congratulating the students, parents, teachers, and leader",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/238"
+      },
+      {
+        "title": "Sponsored S1813: High-Quality Charter Schools Act — latest action: Committee on Health, Ed",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1813"
+      },
+      {
+        "title": "Sponsored S1757: Efficient Nuclear Licensing Hearings Act — latest action: Read twice and ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1757"
+      },
+      {
+        "title": "Sponsored S1590: Aviation Workforce Development Act — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1590"
+      },
+      {
+        "title": "Sponsored S1545: Repeatedly Flooded Communities Preparation Act — latest action: Committee",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1545"
+      },
+      {
+        "title": "Sponsored S1452: A bill to extend certain authorities under the Defense Production Act of ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1452"
+      },
+      {
+        "title": "Sponsored S1465: Credit Access and Inclusion Act of 2025 — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1465"
+      },
+      {
+        "title": "Sponsored S1182: Stop Antisemitism on College Campuses Act — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1182"
+      },
+      {
+        "title": "Sponsored S883: Unlocking Domestic LNG Potential Act of 2025 — latest action: Read twice a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/883"
+      },
+      {
+        "title": "Sponsored S875: FIRM Act — latest action: Placed on Senate Legislative Calendar under Gene",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/875"
+      },
+      {
+        "title": "Sponsored S735: Sickle Cell Disease and Other Heritable Blood Disorders Research, Surveill",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/735"
+      },
+      {
+        "title": "Sponsored SJRES24: A joint resolution providing for congressional disapproval under chapte",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/24"
+      },
+      {
+        "title": "Sponsored S628: Alan T. Shao II Fentanyl Public Health Emergency and Overdose Prevention A",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/628"
+      },
+      {
+        "title": "Sponsored SJRES18: A joint resolution disapproving the rule submitted by the Bureau of Con",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/18"
+      },
+      {
+        "title": "Sponsored S505: ‘Protect Small Businesses from Excessive Paperwork Act of 2025 — latest ac",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/505"
+      },
+      {
+        "title": "Sponsored SRES58: An original resolution authorizing expenditures by the Committee on Bank",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/58"
+      },
+      {
+        "title": "Sponsored S481: Securing our Border Act — latest action: Read twice and referred to the Co",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/481"
+      },
+      {
+        "title": "Sponsored S487: CHOICE Act — latest action: Read twice and referred to the Committee on He",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/487"
+      },
+      {
+        "title": "Sponsored S363: STOP MADNESS Act — latest action: Read twice and referred to the Committee",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/363"
+      },
+      {
+        "title": "Sponsored S371: SBA Disaster Transparency Act — latest action: Placed on Senate Legislativ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/371"
+      },
+      {
+        "title": "Sponsored SRES44: A resolution designating the week of January 26 through February 1, 2025",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/44"
+      },
+      {
+        "title": "Sponsored S204: Families’ Rights and Responsibilities Act — latest action: Read twice and ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/204"
+      },
+      {
+        "title": "Sponsored S5357: SBA Disaster Transparency Act — latest action: Read twice and referred to",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5357"
+      },
+      {
+        "title": "Sponsored S5190: Blocking Bad Batteries Act — latest action: Read twice and referred to th",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5190"
+      },
+      {
+        "title": "Sponsored SRES861: A resolution expressing support for the designation of September 2024 a",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/861"
+      },
+      {
+        "title": "Sponsored S5139: Empowering Main Street in America Act of 2024 — latest action: Read twice",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5139"
+      },
+      {
+        "title": "Sponsored S5037: Indian Ocean Region Strategic Review Act of 2024 — latest action: Read tw",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5037"
+      },
+      {
+        "title": "Sponsored S1390: Solidify Iran Sanctions Act of 2023 — latest action: Read twice and refer",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1390"
+      },
+      {
+        "title": "Sponsored S5027: ROAD to Housing Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/5027"
+      },
+      {
+        "title": "Sponsored S3018: A bill to amend the Fair Labor Standards Act of 1938 and the National Lab",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3018"
+      },
+      {
+        "title": "Sponsored SRES369: A resolution expressing support for the designation of September 2023 a",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/369"
+      },
+      {
+        "title": "Sponsored SRES717: A resolution calling on the Biden Administration to pursue censure of I",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/717"
+      },
+      {
+        "title": "Sponsored SRES699: A resolution congratulating the students, parents, teachers, and leader",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/699"
+      },
+      {
+        "title": "Sponsored S4288: Efficient Nuclear Licensing Hearings Act — latest action: Read twice and ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4288"
+      },
+      {
+        "title": "Sponsored SRES670: A resolution strongly condemning the rise of antisemitism on campuses o",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/670"
+      },
+      {
+        "title": "Sponsored S3058: United Negro College Fund, Inc. Congressional Gold Medal Act — latest act",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3058"
+      },
+      {
+        "title": "Sponsored SJRES72: A joint resolution providing for congressional disapproval under chapte",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/72"
+      },
+      {
+        "title": "Sponsored S4127: Antisemitism Awareness Act of 2024 — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4127"
+      },
+      {
+        "title": "Sponsored S1201: Employee Rights Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1201"
+      },
+      {
+        "title": "Sponsored S4094: PREVENT DIABETES Act — latest action: Read twice and referred to the Comm",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/4094"
+      },
+      {
+        "title": "Sponsored S3049: Revoke Iranian Funding Act of 2023 — latest action: Committee on Banking,",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3049"
+      },
+      {
+        "title": "Sponsored SJRES70: A joint resolution providing for congressional disapproval under chapte",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/70"
+      },
+      {
+        "title": "Sponsored S3699: COACHES Act — latest action: Read twice and referred to the Committee on ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3699"
+      },
+      {
+        "title": "Sponsored SRES617: A resolution expressing the sense of the Senate that Israel has the inh",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/617"
+      },
+      {
+        "title": "Sponsored S3992: Protecting Access to Credit for Small Businesses Act — latest action: Rea",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3992"
+      },
+      {
+        "title": "Sponsored S3967: Telehealth Modernization Act — latest action: Read twice and referred to ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3967"
+      },
+      {
+        "title": "Sponsored S1732: Know Your App Act — latest action: Read twice and referred to the Committ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1732"
+      },
+      {
+        "title": "Sponsored S3741: Supporting Pregnant and Parenting Women and Families Act — latest action:",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3741"
+      },
+      {
+        "title": "Sponsored S3344: Child Welfare Provider Inclusion Act of 2023 — latest action: Read twice ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3344"
+      },
+      {
+        "title": "Sponsored S3077: Protect Our Bases Act of 2023 — latest action: Read twice and referred to",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3077"
+      },
+      {
+        "title": "Sponsored S3078: Stop Anti-Semitism on College Campuses Act — latest action: Read twice an",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3078"
+      },
+      {
+        "title": "Sponsored S2408: IMPROVE Part D Regulations Act — latest action: Read twice and referred t",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2408"
+      },
+      {
+        "title": "Sponsored S1561: Aviation Workforce Development Act — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1561"
+      },
+      {
+        "title": "Sponsored S1852: Sickle Cell Disease and Other Heritable Blood Disorders Research, Surveil",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1852"
+      },
+      {
+        "title": "Sponsored SJRES25: A joint resolution providing for congressional disapproval under chapte",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/25"
+      },
+      {
+        "title": "Sponsored S1417: Repeatedly Flooded Communities Preparation Act — latest action: Read twic",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1417"
+      },
+      {
+        "title": "Sponsored S1607: Repair Abuses of MSP Payments (RAMP) Act — latest action: Read twice and ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1607"
+      },
+      {
+        "title": "Sponsored S3717: Preventing Terrorism at the U.N. Act of 2024 — latest action: Read twice ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3717"
+      },
+      {
+        "title": "Sponsored S3592: Business of Insurance Regulatory Reform Act of 2024 — latest action: Read",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3592"
+      },
+      {
+        "title": "Sponsored S3625: Protect Small Business and Prevent Illicit Financial Activity Act — lates",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3625"
+      },
+      {
+        "title": "Sponsored SCONRES28: A concurrent resolution expressing the sense of Congress regarding th",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-concurrent-resolution/28"
+      },
+      {
+        "title": "Sponsored S1271: FEND Off Fentanyl Act — latest action: Committee on Banking, Housing, and",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1271"
+      },
+      {
+        "title": "Sponsored S3571: Families’ Rights and Responsibilities Act — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3571"
+      },
+      {
+        "title": "Sponsored SRES531: A resolution designating the week of January 21 through January 27, 202",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/531"
+      },
+      {
+        "title": "Sponsored S3141: Antisemitism Awareness Act of 2023 — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3141"
+      },
+      {
+        "title": "Sponsored S3704: Unlocking Domestic LNG Potential Act of 2024 — latest action: Read twice ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3704"
+      },
+      {
+        "title": "Sponsored S1532: Alan T. Shao II Fentanyl Public Health Emergency and Overdose Prevention ",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1532"
+      },
+      {
+        "title": "Sponsored SRES195: A resolution congratulating the students, parents, teachers, and leader",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/195"
+      },
+      {
+        "title": "Sponsored S1312: Securing our Border Act — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1312"
+      },
+      {
+        "title": "Sponsored S1249: IRS Accountability and Taxpayer Protection Act — latest action: Read twic",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1249"
+      },
+      {
+        "title": "Sponsored S1654: Credit Access and Inclusion Act of 2023 — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/1654"
+      },
+      {
+        "title": "Sponsored S952: Kids in Classes Act — latest action: Read twice and referred to the Commit",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/952"
+      },
+      {
+        "title": "Sponsored S200: PROTECT Kids Act — latest action: Read twice and referred to the Committee",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/200"
+      },
+      {
+        "title": "Sponsored S453: Prohibiting IRS Financial Surveillance Act — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/453"
+      },
+      {
+        "title": "Sponsored S266: CHOICE Act — latest action: Read twice and referred to the Committee on He",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/266"
+      },
+      {
+        "title": "Sponsored SRES11: A resolution designating the week of January 22 through January 28, 2023",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-resolution/11"
+      },
+      {
+        "title": "Sen. Tim Scott [R-SC, 2013-2028], Senator for South Carolina - GovTrack.us Internet Explor",
+        "url": "https://www.govtrack.us/congress/members/tim_scott/412471"
+      },
+      {
+        "title": "Senate passes funding bills, advancing Sen. Tim Scott’s health, defense, and South Carolin",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senate-passes-funding-bills-advancing-sen-tim-scotts-health-defense-and-south-carolina-priorities/"
+      },
+      {
+        "title": "Senator Tim Scott Releases 2025 Year in Review &#8212; U.S. Senator Tim Scott of South Car",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-tim-scott-releases-2025-year-in-review/"
+      },
+      {
+        "title": "About &#8212; U.S. Senator Tim Scott of South Carolina Skip to content About About Senator",
+        "url": "https://www.scott.senate.gov/about/"
+      },
+      {
+        "title": "Senator Scott 2022 Year in Review &#8212; U.S. Senator Tim Scott of South Carolina Skip to",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-2022-year-in-review/"
+      },
+      {
+        "title": "Senator Tim Scott Highlights Major Legislative Wins During July Work Period &#8212; U.S. S",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-tim-scott-highlights-major-legislative-wins-during-july-work-period/"
+      },
+      {
+        "title": "Senator Scott 2023 Year in Review &#8212; U.S. Senator Tim Scott of South Carolina Skip to",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-2023-year-in-review/"
+      },
+      {
+        "title": "WASHINGTON — U.S. Senators Tim Scott (R-SC) and John Barrasso (R-WY) introduced the <stron",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/"
+      },
+      {
+        "title": "<strong>Washington must be more responsible with taxpayer dollars, funding only true natio",
+        "url": "https://www.scott.senate.gov/issues/fighting-big-government/?latest=70"
+      },
+      {
+        "title": "The Republican presidential candidate’s defeat in a largely Black South Carolina district ",
+        "url": "https://www.nytimes.com/2023/11/05/us/tim-scott-black-voters.html"
+      },
+      {
+        "title": "The senator from South Carolina has a personal story that confounds easy political categor",
+        "url": "https://www.politico.com/news/magazine/2023/05/22/tim-scott-55-things-you-need-to-know-00097711"
+      },
+      {
+        "title": "WASHINGTON — Today, U.S. Senator ... funding legislation: “<strong>I have always stood by ",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-opposes-supplemental-funding-bill/"
+      },
+      {
+        "title": "Scott is expected to hinge a potential presidential campaign on his Christian faith and co",
+        "url": "https://www.politico.com/news/2023/04/13/tim-scott-abortion-questions-00091910"
+      },
+      {
+        "title": "The Christian Coalition Voter Guide inferred whether candidates agree or disagree with the",
+        "url": "https://www.ontheissues.org/House/Tim_Scott_Abortion.htm"
+      },
+      {
+        "title": "Scott has repeatedly co-sponsored legislation in Congress to ban abortions after 20 weeks,",
+        "url": "https://www.washingtonpost.com/politics/2023/04/14/tim-scott-abortion-ban-6-weeks/"
+      },
+      {
+        "title": "Pledge for candidates states, &quot;I ... takeover passed in 2010, and replace it with rea",
+        "url": "https://ontheissues.org/House/Tim_Scott_Health_Care.htm"
+      },
+      {
+        "title": "Joining Senator Scott in signing the letter were Senators John Barrasso (R-Wyo.), Marsha B",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-speaks-out-against-medicare-advantage-proposals-that-risk-care-disruptions-premium-hikes-for-seniors/"
+      },
+      {
+        "title": "For example, a same-sex couple legally married in Massachusetts can now have a federal ban",
+        "url": "https://ontheissues.org/2024/Tim_Scott_Civil_Rights.htm"
+      },
+      {
+        "title": "WASHINGTON — Today, U.S. Senator Tim Scott (R-S.C.) voted for, and the Senate passed, a cl",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/sen-tim-scott-votes-to-pass-government-funding-bill-urges-house-to-act-quickly/"
+      },
+      {
+        "title": "[externalActionCode] =&gt; 9000 [description] =&gt; Failed House [chamberOfAction] =&gt; H",
+        "url": "https://www.congress.gov/member/tim-scott/S001184?q={\"bill-status\":\"failed-one\",\"type\":\"all\"}"
+      },
+      {
+        "title": "Federal housing policy has long been disconnected from economic reality. Partisan spending",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-calls-for-less-failed-government-spending-more-solutions-in-response-to-housing-challenges/"
+      },
+      {
+        "title": "In his opening statement at the ... Ranking Member Tim Scott (R-S.C.) <strong>called on th",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-calls-on-federal-reserve-chair-to-reform-regulatory-process-highlights-nations-unsustainable-spending-economic-challenges-/"
+      },
+      {
+        "title": "Even more concerning, the Federal Reserve’s report stated that with respect to both liquid",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-demands-accountability-from-executives-of-failed-banks-slams-rampant-mismanagement/"
+      },
+      {
+        "title": "Washington, D.C. – Senate Banking Committee Chairman Tim Scott (R-S.C.) issued the followi",
+        "url": "https://www.banking.senate.gov/newsroom/majority/chairman-scott-statement-on-the-need-for-federal-reserve-reform-following-new-ethics-violations-report"
+      },
+      {
+        "title": "WASHINGTON — U.S. Senator Tim Scott (R-SC), Chairman of the Senate Banking Committee, this",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/sen-tim-scott-highlights-end-of-debanking-calls-for-balanced-bank-regulation/"
+      },
+      {
+        "title": "We look forward to working with ... Member Elizabeth Warren (D-MA), and their Senate colle",
+        "url": "https://www.banking.senate.gov/newsroom/majority/chairman-scott-statement-on-the-road-to-housing-act-and-ndaa-negotiations"
+      },
+      {
+        "title": "Tim Scott Senator Tim Scott Senate Banking Committee Chairman Tim Scott China Xi Jinping D",
+        "url": "https://www.banking.senate.gov/newsroom/majority/chairman-scott-celebrates-key-banking-committee-national-security-wins-included-in-final-version-of-ndaa"
+      },
+      {
+        "title": "John Kennedy (R-La.), a member ... other Republican colleagues on the Banking Committee in",
+        "url": "https://www.kennedy.senate.gov/public/2023/11/kennedy-scott-colleagues-call-on-biden-administration-to-withdraw-basel-iii-endgame-proposal"
+      },
+      {
+        "title": "WASHINGTON — Today, U.S. Senator Tim Scott (R-S.C.) introduced the <strong>Unlocking Domes",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/senator-scott-bucks-bidens-halt-of-american-energy-exports-introduces-bill-to-boost-american-energy-independence-dominance/"
+      },
+      {
+        "title": "WASHINGTON — This week, U.S. Senator Tim Scott (R-S.C.) voted in favor of the <strong>Acce",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-supports-bill-to-support-future-of-nuclear-energy/"
+      },
+      {
+        "title": "Defense operations at the Savannah River Site (DOE/NNSA) Supports essential national secur",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/sen-tim-scott-applauds-passage-of-fy26-national-defense-authorization-act/"
+      },
+      {
+        "title": "Thank you, Chairman Scott, for joining me in this fight to roll back unnecessary regulatio",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/sen-scott-leads-effort-to-ease-burdens-on-small-businesses/"
+      },
+      {
+        "title": "WASHINGTON — U.S. Senator Tim Scott’s (R-S.C.), <strong>effort to crack down on the illici",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/sen-scotts-fentanyl-bill-signed-into-law/"
+      },
+      {
+        "title": "Washington, D.C. – At today’s Senate Committee on Banking, Housing, and Urban Affairs hear",
+        "url": "https://www.banking.senate.gov/newsroom/minority/scott-pushes-for-solutions-to-fentanyl-crisis-calls-for-passage-of-fend-off-fentanyl-act"
+      },
+      {
+        "title": "Washington, D.C. – Today, Ranking Member Tim Scott’s (R-S.C.) legislative efforts to crack",
+        "url": "https://www.banking.senate.gov/newsroom/minority/scott-led-efforts-to-crack-down-on-fentanyl-trade-expose-iranian-assets-pass-senate"
+      },
+      {
+        "title": "Washington, D.C. – Ranking Member ... and Urban Affairs at today’s legislative markup. <st",
+        "url": "https://www.banking.senate.gov/newsroom/minority/scotts-fentanyl-bill-proceeds-through-key-committee-markup"
+      },
+      {
+        "title": "News AUSTIN – U.S. Senator John Cornyn (R-TX) released the following statement after the F",
+        "url": "https://www.cornyn.senate.gov/news/cornyn-tim-scott-bill-to-crack-down-on-fentanyl-supply-chain-signed-into-law/"
+      },
+      {
+        "title": "Ranking Member Tim Scott’s (R-S.C.) ... and Urban Affairs at today’s legislative markup. <",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scotts-landmark-fentanyl-bill-unanimously-passes-out-of-committee/"
+      },
+      {
+        "title": "Senator Tim Scott (R-S.C.), Ranking ... legislation, the FEND Off Fentanyl Act, was <stron",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-targets-fentanyl-crisis-in-south-carolina-advances-fend-off-fentanyl-act/"
+      },
+      {
+        "title": "NAPO thanks Senators Brown and Tim Scott for their leadership and tireless efforts to enac",
+        "url": "https://www.banking.senate.gov/newsroom/majority/breakingbrowns-bill-to-crack-down-on-fentanyl-traffickers-heads-to-the-presidents-desk"
+      },
+      {
+        "title": "Treasury’s orders are a direct result of the authorities provided by the FEND Off Fentanyl",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/sen-scott-applauds-treasurys-action-to-crack-down-on-illicit-actors-fueling-fentanyl-trade/"
+      },
+      {
+        "title": "WASHINGTON — U.S. Senator Tim ... the ROAD to Housing Act, <strong>comprehensive legislati",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/scott-introduces-comprehensive-housing-legislation/"
+      },
+      {
+        "title": "Washington, D.C. – Ranking Member Tim Scott (R-S.C.) today introduced the ROAD to Housing ",
+        "url": "https://www.banking.senate.gov/newsroom/minority/scott-introduces-comprehensive-housing-legislation"
+      },
+      {
+        "title": "Washington, D.C. – Today, <strong>the U.S. Senate passed the 21st Century ROAD to Housing ",
+        "url": "https://www.banking.senate.gov/newsroom/majority/us-senate-passes-chairman-scotts-historic-housing-affordability-legislation"
+      },
+      {
+        "title": "Washington, D.C. – In his opening statement at today’s legislative hearing before the Sena",
+        "url": "https://www.banking.senate.gov/newsroom/minority/scott-commonsense-reforms-to-outdated-federal-housing-policy-can-pave-the-road-to-housing-for-more-americans"
+      },
+      {
+        "title": "WASHINGTON — Today, <strong>the U.S. Senate passed the 21st Century ROAD to Housing Act by",
+        "url": "https://www.scott.senate.gov/media-center/press-releases/u-s-senate-passes-sen-scotts-historic-housing-affordability-legislation/"
+      },
+      {
+        "title": "That’s why I urge my Democratic ... to Housing Act. <strong>By working together, we can re",
+        "url": "https://www.banking.senate.gov/newsroom/majority/scott-leads-hearing-on-affordable-housing-crisis-emphasizes-deregulation-local-solutions"
+      },
+      {
+        "title": "“And so what we did in the ROAD to Housing is – it started off as my bill, but it became o",
+        "url": "https://www.banking.senate.gov/newsroom/majority/icymi-chairman-scott-joins-hud-secretary-turner-to-discuss-housing-priorities-road-to-housing-act"
+      },
+      {
+        "title": "<strong>The bill failed to advance in Congress last year</strong>, but Scott said last mon",
+        "url": "https://www.politico.com/news/2025/04/22/scott-stays-silent-as-his-minority-business-legacy-crumbles-under-trump-00300868"
+      },
+      {
+        "title": "Array ( [actionDate] =&gt; 2025-05-13 [displayText] =&gt; Passed/agreed to in Senate: Subm",
+        "url": "https://www.congress.gov/member/tim-scott/S001184?q=%7B%22subject%22:%22Crime+and+Law+Enforcement%22%7D"
+      }
+    ]
+  }
+}

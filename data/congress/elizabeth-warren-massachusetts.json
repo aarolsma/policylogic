@@ -1,0 +1,980 @@
+{
+  "official": {
+    "name": "Elizabeth Warren",
+    "role": "U.S. Senator",
+    "jurisdiction": "MA",
+    "party": "Democrat",
+    "term_start": "2025-01-03",
+    "term_end": "2031-01-03",
+    "election_date": "2024-11-01",
+    "next_election": "2030-11-01",
+    "office_phone": "202-224-4543",
+    "office_address": "311 Hart Senate Office Building Washington DC 20510",
+    "office_website": "https://www.warren.senate.gov"
+  },
+  "summary": {
+    "overall_grade": "D",
+    "grade_input_pct": 38.69,
+    "delivery_ratio": 0.3313,
+    "narrative": "This term, Senator Warren's record on her campaign 'Plan to Fight Back' commitments shows consistent, sustained legislative and oversight activity: she filed budget amendments, opposed nominees through tough questioning, sponsored numerous bills (including a wealth tax and corporate-tax measures), and issued anti-corruption resolutions and investigation demands. Most of these efforts reached the introduction or floor-advocacy stage but, as a minority-party member, did not result in enacted law. Her negative commitments split: the ACA was not repealed during the period covered, while cited sources indicate billionaire-favoring tax legislation was enacted despite her opposition.",
+    "grade_rationale": "The pattern is high activity and consistent follow-through on oversight and legislative sponsorship (multiple D2-D3 outcomes), constrained by minority status that kept most measures in committee or as floor opposition. Promise quality is mixed — several directional 'fight' pledges with low clarity alongside specific, measurable commitments like the wealth tax — and one negative promise (oppose billionaire tax cuts) shows the condition occurring despite her opposition.",
+    "ambition_level": "High",
+    "total_promises": 8,
+    "total": 8
+  },
+  "promises": [
+    {
+      "text": "Fight every fight in Congress to slow or limit Trump's legislative agenda.",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 12.65,
+      "what_happened": [
+        "2025-02-05 floor speech opposing budget director nominee Russ Vought (c180)",
+        "2025-03-11 floor speech opposing House Republican budget proposal (c195)",
+        "2025-04-04 filed amendments to Republican budget bill to protect medical research and education funding (c159)",
+        "Proposed 16 amendments with Sen. Markey to protect Massachusetts from budget cuts (c160)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "U.S. Senator Elizabeth Warren | Warren Unveils Budget Bil... Skip to primary navigation Sk",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-unveils-budget-bill-amendments-to-protect-funding-for-medical-research-education-in-massachusetts"
+        },
+        {
+          "title": "Washington, D.C. – During the ... budget resolution, U.S. Senators Elizabeth Warren (D-Mas",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-markey-propose-16-amendments-to-protect-massachusetts-from-republican-budget-cuts"
+        },
+        {
+          "title": "WASHINGTON, DC - United States ... federal budget, which would <strong>eliminate important",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/senator-warren-highlights-republican-budget-and-039s-damaging-impact-on-massachusetts-families"
+        },
+        {
+          "title": "In the Senate, Majority Leader Thune continues to force votes on the same bill over and ov",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-takes-to-senate-floor-in-support-of-democratic-counter-offer-to-reopen-government"
+        },
+        {
+          "title": "Look, already families all across this country are feeling the pressure from high grocery ",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-on-senate-floor-warren-underscores-danger-of-budget-director-nominee-russ-vought"
+        },
+        {
+          "title": "This proposal makes crystal clear where Republicans’ values lie. After months of bipartisa",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/on-senate-floor-warren-opposes-house-republicans-non-starter-budget-proposal"
+        }
+      ]
+    },
+    {
+      "text": "Use Senate oversight and tough questioning to scrutinize and slow confirmation of radical Trump nominees.",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 12.65,
+      "what_happened": [
+        "2025-02-05 floor speech underscoring danger of nominee Russ Vought (c180)",
+        "2025-05-05 pressed Fed nominee Bowman at confirmation hearing (c181)",
+        "2026-04-29 Banking Committee voted 13-11 along party lines on Kevin Warsh; Warren opposed (c176)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Look, already families all across this country are feeling the pressure from high grocery ",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-on-senate-floor-warren-underscores-danger-of-budget-director-nominee-russ-vought"
+        },
+        {
+          "title": "Warren also questioned Bowman on the Trump Administration’s troubling intrusion on the Fed",
+          "url": "https://www.banking.senate.gov/newsroom/minority/elizabeth-warren-press-office"
+        },
+        {
+          "title": "Elizabeth Warren of Massachusetts ... of the Senate Banking Committee&#x27;s meeting Wedne",
+          "url": "https://www.npr.org/2026/04/29/nx-s1-5802926/sen-elizabeth-warren-kevin-warsh-federal-reserve-trump"
+        }
+      ]
+    },
+    {
+      "text": "Defend and protect the Affordable Care Act from Republican repeal efforts.",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 3.0,
+      "promise_score": 15.8,
+      "what_happened": [
+        "2025-03-04 op-ed warning Trump/Republicans could cut health care for millions, urging defense of the program (c189)",
+        "2025-11-07 floor advocacy for reopening government with ACA premium tax credit extension (c175)",
+        "2026-03-19 co-signed Senate Democratic plan to reverse Republican health care cuts (c187)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "The Affordable Care Act made massive strides in expanding access to health insurance cover",
+          "url": "https://elizabethwarren.com/plans/health-care"
+        },
+        {
+          "title": "Now is not the time to tune out — now is the time to fight back to save the health care pr",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-in-new-op-ed-warren-warns-trump-republicans-could-cut-health-care-for-millions"
+        },
+        {
+          "title": "The letter, sent to Senate colleagues and signed by Senators Ron Wyden (D-OR), Jon Ossoff ",
+          "url": "https://www.warner.senate.gov/public/index.cfm/2026/3/warner-senate-democrats-unveil-plans-to-lower-health-costs-amid-trump-s-broken-promises-to-americans"
+        },
+        {
+          "title": "In the Senate, Majority Leader Thune continues to force votes on the same bill over and ov",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-takes-to-senate-floor-in-support-of-democratic-counter-offer-to-reopen-government"
+        }
+      ]
+    },
+    {
+      "text": "Work to unrig the economy for working families by closing corporate tax breaks and favorable rules that benefit giant corporations over workers.",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 11.1,
+      "what_happened": [
+        "2026-02-11 sponsored S3829 Corporate Crimes Against Health Care Act (c116)",
+        "2026-03-26 sponsored S4246 Ultra-Millionaire Tax Act of 2026 (c102)",
+        "2025-06-30 pressed defense contractors on lobbying for retroactive tax breaks (c191)",
+        "2026-04-22 letter opposing Treasury rule enabling tax dodging by wealthy partnerships (c196)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S4246: Ultra-Millionaire Tax Act of 2026 — latest action: Read twice and referre",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4246"
+        },
+        {
+          "title": "Sponsored S3829: Corporate Crimes Against Health Care Act — latest action: Read twice and ",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3829"
+        },
+        {
+          "title": "Washington, D.C. – At a hearing of the Senate Banking, Housing, and Urban Affairs Subcommi",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-at-hearing-warren-slams-trumps-plan-to-give-billionaires-handouts-instead-of-investing-in-working-people"
+        },
+        {
+          "title": "Massively profitable contractors are pushing for retroactive tax break for investments alr",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-asks-defense-contractors-to-explain-lobbying-for-tax-breaks-in-big-beautiful-bill-at-expense-of-american-families"
+        },
+        {
+          "title": "“We oppose the Trump Administration’s efforts to enable tax avoidance by the wealthy and u",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-wyden-lawmakers-slam-proposed-trump-rule-enabling-tax-dodging-by-partnerships-tilting-tax-code-toward-richest-americans"
+        }
+      ]
+    },
+    {
+      "text": "Oppose legislation that cuts taxes for billionaires while working families cannot afford housing.",
+      "domain_label": "Economy",
+      "status": "broken",
+      "confidence": "medium",
+      "delivery": "D0",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 8.0,
+      "what_happened": [
+        "2025-03-11 floor speech opposing Republican budget proposal (c195)",
+        "2025-06-30 pressed contractors on tax breaks in 'big, beautiful bill' (c191)",
+        "2025-11-10 noted One Big Beautiful Bill Act cut taxes for billionaires while hiking taxes for student loan borrowers (c194)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "“President Trump and his allies in Congress passed the One Big Beautiful Bill Act to cut t",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-senators-urge-trump-administration-to-stop-imminent-tax-bomb-for-student-loan-borrowers"
+        },
+        {
+          "title": "Massively profitable contractors are pushing for retroactive tax break for investments alr",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-asks-defense-contractors-to-explain-lobbying-for-tax-breaks-in-big-beautiful-bill-at-expense-of-american-families"
+        },
+        {
+          "title": "Washington, D.C. – At a hearing of the Senate Banking, Housing, and Urban Affairs Subcommi",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-at-hearing-warren-slams-trumps-plan-to-give-billionaires-handouts-instead-of-investing-in-working-people"
+        }
+      ]
+    },
+    {
+      "text": "Conduct aggressive Senate oversight of corruption and abuses of power in the Trump administration.",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 12.65,
+      "what_happened": [
+        "2025-04-29 read aloud 100 reports of alleged Trump corruption to mark 100 days (c73)",
+        "2026-02-05 sponsored SRES598 condemning AI chip export tied to Trump crypto deal (c118)",
+        "2025-10-23 sponsored SRES466 condemning pardon of Binance founder (c126)",
+        "2025-02-14 warned of 'culture of corruption' at the Fed, called for stronger ethics enforcement (c198)",
+        "Pressed for IG investigation into Trump third-country deportations (c185)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "“But instead of following through ... count with me,” <strong>Warren plans to say before l",
+          "url": "https://www.warren.senate.gov/newsroom/news-coverage/huffpost-elizabeth-warren-marks-100-days-of-trump-by-reading-aloud-100-reports-of-his-corruption"
+        },
+        {
+          "title": "Sponsored SRES598: A resolution condemning and calling for the reversal of President Trump",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/598"
+        },
+        {
+          "title": "Sponsored SRES466: A resolution condemning President Trump's pardoning of Binance founder ",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/466"
+        },
+        {
+          "title": "Sponsored S2300: A bill to amend section 2112 of title 44, United States Code, to appropri",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2300"
+        },
+        {
+          "title": "Washington, D.C. — U.S. Senators Elizabeth Warren (D-Mass.) and Chris Van Hollen (D-Md.), ",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-van-hollen-ramirez-carter-demand-investigation-into-trump-admins-unlawful-and-costly-system-of-third-country-deportations"
+        },
+        {
+          "title": "These infractions, the senators highlighted, raise serious questions about the integrity o",
+          "url": "https://www.banking.senate.gov/newsroom/minority/elizabeth-warren-rick-scott-warn-of-culture-of-corruption-at-the-fed-call-for-stronger-ethics-enforcement"
+        }
+      ]
+    },
+    {
+      "text": "Sponsor legislation to prohibit or require disclosure of surveillance and monitoring.",
+      "domain_label": "Governance",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 10.1,
+      "what_happened": [
+        "Senate site lists sponsored legislation 'to prohibit, or require disclosure of, the surveillance, monitoring...' (c11)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "U.S. Senator Elizabeth Warren | Home | U.S. Senator Eliza... Skip to primary navigation Sk",
+          "url": "https://www.warren.senate.gov/"
+        }
+      ]
+    },
+    {
+      "text": "Pass a wealth tax (impose a tax on billionaires / the ultra-wealthy).",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 11.1,
+      "what_happened": [
+        "2026-03-26 sponsored S4246 Ultra-Millionaire Tax Act of 2026, referred to Committee on Finance (c102)",
+        "2026-04-02 renewed Ultra-Millionaire Tax proposal: 2% on net worth $50M-$1B, 3% over $1B (c197)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Sponsored S4246: Ultra-Millionaire Tax Act of 2026 — latest action: Read twice and referre",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4246"
+        },
+        {
+          "title": "Elizabeth Warren of Massachusetts, who has renewed her previous proposed legislation with ",
+          "url": "https://www.forbes.com/sites/nathangoldman/2026/04/02/elizabeth-warrens-bold-plan-to-tax-the-ultra-wealthy-sparks-debate/"
+        }
+      ]
+    }
+  ],
+  "data_gaps": [
+    "Many qualifying promises derive from a single TIER-1 campaign-era op-ed (c23) and the 2024 campaign video (c25/c22/c29); supporting campaign-video items are mostly TIER-3 reprints of the same announcement. Delivery evidence is strong TIER-1 (congress.gov sponsored bills, Senate press releases). The 'oppose billionaire tax cuts' D0 rests on cited references to enactment of the One Big Beautiful Bill Act (c194); reviewer should confirm enactment date and scope. Several 'fight every fight' pledges are directional (clarity 2) and capped at M1 on magnitude grounds. Wealth tax bill enactment status should be re-checked closer to term end."
+  ],
+  "term_identity": {
+    "term_id": "us-sen-ma-2025",
+    "ordinal": "3rd Senate term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 24.4,
+    "office": "U.S. Senator",
+    "jurisdiction": "MA",
+    "term_start": "2025-01-03",
+    "term_end": "2031-01-03"
+  },
+  "person_ref": "elizabeth-warren",
+  "sibling_terms": [
+    {
+      "term_id": "us-sen-ma-2013",
+      "label": "U.S. Senator 2013–2019",
+      "status": "completed",
+      "grade": null
+    },
+    {
+      "term_id": "us-sen-ma-2019",
+      "label": "U.S. Senator 2019–2025",
+      "status": "completed",
+      "grade": null
+    }
+  ],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 24.4,
+    "display": "Grade is record-to-date — term in progress, 24.4% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "us-sen-ma-2025",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T22:31:15+00:00",
+    "generated_at": "2026-06-22T22:32:23+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Fight every fight in Congress to slow or limit Trump's legislative agenda",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-op-ed-in-time-the-plan-to-fight-back"
+      },
+      {
+        "title": "Sponsor legislation to prohibit or require disclosure of surveillance and monitoring",
+        "url": "https://www.warren.senate.gov/"
+      },
+      {
+        "title": "Elizabeth Warren running for 3rd US Senate term in 2024 | AP News Menu World SECTIONS Iran",
+        "url": "https://apnews.com/article/elizabeth-warren-senate-reelection-campaign-2024-b686e64a20990a2e3fcf8cb69f4b7559"
+      },
+      {
+        "title": "(AP Photo/Michael Dwyer) | AP · The state’s senior senator has repeatedly said she’s runni",
+        "url": "https://www.politico.com/newsletters/massachusetts-playbook/2022/11/14/warren-sets-her-sights-on-2024-00066699"
+      },
+      {
+        "title": "“<strong>I will make sure every home in America has a fiber broadband connection at a pric",
+        "url": "https://www.politico.com/2020-election/candidates-views-on-the-issues/elizabeth-warren/"
+      },
+      {
+        "title": "%PDF-1.7 %���� 2 0 obj >stream x�͜]o�F\u0016�� �?�UA\u0015�1�C.\u0002\u0003�-�)�4���@� ٢mn%�%����;gH�N8c��#q��",
+        "url": "https://www.warren.senate.gov/imo/media/doc/from_plans_to_law_senator_elizabeth_warrens_record_of_accomplishments_from_2013-2024.pdf"
+      },
+      {
+        "title": "Warren ran in the 2012 election for the U.S. Senate, representing Massachusetts. She ran u",
+        "url": "https://ballotpedia.org/Elizabeth_Warren"
+      },
+      {
+        "title": "“Sen. Elizabeth Warren <strong>hopes to serve Massachusetts for another six years</strong>",
+        "url": "https://www.politico.com/newsletters/massachusetts-playbook/2024/10/16/five-takeaways-from-the-senate-debate-00183879"
+      },
+      {
+        "title": "The Massachusetts Freedom Fighters, ... former MassGOP Chair Jim Lyons, called on Republic",
+        "url": "https://www.politico.com/newsletters/massachusetts-playbook/2024/10/15/survey-sets-senate-debate-stage-00183642"
+      },
+      {
+        "title": "“Republican control of the United States Senate,” Warren said, “is bad for Massachusetts.”",
+        "url": "https://www.politico.com/live-updates/2024/10/15/2024-elections-live-coverage-updates-analysis/elizabeth-warren-massachusetts-senate-debate-00183860"
+      },
+      {
+        "title": "2024 Massachusetts Senator's race &nbsp;&nbsp; Follow @ontheissuesorg ---> &nbsp;2024&nbsp",
+        "url": "https://ontheissues.org/2024_MA_Senate.htm"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Elizabeth Warren.",
+        "url": "https://ballotpedia.org/Endorsements_by_Elizabeth_Warren"
+      },
+      {
+        "title": "Warren sent an official letter to the Federal Election Commission on August 22, 2014, disa",
+        "url": "https://ballotpedia.org/Ready_for_Warren"
+      },
+      {
+        "title": "2024 State legislative elections · 2024 State judge elections · 2024 Local elections · 202",
+        "url": "https://ballotpedia.org/wiki/index.php?title=Elizabeth_Warren/Elections&redirect=no"
+      },
+      {
+        "title": "The following policy positions were compiled from the candidate&#x27;s official campaign w",
+        "url": "https://ballotpedia.org/Elizabeth_Warren_presidential_campaign,_2020"
+      },
+      {
+        "title": "Elizabeth Warren · 2016 presidential election, Federalism · Ballotpedia features 560,506 e",
+        "url": "https://ballotpedia.org/Elizabeth_Warren_possible_presidential_campaign,_2016/Federalism"
+      },
+      {
+        "title": "This page was current at the end of the individual&#x27;s last campaign covered by Ballotp",
+        "url": "https://ballotpedia.org/Elizabeth_Warren_(California)"
+      },
+      {
+        "title": "Elizabeth Warren possible presidential campaign, 2016 · Elizabeth Warren possible presiden",
+        "url": "https://ballotpedia.org/Category:Elizabeth_Warren"
+      },
+      {
+        "title": "Ballotpedia documented all statements of presidential candidacy registered with the Federa",
+        "url": "https://ballotpedia.org/Elizabeth_Ann_Warren"
+      },
+      {
+        "title": "Senate Massachusetts on November 5, 2024. ... Incumbent Elizabeth Warren advanced from the",
+        "url": "https://ballotpedia.org/John_Deaton_(Massachusetts)"
+      },
+      {
+        "title": "Elizabeth Warren on the Issues &nbsp;&nbsp; Follow @ontheissuesorg ---> ---> ---> &nbsp;20",
+        "url": "https://ontheissues.org/Elizabeth_Warren.htm"
+      },
+      {
+        "title": "Elizabeth Warren on War & Peace Follow @ontheissuesorg Elizabeth Warren on War & Peace Mas",
+        "url": "https://ontheissues.org/2020/Elizabeth_Warren_War_+_Peace.htm"
+      },
+      {
+        "title": "Source: The Democrats, by Alexander Moore, p.140-2 , Jul 9, 2019 · <strong>Democratic pres",
+        "url": "https://www.ontheissues.org/2020/Elizabeth_Warren_Principles_+_Values.htm"
+      },
+      {
+        "title": "The costliness of raising children is one of the main reasons families are in poverty. War",
+        "url": "https://www.ontheissues.org/Social/Elizabeth_Warren_Families_+_Children.htm"
+      },
+      {
+        "title": "Elizabeth Warren <strong>has always looked out for middle class families</strong>. Warren ",
+        "url": "https://ontheissues.org/2024/Elizabeth_Warren_Civil_Rights.htm"
+      },
+      {
+        "title": "Her biggest obstacle: [At the SXSW ... classic Warren--a mix of history lesson, economic t",
+        "url": "https://ontheissues.org/Economic/Elizabeth_Warren_Technology.htm"
+      },
+      {
+        "title": "Sen. Elizabeth Warren of Massachusetts, who was looking to regain frontrunner status in Ne",
+        "url": "https://www.ontheissues.org/social/Elizabeth_Warren_Abortion.htm"
+      },
+      {
+        "title": "Source: AntiWar.com blog, &quot;Bomb, Bomb Iran&quot; , Oct 17, 2011 · <strong>U.S. Senate",
+        "url": "https://www.ontheissues.org/International/Elizabeth_Warren_Homeland_Security.htm"
+      },
+      {
+        "title": "Summary: LEGALIZE, TAX, AND REGULATE: Senator Elizabeth Warren has previously been endorse",
+        "url": "https://www.ontheissues.org/Domestic/Elizabeth_Warren_Drugs.htm"
+      },
+      {
+        "title": "Against that background, a viral meme re-emerged on social media: &quot;&#x27;Having an ab",
+        "url": "https://ontheissues.org/Archive/Media_Snopes_Elizabeth_Warren.htm"
+      },
+      {
+        "title": "Elizabeth Warren is currently being tested through the <strong>2024 Political Courage Test",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/141272/elizabeth-warren"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/180145/elizabeth-warren"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/179339/elizabeth-heng"
+      },
+      {
+        "title": "Keep in mind that ratings done by special interest groups often do not represent a non-par",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/141272/elizabeth-warren"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://votesmart.org/candidate/180145/elizabeth-warren?categoryId=25&filter=%5B%27V%27%2C+%27S%27%2C+%27R%27%2C+%27E%27%2C+%27F%27%2C+%27P%27%5D"
+      },
+      {
+        "title": "For assistance, please call our candidate line at 515-989-6359 or email politicalcourage@v",
+        "url": "https://secure.votesmart.org/loadLogin.action;jsessionid=F2CD2AC03A41D48A887F5C8C3665CDA7"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/214745/elizabeth-farnham"
+      },
+      {
+        "title": "Check here regularly to view your candidates&#x27; State-Specific Political Courage Test a",
+        "url": "https://votesmart.org/blog-archive/2012/may/17/may-common-ground-e-newsletter/"
+      },
+      {
+        "title": "“But instead of following through ... count with me,” <strong>Warren plans to say before l",
+        "url": "https://www.warren.senate.gov/newsroom/news-coverage/huffpost-elizabeth-warren-marks-100-days-of-trump-by-reading-aloud-100-reports-of-his-corruption"
+      },
+      {
+        "title": "Warren’s plan <strong>reflects a sense of pragmatism about the politics and logistics of p",
+        "url": "https://www.nytimes.com/2019/11/15/us/politics/elizabeth-warren-medicare-for-all-100-days.html"
+      },
+      {
+        "title": "On Wednesday, the Senate will vote on the bipartisan resolution Senators Warren, Wyden, an",
+        "url": "https://www.banking.senate.gov/newsroom/minority/warren-sounds-alarm-on-trumps-first-100-days"
+      },
+      {
+        "title": "Please wait...your file download will begin shortly · If your download does not begin soon",
+        "url": "https://newdemocratcoalition.house.gov/download/100-day-agenda-wtas-doc"
+      },
+      {
+        "title": "Warren’s plan is her latest attempt to quiet critics from the center and from the left on ",
+        "url": "https://www.politico.com/news/2019/11/15/warren-medicare-for-all-071152"
+      },
+      {
+        "title": "Sponsored S4734: A bill to require a review of acquisitions by investment companies involv",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4734"
+      },
+      {
+        "title": "Sponsored S4743: A bill to require the Office of Financial Research to compel data relatin",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4743"
+      },
+      {
+        "title": "Sponsored S4718: A bill to amend title 10, United States Code, to modify the treatment of ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4718"
+      },
+      {
+        "title": "Sponsored S4684: Protecting American Consumers Act — latest action: Read twice and referre",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4684"
+      },
+      {
+        "title": "Sponsored S4648: A bill to improve transparency with respect to foreign influence on Depar",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4648"
+      },
+      {
+        "title": "Sponsored S4550: Maternal Health Pandemic Response Act — latest action: Read twice and ref",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4550"
+      },
+      {
+        "title": "Sponsored SRES732: A resolution expressing the sense of the Senate that over 25 years of r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/732"
+      },
+      {
+        "title": "Sponsored S4509: PBM Act — latest action: Read twice and referred to the Committee on the ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4509"
+      },
+      {
+        "title": "Sponsored S4388: Housing Survivors of Major Disasters Act of 2026 — latest action: Read tw",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4388"
+      },
+      {
+        "title": "Sponsored S4299: Ban Presidential Plunder of Taxpayer Funds Act — latest action: Read twic",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4299"
+      },
+      {
+        "title": "Sponsored S4288: Educational Equity Challenge Grant Act of 2026 — latest action: Read twic",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4288"
+      },
+      {
+        "title": "Sponsored SJRES178: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/178"
+      },
+      {
+        "title": "Sponsored SJRES176: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/176"
+      },
+      {
+        "title": "Sponsored SJRES170: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/170"
+      },
+      {
+        "title": "Sponsored SJRES167: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/167"
+      },
+      {
+        "title": "Sponsored SJRES168: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/168"
+      },
+      {
+        "title": "Sponsored SJRES166: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/166"
+      },
+      {
+        "title": "Sponsored SJRES174: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/174"
+      },
+      {
+        "title": "Sponsored SJRES179: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/179"
+      },
+      {
+        "title": "Sponsored SJRES177: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/177"
+      },
+      {
+        "title": "Sponsored SJRES175: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/175"
+      },
+      {
+        "title": "Sponsored SJRES169: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/169"
+      },
+      {
+        "title": "Sponsored S4246: Ultra-Millionaire Tax Act of 2026 — latest action: Read twice and referre",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4246"
+      },
+      {
+        "title": "Sponsored S4212: Prioritizing the Warfighter in Defense Contracting Act of 2026 — latest a",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4212"
+      },
+      {
+        "title": "Sponsored SJRES142: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/142"
+      },
+      {
+        "title": "Sponsored SRES651: A resolution honoring the USS Massachusetts (SSN-798) Virginia Class nu",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/651"
+      },
+      {
+        "title": "Sponsored S4050: Failed Bank Executives Clawback Act — latest action: Read twice and refer",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4050"
+      },
+      {
+        "title": "Sponsored S4029: A bill to reinforce the Foreign Corrupt Practices Act of 1977 by establis",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4029"
+      },
+      {
+        "title": "Sponsored S4001: Supplemental Security Income Restoration Act of 2026 — latest action: Rea",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4001"
+      },
+      {
+        "title": "Sponsored SJRES113: A joint resolution providing congressional disapproval under chapter 8",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/113"
+      },
+      {
+        "title": "Sponsored S4015: Stop Militarizing Our Streets Act of 2026 — latest action: Read twice and",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4015"
+      },
+      {
+        "title": "Sponsored SJRES112: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/112"
+      },
+      {
+        "title": "Sponsored SJRES111: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/111"
+      },
+      {
+        "title": "Sponsored SJRES110: A joint resolution providing for congressional disapproval under chapt",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/110"
+      },
+      {
+        "title": "Sponsored S3948: Direct File Act of 2026 — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3948"
+      },
+      {
+        "title": "Sponsored S3904: American Homeownership Act — latest action: Read twice and referred to th",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3904"
+      },
+      {
+        "title": "Sponsored S3829: Corporate Crimes Against Health Care Act — latest action: Read twice and ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3829"
+      },
+      {
+        "title": "Sponsored S3822: Break Up Big Medicine Act — latest action: Read twice and referred to the",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3822"
+      },
+      {
+        "title": "Sponsored SRES598: A resolution condemning and calling for the reversal of President Trump",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/598"
+      },
+      {
+        "title": "Sponsored S3547: Part-Time Worker Bill of Rights Act — latest action: Read twice and refer",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3547"
+      },
+      {
+        "title": "Sponsored S3550: Schedules That Work Act — latest action: Read twice and referred to the C",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3550"
+      },
+      {
+        "title": "Sponsored S3329: United States Cadet Nurse Corps Service Recognition Act of 2025 — latest ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3329"
+      },
+      {
+        "title": "Sponsored S3210: EXPERTS Act of 2025 — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3210"
+      },
+      {
+        "title": "Sponsored S3191: Stop Ballroom Bribery Act — latest action: Read twice and referred to the",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3191"
+      },
+      {
+        "title": "Sponsored S3078: Social Security Emergency Inflation Relief Act — latest action: Read twic",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3078"
+      },
+      {
+        "title": "Sponsored S3067: Innovation Fund Act — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3067"
+      },
+      {
+        "title": "Sponsored SRES466: A resolution condemning President Trump's pardoning of Binance founder ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/466"
+      },
+      {
+        "title": "Sponsored S2965: No Argentina Bailout Act — latest action: Read twice and referred to the ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2965"
+      },
+      {
+        "title": "Sponsored S2939: Child Care for Every Community Act — latest action: Read twice and referr",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2939"
+      },
+      {
+        "title": "Sponsored SRES422: A resolution recognizing the seriousness of polycystic ovary syndrome (",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/422"
+      },
+      {
+        "title": "Sponsored S2894: Reconciliation in Place Names Act — latest action: Read twice and referre",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2894"
+      },
+      {
+        "title": "Sponsored S2809: Transparency in Contracting Act of 2025 — latest action: Read twice and r",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2809"
+      },
+      {
+        "title": "Sponsored S2798: Equal Employment for All Act of 2025 — latest action: Read twice and refe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2798"
+      },
+      {
+        "title": "Sponsored S2729: Nationwide Right To Unionize Act — latest action: Read twice and referred",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2729"
+      },
+      {
+        "title": "Sponsored S2489: Modular Housing Production Act — latest action: Read twice and referred t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2489"
+      },
+      {
+        "title": "Sponsored S2321: Price Gouging Prevention Act of 2025 — latest action: Read twice and refe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2321"
+      },
+      {
+        "title": "Sponsored S2300: A bill to amend section 2112 of title 44, United States Code, to appropri",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2300"
+      },
+      {
+        "title": "Sponsored S2209: Warrior Right to Repair Act of 2025 — latest action: Read twice and refer",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2209"
+      },
+      {
+        "title": "Sponsored S2197: Refund Equality Act of 2025 — latest action: Read twice and referred to t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2197"
+      },
+      {
+        "title": "Sponsored S2191: AMMO Act — latest action: Read twice and referred to the Committee on the",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2191"
+      },
+      {
+        "title": "Sponsored S2145: GUARD Veterans’ Health Care Act — latest action: Read twice and referred ",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2145"
+      },
+      {
+        "title": "Sponsored S2006: Fit to Serve Act — latest action: Read twice and referred to the Committe",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2006"
+      },
+      {
+        "title": "Sponsored S1996: Medicare Audiology Access Improvement Act of 2025 — latest action: Read t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1996"
+      },
+      {
+        "title": "Sponsored S1915: Remove the Stain Act — latest action: Read twice and referred to the Comm",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1915"
+      },
+      {
+        "title": "Sponsored S1914: Andrew Kearse Accountability for Denial of Medical Care Act of 2025 — lat",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1914"
+      },
+      {
+        "title": "Sponsored S1775: Protecting AI and Cloud Competition in Defense Act of 2025 — latest actio",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1775"
+      },
+      {
+        "title": "Sponsored S1621: Restoring Fair Housing Protections Eliminated by Trump Act of 2025 — late",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1621"
+      },
+      {
+        "title": "Sponsored S1489: Anti-Racism in Public Health Act of 2025 — latest action: Star Print orde",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1489"
+      },
+      {
+        "title": "Sponsored S1491: SEER Act 2025 — latest action: Read twice and referred to the Committee o",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1491"
+      },
+      {
+        "title": "Sponsored S934: American Housing and Economic Mobility Act of 2025 — latest action: Read t",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/934"
+      },
+      {
+        "title": "Sponsored SRES119: A resolution memorializing those lost to the COVID-19 pandemic. — lates",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/119"
+      },
+      {
+        "title": "Sponsored S608: IRS MATH Act of 2025 — latest action: Read twice and referred to the Commi",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/608"
+      },
+      {
+        "title": "Sponsored S589: SAD Act — latest action: Read twice and referred to the Committee on Comme",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/589"
+      },
+      {
+        "title": "Sen. Elizabeth Warren [D-MA, 2013-2030], Senator for Massachusetts - GovTrack.us Internet ",
+        "url": "https://www.govtrack.us/congress/members/elizabeth_warren/412542"
+      },
+      {
+        "title": "S.Res.598 — 119th Congress (2025-2026) A resolution condemning and calling for the reversa",
+        "url": "https://www.congress.gov/member/elizabeth-warren/W000817?q=%7B%22sponsorship%22%3A%22sponsored%22%7D"
+      },
+      {
+        "title": "U.S. Senator Elizabeth Warren | Senator Elizabeth Warren ... Skip to primary navigation Sk",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/senator-elizabeth-warren-co-sponsors-older-americans-act-reauthorization-bill"
+      },
+      {
+        "title": "U.S. Senator Elizabeth Warren | Warren Unveils Budget Bil... Skip to primary navigation Sk",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-unveils-budget-bill-amendments-to-protect-funding-for-medical-research-education-in-massachusetts"
+      },
+      {
+        "title": "Washington, D.C. – During the ... budget resolution, U.S. Senators Elizabeth Warren (D-Mas",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-markey-propose-16-amendments-to-protect-massachusetts-from-republican-budget-cuts"
+      },
+      {
+        "title": "WASHINGTON, DC - United States ... federal budget, which would <strong>eliminate important",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/senator-warren-highlights-republican-budget-and-039s-damaging-impact-on-massachusetts-families"
+      },
+      {
+        "title": "&quot;Today&#x27;s agreement came at a critical time for Massachusetts, and I&#x27;m very ",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-and-markey-praise-massachusetts-priorities-in-budget-appropriations-package"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/141272/elizabeth-warren/22/defense"
+      },
+      {
+        "title": "WASHINGTON, DC – United States Senator Elizabeth Warren (D-Mass.) today released a report ",
+        "url": "https://www.warren.senate.gov/oversight/reports/senator-warren-releases-report-highlighting-decades-of-broken-promises-and-failures-to-enforce-labor-standards-in-trade-agreements"
+      },
+      {
+        "title": "Senator Elizabeth Warren delivered a floor speech on <strong>November 17, 2016</strong> ab",
+        "url": "https://www.warren.senate.gov/newsroom/videos/watch/senator-elizabeth-warren-president-elect-trump-already-broke-promise-to-drain-the-swamp"
+      },
+      {
+        "title": "This report contains a summary of her key accomplishments, which include: ... Office of Se",
+        "url": "https://www.warren.senate.gov/imo/media/doc/warren_sasc_accomplishments_report.pdf"
+      },
+      {
+        "title": "Vote Smart provides easy access to congressional and state voting records and maintains a ",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/141272/elizabeth-warren/40/immigration"
+      },
+      {
+        "title": "&quot;I supported this bill in Committee on the promise that it would improve, but <strong",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/senator-elizabeth-warren-and-039s-statement-on-the-every-child-achieves-act-vote"
+      },
+      {
+        "title": "In the Senate, Majority Leader Thune continues to force votes on the same bill over and ov",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-takes-to-senate-floor-in-support-of-democratic-counter-offer-to-reopen-government"
+      },
+      {
+        "title": "Elizabeth Warren of Massachusetts ... of the Senate Banking Committee&#x27;s meeting Wedne",
+        "url": "https://www.npr.org/2026/04/29/nx-s1-5802926/sen-elizabeth-warren-kevin-warsh-federal-reserve-trump"
+      },
+      {
+        "title": "“[I]nstead of changing their policies and actually trying to help the American people… Tru",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/on-senate-floor-warren-fights-back-against-jim-crow-20-slams-trumps-reckless-war-in-iran"
+      },
+      {
+        "title": "Look, already families all across this country are feeling the pressure from high grocery ",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-on-senate-floor-warren-underscores-danger-of-budget-director-nominee-russ-vought"
+      },
+      {
+        "title": "Warren also questioned Bowman on the Trump Administration’s troubling intrusion on the Fed",
+        "url": "https://www.banking.senate.gov/newsroom/minority/elizabeth-warren-press-office"
+      },
+      {
+        "title": "Trump also baselessly claimed that the Supreme Court should “readjudicate” their recent de",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-presses-trump-on-theft-in-broad-daylight-amid-attempts-to-avoid-paying-back-175-billion-in-illegal-tariffs-to-american-families-small-businesses"
+      },
+      {
+        "title": "Since January, the second Trump administration has illegally stripped federal workers of t",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/as-trump-administration-illegally-slashes-worker-protections-warren-sherman-fight-to-ban-laws-that-threaten-workers-right-to-unionize-for-better-wages-and-working-conditions"
+      },
+      {
+        "title": "Washington, D.C. — U.S. Senators Elizabeth Warren (D-Mass.) and Chris Van Hollen (D-Md.), ",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-van-hollen-ramirez-carter-demand-investigation-into-trump-admins-unlawful-and-costly-system-of-third-country-deportations"
+      },
+      {
+        "title": "The letter, sent to Senate colleagues and signed by Senators Ron Wyden (D-OR), Jon Ossoff ",
+        "url": "https://www.warner.senate.gov/public/index.cfm/2026/3/warner-senate-democrats-unveil-plans-to-lower-health-costs-amid-trump-s-broken-promises-to-americans"
+      },
+      {
+        "title": "Washington, D.C. – At a hearing of the Senate Finance Committee, U.S. Senator Elizabeth Wa",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/at-hearing-warren-sounds-alarm-on-rising-health-insurance-premiums-slams-republicans-concepts-of-a-plan-for-lowering-health-care-costs"
+      },
+      {
+        "title": "Now is not the time to tune out — now is the time to fight back to save the health care pr",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-in-new-op-ed-warren-warns-trump-republicans-could-cut-health-care-for-millions"
+      },
+      {
+        "title": "Washington, D.C. – At a hearing of the Senate Banking, Housing, and Urban Affairs Subcommi",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/icymi-at-hearing-warren-slams-trumps-plan-to-give-billionaires-handouts-instead-of-investing-in-working-people"
+      },
+      {
+        "title": "Massively profitable contractors are pushing for retroactive tax break for investments alr",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-asks-defense-contractors-to-explain-lobbying-for-tax-breaks-in-big-beautiful-bill-at-expense-of-american-families"
+      },
+      {
+        "title": "Tax cuts for working families are a good idea, but <strong>tax cuts for working people are",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/at-hearing-warren-sounds-alarm-for-potential-impact-of-more-trump-tax-cuts-for-billionaires-paid-for-by-american-families"
+      },
+      {
+        "title": "“President Trump and his allies in Congress passed the One Big Beautiful Bill Act to cut t",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-senators-urge-trump-administration-to-stop-imminent-tax-bomb-for-student-loan-borrowers"
+      },
+      {
+        "title": "This proposal makes crystal clear where Republicans’ values lie. After months of bipartisa",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/on-senate-floor-warren-opposes-house-republicans-non-starter-budget-proposal"
+      },
+      {
+        "title": "“We oppose the Trump Administration’s efforts to enable tax avoidance by the wealthy and u",
+        "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-wyden-lawmakers-slam-proposed-trump-rule-enabling-tax-dodging-by-partnerships-tilting-tax-code-toward-richest-americans"
+      },
+      {
+        "title": "These infractions, the senators highlighted, raise serious questions about the integrity o",
+        "url": "https://www.banking.senate.gov/newsroom/minority/elizabeth-warren-rick-scott-warn-of-culture-of-corruption-at-the-fed-call-for-stronger-ethics-enforcement"
+      }
+    ]
+  }
+}
