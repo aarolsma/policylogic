@@ -384,9 +384,11 @@ function buildTopicDropdown(data) {
 }
 
 function getDeliveryPct(d) {
+  var s = d.summary || {};
+  if (typeof s.delivery_ratio === 'number') return Math.round(s.delivery_ratio*100) + '%';
   var ps = d.promises || [];
   if (!ps.length) return '—';
-  return Math.round(ps.reduce(function(s,p){ return s+(p.outcome_score||0); },0)/(ps.length*5)*100) + '%';
+  return Math.round(ps.reduce(function(a,p){ return a+(p.outcome_score||0); },0)/(ps.length*5)*100) + '%';
 }
 
 function officialMatchesDomain(d) {
@@ -490,27 +492,32 @@ function openModal(d) {
   var minority = o.minority_party ? '<span style="font-size:11px;color:var(--gray);margin-left:8px;">Minority Party</span>' : '';
   var isFormer = o.term_end && new Date(o.term_end) < new Date();
 
+  var DLAD = {D0:'none',D1:'stated',D2:'bill introduced',D3:'passed a chamber',D4:'enacted'};
+  var DNUM = {D0:0,D1:1,D2:2,D3:3,D4:4};
+  var HNUM = {H1:1,H2:2,H3:3};
   var promisesHTML = promises.map(function(p) {
-    var flags = p.flags || {};
+    var did = (p.what_happened||[]).map(function(w){
+      return '<div style="font-size:12px;color:var(--gray);line-height:1.5;">&mdash; ' + w + '</div>';
+    }).join('');
     return '<div class="promise-item">' +
       '<div class="promise-header">' +
-        '<div class="promise-text">' + (p.normalized||'') + '</div>' +
+        '<div class="promise-text">' + (p.text || p.normalized || '') + '</div>' +
         (p.domain_label ? '<div class="domain-tag">' + p.domain_label.toUpperCase() + '</div>' : '') +
       '</div>' +
       '<div class="bars">' +
-        '<div class="bar-item"><div class="bar-label">Specificity of Promise</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.clarity_score||0,3) + '"></div></div><div class="bar-val">' + (p.clarity_score||0) + '/3</div></div>' +
-        '<div class="bar-item"><div class="bar-label">Actions Taken</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.initiation_score||0,4) + '"></div></div><div class="bar-val">' + (p.initiation_score||0) + '/4</div></div>' +
-        '<div class="bar-item"><div class="bar-label">Outcome &amp; Results</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.outcome_score||0,5) + '"></div></div><div class="bar-val">' + (p.outcome_score||0) + '/5</div></div>' +
-        '<div class="bar-item"><div class="bar-label">Their Role</div><div class="bar-track"><div class="bar-fill" style="width:' + pct((p.attribution_modifier||0)*10,10) + '"></div></div><div class="bar-val">' + (p.attribution_modifier||0) + 'x</div></div>' +
+        '<div class="bar-item"><div class="bar-label">Delivery</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(DNUM[p.delivery]||0,4) + '"></div></div><div class="bar-val">' + (p.delivery||'—') + ' &middot; ' + (DLAD[p.delivery]||'') + '</div></div>' +
+        '<div class="bar-item"><div class="bar-label">Difficulty</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(HNUM[p.difficulty]||0,3) + '"></div></div><div class="bar-val">' + (p.difficulty||'—') + '</div></div>' +
+        '<div class="bar-item"><div class="bar-label">Impact (scale+mag)</div><div class="bar-track"><div class="bar-fill" style="width:' + pct(p.impact||0,8) + '"></div></div><div class="bar-val">' + (p.impact||0) + '/8</div></div>' +
+        '<div class="bar-item"><div class="bar-label">Their Role</div><div class="bar-track"><div class="bar-fill" style="width:' + pct((p.their_role||0)*10,10) + '"></div></div><div class="bar-val">' + (p.their_role||0) + 'x</div></div>' +
       '</div>' +
-      (flags.externally_blocked ? '<div style="font-size:11px;color:var(--gold);margin-top:6px;">&#9888; External factors limited delivery</div>' : '') +
+      '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:8px;">' +
+        '<div style="font-family:\'DM Mono\',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray);">' + (p.status||'').replace(/_/g,' ') + '</div>' +
+        '<div style="font-family:\'Playfair Display\',serif;font-weight:700;font-size:15px;">' + (typeof p.promise_score==='number'?p.promise_score.toFixed(1):'—') + '<span style="font-family:\'DM Mono\',monospace;font-size:9px;color:var(--gray);">/25</span></div>' +
+      '</div>' +
+      (did ? '<div style="margin-top:8px;padding:8px 10px;background:var(--cream);border-left:2px solid var(--rule);"><div style="font-family:\'DM Mono\',monospace;font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-bottom:4px;">What happened</div>' + did + '</div>' : '') +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;">' +
-        (p.confidence ? '<div class="confidence-chip">Confidence: ' + p.confidence.charAt(0).toUpperCase() + p.confidence.slice(1).toLowerCase() + '</div>' : '') +
-        (flags.reversed ? '<div class="flag-chip">Reversed</div>' : '') +
-        (flags.redefined ? '<div class="flag-chip">Redefined</div>' : '') +
-        (flags.scope_reduced ? '<div class="flag-chip">Scope Reduced</div>' : '') +
-        (flags.deadline_shifted ? '<div class="flag-chip">Deadline Shifted</div>' : '') +
-        (flags.credit_overclaimed ? '<div class="flag-chip">Credit Overclaimed</div>' : '') +
+        (p.confidence ? '<div class="confidence-chip">Confidence: ' + (p.confidence.charAt(0).toUpperCase()+p.confidence.slice(1)) + '</div>' : '') +
+        (p.flags||[]).map(function(f){ return '<div class="flag-chip">' + f + '</div>'; }).join('') +
       '</div>' +
     '</div>';
   }).join('');
