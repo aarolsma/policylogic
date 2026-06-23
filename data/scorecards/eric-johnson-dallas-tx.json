@@ -43,7 +43,7 @@
         "Jul 17, 2024: Johnson highlighted the city's decrease in violent crime (c109).",
         "Nov 13, 2025: State of the City touted lower violent crime (c125)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "That plan was developed by University of Texas-San Antonio criminology and criminal justic",
@@ -82,7 +82,7 @@
         "Fall 2024: Council approved Dallas's largest rate cut in at least 40 years (c120).",
         "Sep 15, 2025: Johnson urged colleagues to submit budget amendments reducing spending to allow a reduced tax rate (c95)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "“We should be doing fewer things better and leave more money in people’s pockets to do thi",
@@ -121,7 +121,7 @@
         "Nov 2022: Voters approved Prop A, funding KBHCC and Fair Park renovations via a 2% hotel occupancy tax increase (c26).",
         "2026: KBHCC redevelopment cited as a major investment spurring growth (c127)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "At the Dallas Regional Chamber’s A Year-End Conversation, presented by Blue Cross and Blue",
@@ -154,7 +154,7 @@
       "what_happened": [
         "Aug 21, 2023: Master plan for Hensley Field redevelopment exists but implementation awaits resolution of Dallas-U.S. Navy cleanup litigation (c131)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "“As a result, <strong>Dallas cannot implement its master plan that contemplates the reuse ",
@@ -181,7 +181,7 @@
         "Mar 8, 2023: 1,700+ people reported moved into permanent residence since the rapid rehousing program launched in 2021 (c133).",
         "2024: Homeless population reported decreased only slightly (~160) from 2022 (c35)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Mar 16, 2023- Dallas Business Journal- Plamedie Ifasso Family Gateway president and CEO El",
@@ -215,7 +215,7 @@
         "Jul 24, 2024: City Office of Environmental Quality compiled a greenhouse gas emissions inventory; commentary urged Johnson to lead on climate (c137).",
         "Dec 2024: Johnson's stated agenda centered on public safety, parks, potholes, property taxes — no climate plan advancement cited (c143)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "The Dallas Office of Environmental Quality and Sustainability has even compiled a detailed",
@@ -265,7 +265,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-23T19:08:27+00:00",
-    "generated_at": "2026-06-23T19:09:29+00:00",
+    "generated_at": "2026-06-23T21:50:15+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

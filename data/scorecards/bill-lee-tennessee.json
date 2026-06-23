@@ -43,7 +43,7 @@
         "2025-04-22: $244M added through TISA in 2025 session",
         "2026-04-23: $339M added to strengthen public education including TISA"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Tennessee Investment in Student Achievement (TISA) Formula Skip to Main Content Go to TN.g",
@@ -76,7 +76,7 @@
       "what_happened": [
         "2022 budget: one-time $500M CTE investment for middle and high schools referenced in State of the State and reporting"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Instead, buoyed by another year of state revenue surpluses, the legislature passed a state",
@@ -105,7 +105,7 @@
       "what_happened": [
         "2023-12-31: state reported 100 additional THP troopers on Tennessee roads"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Additional investments include a $50 million expansion of the Violent Crime Intervention F",
@@ -131,7 +131,7 @@
         "Launch of $100M Violent Crime Intervention Fund documented in state release",
         "2023: $50M expansion of VCIF noted in year-in-review"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "NASHVILLE, Tenn. – Today, <strong>Tennessee Governor Bill Lee announced two additional res",
@@ -161,7 +161,7 @@
         "2022-03-24: Lee announced 30-day grocery tax suspension proposal",
         "2023-05-11: signed Tennessee Works Tax Act with 3-month grocery tax holiday (Aug 1–Oct 31)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "&quot;Tennessee’s legacy of responsible fiscal stewardship has allowed our state to weathe",
@@ -191,7 +191,7 @@
         "Invested $1B to complete TCAT Master Plan",
         "Eliminated nearly 12,000-person TCAT waitlist per state documentation"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "PHOTOS: Gov. Lee Signs Executive Order to Lead the Nation in Workforce Development Skip to",
@@ -221,7 +221,7 @@
         "2024: Rainy Day Fund brought to more than $2 billion",
         "2025: dedicated $35.6M bringing reserves to nearly $2.2 billion"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "2024 Year in Photos: Gov. Lee Releases Highlights and Accomplishments Skip to Main Content",
@@ -251,7 +251,7 @@
         "2023-04-17: Lee signed Transportation Modernization Act ($3.3B)",
         "2025-02-10: proposed additional $1B for road projects"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "– Today, Tennessee Governor Bill Lee signed the <strong>Transportation Modernization Act</",
@@ -280,7 +280,7 @@
       "what_happened": [
         "2022-01-31: $25.5M adult dental benefit proposed in State of the State budget"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Gov. Bill Lee Delivers 2022 State of the State Address Skip to Main Content Go to TN.gov G",
@@ -306,7 +306,7 @@
         "2023-09-28: groundbreaking on MALETA at Cockrill Bend, Nashville",
         "2023-12-31: celebrated MALETA groundbreaking in year-in-review"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "This year, Lee has made significant investments to support law enforcement and keep every ",
@@ -340,7 +340,7 @@
         "2020-02-27: Lee introduced constitutional carry legislation",
         "2021: permitless carry bill passed allowing handgun carry without permit"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "&quot;This constitutional carry package is historic because not only does it uphold the fr",
@@ -390,7 +390,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T23:35:00+00:00",
-    "generated_at": "2026-06-22T23:36:08+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

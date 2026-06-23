@@ -41,7 +41,7 @@
         "2025-01-16: City reported more than $200 million in reserves per the 2024-2025 budget after recovering from a deficit (c89).",
         "2024-25: Mayor presented the FY2024-2025 budget (c88)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Despite the fallout, the city was able to get out of its deficit and now has <strong>more ",
@@ -68,7 +68,7 @@
       "difficulty_earned": 0.75,
       "promise_score": 7.55,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "At his victory party on the Miami River, he said that his agenda includes <strong>increasi",
@@ -94,7 +94,7 @@
         "2021-12-05: Suarez said the city would release a 'functional zero' homelessness plan within 30 days (c131).",
         "2023-06-27: Reporting characterized homelessness figures Suarez touted as 'convenient and misleading' (c130)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "On <strong>December 5,</strong> City of Miami Mayor Francis Suarez gave a talk during asse",
@@ -128,7 +128,7 @@
         "2019-11-22: Suarez submitted a climate resolution; the city joined a global pledge (c138).",
         "2020-01-21: City government planned to go carbon neutral by 2050, joining as 96th city in the world (c137)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "At his victory party on the Miami River, he said that his agenda includes <strong>increasi",
@@ -159,7 +159,7 @@
       "difficulty_earned": 0.25,
       "promise_score": 8.25,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Keep city residents directly accessible to the mayor by sharing personal cell phone number",
@@ -194,7 +194,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-23T19:12:57+00:00",
-    "generated_at": "2026-06-23T19:13:43+00:00",
+    "generated_at": "2026-06-23T21:50:15+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

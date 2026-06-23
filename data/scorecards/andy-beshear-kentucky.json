@@ -41,7 +41,7 @@
         "April 2021: HB 320/HB 382 signed into law allocating $300 million in federal ARP dollars to broadband (c122)",
         "Accomplishments record cites $2 billion+ secured for high-speed internet to date (c92)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Better Kentucky Plan - Kentucky Governor Andy Beshear Skip to main navigation Skip to main",
@@ -76,7 +76,7 @@
         "April 2026: Beshear signed HJR 81 releasing $52M for rural water systems (c125)",
         "Accomplishments record cites $412M+ delivered for clean drinking water (c92)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Better Kentucky Plan - Kentucky Governor Andy Beshear Skip to main navigation Skip to main",
@@ -109,7 +109,7 @@
       "what_happened": [
         "2021-2022: $200M+ allocated for school construction/upgrades via the School Facilities Construction Commission ($127M federal, $75M general fund) (c17)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Better Kentucky Plan - Kentucky Governor Andy Beshear Skip to main navigation Skip to main",
@@ -136,9 +136,9 @@
         "June 2025: Signed EO establishing advisory committee on universal pre-K (c150)",
         "May 2026: Signed EO launching pre-K pilot in Rockcastle and Robertson counties after legislature declined to fund statewide (c142, c143)"
       ],
-      "flags": {
-        "externally_blocked": true
-      },
+      "flags": [
+        "Externally Blocked"
+      ],
       "sources": [
         {
           "title": "Turn on more accessible mode Turn off more accessible mode Skip to Main Navigation Skip to",
@@ -181,7 +181,7 @@
         "Law took effect January 2025 (c156)",
         "June 2026: Signed EO clarifying qualifying conditions for medical cannabis (c157)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "In January 2023, Beshear announced Kentucky State Police troopers would be equipped with b",
@@ -219,7 +219,7 @@
         "December 2019: Issued EO automatically restoring voting rights for those who completed sentences for nonviolent, nonsexual offenses (c160, c161)",
         "Accomplishments record cites 198,000+ restored (c92)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "The specific crimes excluded from the restoration executive order include treason; bribery",
@@ -256,7 +256,7 @@
       "what_happened": [
         "Signed legislation to expand the Military Family Assistance Trust Fund (c162)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "• Signed legislation to raise the amount of available assistance from the Kentucky Nationa",
@@ -283,7 +283,7 @@
         "Oct 2024: $116.3M federal grant announced to speed final section (c170)",
         "Aug 2025: Ground broken for final Magoffin-Floyd section (c171)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "“Team Kentucky is fulfilling a promise not just to the people of Eastern Kentucky but to t",
@@ -321,7 +321,7 @@
         "Aug 2025: Milestone announced for new I-69 Ohio River Crossing (c178)",
         "Jan 2026: KPTIA approved interlocal agreement establishing tolling body and updated bi-state agreement; construction expected to begin 2026 (c181)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "The project is estimated to cost $3.6 billion, and received a $1.6 billion federal grant i",
@@ -358,7 +358,7 @@
       "what_happened": [
         "Jan 2026: Despite Beshear advocating no tolls, the Kentucky General Assembly passed legislation requiring tolling and KPTIA established a tolling body (c181, c182)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "(KPTIA) took another step forward today in building the new Interstate Highway 69 bridge p",
@@ -387,7 +387,7 @@
       "what_happened": [
         "Sept 2025: Beshear's office reaffirmed he promised to serve his full second term and intends to do so (c48)"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "It hasn’t changed. “Governor Andy Beshear <strong>promised to serve his full second term a",
@@ -433,7 +433,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T23:30:02+00:00",
-    "generated_at": "2026-06-22T23:31:24+00:00",
+    "generated_at": "2026-06-23T21:50:14+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

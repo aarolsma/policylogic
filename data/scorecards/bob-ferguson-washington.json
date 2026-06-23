@@ -44,7 +44,7 @@
         "2026-03-27: Signed SB 6026 allowing housing in commercial/mixed-use zones (c126).",
         "2026-04-01: Stated total biennium affordable housing investment reached $960M (c101)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Governor Ferguson announces historic investments in affordable housing, executive order to",
@@ -92,7 +92,7 @@
         "2025-12-18: Proposed $225M in bonds to Housing Trust Fund (c94).",
         "2026-04-01: Cited $960M total biennial affordable housing investment as largest ever (c101)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "The sum Ferguson is proposing builds upon $760 million in spending on affordable housing t",
@@ -132,7 +132,7 @@
         "2025-05-24: Signed HB 2015 creating public-safety grant system (c135).",
         "Program set to expire June 30, 2028 (c140)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "<strong>Bob Ferguson angered many Democratic lawmakers by demanding the Legislature put $1",
@@ -171,7 +171,7 @@
       "difficulty_earned": 0.75,
       "promise_score": 9.15,
       "what_happened": [],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Priorities | Governor Bob Ferguson Skip to main content An official website of the Washing",
@@ -198,7 +198,7 @@
         "Opioid settlement funds (>$60M tranche) distributed to combat fentanyl (c199).",
         "HB 2168 designed for statewide real-time overdose reporting referenced (c200)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "<strong>Deploy a statewide, interagency crisis response unit to tackle the fentanyl crisis",
@@ -237,9 +237,9 @@
         "2025-02-25: Reporting that the universal free-meal plan was fading amid budget shortfall (c154).",
         "2026-03-30: Signed SB 6346 (Millionaires' Tax) funding free breakfast and lunch for every K-12 student (c84)."
       ],
-      "flags": {
-        "scope_reduced": true
-      },
+      "flags": [
+        "Scope Reduced"
+      ],
       "sources": [
         {
           "title": "To that end, I am excited to work with Senator Riccelli and Representative Berg on legisla",
@@ -281,9 +281,9 @@
         "2026-02-26: Ferguson floated cutting Working Connections to balance budget (c165).",
         "2026-03-27/30: Supplemental budget included major cuts to Working Connections submitted to Ferguson (c162, c163)."
       ],
-      "flags": {
-        "reversed": true
-      },
+      "flags": [
+        "Reversed"
+      ],
       "sources": [
         {
           "title": "Education advocates were also disappointed that the supplemental budget included major cut",
@@ -322,7 +322,7 @@
         "2025-05-17: Signed HB 1264 addressing ferry crew compensation (c173).",
         "2025-07-01: Budget invests >$39M for ferry crew hiring/retention/training (c169)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "<strong>The budget signed by Governor Ferguson invests more than $39 million for crew hiri",
@@ -356,7 +356,7 @@
         "2025: Announced $14.6M CHIP grants for 1,800+ affordable units in 10 counties (c185).",
         "2025-12-18: Proposed additional $6M to modernize permitting alongside CHIP (c94)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Bob Ferguson and the Washington State Department of Commerce announced <strong>$14.6 milli",
@@ -387,7 +387,7 @@
         "2025-07-09: Announced state would backfill ~$11M federal Planned Parenthood funding (c190, c196).",
         "2026-03-14: Signed law strengthening distribution of stockpiled medication abortion (c197)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Executive Orders | Governor Bob Ferguson Skip to main content An official website of the W",
@@ -426,7 +426,7 @@
         "2026-03-10: Tax bill advanced through House (c211).",
         "2026-03-30: Signed SB 6346, 9.9% tax on income over $1M (c84, c206)."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Governor Ferguson signs Millionaires’ Tax into law | Governor Bob Ferguson Skip to main co",
@@ -480,7 +480,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-22T23:32:26+00:00",
-    "generated_at": "2026-06-23T00:20:14+00:00",
+    "generated_at": "2026-06-23T21:50:15+00:00",
     "review_status": "draft",
     "card_flags": [
       "PROVISIONAL (early-term)"

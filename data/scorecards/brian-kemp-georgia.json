@@ -42,7 +42,7 @@
         "2023-01-09: $5,000 raises reported as delivered for public school teachers",
         "2026-01-15: Kemp stated teacher pay was raised by $9,500, exceeding original goal"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Provide a $2,000 final installment raise for K-12 teachers, assistant teachers, and pre-k ",
@@ -80,7 +80,7 @@
         "2024-05-07: FY25 budget committed additional $1.4 billion for $13.2 billion total K-12",
         "2025-03-06: AFY25 budget added $140 million to fully fund QBE"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Add $425 million to fully fund the state school funding formula and restore all pandemic-e",
@@ -113,7 +113,7 @@
       "what_happened": [
         "2022-01-10: Kemp outlined agenda including effort to ban critical race theory in Georgia schools"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Work with the General Assembly to pass legislation protecting students from critical race ",
@@ -148,7 +148,7 @@
         "2025-04-15: rate cut to 5.19%",
         "2026-05-11: HB 463 signed lowering rate from 5.19% to 4.99% effective Jan 1, 2026"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Gov. Kemp Signs Legislation Lowering Taxes and Supporting Economic Growth | Governor Brian",
@@ -190,7 +190,7 @@
         "2024-10-22: third special tax refund announced",
         "2026-03-20: HB 1000 signed authorizing fourth rebate; cumulative $11.8 billion returned"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "One of the biggest disagreements between the two is the surplus: <strong>Kemp has pledged ",
@@ -228,7 +228,7 @@
         "2024-01-11: Kemp reported maintained Triple-A bond rating",
         "2026-06-22: agencies reaffirmed AAA/Aaa/AAA ratings"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Maintain Georgia's AAA bond rating through conservative budgeting",
@@ -263,7 +263,7 @@
         "2023-04-26: SB 44 anti-gang legislation signed",
         "2024-04-24: additional combatting human trafficking legislation signed"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Crack down on gang activity and human trafficking affecting every community across Georgia",
@@ -301,7 +301,7 @@
         "2023-04-13: SB 211 (Georgia Council on Literacy) and HB 538 (evidence-based literacy instruction) signed",
         "2026-05-05: additional literacy and math education bills signed"
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Improve literacy rates for students in grades three through twelve",
@@ -355,7 +355,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-23T00:43:28+00:00",
-    "generated_at": "2026-06-23T00:44:26+00:00",
+    "generated_at": "2026-06-23T21:50:15+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [

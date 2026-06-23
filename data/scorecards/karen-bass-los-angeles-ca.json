@@ -41,7 +41,7 @@
         "2022-12-12: Bass declared a state of emergency on homelessness as her first act in office and activated the Emergency Operations Center.",
         "2025-11-04: Bass lifted the emergency declaration, citing tools now in place."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "Mayor Karen Bass Declares a State of Emergency On Homelessness | Mayor Karen Bass Skip to ",
@@ -77,9 +77,9 @@
         "2026-05-20: Bass publicly admitted falling short of ending street homelessness by 2026.",
         "2026-06-03: Reported street homelessness down 17.5% two years in a row."
       ],
-      "flags": {
-        "scope_reduced": true
-      },
+      "flags": [
+        "Scope Reduced"
+      ],
       "sources": [
         {
           "title": "Los Angeles Mayor Karen Bass admitted falling short on her promise to <strong>end street h",
@@ -123,7 +123,7 @@
         "2023-09-14: Mayor's office announced 7,000+ accelerated affordable units.",
         "2026-04-27: Office reported 42,000+ units in pipeline under permitting reforms."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "En Español LOS ANGELES - Mayor Bass announced today that more than 7,000 units of affordab",
@@ -166,7 +166,7 @@
         "2023-05-16: Mayor released an update on identified city-owned land for interim and permanent housing.",
         "2024-04: Sites identified for up to 500 tiny home beds via $33M state grant."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "This is the third executive directive ... as her first official act. <strong>The directive",
@@ -202,9 +202,9 @@
         "2025-12-12: Bass urged Council to find $4.4M to continue LAPD hiring; Council approved one class of 40 recruits.",
         "2026-05-21: Council backed budget funding 510 officers (LAPD ~8,555 by 2027)."
       ],
-      "flags": {
-        "scope_reduced": true
-      },
+      "flags": [
+        "Scope Reduced"
+      ],
       "sources": [
         {
           "title": "The second largest city in the United States cannot have an effective police department wi",
@@ -245,7 +245,7 @@
       "what_happened": [
         "Early 2025: Bass was in Ghana for a presidential inauguration when the Pacific Palisades fire erupted; she returned to Los Angeles after the fire began."
       ],
-      "flags": {},
+      "flags": [],
       "sources": [
         {
           "title": "In L.A. Mayor’s Race, Karen Bass Faces Vocal Rivals and a ‘Disgruntled Electorate’ - The N",
@@ -295,7 +295,7 @@
     "method": "v2-deterministic",
     "model": "claude-opus-4-8",
     "data_pulled": "2026-06-23T18:53:23+00:00",
-    "generated_at": "2026-06-23T18:54:26+00:00",
+    "generated_at": "2026-06-23T21:50:15+00:00",
     "review_status": "draft",
     "card_flags": [],
     "sources": [
