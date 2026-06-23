@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presidential — Foreign Policy · PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc; --rule: #d4c9b4;
+    --gold: #b8892a; --gray: #6b6459; --red: #c0392b; --green: #1a6b3c; --blue: #1a3a6b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; line-height: normal; overscroll-behavior-y: none; }
+
+  .masthead { border-bottom: 3px double var(--ink); padding: 24px 40px 16px; text-align: center; position: relative; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 16px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(12px, 2vw, 16px); color: var(--gray); margin-bottom: 12px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 12px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+
+  /* FILTER BAR */
+  .filter-bar { border-bottom: 1px solid var(--rule); padding: 10px 40px; background: var(--cream); display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+  .filter-btn { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); background: none; border: 1px solid transparent; padding: 4px 12px; cursor: pointer; transition: all 0.15s; }
+  .filter-btn:hover { color: var(--ink); border-color: var(--rule); }
+  .filter-btn.active { color: var(--ink); border-color: var(--ink); font-weight: 500; }
+  .filter-sep { width: 1px; height: 14px; background: var(--rule); flex-shrink: 0; }
+
+  /* MAIN */
+  .main { max-width: 1000px; margin: 0 auto; padding: 48px 40px 80px; }
+  .page-intro { max-width: 620px; margin: 0 auto 48px; text-align: center; }
+  .page-intro-title { font-family: 'Playfair Display', serif; font-size: clamp(20px, 3vw, 28px); font-weight: 700; margin-bottom: 12px; }
+  .page-intro-body { font-size: 14px; line-height: 1.8; color: var(--gray); }
+
+  /* PROMISE CARDS */
+  .promise { border: 1px solid var(--rule); margin-bottom: 2px; background: var(--paper); }
+  .promise-header { padding: 22px 24px 18px; cursor: pointer; display: flex; align-items: flex-start; gap: 16px; transition: background 0.15s; }
+  .promise-header:hover { background: var(--cream); }
+
+  .promise-left { flex: 1; min-width: 0; }
+  .promise-tags { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; flex-wrap: wrap; }
+  .promise-domain { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+  .promise-source-type { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); padding: 1px 6px; border: 1px solid var(--rule); }
+  .promise-title { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; line-height: 1.25; margin-bottom: 7px; }
+  .promise-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .promise-president { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); padding: 2px 8px; }
+  .promise-status { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 8px; border: 1px solid; }
+  .status-kept      { color: var(--green); border-color: var(--green); }
+  .status-broken    { color: var(--red);   border-color: var(--red); }
+  .status-partial   { color: var(--gold);  border-color: var(--gold); }
+  .status-reversed  { color: var(--red);   border-color: var(--red); }
+  .status-pending   { color: var(--gray);  border-color: var(--gray); }
+  .status-contested { color: var(--gray);  border-color: var(--gray); }
+  .promise-date { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gray); }
+
+  /* EXPAND INDICATOR */
+  .promise-toggle { font-family: 'DM Mono', monospace; font-size: 16px; color: var(--rule); flex-shrink: 0; margin-top: 4px; transition: transform 0.2s; user-select: none; }
+  .promise.open .promise-toggle { transform: rotate(45deg); color: var(--gray); }
+
+  /* BODY */
+  .promise-body { display: none; border-top: 1px solid var(--rule); padding: 24px; background: var(--cream); }
+  .promise.open .promise-body { display: block; }
+
+  .promise-quote { font-size: 14px; line-height: 1.75; color: var(--ink); font-style: italic; margin-bottom: 16px; padding: 14px 18px; background: var(--paper); border-left: 3px solid var(--ink); }
+  .promise-quote cite { display: block; font-style: normal; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 0; }
+
+  /* TIMELINE */
+  .timeline-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin: 20px 0 12px; }
+  .events { display: flex; flex-direction: column; gap: 1px; }
+  .event { display: flex; align-items: flex-start; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .event:last-child { border-bottom: none; }
+  .event-date { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gray); white-space: nowrap; flex-shrink: 0; width: 72px; padding-top: 3px; }
+  .event-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .dot-promise      { background: var(--ink); }
+  .dot-action       { background: var(--green); }
+  .dot-reversal     { background: var(--red); }
+  .dot-stall        { background: var(--rule); border: 1px solid var(--gray); }
+  .dot-impact       { background: var(--green); border: 2px solid var(--ink); }
+  .dot-partial      { background: var(--gold); }
+  .dot-dispute      { background: var(--paper); border: 2px solid var(--red); }
+  .dot-context      { background: var(--blue); }
+  .event-content { flex: 1; }
+  .event-type { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-bottom: 2px; }
+  .event-label { font-size: 13px; font-weight: 400; line-height: 1.4; margin-bottom: 2px; }
+  .event-detail { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+  /* REVERSAL LINK */
+  .reversal-note { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--rule); }
+
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 40px; }
+  footer a { color: var(--gray); }
+
+  @media (max-width: 640px) {
+    .masthead, .main, .filter-bar { padding-left: 20px; padding-right: 20px; }
+  }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 32px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 4px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover, .nav-dropdown-trigger.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  /* Bridge: invisible padding so mouse can travel from trigger to menu */
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  /* ── PROMISE MODAL ── */
+  .pres-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(26,23,20,0.75); z-index: 300; overflow-y: auto; padding: 40px 20px; }
+  .pres-modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+  .pres-modal { background: var(--paper); max-width: 720px; width: 100%; border: 1px solid var(--rule); }
+  @keyframes pmSlide { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+  .pres-modal-header { padding: 28px 32px 22px; border-bottom: 3px double var(--ink); }
+  .pres-modal-body { padding: 24px 32px 28px; }
+  .pres-modal-foot { padding: 14px 32px 18px; border-top: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; }
+  .pres-modal-close { background: none; border: 1px solid var(--rule); padding: 6px 16px; font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; color: var(--gray); }
+  .pres-modal-close:hover { border-color: var(--ink); color: var(--ink); }
+
+  /* ── HAMBURGER (mobile nav) ── */
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 250; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 4px 0; transition: all 0.2s; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: var(--paper); z-index: 500; overflow-y: auto; padding: 24px 28px 60px; }
+  .mobile-menu.open { display: block; }
+  .mobile-menu-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+  .mobile-menu-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; }
+  .mobile-menu-close { background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: var(--ink); padding: 0 4px; }
+  .mobile-menu a { display: block; font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu .mm-group-label { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); padding: 24px 0 8px; border-bottom: none; margin-top: 4px; }
+  .mobile-menu .mm-sub { font-family: 'DM Mono', monospace; font-weight: 400; padding-left: 16px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); padding-top: 11px; padding-bottom: 11px; }
+  @media (max-width: 768px) {
+    .hamburger { display: block; }
+    .masthead-nav { display: none !important; }
+  }
+
+</style>
+<style>
+/* ── MOBILE OVERRIDES ── */
+@media (max-width: 600px) {
+  .masthead { padding: 20px 20px 14px; }
+  .masthead-nav { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 16px; padding-bottom: 4px; }
+  .masthead-nav a, .nav-dropdown-trigger { white-space: nowrap; }
+  .pres-modal-header, .pres-modal-body, .pres-modal-foot { padding-left: 20px; padding-right: 20px; }
+  #report-overlay { padding: 16px 12px; }
+}
+@media (max-width: 380px) { .masthead-title { font-size: 32px !important; } }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Nonpartisan Government Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">Presidential — Foreign Policy</div>
+  <div class="masthead-rule"><span></span><em>SCORECARDS &middot; JUNE 2026</em><span></span></div>
+      <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger active">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential-domestic.html">Presidential — Domestic</a>
+        <a href="/presidential-foreign.html" class="active">Presidential — Foreign</a>
+        <a href="/international.html">International</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html">Elected Officials</a>
+        <a href="/methodology-agencies.html">Depts &amp; Agencies</a>
+        <a href="/methodology-presidential.html">Presidential &amp; International</a>
+        <a href="/methodology-ai.html">AI Pipeline</a>
+        <a href="/methodology-limitations.html">Limitations</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Corrections</span>
+      <div class="nav-dropdown-menu">
+        <a href="/error-log.html">Error Log</a>
+        <a href="/submission-tracker.html">Submission Tracker</a>
+      </div>
+    </div>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
+<button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="mobile-menu-title">PolicyLogic</div>
+    <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='';" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <div class="mm-group-label">Scorecards</div>
+  <a href="/scorecards.html" class="mm-sub">All Scorecards</a>
+  <a href="/state-local.html" class="mm-sub">State &amp; Local</a>
+  <a href="/national.html" class="mm-sub">Congress</a>
+  <a href="/presidential-domestic.html" class="mm-sub">Presidential — Domestic</a>
+  <a href="/presidential-foreign.html" class="mm-sub">Presidential — Foreign</a>
+  <a href="/international.html" class="mm-sub">International</a>
+  <a href="/departments.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/nonprofits.html" class="mm-sub">Nonprofits &amp; NGOs</a>
+  <div class="mm-group-label">Learn</div>
+  <a href="/learn.html" class="mm-sub">Learning Center</a>
+  <a href="/learn-cognitive-biases.html" class="mm-sub">Think Clearly</a>
+  <a href="/learn-how-policy-works.html" class="mm-sub">How Policy Works</a>
+  <a href="/learn-how-to-influence.html" class="mm-sub">Take Action</a>
+  <a href="/learn-govt-101.html" class="mm-sub">Govt 101</a>
+  <a href="/learn-glossary.html" class="mm-sub">Glossary</a>
+  <div class="mm-group-label">Methodology</div>
+  <a href="/methodology.html" class="mm-sub">Elected Officials</a>
+  <a href="/methodology-agencies.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
+  <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
+  <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
+  <div class="mm-group-label">Corrections</div>
+  <a href="/error-log.html" class="mm-sub">Error Log</a>
+  <a href="/submission-tracker.html" class="mm-sub">Submission Tracker</a>
+  <a href="/contact.html">Contact</a>
+</div>
+
+</header>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <div class="filter-sep"></div>
+  <button class="filter-btn" data-filter="trump2">Trump (2025–)</button>
+  <button class="filter-btn" data-filter="biden">Biden (2021–25)</button>
+  <div class="filter-sep"></div>
+  <button class="filter-btn" data-filter="alliances">Alliances</button>
+  <button class="filter-btn" data-filter="climate">Climate</button>
+  <button class="filter-btn" data-filter="conflict">Conflict &amp; Peace</button>
+  <button class="filter-btn" data-filter="trade">Trade</button>
+  <button class="filter-btn" data-filter="institutions">Institutions</button>
+</div>
+
+<div class="main">
+  <div class="page-intro">
+    <div class="page-intro-title">A Promise Is a Promise</div>
+    <p class="page-intro-body">Presidential foreign policy commitments come from campaigns, inaugural addresses, State of the Union speeches, executive orders, and press conferences. Each entry tracks a discrete promise from its source to its outcome — what was said, what was done, and what the record shows. No grades. The timeline speaks for itself. For domestic commitments, see <a href="/presidential-domestic.html" style="color:var(--gold);">Presidential — Domestic</a>.</p>
+  </div>
+
+  <div id="promises"></div>
+</div>
+
+
+<!-- PROMISE MODAL -->
+<div class="pres-modal-overlay" id="pres-modal-overlay" onclick="if(event.target===this)closePresModal()">
+  <div class="pres-modal" id="pres-modal-box">
+    <div class="pres-modal-header" id="pres-modal-header"></div>
+    <div class="pres-modal-body" id="pres-modal-body"></div>
+    <div class="pres-modal-foot">
+      <button onclick="openReport(window._currentEntry&&window._currentEntry.id||'',window._currentEntry&&window._currentEntry.title||'')" style="background:none;border:none;padding:0;font-size:9px;letter-spacing:0.08em;color:var(--gold);cursor:pointer;font-family:'DM Mono',monospace;text-transform:uppercase;">Report an error &rarr;</button>
+      <button class="pres-modal-close" onclick="closePresModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- REPORT MODAL -->
+<div id="report-overlay" onclick="if(event.target===this)closeReport()" style="display:none;position:fixed;inset:0;background:rgba(26,23,20,0.7);z-index:400;overflow-y:auto;padding:40px 20px;align-items:flex-start;justify-content:center;">
+  <div style="background:var(--paper);max-width:520px;width:100%;border:1px solid var(--rule);margin:auto;">
+    <div style="padding:24px 28px 20px;border-bottom:3px double var(--ink);">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:8px;">PolicyLogic</div>
+      <div style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;">Report an Error</div>
+      <div style="font-size:13px;color:var(--gray);margin-top:4px;" id="report-entry-name"></div>
+    </div>
+    <div style="padding:24px 28px;">
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">What is incorrect? *</label><textarea id="report-wrong" rows="3" placeholder="Describe the error..." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Correct information / source</label><textarea id="report-correct" rows="2" placeholder="What should it say? Include a source URL if possible." style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;resize:vertical;"></textarea></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Category</label><select id="report-category" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;"><option value="">Select a category…</option><option value="misclassified">Misclassified</option><option value="evidence">Overlooked Evidence</option><option value="score">Incorrect Score</option><option value="outdated">Outdated Info</option><option value="factual">Factual Error</option><option value="other">Other</option></select></div>
+      <div style="margin-bottom:16px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your name (optional)</label><input id="report-name" type="text" placeholder="If you'd like it on record" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" /></div>
+      <div style="margin-bottom:20px;"><label style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;">Your email (optional)</label><input id="report-email" type="email" placeholder="If you'd like a response" style="width:100%;background:var(--cream);border:1px solid var(--rule);padding:10px 12px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--ink);outline:none;" /></div>
+      <div id="report-status" style="display:none;font-size:12px;padding:10px 12px;margin-bottom:12px;"></div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;">
+        <button onclick="closeReport()" style="background:none;border:1px solid var(--rule);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--gray);">Cancel</button>
+        <button onclick="submitReport()" id="report-submit" style="background:var(--ink);border:1px solid var(--ink);padding:8px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;color:var(--paper);">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All entries are AI-assisted drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+<script>
+var PRES_COLORS = { 'Biden': '#5a6a7a', 'Trump': '#7a5a4a' };
+
+var PROMISES = [
+  {
+    id: 'end-ukraine-war-24hrs',
+    president: 'Trump',
+    administration: 'trump2',
+    domain: 'conflict',
+    domain_label: 'Conflict & Peace',
+    source_type: 'Campaign',
+    source_detail: 'Multiple campaign rallies, 2023–2024',
+    title: 'End the War in Ukraine Within 24 Hours of Taking Office',
+    status: 'broken',
+    promise_text: '"I will have that war settled before I even become president — between Putin and Zelensky. I will get it done, before I even take office."',
+    events: [
+      { date: 'Aug 2023',  type: 'promise',  label: 'Trump claims he would end Ukraine war in 24 hours as president', detail: 'Repeated across multiple campaign appearances. No mechanism specified.' },
+      { date: 'Jan 20 2025', type: 'action', label: 'Trump inaugurated — war continues', detail: 'No ceasefire achieved before or on inauguration day. Promise window passed.' },
+      { date: 'Feb 2025',  type: 'stall',    label: 'Trump envoy Kellogg dispatched to Kyiv and Moscow', detail: 'Special envoy Keith Kellogg begins shuttle diplomacy. No immediate ceasefire framework.' },
+      { date: 'Feb 2025',  type: 'dispute',  label: 'Trump suggests Ukraine may have to cede territory', detail: 'Signals departure from Ukrainian sovereignty position. Zelensky publicly objects.' },
+      { date: 'Mar 2025',  type: 'partial',  label: 'Limited maritime ceasefire discussed but not agreed', detail: 'Black Sea shipping talks ongoing. Full ceasefire remains elusive. War in third year.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'withdraw-paris-again',
+    president: 'Trump',
+    administration: 'trump2',
+    domain: 'climate',
+    domain_label: 'Climate',
+    source_type: 'Campaign',
+    source_detail: 'Campaign platform; repeated rally statements 2024',
+    title: 'Withdraw the U.S. from the Paris Climate Agreement — Again',
+    status: 'kept',
+    promise_text: '"On day one, I will withdraw from the Paris Climate Accord — again."',
+    events: [
+      { date: '2024',        type: 'promise', label: 'Trump pledges immediate Paris withdrawal on Day 1', detail: 'Consistent campaign commitment. First withdrawal in 2017 took formal effect in 2020.' },
+      { date: 'Jan 20 2025', type: 'action',  label: 'Executive order signed withdrawing from Paris Agreement', detail: 'Signed on inauguration day. Notification submitted to UN. Effective immediately under expedited procedures.' },
+      { date: 'Jan 2025',    type: 'impact',  label: 'U.S. NDC obligations suspended; GCF payments halted', detail: 'Second U.S. withdrawal removes world\'s largest historical emitter from accord. Remaining $2B Biden GCF pledge voided.' },
+      { date: 'Feb 2025',    type: 'context', label: 'EU and China reaffirm Paris commitments in joint statement', detail: 'Diplomatic response frames U.S. withdrawal as isolating rather than leading.' },
+    ],
+    reversal_of: 'biden-rejoin-paris'
+  },
+  {
+    id: 'withdraw-who',
+    president: 'Trump',
+    administration: 'trump2',
+    domain: 'institutions',
+    domain_label: 'Institutions',
+    source_type: 'Campaign',
+    source_detail: 'Campaign platform 2024',
+    title: 'Withdraw the U.S. from the World Health Organization',
+    status: 'kept',
+    promise_text: 'Trump campaigned on withdrawing from the WHO, citing pandemic response failures and Chinese influence.',
+    events: [
+      { date: '2024',        type: 'promise', label: 'WHO withdrawal pledged as Day 1 executive action', detail: 'First WHO withdrawal initiated in 2020, reversed by Biden on Day 1 of his term.' },
+      { date: 'Jan 20 2025', type: 'action',  label: 'Notice of withdrawal from WHO submitted', detail: 'Second U.S. withdrawal. Under WHO rules, takes effect one year after notification unless reversed.' },
+      { date: 'Jan 2025',    type: 'impact',  label: 'U.S. assessed contributions (~$110M/year) suspended', detail: 'Largest single-country WHO funder withdrawing creates immediate budget gap. 22% of WHO assessed contributions affected.' },
+      { date: 'Feb 2025',    type: 'context', label: 'WHO begins contingency planning for U.S. funding gap', detail: 'Director-General announces austerity measures. Other member states urged to increase voluntary contributions.' },
+    ],
+    reversal_of: 'biden-rejoin-who'
+  },
+  {
+    id: 'nato-5-percent',
+    president: 'Trump',
+    administration: 'trump2',
+    domain: 'alliances',
+    domain_label: 'Alliances',
+    source_type: 'Press Conference',
+    source_detail: 'NATO summit press conference, July 2024; repeated post-election',
+    title: 'Demand NATO Allies Spend 5% of GDP on Defense',
+    status: 'pending',
+    promise_text: '"I told NATO countries — you need to spend 5% of GDP, not 2%. And you\'re going to have to do it."',
+    events: [
+      { date: 'Jul 2024',    type: 'promise', label: 'Trump demands 5% GDP defense spending from NATO allies', detail: 'More than double the existing 2% Wales commitment. No alliance member currently meets this threshold.' },
+      { date: 'Jan 2025',    type: 'action',  label: 'Trump raises 5% demand in calls with NATO Secretary General', detail: 'Rutte acknowledges the ask. No formal mechanism for enforcing spending targets within NATO.' },
+      { date: 'Feb 2025',    type: 'stall',   label: 'NATO allies push back; 3.5% discussed as compromise', detail: 'Germany, France, UK signal willingness to increase toward 3% by 2030. 5% target widely viewed as unrealistic.' },
+      { date: 'Mar 2025',    type: 'dispute', label: 'Trump threatens to condition Article 5 defense on spending', detail: 'Revives 2018 conditionality language. European allies begin accelerating domestic defense procurement.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'ukraine-aid-commitment',
+    president: 'Biden',
+    administration: 'biden',
+    domain: 'conflict',
+    domain_label: 'Conflict & Peace',
+    source_type: 'Executive Action',
+    source_detail: 'Presidential addresses and supplemental appropriations requests, 2022–2024',
+    title: 'Sustain U.S. Military and Economic Support for Ukraine',
+    status: 'partial',
+    promise_text: '"We will stand with Ukraine for as long as it takes."',
+    events: [
+      { date: 'Feb 2022',    type: 'promise', label: 'Biden pledges sustained U.S. support following Russian invasion', detail: 'Immediate sanctions package. First military aid tranche of $350M authorized under Presidential Drawdown Authority.' },
+      { date: 'Apr 2022',    type: 'action',  label: 'Ukraine Lend-Lease Act signed; $33B supplemental requested', detail: 'Bipartisan authorization expands executive authority to transfer equipment. Largest single foreign military assistance package since WWII.' },
+      { date: 'Dec 2022',    type: 'action',  label: 'Patriot missile battery approved for transfer', detail: 'Escalation threshold crossed after months of deliberation. HIMARS, artillery, armored vehicles previously delivered.' },
+      { date: 'Aug 2023',    type: 'stall',   label: 'House Republican opposition stalls $24B supplemental', detail: 'Speaker McCarthy blocks Senate-passed package. Aid pipeline narrows. Ukraine reports ammunition shortfalls.' },
+      { date: 'Apr 2024',    type: 'action',  label: '$61B supplemental finally passed and signed', detail: 'Six-month delay. Passed after Speaker Johnson reversed position. Included ATACMS authorization.' },
+      { date: 'Jan 2025',    type: 'impact',  label: 'Total U.S. military aid to Ukraine exceeds $65B', detail: 'Largest U.S. security assistance program since Vietnam. Ukraine holds roughly pre-invasion territory.' },
+      { date: 'Jan 2025',    type: 'reversal',label: 'Trump administration halts Ukraine aid review', detail: 'Incoming administration orders review of all Ukraine assistance. Shipments paused pending policy decision.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'biden-rejoin-paris',
+    president: 'Biden',
+    administration: 'biden',
+    domain: 'climate',
+    domain_label: 'Climate',
+    source_type: 'Campaign',
+    source_detail: '2020 campaign platform; Day 1 executive action',
+    title: 'Rejoin the Paris Climate Agreement and Raise U.S. Emissions Target',
+    status: 'partial',
+    promise_text: '"On day one, I will re-enter the Paris Agreement and immediately start working to make it stronger."',
+    events: [
+      { date: 'Nov 2020',    type: 'promise', label: 'Biden reaffirms Day 1 Paris recommitment', detail: 'Campaign platform commits to rejoining and submitting a stronger NDC.' },
+      { date: 'Jan 20 2021', type: 'action',  label: 'Executive order signed rejoining Paris Agreement', detail: 'First executive action. Effective immediately. Formal re-entry notification submitted to UN.' },
+      { date: 'Apr 2021',    type: 'action',  label: 'New NDC submitted: 50–52% reduction by 2030', detail: 'Announced at Leaders Summit on Climate. Doubles ambition of Obama-era NDC.' },
+      { date: 'Aug 2022',    type: 'action',  label: 'Inflation Reduction Act: $369B in climate investment', detail: 'Largest climate legislation in U.S. history. Projected to deliver ~40% reduction by 2030.' },
+      { date: 'Nov 2024',    type: 'impact',  label: 'U.S. renewable generation surpasses coal for first time', detail: 'Structural shift in energy mix. Emissions down ~17% from 2005 baseline — below NDC target but significant.' },
+      { date: 'Jan 2025',    type: 'reversal',label: 'Trump withdraws from Paris Agreement again on Day 1', detail: 'Biden NDC voided. IRA rollback initiated. Progress toward 50% target effectively halted.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'biden-rejoin-who',
+    president: 'Biden',
+    administration: 'biden',
+    domain: 'institutions',
+    domain_label: 'Institutions',
+    source_type: 'Campaign',
+    source_detail: '2020 campaign platform; Day 1 executive action',
+    title: 'Rejoin the World Health Organization',
+    status: 'kept',
+    promise_text: 'Biden pledged to reverse Trump\'s 2020 WHO withdrawal immediately upon taking office.',
+    events: [
+      { date: 'Jan 20 2021', type: 'action',  label: 'Biden signs executive order rejoining WHO', detail: 'Withdrawal notice rescinded on Day 1. Dr. Fauci appointed U.S. representative to WHO Executive Board.' },
+      { date: 'May 2021',    type: 'action',  label: 'U.S. resumes assessed contributions; pays partial arrears', detail: '$200M in FY2021 contributions authorized. Arrears repayment schedule negotiated.' },
+      { date: 'Dec 2021',    type: 'action',  label: 'U.S. supports WHO pandemic treaty negotiations', detail: 'Active participation in International Negotiating Body. U.S. backs stronger global health security framework.' },
+      { date: 'Jan 2025',    type: 'reversal',label: 'Trump withdraws from WHO again on Day 1', detail: 'Biden\'s recommitment reversed. Second U.S. withdrawal in five years.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'aukus',
+    president: 'Biden',
+    administration: 'biden',
+    domain: 'alliances',
+    domain_label: 'Alliances',
+    source_type: 'Executive Action',
+    source_detail: 'Joint announcement, September 2021',
+    title: 'AUKUS: Transfer Nuclear-Powered Submarine Technology to Australia',
+    status: 'partial',
+    promise_text: 'Biden announced AUKUS as a "historic" security partnership committing the U.S. to help Australia acquire nuclear-powered submarines.',
+    events: [
+      { date: 'Sep 2021',    type: 'promise', label: 'AUKUS announced: U.S., UK, Australia trilateral security pact', detail: 'France loses $66B submarine contract with Australia. Major diplomatic incident. U.S. commits to 18-month consultation on submarine transfer.' },
+      { date: 'Mar 2023',    type: 'action',  label: 'Optimal Submarine Pathway announced: Virginia-class sales to Australia', detail: 'U.S. commits to sell 3–5 Virginia-class submarines to Australia in early 2030s. Rotational U.S./UK submarine presence in Perth from 2027.' },
+      { date: 'Mar 2024',    type: 'action',  label: 'Congressional notification of Virginia-class sale submitted', detail: 'Formal legislative process begins. Some congressional concern about U.S. submarine production capacity.' },
+      { date: 'Jan 2025',    type: 'context', label: 'Trump administration reviews AUKUS commitment', detail: 'New administration signals support but reviews timeline and industrial base concerns. No reversal announced.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'trump2-greenland',
+    president: 'Trump',
+    administration: 'trump2',
+    domain: 'alliances',
+    domain_label: 'Alliances',
+    source_type: 'Press Conference',
+    source_detail: 'Mar-a-Lago press conference, Jan 7 2025; repeated statements',
+    title: 'Acquire Greenland — Refusing to Rule Out Military or Economic Force',
+    status: 'pending',
+    promise_text: '"We need Greenland for national security purposes. I will not commit to that. [ruling out military force]"',
+    events: [
+      { date: 'Jan 7 2025',  type: 'promise', label: 'Trump refuses to rule out military or economic coercion to acquire Greenland', detail: 'Son Donald Trump Jr. visits Greenland days earlier. Danish PM calls suggestion "non-negotiable." NATO ally Denmark put in unprecedented position.' },
+      { date: 'Jan 2025',    type: 'context', label: 'Greenland PM rejects acquisition; Denmark convenes emergency talks', detail: 'Greenland\'s government rejects any transfer. Danish military presence on the island increased.' },
+      { date: 'Jan 2025',    type: 'action',  label: 'Trump signs executive order directing increased U.S. engagement with Greenland', detail: 'Non-binding direction to State and Defense to expand economic and security presence. No formal acquisition mechanism.' },
+      { date: 'Feb 2025',    type: 'dispute', label: 'European allies issue joint statement on sovereignty principles', detail: 'EU, UK, France, Germany reaffirm inviolability of NATO member borders. Unusual public disagreement with sitting U.S. president.' },
+    ],
+    reversal_of: null
+  },
+  {
+    id: 'trump2-tariffs-allies',
+    president: 'Trump',
+    administration: 'trump2',
+    domain: 'trade',
+    domain_label: 'Trade',
+    source_type: 'Campaign',
+    source_detail: 'Campaign platform; multiple rally statements 2024',
+    title: 'Universal Baseline Tariffs Including on Allied Nations',
+    status: 'partial',
+    promise_text: '"I will put a 10% tariff on everything coming into this country... and a 25% tariff on everything coming in from Canada and Mexico."',
+    events: [
+      { date: '2024',        type: 'promise', label: 'Trump proposes 10% universal tariff and 25% on Canada/Mexico', detail: 'Broad tariff commitment applied regardless of trade partner relationship. Targets allied nations as well as rivals.' },
+      { date: 'Jan 20 2025', type: 'action',  label: 'Executive orders initiate tariff review and Section 232 investigations', detail: 'Formal process launched. 25% Canada/Mexico tariffs announced effective Feb 1.' },
+      { date: 'Feb 2025',    type: 'action',  label: '25% tariffs on Canada and Mexico take effect', detail: 'Canada announces retaliatory tariffs. Mexico signals retaliation. USMCA framework effectively suspended.' },
+      { date: 'Feb 2025',    type: 'partial', label: 'Canada/Mexico tariffs briefly paused pending renegotiation', detail: '30-day pause announced following calls with Trudeau and Sheinbaum. Framed as negotiating leverage, not reversal.' },
+      { date: 'Mar 2025',    type: 'dispute', label: 'WTO complaints filed by EU, Canada, Japan', detail: 'Multiple trading partners challenge tariffs under international trade law. U.S. signals indifference to WTO rulings.' },
+    ],
+    reversal_of: null
+  }
+];
+
+var activeAdmin = 'all';
+var activeDomain = 'all';
+
+function statusLabel(s) {
+  return { kept:'Kept', broken:'Broken', partial:'Partial', reversed:'Reversed', pending:'In Progress', contested:'Contested' }[s] || s;
+}
+function sourceLabel(s) {
+  return { 'Campaign':'Campaign', 'Executive Action':'Exec. Action', 'Press Conference':'Press Conf.', 'SOTU':'SOTU', 'Inaugural':'Inaugural' }[s] || s;
+}
+function eventTypeLabel(t) {
+  return { promise:'Promise', action:'Action', reversal:'Reversal', stall:'Stalled', impact:'Impact', partial:'Partial Delivery', dispute:'Disputed', context:'Context' }[t] || t;
+}
+
+function renderPromise(p) {
+  var div = document.createElement('div');
+  div.className = 'promise';
+  div.dataset.id = p.id;
+  div.dataset.admin = p.administration;
+  div.dataset.domain = p.domain;
+
+  var presColor = PRES_COLORS[p.president] || '#888';
+
+  var eventsHTML = p.events.map(function(e) {
+    return '<div class="event">' +
+      '<div class="event-date">' + e.date + '</div>' +
+      '<div class="event-dot dot-' + e.type + '"></div>' +
+      '<div class="event-content">' +
+        '<div class="event-type">' + eventTypeLabel(e.type) + '</div>' +
+        '<div class="event-label">' + e.label + '</div>' +
+        (e.detail ? '<div class="event-detail">' + e.detail + '</div>' : '') +
+      '</div>' +
+    '</div>';
+  }).join('');
+
+  var reversalNote = p.reversal_of
+    ? '<div class="reversal-note">⟳ Reversal of prior administration commitment</div>'
+    : '';
+
+  // Check if any subsequent commitment reverses this one
+  var reversedBy = PROMISES.find(function(other) { return other.reversal_of === p.id; });
+  var reversedNote = reversedBy
+    ? '<div class="reversal-note" style="color:var(--red);">↩ Subsequently reversed — see: ' + reversedBy.title + '</div>'
+    : '';
+
+  div.innerHTML =
+    '<div class="promise-header" onclick="openPresModal(this.closest(\'.promise\').dataset.id)">' +
+      '<div class="promise-left">' +
+        '<div class="promise-tags">' +
+          '<span class="promise-domain">' + p.domain_label + '</span>' +
+          '<span class="promise-source-type">' + sourceLabel(p.source_type) + '</span>' +
+        '</div>' +
+        '<div class="promise-title">' + p.title + '</div>' +
+        '<div class="promise-meta">' +
+          '<span class="promise-president" style="background:' + presColor + ';">' + p.president + '</span>' +
+          '<span class="promise-status status-' + p.status + '">' + statusLabel(p.status) + '</span>' +
+          '<span class="promise-date">' + p.events[0].date + '</span>' +
+        '</div>' +
+      '</div>' +
+      '<div class="promise-toggle">+</div>' +
+    '</div>' +
+    '<div class="promise-body">' +
+      '<div class="promise-quote">' + p.promise_text + '<cite>' + p.source_type + ' · ' + p.source_detail + '</cite></div>' +
+      reversalNote +
+      '<div class="timeline-label">Timeline</div>' +
+      '<div class="events">' + eventsHTML + '</div>' +
+      reversedNote +
+    '</div>';
+
+  return div;
+}
+
+
+function renderAll() {
+  var container = document.getElementById('promises');
+  container.innerHTML = '';
+  var shown = 0;
+  PROMISES.forEach(function(p) {
+    var adminMatch  = activeAdmin === 'all'  || p.administration === activeAdmin;
+    var domainMatch = activeDomain === 'all' || p.domain === activeDomain;
+    if (adminMatch && domainMatch) {
+      container.appendChild(renderPromise(p));
+      shown++;
+    }
+  });
+  if (!shown) {
+    container.innerHTML = '<div style="text-align:center;padding:60px 0;font-family:\'Playfair Display\',serif;font-style:italic;color:var(--gray);">No promises match this filter.</div>';
+  }
+}
+
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var f = btn.dataset.filter;
+    // Admin filters
+    if (['all','trump2','biden'].indexOf(f) !== -1) {
+      document.querySelectorAll('.filter-btn[data-filter="all"],[data-filter="trump2"],[data-filter="biden"]')
+        .forEach(function(b) { b.classList.remove('active'); });
+      activeAdmin = f;
+    } else {
+      // Domain filters
+      document.querySelectorAll('.filter-btn:not([data-filter="all"]):not([data-filter="trump2"]):not([data-filter="biden"])')
+        .forEach(function(b) { b.classList.remove('active'); });
+      activeDomain = (activeDomain === f) ? 'all' : f;
+    }
+    btn.classList.add('active');
+    renderAll();
+  });
+});
+
+renderAll();
+</script>
+
+<script>
+// Mobile tap support for nav dropdowns
+(function() {
+  function closeAll() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        dropdown.classList.add('open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+
+<script>
+// ── PROMISE MODAL ────────────────────────────────────────────────────────────
+var PROMISE_MAP = {};
+PROMISES.forEach(function(p) { PROMISE_MAP[p.id] = p; });
+
+var titleStyle = 'font-family:"Playfair Display",serif;font-size:22px;font-weight:900;line-height:1.2;margin-bottom:10px;';
+var flexRowStyle = 'display:flex;align-items:center;gap:10px;flex-wrap:wrap;';
+var flexTagStyle = 'display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;';
+
+function openPresModal(id) {
+  var p = PROMISE_MAP[id];
+  if (!p) return;
+  window._currentEntry = p;
+  var presColor = PRES_COLORS[p.president] || '#555';
+  var reversalNote = p.reversal_of
+    ? '<div class="reversal-note">&#8617; Reversal of prior administration commitment</div>' : '';
+  var reversedBy = PROMISES.find(function(other) { return other.reversal_of === p.id; });
+  var reversedNote = reversedBy
+    ? '<div class="reversal-note" style="color:var(--red);">&#8617; Subsequently reversed — see: ' + reversedBy.title + '</div>' : '';
+  var eventsHTML = (p.events||[]).map(function(ev) {
+    return '<div class="event">' +
+      '<div class="event-date">' + ev.date + '</div>' +
+      '<div class="event-dot dot-' + ev.type + '"></div>' +
+      '<div class="event-content">' +
+        '<div class="event-type">' + ev.type + '</div>' +
+        '<div class="event-label">' + ev.label + '</div>' +
+        (ev.detail ? '<div class="event-detail">' + ev.detail + '</div>' : '') +
+      '</div>' +
+    '</div>';
+  }).join('');
+  document.getElementById('pres-modal-header').innerHTML =
+    '<div style="' + flexTagStyle + '">' +
+      '<span class="promise-domain">' + p.domain_label + '</span>' +
+      '<span class="promise-source-type">' + sourceLabel(p.source_type) + '</span>' +
+    '</div>' +
+    '<div style="' + titleStyle + '">' + p.title + '</div>' +
+    '<div style="' + flexRowStyle + '">' +
+      '<span class="promise-president" style="background:' + presColor + ';">' + p.president + '</span>' +
+      '<span class="promise-status status-' + p.status + '">' + statusLabel(p.status) + '</span>' +
+      '<span class="promise-date">' + p.events[0].date + '</span>' +
+    '</div>';
+  document.getElementById('pres-modal-body').innerHTML =
+    '<div class="promise-quote">' + p.promise_text + '<cite>' + p.source_type + ' &middot; ' + p.source_detail + '</cite></div>' +
+    reversalNote +
+    '<div class="timeline-label">Timeline</div>' +
+    '<div class="events">' + eventsHTML + '</div>' +
+    reversedNote;
+  document.getElementById('pres-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePresModal() {
+  document.getElementById('pres-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePresModal(); });
+
+// ── REPORT MODAL ─────────────────────────────────────────────────────────────
+var _reportEntry = {};
+function openReport(id, title) {
+  _reportEntry = { id: id, title: title };
+  document.getElementById('report-entry-name').textContent = title;
+  ['report-wrong','report-correct','report-category','report-name','report-email'].forEach(function(i){ document.getElementById(i).value=''; });
+  document.getElementById('report-status').style.display = 'none';
+  var btn = document.getElementById('report-submit'); btn.disabled=false; btn.textContent='Submit';
+  document.getElementById('report-overlay').style.display = 'flex';
+}
+function closeReport() { document.getElementById('report-overlay').style.display='none'; }
+async function submitReport() {
+  var wrong = document.getElementById('report-wrong').value.trim();
+  if (!wrong) { showReportStatus('Please describe what is incorrect.','error'); return; }
+  var btn = document.getElementById('report-submit'); btn.disabled=true; btn.textContent='Sending...';
+  try {
+    var r = await fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({entry_id:_reportEntry.id,title:_reportEntry.title,
+        what_is_wrong:wrong,correct_info:document.getElementById('report-correct').value.trim(),
+        category:document.getElementById('report-category').value,
+        submitter_name:document.getElementById('report-name').value.trim(),
+        submitter_email:document.getElementById('report-email').value.trim()})});
+    var j = await r.json();
+    if (j.ok) { showReportStatus('Thank you — your report has been submitted.','ok'); btn.textContent='Sent'; }
+    else throw new Error(j.error||'Unknown error');
+  } catch(e) { showReportStatus('Error: '+e.message,'error'); btn.disabled=false; btn.textContent='Submit'; }
+}
+function showReportStatus(msg,type) {
+  var el=document.getElementById('report-status'); el.textContent=msg; el.style.display='';
+  el.style.background=type==='ok'?'#f0faf4':'#fdf0f0';
+  el.style.border='1px solid '+(type==='ok'?'#1a6b3c':'#c0392b');
+  el.style.color=type==='ok'?'#1a6b3c':'#c0392b';
+}
+</script>
+</body>
+</html>
