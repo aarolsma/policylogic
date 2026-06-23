@@ -4,101 +4,569 @@
     "role": "Mayor",
     "jurisdiction": "Los Angeles, CA",
     "party": "Democratic",
-    "photo_url": "",
     "term_start": "2022-12-12",
-    "term_end": null
+    "term_end": "2026-12-15",
+    "election_date": "2022-11-08",
+    "next_election": "2026-11-03",
+    "office_phone": "",
+    "office_address": "",
+    "office_website": ""
   },
   "summary": {
-    "overall_grade": "B",
-    "kept": 2,
-    "broken": 0,
-    "in_progress": 5,
-    "stalled": 1,
-    "total": 8,
-    "narrative": "Mayor Bass has made addressing homelessness her top priority and followed through on her signature promise to declare a state of emergency on her first day in office. Her administration has shown measurable progress on housing placements, though many of her broader affordability and safety initiatives remain ongoing works in progress."
+    "overall_grade": "C",
+    "grade_input_pct": 56.07,
+    "delivery_ratio": 0.5833,
+    "narrative": "Bass delivered fully on several discrete executive commitments — declaring a homelessness state of emergency on day one, issuing the affordable-housing acceleration directive (ED1, later codified), and ordering identification of city-owned property for housing. Larger outcome-based pledges showed partial progress: street homelessness fell roughly 17.5% two years running but fell far short of the promised 'end' to it, and police-force growth stalled and was partly reversed amid budget constraints. Her personal pledge to limit out-of-town travel was broken by a trip to Ghana during the Palisades fire.",
+    "grade_rationale": "The record mixes clean, well-documented fulfillment of unilateral executive promises (high delivery, high role) with substantial but incomplete progress on the hardest structural goals (homelessness, policing), where documented action exists but goal-fractions and scope reductions cap delivery, and one broken binary personal pledge. Strong execution on H1 directives is offset by under-delivery on H2/H3 quantitative commitments.",
+    "ambition_level": "High",
+    "total_promises": 6,
+    "total": 6
   },
   "promises": [
     {
-      "id": 1,
-      "text": "Declare a city state of emergency on homelessness on first day in office",
-      "domain_label": "Homelessness",
+      "text": "Declare a local emergency on homelessness on the first day in office.",
+      "domain_label": "Governance",
       "status": "kept",
-      "grade": "A",
-      "evidence": "Mayor Bass declared a city state of emergency on homelessness as her first official act upon assuming office on December 12, 2022.",
-      "source_url": "https://en.wikipedia.org/wiki/Karen_Bass",
-      "date_checked": "2026-03-09"
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 12.0,
+      "difficulty_earned": 1.0,
+      "promise_score": 19.0,
+      "what_happened": [
+        "2022-12-12: Bass declared a state of emergency on homelessness as her first act in office and activated the Emergency Operations Center.",
+        "2025-11-04: Bass lifted the emergency declaration, citing tools now in place."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Mayor Karen Bass Declares a State of Emergency On Homelessness | Mayor Karen Bass Skip to ",
+          "url": "https://mayor.lacity.gov/news/mayor-karen-bass-declares-state-emergency-homelessness"
+        },
+        {
+          "title": "En español LOS ANGELES – On her first day in office, <strong>Mayor Bass declared a state o",
+          "url": "https://mayor.lacity.gov/news/mayor-bass-signs-updated-state-emergency-housing-and-homelessness-confront-ongoing-crisis"
+        },
+        {
+          "title": "“The most important thing Mayor Bass has done in her first hundred days was what she did o",
+          "url": "https://newsroom.ucla.edu/advisories/ucla-experts-mayor-karen-bass-first-100-days"
+        }
+      ]
     },
     {
-      "id": 2,
-      "text": "Increase permanent housing move-ins for unhoused individuals",
-      "domain_label": "Homelessness",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "According to city data, the administration nearly doubled permanent housing move-ins compared to when Bass took office, with thousands more people moved inside than in 2022.",
-      "source_url": "https://mayor.lacity.gov/news/delivering-results-2024",
-      "date_checked": "2026-03-09"
+      "text": "End street homelessness / end people sleeping in parks or on the street (campaign pledge associated with a 2026 timeframe).",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 5,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 2.5,
+      "promise_score": 12.3,
+      "what_happened": [
+        "2022-12-21: Bass signed early executive directives targeting encampments.",
+        "2023-onward: Inside Safe launched and resolved 100+ encampments.",
+        "2026-05-20: Bass publicly admitted falling short of ending street homelessness by 2026.",
+        "2026-06-03: Reported street homelessness down 17.5% two years in a row."
+      ],
+      "flags": {
+        "scope_reduced": true
+      },
+      "sources": [
+        {
+          "title": "Los Angeles Mayor Karen Bass admitted falling short on her promise to <strong>end street h",
+          "url": "https://www.foxnews.com/media/karen-bass-grilled-over-broken-homelessness-promise-blames-bureaucracy-slowed-progress"
+        },
+        {
+          "title": "... He&#x27;s correct. This is embarrassing for Karen Bass. <strong>Promised 100% end to h",
+          "url": "https://townhall.com/tipsheet/amy-curtis/2026/05/20/cnn-karen-bass-homelessness-n2676392"
+        },
+        {
+          "title": "The fact that <strong>homelessness is down 17.5% two years in a row</strong>, it is the fi",
+          "url": "https://www.nbcnews.com/politics/2026-election/los-angeles-mayor-karen-bass-pulled-runoff-race-second-term-rcna347482"
+        },
+        {
+          "title": "That figure, reported by the Los Angeles Homeless Services Authority, represents the first",
+          "url": "https://www.latimes.com/california/story/2026-05-27/mayor-karen-bass-is-in-toughest-reelection-fight-of-her-career-she-says-she-intends-to-win-it"
+        },
+        {
+          "title": "Her signature initiative · <strong>Inside Safe</strong> has brought thousands of people in",
+          "url": "https://mayor.lacity.gov/news/lasting-change-annual-homelessness-count-down-two-years-row-first-time-ever-los-angeles"
+        }
+      ]
     },
     {
-      "id": 3,
-      "text": "Partner with landlords to house more veterans experiencing homelessness",
-      "domain_label": "Homelessness",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "The Mayor announced plans to launch a public campaign in 2025 to partner with landlords specifically to house more veterans.",
-      "source_url": "https://mayor.lacity.gov/news/delivering-results-2024",
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 4,
-      "text": "Make Los Angeles safer",
-      "domain_label": "Public Safety",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Bass has made public safety a centerpiece of her re-election campaign, indicating ongoing efforts, but comprehensive crime reduction outcomes remain mixed.",
-      "source_url": "https://abc7.com/karen-bass-reelection-campaign-los-angeles-mayor/",
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 5,
-      "text": "Make Los Angeles more affordable",
+      "text": "Issue an executive directive to accelerate and lower the cost of building affordable and temporary housing in Los Angeles.",
       "domain_label": "Economy",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Affordability remains a stated priority in her re-election platform, with various housing initiatives underway, though LA remains one of the least affordable cities in the nation.",
-      "source_url": "https://abc7.com/karen-bass-reelection-campaign-los-angeles-mayor/",
-      "date_checked": "2026-03-09"
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 1.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2022-12: Bass signed Executive Directive 1 to fast-track and cut costs of affordable housing.",
+        "2023-06/07: City Council codified ED1 by ordinance.",
+        "2023-09-14: Mayor's office announced 7,000+ accelerated affordable units.",
+        "2026-04-27: Office reported 42,000+ units in pipeline under permitting reforms."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "En Español LOS ANGELES - Mayor Bass announced today that more than 7,000 units of affordab",
+          "url": "https://mayor.lacity.gov/news/mayor-bass-announces-more-7000-units-affordable-housing-will-be-accelerated-city-releases"
+        },
+        {
+          "title": "LOS ANGELES – The Los Angeles City Council today approved a motion to codify the Mayor’s f",
+          "url": "https://mayor.lacity.gov/news/mayor-bass-applauds-city-councils-move-accelerate-and-reduce-cost-building-affordable-housing"
+        },
+        {
+          "title": "“We’re making housing more affordable for people who need it in Los Angeles. I want to exp",
+          "url": "https://mayor.lacity.gov/news/icymi-mayor-karen-bass-signs-ordinance-accelerate-affordable-housing"
+        },
+        {
+          "title": "Mayor Bass has spent the last three years focused on cutting red tape and accelerating bui",
+          "url": "https://mayor.lacity.gov/news/mayor-bass-directs-permitting-reforms-streamline-housing-and-business-development-across-los"
+        },
+        {
+          "title": "We need to take action so that Angelenos can afford to live here and to buy their first ho",
+          "url": "https://mayor.lacity.gov/news/mayor-bass-acts-make-housing-more-affordable-and-available-all"
+        }
+      ]
     },
     {
-      "id": 6,
-      "text": "Transform mental health services to address homelessness crisis",
-      "domain_label": "Healthcare",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "Bass supported state-level mental health reform proposals signed by Governor Newsom in 2023, which were put before voters in 2024 to transform California's mental health system.",
-      "source_url": "https://calmatters.org/commentary/2025/01/karen-bass-los-angeles-mayor-2025/",
-      "date_checked": "2026-03-09"
+      "text": "Identify city-owned properties to use for housing.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 12.0,
+      "difficulty_earned": 1.0,
+      "promise_score": 17.0,
+      "what_happened": [
+        "2023-02: Bass signed Executive Directive 3 seeking a 20-day report of vacant/surplus/underutilized city-owned properties.",
+        "2023-05-16: Mayor released an update on identified city-owned land for interim and permanent housing.",
+        "2024-04: Sites identified for up to 500 tiny home beds via $33M state grant."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "This is the third executive directive ... as her first official act. <strong>The directive",
+          "url": "https://abc7.com/karen-bass-mayor-homeless-city-property/12801320/"
+        },
+        {
+          "title": "<strong>Mayor Karen Bass on Tuesday, May 16, released an update on her plan to identify ci",
+          "url": "https://www.dailynews.com/2023/05/16/mayor-karen-bass-releases-update-on-plans-to-use-city-owned-land-for-housing/"
+        },
+        {
+          "title": "Since Mayor Bass signed Executive Directive 3 into effect in February 2023, <strong>the Ci",
+          "url": "https://www.laccd.edu/news/mayor-bass-expands-executive-directive-3-build-more-housing-faster-and-address-rv-encampments"
+        }
+      ]
     },
     {
-      "id": 7,
-      "text": "Bring unhoused people inside through the Inside Safe program",
-      "domain_label": "Homelessness",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "The Inside Safe program has been operational and has moved thousands of people into interim and permanent housing, though encampments persist across the city.",
-      "source_url": "https://mayor.lacity.gov/news/delivering-results-2024",
-      "date_checked": "2026-03-09"
+      "text": "Increase the number of city police officers.",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 10.1,
+      "what_happened": [
+        "2023-08: LAPD reported largest single-month applications since 2020.",
+        "2025-06-07: Bass-signed budget reduced planned police hiring from 480 to 240.",
+        "2025-12-12: Bass urged Council to find $4.4M to continue LAPD hiring; Council approved one class of 40 recruits.",
+        "2026-05-21: Council backed budget funding 510 officers (LAPD ~8,555 by 2027)."
+      ],
+      "flags": {
+        "scope_reduced": true
+      },
+      "sources": [
+        {
+          "title": "The second largest city in the United States cannot have an effective police department wi",
+          "url": "https://mayor.lacity.gov/news/mayor-bass-public-safety-most-important-service-city-los-angeles-can-provide"
+        },
+        {
+          "title": "On Friday, Bass signed the 2025-26 ... to the mayor’s spending plan was a <strong>reductio",
+          "url": "https://www.latimes.com/california/story/2025-06-07/bass-city-budget-police-hiring"
+        },
+        {
+          "title": "The budget paves the way for the hiring of <strong>510 police officers, leaving the LAPD w",
+          "url": "https://www.latimes.com/california/story/2026-05-21/la-council-backs-15-billion-budget-hiring-510-officers"
+        },
+        {
+          "title": "Bass and Council President Marqueece Harris-Dawson said they would find the money for more",
+          "url": "https://www.latimes.com/california/story/2025-12-12/divided-council-gives-modest-boost-to-lapd-hiring-amid-tensions-with-mayor"
+        },
+        {
+          "title": "The paper also pointed to polling that shows Angelenos split over whether the LAPD should ",
+          "url": "https://hoodline.com/2026/04/bass-draws-line-as-lapd-ranks-hit-near-quarter-century-low/"
+        }
+      ]
     },
     {
-      "id": 8,
-      "text": "Streamline city permitting to accelerate housing construction",
-      "domain_label": "Infrastructure",
-      "status": "stalled",
-      "grade": "D",
-      "evidence": "While Bass has discussed permit reform, significant bureaucratic delays in housing construction permitting continue to be cited as an obstacle by developers and housing advocates.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Promised that as mayor the only places she would travel would be D.C., Sacramento, San Francisco and New York, in relation to L.A.",
+      "domain_label": "Governance",
+      "status": "broken",
+      "confidence": "medium",
+      "delivery": "D0",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S1",
+      "magnitude": "M1",
+      "impact": 2,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 2.0,
+      "what_happened": [
+        "Early 2025: Bass was in Ghana for a presidential inauguration when the Pacific Palisades fire erupted; she returned to Los Angeles after the fire began."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "In L.A. Mayor’s Race, Karen Bass Faces Vocal Rivals and a ‘Disgruntled Electorate’ - The N",
+          "url": "https://www.nytimes.com/2026/05/07/us/los-angeles-mayors-race-bass-challengers.html"
+        },
+        {
+          "title": "But as Los Angeles Times columnist Steve Lopez wrote, “She should have called me. I had al",
+          "url": "https://calmatters.org/commentary/2026/04/la-mayor-bass-political-ladder/"
+        },
+        {
+          "title": "But as Los Angeles Times columnist Steve Lopez wrote, “She should have called me. I had al",
+          "url": "https://www.smdp.com/can-la-mayor-karen-bass-survive-her-mistakes-and-climb-the-political-ladder/"
+        }
+      ]
     }
   ],
-  "last_updated": "2026-03-09",
-  "methodology_version": "1.0"
+  "data_gaps": [
+    "Several campaign-era promises (c1, c2, c14) are Tier-3 and the exact campaign-stated homelessness deadline ('by 2026' / 'end street homelessness') is reconstructed from later reporting (c93-c95) rather than a verbatim 2022 campaign source; treated as date_uncertain. Environmental/climate pledges (c3-c8) were excluded for lack of attributable, forward-looking, verifiable campaign framing tied to a specific target despite delivery-side evidence (c111, c134, c146). The travel pledge (c96) is quoted from later commentary citing the campaign statement; corroborated by c99 but no original campaign transcript supplied. Time_pressure left null throughout because campaign-stated deadlines are not cleanly datable from the material."
+  ],
+  "term_identity": {
+    "term_id": "mayor-los-angeles-2022",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 88.0,
+    "office": "Mayor",
+    "jurisdiction": "Los Angeles, CA",
+    "term_start": "2022-12-12",
+    "term_end": "2026-12-15"
+  },
+  "person_ref": "karen-bass-los-angeles-ca",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 88.0,
+    "display": "Grade is record-to-date — term in progress, 88.0% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "mayor-los-angeles-2022",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-23T18:53:23+00:00",
+    "generated_at": "2026-06-23T18:54:26+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Issue Executive Directive to accelerate and lower the cost of building affordable and temp",
+        "url": "https://mayor.lacity.gov/SOTC2023"
+      },
+      {
+        "title": "Bass, one of the most prominent Black women in Congress, is a close ally of President Bide",
+        "url": "https://www.washingtonpost.com/politics/rep-karen-bass-plans-to-announce-run-for-mayor-of-los-angeles/2021/09/24/235128f2-1d38-11ec-a99a-5fea2b2da34b_story.html"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Karen_Bass"
+      },
+      {
+        "title": "In L.A. Mayor’s Race, Karen Bass Faces Vocal Rivals and a ‘Disgruntled Electorate’ - The N",
+        "url": "https://www.nytimes.com/2026/05/07/us/los-angeles-mayors-race-bass-challengers.html"
+      },
+      {
+        "title": "One year later, Bass’ reelection prospects are still bruised, but not broken.",
+        "url": "https://www.politico.com/newsletters/california-playbook/2026/01/07/karen-bass-confronts-grim-anniversary-los-angeles-00713614"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Mayoral_election_in_Los_Angeles,_California_(2026)"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Endorsements_by_Karen_Bass"
+      },
+      {
+        "title": "Incumbent Karen Bass, Spencer Pratt, Nithya Raman, and 13 others running in nonpartisan pr",
+        "url": "https://news.ballotpedia.org/2026/04/20/incumbent-karen-bass-spencer-pratt-nithya-raman-and-13-others-running-in-nonpartisan-primary-for-mayor-of-los-angeles/"
+      },
+      {
+        "title": "August 1, 2022: The candidates filed campaign finance reports with the Los Angeles City Et",
+        "url": "https://ballotpedia.org/Mayoral_election_in_Los_Angeles,_California_(2022)"
+      },
+      {
+        "title": "Karen Bash did not file to run for re-election.",
+        "url": "https://ballotpedia.org/Karen_Bash"
+      },
+      {
+        "title": "But let me be clear, <strong>this just isn&#x27;t a campaign -- this is a mission, and we ",
+        "url": "https://news.ballotpedia.org/2026/06/12/la-mayor-karen-bass-to-face-nithya-raman-in-nov-3-general-election-becoming-first-incumbent-to-face-a-runoff-since-2005/"
+      },
+      {
+        "title": "Sixteen candidates are running in the nonpartisan primary for mayor of Los Angeles — inclu",
+        "url": "https://news.ballotpedia.org/2026/06/02/a-new-congressional-map-is-enacted-in-louisiana-blocked-in-alabama-and-dead-in-south-carolina/"
+      },
+      {
+        "title": "Still, it&#x27;s unclear who will join her on the ballot — <strong>Spencer Pratt, who&#x27",
+        "url": "https://news.ballotpedia.org/2026/06/03/south-dakota-to-hold-its-first-primary-runoff-since-adopting-the-system-in-1985/"
+      },
+      {
+        "title": "Incumbent Karen Bass (D) and Errol Webber (R) defeated Larry Thompson (Independent) in the",
+        "url": "https://ballotpedia.org/California's_37th_Congressional_District"
+      },
+      {
+        "title": "Open Seats / Turnovers 2022: AL-5: Mo Brooks (R) running for AL Senator CA-37: <strong>Kar",
+        "url": "https://www.ontheissues.org/CA/Karen_Bass_Gun_Control.htm"
+      },
+      {
+        "title": "Open Seats / Turnovers 2022: AL-5: Mo Brooks (R) running for AL Senator CA-37: <strong>Kar",
+        "url": "https://www.ontheissues.org/CA/Karen_Bass_Foreign_Policy.htm"
+      },
+      {
+        "title": "<strong>Karen Bass</strong> is a Hard-Core Liberal (Click for details)",
+        "url": "https://www.ontheissues.org/ca/Karen_Bass.htm"
+      },
+      {
+        "title": "Bass has a 100% rating from NARAL, a national organization that supports expanded abortion",
+        "url": "https://ontheissues.org/ca/Karen_Bass_Abortion.htm"
+      },
+      {
+        "title": "Open Seats / Turnovers 2022: AL-5: Mo Brooks (R) running for AL Senator CA-37: <strong>Kar",
+        "url": "https://ontheissues.org/CA/Karen_Bass_Homeland_Security.htm"
+      },
+      {
+        "title": "Open Seats / Turnovers 2022: AL-5: Mo Brooks (R) running for AL Senator CA-37: <strong>Kar",
+        "url": "https://ontheissues.org/CA/Karen_Bass_Civil_Rights.htm"
+      },
+      {
+        "title": "Open Seats / Turnovers 2022: AL-5: Mo Brooks (R) running for AL Senator CA-37: <strong>Kar",
+        "url": "https://ontheissues.org/CA/Karen_Bass_Energy_+_Oil.htm"
+      },
+      {
+        "title": "Open Seats / Turnovers 2022: AL-5: Mo Brooks (R) running for AL Senator CA-37: <strong>Kar",
+        "url": "https://ontheissues.org/CA/Karen_Bass_Immigration.htm"
+      },
+      {
+        "title": "Source: 2010 House campaign website, karenbass.com &quot;Accomplishments&quot; , Nov 2, 20",
+        "url": "https://www.ontheissues.org/CA/Karen_Bass_Health_Care.htm"
+      },
+      {
+        "title": "Bass co-sponsored TIGER Grants Act · Congressional Summary: TIGER Grants for Job Creation ",
+        "url": "http://www.ontheissues.org/CA/Karen_Bass_Technology.htm"
+      },
+      {
+        "title": "<strong>For Presidential and Congressional candidates who refuse to provide voters with th",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/28963/karen-bass"
+      },
+      {
+        "title": "Track This Politician · mailEmail · Capitol Website · More Office Contactskeyboard_arrow_d",
+        "url": "https://justfacts.votesmart.org/candidate/biography/28963/karen-bass"
+      },
+      {
+        "title": "Track This Politician · mailEmail · Capitol Website · More Office Contactskeyboard_arrow_d",
+        "url": "https://justfacts.votesmart.org/candidate/28963/karen-bass"
+      },
+      {
+        "title": "Vote Smart provides free, unbiased, in-depth information about current officials, candidat",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/28963/karen-bass"
+      },
+      {
+        "title": "Candidates are free to address ... one aspect of political courage: <strong>candidates&#x2",
+        "url": "https://justfacts.votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "The Political Courage Test <strong>asks candidates which items they will support if electe",
+        "url": "https://votesmart.org/candidate/political-courage-test/22216/charlie-bass/"
+      },
+      {
+        "title": "For assistance, please call our candidate line at 515-989-6359 or email politicalcourage@v",
+        "url": "https://secure.votesmart.org/loadLogin.action;jsessionid=F2CD2AC03A41D48A887F5C8C3665CDA7"
+      },
+      {
+        "title": "Gubernatorial and state legislative candidates were also tested, and their Political Coura",
+        "url": "https://www.blog.votesmart.org/post/2018-national-political-courage-test-results-did-your-candidates-pass"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/193130/karen-garvey"
+      },
+      {
+        "title": "In November, Rep. Bass hosted a town hall discussing the path forward in Congress. The beg",
+        "url": "https://bass.house.gov/first100"
+      },
+      {
+        "title": "Mayor Bass Emergency Executive Orders | Mayor Karen Bass Skip to main content About Mayor ",
+        "url": "https://mayor.lacity.gov/EmergencyOrders"
+      },
+      {
+        "title": "Budget Resources | Mayor Karen Bass Skip to main content About Mayor Bass Request City Ser",
+        "url": "https://mayor.lacity.gov/budget-resources"
+      },
+      {
+        "title": "About Mayor Karen Bass | Mayor Karen Bass Skip to main content About Mayor Bass Request Ci",
+        "url": "https://mayor.lacity.gov/about-mayor-karen-bass"
+      },
+      {
+        "title": "Mayor Bass Issues Sweeping Executive Order to Clear Way for Angelenos to Rebuild Their Hom",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-issues-sweeping-executive-order-clear-way-angelenos-rebuild-their-homes-fast"
+      },
+      {
+        "title": "Office of Mayor Karen Bass Releases 2023 Year in Review Fact Sheet | Mayor Karen Bass Skip",
+        "url": "https://mayor.lacity.gov/news/office-mayor-karen-bass-releases-2023-year-review-fact-sheet"
+      },
+      {
+        "title": "Mayor Karen Bass is struggling to hold onto voters who feel Los Angeles is headed in the w",
+        "url": "https://www.politico.com/news/2026/05/28/la-mayor-poll-bass-vulnerable-close-race-raman-pratt-00941128"
+      },
+      {
+        "title": "That has been a through line in Bass’ mayorship, as she speaks often about “locking arms” ",
+        "url": "https://www.politico.com/newsletters/california-playbook/2024/09/23/karen-bass-has-a-new-counterpart-00180439"
+      },
+      {
+        "title": "Mayor Karen Bass Declares a State of Emergency On Homelessness | Mayor Karen Bass Skip to ",
+        "url": "https://mayor.lacity.gov/news/mayor-karen-bass-declares-state-emergency-homelessness"
+      },
+      {
+        "title": "En español LOS ANGELES – On her first day in office, <strong>Mayor Bass declared a state o",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-signs-updated-state-emergency-housing-and-homelessness-confront-ongoing-crisis"
+      },
+      {
+        "title": "Because many of the tools created under the declaration are now in place, we can continue ",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-we-will-continue-urgently-confronting-crisis-homelessness"
+      },
+      {
+        "title": "“<strong>Preventing people from falling into homelessness in the first place is a cornerst",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-continues-drive-change-protect-renters-and-prevent-homelessness"
+      },
+      {
+        "title": "Her signature initiative · <strong>Inside Safe</strong> has brought thousands of people in",
+        "url": "https://mayor.lacity.gov/news/lasting-change-annual-homelessness-count-down-two-years-row-first-time-ever-los-angeles"
+      },
+      {
+        "title": "LOS ANGELES – Mayor Karen Bass signed an executive directive to streamline processes and s",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-signs-executive-directive-help-ensure-major-capital-infrastructure-projects-reach"
+      },
+      {
+        "title": "LOS ANGELES – Los Angeles Mayor Karen Bass signed an executive directive to continue impro",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-signs-executive-directive-repair-streets-clean-parks-and-enhance-infrastructure"
+      },
+      {
+        "title": "LOS ANGELES – Mayor Karen Bass today was honored with the Trailblazer Award for climate ac",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-honored-trailblazer-award-climate-action-announces-new-ladwp-program-help-angelenos"
+      },
+      {
+        "title": "“Preserving city services and protecting the workforce required to maintain these resource",
+        "url": "https://mayor.lacity.gov/news/following-months-labor-negotiations-mayor-bass-secures-agreements-avert-all-civil-service"
+      },
+      {
+        "title": "Legislative profile for Rep. Karen Bass [D-CA37, 2013-2022], the former Representative fro",
+        "url": "https://www.govtrack.us/congress/members/karen_bass/412404"
+      },
+      {
+        "title": "are optimistic that renewed ire over permitting requirements by affluent residents looking",
+        "url": "https://www.politico.com/newsletters/california-playbook/2025/02/19/karen-bass-two-challenges-collide-00204827"
+      },
+      {
+        "title": "<strong>Councilmembers, unable to reach a consensus on the proposal, decided last summer t",
+        "url": "https://www.politico.com/news/2025/02/28/la-city-hall-charter-reform-karen-bass-00206738"
+      },
+      {
+        "title": "Array ( [actionDate] =&gt; 2022-12-01 [displayText] =&gt; Passed/agreed to in House: Pursu",
+        "url": "https://www.congress.gov/member/karen-bass/B001270"
+      },
+      {
+        "title": "Expanding Capacity With New Leadership at DWP: Mayor Bass recommended <strong>Janisse Quiñ",
+        "url": "https://mayor.lacity.gov/news/delivering-results-2024-bass-highlights-unprecedented-green-year-la"
+      },
+      {
+        "title": "The Directive Bolsters City Protocols That Prohibit Use of City Resources for Immigration ",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-issues-executive-directive-support-immigrant-communities"
+      },
+      {
+        "title": "funding to complete streets improvements and increase traffic safety in Watts. Watts Risin",
+        "url": "https://mayor.lacity.gov/sites/g/files/wph2066/files/2024-02/MKB-1-Year-Book-Final-ENG.pdf"
+      },
+      {
+        "title": "한국어 LOS ANGELES – Los Angeles Mayor Karen Bass signed an executive directive to continue i",
+        "url": "https://mayor.lacity.gov/news/what-theyre-saying-leaders-commend-mayor-bass-issuing-executive-directive-repair-streets-clean"
+      },
+      {
+        "title": "Mayor Bass has spent the last three years focused on cutting red tape and accelerating bui",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-directs-permitting-reforms-streamline-housing-and-business-development-across-los"
+      },
+      {
+        "title": "En Español LOS ANGELES - Mayor Bass announced today that more than 7,000 units of affordab",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-announces-more-7000-units-affordable-housing-will-be-accelerated-city-releases"
+      },
+      {
+        "title": "We need to take action so that Angelenos can afford to live here and to buy their first ho",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-acts-make-housing-more-affordable-and-available-all"
+      },
+      {
+        "title": "LOS ANGELES – The Los Angeles City Council today approved a motion to codify the Mayor’s f",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-applauds-city-councils-move-accelerate-and-reduce-cost-building-affordable-housing"
+      },
+      {
+        "title": "“We’re making housing more affordable for people who need it in Los Angeles. I want to exp",
+        "url": "https://mayor.lacity.gov/news/icymi-mayor-karen-bass-signs-ordinance-accelerate-affordable-housing"
+      },
+      {
+        "title": "The second largest city in the United States cannot have an effective police department wi",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-public-safety-most-important-service-city-los-angeles-can-provide"
+      },
+      {
+        "title": "And that&#x27;s especially important from the young people that stand behind me, who are g",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-state-city-address-delivered"
+      },
+      {
+        "title": "She also helped lead the successful passage of Measure A on the November ballot, which ove",
+        "url": "https://mayor.lacity.gov/news/mayor-bass-secures-major-regulatory-change-house-homeless-vets-and-launches-new-initiative"
+      }
+    ]
+  }
 }

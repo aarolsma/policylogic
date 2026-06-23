@@ -4,91 +4,360 @@
     "role": "Mayor",
     "jurisdiction": "Miami, FL",
     "party": "Republican",
-    "photo_url": "",
     "term_start": "2017-11-15",
-    "term_end": "2025-12-18"
+    "term_end": "2025-12-18",
+    "election_date": "2021-11-02",
+    "next_election": "2025-11-04",
+    "office_phone": "",
+    "office_address": "",
+    "office_website": ""
   },
   "summary": {
-    "overall_grade": "B",
-    "kept": 4,
-    "broken": 1,
-    "in_progress": 0,
-    "stalled": 2,
-    "total": 7,
-    "narrative": "Francis Suarez delivered on several high-profile initiatives including positioning Miami as a tech and cryptocurrency hub, maintaining low taxes, and improving city infrastructure. However, affordable housing remained a persistent challenge throughout his tenure, and some sustainability goals fell short of targets. His presidential campaign suspended in August 2023 as promised when polling thresholds weren't met."
+    "overall_grade": "D",
+    "grade_input_pct": 36.86,
+    "delivery_ratio": 0.32,
+    "narrative": "Across his term, the strongest documented delivery is fiscal: Miami reported $200M+ in reserves under the FY2024-2025 budget after recovering from a deficit, consistent with the campaign-era reserves pledge. On climate and homelessness, Suarez initiated formal actions (a carbon-neutral-by-2050 resolution and a 'functional zero' homelessness plan announcement) but the record lacks Tier-1 confirmation of completed outcomes, and his homelessness figures were publicly contested. Police-strengthening and the personal-accessibility pledge show little or no documented follow-through in the supplied material.",
+    "grade_rationale": "Most tracked promises are directional, low-clarity commitments with only one showing a measurable delivered outcome (reserves); the others sit at early milestone stages with limited or contested verification and no Tier-1 delivery anchors. The pattern is partial movement on broadly worded goals rather than completed, measurable deliverables, constrained by the mayor's largely non-voting role in a commission-controlled government.",
+    "ambition_level": "Moderate",
+    "total_promises": 5,
+    "total": 5
   },
   "promises": [
     {
-      "id": 1,
-      "text": "Make Miami a major tech and innovation hub",
-      "domain_label": "Economy",
+      "text": "Increase the city's emergency financial reserves.",
+      "domain_label": "Governance",
       "status": "kept",
-      "grade": "A",
-      "evidence": "Successfully attracted major tech companies and startups to Miami, hosted major tech conferences, and personally recruited Silicon Valley firms via social media campaigns starting in 2020-2021.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 3.0,
+      "promise_score": 15.2,
+      "what_happened": [
+        "2025-01-16: City reported more than $200 million in reserves per the 2024-2025 budget after recovering from a deficit (c89).",
+        "2024-25: Mayor presented the FY2024-2025 budget (c88)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Despite the fallout, the city was able to get out of its deficit and now has <strong>more ",
+          "url": "https://www.wlrn.org/government-politics/2025-01-15/miami-mayor-francis-suarez-state-of-city-address"
+        },
+        {
+          "title": "A letter from Mayor Francis Suarez presenting the Fiscal Year <strong>2024-2025 Budget</st",
+          "url": "https://www.miami.gov/My-Government/Departments/Management-Budget/Mayors-Budget-Message"
+        }
+      ]
     },
     {
-      "id": 2,
-      "text": "Establish Miami as a cryptocurrency-friendly city",
-      "domain_label": "Economy",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "Launched MiamiCoin cryptocurrency initiative in 2021, accepted Bitcoin for city payments, and hosted the Bitcoin 2021 conference, making Miami a recognized crypto hub.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Strengthen the city's police department / increase funding for police.",
+      "domain_label": "Safety & Justice",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 5,
+      "adjusted_delivery": 1.8,
+      "difficulty_earned": 0.75,
+      "promise_score": 7.55,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "At his victory party on the Miami River, he said that his agenda includes <strong>increasi",
+          "url": "https://www.miamiherald.com/news/local/community/miami-dade/article255511476.html"
+        }
+      ]
     },
     {
-      "id": 3,
-      "text": "Keep Miami taxes low with no city income tax",
-      "domain_label": "Economy",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "Miami maintained no city income tax throughout Suarez's tenure, and he consistently promoted this as a draw for businesses and residents relocating from higher-tax states.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 4,
-      "text": "Address affordable housing crisis in Miami",
-      "domain_label": "Housing",
+      "text": "Address poverty and homelessness in Miami.",
+      "domain_label": "Governance",
       "status": "stalled",
-      "grade": "D",
-      "evidence": "Despite creating affordable housing programs and trust funds, Miami's housing affordability crisis worsened during his tenure with rents and home prices increasing dramatically, outpacing wage growth.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.5,
+      "promise_score": 12.1,
+      "what_happened": [
+        "2021-12-05: Suarez said the city would release a 'functional zero' homelessness plan within 30 days (c131).",
+        "2023-06-27: Reporting characterized homelessness figures Suarez touted as 'convenient and misleading' (c130)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "On <strong>December 5,</strong> City of Miami Mayor Francis Suarez gave a talk during asse",
+          "url": "https://recatalyst.org/3318/opinion/out-of-sight-is-not-enough/"
+        },
+        {
+          "title": "Republican Miami Mayor Francis Suarez bragged last year, during his brief presidential cam",
+          "url": "https://reason.com/2024/06/15/gimme-shelter-2/"
+        },
+        {
+          "title": "<strong>“Convenient and misleading</strong>”: Suarez has been touting faulty homelessness ",
+          "url": "https://www.miamiherald.com/news/politics-government/article276712141.html"
+        }
+      ]
     },
     {
-      "id": 5,
-      "text": "Make Miami a climate-resilient city with sustainability initiatives",
+      "text": "Address climate change impacts on Miami / support resilience projects to protect Miami from climate impacts.",
       "domain_label": "Environment",
       "status": "stalled",
-      "grade": "C",
-      "evidence": "Implemented some resilience projects including sea-level rise preparations and stormwater improvements, but comprehensive climate goals faced funding and implementation challenges.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.5,
+      "promise_score": 12.1,
+      "what_happened": [
+        "2019-11-22: Suarez submitted a climate resolution; the city joined a global pledge (c138).",
+        "2020-01-21: City government planned to go carbon neutral by 2050, joining as 96th city in the world (c137)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "At his victory party on the Miami River, he said that his agenda includes <strong>increasi",
+          "url": "https://www.miamiherald.com/news/local/community/miami-dade/article255511476.html"
+        },
+        {
+          "title": "<strong>The city government plans to go carbon neutral by 2050</strong>, a pledge that wil",
+          "url": "https://www.miamiherald.com/news/local/environment/article239370733.html"
+        },
+        {
+          "title": "“I feel empowered now,” he said after he posed for a celebratory photo outside City Hall w",
+          "url": "https://www.miamiherald.com/news/local/environment/article237617209.html"
+        }
+      ]
     },
     {
-      "id": 6,
-      "text": "Improve city infrastructure and roads",
-      "domain_label": "Infrastructure",
-      "status": "kept",
-      "grade": "B",
-      "evidence": "Oversaw significant infrastructure investments including road improvements, the expansion of the Underline linear park project, and various neighborhood improvement initiatives.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 7,
-      "text": "Suspend presidential campaign if failing to meet 1% polling threshold",
-      "domain_label": "Government",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "Suarez publicly committed to dropping out if he failed to reach polling thresholds. He suspended his campaign on August 29, 2023, becoming the first Republican to exit the 2024 race.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Keep city residents directly accessible to the mayor by sharing personal cell phone number publicly.",
+      "domain_label": "Governance",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 3.0,
+      "difficulty_earned": 0.25,
+      "promise_score": 8.25,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Keep city residents directly accessible to the mayor by sharing personal cell phone number",
+          "url": "https://communitynewspapers.com/biscayne-bay/mayor-suarez-the-politics-of-the-future/"
+        }
+      ]
     }
   ],
-  "last_updated": "2026-03-09",
-  "methodology_version": "1.0"
+  "data_gaps": [
+    "The vast majority of promise candidates were presidential-campaign statements (c12-c52), generic '100-day plan' boilerplate (c72-c80), or in-office/press items that fail the campaign-attribution test and were excluded. Tier-1 delivery anchors are scarce (only c72/c88 are Tier-1, and c72 is unrelated boilerplate), so no D3/D4 delivery scores rest on Tier-1 verification — reviewer should confirm. Reserves item (c89) is Tier-3 reporting of a budget figure; police and accessibility promises have essentially no verification evidence and are flagged LIMITED EVIDENCE. Several candidate dates (c10, c13, c24) postdate or predate the relevant window and were treated as non-qualifying."
+  ],
+  "term_identity": {
+    "term_id": "mayor-miami-2017",
+    "ordinal": "term",
+    "status": "completed",
+    "office": "Mayor",
+    "jurisdiction": "Miami, FL",
+    "term_start": "2017-11-15",
+    "term_end": "2025-12-18"
+  },
+  "person_ref": "francis-suarez-miami-fl",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "FORMER TERM"
+  ],
+  "provisional_status": {
+    "provisional": false,
+    "reason": "term_complete"
+  },
+  "_meta": {
+    "term_id": "mayor-miami-2017",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-23T19:12:57+00:00",
+    "generated_at": "2026-06-23T19:13:43+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Francis_Suarez"
+      },
+      {
+        "title": "Suarez suggested <strong>it could eventually allow Miami to eliminate taxes</strong>. The ",
+        "url": "https://www.nytimes.com/2023/06/15/us/politics/francis-suarez-president.html"
+      },
+      {
+        "title": "Republican field is 2024 shrinks as Miami Mayor Francis Suarez ends his run : NPR Accessib",
+        "url": "https://www.npr.org/2023/08/29/1196582909/miami-mayor-francis-suarez-2024-republican-election-trump-desantis"
+      },
+      {
+        "title": "“As mayor of Miami, Suarez has repeatedly used his position to benefit himself, <strong>pr",
+        "url": "https://www.politico.com/news/2023/06/14/francis-suarez-president-mayor-miami-00102030"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Francis_Suarez_presidential_campaign,_2024"
+      },
+      {
+        "title": "Miami Mayor Francis Suarez claims he&#x27;s qualified for GOP presidential debate, but RNC",
+        "url": "https://apnews.com/article/francis-suarez-miami-mayor-republican-debate-president-5898b380b1d239a94d9de358e72253b7"
+      },
+      {
+        "title": "Suarez, who is at risk of missing the debate himself, said polling requirements are unfair",
+        "url": "https://www.politico.com/news/2023/08/11/francis-suarez-if-you-dont-make-the-debate-drop-out-00110897"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Francis Suarez.",
+        "url": "https://ballotpedia.org/Endorsements_by_Francis_Suarez"
+      },
+      {
+        "title": "This page contains a select list of Francis Suarez&#x27;s (R) national campaign staff.",
+        "url": "https://ballotpedia.org/Francis_Suarez_presidential_campaign_staff,_2024"
+      },
+      {
+        "title": "Mayoral races advanced to runoffs in Albuquerque, New Mexico, Jersey City, New Jersey, and",
+        "url": "https://news.ballotpedia.org/2025/11/17/democratic-socialist-katie-wilson-elected-mayor-of-seattle-as-progressives-win-downballot-races-2/"
+      },
+      {
+        "title": "This page was current at the end of the individual&#x27;s last campaign covered by Ballotp",
+        "url": "https://ballotpedia.org/Rafael_Suarez"
+      },
+      {
+        "title": "Ballotpedia did not identify endorsements for Suarez in this election.",
+        "url": "https://ballotpedia.org/Xavier_Suarez"
+      },
+      {
+        "title": "Ballotpedia wasn’t able to identify campaign managers for the following Republican candida",
+        "url": "https://news.ballotpedia.org/2023/07/17/state-legislative-party-switches-in-2023-occurring-at-twice-the-30-year-average/"
+      },
+      {
+        "title": "Francis ran as a <strong>Republican candidate in the 2016 election for Louisiana Public Se",
+        "url": "https://ballotpedia.org/Mike_Francis_(Louisiana)"
+      },
+      {
+        "title": "My name is Philip Suarez, and I’m ready to bring principled, America First leadership to C",
+        "url": "https://ballotpedia.org/Phil_Suarez"
+      },
+      {
+        "title": "Suarez told NBC News <strong>he initially supported Governor DeSantis&#x27; &#x27;Don&#x27",
+        "url": "https://www.ontheissues.org/2024/Francis_Suarez_Civil_Rights.htm"
+      },
+      {
+        "title": "Asa Hutchinson (R-AR) Perry Johnson (R-IL) Mayor Steve Laffey (R-RI) Former V.P.Mike Pence",
+        "url": "https://www.ontheissues.org/2024/Kamala_Harris_Principles_+_Values.htm"
+      },
+      {
+        "title": "Asa Hutchinson (R-AR) Perry Johnson (R-IL) Mayor Steve Laffey (R-RI) Former V.P.Mike Pence",
+        "url": "https://ontheissues.org/2024/Bernie_Sanders_Civil_Rights.htm"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://ontheissues.org/candidates.htm/house/pa/in/NY/Daniel_Frisa.htm"
+      },
+      {
+        "title": "Home | Issues | Candidates | Most Recent Quote | Issue Grid | Books + Debates | Senate Rac",
+        "url": "https://ontheissues.org/Mayor.htm"
+      },
+      {
+        "title": "Contact Nikki Haley VoteMatch 2024 Presidential Candidate · VoteMatch Responses (Click her",
+        "url": "https://www.ontheissues.org/nikki_haley.htm"
+      },
+      {
+        "title": "Unfortunately, we have to increase security in our schools JDV: I unfortunately think that",
+        "url": "https://www.ontheissues.org/2024/JD_Vance_Gun_Control.htm"
+      },
+      {
+        "title": "Contact Ron Paul VoteMatch Republican Representative (TX-14); previously Libertarian for P",
+        "url": "https://www.ontheissues.org/Ron_Paul.htm"
+      },
+      {
+        "title": "Contact Donald Trump VoteMatch <strong>2016 Republican incumbent President; 2000 Reform Pr",
+        "url": "https://www.ontheissues.org/donald_trump.htm"
+      },
+      {
+        "title": "Things get more expensive as they get less competitive Q: Health care is the leading cause",
+        "url": "https://www.ontheissues.org/2024/Doug_Burgum_Health_Care.htm"
+      },
+      {
+        "title": "Track This Politician · mailEmail · Capitol Website · Capitol Cell Phone · More Office Con",
+        "url": "https://justfacts.votesmart.org/candidate/130213/francis-suarez"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/130213/francis-suarez"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Track This Politician · mailEmail · Capitol Website · Capitol Cell Phone · More Office Con",
+        "url": "https://justfacts.votesmart.org/candidate/biography/130213/francis-suarez"
+      },
+      {
+        "title": "A candidate&#x27;s political courage is calculated based on the number of issue areas the ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Please note that Vote Smart does not permit the use of its name or program in any partisan",
+        "url": "https://justfacts.votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "For assistance, please call our candidate line at 515-989-6359 or email politicalcourage@v",
+        "url": "https://secure.votesmart.org/loadLogin.action;jsessionid=3A6DA4F240C95ABF1267E20469B9C53B"
+      },
+      {
+        "title": "Political Courage Test: 2024 Congressional Edition · Candidates are strongly encouraged to",
+        "url": "https://justfacts.votesmart.org/static/pdfs/forcandidates/congressional/2024_Federal_PCT.pdf"
+      },
+      {
+        "title": "Political Courage Test: 2022 New York’s Edition · Candidates are strongly encouraged to co",
+        "url": "https://justfacts.votesmart.org/static/pdfs/forcandidates/states/2022_NY_PCT.pdf"
+      },
+      {
+        "title": "THE PUBLIC POLICY CENTER OF · THE CONFERENCE BOARD · SOLUTIONS BRIEF · A series focused on",
+        "url": "https://files.eric.ed.gov/fulltext/ED614040.pdf"
+      },
+      {
+        "title": "Miami Mayor Francis Suarez is among the elected officials who would get another year in of",
+        "url": "https://www.politico.com/newsletters/florida-playbook/2025/06/27/miami-crosses-desantis-and-uthmeier-00428627"
+      },
+      {
+        "title": "Miami Mayor Francis Suarez suspends 2024 GOP presidential bid after failing to qualify for",
+        "url": "https://apnews.com/article/francis-suarez-drops-out-presidential-race-0504573bdb742f3a626bd14385239106"
+      },
+      {
+        "title": "A letter from Mayor Francis Suarez presenting the Fiscal Year <strong>2024-2025 Budget</st",
+        "url": "https://www.miami.gov/My-Government/Departments/Management-Budget/Mayors-Budget-Message"
+      },
+      {
+        "title": "Francis Suarez, Republican Presidential Candidate, on the Issues - The New York Times Skip",
+        "url": "https://www.nytimes.com/interactive/2023/08/18/us/politics/francis-suarez-republican-candidates-2024-issues.html"
+      }
+    ]
+  }
 }

@@ -4,148 +4,704 @@
     "role": "Governor",
     "jurisdiction": "Georgia",
     "party": "Republican",
-    "term_start": "2019-01-14",
+    "term_start": "2023-01-12",
     "term_end": "2027-01-09",
     "election_date": "2022-11-08",
-    "election_margin": null,
     "next_election": "2026-11-03",
     "office_phone": null,
     "office_address": "Office of the Governor, Atlanta, Georgia",
     "office_website": "gov.georgia.gov"
   },
   "summary": {
-    "narrative": "Kemp campaigned on putting Georgians first, prioritizing economic growth, election security reform, public safety, education, and tax relief. Second term accomplishments include significant job creation (18,300+ jobs, $12.5B investment), tax cuts/rebates, anti-abortion legislation, gun rights expansion, and election law overhauls. Faced controversy over 2020 election decisions and voting law characterizations.",
-    "total_promises": 4,
-    "delivery_rate_estimate": 0.75,
-    "ambition_level": "High",
-    "grade_rationale": "Strong economic delivery with measurable job/investment outcomes; tax relief implemented; core conservative priorities advanced. Deductions for election law controversy and limited detail on education/rural investment specifics.",
-    "overall_grade": "B"
+    "overall_grade": "B",
+    "grade_input_pct": 74.85,
+    "delivery_ratio": 0.75,
+    "narrative": "Across this term, Kemp delivered on his major fiscal and education-funding commitments: he completed and exceeded the $5,000 teacher pay raise, fully funded the school formula, cut the state income tax below five percent, returned billions in surplus rebates, and maintained Georgia's AAA bond rating. He also signed anti-gang and human-trafficking legislation and advanced literacy initiatives. Most tracked promises show completed legislative or budgetary action; the literacy promise is advanced but lacks documented outcome metrics, and the CRT-related promise has limited and contested evidence.",
+    "grade_rationale": "The record shows a high proportion of fully delivered, clearly specified, statewide promises with documented legislative and budgetary action driven by the official, supporting strong delivery scores. A small number of promises rest on thinner or contested evidence or lack confirmed outcome measurement, which moderates confidence on those items but does not change the predominant pattern of completed delivery.",
+    "ambition_level": "Moderate",
+    "total_promises": 8,
+    "total": 8
   },
   "promises": [
     {
-      "normalized": "Deliver economic growth and job creation, especially in rural Georgia",
-      "domain": "Economic Development",
-      "domain_label": "Jobs & Economy",
-      "clarity_score": 3,
-      "initiation_score": 4,
-      "outcome_score": 5,
-      "attribution_modifier": 0.85,
-      "difficulty_multiplier": 1.8,
-      "policy_score": 28.9,
-      "requires_legislation": true,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "High"
+      "text": "Provide a final $2,000 installment raise for K-12 teachers, assistant teachers, and pre-k teachers to complete a total $5,000 teacher pay raise since 2019.",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2022-01-13: Kemp proposed final $2,000 installment in FY2023 budget",
+        "2023-01-09: $5,000 raises reported as delivered for public school teachers",
+        "2026-01-15: Kemp stated teacher pay was raised by $9,500, exceeding original goal"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Provide a $2,000 final installment raise for K-12 teachers, assistant teachers, and pre-k ",
+          "url": "https://gov.georgia.gov/press-releases/2022-01-13/governor-brian-p-kemps-2022-state-state-address"
+        },
+        {
+          "title": "He also made a diverse slate of appointments and kept his promise of <strong>$5,000 raises",
+          "url": "https://www.fox5atlanta.com/news/governor-brian-kemp-georgia-republicans-victories"
+        },
+        {
+          "title": "We didn’t raise teacher pay by 5,000 dollars – <strong>we raised it by 9,500 dollars</stro",
+          "url": "https://www.wjbf.com/news/georgia-news/georgia-gov-brian-kemp-delivers-state-of-the-state-address-for-2026/"
+        },
+        {
+          "title": "We didn’t raise teacher pay by 5,000 dollars – <strong>we raised it by 9,500 dollars</stro",
+          "url": "https://gov.georgia.gov/press-releases/2026-01-15/governor-kemps-2026-state-state-address"
+        }
+      ]
     },
     {
-      "normalized": "Implement tax cuts and provide tax relief to Georgia families",
-      "domain": "Fiscal Policy",
-      "domain_label": "Taxes",
-      "clarity_score": 3,
-      "initiation_score": 4,
-      "outcome_score": 4,
-      "attribution_modifier": 0.9,
-      "difficulty_multiplier": 1.6,
-      "policy_score": 22.32,
-      "requires_legislation": true,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "High"
+      "text": "Add $425 million to fully fund the state school funding formula and restore all pandemic-era austerity cuts to education funding in the FY2023 budget.",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2024-05-07: FY25 budget committed additional $1.4 billion for $13.2 billion total K-12",
+        "2025-03-06: AFY25 budget added $140 million to fully fund QBE"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Add $425 million to fully fund the state school funding formula and restore all pandemic-e",
+          "url": "https://gov.georgia.gov/press-releases/2022-01-13/governor-brian-p-kemps-2022-state-state-address"
+        },
+        {
+          "title": "That’s why, between this budget and the amended budget I signed in February, we are commit",
+          "url": "https://gov.georgia.gov/press-releases/2024-05-07/gov-kemp-signs-fy25-budget-invest-education-public-safety-healthcare-and"
+        },
+        {
+          "title": "Education and Workforce Development: <strong>$140 million in additional allocations to ful",
+          "url": "https://gov.georgia.gov/press-releases/2025-03-06/gov-kemp-signs-afy25-budget-delivering-hurricane-relief-tax-refunds-and"
+        }
+      ]
     },
     {
-      "normalized": "Reform election rules and strengthen election security",
-      "domain": "Election Administration",
-      "domain_label": "Elections",
-      "clarity_score": 2,
-      "initiation_score": 4,
-      "outcome_score": 3,
-      "attribution_modifier": 0.75,
-      "difficulty_multiplier": 2.2,
-      "policy_score": 17.25,
-      "requires_legislation": true,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": true,
-        "externally_blocked": false
-      },
-      "confidence": "Medium"
+      "text": "Work with the General Assembly to pass legislation protecting students from critical race theory and divisive ideologies in schools.",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "low",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2022-01-10: Kemp outlined agenda including effort to ban critical race theory in Georgia schools"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Work with the General Assembly to pass legislation protecting students from critical race ",
+          "url": "https://gov.georgia.gov/press-releases/2022-01-13/governor-brian-p-kemps-2022-state-state-address"
+        },
+        {
+          "title": "Brian P. Kemp | Governor Brian P. Kemp Office of the Governor Skip to main content An offi",
+          "url": "https://gov.georgia.gov/brian-p-kemp"
+        },
+        {
+          "title": "Gov. Brian Kemp outlined a legislative agenda that includes <strong>a push to encourage in",
+          "url": "https://www.ajc.com/politics/politics-blog/kemps-2022-agenda-gun-rights-expansion-education-overhaul-teacher-pay-hike/UKKRHU464ZFOBA45OKPTBZX6IQ/"
+        }
+      ]
     },
     {
-      "normalized": "Strengthen public safety and improve K-12 education quality",
-      "domain": "Education & Public Safety",
-      "domain_label": "Public Safety & Education",
-      "clarity_score": 2,
-      "initiation_score": 3,
-      "outcome_score": 2,
-      "attribution_modifier": 0.7,
-      "difficulty_multiplier": 2.1,
-      "policy_score": 11.34,
-      "requires_legislation": true,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "Low"
+      "text": "Lower Georgia's state income tax rate to below five percent.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2023-12-04: Kemp proposed acceleration of income tax cut",
+        "2025-04-15: rate cut to 5.19%",
+        "2026-05-11: HB 463 signed lowering rate from 5.19% to 4.99% effective Jan 1, 2026"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Gov. Kemp Signs Legislation Lowering Taxes and Supporting Economic Growth | Governor Brian",
+          "url": "https://gov.georgia.gov/press-releases/2026-05-11/gov-kemp-signs-legislation-lowering-taxes-and-supporting-economic-growth"
+        },
+        {
+          "title": "Governor Kemp signed the following two bills this week, <strong>HB 111</strong> and HB 112",
+          "url": "https://dor.georgia.gov/press-releases/2025-04-17/gov-kemp-signs-legislation-delivering-more-1-billion-tax-cuts-and-relief"
+        },
+        {
+          "title": "<strong>With this second acceleration cutting the state income tax rate by another 20 basi",
+          "url": "https://gov.georgia.gov/press-releases/2025-04-15/gov-kemp-signs-legislation-delivering-more-1-billion-tax-cuts-and-relief"
+        },
+        {
+          "title": "<strong>This will mark a cut of 36 basis points from the Tax Year 2023 rate of 5.75 percen",
+          "url": "https://gov.georgia.gov/press-releases/2023-12-04/gov-kemp-proposes-acceleration-largest-income-tax-cut-state-history"
+        },
+        {
+          "title": "In addition to HB 112, the General Assembly also passed <strong>House Bill 111,</strong> r",
+          "url": "https://dor.georgia.gov/press-releases/2025-06-02/gov-kemp-special-tax-refund-checks-begin-issuing-week"
+        }
+      ]
+    },
+    {
+      "text": "Return about $2 billion to taxpayers from the state surplus and enact tax cuts to help families fight inflation.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2024-10-22: third special tax refund announced",
+        "2026-03-20: HB 1000 signed authorizing fourth rebate; cumulative $11.8 billion returned"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "One of the biggest disagreements between the two is the surplus: <strong>Kemp has pledged ",
+          "url": "https://www.ajc.com/politics/in-rematch-kemp-and-abrams-spar-in-first-2022-debate/SHAV7PBFVJCRXOTLBW4E674FXE/"
+        },
+        {
+          "title": "Gov. Kemp Signs Major Tax Relief Bills for Hardworking Georgians | Governor Brian P. Kemp ",
+          "url": "https://gov.georgia.gov/press-releases/2026-03-20/gov-kemp-signs-major-tax-relief-bills-hardworking-georgians"
+        },
+        {
+          "title": "We have been able to use some of those funds to take action that provides economic relief ",
+          "url": "https://www.pagelegislative.org/brian-kemp-responses"
+        },
+        {
+          "title": "This special tax refund would serve as the third rebate package delivered by Governor Kemp",
+          "url": "https://gov.georgia.gov/press-releases/2024-10-22/gov-kemp-announces-plans-third-special-tax-refund-hardworking-georgians"
+        }
+      ]
+    },
+    {
+      "text": "Maintain Georgia's AAA bond rating through conservative budgeting.",
+      "domain_label": "Governance",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.6,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 1.0,
+      "promise_score": 14.2,
+      "what_happened": [
+        "2024-01-11: Kemp reported maintained Triple-A bond rating",
+        "2026-06-22: agencies reaffirmed AAA/Aaa/AAA ratings"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Maintain Georgia's AAA bond rating through conservative budgeting",
+          "url": "https://gov.georgia.gov/about-us/initiatives-and-priorities"
+        },
+        {
+          "title": "The agencies’ assigned ratings of AAA, Aaa, and AAA, respectively, reflect Georgia’s stron",
+          "url": "https://allongeorgia.com/chattooga-local-news/gov-kemp-georgia-maintains-highest-possible-bond-ratings"
+        },
+        {
+          "title": "Despite unprecedented challenges, <strong>we have maintained a Triple-A bond rating</stron",
+          "url": "https://gov.georgia.gov/press-releases/2024-01-11/governor-brian-p-kemps-2024-state-state-address"
+        }
+      ]
+    },
+    {
+      "text": "Crack down on gang activity and human trafficking affecting every community across Georgia.",
+      "domain_label": "Safety & Justice",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2023-04-12: SB 42 (human trafficking) signed",
+        "2023-04-26: SB 44 anti-gang legislation signed",
+        "2024-04-24: additional combatting human trafficking legislation signed"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Crack down on gang activity and human trafficking affecting every community across Georgia",
+          "url": "https://gov.georgia.gov/about-us/initiatives-and-priorities"
+        },
+        {
+          "title": "<strong>SB 44</strong> was a major part of Governor Kemp’s legislative agenda this session",
+          "url": "https://gov.georgia.gov/press-releases/2023-04-26/gov-kemp-signs-public-safety-and-anti-gang-legislation"
+        },
+        {
+          "title": "Atlanta, GA – Governor Brian P. Kemp was joined by First Lady Marty Kemp today to sign <st",
+          "url": "https://gov.georgia.gov/press-releases/2023-04-11/gov-kemp-signs-legislation-continuing-first-lady-marty-kemps-work-end"
+        },
+        {
+          "title": "&quot;For years Georgia was considered a hot spot for human trafficking, but thanks to the",
+          "url": "https://gov.georgia.gov/press-releases/2024-04-24/gov-kemp-signs-combatting-human-trafficking-and-supporting-victims"
+        }
+      ]
+    },
+    {
+      "text": "Improve literacy rates for students in grades three through twelve.",
+      "domain_label": "Education",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.45,
+      "what_happened": [
+        "2023-04-13: SB 211 (Georgia Council on Literacy) and HB 538 (evidence-based literacy instruction) signed",
+        "2026-05-05: additional literacy and math education bills signed"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Improve literacy rates for students in grades three through twelve",
+          "url": "https://gov.georgia.gov/about-us/initiatives-and-priorities"
+        },
+        {
+          "title": "In addition to the Safe Schools Act, Governor Kemp signed several other important bills in",
+          "url": "https://gov.georgia.gov/press-releases/2023-04-13/gov-kemp-signs-bills-improve-literacy-and-provide-resources-safe-and"
+        },
+        {
+          "title": "Dayle Burns, members of the General Assembly, educators, and students, signed multiple bil",
+          "url": "https://gov.georgia.gov/press-releases/2026-05-05/gov-kemp-signs-bills-strengthening-literacy-and-k-12-schools"
+        },
+        {
+          "title": "1 state for business and opportunity, our classrooms must be safe learning environments th",
+          "url": "https://thecitizen.com/2026/05/06/gov-kemp-signs-bills-strengthening-literacy-and-k-12-schools/"
+        }
+      ]
     }
   ],
   "data_gaps": [
-    "Specific education improvement metrics and legislation passed",
-    "Public safety outcomes and crime reduction data",
-    "Detailed breakdown of rural investment allocation",
-    "Tax cut implementation timeline and household benefit amounts",
-    "Election law litigation outcomes and legal challenges",
-    "Inflation/cost-of-living impact assessment on families",
-    "Executive order details and effectiveness measures",
-    "Comparison of promises vs. 2018 first-term delivery"
+    "Many promise candidates were biographical pages, Senate-race speculation, or debate logistics and were excluded. The CRT/divisive-ideologies promise (c5) lacks a specifically cited signed bill in the delivery material and is contested by third parties; literacy delivery lacks measurable outcome data. Negative promise (bond rating) assigned binary D4 per rubric. Some delivery evidence dated 2026 falls within term (ends 2027-01-09). Healthcare/Medicaid-related material exists (Pathways) but no clear campaign-era promise was isolated from it."
   ],
+  "term_identity": {
+    "term_id": "gov-ga-2023",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 86.2,
+    "office": "Governor",
+    "jurisdiction": "Georgia",
+    "term_start": "2023-01-12",
+    "term_end": "2027-01-09"
+  },
+  "person_ref": "brian-kemp-georgia",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 86.2,
+    "display": "Grade is record-to-date — term in progress, 86.2% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
   "_meta": {
-    "generated_at": "2026-03-08T19:43:35.137Z",
-    "slug": "brian-kemp-georgia",
-    "review_status": "pending",
-    "method": "brave+haiku",
+    "term_id": "gov-ga-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-23T00:43:28+00:00",
+    "generated_at": "2026-06-23T00:44:26+00:00",
+    "review_status": "draft",
+    "card_flags": [],
     "sources": [
       {
-        "title": "Brian Kemp - Ballotpedia",
-        "url": "https://ballotpedia.org/Brian_Kemp"
-      },
-      {
-        "title": "Brian Kemp - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Brian_Kemp"
-      },
-      {
-        "title": "Governor Brian P. Kemp's 2022 State of the State Address | Governor Brian P. Kemp Office of the Governor",
+        "title": "Provide a $2,000 final installment raise for K-12 teachers, assistant teachers, and pre-k ",
         "url": "https://gov.georgia.gov/press-releases/2022-01-13/governor-brian-p-kemps-2022-state-state-address"
       },
       {
-        "title": "Gov Kemp: Georgia Job Creation Remains Strong | Georgia.org",
-        "url": "https://georgia.org/press-release/gov-kemp-georgia-job-creation-remains-strong"
+        "title": "Lower Georgia's state income tax rate to below five percent",
+        "url": "https://gov.georgia.gov/press-releases/2026-01-15/governor-kemps-2026-state-state-address"
       },
       {
-        "title": "2020 Signed Legislation | Governor Brian P. Kemp Office of the Governor",
-        "url": "https://gov.georgia.gov/executive-action/legislation/signed-legislation/2020-signed-legislation?instance_overrides_key=egGgr2UcgA9-O6Zp5xBguTnDs0J-gwkgvmIi8PclNKk&page=2"
+        "title": "Cut obsolete, unnecessarily burdensome, and bureaucratic hurdles for small businesses",
+        "url": "https://gov.georgia.gov/about-us/initiatives-and-priorities"
       },
       {
-        "title": "Georgia Gas Tax Suspension Extended: Kemp signs executive order cutting costs at the pump into July",
-        "url": "https://www.wjcl.com/amp/article/georgia-gas-tax-suspension-extended/40118639"
+        "title": "Help Georgia families fight through 40-year-high inflation by enacting tax cuts",
+        "url": "https://gov.georgia.gov/brian-p-kemp"
       },
       {
-        "title": "Kemp’s Medicaid Experiment Failures in Full View Across Georgia - georgiademocrat.org",
-        "url": "https://georgiademocrat.org/kemps-medicaid-experiment-failures-in-full-view-across-georgia/"
+        "title": "Governor Brian P. Kemp Office of the Governor Skip to main content An official website of ",
+        "url": "https://gov.georgia.gov/"
       },
       {
-        "title": "In Bloomberg: “Brian Kemp Has Failed Georgia Voters” - georgiademocrat.org",
-        "url": "https://georgiademocrat.org/in-bloomberg-brian-kemp-has-failed-georgia-voters/"
+        "title": "About Governor Brian P. Kemp | Governor Brian P. Kemp Office of the Governor Skip to main ",
+        "url": "https://gov.georgia.gov/about-us/about-governor-brian-p-kemp"
+      },
+      {
+        "title": "As governor, Kemp signed legislation that aimed to <strong>reduce human trafficking and vi",
+        "url": "https://ballotpedia.org/Brian_Kemp"
+      },
+      {
+        "title": "Georgia&#x27;s Brian Kemp tries to project influence as he nears his term&#x27;s end | AP ",
+        "url": "https://apnews.com/article/brian-kemp-republican-trump-speech-76baca007f88621d56d3b47b2a89bc64"
+      },
+      {
+        "title": "<strong>Kemp is proposing a 4% cost of living increase for public employees and an equival",
+        "url": "https://apnews.com/article/brian-kemp-georgia-state-of-state-e5fcde248983b2c4a177cc69bf8a3fdf"
+      },
+      {
+        "title": "Georgia Gov. Brian Kemp says he is passing on running for the senate in next year&#x27;s m",
+        "url": "https://www.npr.org/2025/05/06/nx-s1-5387659/georgia-kemp-us-senate-midterm"
+      },
+      {
+        "title": "Brian Kemp of Georgia has decided against running for Senate in 2026, robbing Republicans ",
+        "url": "https://www.nytimes.com/2025/05/05/us/politics/brian-kemp-senate-georgia-jon-ossoff.html"
+      },
+      {
+        "title": "Georgia Gov. Brian Kemp is expanding his political operation, tapping Jenny Drucker and Al",
+        "url": "https://www.politico.com/news/2023/02/09/brian-kemp-pac-republican-00081975"
+      },
+      {
+        "title": "Monday’s debate in Atlanta was a demonstration of the political animus that Stacey Abrams,",
+        "url": "https://www.nytimes.com/live/2022/10/17/us/abrams-kemp-georgia-debate"
+      },
+      {
+        "title": "Gov. Brian Kemp and Stacey Abrams, at their debate on Sunday in Atlanta, gave Georgia vote",
+        "url": "https://www.nytimes.com/live/2022/10/30/us/georgia-debate-governor-abrams-kemp"
+      },
+      {
+        "title": "The debate in Georgia between Gov. Brian Kemp, a Republican, and his Democratic challenger",
+        "url": "https://www.nytimes.com/2022/10/30/us/politics/stacey-abrams-brian-kemp-takeaways-ga-debate.html"
+      },
+      {
+        "title": "Georgia gubernatorial election, 2022 (May 24 Republican primary) ... This section includes",
+        "url": "https://ballotpedia.org/Georgia_gubernatorial_election,_2022"
+      },
+      {
+        "title": "The table below details filing requirements for gubernatorial candidates in Georgia in the",
+        "url": "https://ballotpedia.org/Georgia_gubernatorial_election,_2022_(May_24_Republican_primary)"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Brian Kemp.",
+        "url": "https://ballotpedia.org/Endorsements_by_Brian_Kemp"
+      },
+      {
+        "title": "Stacey Abrams (D) advanced from the Democratic primary for Governor of Georgia on May 24, ",
+        "url": "https://ballotpedia.org/Governor_of_Georgia"
+      },
+      {
+        "title": "Incumbent Brian Kemp <strong>defeated Stacey Abrams, Shane Hazel, David Byrne, and Milton ",
+        "url": "https://ballotpedia.org/Georgia_gubernatorial_election,_2026_(May_19_Republican_primary)"
+      },
+      {
+        "title": "Incumbents Charlie Bethel, a former Republican member of the Georgia Senate, and Sarah Haw",
+        "url": "https://news.ballotpedia.org/2026/05/07/five-candidates-are-running-in-the-may-19-general-election-for-three-seats-on-the-georgia-supreme-court/"
+      },
+      {
+        "title": "Incumbent Gov. Brian Kemp <strong>defeated former U.S. Sen. David Perdue and three other c",
+        "url": "https://news.ballotpedia.org/2022/05/25/incumbent-kemp-defeats-perdue-and-three-others-in-georgias-republican-gubernatorial-primary/"
+      },
+      {
+        "title": "On December 8, 2023, Governor Brian Kemp (R) signed revised congressional maps into law. L",
+        "url": "https://ballotpedia.org/Georgia's_14th_Congressional_District"
+      },
+      {
+        "title": "The Democratic gubernatorial primary ... governor in 2018 and lost to current incumbent Br",
+        "url": "https://news.ballotpedia.org/2022/05/23/no-june-ca-statewide-ballot-measures-first-time-since-1964/"
+      },
+      {
+        "title": "Brian Kemp is a <strong>Populist-Leaning Conservative</strong> (Click for details)",
+        "url": "https://www.ontheissues.org/Brian_Kemp.htm"
+      },
+      {
+        "title": "TV campaign ad: &quot;I&#x27;m Brian Kemp, this is Jake, a young man interested in one of ",
+        "url": "https://www.ontheissues.org/Archive/Media_Slate_Brian_Kemp.htm"
+      },
+      {
+        "title": "Put the needs of hardworking Georgians ahead of special interests · Source: 2018 Georgia G",
+        "url": "https://www.ontheissues.org/governor/Brian_Kemp_Immigration.htm"
+      },
+      {
+        "title": "The Georgia NAACP is preparing to sue Secretary of State Brian Kemp, the Republican nomine",
+        "url": "https://www.ontheissues.org/Archive/2018_GA_Gov_Brian_Kemp.htm"
+      },
+      {
+        "title": "Georgia invested $2.6 billion to convince the company to build their batteries in Jackson ",
+        "url": "https://www.ontheissues.org/Archive/Gov_GA_Brian_Kemp.htm"
+      },
+      {
+        "title": "Brian Kemp, GBA Board Secretary, serves as <strong>Georgia&#x27;s Secretary of State</stro",
+        "url": "https://ontheissues.org/Governor/Brian_Kemp_Principles_+_Values.htm"
+      },
+      {
+        "title": "Kemp scores 47% by the LCV on environmental issues - Georgia Conservation Voters (Candidat",
+        "url": "https://ontheissues.org/Governor/Brian_Kemp_Environment.htm"
+      },
+      {
+        "title": "No other right specified by our constitution permits the loss of a vote for failure to use",
+        "url": "https://ontheissues.org/Governor/Brian_Kemp_Government_Reform.htm"
+      },
+      {
+        "title": "The Georgia NAACP is preparing to sue Secretary of State Brian Kemp, the Republican nomine",
+        "url": "https://ontheissues.org/Archive/Media_Politico_Brian_Kemp.htm"
+      },
+      {
+        "title": "Kemp: No. Opposes new gun control restrictions, supports campus carry, arming K-12 teacher",
+        "url": "https://hillary.ontheissues.org/Governor/Brian_Kemp_Gun_Control.htm"
+      },
+      {
+        "title": "<strong>Brian Kemp did not provide voters with positions on key issues covered by the 2022",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/31876/brian-kemp"
+      },
+      {
+        "title": "Brian P. Kemp",
+        "url": "https://justfacts.votesmart.org/candidate/biography/31876/brian-kemp"
+      },
+      {
+        "title": "Track This Politician · Capitol Webmail · Capitol Website · More Office Contactskeyboard_a",
+        "url": "https://justfacts.votesmart.org/candidate/31876/brian-kemp"
+      },
+      {
+        "title": "Forgot username or password? Vote Smart Just The Facts ... &quot;We think so highly of Vot",
+        "url": "https://votesmart.org/candidate/political-courage-test/4226/kemp-hannon/"
+      },
+      {
+        "title": "For assistance, please call our candidate line at 515-989-6359 or email politicalcourage@v",
+        "url": "https://secure.votesmart.org/loadLogin.action;jsessionid=F2CD2AC03A41D48A887F5C8C3665CDA7"
+      },
+      {
+        "title": "We do not have any campaign finance data for this candidate. Please check back later for u",
+        "url": "https://justfacts.votesmart.org/candidate/campaign-finance/31876/brian-kemp"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/31876/brian-kemp/111/taxes"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/31876/brian-kemp/20/criminal-justice"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/31876/brian-kemp/30/environment"
+      },
+      {
+        "title": "Please wait...your file download will begin shortly · If your download does not begin soon",
+        "url": "https://newdemocratcoalition.house.gov/download/100-day-agenda-wtas-doc"
+      },
+      {
+        "title": "Signed Legislation | Governor Brian P. Kemp Office of the Governor Skip to main content An",
+        "url": "https://gov.georgia.gov/executive-action/legislation/signed-legislation"
+      },
+      {
+        "title": "Gov. Kemp Signs Legislation Lowering Taxes and Supporting Economic Growth | Governor Brian",
+        "url": "https://gov.georgia.gov/press-releases/2026-05-11/gov-kemp-signs-legislation-lowering-taxes-and-supporting-economic-growth"
+      },
+      {
+        "title": "Gov. Kemp Signs Legislation Protecting Georgia Agriculture and Natural Resources | Governo",
+        "url": "https://gov.georgia.gov/press-releases/2026-05-06/gov-kemp-signs-legislation-protecting-georgia-agriculture-and-natural"
+      },
+      {
+        "title": "Gov. Kemp Signs Major Tax Relief Bills for Hardworking Georgians | Governor Brian P. Kemp ",
+        "url": "https://gov.georgia.gov/press-releases/2026-03-20/gov-kemp-signs-major-tax-relief-bills-hardworking-georgians"
+      },
+      {
+        "title": "Gov. Kemp Signs Legislation Strengthening Georgia&#039;s Workforce | Governor Brian P. Kem",
+        "url": "https://gov.georgia.gov/press-releases/2026-05-11/gov-kemp-signs-legislation-strengthening-georgias-workforce"
+      },
+      {
+        "title": "Gov. Kemp Signs Legislation Cutting Red Tape and Streamlining Government | Governor Brian ",
+        "url": "https://gov.georgia.gov/press-releases/2025-05-09/gov-kemp-signs-legislation-cutting-red-tape-and-streamlining-government"
+      },
+      {
+        "title": "Gov. Kemp Signs Historic Legislation Delivering Commonsense, Meaningful Tort Reform | Gove",
+        "url": "https://gov.georgia.gov/press-releases/2025-04-21/gov-kemp-signs-historic-legislation-delivering-commonsense-meaningful"
+      },
+      {
+        "title": "Gov. Kemp Signs Amended Budget To Provide Tax Relief, Fund Georgia DREAMS, Invest in Trans",
+        "url": "https://gov.georgia.gov/press-releases/2026-03-03/gov-kemp-signs-amended-budget-provide-tax-relief-fund-georgia-dreams"
+      },
+      {
+        "title": "Here you will find Governor Kemp&#x27;s executive orders. These orders are legal instrumen",
+        "url": "https://gov.georgia.gov/executive-action/executive-orders/2026"
+      },
+      {
+        "title": "Governor Brian P. Kemp Office of the Governor",
+        "url": "https://gov.georgia.gov/executive-action/executive-orders"
+      },
+      {
+        "title": "Governor Brian P. Kemp Office of the Governor ... Here you will find Governor Kemp&#x27;s ",
+        "url": "https://gov.georgia.gov/executive-action/executive-orders/2025"
+      },
+      {
+        "title": "ATLANTA - Governor Brian P. Kemp, joined by First Lady Marty Kemp and Office of Planning a",
+        "url": "https://gov.georgia.gov/press-releases/2026-05-12/gov-kemp-signs-fy27-budget"
+      },
+      {
+        "title": "Governor Brian P. Kemp Office of the Governor ... Here you will find Governor Kemp&#x27;s ",
+        "url": "https://gov.georgia.gov/executive-action/executive-orders/2024"
+      },
+      {
+        "title": "Governor Brian P. Kemp Office of the Governor",
+        "url": "https://gov.georgia.gov/executive-action/legislation/vetoed-legislation"
+      },
+      {
+        "title": "That’s why, between this budget and the amended budget I signed in February, we are commit",
+        "url": "https://gov.georgia.gov/press-releases/2024-05-07/gov-kemp-signs-fy25-budget-invest-education-public-safety-healthcare-and"
+      },
+      {
+        "title": "Dayle Burns, members of the General Assembly, educators, and students, signed multiple bil",
+        "url": "https://gov.georgia.gov/press-releases/2026-05-05/gov-kemp-signs-bills-strengthening-literacy-and-k-12-schools"
+      },
+      {
+        "title": "So, thank you all, again, for helping us keep Georgia the best place to live, work, and ra",
+        "url": "https://gov.georgia.gov/press-releases/2025-05-09/atlanta-governor-brian-p-kemp-joined"
+      },
+      {
+        "title": "ATLANTA - Governor Brian P. Kemp, ... signed multiple bills into law today that <strong>en",
+        "url": "https://gov.georgia.gov/press-releases/2025-04-28/gov-kemp-signs-bills-strengthening-education-and-school-safety"
+      },
+      {
+        "title": "<strong>HB 409</strong>, sponsored by Representative Lauren Daniel, signed by Representati",
+        "url": "https://gov.georgia.gov/press-releases/2024-04-23/gov-kemp-signs-legislation-strengthening-education-system-georgia"
+      },
+      {
+        "title": "Education and Workforce Development: <strong>$140 million in additional allocations to ful",
+        "url": "https://gov.georgia.gov/press-releases/2025-03-06/gov-kemp-signs-afy25-budget-delivering-hurricane-relief-tax-refunds-and"
+      },
+      {
+        "title": "Governor Jones, Speaker Burns, and the General Assembly, we made yearly funding to strengt",
+        "url": "https://gov.georgia.gov/press-releases/2025-01-16/governor-brian-p-kemps-2025-state-state-address"
+      },
+      {
+        "title": "Governor Kemp signed the following two bills this week, <strong>HB 111</strong> and HB 112",
+        "url": "https://dor.georgia.gov/press-releases/2025-04-17/gov-kemp-signs-legislation-delivering-more-1-billion-tax-cuts-and-relief"
+      },
+      {
+        "title": "<strong>With this second acceleration cutting the state income tax rate by another 20 basi",
+        "url": "https://gov.georgia.gov/press-releases/2025-04-15/gov-kemp-signs-legislation-delivering-more-1-billion-tax-cuts-and-relief"
+      },
+      {
+        "title": "Sponsored by Representative Lauren McDonald and co-sponsored by Speaker Pro Tempore Jan Jo",
+        "url": "https://gov.georgia.gov/press-releases/2024-04-18/gov-kemp-signs-historic-tax-cut-package-law"
+      },
+      {
+        "title": "<strong>This will mark a cut of 36 basis points from the Tax Year 2023 rate of 5.75 percen",
+        "url": "https://gov.georgia.gov/press-releases/2023-12-04/gov-kemp-proposes-acceleration-largest-income-tax-cut-state-history"
+      },
+      {
+        "title": "In addition to HB 112, the General Assembly also passed <strong>House Bill 111,</strong> r",
+        "url": "https://dor.georgia.gov/press-releases/2025-06-02/gov-kemp-special-tax-refund-checks-begin-issuing-week"
+      },
+      {
+        "title": "This special tax refund would serve as the third rebate package delivered by Governor Kemp",
+        "url": "https://gov.georgia.gov/press-releases/2024-10-22/gov-kemp-announces-plans-third-special-tax-refund-hardworking-georgians"
+      },
+      {
+        "title": "In addition to HB 128, Governor Kemp also signed SB 213 and <strong>HB 230</strong>. SB 21",
+        "url": "https://gov.georgia.gov/press-releases/2023-04-24/gov-kemp-signs-legislation-cutting-red-tape-women-minority-and-veteran"
+      },
+      {
+        "title": "Despite unprecedented challenges, <strong>we have maintained a Triple-A bond rating</stron",
+        "url": "https://gov.georgia.gov/press-releases/2024-01-11/governor-brian-p-kemps-2024-state-state-address"
+      },
+      {
+        "title": "Designed to connect students, job seekers, and employers, it will help ensure Georgia work",
+        "url": "https://gov.georgia.gov/press-releases/2026-01-14/gov-kemp-announces-affordability-infrastructure-workforce-priorities-eggs"
+      },
+      {
+        "title": "Atlanta, GA – Today, Governor ... future state of healthcare in Georgia, specifically rega",
+        "url": "https://gov.georgia.gov/press-releases/2024-08-19/governor-kemp-joined-commissioners-john-king-and-russel-carlson-provides"
+      },
+      {
+        "title": "Athens, GA – Governor Brian P. Kemp, accompanied by First Lady Marty Kemp, Lieutenant Gove",
+        "url": "https://gov.georgia.gov/press-releases/2024-04-19/gov-kemp-signs-legislation-improving-healthcare-access-and-affordability"
+      },
+      {
+        "title": "Ellabell, GA – Governor Brian ... and economic development partners from around the state,",
+        "url": "https://gov.georgia.gov/press-releases/2023-05-05/gov-kemp-signs-fy24-budget-invest-public-safety-healthcare-workforce-and"
+      },
+      {
+        "title": "ATLANTA - Governor Brian P. Kemp, ... Assembly, and local leaders, <strong>signed legislat",
+        "url": "https://gov.georgia.gov/press-releases/2025-05-01/gov-kemp-signs-bills-improving-healthcare-and-supporting-coastal"
+      },
+      {
+        "title": "Newnan, GA – Governor Brian P. ... representatives, and other local and state leaders, <st",
+        "url": "https://gov.georgia.gov/press-releases/2023-04-27/gov-kemp-signs-legislation-bolster-and-maintain-top-tier-workforce-talent"
+      },
+      {
+        "title": "The launch of <strong>Georgia Pathways</strong>, an innovative program voluntarily expandi",
+        "url": "https://gov.georgia.gov/press-releases/2024-02-02/gov-kemp-announces-lawsuit-against-cms-reclaim-implementation-time"
+      },
+      {
+        "title": "In addition to the Safe Schools Act, Governor Kemp signed several other important bills in",
+        "url": "https://gov.georgia.gov/press-releases/2023-04-13/gov-kemp-signs-bills-improve-literacy-and-provide-resources-safe-and"
+      },
+      {
+        "title": "&quot;For years Georgia was considered a hot spot for human trafficking, but thanks to the",
+        "url": "https://gov.georgia.gov/press-releases/2024-04-24/gov-kemp-signs-combatting-human-trafficking-and-supporting-victims"
+      },
+      {
+        "title": "<strong>SB 44</strong> was a major part of Governor Kemp’s legislative agenda this session",
+        "url": "https://gov.georgia.gov/press-releases/2023-04-26/gov-kemp-signs-public-safety-and-anti-gang-legislation"
+      },
+      {
+        "title": "Atlanta, GA – Governor Brian P. Kemp was joined by First Lady Marty Kemp today to sign <st",
+        "url": "https://gov.georgia.gov/press-releases/2023-04-11/gov-kemp-signs-legislation-continuing-first-lady-marty-kemps-work-end"
+      },
+      {
+        "title": "Atlanta, GA – Governor Brian P. Kemp today <strong>declared a state of emergency due to th",
+        "url": "https://gov.georgia.gov/press-releases/2023-09-12/gov-kemp-announces-gas-tax-suspension-georgians-face-sustained-inflation"
       }
     ]
   }

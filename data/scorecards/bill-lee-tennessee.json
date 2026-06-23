@@ -4,91 +4,656 @@
     "role": "Governor",
     "jurisdiction": "Tennessee",
     "party": "Republican",
-    "photo_url": "",
-    "term_start": "2019-01-19",
-    "term_end": "2027-01-16"
+    "term_start": "2023-01-21",
+    "term_end": "2027-01-16",
+    "election_date": "2022-11-08",
+    "next_election": "2026-11-03",
+    "office_phone": "",
+    "office_address": "",
+    "office_website": ""
   },
   "summary": {
-    "overall_grade": "C",
-    "kept": 2,
-    "broken": 1,
-    "in_progress": 3,
-    "stalled": 1,
-    "total": 7,
-    "narrative": "Governor Bill Lee has had mixed results on his campaign promises during his tenure. He has achieved notable successes on fiscal responsibility and AI protections for artists, but his signature school voucher initiative faced repeated legislative setbacks before advancing. His childcare expansion promises remain largely unfulfilled compared to initial pledges."
+    "overall_grade": "B",
+    "grade_input_pct": 72.73,
+    "delivery_ratio": 0.7273,
+    "narrative": "Across his 2022 campaign 'America at Its Best' agenda, Lee's budget- and legislation-anchored commitments were largely delivered: the $1B TISA education investment, $500M CTE funding, 100 additional THP troopers, the $100M Violent Crime Intervention Fund, a Rainy Day Fund exceeding its $1.8B target, the Transportation Modernization Act, TCAT infrastructure investment, and a grocery tax suspension all show documented enactment, frequently exceeding stated dollar figures. The Multi-Agency Law Enforcement Training Academy reached groundbreaking but completion is unconfirmed, and the TennCare adult dental benefit was proposed but its enactment is not documented in the supplied material. Permitless carry was passed, though gun-rights advocates contest whether it constitutes full constitutional carry.",
+    "grade_rationale": "Most tracked promises are specific, measurable commitments (clarity 4–5) carried out through Lee's budget and a legislature he drove, with documented delivery at or above target levels; a minority remain partial (MALETA construction) or unverified (adult dental), and one is contested in scope. The pattern is a high rate of documented delivery on quantitatively specified, championed-and-signed commitments.",
+    "ambition_level": "High",
+    "total_promises": 11,
+    "total": 11
   },
   "promises": [
     {
-      "id": 1,
-      "text": "Pass private school voucher legislation to give families education choice",
+      "text": "Invest an additional $1 billion in new, annual recurring education funding through the TISA formula",
       "domain_label": "Education",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Lee's voucher proposal stalled in committee in 2024. He announced the Education Freedom Act of 2025 and vowed to bring it back to the General Assembly in January 2025.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2022-05-02: Lee signed the TISA Act into law",
+        "2023-24: $1B additional recurring state investment began with TISA implementation",
+        "2025-04-22: $244M added through TISA in 2025 session",
+        "2026-04-23: $339M added to strengthen public education including TISA"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Tennessee Investment in Student Achievement (TISA) Formula Skip to Main Content Go to TN.g",
+          "url": "https://www.tn.gov/education/best-for-all/tnedufunding.html"
+        },
+        {
+          "title": "In 2022, the Lee administration worked in partnership with the General Assembly to pass th",
+          "url": "https://www.tn.gov/governor/news/2023/11/28/gov--lee--legislative-leadership-call-for-statewide-school-choice--unveil-education-freedom-scholarship-act.html"
+        },
+        {
+          "title": "Tennessee’s unmatched business climate and skilled workforce continue to attract record in",
+          "url": "https://www.tn.gov/governor/about-bill-lee.html"
+        }
+      ]
     },
     {
-      "id": 2,
-      "text": "Create tens of thousands of new daycare spots to support working families",
+      "text": "Invest $500 million to make CTE improvements in all middle and high schools",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2022 budget: one-time $500M CTE investment for middle and high schools referenced in State of the State and reporting"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Instead, buoyed by another year of state revenue surpluses, the legislature passed a state",
+          "url": "https://www.chalkbeat.org/tennessee/2022/4/28/23046905/tisa-funding-formula-tennessee-legislature-governor-lee/"
+        },
+        {
+          "title": "Gov. Bill Lee Delivers 2022 State of the State Address Skip to Main Content Go to TN.gov G",
+          "url": "https://www.tn.gov/governor/news/2022/1/31/gov--bill-lee-delivers-2022-state-of-the-state-address.html"
+        }
+      ]
+    },
+    {
+      "text": "Add 100 Highway Patrol Troopers fully funded by the state",
+      "domain_label": "Safety & Justice",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2023-12-31: state reported 100 additional THP troopers on Tennessee roads"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Additional investments include a $50 million expansion of the Violent Crime Intervention F",
+          "url": "https://www.tn.gov/governor/news/2023/12/31/2023-year-in-photos--tennessee--leading-the-nation-.html"
+        }
+      ]
+    },
+    {
+      "text": "Create a $100 million Violent Crime Intervention Fund for law enforcement agencies",
+      "domain_label": "Safety & Justice",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "Launch of $100M Violent Crime Intervention Fund documented in state release",
+        "2023: $50M expansion of VCIF noted in year-in-review"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "NASHVILLE, Tenn. – Today, <strong>Tennessee Governor Bill Lee announced two additional res",
+          "url": "https://www.tn.gov/governor/news.3.html"
+        },
+        {
+          "title": "Additional investments include a $50 million expansion of the Violent Crime Intervention F",
+          "url": "https://www.tn.gov/governor/news/2023/12/31/2023-year-in-photos--tennessee--leading-the-nation-.html"
+        }
+      ]
+    },
+    {
+      "text": "Suspend state and local grocery sales tax for 30 days to provide direct financial relief to Tennesseans",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2022-03-24: Lee announced 30-day grocery tax suspension proposal",
+        "2023-05-11: signed Tennessee Works Tax Act with 3-month grocery tax holiday (Aug 1–Oct 31)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "&quot;Tennessee’s legacy of responsible fiscal stewardship has allowed our state to weathe",
+          "url": "https://www.tn.gov/governor/news/2023/5/11/gov--lee-signs-single-largest-tax-cut-in-tennessee-history-into-law.html"
+        },
+        {
+          "title": "(WKRN) — Governor Bill Lee signed the Tennessee Works Tax Act into law Thursday, which wil",
+          "url": "https://www.wate.com/news/tennessee/3-month-grocery-tax-suspension-coming-to-tennessee/"
+        }
+      ]
+    },
+    {
+      "text": "Invest $200 million for TCAT infrastructure to help double the skilled workforce by 2026",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "Invested $1B to complete TCAT Master Plan",
+        "Eliminated nearly 12,000-person TCAT waitlist per state documentation"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "PHOTOS: Gov. Lee Signs Executive Order to Lead the Nation in Workforce Development Skip to",
+          "url": "https://www.tn.gov/governor/news/2025/6/10/photos--gov--lee-signs-executive-order-to-lead-the-nation-in-workforce-development.html"
+        },
+        {
+          "title": "• Delivered more than $400 million in tax cuts for Tennessee families and businesses throu",
+          "url": "https://www.tullahomanews.com/news/local/gov-bill-lee-signs-executive-order-to-lead-the-nation-in-workforce-development/article_6f80c1c6-426c-4155-bf00-43d71b81118a.html"
+        }
+      ]
+    },
+    {
+      "text": "Increase the Rainy-Day Fund to $1.8 billion",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2024: Rainy Day Fund brought to more than $2 billion",
+        "2025: dedicated $35.6M bringing reserves to nearly $2.2 billion"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "2024 Year in Photos: Gov. Lee Releases Highlights and Accomplishments Skip to Main Content",
+          "url": "https://www.tn.gov/governor/news/2024/12/31/2024-year-in-photos--gov--lee-releases-highlights-and-accomplishments.html"
+        },
+        {
+          "title": "2025 Year in Photos: Gov. Lee Releases Highlights and Accomplishments Skip to Main Content",
+          "url": "https://www.tn.gov/governor/news/2025/12/31/2025-year-in-photos--gov--lee-releases-highlights-and-accomplishments0.html"
+        }
+      ]
+    },
+    {
+      "text": "Invest $519 million toward road infrastructure projects in fastest-growing counties",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2023-04-17: Lee signed Transportation Modernization Act ($3.3B)",
+        "2025-02-10: proposed additional $1B for road projects"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "– Today, Tennessee Governor Bill Lee signed the <strong>Transportation Modernization Act</",
+          "url": "https://www.tn.gov/governor/news/2023/4/17/gov--lee-signs-landmark-transportation-modernization-act-into-law-.html"
+        },
+        {
+          "title": "Lee’s agenda included the <strong>landmark Transportation Modernization Act</strong>, hist",
+          "url": "https://www.tn.gov/governor/news/2023/4/23/gov--lee-s-full--tennessee--leading-the-nation--agenda-passes.html"
+        }
+      ]
+    },
+    {
+      "text": "Provide $25.5 million to offer adult dental benefits for 610,000 Tennesseans eligible for TennCare",
       "domain_label": "Healthcare",
-      "status": "stalled",
-      "grade": "D",
-      "evidence": "Despite promising tens of thousands of new daycare spots, Lee only specified an $11 million investment in Boys & Girls Clubs, falling far short of the scope initially promised.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 2.4,
+      "difficulty_earned": 0.75,
+      "promise_score": 11.15,
+      "what_happened": [
+        "2022-01-31: $25.5M adult dental benefit proposed in State of the State budget"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Gov. Bill Lee Delivers 2022 State of the State Address Skip to Main Content Go to TN.gov G",
+          "url": "https://www.tn.gov/governor/news/2022/1/31/gov--bill-lee-delivers-2022-state-of-the-state-address.html"
+        }
+      ]
     },
     {
-      "id": 3,
-      "text": "Maintain fiscal responsibility and grow the state's rainy day fund",
-      "domain_label": "Economy",
+      "text": "Create a Multi-Agency Law Enforcement Training Academy",
+      "domain_label": "Safety & Justice",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 15.45,
+      "what_happened": [
+        "2023-09-28: groundbreaking on MALETA at Cockrill Bend, Nashville",
+        "2023-12-31: celebrated MALETA groundbreaking in year-in-review"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "This year, Lee has made significant investments to support law enforcement and keep every ",
+          "url": "https://www.wgnsradio.com/article/84984/new-year-good-news-from-gov-lee"
+        },
+        {
+          "title": "State officials were on hand to ... <strong>Multi-Agency Law Enforcement Training Academy ",
+          "url": "https://ttc.tml1.org/2023/09/28/state-officials-break-ground-new-law-enforcement-training-facility"
+        },
+        {
+          "title": "Lee said <strong>significant investments to support law enforcement were made in 2023 to k",
+          "url": "https://www.clevelandbanner.com/news/lee-touts-2023-accomplishments/article_c43adf98-2eca-5483-8b13-84ce413e3077.html"
+        }
+      ]
+    },
+    {
+      "text": "Reintroduce and pass Constitutional Carry (permitless carry) legislation for handguns",
+      "domain_label": "Safety & Justice",
       "status": "kept",
-      "grade": "A",
-      "evidence": "Lee successfully placed $20 million in Tennessee's rainy day fund in 2024, bringing the total to $2 billion even amid revenue shortfalls.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 4,
-      "text": "Protect artists from unauthorized AI deep fakes using their voice and likeness",
-      "domain_label": "Economy",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "Lee signed the ELVIS Act in 2024, preventing unauthorized artificial intelligence deep fakes from using and imitating artists' voices without consent.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 5,
-      "text": "Expand civics education in Tennessee schools",
-      "domain_label": "Education",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "Lee highlighted civics education as a priority in his annual address and has promoted initiatives to strengthen civic learning in schools.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 6,
-      "text": "Prepare Tennessee workers for jobs of tomorrow through workforce development",
-      "domain_label": "Economy",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "Lee's annual address emphasized preparing Tennesseans for future jobs, with ongoing workforce development initiatives, though comprehensive results are still pending.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 7,
-      "text": "Keep Tennessee tax-free with no state income tax",
-      "domain_label": "Economy",
-      "status": "broken",
-      "grade": "B",
-      "evidence": "Tennessee has maintained its no-income-tax status under Lee, consistent with his fiscal conservative platform and prior commitments.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2020-02-27: Lee introduced constitutional carry legislation",
+        "2021: permitless carry bill passed allowing handgun carry without permit"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "&quot;This constitutional carry package is historic because not only does it uphold the fr",
+          "url": "https://www.tn.gov/governor/news/2020/2/27/gov--bill-lee-introduces-constitutional-carry-legislation.html"
+        },
+        {
+          "title": "Lawmakers passed Gov. Bill Lee’s <strong>permitless carry bill in 2021</strong> allowing e",
+          "url": "https://tennesseelookout.com/2026/03/03/bill-to-expand-tennessee-gun-carry-rights-likely-to-be-amended/"
+        },
+        {
+          "title": "As governor, he has signed bills to <strong>ban mask mandates and ranked-choice voting</st",
+          "url": "https://en.wikipedia.org/wiki/Bill_Lee_(Tennessee_politician)"
+        }
+      ]
     }
   ],
-  "last_updated": "2026-03-09",
-  "methodology_version": "1.0"
+  "data_gaps": [
+    "Several promises are 2022 budget/State-of-State items where the official's role is championed-and-signed (0.8), not unilateral; the legislature was a necessary co-actor throughout. Adult dental benefit (c9) lacks delivery confirmation — flagged LIMITED EVIDENCE; CTE $500M relies on a single corroborating mention. Constitutional carry is CONTESTED by gun-rights groups (c181, c182, c109) who argue Lee did not deliver true constitutional carry. Many delivery actions span both the prior term (pre-2023) and current term; verification records were not filtered by term in this material, so reviewers should confirm term-window attribution for pre-2023 actions."
+  ],
+  "term_identity": {
+    "term_id": "gov-tn-2023",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 85.7,
+    "office": "Governor",
+    "jurisdiction": "Tennessee",
+    "term_start": "2023-01-21",
+    "term_end": "2027-01-16"
+  },
+  "person_ref": "bill-lee-tennessee",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 85.7,
+    "display": "Grade is record-to-date — term in progress, 85.7% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "gov-tn-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T23:35:00+00:00",
+    "generated_at": "2026-06-22T23:36:08+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Invest an additional $1 billion in new, annual recurring education funding through the Ten",
+        "url": "https://www.tn.gov/governor/news/2022/4/29/gov--lee-passes-full--america-at-its-best--agenda.html"
+      },
+      {
+        "title": "Enact maximum pro-life protections if Roe v. Wade is overturned, giving Tennessee's trigge",
+        "url": "https://ontheissues.org/Governor/Bill_Lee_Abortion.htm"
+      },
+      {
+        "title": "Reintroduce and pass Constitutional Carry (permitless carry) legislation for handguns",
+        "url": "https://ontheissues.org/Governor/Bill_Lee_Gun_Control.htm"
+      },
+      {
+        "title": "Tennessee governor signs campaign finance and ethics bill | AP News Menu World SECTIONS Ir",
+        "url": "https://apnews.com/article/2022-midterm-elections-campaigns-tennessee-campaign-finance-government-and-politics-4cabc5d9bf71996d2dad38a7b709114b"
+      },
+      {
+        "title": "Gov. Bill Lee Delivers 2022 State of the State Address Skip to Main Content Go to TN.gov G",
+        "url": "https://www.tn.gov/governor/news/2022/1/31/gov--bill-lee-delivers-2022-state-of-the-state-address.html"
+      },
+      {
+        "title": "What happens if the Republican presidential nominee is out there telling voters, as Trump ",
+        "url": "https://www.politico.com/news/magazine/2023/12/28/bill-lee-tennessee-q-a-00133139"
+      },
+      {
+        "title": "Governor Bill Lee Skip to Main Content Go to TN.gov Go to TN.gov Section Go to Governor Go",
+        "url": "https://www.tn.gov/governor/about-bill-lee.html"
+      },
+      {
+        "title": "Lee: Policy priorities, cabinet selections coming soon | AP News Menu World SECTIONS Iran ",
+        "url": "https://apnews.com/general-news-gubernatorial-elections-807830998e344361afc8407c7523da08"
+      },
+      {
+        "title": "↑ 8.0 8.1 10 News, &quot;How Karl Dean and Bill Lee plan to win Tennessee&#x27;s race for ",
+        "url": "https://ballotpedia.org/Bill_Lee_(Tennessee)"
+      },
+      {
+        "title": "Bill Lee on the Issues &nbsp;&nbsp; Follow @ontheissuesorg &nbsp;On&nbsp;the&nbsp;issues:&",
+        "url": "https://www.ontheissues.org/Bill_Lee.htm"
+      },
+      {
+        "title": "Jason Martin defeated JB Smiley Jr. and Carnita Atwater in the Democratic primary for Gove",
+        "url": "https://ballotpedia.org/Tennessee_gubernatorial_election,_2022"
+      },
+      {
+        "title": "Bill Lee (Republican Party) ran for election to the Utah County Commission Seat B. He was ",
+        "url": "https://ballotpedia.org/Bill_Lee_(Utah_County_Commission_Seat_B,_Utah,_candidate_2022)"
+      },
+      {
+        "title": "Jason Martin (D) defeated JB Smiley Jr. (D) and Carnita Atwater (D) in the Democratic prim",
+        "url": "https://ballotpedia.org/Governor_of_Tennessee"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Bill Lee.",
+        "url": "https://ballotpedia.org/Endorsements_by_Bill_Lee"
+      },
+      {
+        "title": "David H. Klein and Bill Ribble ran in the general election for Lee Memorial Health System ",
+        "url": "https://ballotpedia.org/Bill_Ribble_(Lee_Memorial_Health_System_Board_of_Directors_Seat_3,_Florida,_candidate_2022)"
+      },
+      {
+        "title": "Lee told TIME that he was approached ... said of his decision to agree. Lee stated that hi",
+        "url": "https://ballotpedia.org/Bill_Lee_(Vermont)"
+      },
+      {
+        "title": "Bill Lee may refer to: Bill Lee (Tennessee) Bill Lee (Utah) Bill Lee (Vermont) Retrieved f",
+        "url": "https://ballotpedia.org/Bill_Lee"
+      },
+      {
+        "title": "Lee said, &quot;I ran for the Senate the first time because I believe the federal governme",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Utah,_2022"
+      },
+      {
+        "title": "Disclosure Digest: Tennessee General Assembly passes donor disclosure bill - Ballotpedia N",
+        "url": "https://news.ballotpedia.org/2022/04/26/disclosure-digest-tennessee-general-assembly-passes-donor-disclosure-bill/"
+      },
+      {
+        "title": "Bill Lee on Foreign Policy Follow @ontheissuesorg Bill Lee on Foreign Policy &nbsp; &nbsp;",
+        "url": "https://www.ontheissues.org/Governor/Bill_Lee_Foreign_Policy.htm"
+      },
+      {
+        "title": "Source: WSMV on 2022 Tennessee Gubernatorial race , Oct 11, 2021 · In the past year, at le",
+        "url": "https://www.ontheissues.org/Governor/Bill_Lee_Principles_+_Values.htm"
+      },
+      {
+        "title": "Last year I stood before you and presented one of the most aggressive pro-life bills in th",
+        "url": "https://www.ontheissues.org/Governor/Bill_Lee_Families_+_Children.htm"
+      },
+      {
+        "title": "<strong>Bill Lee</strong> (R): Yes. Supports charter schools. &quot;Vouchers are an opport",
+        "url": "https://ontheissues.org/Governor/Bill_Lee_Education.htm"
+      },
+      {
+        "title": "<strong>Helped faith communities connect people with job services</strong> Another key par",
+        "url": "https://www.ontheissues.org/governor/Bill_Lee_Jobs.htm"
+      },
+      {
+        "title": "Source: 2018 Wisconsin governor campaign website BillLee.org , Jul 2, 2018",
+        "url": "https://ontheissues.org/Governor/Bill_Lee_Environment.htm"
+      },
+      {
+        "title": "The above quotations are from 2026 Tennessee Gubernatorial race: debates and news coverage",
+        "url": "https://www.ontheissues.org/2026_TN_Gov.htm"
+      },
+      {
+        "title": "Track This Politician · General Website · Capitol Webmail · Capitol Website · More Office ",
+        "url": "https://justfacts.votesmart.org/candidate/180465/bill-lee"
+      },
+      {
+        "title": "The test keeps voters informed by providing a record of candidates’ stances on a range of ",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Albert Lee has provided voters with clear stances on key issues by responding to the 2020 ",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/189863/albert-lee"
+      },
+      {
+        "title": "&quot;To help the vulnerable in our social safety net programs, we must make sure that our",
+        "url": "https://votesmart.org/candidate/political-courage-test/66395/"
+      },
+      {
+        "title": "They do not necessarily reflect the content of the final version of the bill, but rather t",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/180465/bill-lee"
+      },
+      {
+        "title": "Project Vote Smart: Ohio Gubernatorial National Political Awareness Test. Checked SUPPORT ",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/23452/lee-fisher"
+      },
+      {
+        "title": "Candidates who qualify will be invited to take the 2018 Political Courage Test. Urge Bill ",
+        "url": "https://votesmart.org/candidate/political-courage-test/102705/bill-oneill/"
+      },
+      {
+        "title": "<strong>For Presidential and Congressional candidates who refuse to provide voters with th",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/21276/lee-terry"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/186079/huhnkie-lee/"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/169678/yungman-lee"
+      },
+      {
+        "title": "Please wait...your file download will begin shortly · If your download does not begin soon",
+        "url": "https://newdemocratcoalition.house.gov/download/100-day-agenda-wtas-doc"
+      },
+      {
+        "title": "Lee’s agenda included the <strong>landmark Transportation Modernization Act</strong>, hist",
+        "url": "https://www.tn.gov/governor/news/2023/4/23/gov--lee-s-full--tennessee--leading-the-nation--agenda-passes.html"
+      },
+      {
+        "title": "– Today, Tennessee Governor Bill Lee signed the <strong>Farmland Preservation Act</strong>",
+        "url": "https://www.tn.gov/news.governor-lee.html"
+      },
+      {
+        "title": "PHOTOS: Gov. Lee Signs ELVIS Act Into Law Skip to Main Content Go to TN.gov Go to TN.gov S",
+        "url": "https://www.tn.gov/governor/news/2024/3/21/photos--gov--lee-signs-elvis-act-into-law.html"
+      },
+      {
+        "title": "Executive Orders Governor Bill Lee | Tennessee Secretary of State Skip to main content -->",
+        "url": "https://sos.tn.gov/publications/services/executive-orders-governor-bill-lee"
+      },
+      {
+        "title": "Executive Orders | Tennessee Secretary of State Skip to main content --> Tennessee Secreta",
+        "url": "https://sos.tn.gov/publications/services/executive-orders"
+      },
+      {
+        "title": "2025 Year in Photos: Gov. Lee Releases Highlights and Accomplishments Skip to Main Content",
+        "url": "https://www.tn.gov/governor/news/2025/12/31/2025-year-in-photos--gov--lee-releases-highlights-and-accomplishments0.html"
+      },
+      {
+        "title": "PHOTOS: Gov. Lee Signs Executive Order to Lead the Nation in Workforce Development Skip to",
+        "url": "https://www.tn.gov/governor/news/2025/6/10/photos--gov--lee-signs-executive-order-to-lead-the-nation-in-workforce-development.html"
+      },
+      {
+        "title": "2024 Year in Photos: Gov. Lee Releases Highlights and Accomplishments Skip to Main Content",
+        "url": "https://www.tn.gov/governor/news/2024/12/31/2024-year-in-photos--gov--lee-releases-highlights-and-accomplishments.html"
+      },
+      {
+        "title": "Tennessee Investment in Student Achievement (TISA) Formula Skip to Main Content Go to TN.g",
+        "url": "https://www.tn.gov/education/best-for-all/tnedufunding.html"
+      },
+      {
+        "title": "In 2022, the Lee administration worked in partnership with the General Assembly to pass th",
+        "url": "https://www.tn.gov/governor/news/2023/11/28/gov--lee--legislative-leadership-call-for-statewide-school-choice--unveil-education-freedom-scholarship-act.html"
+      },
+      {
+        "title": "· <strong>$339 million to strengthen public education across the state</strong>, including",
+        "url": "https://www.tn.gov/governor/news/2026/4/23/gov--lee-marks-the-close-of-the-2026-legislative-session.html"
+      },
+      {
+        "title": "· $244 million to strengthen education through the Tennessee Investment in Student Achieve",
+        "url": "https://www.tn.gov/governor/news/2025/4/22/gov--lee-marks-the-close-of-the-2025-legislative-session--applauds-passage-of--tennessee-innovates--agenda.html"
+      },
+      {
+        "title": "$12 million to create the TennesseeWORKS Scholarship, a new award that will cover every pe",
+        "url": "https://www.tn.gov/governor/news/2025/2/10/gov--lee-delivers-2025-state-of-the-state-address.html"
+      },
+      {
+        "title": "Additional investments include a $50 million expansion of the Violent Crime Intervention F",
+        "url": "https://www.tn.gov/governor/news/2023/12/31/2023-year-in-photos--tennessee--leading-the-nation-.html"
+      },
+      {
+        "title": "– Today, Tennessee Governor Bill Lee announced an increased Tennessee Highway Patrol (THP)",
+        "url": "https://www.tn.gov/governor/news/2023/11/20/gov--lee-announces-increased-tennessee-highway-patrol-presence-in-shelby-county-.html"
+      },
+      {
+        "title": "Bill Lee on Thursday signed off on legislation that will gut Tennessee’s community oversig",
+        "url": "https://apnews.com/article/tennessee-police-teachers-bill-lee-6e41966f8d36ab56b16f68c257f5c07e"
+      },
+      {
+        "title": "NASHVILLE, Tenn. – Today, <strong>Tennessee Governor Bill Lee announced two additional res",
+        "url": "https://www.tn.gov/governor/news.3.html"
+      },
+      {
+        "title": "In addition to the federal troops and agents, Lee said <strong>the state will provide $100",
+        "url": "https://apnews.com/article/memphis-lee-federal-agents-b8fe864be27a715f4b15dcb795e0304f"
+      },
+      {
+        "title": "&quot;Tennessee’s legacy of responsible fiscal stewardship has allowed our state to weathe",
+        "url": "https://www.tn.gov/governor/news/2023/5/11/gov--lee-signs-single-largest-tax-cut-in-tennessee-history-into-law.html"
+      },
+      {
+        "title": "– Today, Tennessee Governor Bill Lee signed the <strong>Transportation Modernization Act</",
+        "url": "https://www.tn.gov/governor/news/2023/4/17/gov--lee-signs-landmark-transportation-modernization-act-into-law-.html"
+      },
+      {
+        "title": "– Last week, Tennessee Governor Bill Lee and Tennessee Department of Economic and Communit",
+        "url": "https://www.tn.gov/governor/news.11.html"
+      },
+      {
+        "title": "<strong>Bill Lee on Monday proposed an injection of more than $1 billion into road project",
+        "url": "https://apnews.com/article/tennessee-roads-budget-backlog-c911a1df7e143bb74019d361dfde645a"
+      },
+      {
+        "title": "&quot;This constitutional carry package is historic because not only does it uphold the fr",
+        "url": "https://www.tn.gov/governor/news/2020/2/27/gov--bill-lee-introduces-constitutional-carry-legislation.html"
+      },
+      {
+        "title": "While some GOP states, including Florida and Indiana, have embraced red flag laws, such le",
+        "url": "https://www.politico.com/news/2023/04/11/tennessee-governor-bill-lee-red-flag-law-background-checks-00091404"
+      },
+      {
+        "title": "<strong>Three Senate Republicans voted against the legislation</strong>, which came before",
+        "url": "https://apnews.com/article/tennessee-gun-lawsuits-shooting-3534e0242e1a2b582b6accddb292d8a6"
+      },
+      {
+        "title": "NASHVILLE – The Tennessee Department ... agencies through a cost-sharing grant. ... NASHVI",
+        "url": "https://www.tn.gov/commerce/news.law-enforcement-training.html"
+      },
+      {
+        "title": "· SB6005/HB6005: Appropriates $110 million to the Hurricane Helene Interest Payment Fund, ",
+        "url": "https://www.tn.gov/governor/news/2025/1/30/gov--lee-marks-the-close-of-special-legislative-session--passes-full-agenda.html"
+      },
+      {
+        "title": "Lee worked with the General Assembly to enhance his legislation and increase funding in th",
+        "url": "https://www.tn.gov/governor/news/2023/5/10/gov--lee-signs-strong-school-safety-measures-into-law.html"
+      }
+    ]
+  }
 }

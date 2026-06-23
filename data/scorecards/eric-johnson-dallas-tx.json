@@ -3,109 +3,412 @@
     "name": "Eric Johnson",
     "role": "Mayor",
     "jurisdiction": "Dallas, TX",
-    "party": "Republican (switched from Democratic Sept 2023)",
-    "term_start": "2019-06-17",
-    "term_end": "2027-06-16"
+    "party": "Republican",
+    "term_start": "2023-06-19",
+    "term_end": "2027-06-21",
+    "election_date": "2023-05-06",
+    "next_election": "2027-05-01",
+    "office_phone": "",
+    "office_address": "",
+    "office_website": ""
   },
   "summary": {
-    "narrative": "Johnson entered office on unity platform, achieved high approval (77%) and re-election (98.7% in 2023). Party switch to Republican in Sept 2023 cited law-and-order priorities diverging from Democratic platform. Limited specific policy details available; sources emphasize public safety stance and housing affordability advocacy.",
-    "total_promises": 2,
-    "delivery_rate_estimate": 0.75,
+    "overall_grade": "D",
+    "grade_input_pct": 41.91,
+    "delivery_ratio": 0.3667,
+    "narrative": "Across his current term, Johnson advanced several of his stated 2022 priorities: a violent-crime reduction plan tied to documented declines in violent crime, a convention-center redevelopment funded by a 2022 voter proposition, and property tax rate reductions (he pushed for deeper cuts than the council adopted and voted against budgets he viewed as too high). Housing and Hensley Field plans exist but show partial or stalled implementation, the latter blocked by federal cleanup litigation, while the climate action plan shows only preliminary staff-level steps. The pattern reflects consistent advocacy on his core public-safety and fiscal priorities, with delivery constrained by Dallas's weak-mayor structure and a council Johnson does not control.",
+    "grade_rationale": "Most tracked promises reached intermediate-to-advanced delivery (D3-D4) with documented action and citywide scale, but the mayor's causal role is consistently moderate (0.4-0.6) given the council-manager system, and lower-priority commitments like the climate plan stalled at the commitment/preliminary stage. The mix of genuine advancement on core priorities against limited or externally-blocked progress elsewhere drives a middling record.",
     "ambition_level": "Moderate",
-    "grade_rationale": "High voter approval and re-election suggest delivery on implicit promises, but vague campaign language and party switch without clear policy accomplishments limit assessment. Housing advocacy recent but undocumented.",
-    "overall_grade": "C"
+    "total_promises": 6,
+    "total": 6
   },
   "promises": [
     {
-      "normalized": "Move beyond divisions at City Hall and unite on shared solutions",
-      "domain": "Governance",
-      "domain_label": "Government Operations",
-      "clarity_score": 1,
-      "initiation_score": 2,
-      "outcome_score": 3,
-      "attribution_modifier": 0.7,
-      "difficulty_multiplier": 1.5,
-      "policy_score": 4.41,
-      "requires_legislation": false,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": true,
-        "externally_blocked": false
-      },
-      "confidence": "Medium"
+      "text": "Implement the violent crime reduction plan and provide the Dallas Police Department with best training, modernized equipment, technology, and facilities.",
+      "domain_label": "Safety & Justice",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 13.65,
+      "what_happened": [
+        "2018-2019: Johnson formed a task force to identify evidence-based non-policing crime strategies (c115).",
+        "Dec 1, 2023: Johnson praised DPD for yearly declines in violent crime totals in 2021 and 2022 (c117).",
+        "Jul 17, 2024: Johnson highlighted the city's decrease in violent crime (c109).",
+        "Nov 13, 2025: State of the City touted lower violent crime (c125)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "That plan was developed by University of Texas-San Antonio criminology and criminal justic",
+          "url": "https://www.wbur.org/onpoint/2024/04/25/public-safety-police-dallas-texas-crime"
+        },
+        {
+          "title": "In his Thursday night speech, <strong>Johnson praised the police department for decreases ",
+          "url": "https://www.dallasnews.com/news/politics/2023/12/01/dallas-mayor-eric-johnson-uses-state-of-the-city-to-push-for-parks-police-over-housing/"
+        },
+        {
+          "title": "At the convention, Johnson highlighted the city&#x27;s <strong>decrease in violent crime</",
+          "url": "https://www.nbcdfw.com/news/politics/lone-star-politics/dallas-mayor-eric-johnson-makes-waves-at-republican-national-convention/3593959/"
+        },
+        {
+          "title": "The livestream of Dallas Mayor Eric Johnson is seen as he delivers the annual State of the",
+          "url": "https://www.dallasnews.com/news/politics/2025/11/13/safer-stronger-and-more-vibrant-dallas-mayor-eric-johnson-says-city-not-in-trouble/"
+        }
+      ]
     },
     {
-      "normalized": "Create strong, safe neighborhoods where families thrive and children succeed",
-      "domain": "Public Safety & Community Development",
-      "domain_label": "Safety & Opportunity",
-      "clarity_score": 1,
-      "initiation_score": 2,
-      "outcome_score": 2,
-      "attribution_modifier": 0.5,
-      "difficulty_multiplier": 2.5,
-      "policy_score": 2.5,
-      "requires_legislation": true,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": true,
-        "externally_blocked": false
-      },
-      "confidence": "Low"
+      "text": "Reduce the property tax rate to make Dallas more competitive with surrounding cities.",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 2.25,
+      "promise_score": 13.65,
+      "what_happened": [
+        "Sep 22-24, 2023: Council passed budget with a smaller property tax rate reduction; Johnson voted against it, calling the cut insufficient (c118, c111).",
+        "Fall 2024: Council approved Dallas's largest rate cut in at least 40 years (c120).",
+        "Sep 15, 2025: Johnson urged colleagues to submit budget amendments reducing spending to allow a reduced tax rate (c95)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "“We should be doing fewer things better and leave more money in people’s pockets to do thi",
+          "url": "https://www.dallasnews.com/news/politics/2025/01/14/dallas-mayor-eric-johnson-sides-with-voters-on-controversial-charter-amendments/"
+        },
+        {
+          "title": "In a 10-5 vote, Dallas City Council passed the budget, which includes a smaller property t",
+          "url": "https://www.wfaa.com/article/news/local/dallas-county/dallas-city-council-passes-nearly-5-billion-budget/287-eeacd9e7-9213-429c-864f-78979db25333"
+        },
+        {
+          "title": "The Dallas City Council voted on Wednesday to approve a multi-billion dollar budget that i",
+          "url": "https://www.tpr.org/government-politics/2023-09-24/dallas-mayor-eric-johnson-announces-he-will-leave-office-as-a-republican-in-2027"
+        },
+        {
+          "title": "Dallas Mayor Eric Johnson is encouraging his colleagues on the city council to submit budg",
+          "url": "https://thetexan.news/issues/texas-taxes-spending/dallas-mayor-eric-johnson-pushes-for-more-spending-cuts-in-city-budget/article_2dccb4c2-900c-4635-8b65-7a6c9691e42f.html"
+        }
+      ]
     },
     {
-      "normalized": "Prioritize police support and public safety enforcement",
-      "domain": "Public Safety",
-      "domain_label": "Law Enforcement",
-      "clarity_score": 2,
-      "initiation_score": 3,
-      "outcome_score": 2,
-      "attribution_modifier": 0.8,
-      "difficulty_multiplier": 1.8,
-      "policy_score": 5.28,
-      "requires_legislation": false,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "High"
+      "text": "Develop and recommend a plan for the future of the Kay Bailey Hutchison Convention Center and surrounding area.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 3.0,
+      "promise_score": 16.2,
+      "what_happened": [
+        "Sep 15, 2022: Johnson held a news conference urging voters to approve the proposition to help pay for a new convention center (c37).",
+        "Nov 2022: Voters approved Prop A, funding KBHCC and Fair Park renovations via a 2% hotel occupancy tax increase (c26).",
+        "2026: KBHCC redevelopment cited as a major investment spurring growth (c127)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "At the Dallas Regional Chamber’s A Year-End Conversation, presented by Blue Cross and Blue",
+          "url": "https://www.dallaschamber.org/a-year-end-conversation-with-dallas-mayor-eric-johnson/"
+        },
+        {
+          "title": "News conference by Dallas Mayor Eric Johnson and other political figures in Dallas on Thur",
+          "url": "https://www.dallasnews.com/news/politics/2022/09/16/eric-johnson-says-hell-seek-reelection-as-dallas-mayor/"
+        },
+        {
+          "title": "And major investments like the redevelopment of the Kay Bailey Hutchison Convention Center",
+          "url": "https://medium.com/dallasmayor/facts-first-9ec5d83e4134"
+        }
+      ]
     },
     {
-      "normalized": "Address housing affordability and remove regulatory roadblocks",
-      "domain": "Housing",
-      "domain_label": "Housing Policy",
-      "clarity_score": 2,
-      "initiation_score": 1,
-      "outcome_score": 1,
-      "attribution_modifier": 0.6,
-      "difficulty_multiplier": 2.2,
-      "policy_score": 1.98,
-      "requires_legislation": true,
-      "requires_federal": true,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "Low"
+      "text": "Create a master plan for Hensley Field.",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "low",
+      "delivery": "D3",
+      "their_role": 0.4,
+      "difficulty": "H3",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 3.75,
+      "promise_score": 11.35,
+      "what_happened": [
+        "Aug 21, 2023: Master plan for Hensley Field redevelopment exists but implementation awaits resolution of Dallas-U.S. Navy cleanup litigation (c131)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "“As a result, <strong>Dallas cannot implement its master plan that contemplates the reuse ",
+          "url": "https://dallasinnovates.com/390m-hensley-field-redevelopment-awaits-resolution-of-dallas-u-s-navy-cleanup-litigation/"
+        }
+      ]
+    },
+    {
+      "text": "Implement the Dallas Real-Time Rapid Rehousing Strategy and provide recommendations on affordable housing.",
+      "domain_label": "Governance",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.25,
+      "promise_score": 11.85,
+      "what_happened": [
+        "Feb 2023: Johnson formed a task force on the city's homelessness response (c132).",
+        "Mar 8, 2023: 1,700+ people reported moved into permanent residence since the rapid rehousing program launched in 2021 (c133).",
+        "2024: Homeless population reported decreased only slightly (~160) from 2022 (c35)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Mar 16, 2023- Dallas Business Journal- Plamedie Ifasso Family Gateway president and CEO El",
+          "url": "https://familygateway.org/category/rapid-rehousing/"
+        },
+        {
+          "title": "Sign up for the News newsletter to get the latest stories delivered to your inbox ... You&",
+          "url": "https://www.dallasobserver.com/news/new-task-force-report-pinpoints-issues-with-response-to-homelessness-16949210/"
+        },
+        {
+          "title": "Improvements cited by Johnson are ... as the <strong>homeless population only decreased sl",
+          "url": "https://dallasweekly.com/2023/09/dallas-mayor-eric-johnson-switching-political-affiliations-and-the-ethics-of-partisanship/"
+        }
+      ]
+    },
+    {
+      "text": "Implement the Comprehensive Environmental and Climate Action Plan.",
+      "domain_label": "Environment",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 1.2,
+      "difficulty_earned": 0.75,
+      "promise_score": 7.95,
+      "what_happened": [
+        "Jul 24, 2024: City Office of Environmental Quality compiled a greenhouse gas emissions inventory; commentary urged Johnson to lead on climate (c137).",
+        "Dec 2024: Johnson's stated agenda centered on public safety, parks, potholes, property taxes — no climate plan advancement cited (c143)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "The Dallas Office of Environmental Quality and Sustainability has even compiled a detailed",
+          "url": "https://greensourcedfw.org/articles/opinion-new-dallas-mayor-should-lead-climate-crisis"
+        },
+        {
+          "title": "Dallas Mayor Eric Johnson is among these voices. His state of the city address earlier thi",
+          "url": "https://www.dallasnews.com/opinion/commentary/2024/12/14/armstrong-city-hall-must-go-beyond-the-basics/"
+        },
+        {
+          "title": "In the council chambers on Thursday, flanked by 14 of his peers on the Dallas City Council",
+          "url": "https://www.dallasnews.com/news/politics/2024/12/05/city-hall-must-listen-dallas-mayor-eric-johnson-assesses-state-of-the-city/"
+        }
+      ]
     }
   ],
   "data_gaps": [
-    "Specific public safety metrics or police department initiatives documented",
-    "Housing policy details, regulatory changes proposed or implemented",
-    "Budget allocations or departmental restructuring since 2019",
-    "Neighborhood improvement programs or crime reduction data",
-    "Details on City Hall governance reforms or departmental collaboration improvements",
-    "Post-party-switch policy changes or executive orders issued",
-    "Council relationship dynamics and legislative passage rates"
+    "Dallas has a council-manager (weak-mayor) system (c89), materially limiting the mayor's direct authority — reflected in conservative their_role anchors. Almost all promise candidates are Tier-3; only a Tier-1 source is required downstream before any D3/D4 delivery score is final, so these delivery buckets should be treated as AI drafts pending Tier-1 corroboration. Several candidates (party switch, recall, 'not running' statements, generic 100-day-plan boilerplate, and unrelated Eric Johnsons) were excluded as non-promises. Property-tax and rehousing classifications are CONTESTED given documented shortfalls versus claimed success."
   ],
+  "term_identity": {
+    "term_id": "mayor-dallas-2023",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 75.1,
+    "office": "Mayor",
+    "jurisdiction": "Dallas, TX",
+    "term_start": "2023-06-19",
+    "term_end": "2027-06-21"
+  },
+  "person_ref": "eric-johnson-dallas-tx",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 75.1,
+    "display": "Grade is record-to-date — term in progress, 75.1% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
   "_meta": {
-    "generated_at": "2026-03-08T19:09:22.892Z",
-    "slug": "eric-johnson-dallas-tx",
-    "review_status": "pending",
-    "method": "brave+haiku"
+    "term_id": "mayor-dallas-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-23T19:08:27+00:00",
+    "generated_at": "2026-06-23T19:09:29+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Eric_Johnson_(Texas)"
+      },
+      {
+        "title": "While the overall Dallas-Fort Worth metroplex has swelled in population in the recent deca",
+        "url": "https://www.politico.com/news/2023/09/22/dallas-mayor-eric-johnson-republican-party-00117671"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Eric_E._Johnson_(Carroll_Carroll_Consolidated_School_Board,_District_5,_Indiana,_candidate_2022)"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Eric_Johnson_(Alabama)"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Eric_Johnson_(Colorado)"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Eric_Johnson_(Virginia)"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Erik_Johnson_(Minnesota)"
+      },
+      {
+        "title": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. Th",
+        "url": "https://ballotpedia.org/Eric_Paul_Johnson"
+      },
+      {
+        "title": "Eric C. Johnson (Utah)",
+        "url": "https://dev.ballotpedia.org/Eric_Johnson"
+      },
+      {
+        "title": "Lou Lyras defeated Eric Jones and Martin Alexander in the Democratic primary for U.S. Hous",
+        "url": "https://ballotpedia.org/Eric_Jones_(Ohio)"
+      },
+      {
+        "title": "Eric Johnson (b. August 20, 1953) is a former Republican member of the Georgia State Senat",
+        "url": "https://ballotpedia.org/Eric_Johnson,_Georgia_Senator"
+      },
+      {
+        "title": "Source: Tragedy of Lyndon Johnson, by Eric F.",
+        "url": "https://www.ontheissues.org/celeb/Lyndon_Johnson_Foreign_Policy.htm"
+      },
+      {
+        "title": "Source: Tragedy of Lyndon Johnson, by Eric F.",
+        "url": "https://www.ontheissues.org/celeb/Lyndon_Johnson_Education.htm"
+      },
+      {
+        "title": "When, in the hospital, doctors told him that an operation to remove the stone was imperati",
+        "url": "https://ontheissues.org/Celeb/Lyndon_Johnson_Health_Care.htm"
+      },
+      {
+        "title": "Source: Tragedy of Lyndon Johnson, by Eric F.",
+        "url": "https://www.ontheissues.org/celeb/Lyndon_Johnson_Welfare_+_Poverty.htm"
+      },
+      {
+        "title": "Source: Tragedy of Lyndon Johnson, by Eric F.",
+        "url": "https://www.ontheissues.org/Celeb/John_F__Kennedy_Education.htm"
+      },
+      {
+        "title": "Johnson opposes the AFA survey question on Common Core",
+        "url": "https://www.ontheissues.org/Social/Ron_Johnson_Education.htm"
+      },
+      {
+        "title": "AK: Mike Dunleavy(R,term-limited) vs.Click Bishop(R) vs.Nancy Dahlstrom(R) vs.Tom Begich(D",
+        "url": "https://www.ontheissues.org/Gov_Debates_2026.htm"
+      },
+      {
+        "title": "AK: Mike Dunleavy(R,term-limited) vs.Click Bishop(R) vs.Nancy Dahlstrom(R) vs.Tom Begich(D",
+        "url": "https://www.ontheissues.org/Tom_Steyer.htm"
+      },
+      {
+        "title": "NE: Peter Ricketts(R,incumbent,2-year ... Johnson(D) vs.Marquita Bradshaw(D) TX: Ted Cruz(",
+        "url": "https://www.ontheissues.org/Domestic/Kyrsten_Sinema_Drugs.htm"
+      },
+      {
+        "title": "For example, Rep. Bill Johnson (R-OH) voted against the VAWA bill because it was a &quot;p",
+        "url": "https://www.ontheissues.org/Domestic/Jeff_Sessions_Civil_Rights.htm"
+      },
+      {
+        "title": "Eric Johnson has provided voters with clear stances on key issues by responding to the 201",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/155504/eric-johnson/"
+      },
+      {
+        "title": "Track This Politician · mailEmail · General Webmail · General Website · More Office Contac",
+        "url": "https://justfacts.votesmart.org/candidate/116968/eric-johnson"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/179471/eric-early"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Political Courage Test Forms · Biographical Form · Presidential Political Courage Test · C",
+        "url": "https://votesmart.org/for-candidates/forms"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "&quot;Congresswoman Johnson knows that trade policies combined with a comprehensive nation",
+        "url": "https://votesmart.org/candidate/political-courage-test/27098/"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://votesmart.org/candidate/political-courage-test/175213/jason-johnson/"
+      },
+      {
+        "title": "Keep in mind that ratings done by special interest groups often do not represent a non-par",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/116968/eric-johnson/2"
+      },
+      {
+        "title": "Political Courage Test: 2024 Congressional Edition · Candidates are strongly encouraged to",
+        "url": "https://justfacts.votesmart.org/static/pdfs/forcandidates/congressional/2024_Federal_PCT.pdf"
+      },
+      {
+        "title": "THE PUBLIC POLICY CENTER OF · THE CONFERENCE BOARD · SOLUTIONS BRIEF · A series focused on",
+        "url": "https://files.eric.ed.gov/fulltext/ED614040.pdf"
+      },
+      {
+        "title": "Please wait...your file download will begin shortly · If your download does not begin soon",
+        "url": "https://newdemocratcoalition.house.gov/download/100-day-agenda-wtas-doc"
+      },
+      {
+        "title": "WASHINGTON — This afternoon, Speaker Johnson joined The Story on Fox News with Martha MacC",
+        "url": "https://mikejohnson.house.gov/news/documentsingle.aspx?DocumentID=1488"
+      },
+      {
+        "title": "Member profile for Eric Johnson - Texas Legislative Reference Library Skip to main content",
+        "url": "https://lrl.texas.gov/legeleaders/members/memberdisplay.cfm?memberID=5677"
+      }
+    ]
   }
 }

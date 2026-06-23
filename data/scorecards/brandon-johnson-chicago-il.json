@@ -4,101 +4,470 @@
     "role": "Mayor",
     "jurisdiction": "Chicago, IL",
     "party": "Democratic",
-    "photo_url": "",
     "term_start": "2023-05-15",
-    "term_end": null
+    "term_end": "2027-05-17",
+    "election_date": "2023-04-04",
+    "next_election": "2027-02-23",
+    "office_phone": "",
+    "office_address": "",
+    "office_website": ""
   },
   "summary": {
     "overall_grade": "C",
-    "kept": 3,
-    "broken": 1,
-    "in_progress": 3,
-    "stalled": 1,
-    "total": 8,
-    "narrative": "Mayor Brandon Johnson has made progress on several progressive priorities including housing initiatives and worker protections, while keeping his first-year promise not to raise property taxes. However, his 2025 budget proposal to raise property taxes by $300 million contradicted this core campaign promise, though it was rejected by the City Council. Several major initiatives remain in progress or face significant political obstacles."
+    "grade_input_pct": 50.51,
+    "delivery_ratio": 0.4875,
+    "narrative": "On these campaign commitments, Johnson fully delivered several executive-authority items at the start of his term — ending the ShotSpotter contract, creating a Deputy Mayor for Immigrant, Migrant and Refugee Rights, and signing youth-employment and detective-recruitment orders. Larger revenue-dependent and legislative pledges stalled: the Bring Chicago Home referendum was defeated by voters, the corporate head tax was rejected by the City Council, and none of the $800 million in promised new taxes passed. His pledge not to raise property taxes was reported as broken when his FY2025 budget proposed an increase.",
+    "grade_rationale": "The record shows a split pattern: high delivery on items within direct executive control (ShotSpotter, deputy mayor, executive orders) but low delivery on high-clarity, high-magnitude legislative and revenue promises that depended on voters and the City Council, plus a reversed negative promise on property taxes. The strongest-clarity, most ambitious commitments are precisely those that stalled or reversed, while the delivered items skew toward narrower or symbolic magnitude.",
+    "ambition_level": "High",
+    "total_promises": 8,
+    "total": 8
   },
   "promises": [
     {
-      "id": 1,
-      "text": "Will not raise property taxes",
+      "text": "Johnson pledged throughout the campaign that he would not raise property taxes if elected.",
       "domain_label": "Economy",
-      "status": "broken",
-      "grade": "F",
-      "evidence": "Johnson kept this promise in his 2024 budget, but in 2024 proposed a $300 million property tax hike for the 2025 budget, breaking this core campaign commitment.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "status": "reversed",
+      "confidence": "high",
+      "delivery": "D0",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 8.0,
+      "what_happened": [
+        "2024-10-30: Johnson unveiled FY2025 budget that included a property tax increase, described as breaking his campaign promise (c88, c95)",
+        "2025-05-09: Reporting cites a 'broken promise to hold the line on property taxes' (c90)"
+      ],
+      "flags": {
+        "reversed": true
+      },
+      "sources": [
+        {
+          "title": "30, including a nearly $1 billion deficit, runaway spending and low revenues that have him",
+          "url": "https://www.illinoispolicy.org/johnsons-2025-chicago-budget-breaks-property-tax-promise/"
+        },
+        {
+          "title": "CHICAGO - Mayor Brandon Johnson vowed repeatedly during his campaign <strong>he would not ",
+          "url": "https://www.fox32chicago.com/news/brandon-johnson-chicago-budget-proposal"
+        },
+        {
+          "title": "JB Pritzker, and his anemic record in Springfield. An ongoing contract dispute with Chicag",
+          "url": "https://chicago.suntimes.com/brandon-johnson/2025/05/09/mayor-brandon-johnson-term-midpoint-analysis-interview"
+        }
+      ]
     },
     {
-      "id": 2,
-      "text": "Expand affordable housing and green social housing",
-      "domain_label": "Housing",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "In February 2025, Johnson introduced the Green Social Housing ordinance and has pushed to streamline housing development projects over aldermanic objections.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Promoting 200 officers to detective rank to solve serious crimes and establishing an illegal gun unit.",
+      "domain_label": "Safety & Justice",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 0.5,
+      "promise_score": 11.3,
+      "what_happened": [
+        "2023-05-15: First executive order on Community Safety includes recruiting 200 new detectives in Day One Plan (c72)",
+        "2023-08-22: Johnson said hiring/training of 200 detectives will start to get underway with new police chief Larry Snelling (c69)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "City of Chicago :: Mayor Brandon Johnson Signs First Executive Orders Skip to main content",
+          "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2023/may/MayorBrandonJohnsonSignsFirstExecutiveOrders.html"
+        },
+        {
+          "title": "Another piece of his plan — <strong>hiring 200 new detectives</strong> — will start to get",
+          "url": "https://www.wbez.org/stories/chicago-mayor-brandon-johnsons-first-100-days/265d4a8c-49a0-4fd4-9493-b8154b6e572c"
+        }
+      ]
     },
     {
-      "id": 3,
-      "text": "Support raising minimum wage for tipped workers",
-      "domain_label": "Economy",
+      "text": "Johnson pledged to end the use of the ShotSpotter gunshot detection system.",
+      "domain_label": "Safety & Justice",
       "status": "kept",
-      "grade": "A",
-      "evidence": "In 2023, Johnson supported a city council-passed ordinance to raise the minimum wage for tipped workers.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 12.0,
+      "difficulty_earned": 1.0,
+      "promise_score": 19.0,
+      "what_happened": [
+        "2024-02-13: Johnson announced he would not extend CPD's ShotSpotter contract, fulfilling a campaign promise (c97)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Mayor Brandon Johnson announced Tuesday he will not extend the Chicago Police Department’s",
+          "url": "https://news.wttw.com/2024/02/13/mayor-brandon-johnson-cancels-shotspotter-contract-fulfilling-major-campaign-promise"
+        }
+      ]
     },
     {
-      "id": 4,
-      "text": "Fully fund public schools",
-      "domain_label": "Education",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Johnson has advocated for increased school funding as a former teacher and union organizer, but faces ongoing budget constraints and political opposition in the City Council.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 5,
-      "text": "Expand access to mental health care services",
+      "text": "Reopen Chicago's mental health clinics under the 'Treatment Not Trauma' plan Johnson pledged to implement if elected.",
       "domain_label": "Healthcare",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Mental health care expansion was a key campaign priority, with some budget allocations made, but full implementation of promised mental health centers remains ongoing.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 1.5,
+      "promise_score": 12.3,
+      "what_happened": [
+        "2023-07: Two high-profile hearings held on Treatment Not Trauma to reopen mental health clinics (c62)",
+        "2024-05-15: 2024 budget earmarked funds for clinics operated by Chicago Department of Public Health (c11)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "That process began in earnest in July, with two high-profile hearings on the cornerstones ",
+          "url": "https://news.wttw.com/2023/08/24/johnson-walks-political-tightrope-1st-100-days-allies-press-him-deliver-and-critics-seize"
+        },
+        {
+          "title": "The city’s 2024 budget earmarked ... operated by the Chicago Department of Public Health. ",
+          "url": "https://news.wttw.com/2024/05/15/analyzing-brandon-johnson-s-1st-year-office-push-progressive-change-complicated-migrant"
+        }
+      ]
     },
     {
-      "id": 6,
-      "text": "Create green jobs in Chicago",
+      "text": "Reinstating the Department of Environment that was closed by former Mayor Rahm Emanuel.",
+      "domain_label": "Environment",
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 1.5,
+      "promise_score": 12.3,
+      "what_happened": [
+        "2023-08-23: Advisory report recommends reestablishing Department of Environment based on campaign promise (c07, c63)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "In addition to reopening the mental health clinics and expanding anti-homelessness service",
+          "url": "https://www.gmtoday.com/news/illinois/mayor-brandon-johnson-s-first-100-days-his-inner-circle-his-daily-schedule-and-where/article_3ac8ac36-41c5-11ee-aee5-fb4090df5931.html"
+        }
+      ]
+    },
+    {
+      "text": "Creating a deputy mayor of immigrant, migrant and refugee rights.",
+      "domain_label": "Governance",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 12.0,
+      "difficulty_earned": 1.0,
+      "promise_score": 18.0,
+      "what_happened": [
+        "2023-05-15: First executive orders established a Deputy Mayor for Immigrant, Migrant, and Refugee Rights (EO 2023-16) (c72, c08)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "City of Chicago :: Mayor Brandon Johnson Signs First Executive Orders Skip to main content",
+          "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2023/may/MayorBrandonJohnsonSignsFirstExecutiveOrders.html"
+        }
+      ]
+    },
+    {
+      "text": "Fully fund year-round youth employment.",
+      "domain_label": "Education",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 1.5,
+      "promise_score": 12.3,
+      "what_happened": [
+        "2023-05-15: Executive order to boost youth employment directs budget analysis and year-round coordination (c72)",
+        "2025-12-18: Reporting notes the mayor expanded a summer jobs program for kids (c22)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "City of Chicago :: Mayor Brandon Johnson Signs First Executive Orders Skip to main content",
+          "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2023/may/MayorBrandonJohnsonSignsFirstExecutiveOrders.html"
+        },
+        {
+          "title": "Brandon Johnson’s Woes Policy Management Finance More News Topics Housing and Urban Issues",
+          "url": "https://www.governing.com/politics/brandon-johnsons-woes"
+        }
+      ]
+    },
+    {
+      "text": "Make $1 billion in investments in people, funded by $800 million in increased taxes, fines and fees on the wealthiest Chicagoans.",
       "domain_label": "Economy",
-      "status": "stalled",
-      "grade": "D",
-      "evidence": "Green jobs initiative was a campaign priority, but budget battles and political opposition have slowed significant progress on large-scale job creation programs.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 7,
-      "text": "Protect immigrants from federal enforcement",
-      "domain_label": "Immigration",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "In 2025, Johnson signed an executive order preventing federal immigration enforcement cooperation, maintaining Chicago's sanctuary city status.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
-    },
-    {
-      "id": 8,
-      "text": "Advocate for ceasefire in Gaza",
-      "domain_label": "Foreign Policy",
-      "status": "kept",
-      "grade": "A",
-      "evidence": "In 2024, Johnson cast a tie-breaking vote to support a council resolution calling for a ceasefire in Gaza, fulfilling his stated position on the issue.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "status": "blocked",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 13.1,
+      "what_happened": [
+        "2024-03: Bring Chicago Home real estate transfer tax referendum rejected by voters (c96)",
+        "2024-05-15: One year in, none of the $800M in new taxes had passed (c73)",
+        "2025-08-05: Johnson proposed corporate head tax to address deficit (c89)",
+        "2025-12-18: Head tax headed for defeat in City Council (c22)"
+      ],
+      "flags": {
+        "externally_blocked": true
+      },
+      "sources": [
+        {
+          "title": "Chicago Mayor Brandon Johnson took office on <strong>May 15, 2023</strong>. One year later",
+          "url": "https://www.illinoispolicy.org/recap-1-year-of-chicago-mayor-brandon-johnson-watch-out-in-year-2/"
+        },
+        {
+          "title": "Johnson has not made any progress to fulfill his campaign promise to <strong>levy $800 mil",
+          "url": "https://news.wttw.com/2026/05/14/after-another-year-defined-trump-and-steeped-crisis-mayor-brandon-johnson-looks-ahead"
+        },
+        {
+          "title": "Johnson has yet to fulfill his ... Chicagoans, and that effort suffered a significant setb",
+          "url": "https://news.wttw.com/2024/08/29/chicago-faces-982m-budget-shortfall-2025-223m-gap-2024-johnson"
+        },
+        {
+          "title": "Brandon Johnson’s Woes Policy Management Finance More News Topics Housing and Urban Issues",
+          "url": "https://www.governing.com/politics/brandon-johnsons-woes"
+        }
+      ]
     }
   ],
-  "last_updated": "2026-03-09",
-  "methodology_version": "1.0"
+  "data_gaps": [
+    "Campaign-window dating is sparse (13 of 69 dated); several promise candidates are in-office or date_uncertain and were not treated as attributable promises. Detective and youth-employment 'full' targets lack a confirming source for completion — flagged LIMITED EVIDENCE. Property-tax classification is CONTESTED (city framing vs. third-party watchdog framing). Many corroborating delivery sources are TIER 3 (Illinois Policy Institute appears repeatedly and is an advocacy source); Tier-1 city press releases (c72, c99, c77) corroborate executive actions but tend toward self-claimed accomplishment language — treat with care for CREDIT OVERCLAIMED on broad anniversary claims (c77)."
+  ],
+  "term_identity": {
+    "term_id": "mayor-chicago-2023",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 77.5,
+    "office": "Mayor",
+    "jurisdiction": "Chicago, IL",
+    "term_start": "2023-05-15",
+    "term_end": "2027-05-17"
+  },
+  "person_ref": "brandon-johnson-chicago-il",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 77.5,
+    "display": "Grade is record-to-date — term in progress, 77.5% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "mayor-chicago-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-23T00:48:06+00:00",
+    "generated_at": "2026-06-23T00:49:06+00:00",
+    "review_status": "draft",
+    "card_flags": [],
+    "sources": [
+      {
+        "title": "Brandon Johnson did not complete Ballotpedia&#x27;s 2022 Candidate Connection survey. ===C",
+        "url": "https://ballotpedia.org/Brandon_Johnson_(Illinois)"
+      },
+      {
+        "title": "New Chicago mayor pledges commitment to progressive strategy, asks for unity | AP News Men",
+        "url": "https://apnews.com/article/chicago-mayor-brandon-johnson-inauguration-dd97ed2a293bf44a814b3ff44121d81a"
+      },
+      {
+        "title": "Chicago's Mayor-elect Brandon Johnson on his plans for the city : NPR Accessibility links ",
+        "url": "https://www.npr.org/2023/04/08/1168794993/chicagos-mayor-elect-brandon-johnson-on-his-plans-for-the-city"
+      },
+      {
+        "title": "Happy Tuesday, Illinois. Election Day is three weeks away. ... Chicago Mayor Brandon Johns",
+        "url": "https://www.politico.com/newsletters/illinois-playbook/2024/10/15/chicago-mayor-brandon-johnson-pushes-back-against-critics-00183651"
+      },
+      {
+        "title": "Brandon Johnson’s Woes Policy Management Finance More News Topics Housing and Urban Issues",
+        "url": "https://www.governing.com/politics/brandon-johnsons-woes"
+      },
+      {
+        "title": "Sources: Brandon Johnson&#x27;s 2023 campaign website, &quot;<strong>On The Issues</strong",
+        "url": "https://ballotpedia.org/Mayoral_election_in_Chicago,_Illinois_(2023)"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Brandon Johnson.",
+        "url": "https://ballotpedia.org/Endorsements_by_Brandon_Johnson"
+      },
+      {
+        "title": "Two weeks until Chicago mayoral, Wisconsin Supreme Court elections - Ballotpedia News Face",
+        "url": "https://news.ballotpedia.org/2023/03/21/two-weeks-until-chicago-mayoral-wisconsin-supreme-court-elections/"
+      },
+      {
+        "title": "Brandon Johnson may refer to: Brandon Johnson (Illinois) Brandon Johnson (Kansas) Retrieve",
+        "url": "https://ballotpedia.org/Brandon_Johnson"
+      },
+      {
+        "title": "<strong>The primary election was canceled</strong>. Incumbent Brandon Johnson and Myron Ac",
+        "url": "https://ballotpedia.org/Brandon_Johnson_(Kansas)"
+      },
+      {
+        "title": "Hall Pass: Your Ticket to Understanding School Board Politics, Edition #51 - Ballotpedia N",
+        "url": "https://news.ballotpedia.org/2023/03/08/hall-pass-your-ticket-to-understanding-school-board-politics-edition-51/"
+      },
+      {
+        "title": "Chicago mayoral election takes place next week - Ballotpedia News Facebook Instagram Twitt",
+        "url": "https://news.ballotpedia.org/2023/02/23/chicago-mayoral-election-takes-place-next-week/"
+      },
+      {
+        "title": "Please complete the Captcha above · Brendan Johnson may refer to:",
+        "url": "https://ballotpedia.org/Brendan_Johnson"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://ballotpedia.org/Brandon_Wayne_Johnson_(Mayor_of_Hartwell,_Georgia,_candidate_2025)"
+      },
+      {
+        "title": "Ron Johnson on Education Follow @ontheissuesorg Ron Johnson on Education &nbsp; &nbsp; One",
+        "url": "https://www.ontheissues.org/Social/Ron_Johnson_Education.htm"
+      },
+      {
+        "title": "Lyndon Johnson on Welfare & Poverty Follow @ontheissuesorg Lyndon Johnson on Welfare & Pov",
+        "url": "https://www.ontheissues.org/celeb/Lyndon_Johnson_Welfare_+_Poverty.htm"
+      },
+      {
+        "title": "Lyndon Johnson had no irritating ambivalence about Catholics, or any other creed. He was a",
+        "url": "https://www.ontheissues.org/celeb/Lyndon_Johnson_Education.htm"
+      },
+      {
+        "title": "When, in the hospital, doctors told him that an operation to remove the stone was imperati",
+        "url": "https://www.ontheissues.org/celeb/Lyndon_Johnson_Health_Care.htm"
+      },
+      {
+        "title": "The other candidates were opposed. Drazan said that Oregon has enough gun legislation at p",
+        "url": "https://ontheissues.org/governor/Tina_Kotek_Gun_Control.htm"
+      },
+      {
+        "title": "Speculation on 2020 presidential contenders (sources for issue excerpts): PoliticalWire.co",
+        "url": "https://www.ontheissues.org/2020_Hopefuls.htm"
+      },
+      {
+        "title": "JOHNSON: Well, free trade does benefit. I think that, unfairly, free trade has come under ",
+        "url": "https://www.ontheissues.org/International/Gary_Johnson_Free_Trade.htm"
+      },
+      {
+        "title": "Huffington Post Quiz · VoteMatch Responses (Click here for VoteMatch quiz) VoteMatch Quest",
+        "url": "https://www.ontheissues.org/TX/Sam_Johnson.htm"
+      },
+      {
+        "title": "Brandon and I made the decision to spend our lives together in 2010.",
+        "url": "https://www.ontheissues.org/domestic/Shenna_Bellows_Civil_Rights.htm"
+      },
+      {
+        "title": "&quot;I&#x27;m a pretty traditional guy. I believe in a culture of life, and I believe mar",
+        "url": "https://www.ontheissues.org/Domestic/Ron_Johnson_Civil_Rights.htm"
+      },
+      {
+        "title": "Brent Johnson is currently being tested through the <strong>2024 Political Courage Test</s",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/129258/brent-johnson"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/4495/jon-johnson"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "A candidate&#x27;s political courage is calculated based on the number of issue areas the ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/142918/brian-johnson"
+      },
+      {
+        "title": "Randy Johnson REPEATEDLY REFUSED ... TEST Randy Johnson REFUSED TO PROVIDE THIS INFORMATIO",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/17315/randy-johnson"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "Official Position: Candidate addressed this issue directly by taking the Political Courage",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/55119/gordon-johnson"
+      },
+      {
+        "title": "Candidates who qualify will be invited to take the 2020 Political Courage Test.",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/188401/cody-johnson"
+      },
+      {
+        "title": "Johnny Johnson has refused to provide voters with positions on key issues covered by the 2",
+        "url": "https://votesmart.org/candidate/political-courage-test/155110/johnny-johnson/"
+      },
+      {
+        "title": "City of Chicago :: Mayor Brandon Johnson Signs First Executive Orders Skip to main content",
+        "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2023/may/MayorBrandonJohnsonSignsFirstExecutiveOrders.html"
+      },
+      {
+        "title": "City of Chicago :: ICYMI: Mayor Brandon Johnson Presents Vision for a More Equitable, Incl",
+        "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/february/icymi-sotu-rebuttal.html"
+      },
+      {
+        "title": "City of Chicago :: Mayor Brandon Johnson Marks Three Years Building a Safer, More Affordab",
+        "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/three-year-anniversary.html"
+      },
+      {
+        "title": "City of Chicago :: Mayor Brandon Johnson Signs Executive Order Launching Citywide Review, ",
+        "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2025/april/Mayor-Johnson-Signs-Budget-Review-Executive-Order.html"
+      },
+      {
+        "title": "City of Chicago :: Mayor Brandon Johnson Signs \"Protecting Chicago\" Executive Order Skip t",
+        "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2025/august/protecting-chicago-executive-order.html"
+      },
+      {
+        "title": "City of Chicago :: Mayor Brandon Johnson Announces Major Accomplishments Since Launch of C",
+        "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2024/july/cut-the-tape-task-force.html"
+      },
+      {
+        "title": "“There are people who might have some trepidation around how bold our vision is,” Johnson ",
+        "url": "https://www.politico.com/news/2024/10/12/chicago-mayor-progressive-agenda-johnson-00183546"
+      }
+    ]
+  }
 }

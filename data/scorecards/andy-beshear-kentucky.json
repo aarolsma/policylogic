@@ -4,147 +4,654 @@
     "role": "Governor",
     "jurisdiction": "Kentucky",
     "party": "Democratic",
-    "term_start": "2019-12-10",
-    "term_end": "2027-12-09",
+    "term_start": "2023-12-12",
+    "term_end": "2027-12-14",
     "election_date": "2023-11-07",
-    "election_margin": 5,
     "next_election": "2027-11-02",
     "office_phone": null,
     "office_address": "Capitol Building, Frankfort, KY 40601",
     "office_website": "governor.ky.gov"
   },
   "summary": {
-    "narrative": "Gov. Beshear's second term focused on economic growth, healthcare expansion, and criminal justice reform. Delivered measurable wins on Medicaid expansion, medical cannabis legalization, sports betting, opioid epidemic response, and EV infrastructure. Maintained strong fiscal position with $4B rainy day fund. Positioned for potential 2028 presidential campaign while emphasizing rural engagement.",
-    "total_promises": 4,
-    "delivery_rate_estimate": 85,
+    "overall_grade": "C",
+    "grade_input_pct": 63.81,
+    "delivery_ratio": 0.6409,
+    "narrative": "On his Better Kentucky Plan infrastructure pledges (broadband, water/wastewater, school facilities), Beshear secured the targeted appropriations and exceeded several, with funding signed into law and administered statewide. He delivered on medical marijuana legalization and restoration of voting rights for nonviolent offenders, and advanced major transportation projects (Mountain Parkway nearing completion; I-69 crossing still pre-construction). His universal pre-K pledge stalled against a Republican supermajority that declined to fund it, leading him to pursue a two-county executive pilot, and his stated opposition to I-69 tolls was overridden by the legislature.",
+    "grade_rationale": "The record shows a high rate of full delivery on well-specified, quantitative infrastructure promises and several clearly delivered qualitative actions within executive authority, balanced by stalled or partially delivered items (universal pre-K, I-69 bridge) where a non-aligned legislature was a necessary co-actor. Promise quality is generally high (clarity 3-5, statewide scale), and delivery clusters at D4 with documented action, with the lower buckets driven by external legislative blockage rather than inaction.",
     "ambition_level": "High",
-    "grade_rationale": "Strong execution on healthcare, economic development, and criminal justice initiatives. Tangible legislative wins and fiscal management. Gaps in comprehensive climate strategy beyond EV focus and limited details on full opioid epidemic resolution metrics.",
-    "overall_grade": "B+"
+    "total_promises": 11,
+    "total": 11
   },
   "promises": [
     {
-      "normalized": "Combat Kentucky opioid epidemic through legislation and enforcement coordination",
-      "domain": "Public Health",
-      "domain_label": "Healthcare & Substance Abuse",
-      "clarity_score": 3,
-      "initiation_score": 4,
-      "outcome_score": 4,
-      "attribution_modifier": 0.85,
-      "difficulty_multiplier": 2,
-      "policy_score": 22.95,
-      "requires_legislation": true,
-      "requires_federal": true,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "High"
+      "text": "Invest $300 million in state broadband funds (matched with at least $300 million federal) to expand high-speed internet to unserved and underserved Kentucky communities",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "April 2021: HB 320/HB 382 signed into law allocating $300 million in federal ARP dollars to broadband (c122)",
+        "Accomplishments record cites $2 billion+ secured for high-speed internet to date (c92)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Better Kentucky Plan - Kentucky Governor Andy Beshear Skip to main navigation Skip to main",
+          "url": "https://governor.ky.gov/priorities/better-kentucky-plan"
+        },
+        {
+          "title": "Beshear in April 2021 that <strong>allocated $300 million in federal American Rescue Plan ",
+          "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=1374"
+        },
+        {
+          "title": "Signature Accomplishments - Kentucky Governor Andy Beshear Skip to main navigation Skip to",
+          "url": "https://governor.ky.gov/accomplishments"
+        }
+      ]
     },
     {
-      "normalized": "Expand Medicaid access and improve healthcare coverage for vulnerable residents",
-      "domain": "Healthcare",
-      "domain_label": "Healthcare & Social Services",
-      "clarity_score": 3,
-      "initiation_score": 4,
-      "outcome_score": 5,
-      "attribution_modifier": 0.9,
-      "difficulty_multiplier": 1.8,
-      "policy_score": 25.56,
-      "requires_legislation": true,
-      "requires_federal": true,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "High"
+      "text": "Allocate $500 million for water and wastewater grants to deliver clean drinking water statewide",
+      "domain_label": "Environment",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2021-2022: $500 million appropriated for water/wastewater grants via Kentucky Infrastructure Authority (c17)",
+        "April 2026: Beshear signed HJR 81 releasing $52M for rural water systems (c125)",
+        "Accomplishments record cites $412M+ delivered for clean drinking water (c92)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Better Kentucky Plan - Kentucky Governor Andy Beshear Skip to main navigation Skip to main",
+          "url": "https://governor.ky.gov/priorities/better-kentucky-plan"
+        },
+        {
+          "title": "Signature Accomplishments - Kentucky Governor Andy Beshear Skip to main navigation Skip to",
+          "url": "https://governor.ky.gov/accomplishments"
+        },
+        {
+          "title": "FRANKFORT, Ky. (WEVV) -- Gov. <strong>Andy Beshear signed legislation releasing more than ",
+          "url": "https://www.wevv.com/news/kentucky/gov-beshear-releases-52m-for-rural-kentucky-water-systems/article_91508f4e-bcce-4877-9456-418628843b0f.html"
+        }
+      ]
     },
     {
-      "normalized": "Legalize medical cannabis and sports betting for economic growth",
-      "domain": "Economy & Regulation",
-      "domain_label": "Economic Development",
-      "clarity_score": 3,
-      "initiation_score": 4,
-      "outcome_score": 5,
-      "attribution_modifier": 0.95,
-      "difficulty_multiplier": 1.5,
-      "policy_score": 23.25,
-      "requires_legislation": true,
-      "requires_federal": false,
-      "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
-      },
-      "confidence": "High"
+      "text": "Distribute more than $200 million for construction and upgrades of school facilities across Kentucky",
+      "domain_label": "Education",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2021-2022: $200M+ allocated for school construction/upgrades via the School Facilities Construction Commission ($127M federal, $75M general fund) (c17)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Better Kentucky Plan - Kentucky Governor Andy Beshear Skip to main navigation Skip to main",
+          "url": "https://governor.ky.gov/priorities/better-kentucky-plan"
+        }
+      ]
     },
     {
-      "normalized": "Build electric vehicle charging infrastructure across Kentucky parkways and interstates",
-      "domain": "Infrastructure & Environment",
-      "domain_label": "Transportation & Energy",
-      "clarity_score": 2,
-      "initiation_score": 3,
-      "outcome_score": 3,
-      "attribution_modifier": 0.8,
-      "difficulty_multiplier": 1.8,
-      "policy_score": 13.68,
-      "requires_legislation": false,
-      "requires_federal": true,
+      "text": "Pass universal pre-K for all 4-year-olds in Kentucky",
+      "domain_label": "Education",
+      "status": "blocked",
+      "confidence": "high",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 1.5,
+      "promise_score": 13.1,
+      "what_happened": [
+        "Dec 2023: Beshear's Forward, Together budget proposed $172M/year to fully fund universal pre-K (c95)",
+        "June 2025: Signed EO establishing advisory committee on universal pre-K (c150)",
+        "May 2026: Signed EO launching pre-K pilot in Rockcastle and Robertson counties after legislature declined to fund statewide (c142, c143)"
+      ],
       "flags": {
-        "reversed": false,
-        "redefined": false,
-        "externally_blocked": false
+        "externally_blocked": true
       },
-      "confidence": "Medium"
+      "sources": [
+        {
+          "title": "Turn on more accessible mode Turn off more accessible mode Skip to Main Navigation Skip to",
+          "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057"
+        },
+        {
+          "title": "(Kentucky Lantern photo by Arden Barnes) Gov. <strong>Andy Beshear has signed an executive",
+          "url": "https://kentuckylantern.com/briefs/democrat-beshear-renews-push-for-universal-preschool-in-kentucky/"
+        },
+        {
+          "title": "<strong>Beshear&#x27;s order requires the Education and Labor Cabinet to enter contracts w",
+          "url": "https://www.cincinnati.com/story/news/2026/05/08/andy-beshear-universal-pre-k-program-kentucky/89990631007/"
+        },
+        {
+          "title": "<strong>After lawmakers refused to fund his Pre-K for All plan</strong>, Gov. Andy Beshear",
+          "url": "https://www.lpm.org/news/2026-05-07/beshear-announces-universal-pre-k-program-in-two-rural-kentucky-counties"
+        },
+        {
+          "title": "“Pre-K for All would help our children become kindergarten ready, strengthen our workforce",
+          "url": "https://www.whas11.com/article/news/education/kentucky-governor-beshear-pre-k-for-all-pilot-programs-rural-counties/417-cd22a448-e6d7-4162-bf5f-5129612eb0e0"
+        }
+      ]
+    },
+    {
+      "text": "Legalize medical marijuana in Kentucky",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "March 2023: Beshear signed SB 47 legalizing medical cannabis (c85)",
+        "Law took effect January 2025 (c156)",
+        "June 2026: Signed EO clarifying qualifying conditions for medical cannabis (c157)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "In January 2023, Beshear announced Kentucky State Police troopers would be equipped with b",
+          "url": "https://en.wikipedia.org/wiki/Andy_Beshear"
+        },
+        {
+          "title": "1. <strong>Kentucky lawmakers passed the law in 2023</strong>, legalizing medical cannabis",
+          "url": "https://www.wlwt.com/article/kentucky-andy-beshear-marijuana-federal-drug-class/61628448"
+        },
+        {
+          "title": "Working with his GOP legislature, the governor also <strong>expanded Medicaid, lowered pre",
+          "url": "https://washingtonmonthly.com/2025/10/03/andy-beshear-presidential-contender/"
+        },
+        {
+          "title": "FRANKFORT, Ky. (June 2, 2026) – Today, Gov. Andy Beshear signed an executive order directi",
+          "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2766"
+        }
+      ]
+    },
+    {
+      "text": "Restore voting rights to non-violent offenders",
+      "domain_label": "Governance",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 12.0,
+      "difficulty_earned": 1.0,
+      "promise_score": 21.0,
+      "what_happened": [
+        "December 2019: Issued EO automatically restoring voting rights for those who completed sentences for nonviolent, nonsexual offenses (c160, c161)",
+        "Accomplishments record cites 198,000+ restored (c92)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "The specific crimes excluded from the restoration executive order include treason; bribery",
+          "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=4"
+        },
+        {
+          "title": "<strong>In December of 2019, Governor Andy Beshear issued an executive order to re-enfranc",
+          "url": "https://www.sentencingproject.org/fact-sheet/kentucky-bars-over-158300-citizens-from-voting/"
+        },
+        {
+          "title": "Signature Accomplishments - Kentucky Governor Andy Beshear Skip to main navigation Skip to",
+          "url": "https://governor.ky.gov/accomplishments"
+        },
+        {
+          "title": "Governor Andy Beshear - Kentucky Governor Andy Beshear Skip to main navigation Skip to mai",
+          "url": "https://governor.ky.gov/about/governor-andy-beshear"
+        }
+      ]
+    },
+    {
+      "text": "Expand the Military Family Assistance Trust Fund",
+      "domain_label": "Other",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 16.6,
+      "what_happened": [
+        "Signed legislation to expand the Military Family Assistance Trust Fund (c162)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "• Signed legislation to raise the amount of available assistance from the Kentucky Nationa",
+          "url": "https://governor.ky.gov/Priority/Documents/PRIORITIES_Supporting-Our-Military.pdf"
+        }
+      ]
+    },
+    {
+      "text": "Speed up the Mountain Parkway expansion project in Eastern Kentucky",
+      "domain_label": "Economy",
+      "status": "advanced",
+      "confidence": "high",
+      "delivery": "D3",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 5.4,
+      "difficulty_earned": 3.75,
+      "promise_score": 13.15,
+      "what_happened": [
+        "Jan 2024: Federal approval of Supplemental Environmental Assessment announced (c177)",
+        "Oct 2024: $116.3M federal grant announced to speed final section (c170)",
+        "Aug 2025: Ground broken for final Magoffin-Floyd section (c171)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "“Team Kentucky is fulfilling a promise not just to the people of Eastern Kentucky but to t",
+          "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2086"
+        },
+        {
+          "title": "16, 2024) – Today, Gov. Andy Beshear announced that <strong>Kentucky will speed progress t",
+          "url": "https://salyersvilleindependent.com/gov-beshear-announces-plan-to-speed-completion-of-mountain-parkway-expansion/"
+        },
+        {
+          "title": "“This is about more than pavement – it’s about safer travel, better jobs, stronger communi",
+          "url": "https://www.kentuckytoday.com/news/ground-broken-for-final-section-of-mountain-parkway-expansion/article_5ab2e709-05a7-41dd-93a2-1b44da8436e6.html"
+        },
+        {
+          "title": "EASTERN KENTUCKY (WYMT) - On Friday, Governor Andy Beshear announced the next step in comp",
+          "url": "https://www.wymt.com/2024/01/26/gov-andy-beshear-announces-next-step-mountain-parkway-project/"
+        }
+      ]
+    },
+    {
+      "text": "Build the I-69 bridge to open up western Kentucky",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D2",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 3.6,
+      "difficulty_earned": 2.5,
+      "promise_score": 10.1,
+      "what_happened": [
+        "Aug 2025: Milestone announced for new I-69 Ohio River Crossing (c178)",
+        "Jan 2026: KPTIA approved interlocal agreement establishing tolling body and updated bi-state agreement; construction expected to begin 2026 (c181)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "The project is estimated to cost $3.6 billion, and received a $1.6 billion federal grant i",
+          "url": "https://en.wikipedia.org/wiki/Andy_Beshear"
+        },
+        {
+          "title": "“This is a significant milestone for the new I-69 Ohio River Crossing, <strong>a key inter",
+          "url": "https://spectrumnews1.com/ky/louisville/news/2025/08/21/i69-project-update"
+        },
+        {
+          "title": "(KPTIA) took another step forward today in building the new Interstate Highway 69 bridge p",
+          "url": "https://transportation.ky.gov/NewsRoom/KPTIA%20I-69%20Bridge%20Project%20Advances%20-%20Jan.%202026.pdf"
+        },
+        {
+          "title": "KPTIA also approved updates to the Bi-State Development Agreement (BSDA) reached between t",
+          "url": "https://i69ohiorivercrossing.com/news/agreement-advances-i-69-bridge/"
+        }
+      ]
+    },
+    {
+      "text": "Beshear said there will be no tolls on the I-69 bridge",
+      "domain_label": "Economy",
+      "status": "broken",
+      "confidence": "medium",
+      "delivery": "D0",
+      "their_role": 0.4,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 4.0,
+      "what_happened": [
+        "Jan 2026: Despite Beshear advocating no tolls, the Kentucky General Assembly passed legislation requiring tolling and KPTIA established a tolling body (c181, c182)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "(KPTIA) took another step forward today in building the new Interstate Highway 69 bridge p",
+          "url": "https://transportation.ky.gov/NewsRoom/KPTIA%20I-69%20Bridge%20Project%20Advances%20-%20Jan.%202026.pdf"
+        },
+        {
+          "title": "KPTIA also approved updates to the Bi-State Development Agreement (BSDA) reached between t",
+          "url": "https://i69ohiorivercrossing.com/news/agreement-advances-i-69-bridge/"
+        }
+      ]
+    },
+    {
+      "text": "My pledge is to serve a full four years",
+      "domain_label": "Governance",
+      "status": "kept",
+      "confidence": "medium",
+      "delivery": "D4",
+      "their_role": 1.0,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M1",
+      "impact": 5,
+      "adjusted_delivery": 12.0,
+      "difficulty_earned": 1.0,
+      "promise_score": 18.0,
+      "what_happened": [
+        "Sept 2025: Beshear's office reaffirmed he promised to serve his full second term and intends to do so (c48)"
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "It hasn’t changed. “Governor Andy Beshear <strong>promised to serve his full second term a",
+          "url": "https://www.kentucky.com/news/politics-government/article311962334.html"
+        },
+        {
+          "title": "He&#x27;s been asked about his future ambitions before. Beshear said in no uncertain terms",
+          "url": "https://www.cincinnati.com/story/news/politics/2023/11/09/kentucky-election-andy-beshear-could-be-national-star-for-democrats/71514502007/"
+        }
+      ]
     }
   ],
   "data_gaps": [
-    "Specific metrics on opioid overdose death reduction percentage",
-    "Timeline and completion status for 50 EV charging stations",
-    "Details on law enforcement relationship improvements beyond statement level",
-    "Medical cannabis licensing timeline and implementation status",
-    "Measurable outcomes on voting rights restoration impact post-executive order",
-    "Job creation numbers from economic growth initiatives",
-    "Specific Medicaid enrollment increase targets and achievement rates"
+    "Several Better Kentucky Plan appropriations originated in 2021/2022 (prior term) but are carried as ongoing accomplishments; reviewer should confirm term attribution where delivery spans both terms. I-69 bridge promise was originally framed as a 'first term' pledge (c16) but reappears as ongoing; time_pressure left null throughout because promises lack explicit single-term deadlines. Military Family Trust Fund expansion rests on a single official source (LIMITED EVIDENCE). Accomplishments figures are self-reported by the governor's office (potential CREDIT OVERCLAIMED risk not formally flagged absent contradicting evidence)."
   ],
+  "term_identity": {
+    "term_id": "gov-ky-2023",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 63.1,
+    "office": "Governor",
+    "jurisdiction": "Kentucky",
+    "term_start": "2023-12-12",
+    "term_end": "2027-12-14"
+  },
+  "person_ref": "andy-beshear-kentucky",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 63.1,
+    "display": "Grade is record-to-date — term in progress, 63.1% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
   "_meta": {
-    "generated_at": "2026-03-08T19:47:01.069Z",
-    "slug": "andy-beshear-kentucky",
-    "review_status": "pending",
-    "method": "brave+haiku",
+    "term_id": "gov-ky-2023",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T23:30:02+00:00",
+    "generated_at": "2026-06-22T23:31:24+00:00",
+    "review_status": "draft",
+    "card_flags": [],
     "sources": [
       {
-        "title": "Gov. Andy Beshear wins re-election in Kentucky governor's race",
-        "url": "https://www.wlky.com/article/kentucky-governor-election-results-2023-beshear-cameron-1699409007/45771731"
+        "title": "Invest $300 million in state broadband funds (matched with at least $300 million federal) ",
+        "url": "https://governor.ky.gov/priorities/better-kentucky-plan"
       },
       {
-        "title": "Kentucky AG Russell Coleman fires back at Gov. Beshear over ICE cooperation | Fox News",
-        "url": "https://www.foxnews.com/politics/dem-governor-deep-red-state-calls-ice-pullout-triggering-clash-enforcement-authority"
+        "title": "Support a bill every year as governor to repeal Kentucky's Right-to-Work law and reinstate",
+        "url": "https://www.ontheissues.org/Governor/Andy_Beshear_Jobs.htm"
       },
       {
-        "title": "Opinion | Andy Beshear: How Democrats can change rural red to blue - The Washington Post",
-        "url": "https://www.washingtonpost.com/opinions/2025/11/24/andy-beshear-democrats-politics-rural-voters/"
+        "title": "Pass universal pre-K for all 4-year-olds in Kentucky",
+        "url": "https://ontheissues.org/Andy_Beshear_VoteMatch.htm"
       },
       {
-        "title": "Andy Beshear - Ballotpedia",
+        "title": "Speed up the Mountain Parkway expansion project in Eastern Kentucky",
+        "url": "https://www.ontheissues.org/governor/Andy_Beshear_Technology.htm"
+      },
+      {
+        "title": "Teach at least one trade in each Kentucky state prison to reduce recidivism",
+        "url": "https://ontheissues.org/governor/Andy_Beshear_Crime.htm"
+      },
+      {
+        "title": "Issues and Priorities - Kentucky Governor Andy Beshear Skip to main navigation Skip to mai",
+        "url": "https://governor.ky.gov/priorities"
+      },
+      {
+        "title": "Accomplishments – 2022 - Kentucky Governor Andy Beshear Skip to main navigation Skip to ma",
+        "url": "https://governor.ky.gov/accomplishments/Pages/2022-accomplishments.aspx"
+      },
+      {
+        "title": "Can a Democrat Running the Biden Playbook Win in Deep-Red Kentucky? - The New York Times S",
+        "url": "https://www.nytimes.com/2023/11/02/us/politics/andy-beshear-kentucky-biden.html"
+      },
+      {
+        "title": "Beshear won the 2019 election for ... campaigned on his healthcare and education policies ",
         "url": "https://ballotpedia.org/Andy_Beshear"
       },
       {
-        "title": "Gov. Beshear Secures Another Record-Breaking Year for Economic Growth",
-        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2364"
+        "title": "Kentucky governor flexes incumbency power in reelection bid | AP News Menu World SECTIONS ",
+        "url": "https://apnews.com/article/tornadoes-politics-kentucky-state-government-somerset-2022-midterm-elections-19d7c284c175f9c7e9b7f48946671484"
       },
       {
-        "title": "Andy Beshear - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Andy_Beshear"
+        "title": "This page contains a list of political endorsements made by Andy Beshear.",
+        "url": "https://ballotpedia.org/Endorsements_by_Andy_Beshear"
       },
       {
-        "title": "Gov. Beshear Restores Voting Rights to More Than 140,000 Kentuckians",
+        "title": "Though Beshear’s recent success could encourage some Democrats to run for the seat, it wou",
+        "url": "https://ballotpedia.org/United_States_Senate_election_in_Kentucky,_2026"
+      },
+      {
+        "title": "Smith completed Ballotpedia&#x27;s Candidate ... in 2022. Click here to read the survey an",
+        "url": "https://ballotpedia.org/Robbie_Smith"
+      },
+      {
+        "title": "Beshear assumed office in 2019. The state Constitution addresses the office of the governo",
+        "url": "https://ballotpedia.org/Governor_of_Kentucky"
+      },
+      {
+        "title": "The override vote was 69-23 in the state House, with all votes in favor by Republicans and",
+        "url": "https://ballotpedia.org/Kentucky_State_Senate_District_8"
+      },
+      {
+        "title": "Greenberg was first elected mayor in 2022 as a Democrat. Greenberg’s campaign website said",
+        "url": "https://news.ballotpedia.org/2026/05/19/louisville-kentucky-is-holding-its-first-nonpartisan-primaries-for-electing-mayor-and-metro-council-on-may-19/"
+      },
+      {
+        "title": "Andy Beshear · Secretary of State · R · Michael Adams · Speaker of the House · R · David O",
+        "url": "https://ballotpedia.org/wiki/index.php/Kentucky"
+      },
+      {
+        "title": "Beshear has served as governor since Dec. 10, 2019. He issued <strong>seven executive orde",
+        "url": "https://news.ballotpedia.org/2023/03/23/governor-andy-beshear-d-issues-one-executive-order-from-march-13-19/"
+      },
+      {
+        "title": "The override vote was 69-23 in the state House, with all votes in favor by Republicans and",
+        "url": "https://ballotpedia.org/Redistricting_in_Kentucky"
+      },
+      {
+        "title": "Andy Beshear is a <strong>Moderate Liberal Populist</strong> (Click for details)",
+        "url": "https://ontheissues.org/Andy_Beshear.htm"
+      },
+      {
+        "title": "[On NATO]: &quot;Today, we&#x27;re waking up to the news that Russia has engaged in a full",
+        "url": "https://ontheissues.org/governor/Andy_Beshear_Foreign_Policy.htm"
+      },
+      {
+        "title": "Unfortunately, that&#x27;s a decision many families have to make. As <strong>attorney gene",
+        "url": "https://ontheissues.org/Governor/Andy_Beshear_Energy_+_Oil.htm"
+      },
+      {
+        "title": "The AmericansElect.org quiz outlines how elected officials and public figures address poli",
+        "url": "https://ontheissues.org/Andy_Beshear_AE.htm"
+      },
+      {
+        "title": "He said many undocumented people get pulled over for a minor issue and they don&#x27;t hav",
+        "url": "https://ontheissues.org/Governor/Andy_Beshear_Immigration.htm"
+      },
+      {
+        "title": "Marriage Equality: <strong>I support the right of all Kentuckians to marry the person they",
+        "url": "https://ontheissues.org/governor/Andy_Beshear_Civil_Rights.htm"
+      },
+      {
+        "title": "Official Position: <strong>Candidate addressed this issue directly by taking the Political",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/156112/andy-beshear"
+      },
+      {
+        "title": "Track This Politician · General Website · General Website - Threads · Capitol Webmail · Ca",
+        "url": "https://justfacts.votesmart.org/candidate/156112/andy-beshear"
+      },
+      {
+        "title": "<strong>Vote Smart</strong> displays all known interest group ratings for each candidate a",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/156112/andy-beshear"
+      },
+      {
+        "title": "Track This Politician · General Website · General Website - Threads · Capitol Webmail · Ca",
+        "url": "https://justfacts.votesmart.org/candidate/biography/156112/andy-beshear"
+      },
+      {
+        "title": "Each key vote selection is reviewed by the project&#x27;s community of advisors, who are p",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/156112/andy-beshear"
+      },
+      {
+        "title": "Print Track This Politician · Campaign Email info@andybeshear.com · Campaign Webmail https",
+        "url": "https://votesmart.org/candidate/156112/andy-beshear?categoryId=93&type=V%2CS%2CR%2CE%2CF%2CP%2CE%2CE%2CE%2CE%2CE%2CE"
+      },
+      {
+        "title": "We cannot provide a description for this page right now",
+        "url": "https://votesmart.org/candidate/156112/andy-beshear?categoryId=75&filter=%5B%27V%27%2C+%27S%27%2C+%27R%27%2C+%27E%27%2C+%27F%27%2C+%27P%27%5D"
+      },
+      {
+        "title": "This is the point where if you really care about someone and you know they&#x27;re unvacci",
+        "url": "https://justfacts.votesmart.org/public-statement/1553601/cnn-cnn-newsroom-transcript-interview-with-andy-beshear/?search=COVID"
+      },
+      {
+        "title": "Track This Politician · General Website · General Website - Threads · Capitol Webmail · Ca",
+        "url": "https://justfacts.votesmart.org/candidate/campaign-finance/156112/andy-beshear"
+      },
+      {
+        "title": "For assistance, please call our candidate line at 515-989-6359 or email politicalcourage@v",
+        "url": "https://secure.votesmart.org/loadLogin.action;jsessionid=F2CD2AC03A41D48A887F5C8C3665CDA7"
+      },
+      {
+        "title": "Turn on more accessible mode Turn off more accessible mode Skip to Main Navigation Skip to",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=1284"
+      },
+      {
+        "title": "Governor Andy Beshear - Kentucky Governor Andy Beshear Skip to main navigation Skip to mai",
+        "url": "https://governor.ky.gov/about/governor-andy-beshear"
+      },
+      {
+        "title": "Signature Accomplishments - Kentucky Governor Andy Beshear Skip to main navigation Skip to",
+        "url": "https://governor.ky.gov/accomplishments"
+      },
+      {
+        "title": "%PDF-1.7 %���� 8669 0 obj >stream h޼X[O�:\u0010�+�� �\u0015Llǎ#��z� �Ca/\u0007�!ۚ6\"MP\u001aX8���8mIJ/,�g�%�=3 ",
+        "url": "https://osbd.ky.gov/Publications/Documents/Budget%20Documents/2026-2028%20Executive%20Budget%20Recommendation/2026-28%20Executive%20Budget%20-%20Budget%20in%20Brief.pdf"
+      },
+      {
+        "title": "%PDF-1.6 %���� 10341 0 obj >stream h�\\�O �0\u0018�񯲛zP���\u0007\u0011, :\u0014\u0012A� �{���m���Ct�� >stream h޲P0P��",
+        "url": "https://osbd.ky.gov/Documents/Most%20Recent%20Publications/00-2024-26_BIB-Budget-FINAL.pdf"
+      },
+      {
+        "title": "Turn on more accessible mode Turn off more accessible mode Skip to Main Navigation Skip to",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2057"
+      },
+      {
+        "title": "News - Kentucky Governor Andy Beshear Skip to main navigation Skip to main content Ky. gov",
+        "url": "https://governor.ky.gov/news"
+      },
+      {
+        "title": "And that&#x27;s how he&#x27;s treating these families.&quot; Some political analysts have ",
+        "url": "https://www.npr.org/2025/10/02/nx-s1-5556912/kentucky-democrat-andy-beshear"
+      },
+      {
+        "title": "Gov. Beshear vetoed the bill on <strong>March 13,</strong> and the Kentucky House voted on",
+        "url": "https://news.ballotpedia.org/2026/03/25/kentucky-legislature-overrides-veto-of-bill-opting-into-federal-school-choice-tax-credit-scholarship-program/"
+      },
+      {
+        "title": "Beshear in April 2021 that <strong>allocated $300 million in federal American Rescue Plan ",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=1374"
+      },
+      {
+        "title": "FRANKFORT, Ky. (March 25, 2025) – Gov. Andy Beshear has taken additional action by signing",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2441"
+      },
+      {
+        "title": "“We do have the funds to get this done, and thus I’ve approved that $14.7 million increase",
+        "url": "https://apnews.com/article/kentucky-education-funding-d46142dd66e2db3d3489005ba434935d"
+      },
+      {
+        "title": "The bills that received my veto are bills that harm Kentucky workers or violate our consti",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2440"
+      },
+      {
+        "title": "ATTENTION: CED staff is currently ... Ky. (June 11, 2026) – Today, Gov. Andy Beshear highl",
+        "url": "https://newkentuckyhome.ky.gov/Newsroom/NewsPage/20260611_BSSC"
+      },
+      {
+        "title": "FRANKFORT, Ky. (June 2, 2026) – Today, Gov. Andy Beshear signed an executive order directi",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2766"
+      },
+      {
+        "title": "The specific crimes excluded from the restoration executive order include treason; bribery",
         "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=4"
       },
       {
-        "title": "Beshear signs executive order designed to limit conversion therapy in Kentucky",
-        "url": "https://www.lpm.org/news/2024-09-18/beshear-signs-executive-order-designed-to-limit-conversion-therapy-in-kentucky"
+        "title": "• Signed legislation to raise the amount of available assistance from the Kentucky Nationa",
+        "url": "https://governor.ky.gov/Priority/Documents/PRIORITIES_Supporting-Our-Military.pdf"
+      },
+      {
+        "title": "“Team Kentucky is fulfilling a promise not just to the people of Eastern Kentucky but to t",
+        "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2086"
+      },
+      {
+        "title": "(KPTIA) took another step forward today in building the new Interstate Highway 69 bridge p",
+        "url": "https://transportation.ky.gov/NewsRoom/KPTIA%20I-69%20Bridge%20Project%20Advances%20-%20Jan.%202026.pdf"
       }
     ]
   }

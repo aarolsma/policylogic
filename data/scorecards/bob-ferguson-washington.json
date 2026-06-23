@@ -4,81 +4,736 @@
     "role": "Governor",
     "jurisdiction": "Washington",
     "party": "Democratic",
-    "photo_url": "",
     "term_start": "2025-01-15",
-    "term_end": "2029-01-15"
+    "term_end": "2029-01-15",
+    "election_date": "2024-11-05",
+    "next_election": "2028-11-07",
+    "office_phone": "",
+    "office_address": "",
+    "office_website": ""
   },
   "summary": {
-    "overall_grade": "I",
-    "kept": 0,
-    "broken": 0,
-    "in_progress": 6,
-    "stalled": 0,
-    "total": 6,
-    "narrative": "Governor Bob Ferguson took office in January 2025 and is in the early months of his first term. Most campaign promises are still in the early implementation phase, making it premature to assign a definitive grade. His administration has signaled priorities on climate policy reform, protecting against federal policy changes, and limiting emergency powers."
+    "overall_grade": "C",
+    "grade_input_pct": 58.15,
+    "delivery_ratio": 0.5528,
+    "narrative": "Ferguson delivered on a majority of his marquee campaign commitments this term: the $100M local police-hiring grant program (HB 2015), the ~$20M-plus Washington State Ferries crew investment, CHIP affordable-housing infrastructure grants, historic Housing Trust Fund investments, reproductive-health protections, and enactment of the Millionaires' Tax (SB 6346). The 200,000-housing-unit goal shows early executive and budget action but no documented progress toward the numeric target. Two priorities moved against the promised direction or stalled: universal free school lunch was scaled back before being partially funded via the tax law, and Working Connections childcare faced proposed cuts rather than the promised $100M expansion.",
+    "grade_rationale": "The record shows several fully delivered, high-clarity commitments backed by signed legislation and budget appropriations, alongside one large quantitative goal with only early action and two commitments (childcare expansion, school lunch) that contracted in scope or reversed direction. The pattern is strong delivery on legislatively achievable priorities the governor drove, weaker performance on the largest multi-year structural target and on commitments squeezed by budget shortfalls.",
+    "ambition_level": "High",
+    "total_promises": 11,
+    "total": 11
   },
   "promises": [
     {
-      "id": 1,
-      "text": "Protect Washingtonians from harmful impacts of Project 2025 federal policies",
-      "domain_label": "Civil Rights",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "Ferguson created a dedicated transition subcommittee focused on Project 2025 protections before taking office and has made this a stated priority of his administration.",
-      "source_url": "https://governor.wa.gov/news/governor-elect-bob-ferguson-creates-transition-committee-prepare-potential-harms-project-2025",
-      "date_checked": "2026-03-09"
+      "text": "Build 200,000 housing units in Washington over the next four years.",
+      "domain_label": "Economy",
+      "status": "in_committee",
+      "confidence": "medium",
+      "delivery": "D1",
+      "their_role": 0.6,
+      "difficulty": "H3",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 0.972,
+      "difficulty_earned": 1.25,
+      "promise_score": 10.222,
+      "what_happened": [
+        "2025-01-15: Signed EO 25-02 addressing affordable housing crisis and EO 25-03 on permitting (c95).",
+        "2025-05-07: Signed suite of affordable housing bills including HB 1217 (c187).",
+        "2025-12-18: Announced $244M housing investments and EO 25-12 housing task force (c94).",
+        "2026-03-27: Signed SB 6026 allowing housing in commercial/mixed-use zones (c126).",
+        "2026-04-01: Stated total biennium affordable housing investment reached $960M (c101)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Governor Ferguson announces historic investments in affordable housing, executive order to",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-historic-investments-affordable-housing-executive-order-help-establish"
+        },
+        {
+          "title": "Executive Orders | Governor Bob Ferguson Skip to main content An official website of the W",
+          "url": "https://governor.wa.gov/office-governor/office/official-actions/executive-orders"
+        },
+        {
+          "title": "That brings Washington’s total affordable housing investment for this biennium to <strong>",
+          "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-supplemental-budgets"
+        },
+        {
+          "title": "EVERETT — Governor Bob Ferguson signed a slate of bills today aimed at improving our state",
+          "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-bills-improving-housing"
+        },
+        {
+          "title": "While on the campaign trail, <strong>Ferguson pledged to build 200,000 new units of housin",
+          "url": "https://www.spokesman.com/stories/2025/dec/18/gov-ferguson-unveils-244m-affordable-housing-plan/"
+        },
+        {
+          "title": "HOME and NHTF NOFA #MHU-2025-02: ... Consolidated Plan (CONPLAN). Both applications close ",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-212-million-funding-affordable-rental-housing-statewide"
+        }
+      ]
     },
     {
-      "id": 2,
-      "text": "Reform implementation of the Climate Commitment Act, particularly for farmers",
-      "domain_label": "Environment",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Ferguson has publicly addressed lawmakers about improving Climate Commitment Act implementation with specific focus on agricultural impacts, but legislative changes are still being negotiated.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Make a historic investment in the Housing Trust Fund to build and preserve affordable housing for marginalized communities.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2025: Construction budget directed $605M to Housing Trust Fund (c134).",
+        "2025-08-05: Announced $212M NOFA round for affordable rental housing (c133).",
+        "2025-12-18: Proposed $225M in bonds to Housing Trust Fund (c94).",
+        "2026-04-01: Cited $960M total biennial affordable housing investment as largest ever (c101)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "The sum Ferguson is proposing builds upon $760 million in spending on affordable housing t",
+          "url": "https://www.tricitiesbusinessnews.com/articles/ferguson-proposes-244m-boost-for-housing-programs"
+        },
+        {
+          "title": "Governor Ferguson announces historic investments in affordable housing, executive order to",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-historic-investments-affordable-housing-executive-order-help-establish"
+        },
+        {
+          "title": "HOME and NHTF NOFA #MHU-2025-02: ... Consolidated Plan (CONPLAN). Both applications close ",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-212-million-funding-affordable-rental-housing-statewide"
+        },
+        {
+          "title": "That brings Washington’s total affordable housing investment for this biennium to <strong>",
+          "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-supplemental-budgets"
+        }
+      ]
     },
     {
-      "id": 3,
-      "text": "Limit the governor's emergency powers to prevent overreach",
-      "domain_label": "Government Reform",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Ferguson stated commitment to working with lawmakers on limiting executive emergency powers, a response to criticism of pandemic-era gubernatorial authority.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Establish a $100 million grant program to help understaffed local governments hire more police officers.",
+      "domain_label": "Safety & Justice",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2025-01-16: Budget priorities requested $100M for local law enforcement hiring (c143).",
+        "2025-05-19: Demanded legislature fund $100M; called it campaign cornerstone (c137).",
+        "2025-05-24: Signed HB 2015 creating public-safety grant system (c135).",
+        "Program set to expire June 30, 2028 (c140)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "<strong>Bob Ferguson angered many Democratic lawmakers by demanding the Legislature put $1",
+          "url": "https://www.spokesman.com/stories/2025/may/19/new-washington-law-directs-100m-in-grants-toward-h/"
+        },
+        {
+          "title": "<strong>Bob Ferguson angered many Democratic lawmakers by demanding the Legislature put $1",
+          "url": "https://washingtonstatestandard.com/2025/05/19/new-washington-law-directs-100m-in-grants-toward-hiring-police-improving-public-safety/"
+        },
+        {
+          "title": "On Monday, Ferguson signed <strong>HB 2015</strong> that creates a system to spend that am",
+          "url": "https://komonews.com/news/local/washington-governor-bob-ferguson-first-budget-house-bill-2015-public-safety-olympia-legislation-criminal-justice-training-commission-grant-applications-july-1-waspc-city-council"
+        },
+        {
+          "title": "<strong>June 30, 2028</strong> is the grant program’s expiration date. Candice Bock with t",
+          "url": "https://www.theolympian.com/news/politics-government/article306761831.html"
+        },
+        {
+          "title": "Ferguson’s budget priorities, released days before he took office, included one of his cam",
+          "url": "https://www.kuow.org/stories/wa-s-new-governor-takes-office-promises-big-changes-i-m-not-here-to-defend-government"
+        }
+      ]
     },
     {
-      "id": 4,
-      "text": "Protect reproductive rights and abortion access in Washington State",
+      "text": "Hire additional Washington State Patrol Troopers dedicated to solving auto thefts and hate crimes.",
+      "domain_label": "Safety & Justice",
+      "status": "not_pursued",
+      "confidence": "low",
+      "delivery": "D1",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 2.4,
+      "difficulty_earned": 0.75,
+      "promise_score": 9.15,
+      "what_happened": [],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Priorities | Governor Bob Ferguson Skip to main content An official website of the Washing",
+          "url": "https://governor.wa.gov/priorities"
+        }
+      ]
+    },
+    {
+      "text": "Implement a fentanyl crisis response plan using the opioid settlement, including treatment and law enforcement cooperation.",
       "domain_label": "Healthcare",
-      "status": "in_progress",
-      "grade": "B",
-      "evidence": "As Attorney General, Ferguson was a strong defender of reproductive rights. His administration has continued this stance, though no major new legislation has been enacted yet in his gubernatorial term.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "status": "in_committee",
+      "confidence": "low",
+      "delivery": "D2",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 4.8,
+      "difficulty_earned": 1.5,
+      "promise_score": 14.3,
+      "what_happened": [
+        "2024-11-26: Formed transition committee to develop fentanyl crisis-response plan (c13).",
+        "Opioid settlement funds (>$60M tranche) distributed to combat fentanyl (c199).",
+        "HB 2168 designed for statewide real-time overdose reporting referenced (c200)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "<strong>Deploy a statewide, interagency crisis response unit to tackle the fentanyl crisis",
+          "url": "https://www.bobferguson.com/publicsafety"
+        },
+        {
+          "title": "“This is real money that funds real resources that will save lives,” Ferguson said. “But I",
+          "url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-more-60-million-coming-washington-next-three-months-combat-fentanyl"
+        },
+        {
+          "title": "A good first step is something straightforward and achievable: Statewide coordination of r",
+          "url": "https://houserepublicans.wa.gov/buzz/capitol-buzz-scoop-governor-sign-off-rule-snarls-flow-of-information-in-washington-opinion-is-washington-serious-about-solutions-to-the-drug-crisis/"
+        },
+        {
+          "title": "Develop and implement a crisis response plan to combat the fentanyl epidemic",
+          "url": "https://governor.wa.gov/news/2024/governor-elect-bob-ferguson-forms-transition-committee-improve-public-safety"
+        }
+      ]
     },
     {
-      "id": 5,
-      "text": "Address housing affordability and increase housing supply",
-      "domain_label": "Housing",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Housing affordability was a campaign priority. Early budget proposals include housing investments, but major policy changes are still in legislative process.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Adopt universal free school lunches (breakfast and lunch) for all Washington K-12 public school students with a $120 million annual investment.",
+      "domain_label": "Education",
+      "status": "advanced",
+      "confidence": "medium",
+      "delivery": "D3",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 5,
+      "adjusted_delivery": 7.2,
+      "difficulty_earned": 2.25,
+      "promise_score": 14.45,
+      "what_happened": [
+        "2025-01-15: Inaugural address named free breakfast/lunch as first governor-request legislation (c156).",
+        "2025-02-25: Reporting that the universal free-meal plan was fading amid budget shortfall (c154).",
+        "2026-03-30: Signed SB 6346 (Millionaires' Tax) funding free breakfast and lunch for every K-12 student (c84)."
+      ],
+      "flags": {
+        "scope_reduced": true
+      },
+      "sources": [
+        {
+          "title": "To that end, I am excited to work with Senator Riccelli and Representative Berg on legisla",
+          "url": "https://www.king5.com/article/news/politics/state-politics/read-washington-gov-ferguson-inaugural-address/281-423345c0-c455-4a2d-8955-166256175844"
+        },
+        {
+          "title": "<strong>A plan backed by Gov. Bob Ferguson to provide free meals to all school children ap",
+          "url": "https://www.spokesman.com/stories/2025/feb/25/amid-budget-shortfall-plan-to-provide-free-lunch-f/"
+        },
+        {
+          "title": "However, <strong>it faced setbacks due to budget concerns</strong>; with an estimated cost",
+          "url": "https://www.ordo.com/articles/washington-state-pushes-for-free-school-meals-what-it-means-for-families-and-students-2"
+        },
+        {
+          "title": "Governor Ferguson signs Millionaires’ Tax into law | Governor Bob Ferguson Skip to main co",
+          "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-millionaires-tax-law"
+        },
+        {
+          "title": "The bill states an intent to use some of the money to fund breakfast and lunch for childre",
+          "url": "https://www.theurbanist.org/governor-ferguson-signs-millionaires-tax-prepares-for-legal-battle/"
+        }
+      ]
     },
     {
-      "id": 6,
-      "text": "Reform government operations rather than simply defend existing systems",
-      "domain_label": "Government Reform",
-      "status": "in_progress",
-      "grade": "C",
-      "evidence": "Ferguson stated at inauguration 'I'm not here to defend government' signaling intent to pursue reforms, though specific reform initiatives are still being developed.",
-      "source_url": null,
-      "date_checked": "2026-03-09"
+      "text": "Expand the Working Connections childcare program with a $100 million investment to cover families earning up to 75% of state median income with at least one parent working for a small business.",
+      "domain_label": "Education",
+      "status": "reversed",
+      "confidence": "medium",
+      "delivery": "D0",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 0.0,
+      "difficulty_earned": 0.0,
+      "promise_score": 8.0,
+      "what_happened": [
+        "2026-02-26: Ferguson floated cutting Working Connections to balance budget (c165).",
+        "2026-03-27/30: Supplemental budget included major cuts to Working Connections submitted to Ferguson (c162, c163)."
+      ],
+      "flags": {
+        "reversed": true
+      },
+      "sources": [
+        {
+          "title": "Education advocates were also disappointed that the supplemental budget included major cut",
+          "url": "https://www.opb.org/article/2026/03/30/washington-lawmakers-expand-free-preschool-access/"
+        },
+        {
+          "title": "Bob Ferguson’s office. “What we&#x27;ve done is we&#x27;ve actually taken less of a saving",
+          "url": "https://www.chronline.com/stories/washington-house-approves-100m-cut-to-working-families-child-care-subsidies-for-2027,397652"
+        },
+        {
+          "title": "There’s also $15 million in reductions in both budgets from eliminating longstanding enhan",
+          "url": "https://www.kuow.org/stories/why-wa-child-care-program-could-bear-brunt-of-budget-cuts"
+        },
+        {
+          "title": "Bob Ferguson’s office. “What we&#x27;ve done is we&#x27;ve actually taken less of a saving",
+          "url": "https://www.thecentersquare.com/washington/article_5d6888cf-be2e-43dd-9469-dcfc6fba0082.html"
+        }
+      ]
+    },
+    {
+      "text": "Invest nearly $20 million in Washington State Ferries to increase crew retention and recruitment, renew year-round interisland services, and increase winter service.",
+      "domain_label": "Governance",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S2",
+      "magnitude": "M2",
+      "impact": 4,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 16.6,
+      "what_happened": [
+        "2025-01: Newsletter affirmed ~$20M ferry crew investment commitment (c171).",
+        "2025-05-17: Signed HB 1264 addressing ferry crew compensation (c173).",
+        "2025-07-01: Budget invests >$39M for ferry crew hiring/retention/training (c169)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "<strong>The budget signed by Governor Ferguson invests more than $39 million for crew hiri",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-selects-eastern-shipbuilding-group-construct-new-ferries"
+        },
+        {
+          "title": "We are also investing in solutions to combat gun violence and support vulnerable people. I",
+          "url": "https://governor.wa.gov/news/newsletters/january-2025-newsletter"
+        },
+        {
+          "title": "Bob Ferguson named fixing our ferry system a top priority during his campaign. Once electe",
+          "url": "https://www.sanjuanjournal.com/2025/05/24/update-on-washington-state-ferries-crew-shortages/"
+        }
+      ]
+    },
+    {
+      "text": "Extend affordable housing through the Connecting Housing to Infrastructure Program (CHIP) by funding utility connections and reducing related fees for affordable and multifamily units.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M2",
+      "impact": 6,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2025: Announced $14.6M CHIP grants for 1,800+ affordable units in 10 counties (c185).",
+        "2025-12-18: Proposed additional $6M to modernize permitting alongside CHIP (c94)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Bob Ferguson and the Washington State Department of Commerce announced <strong>$14.6 milli",
+          "url": "https://governor.wa.gov/news/2025/making-things-happen-affordable-housing-gov-ferguson-commerce-invest-146-million-reduce-costs"
+        },
+        {
+          "title": "Governor Ferguson announces historic investments in affordable housing, executive order to",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-historic-investments-affordable-housing-executive-order-help-establish"
+        }
+      ]
+    },
+    {
+      "text": "Protect Washingtonians' right to access reproductive health care.",
+      "domain_label": "Healthcare",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H1",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 1.0,
+      "promise_score": 18.6,
+      "what_happened": [
+        "2025-01-15: Signed EO 25-01 protecting access to reproductive health care (c95).",
+        "2025-07-09: Announced state would backfill ~$11M federal Planned Parenthood funding (c190, c196).",
+        "2026-03-14: Signed law strengthening distribution of stockpiled medication abortion (c197)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Executive Orders | Governor Bob Ferguson Skip to main content An official website of the W",
+          "url": "https://governor.wa.gov/office-governor/office/official-actions/executive-orders"
+        },
+        {
+          "title": "SEATTLE — Governor Bob Ferguson announced today that Washington state will cover the gap c",
+          "url": "https://governor.wa.gov/news/2025/governor-ferguson-washington-will-cover-gap-caused-federal-attempt-defund-planned-parenthood"
+        },
+        {
+          "title": "Bob Ferguson said Wednesday that <strong>Washington would backfill approximately $11 milli",
+          "url": "https://www.spokesman.com/stories/2025/jul/09/ferguson-pledges-state-funds-to-backfill-lost-fede/"
+        },
+        {
+          "title": "Olympia, WA — On Saturday, March 14, Governor Bob Ferguson signed legislation to strengthe",
+          "url": "https://prochoicewashington.org/2026/03/18/pro-choice-washington-applauds-new-law-improving-distribution-of-stockpile/"
+        }
+      ]
+    },
+    {
+      "text": "Propose a Millionaires' Tax surtax on those earning more than $1 million a year.",
+      "domain_label": "Economy",
+      "status": "kept",
+      "confidence": "high",
+      "delivery": "D4",
+      "their_role": 0.8,
+      "difficulty": "H2",
+      "scale": "S3",
+      "magnitude": "M3",
+      "impact": 8,
+      "adjusted_delivery": 9.6,
+      "difficulty_earned": 3.0,
+      "promise_score": 20.6,
+      "what_happened": [
+        "2026-02-03: Rejected lawmakers' initial income-tax bill as insufficient (c212).",
+        "2026-03-10: Tax bill advanced through House (c211).",
+        "2026-03-30: Signed SB 6346, 9.9% tax on income over $1M (c84, c206)."
+      ],
+      "flags": {},
+      "sources": [
+        {
+          "title": "Governor Ferguson signs Millionaires’ Tax into law | Governor Bob Ferguson Skip to main co",
+          "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-millionaires-tax-law"
+        },
+        {
+          "title": "Overall, all Republicans and 11 Democrats — three in the Senate and eight in the House — o",
+          "url": "https://washingtonstatestandard.com/2026/03/30/income-tax-signed-in-washington-with-a-legal-challenge-close-behind/"
+        },
+        {
+          "title": "Why it matters: The tax, which ... will make the state&#x27;s tax code fairer. Zoom in: <s",
+          "url": "https://www.axios.com/local/seattle/2026/03/30/bob-ferguson-washington-income-tax-millionaires-2028-law"
+        },
+        {
+          "title": "<strong>It did not pass</strong>. Lawmakers on the House floor in the early hours of March",
+          "url": "https://www.governing.com/finance/washington-moves-one-step-closer-to-a-millionaires-tax"
+        }
+      ]
     }
   ],
-  "last_updated": "2026-03-09",
-  "methodology_version": "1.0"
+  "data_gaps": [
+    "No prior terms in seat. Several delivery sources are Tier-3 opinion/conservative outlets (seattlered, mynorthwest) for the tax-promise contestation — used cautiously and flagged CONTESTED. The 200,000-unit promise lacks any unit-count tracking evidence (LIMITED EVIDENCE). The WSP troopers commitment has no located delivery evidence beyond the priorities page. Working Connections classified D0/REVERSED based on multiple reports of proposed cuts; reviewer should confirm final enacted figures. Free-school-lunch funding via SB 6346 is contested as non-enforceable (c181)."
+  ],
+  "term_identity": {
+    "term_id": "gov-wa-2025",
+    "ordinal": "current term",
+    "status": "in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 35.8,
+    "office": "Governor",
+    "jurisdiction": "Washington",
+    "term_start": "2025-01-15",
+    "term_end": "2029-01-15"
+  },
+  "person_ref": "bob-ferguson-washington",
+  "sibling_terms": [],
+  "card_type_flags": [
+    "CURRENT TERM",
+    "PROVISIONAL"
+  ],
+  "provisional_status": {
+    "provisional": true,
+    "reason": "term_in_progress",
+    "as_of": "2026-06-22",
+    "pct_elapsed": 35.8,
+    "display": "Grade is record-to-date — term in progress, 35.8% elapsed (as of 2026-06-22). It will change as the term continues.",
+    "note": "Distinct from any per-promise 'PROVISIONAL (early-term)' flag in scorecard.card_flags, which concerns a single promise's own deadline, not the term's completeness."
+  },
+  "_meta": {
+    "term_id": "gov-wa-2025",
+    "method": "v2-deterministic",
+    "model": "claude-opus-4-8",
+    "data_pulled": "2026-06-22T23:32:26+00:00",
+    "generated_at": "2026-06-23T00:20:14+00:00",
+    "review_status": "draft",
+    "card_flags": [
+      "PROVISIONAL (early-term)"
+    ],
+    "sources": [
+      {
+        "title": "Build 200,000 housing units in Washington over the next four years",
+        "url": "https://governor.wa.gov/priorities"
+      },
+      {
+        "title": "Develop and implement a crisis response plan to combat the fentanyl epidemic",
+        "url": "https://governor.wa.gov/news/2024/governor-elect-bob-ferguson-forms-transition-committee-improve-public-safety"
+      },
+      {
+        "title": "Ban the sale of assault weapons and high-capacity magazines",
+        "url": "https://www.ontheissues.org/Bob_Ferguson_VoteMatch.htm"
+      },
+      {
+        "title": "Democrat Bob Ferguson wins Washington governor's race : 2024 Election: Trump wins 2nd term",
+        "url": "https://www.npr.org/2024/11/05/g-s1-32806/washington-governor-results-ferguson"
+      },
+      {
+        "title": "Please list below 3 key messages of your campaign. What are the main points you want voter",
+        "url": "https://ballotpedia.org/Washington_gubernatorial_election,_2024"
+      },
+      {
+        "title": "↑ The Reflector, &quot;Reichert strikes different tone in second debate with Ferguson,&quo",
+        "url": "https://ballotpedia.org/Bob_Ferguson"
+      },
+      {
+        "title": "Ferguson campaign has received the most contributions in race for Washington governor - Ba",
+        "url": "https://news.ballotpedia.org/2024/04/15/ferguson-campaign-has-received-the-most-contributions-in-race-for-washington-governor/"
+      },
+      {
+        "title": "Bob Ferguson <strong>defeated Dave Reichert in the general election for Governor of Washin",
+        "url": "https://ballotpedia.org/Robert_Benjamin_Ferguson"
+      },
+      {
+        "title": "Twenty-eight candidates are running in the top-two primary for governor of Washington - Se",
+        "url": "https://news.ballotpedia.org/2024/06/28/twenty-eight-candidates-are-running-in-the-top-two-primary-for-governor-of-washington-semi-bird-r-bob-ferguson-d-mark-mullet-d-and-dave-reichert-r-lead-in-media-coverage-and-endorsements/"
+      },
+      {
+        "title": "Bob Ferguson (D) and Dave Reichert (R) advanced from Washington&#039;s top-two gubernatori",
+        "url": "https://news.ballotpedia.org/2024/08/08/bob-ferguson-d-and-dave-reichert-r-advanced-from-washingtons-top-two-gubernatorial-primary/"
+      },
+      {
+        "title": "Bob Ferguson <strong>defeated Dave Reichert in the general election for Governor of Washin",
+        "url": "https://ballotpedia.org/Robert_Arthur_Ferguson"
+      },
+      {
+        "title": "This page contains a list of political endorsements made by Bob Ferguson.",
+        "url": "https://ballotpedia.org/Endorsements_by_Bob_Ferguson"
+      },
+      {
+        "title": "Three candidates are running in the top-two primary for Washington Attorney General on Aug",
+        "url": "https://news.ballotpedia.org/2024/07/18/three-candidates-are-running-in-the-top-two-primary-for-washington-attorney-general-on-august-6-2024/"
+      },
+      {
+        "title": "Bob Ferguson (D) and Dave Reichert (R) advanced to the general election on <strong>Novembe",
+        "url": "https://ballotpedia.org/Washington_gubernatorial_election,_2024_(August_6_top-two_primary)"
+      },
+      {
+        "title": "Bob is holding wage theft violators accountable with both civil and criminal prosecutions.",
+        "url": "https://ontheissues.org/Governor/Bob_Ferguson_Jobs.htm"
+      },
+      {
+        "title": "<strong>Bob Ferguson</strong> is a Moderate Liberal (Click for details)",
+        "url": "https://ontheissues.org/Bob_Ferguson.htm"
+      },
+      {
+        "title": "Washington state officials, including Gov. Jay Inslee and Attorney General <strong>Bob Fer",
+        "url": "https://ontheissues.org/Governor/Bob_Ferguson_Drugs.htm"
+      },
+      {
+        "title": "Bob is an <strong>internationally rated chess master</strong>.",
+        "url": "https://ontheissues.org/Governor/Bob_Ferguson_Principles_+_Values.htm"
+      },
+      {
+        "title": "WA Gubernatorial: <strong>Bob Ferguson</strong> Dave Reichert Hilary Franz Jay Inslee Mark",
+        "url": "https://www.ontheissues.org/Domestic/Maria_Cantwell_Gun_Control.htm"
+      },
+      {
+        "title": "<strong>2024 Gubernatorial campaign websites: Delaware.gov, Office of the Lieutenant Gover",
+        "url": "https://www.ontheissues.org/2024_Gov_Web.htm"
+      },
+      {
+        "title": "Contact Chase LaPorte · VoteMatch Responses (Click here for VoteMatch quiz) VoteMatch Ques",
+        "url": "https://www.ontheissues.org/Chase_LaPorte.htm"
+      },
+      {
+        "title": "Stacey Abrams Democratic Gubernatorial Challenger (GA); 2020 Veepstakes contender · Keisha",
+        "url": "https://www.ontheissues.org/states/ga.htm"
+      },
+      {
+        "title": "Prohibit federal funding for abortion. West signed No Taxpayer Funding for Abortion Act · ",
+        "url": "https://www.ontheissues.org/Governor/Allen_West_Abortion.htm"
+      },
+      {
+        "title": "Track This Politician · Capitol Webmail · Capitol Website · More Office Contactskeyboard_a",
+        "url": "https://justfacts.votesmart.org/candidate/95581/bob-ferguson"
+      },
+      {
+        "title": "Keep in mind that ratings done by special interest groups often do not represent a non-par",
+        "url": "https://justfacts.votesmart.org/candidate/evaluations/95581/bob-ferguson"
+      },
+      {
+        "title": "Vote Smart’s staff and board of national leaders reach out to candidates before each elect",
+        "url": "https://justfacts.votesmart.org/about/political-courage-test/"
+      },
+      {
+        "title": "Political Courage Test Forms · Biographical Form · Presidential Political Courage Test · C",
+        "url": "https://votesmart.org/for-candidates/forms"
+      },
+      {
+        "title": "While many procedural votes take place before a full chamber vote, our voting stages refle",
+        "url": "https://justfacts.votesmart.org/candidate/key-votes/95581/bob-ferguson"
+      },
+      {
+        "title": "A candidate&#x27;s political courage is calculated based on the number of issue areas the ",
+        "url": "https://votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Track This Politician · Capitol Webmail · Capitol Website · More Office Contactskeyboard_a",
+        "url": "https://justfacts.votesmart.org/candidate/campaign-finance/95581/bob-ferguson"
+      },
+      {
+        "title": "Vote Smart provides free, factual, unbiased information on candidates and elected official",
+        "url": "https://www.votesmart.org/candidate/political-courage-test/28437"
+      },
+      {
+        "title": "<strong>Bob Godfrey did not provide voters with positions on key issues covered by the 202",
+        "url": "https://justfacts.votesmart.org/candidate/political-courage-test/7193/bob-godfrey"
+      },
+      {
+        "title": "Candidates are free to address ... one aspect of political courage: <strong>candidates&#x2",
+        "url": "https://justfacts.votesmart.org/for-candidates/"
+      },
+      {
+        "title": "Developing strategies to implement Ferguson’s key budget and policy priorities for his fir",
+        "url": "https://governor.wa.gov/news/2024/governor-elect-bob-ferguson-announces-transition-team"
+      },
+      {
+        "title": "Governor Ferguson signs Millionaires’ Tax into law | Governor Bob Ferguson Skip to main co",
+        "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-millionaires-tax-law"
+      },
+      {
+        "title": "News Releases | Governor Bob Ferguson Skip to main content An official website of the Wash",
+        "url": "https://governor.wa.gov/news/news-releases"
+      },
+      {
+        "title": "Governor Bob Ferguson signs bill restricting armed forces from entering Washington | Gover",
+        "url": "https://governor.wa.gov/news/2025/governor-bob-ferguson-signs-bill-restricting-armed-forces-entering-washington"
+      },
+      {
+        "title": "Official Actions | Governor Bob Ferguson Skip to main content An official website of the W",
+        "url": "https://governor.wa.gov/official-actions"
+      },
+      {
+        "title": "Home | Governor Bob Ferguson Skip to main content An official website of the Washington st",
+        "url": "https://governor.wa.gov/"
+      },
+      {
+        "title": "Governor Ferguson announces historic investments in affordable housing, executive order to",
+        "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-historic-investments-affordable-housing-executive-order-help-establish"
+      },
+      {
+        "title": "Executive Orders | Governor Bob Ferguson Skip to main content An official website of the W",
+        "url": "https://governor.wa.gov/office-governor/office/official-actions/executive-orders"
+      },
+      {
+        "title": "<strong>Cities and counties in Washington state will face their own choices, but Washingto",
+        "url": "https://governor.wa.gov/news/speeches/federal-funding-and-executive-orders-response"
+      },
+      {
+        "title": "Due to caseload increases and other costs, the state is facing another $1.6 billion dollar",
+        "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-supplemental-budget"
+      },
+      {
+        "title": "That brings Washington’s total affordable housing investment for this biennium to <strong>",
+        "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-supplemental-budgets"
+      },
+      {
+        "title": "About First Lady Colleen Ferguson · Executive Cabinet · Executive Leadership Team · Job Op",
+        "url": "https://governor.wa.gov/office-governor/office/official-actions/directives"
+      },
+      {
+        "title": "KING TV — Washington business owners are sounding the alarm after Gov. Bob Ferguson vetoed",
+        "url": "https://houserepublicans.wa.gov/buzz/capitol-buzz-governors-veto-of-retail-theft-funding-alarms-business-owners-despite-state-law-most-people-ordered-to-use-ignition-interlock-device-dont-use-them/"
+      },
+      {
+        "title": "EVERETT — Governor Bob Ferguson signed a slate of bills today aimed at improving our state",
+        "url": "https://governor.wa.gov/news/2026/governor-ferguson-signs-bills-improving-housing"
+      },
+      {
+        "title": "HOME and NHTF NOFA #MHU-2025-02: ... Consolidated Plan (CONPLAN). Both applications close ",
+        "url": "https://governor.wa.gov/news/2025/governor-ferguson-announces-212-million-funding-affordable-rental-housing-statewide"
+      },
+      {
+        "title": "Reviews and makes recommendations to the Legislature and the Governor regarding moto vehic",
+        "url": "https://governor.wa.gov/boards-commissions/board-commission-profiles/Auto%20Theft%20Prevention%20Authority"
+      },
+      {
+        "title": "Get information on the laws, bills, and orders that govern Washington state. Orders issued",
+        "url": "https://governor.wa.gov/?lang=en"
+      },
+      {
+        "title": "Bob Ferguson signed into law the <strong>2025–27 state operating budget</strong> that incl",
+        "url": "https://dcyf.wa.gov/news/2025-27-state-budget-impacts-early-learning"
+      },
+      {
+        "title": "<strong>The budget signed by Governor Ferguson invests more than $39 million for crew hiri",
+        "url": "https://governor.wa.gov/news/2025/governor-ferguson-selects-eastern-shipbuilding-group-construct-new-ferries"
+      },
+      {
+        "title": "We are also investing in solutions to combat gun violence and support vulnerable people. I",
+        "url": "https://governor.wa.gov/news/newsletters/january-2025-newsletter"
+      },
+      {
+        "title": "Bob Ferguson and the Washington State Department of Commerce announced <strong>$14.6 milli",
+        "url": "https://governor.wa.gov/news/2025/making-things-happen-affordable-housing-gov-ferguson-commerce-invest-146-million-reduce-costs"
+      },
+      {
+        "title": "SEATTLE — Governor Bob Ferguson today signed a suite of bills that address affordable hous",
+        "url": "https://governor.wa.gov/news/2025/governor-ferguson-signs-rent-stabilization-affordable-housing-bills"
+      },
+      {
+        "title": "SEATTLE — Governor Bob Ferguson announced today that Washington state will cover the gap c",
+        "url": "https://governor.wa.gov/news/2025/governor-ferguson-washington-will-cover-gap-caused-federal-attempt-defund-planned-parenthood"
+      },
+      {
+        "title": "“This is real money that funds real resources that will save lives,” Ferguson said. “But I",
+        "url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-more-60-million-coming-washington-next-three-months-combat-fentanyl"
+      },
+      {
+        "title": "A good first step is something straightforward and achievable: Statewide coordination of r",
+        "url": "https://houserepublicans.wa.gov/buzz/capitol-buzz-scoop-governor-sign-off-rule-snarls-flow-of-information-in-washington-opinion-is-washington-serious-about-solutions-to-the-drug-crisis/"
+      },
+      {
+        "title": "Court rejects request to temporarily block new law while legal challenges continue SEATTLE",
+        "url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-defeats-first-attempt-block-washington-s-ban-sale-assault-weapons"
+      },
+      {
+        "title": "This legislation prohibits the sale, manufacture, and import of assault weapons in Washing",
+        "url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-gov-inslee-legislation-banning-sale-assault-weapons-passes-house"
+      },
+      {
+        "title": "YAKIMA — Attorney General Bob Ferguson released the following statement today after a fede",
+        "url": "https://www.atg.wa.gov/news/news-releases/ag-ferguson-s-statement-after-successfully-defending-high-capacity-magazine"
+      },
+      {
+        "title": "<strong>It did not pass</strong>. Lawmakers on the House floor in the early hours of March",
+        "url": "https://www.governing.com/finance/washington-moves-one-step-closer-to-a-millionaires-tax"
+      }
+    ]
+  }
 }
