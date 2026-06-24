@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology · PolicyLogic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --paper: #f5f0e8; --cream: #ede8dc;
+    --rule: #d4c9b4; --gold: #b8892a; --gray: #6b6459;
+    --red: #c0392b; --green: #1a6b3c; --blue: #1a3a6b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overscroll-behavior-y: none; }
+
+  /* ── MASTHEAD ── */
+  .masthead { border-bottom: 3px double var(--ink); padding: 32px 40px 22px; text-align: center; position: relative; }
+  .masthead::before { content: ''; display: block; height: 2px; background: var(--ink); margin-bottom: 24px; }
+  .masthead-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 76px); font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin-bottom: 10px; }
+  .masthead-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(13px, 2vw, 18px); color: var(--gray); margin-bottom: 16px; }
+  .masthead-rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin-top: 14px; margin-bottom: 14px; }
+  .masthead-rule span { flex: 1; max-width: 120px; height: 1px; background: var(--ink); display: inline-block; }
+  .masthead-rule em { font-family: 'DM Mono', monospace; font-style: normal; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+  .masthead-nav { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 12px; border-top: 1px solid var(--rule); margin-top: 6px; flex-wrap: wrap; }
+  .masthead-nav a { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .masthead-nav a:hover, .masthead-nav a.active { color: var(--ink); font-weight: 500; }
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-trigger { cursor: pointer; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.15s; line-height: 1; }
+  .nav-dropdown-trigger:hover { color: var(--ink); font-weight: 500; }
+  .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--ink); min-width: 160px; z-index: 200; padding: 6px 0; }
+  .nav-dropdown-menu a { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-decoration: none; padding: 7px 16px; transition: all 0.12s; white-space: nowrap; line-height: 1; }
+  .nav-dropdown-menu a:hover { color: var(--ink); background: var(--cream); }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu::before { content: ''; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+
+  /* ── TAB NAV ── */
+  .tab-nav { border-bottom: 2px solid var(--ink); background: var(--cream); position: sticky; top: 0; z-index: 100; overscroll-behavior: none; }
+  .tab-nav-inner { max-width: 900px; margin: 0 auto; padding: 0 40px; display: flex; gap: 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; -ms-overflow-style: none; -webkit-overflow-scrolling: touch; }
+  .tab-nav-inner::-webkit-scrollbar { display: none; }
+  .tab-btn { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 13px 18px; cursor: pointer; transition: all 0.15s; white-space: nowrap; text-decoration: none; display: inline-block; }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn.active { color: var(--ink); font-weight: 500; border-bottom-color: var(--ink); }
+  
+
+  /* ── LAYOUT ── */
+  .wrap { max-width: 900px; margin: 0 auto; padding: 56px 40px 80px; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .page-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.1; margin-bottom: 8px; }
+  .page-deck { font-family: 'Playfair Display', serif; font-style: italic; font-size: 17px; color: var(--gray); margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--rule); line-height: 1.5; }
+
+  .draft-banner { background: var(--cream); border: 1px solid var(--rule); border-left: 4px solid var(--gold); padding: 14px 18px; margin-bottom: 36px; font-size: 13px; line-height: 1.6; color: var(--gray); }
+  .draft-banner strong { color: var(--ink); font-weight: 500; }
+
+  /* ── TYPOGRAPHY ── */
+  h2 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  h3 { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); margin-top: 28px; margin-bottom: 8px; }
+  p { font-size: 14px; color: var(--ink); margin-bottom: 14px; line-height: 1.75; }
+  p:last-child { margin-bottom: 0; }
+
+  /* ── TABLES ── */
+  .rubric-table { width: 100%; border-collapse: collapse; margin: 14px 0 24px; font-size: 13px; }
+  .rubric-table th { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); padding: 8px 12px; text-align: left; border-bottom: 2px solid var(--ink); background: var(--cream); }
+  .rubric-table td { padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.55; }
+  .rubric-table tr:last-child td { border-bottom: none; }
+  .rubric-table tr:nth-child(even) td { background: rgba(212,201,180,0.15); }
+  .code { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 15px; color: var(--gold); }
+  .pts { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; color: var(--ink); }
+
+  /* ── FORMULA BOXES ── */
+  .formula-box { background: var(--cream); border: 1px solid var(--rule); border-left: 4px solid var(--ink); padding: 18px 22px; margin: 20px 0; font-family: 'DM Mono', monospace; font-size: 13px; line-height: 1.8; }
+  .formula-box .formula { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
+  .formula-box .note { font-size: 11px; color: var(--gray); line-height: 1.6; }
+  .formula-box .example { font-size: 12px; color: var(--gray); margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--rule); }
+
+  /* ── CALLOUTS ── */
+  .callout { padding: 14px 18px; margin: 16px 0 24px; font-size: 13px; line-height: 1.6; border-radius: 0; }
+  .callout-gold { background: #fef9ee; border-left: 4px solid var(--gold); color: var(--gray); }
+  .callout-red { background: #fdf0f0; border-left: 4px solid var(--red); color: var(--gray); }
+  .callout-green { background: #f0fdf4; border-left: 4px solid var(--green); color: var(--gray); }
+  .callout strong { color: var(--ink); }
+
+  /* ── FLAGS ── */
+  .flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0 24px; }
+  .flag-item { padding: 12px 14px; border: 1px solid var(--rule); background: var(--cream); }
+  .flag-name { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; font-weight: 500; }
+  .flag-effect { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); margin-bottom: 4px; }
+  .flag-desc { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+  /* ── TRANSPARENCY FLAGS ── */
+  .tflag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0 24px; }
+  .tflag-item { padding: 12px 14px; border: 1px solid var(--rule); background: var(--paper); }
+  .tflag-name { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; font-weight: 500; }
+  .tflag-desc { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+  /* ── GRADES ── */
+  .grade-table { width: 100%; border-collapse: collapse; margin: 14px 0 24px; font-size: 13px; }
+  .grade-table td { padding: 9px 14px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+  .grade-table tr:last-child td { border-bottom: none; }
+  .grade-letter { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; width: 36px; }
+
+  /* ── LOOKUP TABLE ── */
+  .lookup-table { width: 100%; border-collapse: collapse; margin: 14px 0 24px; font-size: 13px; }
+  .lookup-table th { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); padding: 8px 12px; text-align: left; border-bottom: 2px solid var(--ink); background: var(--cream); }
+  .lookup-table td { padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.55; font-size: 12px; }
+  .lookup-table tr:last-child td { border-bottom: none; }
+  .lookup-table tr:nth-child(even) td { background: rgba(212,201,180,0.15); }
+  .role-score { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 16px; color: var(--ink); }
+
+  /* ── WORKED EXAMPLE ── */
+  .example-box { border: 1px solid var(--rule); margin: 24px 0; }
+  .example-header { background: var(--ink); color: var(--paper); padding: 12px 18px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .example-body { padding: 18px 22px; background: var(--cream); }
+  .example-row { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 13px; }
+  .example-row:last-child { border-bottom: none; font-weight: 500; }
+  .example-label { color: var(--gray); font-family: 'DM Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .example-val { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--ink); }
+
+  /* ── SECTION DIVIDER ── */
+  .section-divider { margin: 56px 0 0; padding-top: 24px; border-top: 3px double var(--ink); }
+  .section-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+
+  /* ── LIMITATIONS ── */
+  .limitations-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+  .limitation-item { padding: 14px; border: 1px solid var(--rule); background: var(--paper); }
+  .limitation-name { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
+  .limitation-mit { font-size: 11px; color: var(--gold); margin-bottom: 4px; }
+  .limitation-desc { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+  /* ── SOURCES ── */
+  .sources-list { margin: 12px 0 24px; padding: 0; list-style: none; }
+  .sources-list li { font-size: 13px; color: var(--gray); padding: 8px 0; border-bottom: 1px solid var(--rule); line-height: 1.55; }
+  .sources-list li:last-child { border-bottom: none; }
+  .sources-list strong { color: var(--ink); }
+
+  /* ── CONTACT ── */
+  .contact-box { background: var(--cream); border: 1px solid var(--rule); padding: 24px; margin-top: 48px; text-align: center; }
+  .contact-box p { font-size: 13px; color: var(--gray); margin-bottom: 14px; }
+
+  /* ── FOOTER ── */
+  footer { border-top: 3px double var(--ink); padding: 20px 40px; text-align: center; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 60px; }
+  footer a { color: var(--gray); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 32px 20px; }
+    .flag-grid, .tflag-grid, .limitations-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── HAMBURGER (mobile nav) ── */
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 250; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 4px 0; transition: all 0.2s; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: var(--paper); z-index: 500; overflow-y: auto; padding: 24px 28px 60px; }
+  .mobile-menu.open { display: block; }
+  .mobile-menu-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+  .mobile-menu-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; }
+  .mobile-menu-close { background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: var(--ink); padding: 0 4px; }
+  .mobile-menu a { display: block; font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu .mm-group-label { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); padding: 24px 0 8px; border-bottom: none; margin-top: 4px; }
+  .mobile-menu .mm-sub { font-family: 'DM Mono', monospace; font-weight: 400; padding-left: 16px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); padding-top: 11px; padding-bottom: 11px; }
+  @media (max-width: 768px) {
+    .hamburger { display: block; }
+    .masthead-nav { display: none !important; }
+  }
+
+</style>
+
+<style>
+/* ── MOBILE OVERRIDES (max-width: 600px) ── */
+@media (max-width: 600px) {
+  /* Masthead */
+  .masthead { padding: 20px 20px 14px; }
+  .masthead::before { margin-bottom: 14px; }
+
+  /* Nav — horizontal scroll, no wrap */
+  .masthead-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+  .masthead-nav a, .nav-dropdown-trigger {
+    white-space: nowrap;
+  }
+
+  /* Main content padding */
+  .wrap, .coming-soon, .page-wrap, .content-wrap,
+  [style*="padding: 0 40px"], [style*="padding:0 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Grids — single column on mobile */
+  .principle-grid,
+  .flag-grid,
+  .tflag-grid,
+  .limitations-grid,
+  .stats-row,
+  .session-grid,
+  .detail-row,
+  .cs-categories {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Card grids */
+  [style*="grid-template-columns: repeat(auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables — horizontal scroll */
+  .rubric-table, .grade-table, .lookup-table,
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .rubric-table td, .lookup-table td, table td,
+  .rubric-table th, .lookup-table th, table th {
+    white-space: normal;
+    min-width: 100px;
+  }
+
+  /* Modal */
+  .modal-overlay, .pres-modal-overlay { padding: 16px 12px; }
+  .modal-box, .pres-modal { width: 100%; }
+
+  /* Footer */
+  footer { padding: 16px 20px; }
+}
+
+@media (max-width: 380px) {
+  .masthead-title { font-size: 32px !important; }
+  .masthead-eyebrow { letter-spacing: 0.12em; }
+}
+</style>
+
+<style>
+/* ── TAB NAV — consolidated mobile behavior ── */
+.tab-nav { position: relative; }
+@media (max-width: 640px) {
+  .tab-nav-inner { padding: 0 16px; }
+  .tab-btn { padding: 11px 14px; font-size: 9px; }
+  /* right-edge fade cue that tabs scroll horizontally */
+  .tab-nav::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 28px;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(237,232,220,0), var(--cream));
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-eyebrow">Nonpartisan Government Accountability</div>
+  <div class="masthead-title">PolicyLogic</div>
+  <div class="masthead-subtitle">How We Apply Our Methodology</div>
+  <div class="masthead-rule"><span></span><em>INDEPENDENT &amp; TRANSPARENT METHODOLOGY</em><span></span></div>
+  <nav class="masthead-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Scorecards</span>
+      <div class="nav-dropdown-menu">
+        <a href="/scorecards.html">All Scorecards</a>
+        <a href="/state-local.html">State &amp; Local</a>
+        <a href="/national.html">Congress</a>
+        <a href="/presidential.html">Presidential</a>
+        <a href="/international.html">International</a>
+        <a href="/departments.html">Depts &amp; Agencies</a>
+        <a href="/nonprofits.html">Nonprofits &amp; NGOs</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Learn</span>
+      <div class="nav-dropdown-menu">
+        <a href="/learn.html">Learning Center</a>
+        <a href="/learn-cognitive-biases.html">Think Clearly</a>
+        <a href="/learn-how-policy-works.html">How Policy Works</a>
+        <a href="/learn-how-to-influence.html">Take Action</a>
+        <a href="/learn-govt-101.html">Govt 101</a>
+        <a href="/learn-glossary.html">Glossary</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger active">Methodology</span>
+      <div class="nav-dropdown-menu">
+        <a href="/methodology.html">Elected Officials</a>
+        <a href="/methodology-agencies.html">Depts &amp; Agencies</a>
+        <a href="/methodology-presidential.html">Presidential &amp; International</a>
+        <a href="/methodology-ai.html">AI Pipeline</a>
+        <a href="/methodology-limitations.html">Limitations</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">Corrections</span>
+      <div class="nav-dropdown-menu">
+        <a href="/error-log.html">Error Log</a>
+        <a href="/submission-tracker.html">Submission Tracker</a>
+      </div>
+    </div>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
+<button class="hamburger" onclick="document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="mobile-menu-title">PolicyLogic</div>
+    <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='';" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <div class="mm-group-label">Scorecards</div>
+  <a href="/scorecards.html" class="mm-sub">All Scorecards</a>
+  <a href="/state-local.html" class="mm-sub">State &amp; Local</a>
+  <a href="/national.html" class="mm-sub">Congress</a>
+  <a href="/presidential.html" class="mm-sub">Presidential</a>
+  <a href="/international.html" class="mm-sub">International</a>
+  <a href="/departments.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/nonprofits.html" class="mm-sub">Nonprofits &amp; NGOs</a>
+  <div class="mm-group-label">Learn</div>
+  <a href="/learn.html" class="mm-sub">Learning Center</a>
+  <a href="/learn-cognitive-biases.html" class="mm-sub">Think Clearly</a>
+  <a href="/learn-how-policy-works.html" class="mm-sub">How Policy Works</a>
+  <a href="/learn-how-to-influence.html" class="mm-sub">Take Action</a>
+  <a href="/learn-govt-101.html" class="mm-sub">Govt 101</a>
+  <a href="/learn-glossary.html" class="mm-sub">Glossary</a>
+  <div class="mm-group-label">Methodology</div>
+  <a href="/methodology.html" class="mm-sub">Elected Officials</a>
+  <a href="/methodology-agencies.html" class="mm-sub">Depts &amp; Agencies</a>
+  <a href="/methodology-presidential.html" class="mm-sub">Presidential &amp; International</a>
+  <a href="/methodology-ai.html" class="mm-sub">AI Pipeline</a>
+  <a href="/methodology-limitations.html" class="mm-sub">Limitations</a>
+  <div class="mm-group-label">Corrections</div>
+  <a href="/error-log.html" class="mm-sub">Error Log</a>
+  <a href="/submission-tracker.html" class="mm-sub">Submission Tracker</a>
+  <a href="/contact.html">Contact</a>
+</div>
+
+</header>
+
+<div class="tab-nav">
+  <div class="tab-nav-inner">
+    <a href="/methodology.html" class="tab-btn">Elected Officials</a>
+    <a href="/methodology-agencies.html" class="tab-btn">Departments &amp; Agencies</a>
+    <a href="/methodology-presidential.html" class="tab-btn active">Presidential &amp; International</a>
+    <a href="/methodology-ai.html" class="tab-btn">AI Pipeline</a>
+    <a href="/methodology-limitations.html" class="tab-btn">Limitations</a>
+  </div>
+</div>
+
+<div class="wrap">
+<div class="page-title">Presidential &amp; International</div>
+  <div class="page-deck">Why these sections use delivery ratios and status labels instead of letter grades — and what the methodology looks like for commitments that span administrations.</div>
+
+  <h2>Presidential Foreign Policy — Why No Grade</h2>
+  <p>The Presidential Foreign Policy tracker scores individual promises, not the president as a whole. Each commitment carries a status — Kept, Partially Kept, Not Kept, In Progress, Reversed, Contested, or Superseded — based on the available record. There is no aggregate presidential grade.</p>
+
+  <p><strong>Selection effects.</strong> Trackable foreign policy promises are not a representative sample of presidential performance. An aggregate grade would reflect political communication as much as governance.</p>
+
+  <p><strong>Causal complexity.</strong> Foreign policy outcomes are rarely attributable to a single decision. The Their Role modifier partially addresses this, but causal chains in foreign policy are longer and more contested than in domestic policy.</p>
+
+  <p><strong>Cross-administration comparability.</strong> The tracker intentionally shows commitments across administrations to surface reversals and continuity. A letter grade attached to one president would invite comparisons the underlying data may not support.</p>
+
+  <div class="callout callout-gold">
+    Each presidential commitment displays its source, the promise text, and a full event timeline. Administration color bands make clear which events happened under whose watch. The timeline speaks for itself.
+  </div>
+
+  <h2>International Commitments — Why a Delivery Ratio</h2>
+  <p>International commitments — treaty obligations, multilateral funding pledges, emissions targets, assessed contributions to international organizations — are institutional. They are made by administrations, inherited by successors, and honored or abandoned across decades.</p>
+
+  <p>Assigning a letter grade to a commitment that has passed through multiple administrations would collapse decades of contested political history into a single letter. Instead, each commitment displays a <strong>delivery ratio</strong> — the percentage of the pledge delivered as of the research date — alongside a full timeline of events.</p>
+
+  <p>The scoring question for international commitments is the same as for all other commitments: what was promised, what was delivered, and who caused the outcome? But the answer is aggregated as a ratio rather than a grade to avoid false precision on commitments where causation is genuinely diffuse.</p>
+
+  <h2>Commitment Status Labels</h2>
+  <table class="rubric-table">
+    <tr><th>Status</th><th>Definition</th></tr>
+    <tr><td><strong>Kept</strong></td><td>Commitment fulfilled as stated — the specified outcome occurred within the specified or implied timeframe.</td></tr>
+    <tr><td><strong>Partially Kept</strong></td><td>Meaningful progress occurred and a portion of the commitment was achieved, but the full outcome was not delivered.</td></tr>
+    <tr><td><strong>Not Kept</strong></td><td>Commitment not fulfilled and no meaningful progress occurred — or the official took actions contrary to the commitment.</td></tr>
+    <tr><td><strong>In Progress</strong></td><td>Commitment is active within the current term and the outcome period has not closed.</td></tr>
+    <tr><td><strong>Reversed</strong></td><td>Official publicly reversed a commitment they previously made or inherited.</td></tr>
+    <tr><td><strong>Contested</strong></td><td>Evidence sources disagree on whether the commitment was kept. Documented; conservative classification applied.</td></tr>
+    <tr><td><strong>Superseded</strong></td><td>Commitment overtaken by external events or institutional constraints making fulfillment impossible or irrelevant.</td></tr>
+  </table>
+</div>
+
+<footer>
+  PolicyLogic &middot; Nonpartisan &middot; All scorecards are AI-generated drafts pending human review &middot; <a href="/methodology.html">Methodology</a>
+</footer>
+
+<script>
+(function() {
+  function closeAll() { document.querySelectorAll('.nav-dropdown.open').forEach(function(el) { el.classList.remove('open'); }); }
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = trigger.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('open');
+      closeAll();
+      if (!isOpen) { dropdown.classList.add('open'); }
+    });
+  });
+  document.addEventListener('click', closeAll);
+})();
+</script>
+</body>
+</html>
